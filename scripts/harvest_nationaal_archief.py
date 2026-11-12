@@ -64,7 +64,7 @@ DECOLONIZATION = re.compile(
     re.I,
 )
 SOCIETY = re.compile(r"\b(?:bevolking|inwoner(?:s)?|familie|gezin|vrouw(?:en)?|kind(?:eren)?|school|onderwijs|markt|pasar|dorp|desa|kampong|werk(?:zaamheden)?|arbeid|boer(?:en)?|landbouw|feest|bruiloft|huwelijk|dagelijks leven)\b", re.I)
-ARCHITECTURE = re.compile(r"\b(?:gebouw|gebouwen|architectuur|architect|woning|huis|huizen|kantoor|hotel|kerk|moskee|tempel|straat|plein|aloon[- ]?aloon|station|brug|fabriek|schoolgebouw)\b", re.I)
+ARCHITECTURE = re.compile(r"\b(?:gebouw|gebouwen|architectuur|architect|woning|huis|huizen|kantoor|kerk|moskee|tempel|straat|plein|aloon[- ]?aloon|station|brug|fabriek|schoolgebouw)\b", re.I)
 TRANSPORT = re.compile(r"\b(?:trein|spoor(?:baan|weg)?|tram|station|haven|schip|vliegtuig|luchtvaart|tank|voertuig|auto|brug|veerboot)\b", re.I)
 CULTURE = re.compile(r"\b(?:muziek|dans|dansers|ceremonie|religie|kerk|moskee|tempel|feest|theater|toneel|kunst|traditie)\b", re.I)
 LANDSCAPE = re.compile(r"\b(?:landschap|berg(?:en)?|vulkaan|rivier|plantage|bos|kust|meer|sawah|rijstveld)\b", re.I)
