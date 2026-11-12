@@ -78,6 +78,8 @@ def classify_record(description: str, date: str | None = None) -> tuple[list[str
     places = [place for place, pattern in PLACE_PATTERNS.items() if re.search(pattern, text, re.I)]
     if JAVA_CONTEXT.search(text):
         places.insert(0, "java")
+        if not any(place in places for place in PLACE_PATTERNS):
+            places.append("other-java")
     if re.search(r"\b(?:sumatra|sumatera|atjeh|aceh|padang|palembang|medan)\b", text, re.I):
         places.append("sumatra")
     if re.search(r"\b(?:borneo|kalimantan|celebes|sulawesi|makassar|makassar)\b", text, re.I):
