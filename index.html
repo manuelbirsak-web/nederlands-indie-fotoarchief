@@ -66,7 +66,9 @@ h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;mar
 .record-card a:hover{text-decoration:underline}
 @media(max-width:620px){.record-grid{grid-template-columns:1fr}}
 .archive{padding:18px 19px;background:var(--card);border:1px solid var(--line);min-width:0}
+.source-kind{display:block;font:10px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.07em;color:#8a7044;margin-bottom:9px}
 .archive h3{font:normal 20px/1.2 var(--serif);margin:0 0 8px}.archive p{font:12px/1.65 var(--sans);color:var(--muted);margin:0 0 10px}
+#naMore{margin-bottom:15px}
 .archive a{font:600 11px var(--sans);color:#795c2b;text-decoration:none}.archive a:hover{text-decoration:underline}
 .footer{background:#17251f;color:#d9d3c6;padding:32px max(5vw,calc((100vw - 1380px)/2));font:12px/1.7 var(--sans)}
 .footer strong{color:#f5efe2;letter-spacing:.07em;text-transform:uppercase}.footer a{color:#ddc597}
@@ -108,7 +110,7 @@ h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;mar
 <button id="reset" class="secondary" type="button">Wis filters</button>
 </div>
 <div id="places" class="quicksearch" hidden aria-label="Plaatsen op Java"><span class="label">Java · plaatsen</span>
-<button class="chip selected" data-place="bandung">Bandoeng</button><button class="chip" data-place="batavia">Batavia</button><button class="chip" data-place="bogor">Buitenzorg</button><button class="chip" data-place="semarang">Semarang</button><button class="chip" data-place="surabaya">Soerabaja</button><button class="chip" data-place="yogyakarta">Djokja</button><button class="chip" data-place="malang">Malang</button><button class="chip" data-place="other">Overig Java</button>
+<button class="chip selected" data-place="all">Heel Java</button><button class="chip" data-place="bandung">Bandoeng</button><button class="chip" data-place="batavia">Batavia</button><button class="chip" data-place="bogor">Buitenzorg</button><button class="chip" data-place="semarang">Semarang</button><button class="chip" data-place="surabaya">Soerabaja</button><button class="chip" data-place="yogyakarta">Djokja</button><button class="chip" data-place="malang">Malang</button><button class="chip" data-place="other">Overig Java</button>
 </div>
 <div id="bandungTopics" class="quicksearch" hidden aria-label="Zoekthema's Bandoeng"><span class="label">Bandoeng · zoekthema's</span>
 <button class="chip" data-term="Bragaweg">Bragaweg</button><button class="chip" data-term="Dago">Dago</button><button class="chip" data-term="alun-alun">Alun-alun</button><button class="chip" data-term="Technische Hoogeschool">Technische Hoogeschool</button><button class="chip" data-term="station railway">Station & spoor</button><button class="chip" data-term="1946">Bandoeng 1946</button>
@@ -121,17 +123,25 @@ h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;mar
 <section id="naArchive" class="archives" aria-labelledby="naTitle">
 <div class="head"><div><div class="section-label">Aanvullende primaire bron · linked open data</div><h2 id="naTitle">Archiefbeschrijvingen van het Nationaal Archief</h2></div><div class="head-right" id="naCount" aria-live="polite">Index wordt geladen</div></div>
 <p class="fine">Dit zijn bronbeschrijvingen, geen vrijgegeven afbeeldingsbestanden. Bij deze records staat de auteursrechtstatus vaak als “Copyright niet bekend” of “Copyright Not Evaluated”. Daarom worden hier geen thumbnails herpubliceerd. Open het originele archiefrecord voor de volledige beschrijving en rechteninformatie.</p>
+<p class="fine">Onderwerplabels worden afgeleid uit de tekst van de bronbeschrijving; het zijn geen officiële classificaties van het Nationaal Archief. Het label “Bersiap” verschijnt alleen als die term expliciet in de bronbeschrijving staat. Een datum alleen bepaalt nooit een onderwerp.</p>
 <div id="naResults" class="record-grid" aria-live="polite"><div class="status"><strong>Archiefindex</strong>De aanvullende bronrecords worden geladen.</div></div>
+<button id="naMore" class="more" type="button" hidden>Meer archiefrecords tonen</button>
 </section>
-<section class="archives">
-<div class="head"><div><div class="section-label">Verder onderzoek · primaire collecties</div><h2>Ga terug naar de oorspronkelijke bron</h2></div></div>
+<section class="archives" aria-labelledby="sourcesTitle">
+<div class="head"><div><div class="section-label">Onderzoeksnetwerk · institutionele bronnen</div><h2 id="sourcesTitle">Doorzoek de oorspronkelijke collecties</h2></div></div>
+<p class="fine">De koppelingen hieronder leiden naar officiële collectieportalen of documentatie. Alleen de Nationaal Archief-metadata en Wikimedia Commons zijn momenteel rechtstreeks in deze website opgenomen. De overige bronnen openen hun eigen zoekomgeving; een zoeklink is geen bewijs dat een object openbaar downloadbaar of vrij herbruikbaar is.</p>
 <div class="archive-grid">
-<article class="archive"><h3>Nationaal Archief</h3><p>Een grote fotocollectie met reportage- en militaire opnamen. De beeld-API wordt vernieuwd; de linked-open-data fotocollectie is wel via SPARQL bevraagbaar. Rechten moeten per record worden gecontroleerd.</p><a href="https://www.nationaalarchief.nl/onderzoeken/fotocollectie" target="_blank" rel="noopener">Open fotocollectie →</a><br><a href="https://www.nationaalarchief.nl/onderzoeken/linked-open-data/sparql-interface-fotocollectie" target="_blank" rel="noopener">Open linked-data documentatie →</a></article>
-<article class="archive"><h3>Leiden University Libraries · KITLV</h3><p>De oude collectiepagina is verplaatst. De zoekingang voor de KITLV-fotocollectie werkt nog tijdens de migratie van Digital Collections. De collectie bevat historische foto's, prentbriefkaarten en albums; rechten en downloads verschillen per object.</p><a href="https://digitalcollections.universiteitleiden.nl/search/bandoeng?type=edismax&amp;cp=collection%3Akitlv_photos" target="_blank" rel="noopener">Zoek Bandoeng →</a><br><a href="https://digitalcollections.universiteitleiden.nl/search/java?type=edismax&amp;cp=collection%3Akitlv_photos" target="_blank" rel="noopener">Zoek Java →</a></article>
-<article class="archive"><h3>Rijksmuseum</h3><p>Zoek op plaatsnamen, gebouwen en objecten. De publieke collectiezoekfunctie biedt ook machineleesbare toegang tot objectgegevens.</p><a href="https://www.rijksmuseum.nl/nl/zoeken?v=1&f=1&p=1&ps=12&ii=0&q=Bandung" target="_blank" rel="noopener">Zoek Bandung →</a></article>
-<article class="archive"><h3>Wikimedia Commons</h3><p>Beeldmateriaal uit uiteenlopende archieven en musea. Commons is de live beeldbron van de galerij; licenties en herkomst worden per bestand vermeld.</p><a href="https://commons.wikimedia.org/wiki/Category:Dutch_East_Indies" target="_blank" rel="noopener">Nederlands-Indië-categorie →</a></article>
-<article class="archive"><h3>Willem van de Poll · Bandoeng 1946</h3><p>Een herkenbare fotoreeks uit Bandoeng in 1946. Bekijk de oorspronkelijke bestanden en onderschriften in de broncollectie.</p><a href="https://commons.wikimedia.org/wiki/Category:Photographs_by_Willem_van_de_Poll_in_Bandung_(1946)" target="_blank" rel="noopener">Bekijk de fotoreeks →</a></article>
-<article class="archive"><h3>Geheugen van Nederland · Delpher</h3><p>Historische collecties en gedigitaliseerde publicaties. Gebruik plaatsnamen en oude spellingen voor aanvullend contextonderzoek.</p><a href="https://geheugen.delpher.nl/" target="_blank" rel="noopener">Open de collecties →</a></article>
+<article class="archive"><span class="source-kind">Primair archief · geïntegreerde metadata-index</span><h3>Nationaal Archief</h3><p>Het Nationaal Archief meldt circa 400.000 foto's in de beeldbank en biedt de fotocollectie ook als linked open data aan. Deze website toont een metadata-snapshot met permanente Handle-links; veel records hebben een niet-beoordeelde rechtenstatus.</p><a href="https://www.nationaalarchief.nl/onderzoeken/fotocollectie" target="_blank" rel="noopener noreferrer">Open de fotocollectie ↗</a><br><a href="https://www.nationaalarchief.nl/onderzoeken/linked-open-data/sparql-interface-fotocollectie" target="_blank" rel="noopener noreferrer">SPARQL en datamodel ↗</a></article>
+<article class="archive"><span class="source-kind">Foto's · prenten · tekeningen</span><h3>Leiden University Libraries · KITLV</h3><p>De KITLV-beeldcollectie omvat foto's, prenten en tekeningen uit Zuidoost-Azië en het Caribisch gebied. De collectie documenteert onder meer landschappen, steden, architectuur en het dagelijks leven. Beschrijvingen en toegangsrechten verschillen per object.</p><a href="https://digitalcollections.universiteitleiden.nl/imagecollection-kitlv" target="_blank" rel="noopener noreferrer">Open KITLV-beeldcollectie ↗</a></article>
+<article class="archive"><span class="source-kind">Albums · historische fotografie</span><h3>Het Utrechts Archief</h3><p>Het archief maakte ruim 5.000 foto's uit voormalige Nederlands-Indische albums online beschikbaar. Een bijzonder waardevolle ingang voor foto's uit de twintigste eeuw en familie- en dagelijks leven.</p><a href="https://hetutrechtsarchief.nl/over-ons/nieuws/ruim-5-000-fotos-uit-voormalig-nederlands-indie-online-beschikbaar" target="_blank" rel="noopener noreferrer">Bekijk de fotocollectie en toelichting ↗</a><br><a href="https://hetutrechtsarchief.nl/hulp-bij-onderzoek/zoekhulp-koloniale-geschiedenis/nederlands-indie-indonesie" target="_blank" rel="noopener noreferrer">Zoekhulp Nederlands-Indië ↗</a></article>
+<article class="archive"><span class="source-kind">Militaire fotografie · film</span><h3>Beeldbank NIMH</h3><p>Het Nederlands Instituut voor Militaire Historie beheert foto's en films over de krijgsmacht. De beeldbank bevat materiaal over Nederlands-Indië en het KNIL; zoek op historische plaatsnamen, eenheden en persoonsnamen.</p><a href="https://beeldbank.nimh.nl/" target="_blank" rel="noopener noreferrer">Open de NIMH-beeldbank ↗</a><br><a href="https://www.nimh.nl/zelf-onderzoek-doen/onderzoekshulp/knil" target="_blank" rel="noopener noreferrer">Onderzoekshulp KNIL ↗</a></article>
+<article class="archive"><span class="source-kind">Fotografie · Indonesië en Nederlands-Indië</span><h3>Wereldmuseum · NMVW-collectie</h3><p>De collectiezoekmachine bevat onder meer fotoreeksen en albums over Nederlands-Indië en Indonesië. Controleer bij elk object de fotograaf, datering, context en hergebruikvoorwaarden.</p><a href="https://collectie.wereldmuseum.nl/" target="_blank" rel="noopener noreferrer">Open de NMVW-collectie ↗</a><br><a href="https://rotterdam.wereldmuseum.nl/nl/zien-en-doen/tentoonstellingen/dossier-indie/fotografie" target="_blank" rel="noopener noreferrer">Dossier Indië · fotografie ↗</a></article>
+<article class="archive"><span class="source-kind">Architectuur · stedenbouw · ontwerp</span><h3>Het Nieuwe Instituut</h3><p>De Rijkscollectie voor Nederlandse Architectuur en Stedenbouw bevat architectenarchieven met foto's, tekeningen, schetsen en documentatie. Dit is een belangrijke aanvullende bron voor gebouwen, stadsbeelden en ontwerpgeschiedenis in de kolonie.</p><a href="https://zoeken.nieuweinstituut.nl/nl/zoeken-op-het-portaal" target="_blank" rel="noopener noreferrer">Open het collectiezoekportaal ↗</a><br><a href="https://nieuweinstituut.nl/projects/collectie/zoeken-in-de-collectie" target="_blank" rel="noopener noreferrer">Uitleg over de collectie ↗</a></article>
+<article class="archive"><span class="source-kind">Museumobjecten · publieke API</span><h3>Rijksmuseum</h3><p>De Search API is publiek toegankelijk en vereist volgens de documentatie geen API-sleutel. De API ontsluit museumobjecten, maar niet de bibliotheek- en archiefrecords. Gebruik deze bron aanvullend, niet als volledige fotobron.</p><a href="https://www.rijksmuseum.nl/nl/zoeken?v=1&amp;f=1&amp;p=1&amp;ps=12&amp;ii=0&amp;q=Bandung" target="_blank" rel="noopener noreferrer">Zoek Bandung in de collectie ↗</a><br><a href="https://data.rijksmuseum.nl/docs/search" target="_blank" rel="noopener noreferrer">Officiële Search API-documentatie ↗</a></article>
+<article class="archive"><span class="source-kind">Internationale erfgoedaggregator</span><h3>Europeana</h3><p>Zoek in digitale collecties van erfgoedinstellingen in heel Europa. De Search API is bruikbaar voor toekomstige integratie, maar vereist een API-sleutel. Controleer de rechtenverklaring per digitaal object.</p><a href="https://www.europeana.eu/en/search" target="_blank" rel="noopener noreferrer">Zoek in Europeana ↗</a><br><a href="https://api.europeana.eu/" target="_blank" rel="noopener noreferrer">Europeana API-portaal ↗</a></article>
+<article class="archive"><span class="source-kind">Historische kranten · boeken · tijdschriften</span><h3>Delpher · Koninklijke Bibliotheek</h3><p>Delpher biedt miljoenen gedigitaliseerde publicaties, waaronder kranten uit Nederlands-Indië. Geen zelfstandige fotobeeldbank, maar onmisbaar voor het dateren en contextualiseren van foto's en gebeurtenissen.</p><a href="https://www.delpher.nl/nl/kranten/results?query=Nederlands-Indi%C3%AB" target="_blank" rel="noopener noreferrer">Zoek Nederlands-Indië in kranten ↗</a><br><a href="https://www.delpher.nl/thema/geschiedenis/indisch-erfgoed" target="_blank" rel="noopener noreferrer">Thema Indisch erfgoed ↗</a></article>
+<article class="archive"><span class="source-kind">Historische kaarten · prenten · locaties</span><h3>Atlas of Mutual Heritage</h3><p>Beeld- en contextdatabase over gebieden en vestigingen van de VOC en WIC. Vooral relevant voor de vroegere koloniale geschiedenis (ca. 1600–1800), niet als vervanging van fotoarchieven uit de twintigste eeuw.</p><a href="https://www.atlasofmutualheritage.nl/" target="_blank" rel="noopener noreferrer">Open Atlas of Mutual Heritage ↗</a></article>
+<article class="archive"><span class="source-kind">Open beeldbestanden · live geïntegreerd</span><h3>Wikimedia Commons</h3><p>De live fotogalerij haalt bestanden en metadata op via de Commons API. Commons is een secundaire verzamelbron: controleer altijd de oorspronkelijke instelling, beschrijving, maker en licentie.</p><a href="https://commons.wikimedia.org/wiki/Category:Dutch_East_Indies" target="_blank" rel="noopener noreferrer">Categorie Dutch East Indies ↗</a><br><a href="https://commons.wikimedia.org/wiki/Category:Photographs_by_Willem_van_de_Poll_in_Bandung_(1946)" target="_blank" rel="noopener noreferrer">Willem van de Poll · Bandung 1946 ↗</a></article>
 </div>
 </section>
 </main>
@@ -144,14 +154,14 @@ home:{title:'Een visueel geheugen van de archipel',result:'Historische foto\'s',
 indies:{title:'Nederlands-Indië in beeld',result:'Nederlands-Indië',intro:'Beeldmateriaal uit de voormalige archipel: eilanden, steden, gemeenschappen, bestuur en dagelijks leven.',query:'("Dutch East Indies" OR "Nederlands-Indië")'},
 java:{title:'Java · steden, landschap en samenleving',result:'Java',intro:'Van Batavia en Buitenzorg tot Semarang, Soerabaja en Bandoeng. Kies een plaats of zoek binnen de Java-collectie.',query:'Java Indonesia historical'},
 bandung:{title:'Bandoeng / Bandung',result:'Bandoeng / Bandung',intro:'Een gerichte ingang naar de historische stad: Bragaweg, Dago, alun-alun, de Technische Hoogeschool, spoorwegen, architectuur en de jaren 1945–1950.',query:'(Bandoeng OR Bandung) historical'},
-knil:{title:'KNIL & militaire geschiedenis',result:'KNIL & militaire geschiedenis',intro:'Militairen, kazernes, uniformen, wapens, transport en de onafhankelijkheidsoorlog. Een afbeelding bewijst niet vanzelf de eenheid, rang of datering.',query:'(KNIL OR "Royal Netherlands East Indies Army")'},
-bersiap:{title:'Bersiap & onafhankelijkheidsstrijd',result:'Bersiap & onafhankelijkheidsstrijd',intro:'Beeldmateriaal over 1945–1949, de Bersiap, de Indonesische revolutie en de Nederlandse militaire aanwezigheid. De term Bersiap wordt alleen gebruikt waar bron of context dat ondersteunt.',query:'(Bersiap OR "Indonesian National Revolution" OR "Indonesian War of Independence" OR 1945 OR 1946 OR 1947 OR 1948 OR 1949)'},
+knil:{title:'KNIL & militaire geschiedenis',result:'KNIL & militaire geschiedenis',intro:'Militairen, uniformen, wapens, kazernes en operaties. De rubriek bevat alleen bronbeschrijvingen met een expliciete militaire of KNIL-aanwijzing; controleer eenheid en datering altijd bij de oorspronkelijke bron.',query:'(KNIL OR "Royal Netherlands East Indies Army" OR "Netherlands Indies Army" OR "Dutch East Indies military")'},
+bersiap:{title:'Bersiap & onafhankelijkheidsstrijd',result:'Bersiap & onafhankelijkheidsstrijd',intro:'Beeldmateriaal over de Indonesische revolutie en de dekolonisatieperiode. Het specifieke label Bersiap wordt niet afgeleid uit alleen een jaartal, plaatsnaam of algemene oorlogsterm.',query:'(Bersiap OR "Indonesian National Revolution" OR "Indonesian War of Independence" OR "Indonesian independence" OR "police action" OR "Agresi Militer")'},
 daily:{title:'Mensen, werk en dagelijks leven',result:'Samenleving en dagelijks leven',intro:'Portretten, gezinnen, onderwijs, markten, werk, religie en het dagelijks leven in Nederlands-Indië.',query:'("Dutch East Indies" OR "Nederlands-Indië") people daily life'}
 };
-const places={bandung:'(Bandoeng OR Bandung)',batavia:'(Batavia OR Jakarta) Java',bogor:'(Buitenzorg OR Bogor) Java',semarang:'Semarang Java',surabaya:'(Soerabaja OR Surabaya) Java',yogyakarta:'(Djokja OR Yogyakarta) Java',malang:'Malang Java',other:'Java Indonesia'};
+const places={all:'(Java OR Bandoeng OR Bandung OR Batavia OR Buitenzorg OR Bogor OR Semarang OR Soerabaja OR Surabaya OR Djokja OR Yogyakarta OR Malang)',bandung:'(Bandoeng OR Bandung)',batavia:'(Batavia OR Jakarta) Java',bogor:'(Buitenzorg OR Bogor) Java',semarang:'Semarang Java',surabaya:'(Soerabaja OR Surabaya) Java',yogyakarta:'(Djokja OR Yogyakarta) Java',malang:'Malang Java',other:'Java Indonesia'};
 const topicTerms={city:'street building architecture',people:'people family school market',military:'military KNIL soldier army',transport:'railway train tram harbour bridge',culture:'temple mosque dance ceremony religion',nature:'landscape mountain plantation river'};
 const $=selector=>document.querySelector(selector);
-let view='home',place='bandung',customTerm='',continuation=null,loading=false,requestController=null,requestId=0,visibleCount=0;
+let view='home',place='all',customTerm='',continuation=null,loading=false,requestController=null,requestId=0,visibleCount=0;
 const seenFiles=new Set();
 const favoritesKey='indisch-beeldarchief-favorites-v1';
 function readFavorites(){try{return new Set(JSON.parse(localStorage.getItem(favoritesKey)||'[]'))}catch{return new Set()}}
@@ -187,9 +197,9 @@ function isRelevantHistoricalPhoto(page,meta,year){
   indies:/dutch east indies|nederlands.?indi[eë]|netherlands indies|colonial|koloniaal|koloniale|bersiap|knil|bandoeng|bandung|batavia|buitenzorg|java|sumatra|borneo|celebes|surabaya|soerabaja|semarang|yogyakarta|djokja/i,
   java:/java|bandoeng|bandung|batavia|jakarta|buitenzorg|bogor|semarang|soerabaja|surabaya|djokja|yogyakarta|malang/i,
   bandung:/bandoeng|bandung/i,
-  knil:/knil|royal netherlands east indies army|netherlands indies army|military|militair|soldier|soldaat|barracks|kazerne|bersiap|koloniaal|colonial/i,
-  bersiap:/bersiap|indonesian national revolution|indonesian war of independence|independence war|revolution|agresi militer|perang kemerdekaan|perang revolusi|indonesian independence|dutch police action|bandoeng.{0,30}194[5-9]|bandung.{0,30}194[5-9]|194[5-9].{0,30}(bandoeng|bandung|batavia|jakarta|indonesia|indies)/i,
-  daily:/dutch east indies|nederlands.?indi[eë]|netherlands indies|colonial|koloniaal|koloniale|bersiap|knil|java|indonesia|indonesian|batavia|bandoeng|bandung/i
+  knil:/knil|royal netherlands east indies army|netherlands indies army|dutch east indies military|military.*dutch east indies|militair.*nederlands.?indi[eë]|soldier.*knil|soldaat.*knil/i,
+  bersiap:/bersiap|indonesian national revolution|indonesian war of independence|indonesian independence|indonesian independence struggle|politionele actie|agresi militer|perang kemerdekaan|perang revolusi|pemoeda|tni|republikeinse troepen|independence struggle/i,
+  daily:/dutch east indies|nederlands.?indi[eë]|netherlands indies|colonial|koloniaal|daily life|everyday life|family life|kampong|village life|market scene|people of indonesia/i
  };
  if(!viewPatterns[view]?.test(text))return false;
  const historicalContext=/dutch east indies|nederlands.?indi[eë]|netherlands indies|colonial|koloniaal|koloniale|bersiap|knil|royal netherlands east indies army|netherlands indies army|indies army|historical images|historical photographs|historical photos|history of bandung|indonesian national revolution|indonesian war of independence/i;
@@ -222,7 +232,7 @@ async function load(reset=false) {
     $('#more').hidden = true;
   }
   $('#results').setAttribute('aria-busy','true');
-  renderNationaalArchiefRecords();
+  renderNationaalArchiefRecords(reset);
   try {
     let foundThisLoad = 0;
     let batches = 0;
@@ -257,7 +267,7 @@ async function load(reset=false) {
     } while (continuation && foundThisLoad < 8 && batches < 4);
     updateCount();
     if (!visibleCount && reset) {
-      $('#results').append(status('Nog geen passende foto’s gevonden','Vier pagina’s met bronresultaten zijn gecontroleerd. Probeer een andere schrijfwijze of een specifiekere zoekterm.'));
+      $('#results').append(status('Geen passende Wikimedia Commons-foto’s gevonden','Deze bron levert voor de huidige filters geen bruikbare resultaten. Controleer de aanvullende Nationaal Archief-records en de officiële collectieportalen verderop op deze pagina.'));
     } else if (!foundThisLoad && !reset) {
       $('#results').append(status('Geen nieuwe foto’s op deze pagina’s','Gebruik een andere zoekterm of ga verder met zoeken.'));
     }
@@ -279,56 +289,67 @@ async function load(reset=false) {
   }
 }
 let naIndex=null;
-const naPlaceTerms={bandung:'bandoeng|bandung',batavia:'batavia|jakarta',bogor:'buitenzorg|bogor',semarang:'semarang',surabaya:'soerabaja|surabaya',yogyakarta:'djokja|yogyakarta',malang:'malang',other:'java|indonesie|indonesia'};
+let naVisibleCount=12;
+const topicFilterToArchive={city:'architecture',people:'society',military:'military',transport:'transport',culture:'culture',nature:'landscape'};
+function archiveRecordYear(record){const match=String(record.date||'').match(/(?:18|19|20)\d{2}/);return match?Number(match[0]):null}
 function naRecordMatches(record){
- const text=(record.description||'')+' '+(record.collection||'')+' '+(record.creator||'');
- const q=$('#q').value.trim().toLowerCase();
- if(q&&!text.toLowerCase().includes(q))return false;
- let pattern='';
- if(view==='bandung')pattern='bandoeng|bandung';
- else if(view==='knil')pattern='knil|militair|leger|soldaat|officier|kazern|wapen';
- else if(view==='bersiap')pattern='bersiap|revolutie|onafhankelijkheid|republiek|tni|pemoeda|geweld|terror|sabotage|guerrilla|agresi|politionele actie|evacuatie|internering|kamp|perang|indonesian national revolution|indonesian war of independence|war of independence|independence|violence|revolution';
- else if(view==='daily')pattern='bevolking|markt|school|kind|vrouw|gezin|werk|cultuur|religie';
- else if(view==='java')pattern=naPlaceTerms[place]||'java';
- else if(view==='indies')pattern='indie|indones|java|bandoeng|bandung|batavia|buitenzorg|bogor|semarang|soerabaja|surabaya|djokja|yogyakarta|malang|knil';
- if(pattern&&!new RegExp(pattern,'i').test(text))return false;
- const year=Number((String(record.date||'').match(/(?:18|19|20)\d{2}/)||[])[0])||null;
+ const description=String(record.description||'');
+ const fullText=[description,record.collection||'',record.creator||''].join(' ').toLocaleLowerCase('nl');
+ const query=$('#q').value.trim().toLocaleLowerCase('nl');
+ if(query&&!fullText.includes(query))return false;
+ const topics=Array.isArray(record.topics)?record.topics:[];
+ const places=Array.isArray(record.places)?record.places:[];
+ if(view==='java'){
+  if(!places.includes('java'))return false;
+  if(place!=='all'){
+   const key=place==='other'?'other-java':place;
+   if(!places.includes(key))return false;
+  }
+ }else if(view==='bandung'&&!places.includes('bandung'))return false;
+ else if(view==='knil'&&!topics.some(tag=>tag==='knil'||tag==='military'))return false;
+ else if(view==='bersiap'&&!topics.includes('decolonization'))return false;
+ else if(view==='daily'&&!topics.includes('society'))return false;
+ const year=archiveRecordYear(record);
  if(!periodMatches(year))return false;
  if(view==='bersiap'&&year!==null&&(year<1945||year>1950))return false;
- const topic=$('#topic').value;
- const topicPattern={city:'stad|straat|gebouw|brug|station|kerk|kantoor|hotel',people:'mens|bevolking|kind|vrouw|gezin|markt|school',military:'knil|militair|leger|soldaat|officier|wapen|kazern',transport:'trein|spoor|tram|haven|brug|vliegtuig',culture:'kerk|moskee|tempel|dans|ceremonie|religie',nature:'berg|landschap|plantage|rivier|bos'};
- if(topic&&topicPattern[topic]&&!new RegExp(topicPattern[topic],'i').test(text))return false;
+ const selectedTopic=$('#topic').value;
+ const selectedArchiveTopic=topicFilterToArchive[selectedTopic];
+ if(selectedArchiveTopic&&!topics.includes(selectedArchiveTopic))return false;
  return true;
 }
-function renderNationaalArchiefRecords(){
+function renderNationaalArchiefRecords(reset=false){
  const root=$('#naResults');if(!root)return;
+ if(reset)naVisibleCount=12;
  if(!naIndex){root.replaceChildren(status('Archiefindex laden','De aanvullende beschrijvingen worden opgehaald.'));return}
  const matches=(naIndex.records||[]).filter(naRecordMatches);
  $('#naCount').textContent=matches.length+' passende records · '+(naIndex.count||0)+' in lokale index';
  root.replaceChildren();
- if(!matches.length){root.append(status('Geen passende archiefbeschrijvingen','Probeer een andere zoekterm of open de volledige zoekingang van het Nationaal Archief.'));return}
- for(const record of matches.slice(0,12)){
+ if(!matches.length){root.append(status('Geen passende archiefbeschrijvingen','Probeer een andere zoekterm, een ruimer datumfilter of open de oorspronkelijke collectiezoekingang.'));$('#naMore').hidden=true;return}
+ const labels={knil:'KNIL-vermelding',military:'Militair onderwerp',decolonization:'Dekolonisatieperiode',bersiap:'Bron noemt Bersiap',society:'Samenleving',architecture:'Architectuur',transport:'Transport',culture:'Cultuur',landscape:'Landschap'};
+ for(const record of matches.slice(0,naVisibleCount)){
   const card=document.createElement('article');card.className='record-card';
   const title=document.createElement('h3');title.textContent=record.description||'Zonder beschrijving';
   const meta=document.createElement('div');meta.className='record-meta';
   const date=document.createElement('span');date.className='tag';date.textContent=record.date||'Datering niet vermeld';meta.append(date);
+  for(const topic of (record.topics||[]).slice(0,3)){const tag=document.createElement('span');tag.className='tag';tag.textContent=labels[topic]||topic;meta.append(tag)}
   const rights=document.createElement('span');rights.className='tag';rights.textContent=/CNE|Copyright niet bekend/i.test(record.rights||'')?'Copyrightstatus niet beoordeeld':(record.rights||'Rechten niet vermeld');meta.append(rights);
   const collection=document.createElement('p');collection.textContent=[record.collection,record.creator].filter(Boolean).join(' · ');
   const link=document.createElement('a');link.href=record.uri;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Origineel archiefrecord bekijken ↗';
   card.append(title,meta);if(collection.textContent)card.append(collection);card.append(link);root.append(card);
  }
- if(matches.length>12){const more=document.createElement('p');more.className='fine';more.textContent='Er zijn '+(matches.length-12)+' aanvullende treffers in deze lokale index. Gebruik de bronlink voor de volledige collectie.';root.append(more)}
+ $('#naMore').hidden=matches.length<=naVisibleCount;
+ $('#naMore').textContent='Meer archiefrecords tonen ('+Math.min(naVisibleCount,matches.length)+' van '+matches.length+')';
 }
 async function loadNationaalArchiefIndex(){
  try{const response=await fetch('assets/nationaal-archief.json',{cache:'no-cache'});if(!response.ok)throw new Error('HTTP '+response.status);naIndex=await response.json();renderNationaalArchiefRecords()}
  catch(error){$('#naResults').replaceChildren(status('Archiefindex tijdelijk niet beschikbaar','De fotogalerij blijft werken. Open de linked-data zoekingang van het Nationaal Archief voor de actuele brongegevens.'))}
 }
 
-function resetFilters(){ $('#q').value='';$('#period').value='1800-1959';$('#topic').value='';place='bandung';customTerm='';document.querySelectorAll('[data-place]').forEach(b=>b.classList.toggle('selected',b.dataset.place==='bandung'));document.querySelectorAll('#bandungTopics button').forEach(b=>b.classList.remove('selected'));load(true)}
+function resetFilters(){ $('#q').value='';$('#period').value='1800-1959';$('#topic').value='';place='all';customTerm='';document.querySelectorAll('[data-place]').forEach(b=>b.classList.toggle('selected',b.dataset.place==='all'));document.querySelectorAll('#bandungTopics button').forEach(b=>b.classList.remove('selected'));load(true)}
 $('#nav').addEventListener('click',event=>{const button=event.target.closest('[data-view]');if(!button)return;view=button.dataset.view;syncView();load(true)});
 $('#places').addEventListener('click',event=>{const button=event.target.closest('[data-place]');if(!button)return;place=button.dataset.place;document.querySelectorAll('#places [data-place]').forEach(b=>b.classList.toggle('selected',b===button));load(true)});
 $('#bandungTopics').addEventListener('click',event=>{const button=event.target.closest('[data-term]');if(!button)return;customTerm=button.dataset.term;document.querySelectorAll('#bandungTopics [data-term]').forEach(b=>b.classList.toggle('selected',b===button));load(true)});
-$('#go').addEventListener('click',()=>load(true));$('#q').addEventListener('keydown',event=>{if(event.key==='Enter')load(true)});$('#period').addEventListener('change',()=>load(true));$('#topic').addEventListener('change',()=>load(true));$('#reset').addEventListener('click',resetFilters);$('#more').addEventListener('click',()=>load(false));
+$('#go').addEventListener('click',()=>load(true));$('#q').addEventListener('keydown',event=>{if(event.key==='Enter')load(true)});$('#period').addEventListener('change',()=>load(true));$('#topic').addEventListener('change',()=>load(true));$('#reset').addEventListener('click',resetFilters);$('#more').addEventListener('click',()=>load(false));$('#naMore').addEventListener('click',()=>{naVisibleCount+=12;renderNationaalArchiefRecords()});
 syncView();load(true);loadNationaalArchiefIndex();
 </script>
 </body>
