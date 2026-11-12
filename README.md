@@ -11,11 +11,13 @@ Een onafhankelijk digitaal startpunt voor historisch beeldmateriaal over Nederla
 
 ## Structuur en functionaliteit
 
-- Overzicht Nederlands-Indië, Java, Bandoeng/Bandung, KNIL/militair en samenleving.
+- Overzicht Nederlands-Indië, Java, Bandoeng/Bandung, KNIL/militair, Bersiap & onafhankelijkheidsstrijd en samenleving.
 - Plaatsgerichte ingangen voor Bandoeng, Batavia, Buitenzorg, Semarang, Soerabaja, Djokja, Malang en overig Java.
 - Bandoeng-zoekthema's: Bragaweg, Dago, alun-alun, Technische Hoogeschool, spoor/station en 1946.
-- Live beeldzoekfunctie via Wikimedia Commons.
-- Standaardperiode 1800–1959; ongedateerde foto's worden toegelaten wanneer titel/beschrijving aantoonbaar verwijst naar Nederlands-Indië, de koloniale periode, Bersiap of KNIL.
+- Live beeldzoekfunctie via Wikimedia Commons; automatisch doorzoeken van maximaal vier resultaatpagina's wanneer irrelevante resultaten worden weggefilterd.
+- Duplicaatdetectie tijdens paginering; afbeeldingen openen op volledige grootte in een nieuw tabblad.
+- Afzonderlijke rubriek Bersiap & onafhankelijkheidsstrijd met bronkritische formulering.
+- Standaardperiode 1800–1959; ongedateerde foto's worden toegelaten wanneer titel, beschrijving of Commons-categorieën aantoonbaar verwijzen naar Nederlands-Indië, de koloniale periode, Bersiap, KNIL of een historische fotoreeks.
 - Extra relevantiefilter per rubriek: titel en beschrijving moeten aantoonbaar bij het gekozen onderwerp/gebied passen.
 - Niet-fotografische resultaten zoals logo's, kaarten, ranginsignes, boekomslagen, tijdschriften, kranten en posters worden uitgesloten.
 - Onderwerpsfilter als zoektermverfijning; dit is geen gecontroleerde archiefclassificatie.
@@ -53,7 +55,7 @@ De site gebruikt geen frontend-framework en geen externe font-CDN. Foto's worden
 | Bronbestanden en versiebeheer | Gecontroleerd | Main-branch commit en bestanden uit GitHub opgehaald |
 | Functionele code-inspectie | Uitgevoerd | Zoekopbouw, datering 1800–1959, inhoudelijk relevante ongedateerde beelden, rubriekrelevantie, uitsluiting van niet-foto's, paginering en metadata beoordeeld |
 | HTML- en JavaScript-validatie | Geslaagd | GitHub Actions validate-job: HTML-contractcheck en `node --check` geslaagd |
-| Live gepubliceerde HTML | Gecontroleerd | De gepubliceerde pagina bevat de standaardperiode 1800–1959 en toelating van inhoudelijk relevante ongedateerde beelden; dynamische browserinteractie is niet via DOM-automatisering getest |
+| Live gepubliceerde HTML | Gecontroleerd | De gepubliceerde pagina bevat de standaardperiode 1800–1959, toelating van inhoudelijk relevante ongedateerde beelden en bronkritische datering; dynamische browserinteractie is niet via DOM-automatisering getest |
 | Nationaal Archief-index | Geïntegreerd | 180 metadatarecords, zonder previews vanwege onzekere rechten; wekelijkse refresh-workflow toegevoegd |
 | Live browserinteractie | Niet onafhankelijk getest | Geen beschikbare browserautomatisering in deze uitvoering |
 | Werkelijke laadtijd / Core Web Vitals | Niet gemeten | Geen Lighthouse/WebPageTest/veldmeting uitgevoerd |
