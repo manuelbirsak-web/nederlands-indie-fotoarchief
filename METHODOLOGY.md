@@ -81,7 +81,7 @@ Het overzicht `topicCounts` en `placeCounts` is een telling van de labels in de 
 
 ## 7. Verversing en foutafhandeling
 
-De metadata-harvester bevraagt de publieke SPARQL-service van het Nationaal Archief. De wekelijkse GitHub Actions-workflow probeert de snapshot te verversen. Bij een mislukte of te kleine respons blijft de bestaande snapshot behouden. Een geslaagde technische verversing is geen curatoriële kwaliteitscontrole.
+De metadata-harvester bevraagt de publieke SPARQL-service van het Nationaal Archief in geordende pagina's van maximaal 500 records, met een veiligheidslimiet van acht pagina's (maximaal 4.000 opgehaalde records). De wekelijkse GitHub Actions-workflow probeert de snapshot te verversen; een wijziging aan de harvester start ook een verversing. Bij een mislukte of te kleine respons blijft de bestaande snapshot behouden en wordt de workflow als mislukt gemarkeerd. Een geslaagde technische verversing is geen curatoriële kwaliteitscontrole.
 
 De huidige snapshot is een begrensde zoekselectie, geen volledige export van de circa 400.000 foto's die het Nationaal Archief op zijn informatiepagina vermeldt. De actuele recordtelling en peildatum staan in `assets/nationaal-archief.json`.
 
