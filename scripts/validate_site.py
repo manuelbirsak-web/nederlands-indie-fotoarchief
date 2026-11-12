@@ -11,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
 ARCHIVE_INDEX = ROOT / "assets" / "nationaal-archief.json"
+RIJKSMUSEUM_INDEX = ROOT / "assets" / "rijksmuseum.json"
 
 class SiteParser(HTMLParser):
     def __init__(self) -> None:
@@ -37,6 +38,8 @@ def main() -> None:
         fail("index.html ontbreekt")
     if not ARCHIVE_INDEX.is_file():
         fail("Nationaal Archief metadata-index ontbreekt")
+    if not RIJKSMUSEUM_INDEX.is_file():
+        fail("Rijksmuseum-foto-index ontbreekt")
 
     source = INDEX.read_text(encoding="utf-8")
     parser = SiteParser()
@@ -53,6 +56,7 @@ def main() -> None:
     required_ids = (
         "main", "nav", "results", "q", "period", "topic", "more",
         "places", "bandungTopics", "naArchive", "naResults", "naCount", "naMore",
+        "naSnapshotNote", "rmArchive", "rmResults", "rmCount", "rmSnapshotNote", "rmMore",
     )
     for required in required_ids:
         if required not in parser.ids:
@@ -129,6 +133,13 @@ def main() -> None:
         if source_url not in source:
             fail(f"Primaire collectiebron ontbreekt: {source_url}")
 
+    if "assets/rijksmuseum.json" not in source or "function renderRijksmuseumRecords" not in source:
+        fail("Rijksmuseum Linked Art-index wordt niet door de website geïntegreerd")
+    if "RM_IMAGE_RIGHTS.has(record.imageRightsUrl)" not in source:
+        fail("De browser moet de beeldlicentie expliciet allowlisten vóór een afbeelding wordt getoond")
+    if "loadRijksmuseumIndex();" not in source:
+        fail("Rijksmuseum-foto-index wordt niet geïnitialiseerd")
+
     try:
         archive = json.loads(ARCHIVE_INDEX.read_text(encoding="utf-8"))
     except Exception as exc:
@@ -142,6 +153,46 @@ def main() -> None:
     allowed_places = {"java", "bandung", "batavia", "bogor", "semarang", "surabaya", "yogyakarta", "malang", "other-java", "sumatra", "other-islands"}
     if len({record.get("uri") for record in records}) != len(records):
         fail("Nationaal Archief-index bevat dubbele permanente record-URL's")
+    try:
+        rijksmuseum = json.loads(RIJKSMUSEUM_INDEX.read_text(encoding="utf-8"))
+    except Exception as exc:
+        fail(f"Rijksmuseum JSON is ongeldig: {exc}")
+    rm_records = rijksmuseum.get("records", [])
+    if rijksmuseum.get("schemaVersion") != 1:
+        fail("Rijksmuseum-index mist schemaVersion 1")
+    if not isinstance(rm_records, list) or len(rm_records) < 20:
+        fail("Rijksmuseum-index bevat minder dan 20 foto-objecten")
+    if rijksmuseum.get("count") != len(rm_records):
+        fail("Rijksmuseum-index telling komt niet overeen met het aantal objectrecords")
+    rm_allowed_rights = {
+        "https://creativecommons.org/publicdomain/mark/1.0/",
+        "https://creativecommons.org/publicdomain/zero/1.0/",
+    }
+    if len({record.get("id") for record in rm_records}) != len(rm_records):
+        fail("Rijksmuseum-index bevat dubbele object-ID's")
+    rm_image_count = 0
+    for record in rm_records:
+        if record.get("recordType") != "photograph":
+            fail("Rijksmuseum-index bevat een object dat niet als foto is geclassificeerd")
+        if not str(record.get("objectUrl", "")).startswith("https://id.rijksmuseum.nl/"):
+            fail("Rijksmuseum-record mist een permanent Linked Art-object-ID")
+        if not isinstance(record.get("topics"), list) or not isinstance(record.get("places"), list):
+            fail("Rijksmuseum-record mist onderwerp- of plaatslabels")
+        if not set(record["topics"]).issubset(allowed_topics):
+            fail("Onbekend onderwerp-label in Rijksmuseum-index")
+        if not set(record["places"]).issubset(allowed_places):
+            fail("Onbekend plaats-label in Rijksmuseum-index")
+        if record.get("imageUrl"):
+            rm_image_count += 1
+            if not str(record["imageUrl"]).startswith("https://iiif.micr.io/"):
+                fail("Rijksmuseum-afbeelding is geen geverifieerde IIIF-micr.io URL")
+            if record.get("imageRightsUrl") not in rm_allowed_rights:
+                fail("Rijksmuseum-afbeelding mist expliciete Public Domain Mark/CC0-beeldrechten")
+        elif record.get("imageRightsUrl") in rm_allowed_rights and record.get("imageUnavailableReason") is None:
+            fail("Rijksmuseum-record zonder beeldlink bevat tegenstrijdige rechtenmetadata")
+    if rijksmuseum.get("imageCount") != rm_image_count:
+        fail("Rijksmuseum-index imageCount komt niet overeen met het aantal rechtenveilige beelden")
+
     for record in records:
         if not record.get("uri", "").startswith("http://proxy.handle.net/10648/"):
             fail("Nationaal Archief-record mist een permanente handle-URL")
@@ -166,7 +217,8 @@ def main() -> None:
 
     print(
         f"PASS: HTML geparsed; {len(parser.ids)} IDs; {len(parser.links)} bronlinks; "
-        f"{len(records)} Nationaal Archief-records; vereiste secties, rechten- en datumcontroles aanwezig."
+        f"{len(records)} Nationaal Archief-records; {len(rm_records)} Rijksmuseum-foto-objecten "
+        f"({rm_image_count} expliciet rechtenveilige beelden); interface-, rechten- en datumcontroles aanwezig."
     )
     print("NOTE: Dit is een statische contractcheck. Browser-, performance- en visuele tests worden apart uitgevoerd.")
 
