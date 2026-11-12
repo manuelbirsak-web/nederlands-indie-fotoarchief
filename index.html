@@ -46,7 +46,7 @@ h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;mar
 .photo-media:after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 0 1px #0000000a}
 .photo-body{padding:15px 16px 16px;display:flex;flex-direction:column;flex:1}
 .photo-title{font:normal 18px/1.25 var(--serif);margin:0 0 9px;overflow-wrap:anywhere}
-.photo-meta{font:11px/1.6 var(--sans);color:var(--muted);margin-bottom:12px}
+.photo-meta{font:11px/1.6 var(--sans);color:var(--muted);margin-bottom:12px}.photo-description{font:12px/1.55 var(--sans);color:#566157;margin:0 0 12px;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 .photo-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}.tag{font:10px var(--sans);border:1px solid #d9d2c5;color:#687268;padding:4px 7px}
 .photo-actions{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:13px;border-top:1px solid #e8e2d7;padding-top:10px}
 .photo-actions a,.photo-actions button{font:600 11px var(--sans);text-decoration:none;color:#755c31}.photo-actions a:hover{text-decoration:underline}
@@ -178,6 +178,7 @@ async function load(reset=false) {
     $('#more').hidden = true;
   }
   $('#results').setAttribute('aria-busy','true');
+  renderNationaalArchiefRecords();
   try {
     const params = new URLSearchParams({
       action:'query', format:'json', origin:'*', generator:'search',
@@ -226,12 +227,56 @@ async function load(reset=false) {
     }
   }
 }
+let naIndex=null;
+const naPlaceTerms={bandung:'bandoeng|bandung',batavia:'batavia|jakarta',bogor:'buitenzorg|bogor',semarang:'semarang',surabaya:'soerabaja|surabaya',yogyakarta:'djokja|yogyakarta',malang:'malang',other:'java|indonesie|indonesia'};
+function naRecordMatches(record){
+ const text=(record.description||'')+' '+(record.collection||'')+' '+(record.creator||'');
+ const q=$('#q').value.trim().toLowerCase();
+ if(q&&!text.toLowerCase().includes(q))return false;
+ let pattern='';
+ if(view==='bandung')pattern='bandoeng|bandung';
+ else if(view==='knil')pattern='knil|militair|leger|soldaat|officier|kazern|wapen';
+ else if(view==='daily')pattern='bevolking|markt|school|kind|vrouw|gezin|werk|cultuur|religie';
+ else if(view==='java')pattern=naPlaceTerms[place]||'java';
+ else if(view==='indies')pattern='indie|indones|java|bandoeng|bandung|batavia|buitenzorg|bogor|semarang|soerabaja|surabaya|djokja|yogyakarta|malang|knil';
+ if(pattern&&!new RegExp(pattern,'i').test(text))return false;
+ const year=Number((String(record.date||'').match(/(?:18|19|20)\\d{2}/)||[])[0])||null;
+ if(!periodMatches(year))return false;
+ const topic=$('#topic').value;
+ const topicPattern={city:'stad|straat|gebouw|brug|station|kerk|kantoor|hotel',people:'mens|bevolking|kind|vrouw|gezin|markt|school',military:'knil|militair|leger|soldaat|officier|wapen|kazern',transport:'trein|spoor|tram|haven|brug|vliegtuig',culture:'kerk|moskee|tempel|dans|ceremonie|religie',nature:'berg|landschap|plantage|rivier|bos'};
+ if(topic&&topicPattern[topic]&&!new RegExp(topicPattern[topic],'i').test(text))return false;
+ return true;
+}
+function renderNationaalArchiefRecords(){
+ const root=$('#naResults');if(!root)return;
+ if(!naIndex){root.replaceChildren(status('Archiefindex laden','De aanvullende beschrijvingen worden opgehaald.'));return}
+ const matches=(naIndex.records||[]).filter(naRecordMatches);
+ $('#naCount').textContent=matches.length+' passende records · '+(naIndex.count||0)+' in lokale index';
+ root.replaceChildren();
+ if(!matches.length){root.append(status('Geen passende archiefbeschrijvingen','Probeer een andere zoekterm of open de volledige zoekingang van het Nationaal Archief.'));return}
+ for(const record of matches.slice(0,12)){
+  const card=document.createElement('article');card.className='record-card';
+  const title=document.createElement('h3');title.textContent=record.description||'Zonder beschrijving';
+  const meta=document.createElement('div');meta.className='record-meta';
+  const date=document.createElement('span');date.className='tag';date.textContent=record.date||'Datering niet vermeld';meta.append(date);
+  const rights=document.createElement('span');rights.className='tag';rights.textContent=/CNE|Copyright niet bekend/i.test(record.rights||'')?'Copyrightstatus niet beoordeeld':(record.rights||'Rechten niet vermeld');meta.append(rights);
+  const collection=document.createElement('p');collection.textContent=[record.collection,record.creator].filter(Boolean).join(' · ');
+  const link=document.createElement('a');link.href=record.uri;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Origineel archiefrecord bekijken ↗';
+  card.append(title,meta);if(collection.textContent)card.append(collection);card.append(link);root.append(card);
+ }
+ if(matches.length>12){const more=document.createElement('p');more.className='fine';more.textContent='Er zijn '+(matches.length-12)+' aanvullende treffers in deze lokale index. Gebruik de bronlink voor de volledige collectie.';root.append(more)}
+}
+async function loadNationaalArchiefIndex(){
+ try{const response=await fetch('assets/nationaal-archief.json',{cache:'no-cache'});if(!response.ok)throw new Error('HTTP '+response.status);naIndex=await response.json();renderNationaalArchiefRecords()}
+ catch(error){$('#naResults').replaceChildren(status('Archiefindex tijdelijk niet beschikbaar','De fotogalerij blijft werken. Open de linked-data zoekingang van het Nationaal Archief voor de actuele brongegevens.'))}
+}
+
 function resetFilters(){ $('#q').value='';$('#period').value='archive';$('#topic').value='';place='bandung';customTerm='';document.querySelectorAll('[data-place]').forEach(b=>b.classList.toggle('selected',b.dataset.place==='bandung'));document.querySelectorAll('#bandungTopics button').forEach(b=>b.classList.remove('selected'));load(true)}
 $('#nav').addEventListener('click',event=>{const button=event.target.closest('[data-view]');if(!button)return;view=button.dataset.view;syncView();load(true)});
 $('#places').addEventListener('click',event=>{const button=event.target.closest('[data-place]');if(!button)return;place=button.dataset.place;document.querySelectorAll('#places [data-place]').forEach(b=>b.classList.toggle('selected',b===button));load(true)});
 $('#bandungTopics').addEventListener('click',event=>{const button=event.target.closest('[data-term]');if(!button)return;customTerm=button.dataset.term;document.querySelectorAll('#bandungTopics [data-term]').forEach(b=>b.classList.toggle('selected',b===button));load(true)});
 $('#go').addEventListener('click',()=>load(true));$('#q').addEventListener('keydown',event=>{if(event.key==='Enter')load(true)});$('#period').addEventListener('change',()=>load(true));$('#topic').addEventListener('change',()=>load(true));$('#reset').addEventListener('click',resetFilters);$('#more').addEventListener('click',()=>load(false));
-syncView();load(true);
+syncView();load(true);loadNationaalArchiefIndex();
 </script>
 </body>
 </html>
