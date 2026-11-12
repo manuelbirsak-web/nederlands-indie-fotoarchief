@@ -27,7 +27,7 @@ De standaard fotoperiode is 1800–1959. Relevante ongedateerde beelden kunnen w
 ### Rechtstreeks geïntegreerd
 
 - **Wikimedia Commons:** live API voor beeldbestanden en metadata. De website toont per resultaat de bronpagina, beschikbare maker-/creditgegevens en licentie-informatie. Commons is een aggregator; de oorspronkelijke instelling en bestandspagina blijven leidend.
-- **Nationaal Archief:** lokale metadata-index op basis van de publieke linked-open-data-fotocollectie. De huidige snapshot bevat **180 records** met permanente Handle-links en automatisch afgeleide onderwerp- en plaatslabels. Er worden geen thumbnails uit deze index getoond zolang de rechtenstatus niet is beoordeeld.
+- **Nationaal Archief:** lokale metadata-index op basis van de publieke linked-open-data-fotocollectie. De huidige snapshot bevat **180 records** met permanente Handle-links en automatisch afgeleide onderwerp- en plaatslabels. De nieuwe harvester kan geordend maximaal 4.000 records ophalen; het actuele aantal wordt pas na een succesvolle verversing verhoogd. Er worden geen thumbnails uit deze index getoond zolang de rechtenstatus niet is beoordeeld.
 
 ### Externe onderzoeksingangen
 
