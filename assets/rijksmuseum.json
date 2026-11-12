@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "Rijksmuseum Data Services — Search API and Linked Art",
   "sourceUrl": "https://data.rijksmuseum.nl/docs/search",
-  "snapshotDate": "2026-11-12T21:12:55.088524+00:00",
+  "snapshotDate": "2026-11-12T23:59:28.213798+00:00",
   "count": 229,
   "candidateCount": 278,
   "searches": [
@@ -710,56 +710,6 @@
       "recordType": "photograph"
     },
     {
-      "id": "200493635",
-      "objectNumber": "RP-F-2007-6-188",
-      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
-      "otherTitles": [
-        "Visit to an Oil Field in Purissima Hills, USA",
-        "An oil lake"
-      ],
-      "description": "Olieboortorens in een veld in California. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
-      "date": "1908-05-02 - 1908-05-03",
-      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
-      "objectUrl": "https://id.rijksmuseum.nl/200493635",
-      "imageUrl": "https://iiif.micr.io/IPQor/full/max/0/default.jpg",
-      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-      "imageRightsEvidence": [
-        "https://creativecommons.org/publicdomain/mark/1.0/"
-      ],
-      "imageUnavailableReason": null,
-      "searchTerms": [
-        "Dutch East Indies"
-      ],
-      "topics": [],
-      "places": [],
-      "recordType": "photograph"
-    },
-    {
-      "id": "200493669",
-      "objectNumber": "RP-F-2007-6-191",
-      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
-      "otherTitles": [
-        "Visit to an Oil Field in Purissima Hills, USA",
-        "Oil port"
-      ],
-      "description": "Gezicht op een oliehaven waar zich olietanks bevinden. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
-      "date": "1908-05-02 - 1908-05-03",
-      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
-      "objectUrl": "https://id.rijksmuseum.nl/200493669",
-      "imageUrl": "https://iiif.micr.io/BCduB/full/max/0/default.jpg",
-      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-      "imageRightsEvidence": [
-        "https://creativecommons.org/publicdomain/mark/1.0/"
-      ],
-      "imageUnavailableReason": null,
-      "searchTerms": [
-        "Dutch East Indies"
-      ],
-      "topics": [],
-      "places": [],
-      "recordType": "photograph"
-    },
-    {
       "id": "200493643",
       "objectNumber": "RP-F-2007-6-185",
       "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
@@ -772,31 +722,6 @@
       "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
       "objectUrl": "https://id.rijksmuseum.nl/200493643",
       "imageUrl": "https://iiif.micr.io/QvojF/full/max/0/default.jpg",
-      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-      "imageRightsEvidence": [
-        "https://creativecommons.org/publicdomain/mark/1.0/"
-      ],
-      "imageUnavailableReason": null,
-      "searchTerms": [
-        "Dutch East Indies"
-      ],
-      "topics": [],
-      "places": [],
-      "recordType": "photograph"
-    },
-    {
-      "id": "200493670",
-      "objectNumber": "RP-F-2007-6-192",
-      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
-      "otherTitles": [
-        "Visit to an Oil Field in Purissima Hills, USA",
-        "Refinery at Oil port"
-      ],
-      "description": "Olieraffinaderij in de oliehaven in California. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
-      "date": "1908-05-02 - 1908-05-03",
-      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
-      "objectUrl": "https://id.rijksmuseum.nl/200493670",
-      "imageUrl": "https://iiif.micr.io/xBqsE/full/max/0/default.jpg",
       "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
       "imageRightsEvidence": [
         "https://creativecommons.org/publicdomain/mark/1.0/"
@@ -836,43 +761,18 @@
       "recordType": "photograph"
     },
     {
-      "id": "200493647",
-      "objectNumber": "RP-F-2007-6-190",
+      "id": "200493635",
+      "objectNumber": "RP-F-2007-6-188",
       "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
       "otherTitles": [
         "Visit to an Oil Field in Purissima Hills, USA",
-        "Well 4"
+        "An oil lake"
       ],
-      "description": "Het gezelschap bij olieboortoren en oliebel nummer vier. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
+      "description": "Olieboortorens in een veld in California. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
       "date": "1908-05-02 - 1908-05-03",
       "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
-      "objectUrl": "https://id.rijksmuseum.nl/200493647",
-      "imageUrl": "https://iiif.micr.io/OxfTt/full/max/0/default.jpg",
-      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-      "imageRightsEvidence": [
-        "https://creativecommons.org/publicdomain/mark/1.0/"
-      ],
-      "imageUnavailableReason": null,
-      "searchTerms": [
-        "Dutch East Indies"
-      ],
-      "topics": [],
-      "places": [],
-      "recordType": "photograph"
-    },
-    {
-      "id": "200493672",
-      "objectNumber": "RP-F-2007-6-193",
-      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
-      "otherTitles": [
-        "Visit to an Oil Field in Purissima Hills, USA",
-        "Stills"
-      ],
-      "description": "Het reisgezelschap bezoekt de olievelden in California. Het staat stil bij oliepijpleidingen en destillatoren op een raffinaderij, in het midden Deterding. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
-      "date": "1908-05-02 - 1908-05-03",
-      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
-      "objectUrl": "https://id.rijksmuseum.nl/200493672",
-      "imageUrl": "https://iiif.micr.io/AnLzv/full/max/0/default.jpg",
+      "objectUrl": "https://id.rijksmuseum.nl/200493635",
+      "imageUrl": "https://iiif.micr.io/IPQor/full/max/0/default.jpg",
       "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
       "imageRightsEvidence": [
         "https://creativecommons.org/publicdomain/mark/1.0/"
@@ -898,6 +798,106 @@
       "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
       "objectUrl": "https://id.rijksmuseum.nl/200493674",
       "imageUrl": "https://iiif.micr.io/rIuHO/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200493647",
+      "objectNumber": "RP-F-2007-6-190",
+      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
+      "otherTitles": [
+        "Visit to an Oil Field in Purissima Hills, USA",
+        "Well 4"
+      ],
+      "description": "Het gezelschap bij olieboortoren en oliebel nummer vier. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
+      "date": "1908-05-02 - 1908-05-03",
+      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
+      "objectUrl": "https://id.rijksmuseum.nl/200493647",
+      "imageUrl": "https://iiif.micr.io/OxfTt/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200493669",
+      "objectNumber": "RP-F-2007-6-191",
+      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
+      "otherTitles": [
+        "Visit to an Oil Field in Purissima Hills, USA",
+        "Oil port"
+      ],
+      "description": "Gezicht op een oliehaven waar zich olietanks bevinden. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
+      "date": "1908-05-02 - 1908-05-03",
+      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
+      "objectUrl": "https://id.rijksmuseum.nl/200493669",
+      "imageUrl": "https://iiif.micr.io/BCduB/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200493670",
+      "objectNumber": "RP-F-2007-6-192",
+      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
+      "otherTitles": [
+        "Visit to an Oil Field in Purissima Hills, USA",
+        "Refinery at Oil port"
+      ],
+      "description": "Olieraffinaderij in de oliehaven in California. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
+      "date": "1908-05-02 - 1908-05-03",
+      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
+      "objectUrl": "https://id.rijksmuseum.nl/200493670",
+      "imageUrl": "https://iiif.micr.io/xBqsE/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200493672",
+      "objectNumber": "RP-F-2007-6-193",
+      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
+      "otherTitles": [
+        "Visit to an Oil Field in Purissima Hills, USA",
+        "Stills"
+      ],
+      "description": "Het reisgezelschap bezoekt de olievelden in California. Het staat stil bij oliepijpleidingen en destillatoren op een raffinaderij, in het midden Deterding. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
+      "date": "1908-05-02 - 1908-05-03",
+      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
+      "objectUrl": "https://id.rijksmuseum.nl/200493672",
+      "imageUrl": "https://iiif.micr.io/AnLzv/full/max/0/default.jpg",
       "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
       "imageRightsEvidence": [
         "https://creativecommons.org/publicdomain/mark/1.0/"
@@ -1549,33 +1549,6 @@
       "recordType": "photograph"
     },
     {
-      "id": "200518085",
-      "objectNumber": "NG-1989-1-20-3",
-      "title": "Draaibanken van de Technische School te Bandoeng",
-      "otherTitles": [],
-      "description": "Draaibanken in de werkplaats van de Technische School te Bandoeng. Foto ingeplakt in het fotoalbum aangeboden aan J.H.A. van der Hoeven bij het beëindigen op 31 juli 1933 van zijn diensttijd bij het Nijverheidsonderwijs in Nederlandsch-Indië.",
-      "date": "1933",
-      "creator": "fotograaf: anoniem, Bandung",
-      "objectUrl": "https://id.rijksmuseum.nl/200518085",
-      "imageUrl": "https://iiif.micr.io/dsRvN/full/max/0/default.jpg",
-      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-      "imageRightsEvidence": [
-        "https://creativecommons.org/publicdomain/mark/1.0/"
-      ],
-      "imageUnavailableReason": null,
-      "searchTerms": [
-        "Bandoeng"
-      ],
-      "topics": [
-        "society"
-      ],
-      "places": [
-        "bandung",
-        "java"
-      ],
-      "recordType": "photograph"
-    },
-    {
       "id": "200518083",
       "objectNumber": "NG-1989-1-20-1",
       "title": "Draaibanken van de Technische School te Bandoeng",
@@ -1630,15 +1603,15 @@
       "recordType": "photograph"
     },
     {
-      "id": "200518082",
-      "objectNumber": "NG-1989-1-19-2",
-      "title": "Frontgebouwen van de Technische School te Bandoeng",
+      "id": "200518085",
+      "objectNumber": "NG-1989-1-20-3",
+      "title": "Draaibanken van de Technische School te Bandoeng",
       "otherTitles": [],
-      "description": "Frontgebouwen van de Technische School te Bandoeng. Foto ingeplakt in het fotoalbum aangeboden aan J.H.A. van der Hoeven bij het beëindigen op 31 juli 1933 van zijn diensttijd bij het Nijverheidsonderwijs in Nederlandsch-Indië.",
+      "description": "Draaibanken in de werkplaats van de Technische School te Bandoeng. Foto ingeplakt in het fotoalbum aangeboden aan J.H.A. van der Hoeven bij het beëindigen op 31 juli 1933 van zijn diensttijd bij het Nijverheidsonderwijs in Nederlandsch-Indië.",
       "date": "1933",
       "creator": "fotograaf: anoniem, Bandung",
-      "objectUrl": "https://id.rijksmuseum.nl/200518082",
-      "imageUrl": "https://iiif.micr.io/HOsfG/full/max/0/default.jpg",
+      "objectUrl": "https://id.rijksmuseum.nl/200518085",
+      "imageUrl": "https://iiif.micr.io/dsRvN/full/max/0/default.jpg",
       "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
       "imageRightsEvidence": [
         "https://creativecommons.org/publicdomain/mark/1.0/"
@@ -1666,6 +1639,33 @@
       "creator": "fotograaf: anoniem, Bandung",
       "objectUrl": "https://id.rijksmuseum.nl/200518081",
       "imageUrl": "https://iiif.micr.io/CFAZy/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200518082",
+      "objectNumber": "NG-1989-1-19-2",
+      "title": "Frontgebouwen van de Technische School te Bandoeng",
+      "otherTitles": [],
+      "description": "Frontgebouwen van de Technische School te Bandoeng. Foto ingeplakt in het fotoalbum aangeboden aan J.H.A. van der Hoeven bij het beëindigen op 31 juli 1933 van zijn diensttijd bij het Nijverheidsonderwijs in Nederlandsch-Indië.",
+      "date": "1933",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200518082",
+      "imageUrl": "https://iiif.micr.io/HOsfG/full/max/0/default.jpg",
       "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
       "imageRightsEvidence": [
         "https://creativecommons.org/publicdomain/mark/1.0/"
@@ -1793,32 +1793,6 @@
       "recordType": "photograph"
     },
     {
-      "id": "200528082",
-      "objectNumber": "NG-2002-84-G-45",
-      "title": "Theefabriek Kertamanah gebouwd door Machinefabriek Braat Soerabaia 1934",
-      "otherTitles": [],
-      "description": "Albumblad met een foto van de theefabriek Kertamanah ten zuiden van Bandoeng, in aanbouw in 1934. Onderdeel van een fotoalbum met foto's van machines en constructies van de N.V. Machinefabriek Braat te Soerabaja, Soekaboemi en Tegal uit de periode 1931-1937.",
-      "date": "1934",
-      "creator": "fotograaf: anoniem, Bandung",
-      "objectUrl": "https://id.rijksmuseum.nl/200528082",
-      "imageUrl": "https://iiif.micr.io/fAKco/full/max/0/default.jpg",
-      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-      "imageRightsEvidence": [
-        "https://creativecommons.org/publicdomain/mark/1.0/"
-      ],
-      "imageUnavailableReason": null,
-      "searchTerms": [
-        "Bandoeng"
-      ],
-      "topics": [],
-      "places": [
-        "bandung",
-        "java",
-        "surabaya"
-      ],
-      "recordType": "photograph"
-    },
-    {
       "id": "200528084",
       "objectNumber": "NG-2002-84-G-65",
       "title": "Theefabriek Kertamanah gebouwd door Machinefabriek Braat Soerabaia 1934",
@@ -1854,6 +1828,32 @@
       "creator": "fotograaf: anoniem, Bandung",
       "objectUrl": "https://id.rijksmuseum.nl/200528083",
       "imageUrl": "https://iiif.micr.io/gDwme/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [],
+      "places": [
+        "bandung",
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200528082",
+      "objectNumber": "NG-2002-84-G-45",
+      "title": "Theefabriek Kertamanah gebouwd door Machinefabriek Braat Soerabaia 1934",
+      "otherTitles": [],
+      "description": "Albumblad met een foto van de theefabriek Kertamanah ten zuiden van Bandoeng, in aanbouw in 1934. Onderdeel van een fotoalbum met foto's van machines en constructies van de N.V. Machinefabriek Braat te Soerabaja, Soekaboemi en Tegal uit de periode 1931-1937.",
+      "date": "1934",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200528082",
+      "imageUrl": "https://iiif.micr.io/fAKco/full/max/0/default.jpg",
       "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
       "imageRightsEvidence": [
         "https://creativecommons.org/publicdomain/mark/1.0/"

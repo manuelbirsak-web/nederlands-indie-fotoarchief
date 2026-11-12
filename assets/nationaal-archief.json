@@ -3,14 +3,14 @@
   "source": "Nationaal Archief — linked open data fotocollectie",
   "sourceUrl": "https://www.nationaalarchief.nl/onderzoeken/linked-open-data/sparql-interface-fotocollectie",
   "endpoint": "https://api.triplydb.com/datasets/nationaal-archief/beeldbank/services/beeldbank/sparql",
-  "snapshotDate": "2026-11-12T21:12:29.238823+00:00",
+  "snapshotDate": "2026-11-12T23:58:59.316441+00:00",
   "count": 4000,
   "pageSize": 500,
   "maxPages": 8,
   "harvestedPages": 8,
   "truncatedAtSafetyLimit": true,
   "topicCounts": {
-    "architecture": 381,
+    "architecture": 368,
     "bersiap": 6,
     "culture": 33,
     "decolonization": 829,
@@ -133,9 +133,7 @@
       "collection": "Fotocollectie Spaarnestad Onderwerpen",
       "creator": null,
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "topics": [
-        "architecture"
-      ],
+      "topics": [],
       "places": [
         "java",
         "other-java"
@@ -505,7 +503,6 @@
       "creator": null,
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "topics": [
-        "architecture",
         "military"
       ],
       "places": [
@@ -3523,7 +3520,6 @@
       "creator": null,
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "topics": [
-        "architecture",
         "military"
       ],
       "places": [
@@ -3539,7 +3535,6 @@
       "creator": null,
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "topics": [
-        "architecture",
         "military"
       ],
       "places": [
@@ -3555,7 +3550,6 @@
       "creator": null,
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "topics": [
-        "architecture",
         "military"
       ],
       "places": [
@@ -3571,7 +3565,6 @@
       "creator": null,
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "topics": [
-        "architecture",
         "military"
       ],
       "places": [
@@ -3587,7 +3580,6 @@
       "creator": null,
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "topics": [
-        "architecture",
         "military"
       ],
       "places": [
@@ -3603,7 +3595,6 @@
       "creator": null,
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "topics": [
-        "architecture",
         "military"
       ],
       "places": [
@@ -16818,7 +16809,6 @@
       "creator": null,
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "topics": [
-        "architecture",
         "military",
         "transport"
       ],
@@ -24814,7 +24804,6 @@
       "creator": null,
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "topics": [
-        "architecture",
         "decolonization"
       ],
       "places": []
@@ -29922,7 +29911,6 @@
       "creator": null,
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "topics": [
-        "architecture",
         "transport"
       ],
       "places": [
@@ -29937,7 +29925,6 @@
       "creator": null,
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "topics": [
-        "architecture",
         "transport"
       ],
       "places": [
@@ -42004,7 +41991,6 @@
       "creator": null,
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "topics": [
-        "architecture",
         "decolonization"
       ],
       "places": [
