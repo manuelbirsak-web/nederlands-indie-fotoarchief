@@ -157,7 +157,7 @@ const favoritesKey='indisch-beeldarchief-favorites-v1';
 function readFavorites(){try{return new Set(JSON.parse(localStorage.getItem(favoritesKey)||'[]'))}catch{return new Set()}}
 function writeFavorites(set){try{localStorage.setItem(favoritesKey,JSON.stringify([...set]))}catch{}}
 let favorites=readFavorites();
-function buildQuery(){const typed=$('#q').value.trim();let base=views[view].query;if(view==='java')base=places[place];if(view==='bandung'&&customTerm)base+=' '+customTerm;if(typed)base+=' '+typed;const topic=$('#topic').value;if(topic)base+=' '+topicTerms[topic];return '('+base+') filetype:bitmap'}
+function buildQuery(){const typed=$('#q').value.trim();let base=views[view].query;if(view==='java')base=places[place];if(view==='bandung'&&customTerm)base+=' '+customTerm;if(typed)base+=' '+typed;const topic=$('#topic').value;if(topic)base+=' '+topicTerms[topic];return base+' filetype:bitmap'}
 function yearFromMetadata(meta){
  const raw=meta?.DateTimeOriginal?.value||'';
  const match=String(raw).match(/(?:^|\\D)((?:18|19)\\d{2})(?:\\D|$)/);
