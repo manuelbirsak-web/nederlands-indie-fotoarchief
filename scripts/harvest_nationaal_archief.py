@@ -41,7 +41,7 @@ WHERE {{
 GROUP BY ?s ?description
 ORDER BY STR(?s)
 LIMIT {PAGE_SIZE}
-OFFSET {offset}
+OFFSET __OFFSET__
 """
 
 PLACE_PATTERNS = {
@@ -85,7 +85,7 @@ def classify_record(description: str, date: str | None = None) -> tuple[list[str
             places.append("other-java")
     if re.search(r"\b(?:sumatra|sumatera|atjeh|aceh|padang|palembang|medan)\b", text, re.I):
         places.append("sumatra")
-    if re.search(r"\b(?:borneo|kalimantan|celebes|sulawesi|makassar|makassar)\b", text, re.I):
+    if re.search(r"\b(?:borneo|kalimantan|celebes|sulawesi|makassar)\b", text, re.I):
         places.append("other-islands")
 
     topics: list[str] = []
@@ -120,7 +120,7 @@ def main() -> int:
         harvested_pages = 0
         for page_number in range(MAX_PAGES):
             offset = page_number * PAGE_SIZE
-            query_text = QUERY.format(offset=offset)
+            query_text = QUERY.replace('__OFFSET__', str(offset))
             query = urlencode({"query": query_text, "format": "application/sparql-results+json"})
             request = Request(
                 f"{ENDPOINT}?{query}",
