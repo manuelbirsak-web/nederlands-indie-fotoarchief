@@ -185,8 +185,8 @@ def main() -> int:
         return 0
     except Exception as exc:
         if TARGET.exists():
-            print(f"WARN: Nationaal Archief refresh failed; retained previous snapshot: {exc}")
-            return 0
+            print(f"FAIL: Nationaal Archief refresh failed; retained previous snapshot: {exc}", file=sys.stderr)
+            return 1
         print(f"FAIL: no Nationaal Archief snapshot available: {exc}", file=sys.stderr)
         return 1
 
