@@ -4,7 +4,7 @@
   "endpoint": "https://api.triplydb.com/datasets/nationaal-archief/beeldbank/services/beeldbank/sparql",
   "snapshotDate": "2026-11-12",
   "rightsNote": "Metadata-index. Geen thumbnails opgenomen: de bevraagde records tonen veelal Copyright niet bekend / RightsStatements CNE; controleer de oorspronkelijke bron voor ieder hergebruik.",
-  "count": 80,
+  "count": 180,
   "records": [
     {
       "uri": "http://proxy.handle.net/10648/e0cf7177-04e5-e1c0-1cc9-626882457a7f",
@@ -645,6 +645,807 @@
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
       "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af02f5dc-d0b4-102d-bcf8-003048976d84",
+      "description": "Leven en werk in Bandoeng van 15 AAT. De mandieplaats voor de wagens van 15 AAT is aan de Lembangweg.",
+      "date": "1949-09-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/a24289df-b6a7-06f3-48bd-7edee1cfc749",
+      "description": "Bandoeng. In de omgeving van Bandoeng werden door de Verbindingsdienst veldoefeningen gehouden, waarbij gebruikt gemaakt werd val alle ten dienste staande middelen, als jagers en verkenningsvliegtuigen en radiosets [Ontploffing [?] [bom van vliegtuig?]]",
+      "date": "1948-11-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/7b53124a-fcc3-49ee-e1e5-cbddb95bcaf2",
+      "description": "Vrijdagmiddag, 22 oktober 1948 is de sneltrein Batavia-Bandoeng te 16.50 uur twee kilometer ten zuiden van Poerwakarta, bij Bendoel, ontspoord, doordat de rails over een afstand van twintig meter door een bende terroristen was opgebroken. Onmiddellijk na de ontsporing werd de trein door de met automatische wapens en geweren bemande bende van naar schatting vijftig man, onder vuur genomen, waardoor acht personen werden gedood en drieëntwintig gewond. Doordat met de trein een aanzienlijk aantal militairen meereisde, kon vrijwel onmiddellijk het vuur van de bende worden beantwoord. Hierdoor werd erger voorkomen. Interieur van de trein",
+      "date": "1948-10-23",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/8d9bb2c7-18d4-4765-daa1-99eb5cac1c05",
+      "description": "Vrijdagmiddag, 22 oktober 1948 is de sneltrein Batavia-Bandoeng te 16.50 uur twee kilometer ten zuiden van Poerwakarta, bij Bendoel, ontspoord, doordat de rails over een afstand van twintig meter door een bende terroristen was opgebroken. Onmiddellijk na de ontsporing werd de trein door de met automatische wapens en geweren bemande bende van naar schatting vijftig man, onder vuur genomen, waardoor acht personen werden gedood en drieëntwintig gewond. Doordat met de trein een aanzienlijk aantal militairen meereisde, kon vrijwel onmiddellijk het vuur van de bende worden beantwoord. Hierdoor werd erger voorkomen. Nog een beeld van de deerlijk gehavende rijtuigen",
+      "date": "1948-10-23",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/7ab0d309-c156-8224-1fe6-e962c64d0d45",
+      "description": "[Defilé t.g.v. verjaardag koningin Wilhelmina voor het gebouw van Verkeer en Waterstaat te Bandoeng. bijgewoond door generaal-majoor De Waal, commandant van de B-divisie",
+      "date": "1946-08-31",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/b90cabb1-3eb5-f1ed-876a-0d79515d2996",
+      "description": "Poerwakarta. Onder de fel brandende zon verricht de genie haar werk. Het bouwen van een Baileybrug op de weg van Bandoeng naar Poerwakarta",
+      "date": "1947-07-25",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefecf5c-d0b4-102d-bcf8-003048976d84",
+      "description": "In het opleidingscentrum van de Pantsertroepen te Bandung ging op 15 april het 1e verkennings-eskadron-KNIL over naar de APRIS. Veel autoriteiten, o.w. Kol J.H.M.U.L.E. Ohl en Kolonel Sadikin (APRIS) woonden de plechtigheid bij. Inspectie van de aangetreden troepen.",
+      "date": null,
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/0813bbc0-f970-1352-bb00-eec1f3a99cc4",
+      "description": "Door het Bijzonder Krijgsgerecht van de 2e Infanterie Brigade Groep te Poerwakarta werden de zaken behandeld tegen de voornaamste schuldigen van de aanslag op de spoorbaan Bandoeng-Batavia. Bij Tjikampek beschoten zij de trein toen deze was ontspoord, waardoor een vijftal personen werden gedood en een groot aantal gewonden te betreuren was. Al deze verdachten waren leden van de terreurbende SP. 88 die tot doel stelde, het plegen van sabotage- en terreurdaden en het verstoren van rust en orde in de door Nederlanders beveiligde gebieden. Dasir bin Eli was volkomen onschuldig...... en kende zijn medeverdachte Oewaste bin Asman slechts van een vluchtige kennismaking in de cel. Er waren van hem, evenals van de anderen, vroegere verklaringen van henzelf, medeverdachten en getuigen. Toch kwam zijn schuld niet vast te staan, waarom men hem verwees naar de Temporaire Krijgsraad",
+      "date": "1948-09-27",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/54f38a97-9496-9a7e-48e4-1fbd5f853f58",
+      "description": "Reproductie van een foto uit een publicatie. Titel: Toeloop vóór het Landraadsgebouw te Bandoeng, Augustus 1930, gedurende het \"P.N.I. - proces\"",
+      "date": "1930-08-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af08b95e-d0b4-102d-bcf8-003048976d84",
+      "description": "Poerwakarta. Genietroepen bezig met het bouwen van een noodbrug op de weg van Poerwakarta naar Bandoeng.",
+      "date": "1947-07-25",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefed0e2-d0b4-102d-bcf8-003048976d84",
+      "description": "In het opleidingscentrum van de Pantsertroepen te Bandung ging op 15 april het 1e verkennings-eskadron-KNIL over naar de APRIS. Veel autoriteiten, o.w. Kol J.H.M.U.L.E. Ohl en Kolonel Sadikin (APRIS) woonden de plechtigheid bij. De plechtigheid werd opgeluisterd door de muziek van de drumband van 41 RVA.",
+      "date": null,
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefbe6fc-d0b4-102d-bcf8-003048976d84",
+      "description": "Tjiwedei bij Bandoeng. De evacuatie van de TNI-troepen verloopt over het algemeen vlot. De ingeleverde wapens, hier nieuw en goed verpakt, worden ingeleverd. Een TNI-officier noteert het aantal der door zijn troep ingeleverde wapens.",
+      "date": "1948-02-09",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefdfb86-d0b4-102d-bcf8-003048976d84",
+      "description": "Zaterdagavond, 21 augustus 1948 om ongeveer 22.20 uur is in de nabijheid van de spoorbrug van Bedoel op het traject tussen Bandoeng en Poerwakarta een goederentrein door sabotage van een bende tot ontsporing gebracht. De twee locomotieven, een personenwagen en een ketelwagen stortten in een circa 15 meter diep ravijn. Vijf personen werden daarbij gedood en zeven gewond, waaronder de machinist en twee stokers. Het ongeluk, dat ongeveer vijf kilometer voor Poerwakarta gebeurde, is te wijten aan het feit, dat de rails over grote afstand waren opgebroken. Personeel van de S.S. bezig met het bergen van de lijken",
+      "date": "1948-08-22",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aef948f2-d0b4-102d-bcf8-003048976d84",
+      "description": "Bandung: De TRI is zeer capabel in het vernielen van elektrische centrales en dergelijke. I-II RI arriveerde even na vernieling van de elektrische centrale te Djambe.",
+      "date": "1947-07-26",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/1db06849-bc35-c519-c08e-3208f66c9bb3",
+      "description": "Zaterdagavond, 21 augustus 1948 om ongeveer 22.20 uur is in de nabijheid van de spoorbrug van Bedoel op het traject tussen Bandoeng en Poerwakarta een goederentrein door sabotage van een bende tot ontsporing gebracht. De twee locomotieven, een personenwagen en een ketelwagen stortten in een circa 15 meter diep ravijn. Vijf personen werden daarbij gedood en zeven gewond, waaronder de machinist en twee stokers. Het ongeluk, dat ongeveer vijf kilometer voor Poerwakarta gebeurde, is te wijten aan het feit, dat de rails over grote afstand waren opgebroken. Een overzicht van de grote ravage",
+      "date": "1948-08-22",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/91ff88b8-9d60-743e-b369-cc623ff7c915",
+      "description": "[Defilé t.g.v. verjaardag koningin Wilhelmina voor het gebouw van Verkeer en Waterstaat te Bandoeng. bijgewoond door generaal-majoor De Waal, commandant van de B-divisie",
+      "date": "1946-08-31",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/f7f64b98-f6db-048c-d7ce-1644f01d1f69",
+      "description": "[LTD hoofdwerkplaats 81 te Bandoeng?] Onderhoud aan vrachtwagens",
+      "date": "1946-01-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/c72322dd-12ee-9dbc-65eb-c08aaca03644",
+      "description": "[oorkonde aangeboden aan de Commandant 1e Divisie 7 December generaal-majoor H.J.J.W. Dürst Britt door de dienstplichtigen van het stafkwartier van de divisie, na de estafetteloop door Bandoeng, ter gelegenheid van de herdenking van het 2-jarig verblijf onder de wapenen",
+      "date": "1948-05-05",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/be027e27-4a43-1010-6cb1-5da421a90de7",
+      "description": "Als onderdeel van de selectie, die de kandidaten voor de officiers-opleiding van de SROI te Bandung ondergaan, worden in groepsverband allerlei opdrachten uitgevoerd. Deze selectie wordt verricht door de Psychologische Dienst, waarvan het Officiers-Selectiecentrum deel uitmaakte.",
+      "date": "1948-04-05",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/ea8c5fce-4fd9-b355-b971-b14c9d43d909",
+      "description": "Tjiwedé bij Bandoeng. De evacuatie van de TNI-troepen verloopt over het algemeen vlot. De ingeleverde wapens, hier nieuw en goed verpakt, worden gecontroleerd",
+      "date": "1948-02-09",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af08a28e-d0b4-102d-bcf8-003048976d84",
+      "description": "Bandoeng sector 26-7. Twintig minuten na de bezetting van Djalantjaguk (zuid van Soebang) komt de inheemse bevolking reeds terug. Sergeant Bill Obert uit Haarlem en sergeant Van 't Hag uit Almelo knopen meteen onderhandelingen aan over de aankoop van kippen. Een sigaretje om de stemming gunstig te beinvloeden mag er wel bij.",
+      "date": "1947-07-26",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af02f69a-d0b4-102d-bcf8-003048976d84",
+      "description": "Leven en werk in Bandoeng van 15 AAT. Smeed het ijzer als het heet is.",
+      "date": "1949-09-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af0627de-d0b4-102d-bcf8-003048976d84",
+      "description": "Opnamen gemaakt tijdens een konvooi-rit door West-Java. Deze ritten worden gemaakt door de 15e A.A.T. uit Bandoeng. Een kijkje op het konvooi tijdens een oponthoud op weg naar Tjiandjoer.",
+      "date": "1949-09-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aef966de-d0b4-102d-bcf8-003048976d84",
+      "description": "Cheribon: Het plaatsje Legok op de weg van Bandung naar Cheribon werd zonder enige moeite genomen.",
+      "date": "1947-07-27",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/137aee46-4001-e220-cb8e-da974af082e0",
+      "description": "Door het Bijzonder Krijgsgerecht van de 2e Infanterie Brigade Groep te Poerwakarta werden de zaken behandeld tegen de voornaamste schuldigen van de aanslag op de spoorbaan Bandoeng-Batavia. Bij Tjikampek beschoten zij de trein toen deze was ontspoord, waardoor een vijftal personen werden gedood en een groot aantal gewonden te betreuren was. Al deze verdachten waren leden van de terreurbende SP. 88 die tot doel stelde, het plegen van sabotage- en terreurdaden en het verstoren van rust en orde in de door Nederlanders beveiligde gebieden. Dasir bin Eli was volkomen onschuldig...... en kende zijn medeverdachte Oewaste bin Asman slechts van een vluchtige kennismaking in de cel. Er waren van hem, evenals van de anderen, vroegere verklaringen van henzelf, medeverdachten en getuigen. Toch kwam zijn schuld niet vast te staan, waarom men hem verwees naar de Temporaire Krijgsraad",
+      "date": "1948-09-27",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af06fb78-d0b4-102d-bcf8-003048976d84",
+      "description": "Eerste Ned. auto-konvooi Batavia-Bandoeng. De puinhopen van Zuid-Bandoeng van een weverij, maar de Holl. vlag wappert strak in de bergwind.",
+      "date": null,
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af026874-d0b4-102d-bcf8-003048976d84",
+      "description": "De vliegdemonstraties, op zondag 3 juli op het vliegveld Andir bij Bandung gehouden worden, hadden een enorm succes. Onder de grote menigte van ongeveer dertigduizend toeschouwers bevond zich de HVK. de wnd. legercommandant, de voorzitter van het parlement Pasoendan en verscheidene burger- en militaire autoriteiten. Na de zweefdemonstraties onderhoudt de HVK. zich met de zweefenthousiasten.",
+      "date": "1949-07-03",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af00a99e-d0b4-102d-bcf8-003048976d84",
+      "description": "Generaal-Majoor E. Engles verlaat de Bandoengse Kathedraal na het bijwonen van de Heilige Mis, die opgedragen is ter ere van de gevallenen van de 7 december divisie.",
+      "date": "1948-12-07",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefdc940-d0b4-102d-bcf8-003048976d84",
+      "description": "Zaterdagavond, 28 augustus 1948. werd in de biljartzaal van Koningin wilhelmina-club te Batavia een fototentoonstelling geopend door luit-kol. M.F. Stenger, hoofd van de Dienst Welzijnsverzorging. De tentoonstelling toont de bekroonde inzendingen van de kortelings gehouden \"Jubileum- en Kroningsfotowedstrijd\", georganiseerd door de sectie fotografie. Deze foto's zijn opgenomen in zeven fraaie albums, die werden vervaardigd door patienten in de hospitalen te Batavia, Bandoeng en Padang. Met oud-minister L. Neher bewondert de legercommandant de artistiek uitgevoerde albums. Op de achtergrond (midden) de organisator van de tentoonstelling, kapt. Ir. van Berckel.",
+      "date": "1948-08-28",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af0626e4-d0b4-102d-bcf8-003048976d84",
+      "description": "Opnamen gemaakt tijdens een konvooi-rit door West-Java. Deze ritten worden gemaakt door de 15e A.A.T. uit Bandoeng. Onderweg zien de chauffeurs de prachtige vergezichten. Links op de voorgrond de terrasvormige sawahs.",
+      "date": "1949-09-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/d51dd769-4436-16bd-25b6-67ec8f755ef1",
+      "description": "Zaterdagavond, 21 augustus 1948 om ongeveer 22.20 uur is in de nabijheid van de spoorbrug van Bedoel op het traject tussen Bandoeng en Poerwakarta een goederentrein door sabotage van een bende tot ontsporing gebracht. De twee locomotieven, een personenwagen en een ketelwagen stortten in een circa 15 meter diep ravijn. Vijf personen werden daarbij gedood en zeven gewond, waaronder de machinist en twee stokers. Het ongeluk, dat ongeveer vijf kilometer voor Poerwakarta gebeurde, is te wijten aan het feit, dat de rails over grote afstand waren opgebroken. Personeel van de S.S. bezig met het bergen van de lijken",
+      "date": "1948-08-22",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/dee6e0d2-0c6b-b3be-d206-75f9a19caebe",
+      "description": "[Defilé t.g.v. verjaardag koningin Wilhelmina voor het gebouw van Verkeer en Waterstaat te Bandoeng. bijgewoond door generaal-majoor De Waal, commandant van de B-divisie",
+      "date": "1946-08-31",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aef70074-d0b4-102d-bcf8-003048976d84",
+      "description": "Commando overdracht. In het opleidingscentrum van de Pantsertroepen te Bandung ging op 15 april het 1e verkennings-eskadron-KNIL over naar de APRIS. Veel autoriteiten, w.o. Kol. J.H.M.U.L.E.Ohl en Kolonel Sadikin (APRIS) woonden de plechtigheid bij. De overdrachtsplechtigheid wed besloten door een defile Parade der gemotoriseerde eenheden.",
+      "date": "1950-04-15",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/70c3ae9f-0f08-40f4-8f3b-142745aba8a0",
+      "description": "Op donderdag 1 april 1948 arriveerde per \"Volendam\" een contingent van 127 soldaten van de Barisan Pengawal van de negara Soematera Timoer. Zij waren in Medan aan boord gekomen en op weg naar de Prins Bernhard Kaderschool in Tjimahi om daar een verdere opleiding te krijgen en ev. door te gaan naar de School Reserve-Officieren in Bandung.",
+      "date": "1948-04-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/f35893e8-1d9a-0842-6719-e2bf4d839281",
+      "description": "Zaterdagavond, 21 augustus 1948 om ongeveer 22.20 uur is in de nabijheid van de spoorbrug van Bedoel op het traject tussen Bandoeng en Poerwakarta een goederentrein door sabotage van een bende tot ontsporing gebracht. De twee locomotieven, een personenwagen en een ketelwagen stortten in een circa 15 meter diep ravijn. Vijf personen werden daarbij gedood en zeven gewond, waaronder de machinist en twee stokers. Het ongeluk, dat ongeveer vijf kilometer voor Poerwakarta gebeurde, is te wijten aan het feit, dat de rails over grote afstand waren opgebroken. Een overzicht van de grote ravage",
+      "date": "1948-08-22",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aef8f7a8-d0b4-102d-bcf8-003048976d84",
+      "description": "Bandung. Soebang is nauwelijks een uur bezet of dokter Breetvelt en chirurg Ort van de W-Brigade hebben hun hulpverbandplaats ingericht. Vol ijver wordt de eerste klant (een gebroken pootje) door de directeur zelve een gipsverband aangelegd.",
+      "date": "1947-07-25",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af057190-d0b4-102d-bcf8-003048976d84",
+      "description": "Bandoeng: In het Insulindepark te Bandoeng werd de 2e lt. van het VK-KNIL, D.M. Sturm beedigd. Bij deze plechtigheid waren vele militaire autoriteiten aanwezig. Voor het front van de troep legt lt. Sturm met de linkerhand aan de vlag de eed af in handen van haar commandante kapt. H.C.P.W. Janssen.",
+      "date": "1948-09-30",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefc2fd6-d0b4-102d-bcf8-003048976d84",
+      "description": "Cheribon. De weg naar Bandoeng is slecht en de jongens van de 7e Cie. A.A.T., die deze weg dagelijks berijden, vonden dat er maar eens wat aan gedaan moest worden. Dus togen zij aan het werk en ofschoon met gebrekkige middelen, vorderen ze dagelijks 150 m. Sergt. Albertus uit Vught houdt toezicht op het uitscheppen van het steenslag.",
+      "date": "1948-02-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/f2a226c5-30bb-53a5-6fcc-36a9db48f14a",
+      "description": "Generaal-Majoor E. Engles verlaat de Bandoengse Kathedraal na het bijwonen van de Heilige Mis, die opgedragen is ter ere van de gevallenen van de 7 december divisie.",
+      "date": "1948-12-07",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/47b13de7-5764-cc84-ba71-ded085d0516b",
+      "description": "Generaal-majoor E. Engles verlaat de Bandoengse kathedraal na het bijwonen van de Heilige Mis, die opgedragen is ter ere van de gevallenen van de 7 December Divisie",
+      "date": "1948-12-07",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/67801a3a-4575-7488-cecc-027c78ff1446",
+      "description": "Linggadjati: Vooral in de bergstreken oefenen de sluipschutters hun beroep uit. Een colonne op weg naar Cheribon werd buiten Bandung onder vuur genomen. In het hospitaal Tjideres worden de gewonden verzorgd.",
+      "date": "1947-07-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aeeb0648-d0b4-102d-bcf8-003048976d84",
+      "description": "Het postkantoor in Bandoeng met de teksten We Fight Against Tyranny / Let Freedom Ring for Indonesia / Respect Our Constitution",
+      "date": "1946-04-01",
+      "collection": "Foto's Nationaal Archief",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/d0d7980c-33c3-803a-42f8-5e2c34de23c1",
+      "description": "Tjikampek: In de middag van 23 juni derailleerde als gevolg van sabotage aan de lijn, de trein Batavia-Bandung. Onmiddellijk na d ontsporing werd de trein door een met vuurwapenen uitgeruste bende beschoten, met als gevolg verschillende doden en gewonden. Vrijwel onmiddellijk na het ongeluk trokken bergingsploegen uit, om het baanvak dat over een lengte van 1km was opgebroken, te herstellen. Het opruimingswerk in volle gang.",
+      "date": "1948-06-24",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aef674e2-d0b4-102d-bcf8-003048976d84",
+      "description": "Op 16 febr. droeg generaal-majoor Engles in tegenwoordigheid van de Staatssecretaris van Oorlog, mr. Foekema Andrea en Luitenant-Generaal Buurman van Vreeden op het Stafkwartier West-Java te Bandoeng het commando over aan Kolonel J.H.M.U.L.E. Ohl. De commandant van de Nederlandse Legerstrijdkrachten tijdens zijn toespraak tot Engles en Ohl.",
+      "date": "1950-02-16",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/a0d5bdb7-c7bd-bd06-b905-a7702e840d51",
+      "description": "Gombong: Te Gombong werden 8 KNIL-officieren, ingedeeld bij Inf. V (Andjing Nica) beedigd. De nieuwbenoemde officieren (de TLTS. Bolsjes, Kok en v.d. Zee) zijn de eerste naoorlogse leerlingen van de SROI te Bandoeng.",
+      "date": "1948-02-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/e6cbe83c-2a24-4853-2fef-80725bc5bdc8",
+      "description": "Banjoemas. Het 2-jarig bestaan van 1-5 R.I. werd te Poerwokerto gevierd met een grote \"Boeaja\" kermis. De opbrengst was bestemd voor het V-brigade fonds ter ondersteuning van de oorlogsinvaliden van de V-brigade. De gooi- en smijttent werd druk bezocht, want onder de prijzen bevonden zich weekend verloven naar Bandoeng.",
+      "date": "1947-09-30",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aef6faca-d0b4-102d-bcf8-003048976d84",
+      "description": "Commando overdracht. In het opleidingscentrum van de Pantsertroepen te Bandung ging op 15 april het 1e verkennings-eskadron-KNIL over naar de APRIS. Veel autoriteiten, w.o. Kol. J.H.M.U.L.E.Ohl en Kolonel Sadikin (APRIS) woonden de plechtigheid bij. Lt.Kol. W.J. Romswinckel, het Hoofd van het Wapenkantoor der Pantsertroepen sprak de troepen toe.",
+      "date": null,
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af0195e8-d0b4-102d-bcf8-003048976d84",
+      "description": "Mw. De Bievre-Schippers, echtgenote van de directeur van het Philips concern in Indonesie, nodigt elke maand een groep militairen uit om in haar villa aan de Lembangweg te Bandoeng een paar dagen eens te bekomen van de dagelijkse beslommeringen. \"Er waren er ook die deze dag eens in zoete rust wilden slijten\".",
+      "date": "1949-02-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefd2abc-d0b4-102d-bcf8-003048976d84",
+      "description": "Wellicht heeft een gewoon Amsterdams pierement zich nog nooit zo in de algemene belangstelling mogen verheugen als dit draaiorgel, dat de jubileumfeesten te Bandoeng met zijn vibrerende klanken opluisterde. Helaas, een paar dagen daarna, is bij een brand in de goedang van de Welzijnsverzorging te Bandoeng het orgel beschadigd.",
+      "date": "1948-08-31",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/d2e403c7-cbf2-fc05-fc19-397ee20e13da",
+      "description": "Banjoemas. Het 2-jarig bestaan van 1-5 R.I. werd te Poerwokerto gevierd met een grote \"Boeaja\" kermis. De opbrengst was bestemd voor het V-brigade fonds ter ondersteuning van de oorlogsinvaliden van de V-brigade. bevonden zich weekend verloven naar Bandoeng.",
+      "date": "1947-09-30",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefa274a-d0b4-102d-bcf8-003048976d84",
+      "description": "Tjikampek: In de middag van 23 juni derailleerde als gevolg van sabotage aan de lijn, de trein Batavia-Bandung. Onmiddellijk na d ontsporing werd de trein door een met vuurwapenen uitgeruste bende beschoten, met als gevolg verschillende doden en gewonden. Vrijwel onmiddellijk na het ongeluk trokken bergingsploegen uit, om het baanvak dat over een lengte van 1km was opgebroken, te herstellen. Het opruimingswerk in volle gang.",
+      "date": "1948-06-24",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/84cf0478-9245-25a4-1349-fba998ae1949",
+      "description": "Door het bijzonder Krijgsgerecht van de de 2e Inf.Brig. Groep te Poerwakarta werden de zaken behandeld tegen de voornaamste schuldigen van de aanslag op de spoorbaan Bandoeng-Batavia, bij Tjikompek; het beschieten van de trein toen deze was ontspoord, waardoor een vijftal personen werden gedood en een groot aantal gewonden te betreuren waren. Al deze verdachten waren leden van de terreurbende SP 88, die zich tot doel stelde het plegen van sabotage- en terreurdaden en het verstoren van rust en orde in de door Nederlanders beveiligde gebieden. Darja bin Sarta, een van de voornaamste schuldigen, werd ter dood veroordeeld",
+      "date": "1948-09-27",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af019782-d0b4-102d-bcf8-003048976d84",
+      "description": "Mw. De Bievre-Schippers, echtgenote van de directeur van het Philips concern in Indonesie, nodigt elke maand een groep militairen uit om in haar villa aan de Lembangweg te Bandoeng een paar dagen eens te bekomen van de dagelijkse beslommeringen. Mw. De Bievre-Schippers temidden van haar gasten, onopvallend, gewoon, hartelijk, gezellig.",
+      "date": "1949-02-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/3f6007f3-fb61-1cb9-a599-7e025af9beba",
+      "description": "Verkiezingen op Java...... In de dessa Tjoblong, onder de rook van Bandoeng alles in het teken van de stembus. Er moest een nieuwe loerah (dorpshoofd) komen, door de bevolking zelf gekozen. Bij de telling leeft ieder intens mee",
+      "date": "1948-10-10",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefe3416-d0b4-102d-bcf8-003048976d84",
+      "description": "Bandoeng. In aanwezigheid van tal van militaire autoriteiten werd de Centrale L.T.D.-school te Tjimahi geopend. Maj.Ir. Wurfbain, Commandant van de school spreekt de openingsrede uit.",
+      "date": "1948-07-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/df672357-8f9d-34ed-1e33-94e6ea0e66a7",
+      "description": "Gombong: Te Gombong werden 8 KNIL-officieren, ingedeeld bij Inf. V (Andjing Nica) beedigd. De nieuwbenoemde officieren (de TLTS. Bolsjes, Kok en v.d. Zee) zijn de eerste naoorlogse leerlingen van de SROI te Bandoeng.",
+      "date": "1948-02-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/ade2abe8-d0b4-102d-bcf8-003048976d84",
+      "description": "Landschap bij Bandoeng. Op de achtergrond een vulkaan",
+      "date": "1946-01-01",
+      "collection": "Fotocollectie Elsevier",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/9746db0a-a78c-6ab0-64a8-c4017bb35074",
+      "description": "Ontspanningsoord \"De Rustende Strijder\" te Bandoeng. Militairen zitten op een veranda",
+      "date": "1950-06-30",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/be6d936a-dcf1-5422-ec16-563aae9eabeb",
+      "description": "Onthulling van het monument voor de onbekende soldaat en de onbekende burger op het Ereveld Pandoe te Bandoeng. Generaal-majoor E. Engles legt een krans",
+      "date": "1949-05-04",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/4e0d4171-aca7-fcf6-085c-096869e9da99",
+      "description": "[LTD hoofdwerkplaats 81 te Bandoeng?] Ingang van het complex",
+      "date": "1946-01-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/a5b5f07c-2d50-e882-c252-11c3e2477d01",
+      "description": "Tjandjoer: De trein Soekaboemi - Bandoeng heeft voor de locomotief een platte wagen gekoppeld waarop de treinbeveiliging een plaats vindt. \"Altijd beter dan lopen\", is het oordeel van de jongens, die voor deze dienst zijn aangewezen.",
+      "date": "1948-01-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/67af9aa5-6336-5ae1-5480-9257f99cff32",
+      "description": "Vrijdagmiddag, 22 oktober 1948 is de sneltrein Batavia-Bandoeng te 16.50 uur twee kilometer ten zuiden van Poerwakarta, bij Bendoel, ontspoord, doordat de rails over een afstand van twintig meter door een bende terroristen was opgebroken. Onmiddellijk na de ontsporing werd de trein door de met automatische wapens en geweren bemande bende van naar schatting vijftig man, onder vuur genomen, waardoor acht personen werden gedood en drieëntwintig gewond. Doordat met de trein een aanzienlijk aantal militairen meereisde, kon vrijwel onmiddellijk het vuur van de bende worden beantwoord. Hierdoor werd erger voorkomen. Overzicht van de ravage",
+      "date": "1948-10-23",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefbdf90-d0b4-102d-bcf8-003048976d84",
+      "description": "Bandoeng: Op het ereveld aan de Parkweg te Bandoeng worden onder grote belangstelling de stoffelijke resten van de bij de vliegramp te Padalarang omgekomen NIWA-artiesten en militairen, met militaire eer ter aarde besteld. De aankomst op het kerkhof.",
+      "date": "1948-02-12",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/2916e155-ba59-bf72-299f-69741e3c03d0",
+      "description": "Blussen van een brand in een verwoest Bandoeng",
+      "date": "1946-01-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af00d6e4-d0b4-102d-bcf8-003048976d84",
+      "description": "In de ochtend van 13 december gleed tijdens een vliegoefening in de buurt van Bandoeng, een jachtvliegtuig, van het type P-40, af en stortte neer op het restaurant de Almanak in Bandoeng, waar zich op dat uur talrijke bezoekers bevonden. De aangerichte ravage was ontzettend. De bestuurder van het toestel verloor het leven, terwijl een KL-officier en enige burgers zwaar en licht werden gewond. Onmiddellijk na de ramp begon men met het reddingswerk. Een overzichtsfoto van de reddingswerkzaamheden.",
+      "date": "1948-12-13",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefcf808-d0b4-102d-bcf8-003048976d84",
+      "description": "Vrijdagmiddag, 22 oktober 1948 is de sneltrein Batavia-Bandoeng te 16.50 uur 2 km. ten zuiden van Poerwakarta bij Bendoel ontspoord, doordat de rails over een afstand van 20 meter door een bende terroristen was opgebroken. Onmiddellijk na de ontsporing werd de trein door de met automatische wapens en geweren bewapende bende van naar schatting 50 man, onder vuur genomen, waardoor 8 personen werden gedood en 23 gewond. Doordat met de trein een aanzienlijk aantal militairen meereisden, kon vrijwel onmiddellijk het vuur van de bende worden beantwoord. Hierdoor werd erger voorkomen. Overzicht van de ontspoorde wagons. Het grote lichtgekleurde rijtuig is nieuwe slaapwagen, pas uit Nederland aangekomen.",
+      "date": "1948-10-23",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aeeb04cc-d0b4-102d-bcf8-003048976d84",
+      "description": "Bord langs de weg in Bandoeng met de tekst: We want to keep Indonesia Free and Prosperous",
+      "date": "1946-04-01",
+      "collection": "Foto's Nationaal Archief",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/a5722494-0111-452f-c945-e0b2b3a86e95",
+      "description": "Gombong: Te Gombong werden 8 KNIL-officieren, ingedeeld bij Inf. V (Andjing Nica) beedigd. Tijdens de eedsaflegging. De nieuwbenoemde officieren (de TLTS. Bolsjes, Kok en v.d. Zee) zijn de eerste naoorlogse leerlingen van de SROI te Bandoeng.",
+      "date": "1948-02-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefdc6e8-d0b4-102d-bcf8-003048976d84",
+      "description": "Zaterdagavond, 28 augustus 1948. werd in de biljartzaal van Koningin wilhelmina-club te Batavia een fototentoonstelling geopend door luit-kol. M.F. Stenger, hoofd van de Dienst Welzijnsverzorging. De tentoonstelling toont de bekroonde inzendingen van de kortelings gehouden \"Jubileum- en Kroningsfotowedstrijd\", georganiseerd door de sectie fotografie. Deze foto's zijn opgenomen in zeven fraaie albums, die werden vervaardigd door patienten in de hospitalen te Batavia, Bandoeng en Padang. Mevrouw en generaal Spoor in gesprek met de vertegenwoordiger van de minister van Overzeese Gebiedsdelen in de Niwin, de heer A. van Velsen, Zoals begrijpelijk, heeft de Niwin in het slagen van de fotowedstrijd een zeer belangrijk aandeel gehad.",
+      "date": "1948-08-28",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af047358-d0b4-102d-bcf8-003048976d84",
+      "description": "Bandoeng. Op 7 maart 1948 vond de officiele opening van het Ereveld Pandoe plaats in tegenwoordigheid van de Legercommandant en diens echtgenote en diverse andere autoriteiten. Aankomst van Generaal Spoor in gezelschap van zijn echtgenote en Generaal-Majoor de Quant. Kranslegging door Generaal Spoor",
+      "date": "1948-03-07",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/c3e43853-0719-32b9-f089-84f1044d98de",
+      "description": "Bandoeng: Korporaal Joep Handels uit Kerkrade en Jan de Blom uit Den Haag bezig met het onderhoud van hun houwitser. Het sluitstuk wordt in het vet gezet.",
+      "date": "1947-10-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af0576ea-d0b4-102d-bcf8-003048976d84",
+      "description": "Bandoeng: De rekrutentijd in de koele bergstad Bandoeng bestaat voor de nieuwe leden van het VK-KNIL voor een groot gedeelte uit exercitie. Wanneer ze de \"basistraining\" achter de rug hebben, worden de meisjes bij verschillende diensten geplaatst als secretaresse, terwijl anderen voor het rollend materiaal opgeleid worden. In de koffiepauze maken Ton Hendriks uit Zaandam (links) en Marie Therese Noel uit Roermond een praatje met instructeur sgt.maj. v.d. Heyde.",
+      "date": "1948-09-30",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/73a31d78-7c8a-e081-393c-394f6000ab84",
+      "description": "[Defilé t.g.v. verjaardag koningin Wilhelmina voor het gebouw van Verkeer en Waterstaat te Bandoeng. bijgewoond door generaal-majoor De Waal, commandant van de B-divisie",
+      "date": "1946-08-31",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af030d74-d0b4-102d-bcf8-003048976d84",
+      "description": "Halverwege de weg Malangbong-Tjiawi (West-Java) ligt een post van 1-8 RVA. Op de weg van Malangbong is behalve de afstanden naar Bandoeng en Garoet voor zekerheidshalve op de richtingaanwijzer de afstand naar \"Bronbeek\" ook nog aangegeven.",
+      "date": "1949-10-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefd4b64-d0b4-102d-bcf8-003048976d84",
+      "description": "Door het bijzonder Krijgsgerecht van de de 2e Inf.Brig. Groep te Poerwakarta werden de zaken behandeld tegen de voornaamste schuldigen van de aanslag op de spoorbaan Bandoeng-Batavia, bij Tjikompek; het beschieten van de trein toen deze was ontspoord, waardoor een vijftal personen werden gedood en een groot aantal gewonden te betreuren waren. Al deze verdachten waren leden van de terreurbende SP 88, die zich tot doel stelde het plegen van sabotage- en terreurdaden en het verstoren van rust en orde in de door Nederlanders beveiligde gebieden. Salim bin Bojo, een der verdachten kreeg twintig jaar.",
+      "date": "1948-09-27",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/2b7443e1-7543-3cb9-147d-7423dcc48151",
+      "description": "Bandoeng: Op het ereveld aan de Parkweg te Bandoeng worden onder grote belangstelling de stoffelijke resten van de bij de vliegramp te Padalarang omgekomen NIWA-artiesten en militairen, met militaire eer ter aarde besteld.",
+      "date": "1948-02-12",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/f3b2d58c-2466-5890-26c8-c79e41ca20b5",
+      "description": "Vrijdagmiddag, 22 oktober 1948 is de sneltrein Batavia-Bandoeng te 16.50 uur twee kilometer ten zuiden van Poerwakarta, bij Bendoel, ontspoord, doordat de rails over een afstand van twintig meter door een bende terroristen was opgebroken. Onmiddellijk na de ontsporing werd de trein door de met automatische wapens en geweren bemande bende van naar schatting vijftig man, onder vuur genomen, waardoor acht personen werden gedood en drieëntwintig gewond. Doordat met de trein een aanzienlijk aantal militairen meereisde, kon vrijwel onmiddellijk het vuur van de bende worden beantwoord. Hierdoor werd erger voorkomen. Hier de kogelgaten",
+      "date": "1948-10-23",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af00d3d8-d0b4-102d-bcf8-003048976d84",
+      "description": "In de ochtend van 13 december gleed tijdens een vliegoefening in de buurt van Bandoeng, een jachtvliegtuig, van het type P-40, af en stortte neer op het restaurant de Almanak in Bandoeng, waar zich op dat uur talrijke bezoekers bevonden. De aangerichte ravage was ontzettend. De bestuurder van het toestel verloor het leven, terwijl een KL-officier en enige burgers zwaar en licht werden gewond. Onmiddellijk na de ramp begon men met het reddingswerk. Een opname van de ravage, die in het restaurant De Almanak werd aangericht.",
+      "date": "1948-12-13",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af076950-d0b4-102d-bcf8-003048976d84",
+      "description": "De mannen van Overijssel op Java. In de omgeving van Bandoeng ligt het eerste bataljon II RI. Deze mannen zijn merendeels afkomstig uit Overijssel. Zij doen hun plicht, hun dienst is zwaar, maar zijn begrijpen de noodzaak en dit maakt het voor hen licht.",
+      "date": null,
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/97843798-200f-5ed2-2e18-b54f7150d7d8",
+      "description": "Er heerst in de hoek Tjikampek, Poerwakarta en Pagadan Baroe nog steeds onrust. Terroristen vernielen en verbranden de bezittingen van de burgerbevolking, hierdoor trachten ze het Nederlandse gezag te ondermijnen. Ook ontzagen zij zich niet de trein Batavia-Bandoeng door het opbreken van de rails te laten ontsporen en daarop te beschieten, waardoor enige slachtoffers te betreuren waren. Verder ontstond er grote schade aan materieel. Een kijkje in een van de vernielde wagons, nadat de trein naar Tjikampek was versleept",
+      "date": "1948-07-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/ffa59061-3613-d901-22cf-dad545a3d793",
+      "description": "Vrijdagmiddag, 22 oktober 1948 is de sneltrein Batavia-Bandoeng te 16.50 uur twee kilometer ten zuiden van Poerwakarta, bij Bendoel, ontspoord, doordat de rails over een afstand van twintig meter door een bende terroristen was opgebroken. Onmiddellijk na de ontsporing werd de trein door de met automatische wapens en geweren bemande bende van naar schatting vijftig man, onder vuur genomen, waardoor acht personen werden gedood en drieëntwintig gewond. Doordat met de trein een aanzienlijk aantal militairen meereisde, kon vrijwel onmiddellijk het vuur van de bende worden beantwoord. Hierdoor werd erger voorkomen. Overzicht van de ontspoorde wagons",
+      "date": "1948-10-23",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/7586a9c0-a092-b8b5-fc63-1293bf74d059",
+      "description": "Bandoeng: Op het ereveld aan de Parkweg te Bandoeng worden onder grote belangstelling de stoffelijke resten van de bij de vliegramp te Padalarang omgekomen NIWA-artiesten en militairen, met militaire eer ter aarde besteld.",
+      "date": "1948-02-12",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefbe4c2-d0b4-102d-bcf8-003048976d84",
+      "description": "Tjiwedei bij Bandoeng. De registratie van de TNI-troepen verloopt over het algemeen vlot. Na registratie en inlevering van wapens wordt aangetreden, waarna met legertrucks de reis naar Republikeins gebied wordt aangevangen.",
+      "date": "1948-02-09",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefed678-d0b4-102d-bcf8-003048976d84",
+      "description": "In het opleidingscentrum van de Pantsertroepen te Bandung ging op 15 april het 1e verkennings-eskadron-KNIL over naar de APRIS. Veel autoriteiten, o.w. Kol J.H.M.U.L.E. Ohl en Kolonel Sadikin (APRIS) woonden de plechtigheid bij. De nieuwe eskadron-commandant is kapitein Manoppo.",
+      "date": null,
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/dca41283-98a1-187a-4c6c-e235de4d3c80",
+      "description": "Onlangs zijn in verschillende groepen 400 Sundanezen die in de bersiap-tijd naar Djocja waren weggevoerd, naar hun geboorteland teruggekeerd. Zij zijn tijdelijk ondergebracht in een tentenkamp op het fabrieksterrein van hun vroegere werkgever, de Leger Productie Bedrijven te Bandung. De tenten liggen netjes op een rij met zelfs echte straten er tussen. De evacuees waren hier al gauw gewend en na enkele dagen hing de dagelijkse was al weer langs de straten te drogen",
+      "date": "1949-03-26",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefe3344-d0b4-102d-bcf8-003048976d84",
+      "description": "Bandoeng. In aanwezigheid van tal van militaire autoriteiten werd de Centrale L.T.D.-school te Tjimahi geopend. Als vertegenwoordiger van het Directoraat Centrale Opleidingen sprak Kolonel Kroeze, directeur van de L.T.D.",
+      "date": "1948-07-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aef50ac6-d0b4-102d-bcf8-003048976d84",
+      "description": "Krijgsgevangenen in \"Glodok\". Een achttal Indische deserteurs en twee Japanners, die tijdens de acties op Java door de Nederlandse troepen gevangen genomen zijn, werd naar de gevangenis te Glodok overgebracht. V.l.n.r. staande: Satjoeddin Khan (gevangen genomen te Cheribon, vroeger behorende tot 161 G.P.T. 2 M.T. Regt.10e.Div.),Mahindar Sing (Bandoeng, 2nd Comouni Regt.49 Brig. 23 Div.), Michael (Dajeuhkolot, 49 Brig. Signal Section 23 Div.), Mohamad Sidik (Cheribon, 2nd Comouni Regt. 49 Brig. 23 Div.) Sidik, (Cheribon, 203. Motor Ambulance 15 H.Q.). Hurkend van l.n.r.: de Japanner Sakano Susumu (Soemedang), de Japanner Kusaka Seizo (Soemedang), Fazaldad Khan (Cheribon, 58 Punjab 23 Div.), Ganaksandar (Cheribon, 558 Workshop 15 H.Q.) Soeleiman (Pegaden Baroe, 15 H.Q.)",
+      "date": "1947-08-22",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af05a02a-d0b4-102d-bcf8-003048976d84",
+      "description": "Ondanks het herhaaldelijk sturen van kantinewagens door de burgerij in Nederland, blijkt het aantal nu na de actie toch nog te klein te zijn om alle posten in de uitgestrekte gebieden te kunnen verzorgen. Hier en daar maken de militairen zelf, door het opknappen en inrichten van een oude wagen, dat er toch een kantinewagen op de buitenposten kan verschijnen. Op bezoek bij de grenadiers. Eerste klas O.V.W. van Lingen uit Bandoeng en van der Donk uit Utrecht drinken een zuurzakje op de gezondheid van de huzaren.",
+      "date": null,
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/ade7071a-d0b4-102d-bcf8-003048976d84",
+      "description": "Serie \"Het industriële herstel van Bandoeng\". [foto 1] Indonesische Textielfabriek (annex limonadefabriek en rijstpellerij) \"Perboe\", die door Indonesische extremisten werd verwoest",
+      "date": "1946-01-01",
+      "collection": "Fotocollectie Elsevier",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefc5952-d0b4-102d-bcf8-003048976d84",
+      "description": "Cheribon. De weg naar Bandoeng is slecht en de jongens van de 7e Cie A.A.T., die deze weg dagelijks berijden, vonden dat er maar eens wat aan gedaan moest worden. Dus togen zij aan het werk en ofschoon met gebrekkige middelen, vorderen ze dagelijks 150 m. Sergt. Albertus uit Vught houdt toezicht op het uitscheppen van het steenslag.",
+      "date": "1948-02-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aeeb11c4-d0b4-102d-bcf8-003048976d84",
+      "description": "Ruïne van een huis in Bandoeng",
+      "date": "1946-04-01",
+      "collection": "Foto's Nationaal Archief",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/2b1a81bf-481d-07ed-dd88-1bd7f5c6331a",
+      "description": "Bandoeng: Rekruten van Pao An Tui in opleiding. Sergeant Wellaerd ut Clingen verklaart de werking van het geweer.",
+      "date": "1947-10-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/eb486cca-c3cc-474e-645b-c13c2aff6b1d",
+      "description": "Tjikampek: In de middag van 23 juni derailleerde als gevolg van sabotage aan de lijn, de trein Batavia-Bandung. Onmiddellijk na d ontsporing werd de trein door een met vuurwapenen uitgeruste bende beschoten, met als gevolg verschillende doden en gewonden. Vrijwel onmiddellijk na het ongeluk trokken bergingsploegen uit, om het baanvak dat over een lengte van 1km was opgebroken, te herstellen. Het opruimingswerk in volle gang.",
+      "date": "1948-06-24",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aef55558-d0b4-102d-bcf8-003048976d84",
+      "description": "Bandoeng: Rekruten van Pao An Tui worden door hun instructeurs geinspecteerd.",
+      "date": "1947-09-04",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/665655c2-3a20-a288-1503-18d399a5185b",
+      "description": "Vrijdagmiddag, 22 oktober 1948 is de sneltrein Batavia-Bandoeng te 16.50 uur twee kilometer ten zuiden van Poerwakarta, bij Bendoel, ontspoord, doordat de rails over een afstand van twintig meter door een bende terroristen was opgebroken. Onmiddellijk na de ontsporing werd de trein door de met automatische wapens en geweren bemande bende van naar schatting vijftig man, onder vuur genomen, waardoor acht personen werden gedood en drieëntwintig gewond. Doordat met de trein een aanzienlijk aantal militairen meereisde, kon vrijwel onmiddellijk het vuur van de bende worden beantwoord. Hierdoor werd erger voorkomen. Overzicht van de ontspoorde wagons",
+      "date": "1948-10-23",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefc0eb6-d0b4-102d-bcf8-003048976d84",
+      "description": "Bandoeng: Te Bandoeng werd de Bronzen Leeuw uitgereikt aan v.l.n.r.: Kapt. C.L. Halewijn, majoor G.A.C. Monteiro en kapt. Th de Winter (ten tweede male).",
+      "date": "1948-02-07",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefd7120-d0b4-102d-bcf8-003048976d84",
+      "description": "Door het Bijzonder Krijgsgerecht van de 2e Inf. Brig. Groep te Poerwakarta werden de zaken behandeld tegen de voornaamste schuldigen van de aanslag op de spoorbaan Bandoeng-Batavia, bij Tjikampek; het beschieten van de trein toen deze was ontspoord, waardoor een vijftal personen werden gedood en een groot aantal gewonden te betreuren was. Al deze verdachten waren leden van de terreurbende SP. 88 die zich tot doel stelde, het plegen van sabotage- en terreurdaden en het verstoren van rust en orde in de door Nederlanders beveiligde gebieden. Salim bin Bojo. Ze moesten hem maar op zijn eerlijke gezicht geloven. Dat deed de president. Maj. Josephus Jitta, niet, ook al omdat er verklaringen waren van hemzelf, zijn mede-terroristen en getuigen. Hij kreeg twintig jaar.",
+      "date": "1948-09-27",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af01cf7c-d0b4-102d-bcf8-003048976d84",
+      "description": "Onlangs zijn in verschillende groepen 400 Sundanezen die in de bersiap-tijd naar Djocja waren weggevoerd, naar hun geboorteland teruggekeerd. Zij zijn tijdelijk ondergebracht in een tentenkamp op het fabrieksterrein van hun vroegere werkgever, de Leger Productie Bedrijven te Bandung. De terugkerende vluchtelingen voelen zich in het tentenkamp best op hun gemak. De ouders zijn blij eindelijk weer eens rust gevonnden te hebben.",
+      "date": "1949-03-26",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefd0992-d0b4-102d-bcf8-003048976d84",
+      "description": "Verkiezingen op Java...... In de dessa Tjoblong, onder de rook van Bandoeng alles in het teken van de stembus. Er moest een nieuwe loerah (dorpshoofd) komen, door de bevolking zelf gekozen. Dessaman Tjetje is met 650 stemmen tot loerah gekozen. Zich bewust van de komende verantwoordelijkheid, spreekt hij van een stoel zijn kiezers toe en belooft een goed dessahoofd te zijn.",
+      "date": "1948-10-10",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/f062eec0-e363-1cfe-e0c9-8813fc37f70d",
+      "description": "Bandoeng: Op het ereveld aan de Parkweg te Bandoeng worden onder grote belangstelling de stoffelijke resten van de bij de vliegramp te Padalarang omgekomen NIWA-artiesten en militairen, met militaire eer ter aarde besteld. De aankomst op het kerkhof.",
+      "date": "1948-02-12",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "match": "Bandoeng/Bandung"
     }
-  ]
+  ],
+  "bandoengRecords": 100
 }
