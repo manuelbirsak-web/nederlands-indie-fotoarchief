@@ -82,9 +82,9 @@ def main() -> None:
         fail("Historische beeldrelevantie wordt niet per resultaat gecontroleerd")
     if "year===null||year<1800" not in source:
         fail("Ongedateerde of niet-historisch gedateerde afbeeldingen mogen niet standaard in de galerij")
-    if r"/\\b(wordmark|logo|map of|coat of arms|rank insignia|book cover" not in source:
+    if "/\\b(wordmark|logo|map of|coat of arms|rank insignia|book cover" not in source:
         fail("Niet-fotografische illustraties en publicaties worden niet aantoonbaar uitgesloten")
-    if "match(/(?:18|19|20)\\\\d{2}/)" not in source:
+    if "match(/(?:18|19|20)\\d{2}/)" not in source:
         fail("Datumparser voor Nationaal Archief-records ontbreekt of is onjuist")
     if "AbortController" not in source or "data.continue" not in source:
         fail("Abort/continuation afhandeling ontbreekt")
