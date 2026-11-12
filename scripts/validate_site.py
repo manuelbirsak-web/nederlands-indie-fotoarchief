@@ -155,7 +155,7 @@ def main() -> None:
             fail("Onbekend onderwerp-label in Nationaal Archief-index")
         if not set(record["places"]).issubset(allowed_places):
             fail("Onbekend plaats-label in Nationaal Archief-index")
-        if "bersiap" in record["topics"] and not re.search(r"\\bbersiap\\b", record["description"], re.I):
+        if "bersiap" in record["topics"] and not re.search(r"\bbersiap\b", record["description"], re.I):
             fail("Bersiap-label mag alleen verschijnen wanneer de bronbeschrijving deze term gebruikt")
 
     scripts = re.findall(r"<script>(.*?)</script>", source, flags=re.DOTALL | re.IGNORECASE)
