@@ -1,82 +1,111 @@
-# Indisch Beeldarchief — project- en technische documentatie
+# Indisch Beeldarchief
 
-Een onafhankelijk digitaal startpunt voor historisch beeldmateriaal over Nederlands-Indië, Java en Bandoeng/Bandung.
+**Een digitaal onderzoeksstartpunt voor de geschiedenis van Nederlands-Indië en Indonesië.**
 
-## Website
+Het Indisch Beeldarchief brengt historische foto's, bronbeschrijvingen en betrouwbare onderzoeksingangen samen. Het project besteedt extra aandacht aan Java en Bandoeng/Bandung, militaire geschiedenis en de dekolonisatieperiode.
 
-- Publicatie: https://manuelbirsak-web.github.io/nederlands-indie-fotoarchief/
-- Repository: https://github.com/manuelbirsak-web/nederlands-indie-fotoarchief
-- Hosting: GitHub Pages via GitHub Actions.
-- Techniek: statische HTML, CSS en vanilla JavaScript. Geen framework, build-tool of externe font-download.
+## Open het archief
 
-## Structuur en functionaliteit
+- **Website:** https://manuelbirsak-web.github.io/nederlands-indie-fotoarchief/
+- **Repository:** https://github.com/manuelbirsak-web/nederlands-indie-fotoarchief
 
-- Overzicht Nederlands-Indië, Java, Bandoeng/Bandung, KNIL/militair, Bersiap & onafhankelijkheidsstrijd en samenleving.
-- Plaatsgerichte ingangen voor Bandoeng, Batavia, Buitenzorg, Semarang, Soerabaja, Djokja, Malang en overig Java.
-- Bandoeng-zoekthema's: Bragaweg, Dago, alun-alun, Technische Hoogeschool, spoor/station en 1946.
-- Live beeldzoekfunctie via Wikimedia Commons; automatisch doorzoeken van maximaal vier resultaatpagina's wanneer irrelevante resultaten worden weggefilterd.
-- Duplicaatdetectie tijdens paginering; afbeeldingen openen op volledige grootte in een nieuw tabblad.
-- Afzonderlijke rubriek Bersiap & onafhankelijkheidsstrijd met bronkritische formulering; jaartal alleen is geen voldoende reden om een afbeelding of archiefrecord in deze rubriek te plaatsen.
-- Standaardperiode 1800–1959; ongedateerde foto's worden toegelaten wanneer titel, beschrijving of Commons-categorieën aantoonbaar verwijzen naar Nederlands-Indië, de koloniale periode, Bersiap, KNIL of een historische fotoreeks.
-- Extra relevantiefilter per rubriek: titel en beschrijving moeten aantoonbaar bij het gekozen onderwerp/gebied passen.
-- Niet-fotografische resultaten zoals logo's, kaarten, ranginsignes, boekomslagen, tijdschriften, kranten, posters, poststukken en munten worden uitgesloten.
-- Onderwerpsfilter als zoektermverfijning; dit is geen gecontroleerde archiefclassificatie.
-- Paginering via de continuation-parameters van de MediaWiki API.
-- Foto's bewaren in lokale browseropslag.
-- Per Commons-record bronpagina, maker, opnamedatering uit expliciete metadata, credit (waar aanwezig) en licentie-informatie (waar aanwezig).
-- Afzonderlijke metadata-index met 180 records uit de linked-open-data fotocollectie van het Nationaal Archief; bronbeschrijvingen worden zonder beeldpreview getoond zolang de rechtenstatus niet is beoordeeld.
-- Automatische wekelijkse verversing van de Nationaal Archief-index via GitHub Actions (`refresh-archive-index.yml`).
-- Responsive presentatie, toetsenbordfocus, skiplink, laad-/foutstatus en lazy-loaded afbeeldingen.
+## Inhoud
 
-## Historische en inhoudelijke betrouwbaarheid
+| Rubriek | Inhoud |
+|---|---|
+| Nederlands-Indië | Historische beeldresultaten uit de voormalige archipel |
+| Java | Een overzicht van Java en plaatsfilters voor Bandoeng, Batavia, Buitenzorg, Semarang, Soerabaja, Djokja, Malang en overig Java |
+| Bandoeng / Bandung | Gerichte zoekthema's zoals Bragaweg, Dago, alun-alun, Technische Hoogeschool, station/spoor en 1946 |
+| KNIL & militair | Militairen, eenheden, uniformen, wapens, kazernes en militaire onderwerpen |
+| Bersiap & onafhankelijkheidsstrijd | Bronnen over de Indonesische revolutie en de dekolonisatieperiode, met een strikt onderscheid tussen het label Bersiap en bredere oorlogscontext |
+| Samenleving | Dagelijks leven, onderwijs, werk, gezinnen en cultuur |
 
-Een zoekresultaat is geen zelfstandig bewijs voor plaats, datum, persoon, eenheid of gebeurtenis. Ongedateerde beelden worden niet automatisch afgewezen: ze worden alleen getoond als titel of beschrijving een expliciete historische context noemt. Een plaatsnaam alleen is geen bewijs dat een foto uit de koloniale periode komt. De website onderscheidt metadata die de bron aanbiedt van gegevens die niet zijn ingevuld. Gebruikers moeten voor verificatie de oorspronkelijke bestands- of archiefpagina raadplegen.
+De standaard fotoperiode is 1800–1959. Relevante ongedateerde beelden kunnen worden getoond wanneer de bronbeschrijving of metadata de historische context ondersteunt.
 
-De website is een doorzoekbare startcatalogus, geen complete digitale reproductie van alle collecties over Nederlands-Indië. Resultaten kunnen onvolledig, verkeerd getagd of foutief beschreven zijn. Historische spellingen, alternatieve plaatsnamen en zoektermen zijn nodig voor een betere dekking.
+## Bronnen en integratie
 
-## Bronnen en integratiegrenzen
+### Rechtstreeks geïntegreerd
 
-- Wikimedia Commons: live API voor de huidige galerij.
-- Nationaal Archief: een lokale metadata-snapshot uit de publieke linked-open-data/SPARQL-fotocollectie. De index bevat beschrijvingen en permanente Handle-links, geen afbeeldingsbestanden. De records vermelden vaak RightsStatements CNE (Copyright Not Evaluated); daarom worden geen thumbnails hergepubliceerd en moet de rechtenstatus per record worden gecontroleerd.
-- Leiden University Libraries / KITLV: collectieportaal; IIIF wordt bij onderdelen van de digitale collecties ondersteund. Er is nog geen complete, doorzoekbare manifestindex geïntegreerd.
-- Rijksmuseum: publiek doorzoekbare collectie en Search API voor museumobjecten; dit omvat niet alle archieven of bibliotheekcollecties.
-- Europeana: een API-sleutel is vereist voor Search API-integratie; die is niet in deze repository opgenomen.
-- Geheugen van Nederland / Delpher: externe zoekingangen, nog geen geïntegreerde record-API.
+- **Wikimedia Commons:** live API voor beeldbestanden en metadata. De website toont per resultaat de bronpagina, beschikbare maker-/creditgegevens en licentie-informatie. Commons is een aggregator; de oorspronkelijke instelling en bestandspagina blijven leidend.
+- **Nationaal Archief:** lokale metadata-index op basis van de publieke linked-open-data-fotocollectie. De huidige snapshot bevat **180 records** met permanente Handle-links en automatisch afgeleide onderwerp- en plaatslabels. Er worden geen thumbnails uit deze index getoond zolang de rechtenstatus niet is beoordeeld.
 
-## Performance en privacy
+### Externe onderzoeksingangen
 
-De site gebruikt geen frontend-framework en geen externe font-CDN. Foto's worden pas via de zoekresultaten opgehaald en laden lazy. De galerij communiceert rechtstreeks met Wikimedia Commons; laden is daarom mede afhankelijk van de beschikbaarheid en responstijd van die externe dienst. Er zijn nog geen onafhankelijke Lighthouse-, WebPageTest- of veldmetingen uitgevoerd. Er worden geen bezoekersaccounts of server-side gebruikersprofielen bijgehouden. Opgeslagen favorieten blijven in de lokale browseropslag.
+De website bevat ook directe links naar primaire of institutionele collecties:
 
-## Teststatus (12 november 2026)
+- [Leiden University Libraries · KITLV beeldcollectie](https://digitalcollections.universiteitleiden.nl/imagecollection-kitlv)
+- [Het Utrechts Archief · ruim 5.000 foto's uit voormalig Nederlands-Indië](https://hetutrechtsarchief.nl/over-ons/nieuws/ruim-5-000-fotos-uit-voormalig-nederlands-indie-online-beschikbaar)
+- [NIMH Beeldbank](https://beeldbank.nimh.nl/)
+- [Wereldmuseum · NMVW-collectie](https://collectie.wereldmuseum.nl/)
+- [Het Nieuwe Instituut · collectiezoekportaal](https://zoeken.nieuweinstituut.nl/nl/zoeken-op-het-portaal)
+- [Rijksmuseum Search API](https://data.rijksmuseum.nl/docs/search)
+- [Europeana](https://www.europeana.eu/en/search)
+- [Delpher · kranten Nederlands-Indië](https://www.delpher.nl/nl/kranten/results?query=Nederlands-Indi%C3%AB)
+- [Atlas of Mutual Heritage](https://www.atlasofmutualheritage.nl/)
 
-| Onderdeel | Status | Bewijs / beperking |
-|---|---|---|
-| GitHub Pages deployment | Geslaagd | GitHub Actions-run 43291694240; validatie en deploy completed/success |
-| Bronbestanden en versiebeheer | Gecontroleerd | Main-branch commit en bestanden uit GitHub opgehaald |
-| Functionele code-inspectie | Uitgevoerd | Zoekopbouw, datering 1800–1959, inhoudelijk relevante ongedateerde beelden, rubriekrelevantie, uitsluiting van niet-foto's, paginering en metadata beoordeeld |
-| HTML- en JavaScript-validatie | Geslaagd | GitHub Actions validate-job: HTML-contractcheck en `node --check` geslaagd |
-| Live gepubliceerde HTML | Gecontroleerd | De gepubliceerde pagina bevat de standaardperiode 1800–1959, toelating van inhoudelijk relevante ongedateerde beelden en bronkritische datering; dynamische browserinteractie is niet via DOM-automatisering getest |
-| Nationaal Archief-index | Geïntegreerd | 180 metadatarecords, zonder previews vanwege onzekere rechten; wekelijkse refresh-workflow toegevoegd |
-| Live browserinteractie | Niet onafhankelijk getest | Geen beschikbare browserautomatisering in deze uitvoering |
-| Werkelijke laadtijd / Core Web Vitals | Niet gemeten | Geen Lighthouse/WebPageTest/veldmeting uitgevoerd |
-| Compleetheid archiefmateriaal | Niet bewezen | Alleen Wikimedia live geïntegreerd; overige bronnen grotendeels externe ingangen |
-| Feitelijke juistheid per foto | Niet volledig bewezen | Vereist record-voor-record broncontrole en curatoriële verificatie |
-| Custom domain | Geblokkeerd | Vereist een domein dat de eigenaar beheert en DNS-configuratie; GitHub Pages' standaard-URL bevat de gebruikersnaam |
+**Belangrijk:** dit zijn op dit moment externe zoekingangen, geen rechtstreekse data-integraties in de fotogalerij. De website toont die grens expliciet.
+
+## Historische betrouwbaarheid
+
+Een zoekresultaat is geen zelfstandig bewijs voor datering, plaats, identiteit, eenheid of gebeurtenis. De website maakt onderscheid tussen gegevens die een bron expliciet vermeldt, automatisch afgeleide zoeklabels en gegevens die niet bekend of niet ingevuld zijn.
+
+De classificatie wordt afgeleid uit de tekst van het individuele archiefrecord. De collectienaam wordt niet gebruikt om een onderwerp aan alle records binnen een collectie toe te kennen.
+
+**KNIL is niet hetzelfde als militair.** Het KNIL-label wordt alleen toegepast als de beschrijving KNIL expliciet noemt of een herkenbare volledige naamvariant bevat.
+
+**Bersiap is niet hetzelfde als de hele onafhankelijkheidsstrijd.** Het specifieke label Bersiap verschijnt alleen wanneer de oorspronkelijke beschrijving het woord Bersiap gebruikt. De bredere term dekolonisatieperiode is een afzonderlijke classificatie. Een jaartal tussen 1945 en 1950 is op zichzelf geen inhoudelijk bewijs.
+
+Zie [METHODOLOGY.md](METHODOLOGY.md) voor het bronnenbeleid, datering, classificatie en beperkingen.
 
 ## Beeldrechten
 
-De website kopieert geen afbeeldingen naar de repository. Open de oorspronkelijke bestands-/collectiepagina en controleer licentie, maker, bron, naamsvermelding en eventuele beperkingen voordat materiaal wordt hergebruikt. Een Commons-vermelding is niet automatisch een garantie dat elk gebruik vrij is.
+Een vindbare afbeelding is niet automatisch vrij herbruikbaar.
 
-## Publicatie
+- Controleer de oorspronkelijke bronpagina, licentie, maker, bronvermelding en voorwaarden.
+- De aanduiding CNE / Copyright Not Evaluated betekent dat de rechtenstatus niet is beoordeeld; behandel dit niet als een vrije licentie.
+- De Nationaal Archief-index bevat metadata en Handle-links, geen herpubliceerde thumbnails.
+- De website kopieert niet zonder noodzaak beeldbestanden naar de repository.
 
-Een push naar `main` activeert `.github/workflows/pages.yml`. De actuele publicatie loopt via GitHub Actions en `actions/deploy-pages`.
+Het project verleent geen auteursrechtelijke toestemming. Zie [METHODOLOGY.md](METHODOLOGY.md#5-beeldrechten-en-hergebruik) en [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Openstaande verbeterpunten
+## Techniek
 
-1. Onafhankelijke browser- en apparaat-test uitvoeren; Lighthouse meten (LCP, INP, CLS, TBT, transfer size).
-2. Eenheidstests toevoegen voor zoekcompositie, dateringextractie, filters, continuations en foutafhandeling.
-3. Leiden/KITLV en Rijksmuseum systematisch ontsluiten waar API- en gebruiksvoorwaarden dat toestaan.
-4. Bandoeng uitbreiden met gecontroleerde fotoreeksen en recordmetadata; per foto bron, fotograaf, datum, locatie, collectie-ID en rechten vastleggen.
-5. Een beheerde domeinnaam koppelen zodra de domeinnaam en DNS-toegang beschikbaar zijn.
-6. Curatoriële controle toevoegen om verkeerd getagde, dubbel opgenomen of foutief gedateerde foto's te markeren.
+- Statische HTML, CSS en vanilla JavaScript.
+- Hosting via GitHub Pages.
+- Live Wikimedia Commons API.
+- Lokale JSON-metadata-index Nationaal Archief (assets/nationaal-archief.json, schemaVersion 2).
+- Python-harvester (scripts/harvest_nationaal_archief.py).
+- Wekelijkse verversingsworkflow (.github/workflows/refresh-archive-index.yml).
+- Pre-deployment validatie en classificatie-unit-tests via GitHub Actions.
+- Favorieten worden lokaal in de browser opgeslagen; er zijn geen bezoekersaccounts of server-side profielen.
 
+## Kwaliteitscontroles
+
+Bij elke publicatie voert GitHub Actions uit:
+
+1. HTML-, interface- en archiefcontractchecks (scripts/validate_site.py);
+2. unit-tests voor de onderwerp- en plaatsclassificatie (scripts/test_archive.py);
+3. JavaScript-syntaxcontrole (node --check).
+
+Dit zijn geautomatiseerde technische controles. Ze bewijzen niet dat elke historische beschrijving, foto-identificatie, datering of licentie inhoudelijk juist is. Live browserinteractie, toegankelijkheid, performance en record-voor-record verificatie worden als afzonderlijke controles behandeld.
+
+## Projectdocumentatie
+
+- [Curatoriële methode en gegevensbeleid](METHODOLOGY.md)
+- [Bijdragen en correcties](CONTRIBUTING.md)
+- [Release notes](CHANGELOG.md)
+
+## Roadmap
+
+1. De Nationaal Archief-harvester uitbreiden en de nieuwe snapshot na uitvoering valideren.
+2. Live beeldcollecties verder ontsluiten, te beginnen met bronnen waarvoor stabiele publieke API's of IIIF-manifests beschikbaar zijn.
+3. De Bandoeng-collectie verdiepen met controleerbare reeksen en recordniveau-metadata.
+4. KNIL- en dekolonisatiebronnen uitbreiden zonder brede of onjuiste onderwerplabels te gebruiken.
+5. Onafhankelijke toegankelijkheids- en performance-audits uitvoeren.
+6. Een eigen domeinnaam koppelen wanneer de eigenaar een domein en DNS-toegang beschikbaar stelt.
+
+## Status en afbakening
+
+Het Indisch Beeldarchief is een werkende openbare onderzoekswebsite en een groeiende startcatalogus. Het is **geen complete inventaris van alle historische foto's over Nederlands-Indië**. De huidige 180 Nationaal Archief-records zijn een selecte metadata-snapshot, geen weergave van de volledige collectie. Een volledige historische, juridische en curatoriële verificatie van alle resultaten is nog niet uitgevoerd.
+
+Laatste inhoudelijke release: **12 november 2026**.
