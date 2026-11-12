@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "Rijksmuseum Data Services — Search API and Linked Art",
   "sourceUrl": "https://data.rijksmuseum.nl/docs/search",
-  "snapshotDate": "2026-11-12T21:11:23.515284+00:00",
-  "count": 170,
+  "snapshotDate": "2026-11-12T21:12:55.088524+00:00",
+  "count": 229,
   "candidateCount": 278,
   "searches": [
     {
@@ -62,28 +62,30 @@
       "selectedFromFirstPage": 20
     }
   ],
-  "failedObjectLookups": 64,
-  "imageCount": 157,
-  "metadataOnlyCount": 13,
+  "failedObjectLookups": 0,
+  "imageCount": 215,
+  "metadataOnlyCount": 14,
   "imageRightsPolicy": "Only the image-level Public Domain Mark 1.0 or CC0 1.0 statements are displayed as thumbnails. Object-level metadata CC0 is not treated as an image licence.",
   "topicCounts": {
-    "architecture": 40,
-    "knil": 4,
-    "landscape": 19,
-    "military": 25,
-    "society": 36,
-    "transport": 8
+    "architecture": 52,
+    "culture": 2,
+    "decolonization": 1,
+    "knil": 8,
+    "landscape": 23,
+    "military": 30,
+    "society": 41,
+    "transport": 13
   },
   "placeCounts": {
-    "bandung": 36,
-    "batavia": 5,
-    "bogor": 16,
-    "java": 104,
-    "malang": 2,
-    "other-java": 28,
-    "semarang": 8,
-    "sumatra": 7,
-    "surabaya": 11,
+    "bandung": 44,
+    "batavia": 25,
+    "bogor": 17,
+    "java": 155,
+    "malang": 3,
+    "other-java": 36,
+    "semarang": 10,
+    "sumatra": 21,
+    "surabaya": 29,
     "yogyakarta": 1
   },
   "records": [
@@ -138,6 +140,60 @@
         "society"
       ],
       "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200503476",
+      "objectNumber": "NG-1991-20-21",
+      "title": "Ingraving tusschen Solo en Kali Osso 2e Sectie.",
+      "otherTitles": [],
+      "description": "Graafwerkzaamheden door een heuvel tussen Solo en de rivier Kali Osso. Javaanse arbeiders vullen met manden een handkar met aarde, op de achtergrond het gebruiken van stokken als hefbomen om een rotsblok te verplaatsen. Albumblad met opgeplakte foto, onderdeel van het fotoalbum over de aanleg van de spoorlijn Semarang - Kedoeng Djattie (Kedungjati) op Java in 1865.",
+      "date": "1865 - 1867",
+      "creator": "fotograaf: Woodbury & Page (mogelijk), Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200503476",
+      "imageUrl": "https://iiif.micr.io/cJaOb/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Semarang"
+      ],
+      "topics": [
+        "landscape"
+      ],
+      "places": [
+        "java",
+        "semarang"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200503481",
+      "objectNumber": "NG-1991-20-23",
+      "title": "Halte te Tangoeng / Onder de warande staat de directeur der openbare werken de Bruijn tusschen den Hoofd Ingenieur en den Ingenieur van de Waterstaat Vrendenberg.",
+      "otherTitles": [],
+      "description": "Opening van de Halte Tanggoeng bij Semarang, 10 augustus 1867. Op het perron staat de directeur van Burgerlijke Openbare Werken in Nederlandsch-Indië, H. de Bruijn, links van hem hoofdingenieur P.J.G. Beyerinck en rechts ingenieur H. Vrendenberg. Op het spoor staat een trein. Albumblad met opgeplakte foto, onderdeel van het fotoalbum over de aanleg van de spoorlijn Semarang - Kedoeng Djattie (Kedungjati) op Java in 1865.",
+      "date": "1867",
+      "creator": "fotograaf: Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200503481",
+      "imageUrl": "https://iiif.micr.io/FTFwt/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Semarang"
+      ],
+      "topics": [
+        "transport"
+      ],
+      "places": [
+        "java",
+        "semarang"
+      ],
       "recordType": "photograph"
     },
     {
@@ -568,6 +624,35 @@
       "recordType": "photograph"
     },
     {
+      "id": "200532749",
+      "objectNumber": "NG-1992-2-4-41-3",
+      "title": "Madoerese houtsnijder te Soerabaja",
+      "otherTitles": [],
+      "description": "Een Madoerese houtsnijder aan het werk in Soerabaja. Onderdeel van het fotoalbum van KNIL-sergeant Douwe de Vries uit de jaren 1925-1933.",
+      "date": "1900 - 1933",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200532749",
+      "imageUrl": "https://iiif.micr.io/PvAYH/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "KNIL"
+      ],
+      "topics": [
+        "knil",
+        "military",
+        "society"
+      ],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
       "id": "200517613",
       "objectNumber": "NG-1988-30-A-38-1",
       "title": "Groepsfoto van militairen",
@@ -650,6 +735,81 @@
       "recordType": "photograph"
     },
     {
+      "id": "200493669",
+      "objectNumber": "RP-F-2007-6-191",
+      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
+      "otherTitles": [
+        "Visit to an Oil Field in Purissima Hills, USA",
+        "Oil port"
+      ],
+      "description": "Gezicht op een oliehaven waar zich olietanks bevinden. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
+      "date": "1908-05-02 - 1908-05-03",
+      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
+      "objectUrl": "https://id.rijksmuseum.nl/200493669",
+      "imageUrl": "https://iiif.micr.io/BCduB/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200493643",
+      "objectNumber": "RP-F-2007-6-185",
+      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
+      "otherTitles": [
+        "Visit to an Oil Field in Purissima Hills, USA",
+        "Graciosa ridge"
+      ],
+      "description": "Henri Deterding en reisgenoten in Graciosa Ridge bij het bezoek aan olievelden. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
+      "date": "1908-05-02 - 1908-05-03",
+      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
+      "objectUrl": "https://id.rijksmuseum.nl/200493643",
+      "imageUrl": "https://iiif.micr.io/QvojF/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200493670",
+      "objectNumber": "RP-F-2007-6-192",
+      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
+      "otherTitles": [
+        "Visit to an Oil Field in Purissima Hills, USA",
+        "Refinery at Oil port"
+      ],
+      "description": "Olieraffinaderij in de oliehaven in California. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
+      "date": "1908-05-02 - 1908-05-03",
+      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
+      "objectUrl": "https://id.rijksmuseum.nl/200493670",
+      "imageUrl": "https://iiif.micr.io/xBqsE/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
       "id": "200493646",
       "objectNumber": "RP-F-2007-6-189",
       "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
@@ -701,56 +861,6 @@
       "recordType": "photograph"
     },
     {
-      "id": "200493669",
-      "objectNumber": "RP-F-2007-6-191",
-      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
-      "otherTitles": [
-        "Visit to an Oil Field in Purissima Hills, USA",
-        "Oil port"
-      ],
-      "description": "Gezicht op een oliehaven waar zich olietanks bevinden. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
-      "date": "1908-05-02 - 1908-05-03",
-      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
-      "objectUrl": "https://id.rijksmuseum.nl/200493669",
-      "imageUrl": "https://iiif.micr.io/BCduB/full/max/0/default.jpg",
-      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-      "imageRightsEvidence": [
-        "https://creativecommons.org/publicdomain/mark/1.0/"
-      ],
-      "imageUnavailableReason": null,
-      "searchTerms": [
-        "Dutch East Indies"
-      ],
-      "topics": [],
-      "places": [],
-      "recordType": "photograph"
-    },
-    {
-      "id": "200493643",
-      "objectNumber": "RP-F-2007-6-185",
-      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
-      "otherTitles": [
-        "Visit to an Oil Field in Purissima Hills, USA",
-        "Graciosa ridge"
-      ],
-      "description": "Henri Deterding en reisgenoten in Graciosa Ridge bij het bezoek aan olievelden. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
-      "date": "1908-05-02 - 1908-05-03",
-      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
-      "objectUrl": "https://id.rijksmuseum.nl/200493643",
-      "imageUrl": "https://iiif.micr.io/QvojF/full/max/0/default.jpg",
-      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-      "imageRightsEvidence": [
-        "https://creativecommons.org/publicdomain/mark/1.0/"
-      ],
-      "imageUnavailableReason": null,
-      "searchTerms": [
-        "Dutch East Indies"
-      ],
-      "topics": [],
-      "places": [],
-      "recordType": "photograph"
-    },
-    {
       "id": "200493672",
       "objectNumber": "RP-F-2007-6-193",
       "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
@@ -763,31 +873,6 @@
       "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
       "objectUrl": "https://id.rijksmuseum.nl/200493672",
       "imageUrl": "https://iiif.micr.io/AnLzv/full/max/0/default.jpg",
-      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-      "imageRightsEvidence": [
-        "https://creativecommons.org/publicdomain/mark/1.0/"
-      ],
-      "imageUnavailableReason": null,
-      "searchTerms": [
-        "Dutch East Indies"
-      ],
-      "topics": [],
-      "places": [],
-      "recordType": "photograph"
-    },
-    {
-      "id": "200493670",
-      "objectNumber": "RP-F-2007-6-192",
-      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
-      "otherTitles": [
-        "Visit to an Oil Field in Purissima Hills, USA",
-        "Refinery at Oil port"
-      ],
-      "description": "Olieraffinaderij in de oliehaven in California. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
-      "date": "1908-05-02 - 1908-05-03",
-      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
-      "objectUrl": "https://id.rijksmuseum.nl/200493670",
-      "imageUrl": "https://iiif.micr.io/xBqsE/full/max/0/default.jpg",
       "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
       "imageRightsEvidence": [
         "https://creativecommons.org/publicdomain/mark/1.0/"
@@ -857,6 +942,33 @@
       "recordType": "photograph"
     },
     {
+      "id": "2008551",
+      "objectNumber": "RP-F-2016-137-9-7",
+      "title": "Foto’s van silhouetten",
+      "otherTitles": [
+        "Silhouette Photographs",
+        "Drie silhouetfoto's"
+      ],
+      "description": "Deze foto's maken deel uit van een album.",
+      "date": "1913 - 1914",
+      "creator": "fotograaf: Carolina Frederika Onnen (Lien/Loen), Nederland",
+      "objectUrl": "https://id.rijksmuseum.nl/2008551",
+      "imageUrl": "https://iiif.micr.io/LqycA/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [
+        "landscape"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
       "id": "200335509",
       "objectNumber": "RP-F-F01220-AB",
       "title": "Man en een vrouw op een veranda in Surabaya (Simpang)",
@@ -884,15 +996,15 @@
       "recordType": "photograph"
     },
     {
-      "id": "200531179",
-      "objectNumber": "NG-1994-7-43",
+      "id": "200531178",
+      "objectNumber": "NG-1994-7-42",
       "title": "H.B.S. Bandoeng",
       "otherTitles": [],
       "description": "Het gebouw van de HBS te Bandoeng. Onderdeel van het fotoalbum van de Eerste Waterstaatsafdeling op West-Java 22 maart 1915 - 30 juli 1919.",
       "date": "1918 - 1919",
       "creator": "fotograaf: anoniem, Bandung",
-      "objectUrl": "https://id.rijksmuseum.nl/200531179",
-      "imageUrl": "https://iiif.micr.io/xKqqr/full/max/0/default.jpg",
+      "objectUrl": "https://id.rijksmuseum.nl/200531178",
+      "imageUrl": "https://iiif.micr.io/PhRbh/full/max/0/default.jpg",
       "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
       "imageRightsEvidence": [
         "https://creativecommons.org/publicdomain/mark/1.0/"
@@ -911,15 +1023,15 @@
       "recordType": "photograph"
     },
     {
-      "id": "200531178",
-      "objectNumber": "NG-1994-7-42",
+      "id": "200531179",
+      "objectNumber": "NG-1994-7-43",
       "title": "H.B.S. Bandoeng",
       "otherTitles": [],
       "description": "Het gebouw van de HBS te Bandoeng. Onderdeel van het fotoalbum van de Eerste Waterstaatsafdeling op West-Java 22 maart 1915 - 30 juli 1919.",
       "date": "1918 - 1919",
       "creator": "fotograaf: anoniem, Bandung",
-      "objectUrl": "https://id.rijksmuseum.nl/200531178",
-      "imageUrl": "https://iiif.micr.io/PhRbh/full/max/0/default.jpg",
+      "objectUrl": "https://id.rijksmuseum.nl/200531179",
+      "imageUrl": "https://iiif.micr.io/xKqqr/full/max/0/default.jpg",
       "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
       "imageRightsEvidence": [
         "https://creativecommons.org/publicdomain/mark/1.0/"
@@ -966,6 +1078,34 @@
       "recordType": "photograph"
     },
     {
+      "id": "200532750",
+      "objectNumber": "NG-1992-2-4-43",
+      "title": "Gezichten te Malang",
+      "otherTitles": [],
+      "description": "Blad met drie prentbriefkaarten met gezichten te Malang. Onderdeel van het fotoalbum (4) van KNIL-sergeant D. de Vries, 1925-1933.",
+      "date": "1920 - 1933",
+      "creator": "fotograaf: Studio Malang (vermeld op object), Malang",
+      "objectUrl": "https://id.rijksmuseum.nl/200532750",
+      "imageUrl": "https://iiif.micr.io/sLqpx/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "KNIL"
+      ],
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "java",
+        "malang"
+      ],
+      "recordType": "photograph"
+    },
+    {
       "id": "200534888",
       "objectNumber": "NG-2002-84-D-55",
       "title": "Product Photos N.V. Machinefabriek Braat",
@@ -990,6 +1130,59 @@
       "places": [
         "java",
         "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200532793",
+      "objectNumber": "NG-1992-2-5-54",
+      "title": "Bandoeng en Tjimahi",
+      "otherTitles": [],
+      "description": "Albumblad met twee foto's van een voorstad van Bandoeng (boven) en van oefening in granaatwerpen in het kampement te Tjimahi (onder). Onder de foto's onderschriften in witte inkt. Onderdeel van het fotoalbum (5) van KNIL-sergeant Douwe de Vries uit de jaren 1925-1930.",
+      "date": "1925 - 1930",
+      "creator": "fotograaf: Douwe de Vries, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200532793",
+      "imageUrl": null,
+      "imageRightsUrl": null,
+      "imageRightsEvidence": [
+        "https://rightsstatements.org/vocab/InC/1.0/"
+      ],
+      "imageUnavailableReason": "Geen expliciete Public Domain Mark/CC0-verklaring gevonden voor het digitale beeld",
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200504657",
+      "objectNumber": "NG-2006-66-34",
+      "title": "Rijwielbrigade / Muziekcorps",
+      "otherTitles": [],
+      "description": "Albumblad met twee foto's: brigade agenten met fietsen en een muziekcorps van de politie te Bandoeng. Onderdeel van het fotoalbum aangeboden aan S. Koster door de Vereeniging van Hoogere Politie Ambtenaren in Nederlandsch-Indië in 1931.",
+      "date": "1925 - 1931",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200504657",
+      "imageUrl": "https://iiif.micr.io/PYJFy/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
       ],
       "recordType": "photograph"
     },
@@ -1159,6 +1352,90 @@
       "recordType": "photograph"
     },
     {
+      "id": "200528076",
+      "objectNumber": "NG-2002-84-G-8",
+      "title": "Directieleden poseren in de fabriek bij een uitstalling van machines",
+      "otherTitles": [],
+      "description": "Albumblad met een foto van Europese directieleden poserend in de fabriek bij een uitstalling van machines, o.a. voor de theeindustrie. Aan een muur het stadswapen van Bandoeng met wapenspreuk \"Ex Undis Sol\". Onderdeel van een fotoalbum met foto's van machines en constructies van de N.V. Machinefabriek Braat te Soerabaja, Soekaboemi en Tegal uit de periode 1931-1937.",
+      "date": "1931 - 1937",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200528076",
+      "imageUrl": "https://iiif.micr.io/rzUhN/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "bandung",
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200535045",
+      "objectNumber": "NG-2002-84-G-9",
+      "title": "Mannen poseren in de fabriek bij een uitstalling van machines",
+      "otherTitles": [],
+      "description": "Albumblad met een foto van twee Europese mannen poserend in de fabriek bij een uitstalling van machines, o.a. voor de theeindustrie. Aan een muur het stadswapen van Bandoeng met wapenspreuk \"Ex Undis Sol\". Onderdeel van een fotoalbum met foto's van machines en constructies van de N.V. Machinefabriek Braat te Soerabaja, Soekaboemi en Tegal uit de periode 1931-1937.",
+      "date": "1931 - 1937",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200535045",
+      "imageUrl": "https://iiif.micr.io/hriKe/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "bandung",
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200528077",
+      "objectNumber": "NG-2002-84-G-10",
+      "title": "Presentatie van machines in een fabriek",
+      "otherTitles": [],
+      "description": "Albumblad met foto van de presentatie van een uitstalling van machines o.a. voor de theeindustrie, aan enkele Europese directieleden waarvan één met tropenhelm, in de fabriek. In een fabriek te Bandoeng. Onderdeel van een fotoalbum met foto's van machines en constructies van de N.V. Machinefabriek Braat te Soerabaja, Soekaboemi en Tegal uit de periode 1931-1937.",
+      "date": "1931 - 1937",
+      "creator": "fotograaf: D.H. Buys (vermeld op object), Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200528077",
+      "imageUrl": "https://iiif.micr.io/SSXtv/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "bandung",
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
       "id": "200534872",
       "objectNumber": "NG-2002-84-D-47",
       "title": "Product Photos N.V. Machinefabriek Braat",
@@ -1272,6 +1549,33 @@
       "recordType": "photograph"
     },
     {
+      "id": "200518085",
+      "objectNumber": "NG-1989-1-20-3",
+      "title": "Draaibanken van de Technische School te Bandoeng",
+      "otherTitles": [],
+      "description": "Draaibanken in de werkplaats van de Technische School te Bandoeng. Foto ingeplakt in het fotoalbum aangeboden aan J.H.A. van der Hoeven bij het beëindigen op 31 juli 1933 van zijn diensttijd bij het Nijverheidsonderwijs in Nederlandsch-Indië.",
+      "date": "1933",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200518085",
+      "imageUrl": "https://iiif.micr.io/dsRvN/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
       "id": "200518083",
       "objectNumber": "NG-1989-1-20-1",
       "title": "Draaibanken van de Technische School te Bandoeng",
@@ -1308,33 +1612,6 @@
       "creator": "fotograaf: anoniem, Bandung",
       "objectUrl": "https://id.rijksmuseum.nl/200518084",
       "imageUrl": "https://iiif.micr.io/vxLVE/full/max/0/default.jpg",
-      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-      "imageRightsEvidence": [
-        "https://creativecommons.org/publicdomain/mark/1.0/"
-      ],
-      "imageUnavailableReason": null,
-      "searchTerms": [
-        "Bandoeng"
-      ],
-      "topics": [
-        "society"
-      ],
-      "places": [
-        "bandung",
-        "java"
-      ],
-      "recordType": "photograph"
-    },
-    {
-      "id": "200518085",
-      "objectNumber": "NG-1989-1-20-3",
-      "title": "Draaibanken van de Technische School te Bandoeng",
-      "otherTitles": [],
-      "description": "Draaibanken in de werkplaats van de Technische School te Bandoeng. Foto ingeplakt in het fotoalbum aangeboden aan J.H.A. van der Hoeven bij het beëindigen op 31 juli 1933 van zijn diensttijd bij het Nijverheidsonderwijs in Nederlandsch-Indië.",
-      "date": "1933",
-      "creator": "fotograaf: anoniem, Bandung",
-      "objectUrl": "https://id.rijksmuseum.nl/200518085",
-      "imageUrl": "https://iiif.micr.io/dsRvN/full/max/0/default.jpg",
       "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
       "imageRightsEvidence": [
         "https://creativecommons.org/publicdomain/mark/1.0/"
@@ -1525,6 +1802,58 @@
       "creator": "fotograaf: anoniem, Bandung",
       "objectUrl": "https://id.rijksmuseum.nl/200528082",
       "imageUrl": "https://iiif.micr.io/fAKco/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [],
+      "places": [
+        "bandung",
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200528084",
+      "objectNumber": "NG-2002-84-G-65",
+      "title": "Theefabriek Kertamanah gebouwd door Machinefabriek Braat Soerabaia 1934",
+      "otherTitles": [],
+      "description": "Albumblad met een foto van de theefabriek Kertamanah ten zuiden van Bandoeng, afgebouwd in 1934. Onderdeel van een fotoalbum met foto's van machines en constructies van de N.V. Machinefabriek Braat te Soerabaja, Soekaboemi en Tegal uit de periode 1931-1937.",
+      "date": "1934",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200528084",
+      "imageUrl": "https://iiif.micr.io/vscyN/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [],
+      "places": [
+        "bandung",
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200528083",
+      "objectNumber": "NG-2002-84-G-56",
+      "title": "Theefabriek Kertamanah gebouwd door Machinefabriek Braat Soerabaia 1934",
+      "otherTitles": [],
+      "description": "Albumblad met een foto van het interieur van de theefabriek Kertamanah ten zuiden van Bandoeng, in aanbouw in 1934. Onderdeel van een fotoalbum met foto's van machines en constructies van de N.V. Machinefabriek Braat te Soerabaja, Soekaboemi en Tegal uit de periode 1931-1937.",
+      "date": "1934",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200528083",
+      "imageUrl": "https://iiif.micr.io/gDwme/full/max/0/default.jpg",
       "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
       "imageRightsEvidence": [
         "https://creativecommons.org/publicdomain/mark/1.0/"
@@ -2058,6 +2387,32 @@
       "recordType": "photograph"
     },
     {
+      "id": "200506963",
+      "objectNumber": "NG-2007-48-38",
+      "title": "Samenwerking tussen de TNI en KNIL ten tijde van de Soevereiniteitsoverdracht",
+      "otherTitles": [],
+      "description": "Albumblad met zeven foto's. Controles die door het TNI en het KNIL samen worden uitgevoerd. Ook groepsfoto's van Indonesische en Nederlandse soldaten, waarbij naast elkaar wordt geposeerd.",
+      "date": "1949 - 1950",
+      "creator": "fotograaf: anoniem, Klaten",
+      "objectUrl": "https://id.rijksmuseum.nl/200506963",
+      "imageUrl": "https://iiif.micr.io/kDyTV/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "KNIL"
+      ],
+      "topics": [
+        "decolonization",
+        "knil",
+        "military"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
       "id": "200748313",
       "objectNumber": "NG-2019-52",
       "title": "Nehru en Sukarno in Bandung",
@@ -2241,6 +2596,31 @@
       "places": [
         "batavia",
         "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335503",
+      "objectNumber": "RP-F-F01220-V",
+      "title": "Fotoreproductie van (vermoedelijk) een tekening, voorstellend een havengezicht met dok op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335503",
+      "imageUrl": "https://iiif.micr.io/QWoOv/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "other-java"
       ],
       "recordType": "photograph"
     },
@@ -3866,6 +4246,152 @@
       "recordType": "photograph"
     },
     {
+      "id": "200335514",
+      "objectNumber": "RP-F-F01219-A",
+      "title": "Aanleg van een tabaksplantage op Sumatra, 1e stadium: rooien van bomen in een bos en wegaanleg",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van de aanleg van een tabaksveld op de oostkust van Sumatra.",
+      "date": "c. 1880 - c. 1890",
+      "creator": "fotograaf: anoniem, Oost-Sumatra",
+      "objectUrl": "https://id.rijksmuseum.nl/200335514",
+      "imageUrl": "https://iiif.micr.io/qzPcn/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Sumatra"
+      ],
+      "topics": [
+        "landscape"
+      ],
+      "places": [
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335511",
+      "objectNumber": "RP-F-F01219-B",
+      "title": "Aanleg van een tabaksplantage op Sumatra, 2e stadium: afvoer van boomstronken en brugaanleg",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van de aanleg van een tabaksveld op de oostkust van Sumatra.",
+      "date": "c. 1880 - c. 1890",
+      "creator": "fotograaf: anoniem, Oost-Sumatra",
+      "objectUrl": "https://id.rijksmuseum.nl/200335511",
+      "imageUrl": "https://iiif.micr.io/RQVCd/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Sumatra"
+      ],
+      "topics": [],
+      "places": [
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335512",
+      "objectNumber": "RP-F-F01219-C",
+      "title": "Aanleg van een tabaksplantage op Sumatra, 3e stadium: bouw van loodsen",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van de aanleg van een tabaksveld op de oostkust van Sumatra.",
+      "date": "c. 1880 - c. 1890",
+      "creator": "fotograaf: anoniem, Oost-Sumatra",
+      "objectUrl": "https://id.rijksmuseum.nl/200335512",
+      "imageUrl": "https://iiif.micr.io/nlxfR/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Sumatra"
+      ],
+      "topics": [],
+      "places": [
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335513",
+      "objectNumber": "RP-F-F01219-D",
+      "title": "Aanleg van een tabaksplantage op Sumatra, 4e stadium: bouw van loodsen en bijgebouwen voltooid",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van de aanleg van een tabaksveld op de oostkust van Sumatra.",
+      "date": "c. 1880 - c. 1890",
+      "creator": "fotograaf: anoniem, Oost-Sumatra",
+      "objectUrl": "https://id.rijksmuseum.nl/200335513",
+      "imageUrl": "https://iiif.micr.io/nRUsI/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Sumatra"
+      ],
+      "topics": [],
+      "places": [
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335515",
+      "objectNumber": "RP-F-F01219-E",
+      "title": "Aanleg van een tabaksplantage op Sumatra, 5e stadium: aanleg van zaaibedden",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van de aanleg van een tabaksveld op de oostkust van Sumatra.",
+      "date": "c. 1880 - c. 1890",
+      "creator": "fotograaf: anoniem, Oost-Sumatra",
+      "objectUrl": "https://id.rijksmuseum.nl/200335515",
+      "imageUrl": "https://iiif.micr.io/utEWf/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Sumatra"
+      ],
+      "topics": [],
+      "places": [
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335516",
+      "objectNumber": "RP-F-F01219-G",
+      "title": "Aanleg van een tabaksplantage op Sumatra, 7e stadium: bouw van overkappingen",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van de aanleg van een tabaksveld op de oostkust van Sumatra.",
+      "date": "c. 1880 - c. 1890",
+      "creator": "fotograaf: anoniem, Oost-Sumatra",
+      "objectUrl": "https://id.rijksmuseum.nl/200335516",
+      "imageUrl": "https://iiif.micr.io/tVJOo/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Sumatra"
+      ],
+      "topics": [],
+      "places": [
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
       "id": "200334860",
       "objectNumber": "RP-F-F01195-AW",
       "title": "Beelden bij de Borobudur op Java",
@@ -3984,6 +4510,526 @@
         "batavia",
         "java",
         "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200338890",
+      "objectNumber": "RP-F-F01077-D",
+      "title": "Exterieur van de kleuterschool van Weltevreden",
+      "otherTitles": [
+        "Fröbelschool van Weltevreden."
+      ],
+      "description": "Onderdeel van Album met foto's van Batavia en van de zusters Ursulinen.",
+      "date": "c. 1890 - c. 1910",
+      "creator": "fotograaf: anoniem, Weltevreden",
+      "objectUrl": "https://id.rijksmuseum.nl/200338890",
+      "imageUrl": "https://iiif.micr.io/lvMCz/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200338887",
+      "objectNumber": "RP-F-F01077-A",
+      "title": "Exterieur van het Ursulinenklooster in Weltevreden",
+      "otherTitles": [
+        "Klooster van Weltevreden, voorzijde."
+      ],
+      "description": "Onderdeel van Album met foto's van Batavia en van de zusters Ursulinen.",
+      "date": "c. 1890 - c. 1910",
+      "creator": "fotograaf: anoniem, Weltevreden",
+      "objectUrl": "https://id.rijksmuseum.nl/200338887",
+      "imageUrl": "https://iiif.micr.io/eNonM/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200338902",
+      "objectNumber": "RP-F-F01077-P",
+      "title": "Exterieur van het Ursulinenklooster van Noordwijk (Batavia)",
+      "otherTitles": [
+        "Klooster van Noordwijk, front."
+      ],
+      "description": "Onderdeel van Album met foto's van Batavia en van de zusters Ursulinen.",
+      "date": "c. 1890 - c. 1910",
+      "creator": "fotograaf: anoniem, Batavia",
+      "objectUrl": "https://id.rijksmuseum.nl/200338902",
+      "imageUrl": "https://iiif.micr.io/NkdRM/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200338891",
+      "objectNumber": "RP-F-F01077-E",
+      "title": "Galerij van het Ursulinenklooster in Weltevreden",
+      "otherTitles": [
+        "Galerij van het klooster."
+      ],
+      "description": "Onderdeel van Album met foto's van Batavia en van de zusters Ursulinen.",
+      "date": "c. 1890 - c. 1910",
+      "creator": "fotograaf: anoniem, Weltevreden",
+      "objectUrl": "https://id.rijksmuseum.nl/200338891",
+      "imageUrl": "https://iiif.micr.io/TclHp/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200338897",
+      "objectNumber": "RP-F-F01077-K",
+      "title": "Grafmuur van de zusters Ursulinen, vermoedelijk in Batavia",
+      "otherTitles": [
+        "Grafkelder der Zusters."
+      ],
+      "description": "Onderdeel van Album met foto's van Batavia en van de zusters Ursulinen.",
+      "date": "c. 1890 - c. 1910",
+      "creator": "fotograaf: anoniem, Batavia",
+      "objectUrl": "https://id.rijksmuseum.nl/200338897",
+      "imageUrl": "https://iiif.micr.io/TiUPA/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200338901",
+      "objectNumber": "RP-F-F01077-O",
+      "title": "Groepsportret van de novicen van de Ursulinen, vermoedelijk in Weltevreden",
+      "otherTitles": [
+        "De Novicen."
+      ],
+      "description": "Onderdeel van Album met foto's van Batavia en van de zusters Ursulinen.",
+      "date": "c. 1890 - c. 1910",
+      "creator": "fotograaf: anoniem, Weltevreden",
+      "objectUrl": "https://id.rijksmuseum.nl/200338901",
+      "imageUrl": "https://iiif.micr.io/HmXnF/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200338900",
+      "objectNumber": "RP-F-F01077-N",
+      "title": "Groepsportret van de werkzusters Ursulinen, vermoedelijk in Weltevreden",
+      "otherTitles": [
+        "De Werkzusters."
+      ],
+      "description": "Onderdeel van Album met foto's van Batavia en van de zusters Ursulinen.",
+      "date": "c. 1890 - c. 1910",
+      "creator": "fotograaf: anoniem, Weltevreden",
+      "objectUrl": "https://id.rijksmuseum.nl/200338900",
+      "imageUrl": "https://iiif.micr.io/StFwX/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200338904",
+      "objectNumber": "RP-F-F01077-R",
+      "title": "Groepsportret van de zusters Ursulinen van Noordwijk (Batavia) voor een gebouw met opschrift 'Bloemendaal'",
+      "otherTitles": [
+        "De Zusters van Noordwijk."
+      ],
+      "description": "Onderdeel van Album met foto's van Batavia en van de zusters Ursulinen.",
+      "date": "c. 1890 - c. 1910",
+      "creator": "fotograaf: anoniem, Batavia",
+      "objectUrl": "https://id.rijksmuseum.nl/200338904",
+      "imageUrl": "https://iiif.micr.io/aOgjh/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200338898",
+      "objectNumber": "RP-F-F01077-L",
+      "title": "Groepsportret van jonge zusters Ursulinen, vermoedelijk in Weltevreden",
+      "otherTitles": [
+        "De jongere Mères"
+      ],
+      "description": "Onderdeel van Album met foto's van Batavia en van de zusters Ursulinen.",
+      "date": "c. 1890 - c. 1910",
+      "creator": "fotograaf: anoniem, Weltevreden",
+      "objectUrl": "https://id.rijksmuseum.nl/200338898",
+      "imageUrl": "https://iiif.micr.io/jZgMu/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200338899",
+      "objectNumber": "RP-F-F01077-M",
+      "title": "Groepsportret van oudere zusters Ursulinen, vermoedelijk in Weltevreden",
+      "otherTitles": [],
+      "description": "Onderdeel van Album met foto's van Batavia en van de zusters Ursulinen.",
+      "date": "c. 1890 - c. 1910",
+      "creator": "fotograaf: anoniem, Weltevreden",
+      "objectUrl": "https://id.rijksmuseum.nl/200338899",
+      "imageUrl": "https://iiif.micr.io/rxNab/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200338893",
+      "objectNumber": "RP-F-F01077-G",
+      "title": "Ingang aan het Waterlooplein in Weltevreden, vermoedelijk van het Ursulinenklooster",
+      "otherTitles": [
+        "Nieuwe ingang, Waterloo-plein."
+      ],
+      "description": "Onderdeel van Album met foto's van Batavia en van de zusters Ursulinen.",
+      "date": "c. 1890 - c. 1910",
+      "creator": "fotograaf: anoniem, Weltevreden",
+      "objectUrl": "https://id.rijksmuseum.nl/200338893",
+      "imageUrl": "https://iiif.micr.io/IJlgn/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200338903",
+      "objectNumber": "RP-F-F01077-Q",
+      "title": "Interieur van de kapel van het Ursulinenklooster in Noordwijk (Batavia)",
+      "otherTitles": [
+        "Kapel van Noordwijk"
+      ],
+      "description": "Onderdeel van Album met foto's van Batavia en van de zusters Ursulinen.",
+      "date": "c. 1890 - c. 1910",
+      "creator": "fotograaf: anoniem, Batavia",
+      "objectUrl": "https://id.rijksmuseum.nl/200338903",
+      "imageUrl": "https://iiif.micr.io/gizji/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200338888",
+      "objectNumber": "RP-F-F01077-B",
+      "title": "Interieur van de kapel van het Ursulinenklooster in Weltevreden",
+      "otherTitles": [
+        "Kapel van Weltevreden, altaar."
+      ],
+      "description": "Onderdeel van Album met foto's van Batavia en van de zusters Ursulinen.",
+      "date": "c. 1890 - c. 1910",
+      "creator": "fotograaf: anoniem, Weltevreden",
+      "objectUrl": "https://id.rijksmuseum.nl/200338888",
+      "imageUrl": "https://iiif.micr.io/OVxOI/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200338905",
+      "objectNumber": "RP-F-F01077-S",
+      "title": "Meisjes in de kloostertuin van de zusters Ursulinen van Noordwijk (Batavia), met op de achtergrond een gebouw met opschrift 'Bloemendaal'",
+      "otherTitles": [
+        "De tuin van het klooster, Noordwijk."
+      ],
+      "description": "Onderdeel van Album met foto's van Batavia en van de zusters Ursulinen.",
+      "date": "c. 1890 - c. 1910",
+      "creator": "fotograaf: anoniem, Batavia",
+      "objectUrl": "https://id.rijksmuseum.nl/200338905",
+      "imageUrl": "https://iiif.micr.io/TdfrG/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200338895",
+      "objectNumber": "RP-F-F01077-I",
+      "title": "Non met kinderen op het Vincentius-erf in Batavia",
+      "otherTitles": [
+        "Vincentius-erf"
+      ],
+      "description": "Onderdeel van Album met foto's van Batavia en van de zusters Ursulinen.",
+      "date": "c. 1890 - c. 1910",
+      "creator": "fotograaf: anoniem, Batavia",
+      "objectUrl": "https://id.rijksmuseum.nl/200338895",
+      "imageUrl": "https://iiif.micr.io/xvFna/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200338894",
+      "objectNumber": "RP-F-F01077-H",
+      "title": "Non met leerlingen in een naaischool, vermoedelijk behorend bij het Ursulinenklooster in Weltevreden",
+      "otherTitles": [
+        "Naaischool"
+      ],
+      "description": "Onderdeel van Album met foto's van Batavia en van de zusters Ursulinen.",
+      "date": "c. 1890 - c. 1910",
+      "creator": "fotograaf: anoniem, Weltevreden",
+      "objectUrl": "https://id.rijksmuseum.nl/200338894",
+      "imageUrl": "https://iiif.micr.io/XMeew/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200338896",
+      "objectNumber": "RP-F-F01077-J",
+      "title": "Tuin met een huis in Bantar-Peteh bij Buitenzorg",
+      "otherTitles": [
+        "Bantar-Peteh."
+      ],
+      "description": "Onderdeel van Album met foto's van Batavia en van de zusters Ursulinen.",
+      "date": "c. 1890 - c. 1910",
+      "creator": "fotograaf: anoniem, Buitenzorg (West-Java)",
+      "objectUrl": "https://id.rijksmuseum.nl/200338896",
+      "imageUrl": "https://iiif.micr.io/efWUT/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "batavia",
+        "bogor",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200338889",
+      "objectNumber": "RP-F-F01077-C",
+      "title": "Tuin van het Ursulinenklooster in Weltevreden",
+      "otherTitles": [
+        "Tuin van het klooster."
+      ],
+      "description": "Onderdeel van Album met foto's van Batavia en van de zusters Ursulinen.",
+      "date": "c. 1890 - c. 1910",
+      "creator": "fotograaf: anoniem, Weltevreden",
+      "objectUrl": "https://id.rijksmuseum.nl/200338889",
+      "imageUrl": "https://iiif.micr.io/GohfN/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200338892",
+      "objectNumber": "RP-F-F01077-F",
+      "title": "Zaal met banken in het Ursulinenklooster in Weltevreden",
+      "otherTitles": [
+        "Nieuwe zaal, bij den cursus."
+      ],
+      "description": "Onderdeel van Album met foto's van Batavia en van de zusters Ursulinen.",
+      "date": "c. 1890 - c. 1910",
+      "creator": "fotograaf: anoniem, Weltevreden",
+      "objectUrl": "https://id.rijksmuseum.nl/200338892",
+      "imageUrl": "https://iiif.micr.io/xIxzM/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
       ],
       "recordType": "photograph"
     },
@@ -4212,17 +5258,17 @@
       "recordType": "photograph"
     },
     {
-      "id": "200478617",
-      "objectNumber": "RP-F-00-5346-50",
+      "id": "200478616",
+      "objectNumber": "RP-F-00-5346-49",
       "title": "Landschap met de rivier Tjidane en de berg Salak in Buitenzorg",
       "otherTitles": [
-        "47. Buitenzorg: Salak met riviertje Tjidane"
+        "46. Buitenzorg: Salak met riviertje Tjidane"
       ],
-      "description": "Landschap met de rivier Tjidane en de berg Salak, Buitenzorg (Bogor), Nederlands-Indië",
+      "description": "Landschap met de rivier Tjidane en de berg Salak, Buitenzorg (Bogor), Nederlands-Indië.",
       "date": "c. 1895 - c. 1915",
       "creator": "fotograaf: anoniem, Buitenzorg (West-Java)",
-      "objectUrl": "https://id.rijksmuseum.nl/200478617",
-      "imageUrl": "https://iiif.micr.io/oUDzL/full/max/0/default.jpg",
+      "objectUrl": "https://id.rijksmuseum.nl/200478616",
+      "imageUrl": "https://iiif.micr.io/Hmhar/full/max/0/default.jpg",
       "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
       "imageRightsEvidence": [
         "https://creativecommons.org/publicdomain/mark/1.0/"
@@ -4241,17 +5287,17 @@
       "recordType": "photograph"
     },
     {
-      "id": "200478616",
-      "objectNumber": "RP-F-00-5346-49",
+      "id": "200478617",
+      "objectNumber": "RP-F-00-5346-50",
       "title": "Landschap met de rivier Tjidane en de berg Salak in Buitenzorg",
       "otherTitles": [
-        "46. Buitenzorg: Salak met riviertje Tjidane"
+        "47. Buitenzorg: Salak met riviertje Tjidane"
       ],
-      "description": "Landschap met de rivier Tjidane en de berg Salak, Buitenzorg (Bogor), Nederlands-Indië.",
+      "description": "Landschap met de rivier Tjidane en de berg Salak, Buitenzorg (Bogor), Nederlands-Indië",
       "date": "c. 1895 - c. 1915",
       "creator": "fotograaf: anoniem, Buitenzorg (West-Java)",
-      "objectUrl": "https://id.rijksmuseum.nl/200478616",
-      "imageUrl": "https://iiif.micr.io/Hmhar/full/max/0/default.jpg",
+      "objectUrl": "https://id.rijksmuseum.nl/200478617",
+      "imageUrl": "https://iiif.micr.io/oUDzL/full/max/0/default.jpg",
       "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
       "imageRightsEvidence": [
         "https://creativecommons.org/publicdomain/mark/1.0/"
@@ -4503,6 +5549,542 @@
       "recordType": "photograph"
     },
     {
+      "id": "200339429",
+      "objectNumber": "RP-F-F01094-C",
+      "title": "Binnenhaven in Soerabaja met huizen, boten en spoorlijn",
+      "otherTitles": [
+        "Weg Oedjoong Soerabaia"
+      ],
+      "description": "Onderdeel van Herinneringsalbum met foto's van Soerabaja.",
+      "date": "c. 1900 - before 1906-12-30",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200339429",
+      "imageUrl": "https://iiif.micr.io/Ljukq/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Soerabaja"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200339436",
+      "objectNumber": "RP-F-F01094-J",
+      "title": "Exterieur van het Comediegebouw van Soerabaja",
+      "otherTitles": [
+        "Comedie-Gebouw."
+      ],
+      "description": "Onderdeel van Herinneringsalbum met foto's van Soerabaja.",
+      "date": "c. 1900 - before 1906-12-30",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200339436",
+      "imageUrl": "https://iiif.micr.io/dcnJM/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Soerabaja"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200339430",
+      "objectNumber": "RP-F-F01094-D",
+      "title": "Gezicht op de pier van de haven van Soerabaja",
+      "otherTitles": [
+        "De pier Oedjoong"
+      ],
+      "description": "Onderdeel van Herinneringsalbum met foto's van Soerabaja.",
+      "date": "c. 1900 - before 1906-12-30",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200339430",
+      "imageUrl": "https://iiif.micr.io/BEtnr/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Soerabaja"
+      ],
+      "topics": [
+        "transport"
+      ],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200339432",
+      "objectNumber": "RP-F-F01094-F",
+      "title": "Gezicht op de westzijde van Kalimas, de binnenhaven van Soerabaja",
+      "otherTitles": [
+        "Kaliemaas westzijde."
+      ],
+      "description": "Onderdeel van Herinneringsalbum met foto's van Soerabaja.",
+      "date": "c. 1900 - before 1906-12-30",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200339432",
+      "imageUrl": "https://iiif.micr.io/FmTct/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Soerabaja"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200339439",
+      "objectNumber": "RP-F-F01094-M",
+      "title": "Gezicht op het station van de Staatsspoorwegen in Soerabaja met wachtende koetsen en voorbijgangers",
+      "otherTitles": [
+        "Station S.S."
+      ],
+      "description": "Onderdeel van Herinneringsalbum met foto's van Soerabaja.",
+      "date": "c. 1900 - before 1906-12-30",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200339439",
+      "imageUrl": "https://iiif.micr.io/EaDtV/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Soerabaja"
+      ],
+      "topics": [
+        "architecture",
+        "transport"
+      ],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200339437",
+      "objectNumber": "RP-F-F01094-K",
+      "title": "Militaire kazerne in Soerabaja met ervoor het Atjeh-monument",
+      "otherTitles": [
+        "Plein voor de Kazerne met Atjeh-Monument."
+      ],
+      "description": "Onderdeel van Herinneringsalbum met foto's van Soerabaja.",
+      "date": "c. 1900 - before 1906-12-30",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200339437",
+      "imageUrl": "https://iiif.micr.io/gmvOG/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Soerabaja"
+      ],
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "java",
+        "sumatra",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200339428",
+      "objectNumber": "RP-F-F01094-B",
+      "title": "Schepen en zeilboten op de rede van Soerabaja",
+      "otherTitles": [
+        "Reede Soerabaia."
+      ],
+      "description": "Onderdeel van Herinneringsalbum met foto's van Soerabaja.",
+      "date": "c. 1900 - before 1906-12-30",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200339428",
+      "imageUrl": "https://iiif.micr.io/fkYdM/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Soerabaja"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200339435",
+      "objectNumber": "RP-F-F01094-I",
+      "title": "Straatgezicht aan de Willemskade in Soerabaja met karren en voorbijgangers",
+      "otherTitles": [
+        "Willemskade Toco Fuhri en Co."
+      ],
+      "description": "Onderdeel van Herinneringsalbum met foto's van Soerabaja.",
+      "date": "c. 1900 - before 1906-12-30",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200339435",
+      "imageUrl": "https://iiif.micr.io/hEsoH/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Soerabaja"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200339434",
+      "objectNumber": "RP-F-F01094-H",
+      "title": "Straatgezicht bij de Chinese Kerk in Soerabaja met koetsen en voorbijgangers",
+      "otherTitles": [
+        "Chineesche Kerk."
+      ],
+      "description": "Onderdeel van Herinneringsalbum met foto's van Soerabaja.",
+      "date": "c. 1900 - before 1906-12-30",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200339434",
+      "imageUrl": "https://iiif.micr.io/FWFdl/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Soerabaja"
+      ],
+      "topics": [
+        "architecture",
+        "culture"
+      ],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200339433",
+      "objectNumber": "RP-F-F01094-G",
+      "title": "Straatgezicht bij Roode Brug in Soerabaja met karren en voorbijgangers",
+      "otherTitles": [
+        "Roode Brug"
+      ],
+      "description": "Onderdeel van Herinneringsalbum met foto's van Soerabaja.",
+      "date": "c. 1900 - before 1906-12-30",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200339433",
+      "imageUrl": "https://iiif.micr.io/kvHGz/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Soerabaja"
+      ],
+      "topics": [
+        "architecture",
+        "transport"
+      ],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200339431",
+      "objectNumber": "RP-F-F01094-E",
+      "title": "Straatgezicht in Soerabaja met tram, karren en voorbijgangers",
+      "otherTitles": [
+        "Hoofdwacht."
+      ],
+      "description": "Onderdeel van Herinneringsalbum met foto's van Soerabaja.",
+      "date": "c. 1900 - before 1906-12-30",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200339431",
+      "imageUrl": "https://iiif.micr.io/tGhcD/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Soerabaja"
+      ],
+      "topics": [
+        "transport"
+      ],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200339438",
+      "objectNumber": "RP-F-F01094-L",
+      "title": "Weg langs de rooms-katholieke kerk van Soerabaja",
+      "otherTitles": [
+        "Weg voorbij de R. Kath.ke Kerk"
+      ],
+      "description": "Onderdeel van Herinneringsalbum met foto's van Soerabaja.",
+      "date": "c. 1900 - before 1906-12-30",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200339438",
+      "imageUrl": "https://iiif.micr.io/ewcor/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Soerabaja"
+      ],
+      "topics": [
+        "architecture",
+        "culture"
+      ],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200337258",
+      "objectNumber": "RP-F-F01149-D",
+      "title": "Aanleg van een tabaksveld op Sumatra",
+      "otherTitles": [],
+      "description": "Onderdeel van reisalbum met foto's van bedrijvigheid en bezienswaardigheden op Sumatra en Java en van de reis naar en van Nederlands-Indië.",
+      "date": "c. 1900 - c. 1915",
+      "creator": "fotograaf: Carl J. Kleingrothe, Sumatra",
+      "objectUrl": "https://id.rijksmuseum.nl/200337258",
+      "imageUrl": "https://iiif.micr.io/TrXJT/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "other-java",
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200337257",
+      "objectNumber": "RP-F-F01149-C",
+      "title": "Bouw van droogschuren en de woning van de assistent op Sumatra",
+      "otherTitles": [],
+      "description": "Onderdeel van reisalbum met foto's van bedrijvigheid en bezienswaardigheden op Sumatra en Java en van de reis naar en van Nederlands-Indië.",
+      "date": "c. 1900 - c. 1915",
+      "creator": "fotograaf: Carl J. Kleingrothe, Sumatra",
+      "objectUrl": "https://id.rijksmuseum.nl/200337257",
+      "imageUrl": "https://iiif.micr.io/TDGEd/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "java",
+        "other-java",
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200337255",
+      "objectNumber": "RP-F-F01149-A",
+      "title": "Gezicht op een veld met tabaksplanten op Sumatra",
+      "otherTitles": [],
+      "description": "Onderdeel van reisalbum met foto's van bedrijvigheid en bezienswaardigheden op Sumatra en Java en van de reis naar en van Nederlands-Indië.",
+      "date": "c. 1900 - c. 1915",
+      "creator": "fotograaf: Carl J. Kleingrothe, Sumatra",
+      "objectUrl": "https://id.rijksmuseum.nl/200337255",
+      "imageUrl": "https://iiif.micr.io/NCbXp/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "other-java",
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200337256",
+      "objectNumber": "RP-F-F01149-B",
+      "title": "Kappen van oerbos voor aanleg van een tabaksveld op Sumatra",
+      "otherTitles": [],
+      "description": "Onderdeel van reisalbum met foto's van bedrijvigheid en bezienswaardigheden op Sumatra en Java en van de reis naar en van Nederlands-Indië.",
+      "date": "c. 1900 - c. 1915",
+      "creator": "fotograaf: Carl J. Kleingrothe, Sumatra",
+      "objectUrl": "https://id.rijksmuseum.nl/200337256",
+      "imageUrl": "https://iiif.micr.io/MwVte/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "other-java",
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200337259",
+      "objectNumber": "RP-F-F01149-E",
+      "title": "Arbeiders aan het werk bij zaadbedden onder klamboes op Sumatra",
+      "otherTitles": [],
+      "description": "Onderdeel van reisalbum met foto's van bedrijvigheid en bezienswaardigheden op Sumatra en Java en van de reis naar en van Nederlands-Indië.",
+      "date": "c. 1900 - c. 1920",
+      "creator": "fotograaf: anoniem, Sumatra",
+      "objectUrl": "https://id.rijksmuseum.nl/200337259",
+      "imageUrl": "https://iiif.micr.io/HLtcd/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "java",
+        "other-java",
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200337261",
+      "objectNumber": "RP-F-F01149-G",
+      "title": "Vrouwen aan het werk bij zaadbedden op Sumatra",
+      "otherTitles": [
+        "Zaadbedden",
+        "Indische vrouwen aan het werk bij zaadbedden op Sumatra"
+      ],
+      "description": "Mogelijk gaat het om contractarbeidsters. Onderdeel van reisalbum met foto's van bedrijvigheid en bezienswaardigheden op Sumatra en Java en van de reis naar en van Nederlands-Indië.",
+      "date": "c. 1900 - c. 1920",
+      "creator": "fotograaf: anoniem, Sumatra",
+      "objectUrl": "https://id.rijksmuseum.nl/200337261",
+      "imageUrl": "https://iiif.micr.io/MfVda/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "java",
+        "other-java",
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200337260",
+      "objectNumber": "RP-F-F01149-F",
+      "title": "Zaadbedden op Sumatra",
+      "otherTitles": [],
+      "description": "Onderdeel van reisalbum met foto's van bedrijvigheid en bezienswaardigheden op Sumatra en Java en van de reis naar en van Nederlands-Indië.",
+      "date": "c. 1900 - c. 1920",
+      "creator": "fotograaf: anoniem, Sumatra",
+      "objectUrl": "https://id.rijksmuseum.nl/200337260",
+      "imageUrl": "https://iiif.micr.io/CCVZS/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "other-java",
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
       "id": "200335508",
       "objectNumber": "RP-F-F01220-AA",
       "title": "Huwelijksportret van 'Bets' (trouwen met de handschoen)",
@@ -4526,6 +6108,35 @@
       "places": [
         "java",
         "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200528669",
+      "objectNumber": "NG-2006-40-16",
+      "title": "Excursie van de Chung Hsiok naar Pengalengan",
+      "otherTitles": [],
+      "description": "Albumblad met negen foto's van een excursie naar Pengalengan en het meer van Tjileuntja (Situ Cileunca) door leden van de Chung Hsiok verenigingen van Batavia en Bandoeng. Onderdeel van een familiealbum van een Chinees-Indische familie in Weltevreden, ca. 1935.",
+      "date": "c. 1935 - c. 1936",
+      "creator": "fotograaf: anoniem, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200528669",
+      "imageUrl": "https://iiif.micr.io/QrxuW/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "landscape",
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
       ],
       "recordType": "photograph"
     }
