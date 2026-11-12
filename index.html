@@ -58,6 +58,11 @@ h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;mar
 .archives{margin-top:70px}.archive-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
 .record-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .record-card{background:var(--card);border:1px solid var(--line);padding:17px 18px;min-width:0}
+.rm-image{margin:-17px -18px 14px;aspect-ratio:16/10;background:#e8e7df;overflow:hidden}
+.rm-image a{display:block;width:100%;height:100%}
+.rm-image img{width:100%;height:100%;object-fit:contain;display:block}
+.rm-image-placeholder{margin:-17px -18px 14px;padding:18px;min-height:66px;background:#efeee8;color:#646b60;font:11px/1.5 var(--sans)}
+.rm-source-note{font:11px/1.5 var(--sans);color:var(--muted);margin:0 0 10px}
 .record-card h3{font:normal 17px/1.35 var(--serif);margin:0 0 9px}
 .record-card p{font:12px/1.6 var(--sans);color:#5e695f;margin:0 0 11px}
 .record-meta{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 12px}
@@ -124,8 +129,15 @@ h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;mar
 <div class="head"><div><div class="section-label">Aanvullende primaire bron · linked open data</div><h2 id="naTitle">Archiefbeschrijvingen van het Nationaal Archief</h2></div><div class="head-right" id="naCount" aria-live="polite">Index wordt geladen</div></div>
 <p class="fine">Dit zijn bronbeschrijvingen, geen vrijgegeven afbeeldingsbestanden. Bij deze records staat de auteursrechtstatus vaak als “Copyright niet bekend” of “Copyright Not Evaluated”. Daarom worden hier geen thumbnails herpubliceerd. Open het originele archiefrecord voor de volledige beschrijving en rechteninformatie.</p>
 <p class="fine">Onderwerplabels worden afgeleid uit de tekst van de bronbeschrijving; het zijn geen officiële classificaties van het Nationaal Archief. Het label “Bersiap” verschijnt alleen als die term expliciet in de bronbeschrijving staat. Een datum alleen bepaalt nooit een onderwerp.</p>
+<p class="fine" id="naSnapshotNote">Momentopname van een beperkte zoekselectie uit de linked-open-data-fotocollectie. De peildatum en eventuele veiligheidslimiet worden hier vermeld.</p>
 <div id="naResults" class="record-grid" aria-live="polite"><div class="status"><strong>Archiefindex</strong>De aanvullende bronrecords worden geladen.</div></div>
 <button id="naMore" class="more" type="button" hidden>Meer archiefrecords tonen</button>
+</section>
+<section id="rmArchive" class="archives" aria-labelledby="rmTitle">
+<div class="head"><div><div class="section-label">Aanvullende museumbron · Linked Art + IIIF</div><h2 id="rmTitle">Fotocollectie van het Rijksmuseum</h2></div><div class="head-right" id="rmCount" aria-live="polite">Index wordt geladen</div></div>
+<p class="fine" id="rmSnapshotNote">De Rijksmuseum-index wordt geladen. Afbeeldingen worden alleen getoond wanneer de rechtenverklaring van het digitale beeld expliciet Public Domain Mark of CC0 vermeldt. Anders blijft het object metadata-only en linkt het naar het originele objectrecord.</p>
+<div id="rmResults" class="record-grid" aria-live="polite"><div class="status"><strong>Rijksmuseum-index</strong>De aanvullende fotorecords worden geladen.</div></div>
+<button id="rmMore" class="more" type="button" hidden>Meer Rijksmuseum-records tonen</button>
 </section>
 <section class="archives" aria-labelledby="sourcesTitle">
 <div class="head"><div><div class="section-label">Onderzoeksnetwerk · institutionele bronnen</div><h2 id="sourcesTitle">Doorzoek de oorspronkelijke collecties</h2></div></div>
@@ -137,7 +149,7 @@ h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;mar
 <article class="archive"><span class="source-kind">Militaire fotografie · film</span><h3>Beeldbank NIMH</h3><p>Het Nederlands Instituut voor Militaire Historie beheert foto's en films over de krijgsmacht. De beeldbank bevat materiaal over Nederlands-Indië en het KNIL; zoek op historische plaatsnamen, eenheden en persoonsnamen.</p><a href="https://beeldbank.nimh.nl/" target="_blank" rel="noopener noreferrer">Open de NIMH-beeldbank ↗</a><br><a href="https://www.nimh.nl/zelf-onderzoek-doen/onderzoekshulp/knil" target="_blank" rel="noopener noreferrer">Onderzoekshulp KNIL ↗</a></article>
 <article class="archive"><span class="source-kind">Fotografie · Indonesië en Nederlands-Indië</span><h3>Wereldmuseum · NMVW-collectie</h3><p>De collectiezoekmachine bevat onder meer fotoreeksen en albums over Nederlands-Indië en Indonesië. Controleer bij elk object de fotograaf, datering, context en hergebruikvoorwaarden.</p><a href="https://collectie.wereldmuseum.nl/" target="_blank" rel="noopener noreferrer">Open de NMVW-collectie ↗</a><br><a href="https://rotterdam.wereldmuseum.nl/nl/zien-en-doen/tentoonstellingen/dossier-indie/fotografie" target="_blank" rel="noopener noreferrer">Dossier Indië · fotografie ↗</a></article>
 <article class="archive"><span class="source-kind">Architectuur · stedenbouw · ontwerp</span><h3>Het Nieuwe Instituut</h3><p>De Rijkscollectie voor Nederlandse Architectuur en Stedenbouw bevat architectenarchieven met foto's, tekeningen, schetsen en documentatie. Dit is een belangrijke aanvullende bron voor gebouwen, stadsbeelden en ontwerpgeschiedenis in de kolonie.</p><a href="https://zoeken.nieuweinstituut.nl/nl/zoeken-op-het-portaal" target="_blank" rel="noopener noreferrer">Open het collectiezoekportaal ↗</a><br><a href="https://nieuweinstituut.nl/projects/collectie/zoeken-in-de-collectie" target="_blank" rel="noopener noreferrer">Uitleg over de collectie ↗</a></article>
-<article class="archive"><span class="source-kind">Museumobjecten · publieke API</span><h3>Rijksmuseum</h3><p>De Search API is publiek toegankelijk en vereist volgens de documentatie geen API-sleutel. De API ontsluit museumobjecten, maar niet de bibliotheek- en archiefrecords. Gebruik deze bron aanvullend, niet als volledige fotobron.</p><a href="https://www.rijksmuseum.nl/nl/zoeken?v=1&amp;f=1&amp;p=1&amp;ps=12&amp;ii=0&amp;q=Bandung" target="_blank" rel="noopener noreferrer">Zoek Bandung in de collectie ↗</a><br><a href="https://data.rijksmuseum.nl/docs/search" target="_blank" rel="noopener noreferrer">Officiële Search API-documentatie ↗</a></article>
+<article class="archive"><span class="source-kind">Linked Art + IIIF · rechtstreeks geïntegreerde metadata</span><h3>Rijksmuseum</h3><p>Deze website harvest een begrensde selectie van foto's uit de openbare Search API en Linked Art-records. Een afbeelding verschijnt alleen als de rechtenverklaring op het digitale beeld zelf expliciet Public Domain Mark of CC0 vermeldt. Bij onbekende of beperkende beeldrechten wordt uitsluitend metadata getoond.</p><a href="https://data.rijksmuseum.nl/search/collection?description=Bandung&amp;type=photograph&amp;imageAvailable=true" target="_blank" rel="noopener noreferrer">Bekijk de fotozoekresultaten voor Bandung ↗</a><br><a href="https://data.rijksmuseum.nl/docs/search" target="_blank" rel="noopener noreferrer">Officiële Search API-documentatie ↗</a></article>
 <article class="archive"><span class="source-kind">Internationale erfgoedaggregator</span><h3>Europeana</h3><p>Zoek in digitale collecties van erfgoedinstellingen in heel Europa. De Search API is bruikbaar voor toekomstige integratie, maar vereist een API-sleutel. Controleer de rechtenverklaring per digitaal object.</p><a href="https://www.europeana.eu/en/search" target="_blank" rel="noopener noreferrer">Zoek in Europeana ↗</a><br><a href="https://api.europeana.eu/" target="_blank" rel="noopener noreferrer">Europeana API-portaal ↗</a></article>
 <article class="archive"><span class="source-kind">Historische kranten · boeken · tijdschriften</span><h3>Delpher · Koninklijke Bibliotheek</h3><p>Delpher biedt miljoenen gedigitaliseerde publicaties, waaronder kranten uit Nederlands-Indië. Geen zelfstandige fotobeeldbank, maar onmisbaar voor het dateren en contextualiseren van foto's en gebeurtenissen.</p><a href="https://www.delpher.nl/nl/kranten/results?query=Nederlands-Indi%C3%AB" target="_blank" rel="noopener noreferrer">Zoek Nederlands-Indië in kranten ↗</a><br><a href="https://www.delpher.nl/thema/geschiedenis/indisch-erfgoed" target="_blank" rel="noopener noreferrer">Thema Indisch erfgoed ↗</a></article>
 <article class="archive"><span class="source-kind">Historische kaarten · prenten · locaties</span><h3>Atlas of Mutual Heritage</h3><p>Beeld- en contextdatabase over gebieden en vestigingen van de VOC en WIC. Vooral relevant voor de vroegere koloniale geschiedenis (ca. 1600–1800), niet als vervanging van fotoarchieven uit de twintigste eeuw.</p><a href="https://www.atlasofmutualheritage.nl/" target="_blank" rel="noopener noreferrer">Open Atlas of Mutual Heritage ↗</a></article>
@@ -145,7 +157,7 @@ h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;mar
 </div>
 </section>
 </main>
-<footer class="footer"><strong>Indisch Beeldarchief</strong><br>Onafhankelijk, groeiend overzicht van historische beeldbronnen. Geen officiële archiefinstelling en geen complete reproductie van alle bestaande collecties.<br>Beeldrechten blijven bij de oorspronkelijke rechthebbenden. Raadpleeg de bronpagina vóór hergebruik.</footer>
+<footer class="footer"><strong>Indisch Beeldarchief</strong><br>Onafhankelijk, groeiend overzicht van historische beeldbronnen. Geen officiële archiefinstelling en geen complete reproductie van alle bestaande collecties.<br>Beeldrechten blijven bij de oorspronkelijke rechthebbenden. Raadpleeg de bronpagina vóór hergebruik.<br><a href="https://github.com/manuelbirsak-web/nederlands-indie-fotoarchief/blob/main/METHODOLOGY.md" target="_blank" rel="noopener noreferrer">Curatoriële methode</a> · <a href="https://github.com/manuelbirsak-web/nederlands-indie-fotoarchief/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">Bijdragen &amp; correcties</a> · <a href="https://github.com/manuelbirsak-web/nederlands-indie-fotoarchief/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer">Release notes</a></footer>
 <script>
 'use strict';
 const API='https://commons.wikimedia.org/w/api.php';
@@ -233,6 +245,7 @@ async function load(reset=false) {
   }
   $('#results').setAttribute('aria-busy','true');
   renderNationaalArchiefRecords(reset);
+  renderRijksmuseumRecords(reset);
   try {
     let foundThisLoad = 0;
     let batches = 0;
@@ -290,6 +303,9 @@ async function load(reset=false) {
 }
 let naIndex=null;
 let naVisibleCount=12;
+let rmIndex=null;
+let rmVisibleCount=12;
+const RM_IMAGE_RIGHTS=new Set(['https://creativecommons.org/publicdomain/mark/1.0/','https://creativecommons.org/publicdomain/zero/1.0/']);
 const topicFilterToArchive={city:'architecture',people:'society',military:'military',transport:'transport',culture:'culture',nature:'landscape'};
 function archiveRecordYear(record){const match=String(record.date||'').match(/(?:18|19|20)\d{2}/);return match?Number(match[0]):null}
 function naRecordMatches(record){
@@ -341,16 +357,94 @@ function renderNationaalArchiefRecords(reset=false){
  $('#naMore').textContent='Meer archiefrecords tonen ('+Math.min(naVisibleCount,matches.length)+' van '+matches.length+')';
 }
 async function loadNationaalArchiefIndex(){
- try{const response=await fetch('assets/nationaal-archief.json',{cache:'no-cache'});if(!response.ok)throw new Error('HTTP '+response.status);naIndex=await response.json();renderNationaalArchiefRecords()}
- catch(error){$('#naResults').replaceChildren(status('Archiefindex tijdelijk niet beschikbaar','De fotogalerij blijft werken. Open de linked-data zoekingang van het Nationaal Archief voor de actuele brongegevens.'))}
+ try{
+  const response=await fetch('assets/nationaal-archief.json',{cache:'no-cache'});
+  if(!response.ok)throw new Error('HTTP '+response.status);
+  naIndex=await response.json();
+  const day=String(naIndex.snapshotDate||'').slice(0,10)||'peildatum onbekend';
+  const cap=naIndex.truncatedAtSafetyLimit?' De query bereikte de ingestelde veiligheidslimiet van '+naIndex.maxPages+' pagina’s × '+naIndex.pageSize+' records; dit is nadrukkelijk geen volledige export van de fotocollectie.':' De snapshot is een gerichte zoekselectie en geen volledige export van de fotocollectie.';
+  $('#naSnapshotNote').textContent='Peildatum '+day+' · '+naIndex.count+' metadatarecords uit de linked-open-data-fotocollectie.'+cap+' Er worden geen thumbnails uit deze index overgenomen zolang beeldrechten niet expliciet zijn vastgesteld.';
+  renderNationaalArchiefRecords()
+ }catch(error){
+  $('#naCount').textContent='Index niet beschikbaar';
+  $('#naResults').replaceChildren(status('Archiefindex tijdelijk niet beschikbaar','De fotogalerij blijft werken. Open de linked-data zoekingang van het Nationaal Archief voor de actuele brongegevens.'));
+ }
+}
+function rijksmuseumRecordMatches(record){
+ const searchText=[record.title||'',record.description||'',record.creator||'',record.objectNumber||'',...(record.otherTitles||[])].join(' ').toLocaleLowerCase('nl');
+ const query=$('#q').value.trim().toLocaleLowerCase('nl');
+ if(query&&!searchText.includes(query))return false;
+ const topics=Array.isArray(record.topics)?record.topics:[];
+ const places=Array.isArray(record.places)?record.places:[];
+ if(view==='java'){
+  if(!places.includes('java'))return false;
+  if(place!=='all'&&!places.includes(place==='other'?'other-java':place))return false;
+ }else if(view==='bandung'&&!places.includes('bandung'))return false;
+ else if(view==='knil'&&!topics.some(tag=>tag==='knil'||tag==='military'))return false;
+ else if(view==='bersiap'&&!topics.includes('decolonization'))return false;
+ else if(view==='daily'&&!topics.includes('society'))return false;
+ const year=archiveRecordYear({date:record.date});
+ if(!periodMatches(year))return false;
+ if(view==='bersiap'&&year!==null&&(year<1945||year>1950))return false;
+ const selectedArchiveTopic=topicFilterToArchive[$('#topic').value];
+ if(selectedArchiveTopic&&!topics.includes(selectedArchiveTopic))return false;
+ return true;
+}
+function renderRijksmuseumRecords(reset=false){
+ const root=$('#rmResults');if(!root)return;
+ if(reset)rmVisibleCount=12;
+ if(!rmIndex){root.replaceChildren(status('Rijksmuseum-index laden','De aanvullende foto-objecten worden opgehaald.'));return}
+ const matches=(rmIndex.records||[]).filter(rijksmuseumRecordMatches);
+ $('#rmCount').textContent=matches.length+' passende objecten · '+(rmIndex.count||0)+' in selectie · '+(rmIndex.imageCount||0)+' beelden met expliciete hergebruikstatus';
+ root.replaceChildren();
+ if(!matches.length){root.append(status('Geen passende Rijksmuseum-records','Probeer een andere zoekterm of gebruik de oorspronkelijke collectiezoekingang.'));$('#rmMore').hidden=true;return}
+ const labels={knil:'KNIL-vermelding',military:'Militair onderwerp',decolonization:'Dekolonisatieperiode',bersiap:'Bron noemt Bersiap',society:'Samenleving',architecture:'Architectuur',transport:'Transport',culture:'Cultuur',landscape:'Landschap'};
+ for(const record of matches.slice(0,rmVisibleCount)){
+  const card=document.createElement('article');card.className='record-card rm-record';
+  const permittedImage=Boolean(record.imageUrl&&RM_IMAGE_RIGHTS.has(record.imageRightsUrl));
+  if(permittedImage){
+   const frame=document.createElement('div');frame.className='rm-image';
+   const imageLink=document.createElement('a');imageLink.href=record.imageUrl;imageLink.target='_blank';imageLink.rel='noopener noreferrer';imageLink.setAttribute('aria-label','Open vrijgegeven beeld: '+(record.title||'Rijksmuseum-foto'));
+   const img=document.createElement('img');img.loading='lazy';img.decoding='async';img.src=record.imageUrl;img.alt=record.title||'Historische foto uit de collectie van het Rijksmuseum';
+   img.onerror=()=>{frame.replaceChildren();const fallback=document.createElement('div');fallback.className='rm-image-placeholder';fallback.textContent='De IIIF-afbeelding is tijdelijk niet bereikbaar; open het oorspronkelijke objectrecord.';frame.append(fallback)};
+   imageLink.append(img);frame.append(imageLink);card.append(frame);
+  }else{
+   const placeholder=document.createElement('div');placeholder.className='rm-image-placeholder';placeholder.textContent='Metadatarecord · geen herbruikbare afbeeldingslicentie vastgesteld. Open het oorspronkelijke objectrecord om de toegangs- en rechteninformatie te controleren.';card.append(placeholder);
+  }
+  const title=document.createElement('h3');title.textContent=record.title||'Object zonder titel';
+  const meta=document.createElement('div');meta.className='record-meta';
+  const date=document.createElement('span');date.className='tag';date.textContent=record.date||'Datering niet vermeld';meta.append(date);
+  if(record.objectNumber){const number=document.createElement('span');number.className='tag';number.textContent='Objectnummer '+record.objectNumber;meta.append(number)}
+  for(const topic of (record.topics||[]).slice(0,3)){const tag=document.createElement('span');tag.className='tag';tag.textContent=labels[topic]||topic;meta.append(tag)}
+  const rights=document.createElement('span');rights.className='tag';rights.textContent=permittedImage?(record.imageRightsUrl.includes('/mark/')?'Public Domain Mark':'CC0'):'Afbeeldingsrechten niet vrijgegeven';meta.append(rights);
+  const description=document.createElement('p');description.textContent=record.description||'Geen afzonderlijke objectbeschrijving beschikbaar';
+  const creator=document.createElement('p');creator.className='rm-source-note';creator.textContent=record.creator||'Maker niet vermeld in dit record';
+  const link=document.createElement('a');link.href=record.objectUrl;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Origineel Rijksmuseum-objectrecord bekijken ↗';
+  card.append(title,meta,description,creator,link);root.append(card);
+ }
+ $('#rmMore').hidden=matches.length<=rmVisibleCount;
+ $('#rmMore').textContent='Meer Rijksmuseum-records tonen ('+Math.min(rmVisibleCount,matches.length)+' van '+matches.length+')';
+}
+async function loadRijksmuseumIndex(){
+ try{
+  const response=await fetch('assets/rijksmuseum.json',{cache:'no-cache'});
+  if(!response.ok)throw new Error('HTTP '+response.status);
+  rmIndex=await response.json();
+  const day=String(rmIndex.snapshotDate||'').slice(0,10)||'peildatum onbekend';
+  $('#rmSnapshotNote').textContent='Peildatum '+day+' · '+rmIndex.count+' fotorecords uit een begrensde selectie van de Rijksmuseum Search API. Afbeeldingen verschijnen alleen als het digitale beeld zelf Public Domain Mark 1.0 of CC0 1.0 vermeldt. Bij InC, ontbrekende rechten of onduidelijk bewijs wordt uitsluitend metadata getoond.';
+  renderRijksmuseumRecords();
+ }catch(error){
+  $('#rmCount').textContent='Index niet beschikbaar';
+  $('#rmResults').replaceChildren(status('Rijksmuseum-index tijdelijk niet beschikbaar','De overige collecties blijven beschikbaar. Open de oorspronkelijke Rijksmuseum-zoekomgeving voor actuele resultaten.'));
+ }
 }
 
 function resetFilters(){ $('#q').value='';$('#period').value='1800-1959';$('#topic').value='';place='all';customTerm='';document.querySelectorAll('[data-place]').forEach(b=>b.classList.toggle('selected',b.dataset.place==='all'));document.querySelectorAll('#bandungTopics button').forEach(b=>b.classList.remove('selected'));load(true)}
 $('#nav').addEventListener('click',event=>{const button=event.target.closest('[data-view]');if(!button)return;view=button.dataset.view;syncView();load(true)});
 $('#places').addEventListener('click',event=>{const button=event.target.closest('[data-place]');if(!button)return;place=button.dataset.place;document.querySelectorAll('#places [data-place]').forEach(b=>b.classList.toggle('selected',b===button));load(true)});
 $('#bandungTopics').addEventListener('click',event=>{const button=event.target.closest('[data-term]');if(!button)return;customTerm=button.dataset.term;document.querySelectorAll('#bandungTopics [data-term]').forEach(b=>b.classList.toggle('selected',b===button));load(true)});
-$('#go').addEventListener('click',()=>load(true));$('#q').addEventListener('keydown',event=>{if(event.key==='Enter')load(true)});$('#period').addEventListener('change',()=>load(true));$('#topic').addEventListener('change',()=>load(true));$('#reset').addEventListener('click',resetFilters);$('#more').addEventListener('click',()=>load(false));$('#naMore').addEventListener('click',()=>{naVisibleCount+=12;renderNationaalArchiefRecords()});
-syncView();load(true);loadNationaalArchiefIndex();
+$('#go').addEventListener('click',()=>load(true));$('#q').addEventListener('keydown',event=>{if(event.key==='Enter')load(true)});$('#period').addEventListener('change',()=>load(true));$('#topic').addEventListener('change',()=>load(true));$('#reset').addEventListener('click',resetFilters);$('#more').addEventListener('click',()=>load(false));$('#naMore').addEventListener('click',()=>{naVisibleCount+=12;renderNationaalArchiefRecords()});$('#rmMore').addEventListener('click',()=>{rmVisibleCount+=12;renderRijksmuseumRecords()});
+syncView();load(true);loadNationaalArchiefIndex();loadRijksmuseumIndex();
 </script>
 </body>
 </html>
