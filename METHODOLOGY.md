@@ -64,7 +64,7 @@ Dit document is geen juridisch oordeel en verleent geen toestemming voor hergebr
 
 ## 6. Gegevensmodel
 
-De Nationaal Archief-snapshot gebruikt schemaVersion 2. Een record kan onder meer bevatten:
+De Nationaal Archief-snapshot gebruikt schemaVersion 2. De Rijksmuseum-snapshot gebruikt schemaVersion 1 en bevat objectidentificatie, bron- en zoekprovenance, beschrijving, datering, maker, classificatielabels en eventuele expliciete rechteninformatie op het digitale beeld zelf. Een record kan onder meer bevatten:
 
 | Veld | Betekenis |
 |---|---|
@@ -98,8 +98,8 @@ Wijzig een plaats, datum, persoon, eenheid of gebeurtenis niet uitsluitend op ba
 
 ## 9. Bekende beperkingen
 
-- Alleen Wikimedia Commons levert op dit moment de live fotogalerij; de Nationaal Archief-koppeling levert een aanvullende metadata-index zonder thumbnails.
-- KITLV, Utrechts Archief, NIMH, Wereldmuseum, Het Nieuwe Instituut, Rijksmuseum, Europeana, Delpher en Atlas of Mutual Heritage zijn als externe onderzoeksingangen opgenomen. Een koppeling is geen API-integratie.
+- Wikimedia Commons levert live beeldresultaten. Nationaal Archief en Rijksmuseum leveren lokale metadata-snapshots; bij het Rijksmuseum worden uitsluitend beelden getoond met expliciete beeldlicentie PD Mark 1.0 of CC0 1.0.
+- KITLV, Utrechts Archief, NIMH, Wereldmuseum, Het Nieuwe Instituut, Europeana, Delpher en Atlas of Mutual Heritage zijn als externe onderzoeksingangen opgenomen. Een koppeling is geen API-integratie.
 - De automatische labels moeten worden beoordeeld en verfijnd; ze zijn geen vervanging van menselijke geschiedkundige controle.
 - De volledigheid van de beeldcollectie is niet vastgesteld.
 - Er is nog geen volledige record-voor-record verificatie, onafhankelijke toegankelijkheidsaudit, Lighthouse-meting of juridische rechtencontrole van alle beelden uitgevoerd.
