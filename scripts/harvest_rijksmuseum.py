@@ -199,7 +199,7 @@ def image_evidence(obj: dict) -> tuple[str | None, str | None, list[str]]:
 
 def classify_record(text: str) -> tuple[list[str], list[str]]:
     topics = [label for label, pattern in TOPIC_PATTERNS.items() if pattern.search(text)]
-    places = [label for label, pattern in PLACE_PATTERNS.items() if pattern.search(text)]
+    places = [label for label, pattern in PLACE_PATTERNS.items() if re.search(pattern, text, re.I)]
     if JAVA_CONTEXT.search(text):
         places.append("java")
         if not any(place in places for place in PLACE_PATTERNS):
