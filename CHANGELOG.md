@@ -1,5 +1,14 @@
 # Release notes
 
+## 1.1 — 12 november 2026
+
+### Familieonderzoek en Deep Search
+- Nieuwe familierubriek met het aangeleverde Birsak-familieportret en transcriptie van de 14 namen.
+- Multi-source Deep Search-ingang voor adres-, plaats-, persoons- en genealogische zoektermen.
+- Onderzoeksbronnen toegevoegd: Indisch4ever (2011), genealogische vermeldingen van Ernanie Ernest Birsak en Arnold Willem Birsak, en posthistorische documentatie van Lembangweg 346 in 1940.
+- Expliciet onderscheid tussen bronvermelding, hypothese en bewezen identificatie.
+- De twee originele aangeleverde beeldbestanden zijn nog niet als repository-assets gepubliceerd.
+
 ## 1.0 — 12 november 2026
 
 ### Website en zoeken
