@@ -25,6 +25,13 @@ class ArchiveClassificationTests(unittest.TestCase):
         self.assertNotIn("military", topics)
         # The caller must classify the description; a collection label is never an argument.
 
+    def test_hotel_guests_are_not_automatically_architecture(self) -> None:
+        topics, _ = classify_record(
+            "Een groep Nederlandse vliegers steekt de duimen omhoog op het dak van Hotel Shelton waar zij verblijven"
+        )
+        self.assertNotIn("architecture", topics)
+        self.assertNotIn("military", topics)
+
     def test_year_alone_never_assigns_bersiap(self) -> None:
         topics, _ = classify_record("Straatbeeld in Bandoeng", "1946-01-01")
         self.assertNotIn("bersiap", topics)
