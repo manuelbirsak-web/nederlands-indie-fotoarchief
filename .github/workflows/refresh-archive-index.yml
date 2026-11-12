@@ -1,5 +1,10 @@
 name: Refresh Nationaal Archief metadata index
 on:
+  push:
+    branches: ["main"]
+    paths:
+      - "scripts/harvest_nationaal_archief.py"
+      - ".github/workflows/refresh-archive-index.yml"
   schedule:
     - cron: "17 4 * * 1"
   workflow_dispatch:
