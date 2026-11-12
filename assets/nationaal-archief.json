@@ -1,0 +1,650 @@
+{
+  "source": "Nationaal Archief — linked open data fotocollectie",
+  "sourceUrl": "https://www.nationaalarchief.nl/onderzoeken/linked-open-data/sparql-interface-fotocollectie",
+  "endpoint": "https://api.triplydb.com/datasets/nationaal-archief/beeldbank/services/beeldbank/sparql",
+  "snapshotDate": "2026-11-12",
+  "rightsNote": "Metadata-index. Geen thumbnails opgenomen: de bevraagde records tonen veelal Copyright niet bekend / RightsStatements CNE; controleer de oorspronkelijke bron voor ieder hergebruik.",
+  "count": 80,
+  "records": [
+    {
+      "uri": "http://proxy.handle.net/10648/e0cf7177-04e5-e1c0-1cc9-626882457a7f",
+      "description": "Stafmuziek KNIL omringd door publiek",
+      "date": "1947-01-19",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/209d832b-3bd5-c550-d681-8ecc29d8b7a8",
+      "description": "Dr. C.P.M. Romme (in wit overhemd) spreekt met de manschappen van II-6 R.I. in de sector Semarang",
+      "date": "1946-01-17",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/ad834266-d0b4-102d-bcf8-003048976d84",
+      "description": "Uitreiking van de Militaire Willems Orde aan sergeant M. Ch. KokkelinK, de aanvoerder der guerillastrijders in Nieuw-Guinea. In de mess van Camp Columbia na de ceremonie. Arnold Vas Dias, oorlogscorrespondent en directeur van het Nederlands-Indische persagentschap \"Aneta\"",
+      "date": "1945-08-08",
+      "collection": "Foto's Nationaal Archief",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefdb3ec-d0b4-102d-bcf8-003048976d84",
+      "description": "Op de avond van Koninginnedag werd in de Wilhelmina-club te Batavia een militaire Pasar Malam geopend door de basis-commandant Batavia, lt-kol. B.P. de Vries. Later in de avond arriveerde ook de legercommandant, lt-gen. S.H. Spoor met zijn echtgenote, die voor verschillende attracties veel belangstelling toonde.",
+      "date": "1948-08-31",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/ad82d6b4-d0b4-102d-bcf8-003048976d84",
+      "description": "Koninklijk Nederlands Indisch Leger (KNIL), Australië. Vanuit Suriname arriveren Nederlanders, Caribische Indianen, Creolen, samen met Javanen en Hindoestanen. Het contingent wordt genoemd: West-Indische strijdkrachten van het KNIL",
+      "date": "1944-01-01",
+      "collection": "Fotocollectie Anefo",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefd864c-d0b4-102d-bcf8-003048976d84",
+      "description": "Poerwokerto. Kortgeleden hebben de KL.-manschappen van het 6e Esk. Vechtwagens de tanks van het KNIL overgenomen. Natuurlijk zijn ze onmiddellijk begonnen hiermede ervaring op te doen. Terwijl de bevolking toekijkt wordt een klein mankement aan de motor verholpen om daarna de rivier over te steken.",
+      "date": null,
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefe9f82-d0b4-102d-bcf8-003048976d84",
+      "description": "Onder grote belangstelling droeg op 6 april te Malang de Ned.Tr. Cdt. O-Java Gen.-Majoor J.A. Scheffelaar een bataljon federale troepen KNIL over aan de Mil.Gouv. O-Java, Kolonel Sungkono. Het laatste Wilhelmus ten afscheid aan de overgaande troepen.",
+      "date": null,
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/1e9ab635-bb10-2fb7-84a3-e567bdd366b8",
+      "description": "Bandoeng: Op het ereveld aan de Parkweg te Bandoeng worden onder grote belangstelling de stoffelijke resten van de bij de vliegramp te Padalarang omgekomen NIWA-artiesten en militairen, met militaire eer ter aarde besteld.",
+      "date": "1948-02-12",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af00e95e-d0b4-102d-bcf8-003048976d84",
+      "description": "Voor de KL-Krijgsraad te Batavia had zich op 4 maart 1949 te verantwoorden serg.maj.adm. Bartholomeus van der Wal. Eind 1947 organiseerde hij onder de militairen in Indonesië een pakketten-actie onder de naam \"Smit & Van der Wal\". De goederen ter waarde van tienduizenden guldens verkocht hij echter in Nederland in de zwarte handel en vele Ned. families wachtten tevergeefs. Hij werd veroordeeld tot een gevangenisstraf van 2 jaar en 9 maanden, terugstelling tot de stand van van soldaat en oneervol ontslag uit de militaire dienst.",
+      "date": "1949-03-04",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af4277e4-9e7b-9d4c-77e4-5143725a430f",
+      "description": "[Defilé t.g.v. verjaardag koningin Wilhelmina voor het gebouw van Verkeer en Waterstaat te Bandoeng. bijgewoond door generaal-majoor De Waal, commandant van de B-divisie",
+      "date": "1946-08-31",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/55990625-6849-b218-7694-4de132f8787c",
+      "description": "Een sergeant van het KNIL noteert iets. Meisjes staan voor hem met een lepel en een ei daarop",
+      "date": "1947-12-25",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/a16c6ac8-cbaf-e666-2655-04bff898a9c8",
+      "description": "[Aankomst Batavia] [Generaal Kruls inspecteert de erewacht op vliegveld Kemajoraan]",
+      "date": "1947-05-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/ad7ed186-d0b4-102d-bcf8-003048976d84",
+      "description": "Uitreiking van het vaandel van de Militaire Luchtvaart van het KNIL en de vlag van de Marine Luchtvaartdienst, beide gedecoreerd met de Militaire Willemsorde door koningin Wilhelmina op het militair vliegveld Pittsfield in de staat Massachussets. Op de voorgrond een Lockheed A12 [met kenteken L2-40], daarachter Beechcraft AT-11's",
+      "date": "1942-08-15",
+      "collection": "Fotocollectie Anefo",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/70734056-226d-912e-6151-ade1ae590ab1",
+      "description": "Overdracht van het commando over het vliegveld Kemajoran door de RAF aan het Nederlandse leger. Generaal-majoor E.T. Kengen, commandant Militaire Luchtvaart KNIL ineemt het defilé af",
+      "date": "1946-11-15",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af04a4ea-d0b4-102d-bcf8-003048976d84",
+      "description": "Bandoeng: Ter gelegenheid van V-J-day werden op de erevelden in Indonesie de gevallenen in de strijd tegen Japan herdacht. Op het ereveld Pandoe werden door deputaties uit Padvindersgroepen bloemen op de graven gelegd.",
+      "date": "1948-08-14",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aef41300-d0b4-102d-bcf8-003048976d84",
+      "description": "Malang: Een van de vijf op 1 augustus 1947 gearresteerde Duitsers: Erich Döring, geboren 29-03-1921 Muehlhausen. In dienst van de Kriegsmarine als Maschinenunteroff. op U-boot 195.",
+      "date": "1947-08-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/dd748ca6-b6e5-9334-d3be-b548c9473e1e",
+      "description": "Op de Aloon-Aloon te Semarang droeg gen.maj. J.K. Meyer het commando van de B-Divisie over aan de kol. F. Mollinger. Bij deze plechtigheid waren o.a. de legercommandant en de Recomba van Midden-Java aanwezig.",
+      "date": "1949-09-14",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/da25db6d-6b6e-f484-ad66-d12ca665c798",
+      "description": "Buitenzorg: Het depot Genie KNIL is verplaatst van Batavia naar Buitenzorg. Hier leren de recruten zowel de geheimen van een Baileybrug als die van het slaan van een bamboe noodbruggetje kennen.",
+      "date": "1948-04-19",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af089fa0-d0b4-102d-bcf8-003048976d84",
+      "description": "Semarang 26-7. In de Semarang sector werd het station van Marangen zonder tegenstand bezet.",
+      "date": "1947-07-26",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/b6f562ff-6b4b-c40a-43b9-a9e3eb40b348",
+      "description": "Portret van een KNIL-militair in camouflage-uniform",
+      "date": "1947-01-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/8f8661fb-751b-542e-f1e0-f48a3171a7f3",
+      "description": "Op de Aloon-Aloon te Semarang droeg gen.maj. J.K. Meyer het commando van de B-Divisie over aan de kol. F. Mollinger. Bij deze plechtigheid waren o.a. de legercommandant en de Recomba van Midden-Java aanwezig.",
+      "date": "1949-09-14",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/ad7ea2a6-d0b4-102d-bcf8-003048976d84",
+      "description": "Royal Netherlands Military Flying School in Jackson, Mississippi. Piloten van de ML-KNIL, onder commando van generaal-majoor L.H. van Oyen, die zijn ontsnapt uit Nederlands-Indië krijgen een opleiding in Fort Jackson, Mississippi. Een groep van Nederlandse studenten en hun Amerikaanse vriendinnen ontspannen na werktijd bij een coca-cola in een drugstore in Jackson",
+      "date": "1942-06-16",
+      "collection": "Fotocollectie Anefo",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af056056-d0b4-102d-bcf8-003048976d84",
+      "description": "Bandoeng: Op het ereveld aan de Parkweg te Bandoeng worden onder grote belangstelling de stoffelijke resten van de bij de vliegramp te Padalarang omgekomen NIWA-artiesten en militairen, met militaire eer ter aarde besteld. Familieleden leggen bloemen neer",
+      "date": "1948-02-12",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/dd93e1b3-d628-01ef-6d1c-9ac240c3bae0",
+      "description": "Djokjakarta. Kolonel Julian in gesprek met de oud-regent K.R.T. Djogonegoro",
+      "date": "1949-01-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aef6da22-d0b4-102d-bcf8-003048976d84",
+      "description": "Commando overdracht. Zaterdag 8 april zijn te Bindjei (S.O.K.) twee compagnieen prae-federale troepen van het KNIL, overgegaan naar de APRIS. De Cdt. van het KNIL infanterie-depot 10; Kapt. H.B. Couwenberg droeg het commando over beide onderdelen over aan Majoor Kartakusuma, Chef Staf van het Terr. tvs. troepencommando Nrd. Sum. De inspectie van de opgestelde troepen door majoor Kartakusuma.",
+      "date": "1950-04-08",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/ad9b98b6-d0b4-102d-bcf8-003048976d84",
+      "description": "[Passagiersschip ligt afgemeerd aan de kade van de haven Tandjong Priok bij Batavia]",
+      "date": "1943-01-01",
+      "collection": "Fotocollectie Anefo",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/93d60111-6931-6c91-f2eb-cc9f4924065d",
+      "description": "In de omgeving van Buitenzorg werd op Republikeinse gebied tussen een delegatie, van CGD en de Commandant 1ste Inf.Brigade, kolonel A.A.J. Thomson enerzijds, en de Plaatselijke TNI Commandant en enkele TNI Stafofficieren anderzijds, een bespreking gehouden betreffende de uitvoering van het bestand in deze sector. Na afloop der besprekingen inspecteerde de kolonel Mayer, Amerikaans militair waarnemer de erewacht, gevormd door soldaten der TNI. Vergezeld van een militair geleide der TNI begeeft zich het gezelschap naar de plaats waar de bespreking gehouden zal worden.",
+      "date": "1948-01-23",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aef37d5a-d0b4-102d-bcf8-003048976d84",
+      "description": "Surabaya: Het Europese kerkhof te Lawang werd door de TNI onteerd en geschonden. Beelden en grafzerken werden stukgeslagen aangetroffen, graven waren opengebroken en de inhoud ervan was over het kerkhof verspreid. Surabaya: Het Europese kerkhof te Lawang werd door de TNI onteerd en geschonden. Beelden en grafzerken werden stukgeslagen aangetroffen, graven waren opengebroken en de inhoud ervan was over het kerkhof verspreid.",
+      "date": "1947-08-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/9339bea0-205c-8074-f3b3-c090b7c50db7",
+      "description": "Surabaya-sector. \"Gevonden: een gesneuvelde Jap\". Een Japanner dodelijk getroffen.",
+      "date": "1947-07-21",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/db53f02c-50a5-4b61-5287-361cb3652a92",
+      "description": "Semarang. Ook de mobile cantines, geschenk van het moederland, lieten geen verstek gaan toen het erom ging de voorste soldaten te bereiken",
+      "date": "1947-08-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/ad8338de-d0b4-102d-bcf8-003048976d84",
+      "description": "Nederlandse recruten van het KNIL uit Europa in training op Camp Darley, Victoria (Australië). Soldaat T.C. Reijn uit Hilversum die recent in Australië is aangekomen bezig met een scheerbeurt",
+      "date": "1945-08-01",
+      "collection": "Foto's Nationaal Archief",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/ac174a30-d0b4-102d-bcf8-003048976d84",
+      "description": "Geheel of gedeeltelijk verwoeste olievelden op Tarakan (Nederlands-Indië)",
+      "date": "1945-01-01",
+      "collection": "Fotocollectie Anefo",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefbe878-d0b4-102d-bcf8-003048976d84",
+      "description": "Tjiwedei bij Bandoeng. De evacuatie van de TNI-troepen verloopt over het algemeen vlot. De ingeleverde wapens, hier nieuw en goed verpakt, worden gecontroleerd.",
+      "date": "1948-02-09",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af06f24a-d0b4-102d-bcf8-003048976d84",
+      "description": "Monteursschool LSK te Batavia Benedenstad. Praktisch onderwijs.",
+      "date": null,
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/ad9cd6ae-d0b4-102d-bcf8-003048976d84",
+      "description": "Nederlands jongetje in het Japanse interneringskamp Tjideng te Batavia",
+      "date": "1945-01-01",
+      "collection": "Fotocollectie Anefo",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/c37c257e-30c4-4272-73a9-0fac5f67ca04",
+      "description": "Luchtopname. Luchtfoto van het vliegveld van Semarang.",
+      "date": "1947-08-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/b0daa7d5-74c8-5162-2e82-ae9e1013c373",
+      "description": "Bandoeng: rekruten van Pao an Tui worden door hun instructeurs geïnspecteerd",
+      "date": "1947-09-04",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/c16aeb0c-f285-67c2-c212-b3ba3ccbc766",
+      "description": "Inspectietocht gen. Doorman sous-chef der Kon. Landmacht naar de Grote Oost. Generaal-majoor Doorman inspecteert een bataljon van het KNIL bestaand uit Indonesische militairen ergens op Borneo.",
+      "date": "1946-10-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/6d9b8835-8984-bacf-a0cc-cf39efe1dc28",
+      "description": "Kolonel P.J. de Broeckert, commandant Militaire Luchtvaart (rechts) spreekt met een majoor van de KNIL",
+      "date": "1947-01-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af08fad6-d0b4-102d-bcf8-003048976d84",
+      "description": "Mevrouw Lovink, echtgenote van de H.V.K. bezocht op 4 augustus 1949 het Legerhospitaal te Batavia, waar zij met verschillende patienten heeft gesproken. Sld. Kleywegt uit De Lier stelde het praatje met Mevrouw Lovink zeer op prijs. Aan zijn lachend gezicht is duidelijk te zien, dat hij al aan de beterende hand is.",
+      "date": "1949-08-04",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/32b349a1-d515-9e38-ddea-71fcb0221a75",
+      "description": "De verbinding afd. van Balikpapan in actie. Korp. van Houten en de soldaten Dadi en Kaslam alle drie van het KNIL bedienen een seinlamp op de kale tjotten in de binnenlanden van Borneo.",
+      "date": "1948-03-05",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/b2ef927c-5437-7224-65bc-399381702993",
+      "description": "[Persconferentie generaal Spoor. Staand met baard A.J.E. van Berckelaer, hoofd Legervoorlichtingsdienst Batavia",
+      "date": "1946-10-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/ad864614-d0b4-102d-bcf8-003048976d84",
+      "description": "Koninklijk Instituut voor de Marine te Soerabaja. Gymnastieklokaal",
+      "date": null,
+      "collection": "Fotocollectie Anefo",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/ad884acc-d0b4-102d-bcf8-003048976d84",
+      "description": "W.C.L. Versteegh, Directeur van de Koninklijke Nederlands-Indische Luchtvaart Maatschappij (KNILM )",
+      "date": "1936-01-01",
+      "collection": "Foto's Nationaal Archief",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aef54536-d0b4-102d-bcf8-003048976d84",
+      "description": "Semarang: Een Chinese delegatie, bestaande uit de Chinese vice-consul te Batavia vergezeld van twee Chinese officieren, bracht een bezoek aan de V-Brigade. In het midden van de groep de Chinese vice-consul. Naast hem de twee officieren.",
+      "date": "1947-10-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/b030194f-5405-f659-acf1-66c6a23c2970",
+      "description": "Nederlands-Indiesche troepen krijgen wapeninstructie [opleidingskamp Australië?]",
+      "date": "1945-01-01",
+      "collection": "Foto's Nationaal Archief",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af04e40a-d0b4-102d-bcf8-003048976d84",
+      "description": "Op de avond van Koninginnedag werd in de Wilhemina Club te Batavia een militaire pasar malam geopend door de basiscommandant Batavia, lt.kol. B.P. de Vries. Later op de avond arriveerde de legercommandant lt.gen. S.H. Spoor met diens echtgenote op de pasar malam. Beiden toonden veel belangstelling voor alles wat er aan amusement (en dat was heel wat) geboden werd.",
+      "date": "1948-08-31",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefee47e-d0b4-102d-bcf8-003048976d84",
+      "description": "Op 24 april werden op de Tanah Lapangan Singa te Djakarta door de Ned. Rayons Cdt. Kolonel B.P. de Vries, 2 compagnieen van het KNIL overgedragen aan de Basiscommandant van Djakarta Raya, Luit-Kolonel Taswin, Kolone",
+      "date": null,
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/3025ce91-c10f-9236-cb88-44cdc50f5aa0",
+      "description": "In de omgeving van Buitenzorg werd op Republikeinse gebied tussen een delegatie, van CGD en de Commandant 1ste Inf.Brigade, kolonel A.A.J. Thomson enerzijds, en de Plaatselijke TNI Commandant en enkele TNI Stafofficieren anderzijds, een bespreking gehouden betreffende de uitvoering van het bestand in deze sector.",
+      "date": "1948-01-23",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aef6a458-d0b4-102d-bcf8-003048976d84",
+      "description": "Op het Hoofdkwartier van de Militaire Politie te Djakarta droeg Kolonel H.E.M. Bakhuys het commando over het Korps Mil. Politie over aan Luit.-Kolonel D.E. Fris, de vroegere commandant van M.P.3 te Medan. De plechtigheid werd bijgewoond door de Legercommandant, Luitenant-Generaal D.C. Buurman van Vreeden, de Adjudant Generaal, Generaal-majoor P. Alons, de Chef Staf, Generaal-Majoor D.R.A. van Langen, de Off. van Justitie Mr. Kiveren, de Aud-Militair KNIL, Mr. Bonn en verschillende anderen autoriteiten. De legercommandant, Luitenant-Generaal D.C. Buurman van Vreeden, wenst de afgetreden Kolonel Bakhuys een welverdiende rust toe in het vaderland.",
+      "date": "1950-01-16",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/a89af06e-d0b4-102d-bcf8-003048976d84",
+      "description": "Ursulinen Klooster Bandoeng",
+      "date": "1946-03-26",
+      "collection": "Fotocollectie Anefo",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/33effe7f-fe27-29a1-09df-54aedf54348f",
+      "description": "Batavia: Nadat het transport door de republiek enkele malen was uitgesteld, arriveerde woensdagavond, 28 april 1948, op het station Kalibata, de eerste groep gezinnen en familieleden van KNIL-militairen uit republiekeins gebied, in totaal 305 zielen. Zij komen uit kampen te Solo en Djocja.",
+      "date": "1948-04-28",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/5003501b-d5b8-815e-a7fa-665df6fe583b",
+      "description": "De internering van drs. Moh. Hatta (in het midden in het wit) en enkele andere Republikeinse autoriteiten in de woning van Hatta in Djokjakarta",
+      "date": "1948-12-19",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/20ef683f-b47f-2d7c-00f5-d19cedf7a7da",
+      "description": "Batavia: Op 5 April vond een massale herbegrafenis van oorlogsslachtoffers plaats op het Ereveld Menteng Poeloeh.",
+      "date": "1948-04-05",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/520f8913-b0a0-8a08-845f-c9de1a69ae62",
+      "description": "[militaire parade van een KNIL-eenheid op Bali?]",
+      "date": "1948-05-06",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/0ca4e667-c835-2203-e0f0-d7756ae6ea33",
+      "description": "Tanggerang: 9 cm. veldgeschut van het KNIL in stelling.",
+      "date": "1947-10-25",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/c2b04861-e4ab-653b-5ca0-3651ecbdc09c",
+      "description": "Een deel van de troepen die indertijd uitkwamen ter aanvulling van 7 RS gaat op weg naar Semarang vanwaar zij gedemobiliseerd zullen worden. De reis van Palembang langs de Moesi tot Straat Banka werd gemaakt met het LST Albatros",
+      "date": "1948-03-15",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af067a4a-d0b4-102d-bcf8-003048976d84",
+      "description": "De internering van drs. Moh. Hatta (in het midden in het wit) en enkele andere Republikeinse autoriteiten in de woning van Hatta in Djokja",
+      "date": "1948-12-19",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/adf56e90-d0b4-102d-bcf8-003048976d84",
+      "description": "Oude speelman in Batavia",
+      "date": "1939-01-01",
+      "collection": "Fotocollectie Elsevier",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/5e1bc182-1a48-47b1-4d7a-029f3513ce40",
+      "description": "Een KNIL-militair zit op een rieten stoel aan de rand van de top van een soort aarden wal met uitzicht op een rivier en kleine boten. Voor hem een liggende trap, munitiekisten, een brengun en een mok",
+      "date": "1949-10-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/af057938-d0b4-102d-bcf8-003048976d84",
+      "description": "Batavia. Door tussenkomst van de Dienst Vorming krijgen de nieuwe recruten van het KNIL een elementaire opleiding in taal, rekenen e.d. Een der instructeurs, S.M.I. Hassaar geeft tekst en uitleg aan Majoor van Mechelen en Kapitein Goekoop van Dienst vorming",
+      "date": null,
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefb3dc4-d0b4-102d-bcf8-003048976d84",
+      "description": "In de tuin van het paleis te Buitenzorg werden 34 officieren beedigd, alsmede een Bronzen Kruis (postuum verleend aan de Sold. KNIL R.H. Hoffmann) uitgereikt aan de 8-jarige Helga Hoffmann. De Brigadecdt. Kol. Thomson overhandigt Helga Hoffmann het Bronzen Kruis.",
+      "date": "1948-04-17",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/b673a360-88fb-b2bf-3584-7fd8ae2ed5ed",
+      "description": "Batavia. Menteng. Oranje-Nassauboulevard / Burgemeester Bisschopsplein. Aflossing van de wacht",
+      "date": "1946-07-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/687b4c35-9360-f65f-7997-c3a55f557ab6",
+      "description": "Demonstraties door Eskadron Vechtwagens KNIL. Een Stuart tank (Breskens) en 2 Stuart verkenningsvoertuigen (Baarn en Beets) met bemanningen",
+      "date": "1946-11-23",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/529e4180-f0dd-5913-014a-1e3ebcc0c775",
+      "description": "Presentatie van gevangen genomen Republikeinse leiders en medewerkers op het bordes van het residentiekantoor van Djokjakarta. In het midden luitenant-kolonel Van Beek, commandant Korps Speciale Troepen. Naast hem Soekarna en Hatta. Linksachter hem Sjahrir",
+      "date": "1948-12-19",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/96b948d2-b869-8197-d5e4-5df91fd395b1",
+      "description": "[beëdiging Buitenzorg]",
+      "date": "1947-08-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/e87c681a-b758-9765-ad1c-5d1e6171b10d",
+      "description": "Vrijdagmiddag, 22 oktober 1948 is de sneltrein Batavia-Bandoeng te 16.50 uur twee kilometer ten zuiden van Poerwakarta, bij Bendoel, ontspoord, doordat de rails over een afstand van twintig meter door een bende terroristen was opgebroken. Onmiddellijk na de ontsporing werd de trein door de met automatische wapens en geweren bemande bende van naar schatting vijftig man, onder vuur genomen, waardoor acht personen werden gedood en drieëntwintig gewond. Doordat met de trein een aanzienlijk aantal militairen meereisde, kon vrijwel onmiddellijk het vuur van de bende worden beantwoord. Hierdoor werd erger voorkomen. Interieur van de trein",
+      "date": "1948-10-23",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/ad82d920-d0b4-102d-bcf8-003048976d84",
+      "description": "Koninklijk Nederlands Indisch Leger (KNIL), Australië. Vanuit Suriname arriveren Nederlanders, Caribische Indianen, Creolen, samen met Javanen en Hindoestanen",
+      "date": "1944-01-01",
+      "collection": "Fotocollectie Anefo",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefaca1a-d0b4-102d-bcf8-003048976d84",
+      "description": "Batavia. Op het station Manggarai arriveerde weer een trein met uit de republiek geevacueerde gezinnen van KNIL-militairen. Een Rode Kruisteam maakte de reis mee. Het aantal zieken was gelukkig gering. Enkele zieken worden voorzichtig uit de tein geladen.",
+      "date": "1948-05-21",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefd1608-d0b4-102d-bcf8-003048976d84",
+      "description": "Voor de te Batavia gelegerde militairen is Palm-Beach bij Priok, het plekje waar zij vele vrije zondagen doorbrengen. Palm- Beach vertoont toch nog enige overeenkomst met de Nederlandse badplaatsen, n.l. vanwege het feit dat handelaars in snoepgoed en dranken er een goed afzetgebied vinden. Hier zijn het evenwel \"orang Betawi\" die de zaken drijven en de limonadetent heeft een andere exterieur dan de strandtent, maar lekker zijn de dranken wel.",
+      "date": "1948-10-12",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/988b81dd-b931-22f2-0923-634d8f7d1890",
+      "description": "Leden Vrouwenkorps KNIL dansen in een reidans om een boom en een vlaggemast heen",
+      "date": "1949-03-05",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/4df7d4e9-c70a-da7f-cab2-097d30357eb8",
+      "description": "[legertruck waarbij op het portier de tekst Batavia - Bandoeng v.v. staat geschreven. De chauffeur heeft een pet op met de tekst 'Geertje' en draag stofbril en monddoek]",
+      "date": "1946-01-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/fc1cf4f4-270d-67ff-23f1-039ada3cf609",
+      "description": "Batavia: 3e Bewakingsbataljon. Opleiding van de Indonesische rekruten, die zich als vrijwilliger bij het KNIL gemeld hebben. Exercitie vormt een voornaam onderdeel van het trainingsschema.",
+      "date": "1947-10-28",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aefb331a-d0b4-102d-bcf8-003048976d84",
+      "description": "Batavia: Op 5 April vond een massale herbegrafenis van oorlogsslachtoffers plaats op het Ereveld Menteng Poeloeh.",
+      "date": "1948-04-05",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/8894854d-b37a-d2e3-ecb1-907514c0864c",
+      "description": "Generaal Doorman schudt de hand van een van de 4 KNIL-militairen die in gelid staan (onderscheidingen?)",
+      "date": "1946-09-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/ea565d24-31c6-8cee-046a-d02b87070b60",
+      "description": "Semarang: Alvorens aan de haal te gaan, slaagde de TRI erin, de grote suikerfabriek Kaliwoengoe grotendeels te verwoesten.",
+      "date": "1947-07-29",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/c13fbdbb-8a9a-3ea7-6bc8-564bc1cf5c51",
+      "description": "Herdenking 1-jarig bestaan Oost-Indonesië (Negara Indonesia Timur). Demontratie vechttechnieken door KNIL-militairen",
+      "date": "1947-07-23",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/64bbe149-eb92-1b53-7316-13968f8bb5a5",
+      "description": "Ingestorte barak aan de Bidara Tjina, een straat in Batavia. Een balk wordt van het lichaam van een (dode?) jongen getild",
+      "date": "1946-12-01",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/aef542d4-d0b4-102d-bcf8-003048976d84",
+      "description": "Semarang: Bezoek buitenlandse militaire waarnemers aan de V-Brigade. Het gezelschap bestaande uit Servais, Morizon en Sands bracht onder meer een bezoek aan de demarcatielijn, 3 km voorbij Gombong. Sands neemt met de kijker de wegversperringen in ogenschouw.",
+      "date": "1947-09-27",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    },
+    {
+      "uri": "http://proxy.handle.net/10648/329716fe-8974-eb12-8d69-cdfaed27a7c5",
+      "description": "Door het Bijzonder Krijgsgerecht van de 2e Infanterie Brigade Groep te Poerwakarta werden de zaken behandeld tegen de voornaamste schuldigen van de aanslag op de spoorbaan Bandoeng-Batavia. Bij Tjikampek beschoten zij de trein toen deze was ontspoord, waardoor een vijftal personen werden gedood en een groot aantal gewonden te betreuren was. Al deze verdachten waren leden van de terreurbende S.P. 88 die tot doel stelde, het plegen van sabotage- en terreurdaden en het verstoren van rust en orde in de door Nederlanders beveiligde gebieden. Salim bin Bojo. Ze moesten hem maar op zijn eerlijke gezicht geloven. Dat deed de president majoor Josephus Jitta, niet, ook al omdat er verklaringen waren van hemzelf, zijn medeterroristen en getuigen. Hij kreeg twintig jaar",
+      "date": "1948-09-27",
+      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
+      "creator": null,
+      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+    }
+  ]
+}
