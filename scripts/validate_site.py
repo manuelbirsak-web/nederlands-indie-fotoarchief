@@ -90,7 +90,7 @@ def main() -> None:
         fail("Commons-zoekquery moet de bronzoekterm ongewijzigd doorgeven")
     if "|letter|lettre|envelope|postcard" not in source:
         fail("Niet-fotografische poststukken moeten uit de fotogalerij worden geweerd")
-    if "bandoeng.{0,30}194[5-9]" not in source:
+    if "bandoeng.{0,30}194[5-9]" not in source or "year<1945||year>1950" not in source:
         fail("Bersiap-rubriek moet op historische context filteren, niet alleen op jaartal")
     if ".filters select{width:100%;max-width:100%;min-width:0}" not in source:
         fail("Mobiele datumfilters moeten binnen de viewport blijven")
