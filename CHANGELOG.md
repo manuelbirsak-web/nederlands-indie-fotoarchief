@@ -26,7 +26,7 @@
 - De methode, beperkingen en bijdragenprocedure zijn gedocumenteerd in `METHODOLOGY.md` en `CONTRIBUTING.md`.
 
 ### Grenzen van deze release
-- Alleen Wikimedia Commons is geïntegreerd als live afbeeldingsbron.
-- De Nationaal Archief-koppeling is metadata-only; de snapshot bevat 180 records totdat de nieuwe uitgebreidere harvester succesvol draait.
+- Wikimedia Commons levert live beeldresultaten; Nationaal Archief en Rijksmuseum zijn geïntegreerd via lokale metadata-snapshots.
+- De Nationaal Archief-snapshot bevat bij deze release 2.250 records. De Rijksmuseum-snapshot bevat 229 foto-objecten; uitsluitend records met expliciete beeldrechten PD Mark 1.0 of CC0 1.0 tonen een afbeelding.
 - Andere genoemde collectieportalen zijn externe zoekingangen, geen rechtstreekse imports.
 - De release is geen volledige inventaris van Nederlands-Indië-fotografie en bevat geen record-voor-record juridische of historische certificering.
