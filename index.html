@@ -42,7 +42,7 @@ h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;mar
 .photo{min-width:0;background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease}
 .photo:hover{transform:translateY(-3px);box-shadow:0 18px 45px #1b2b2020}
 .photo-media{position:relative;background:#ded8cb;aspect-ratio:4/3;overflow:hidden}
-.photo-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s ease}.photo:hover img{transform:scale(1.025)}
+.photo-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s ease}.photo-image-link{display:block;width:100%;height:100%}.photo:hover img{transform:scale(1.025)}
 .photo-media:after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 0 1px #0000000a}
 .photo-body{padding:15px 16px 16px;display:flex;flex-direction:column;flex:1}
 .photo-title{font:normal 18px/1.25 var(--serif);margin:0 0 9px;overflow-wrap:anywhere}
@@ -92,6 +92,7 @@ h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;mar
 <button data-view="java">Java</button>
 <button data-view="bandung">Bandoeng / Bandung</button>
 <button data-view="knil">KNIL & militair</button>
+<button data-view="bersiap">Bersiap & onafhankelijkheidsstrijd</button>
 <button data-view="daily">Samenleving</button>
 </nav>
 <main id="main">
@@ -102,7 +103,7 @@ h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;mar
 <section class="discovery" aria-label="Zoek en filter in de beeldcollectie">
 <div class="searchrow"><input id="q" type="search" placeholder="Zoek bijvoorbeeld: Bragaweg, Dago, KNIL, Batavia…" aria-label="Zoek in het fotoarchief"><button id="go" class="primary" type="button">Zoeken</button></div>
 <div class="filters">
-<label for="period">Datering</label><select id="period"><option value="1800-1959" selected>Historische periode 1800–1959 + relevant ongedateerd</option><option value="all">Alle perioden</option><option value="1800-1899">1800–1899</option><option value="1900-1919">1900–1919</option><option value="1920-1939">1920–1939</option><option value="1940-1945">1940–1945</option><option value="1945-1950">1945–1950</option><option value="1950-1959">1950–1959</option></select>
+<label for="period">Datering</label><select id="period"><option value="1800-1959" selected>Historische periode 1800–1959 + relevant ongedateerd</option><option value="all">Alle perioden</option><option value="1800-1899">1800–1899</option><option value="1900-1919">1900–1919</option><option value="1920-1939">1920–1939</option><option value="1940-1945">1940–1945</option><option value="1945-1950">1945–1950</option><option value="1950-1959">1950–1959</option><option value="undated">Alleen ongedateerd</option></select>
 <label for="topic">Onderwerp</label><select id="topic"><option value="">Alle onderwerpen</option><option value="city">Steden & architectuur</option><option value="people">Mensen & dagelijks leven</option><option value="military">KNIL & militair</option><option value="transport">Transport & infrastructuur</option><option value="culture">Cultuur & religie</option><option value="nature">Landschap & natuur</option></select>
 <button id="reset" class="secondary" type="button">Wis filters</button>
 </div>
@@ -144,6 +145,7 @@ indies:{title:'Nederlands-Indië in beeld',result:'Nederlands-Indië',intro:'Bee
 java:{title:'Java · steden, landschap en samenleving',result:'Java',intro:'Van Batavia en Buitenzorg tot Semarang, Soerabaja en Bandoeng. Kies een plaats of zoek binnen de Java-collectie.',query:'Java Indonesia historical'},
 bandung:{title:'Bandoeng / Bandung',result:'Bandoeng / Bandung',intro:'Een gerichte ingang naar de historische stad: Bragaweg, Dago, alun-alun, de Technische Hoogeschool, spoorwegen, architectuur en de jaren 1945–1950.',query:'(Bandoeng OR Bandung) historical'},
 knil:{title:'KNIL & militaire geschiedenis',result:'KNIL & militaire geschiedenis',intro:'Militairen, kazernes, uniformen, wapens, transport en de onafhankelijkheidsoorlog. Een afbeelding bewijst niet vanzelf de eenheid, rang of datering.',query:'(KNIL OR "Royal Netherlands East Indies Army")'},
+bersiap:{title:'Bersiap & onafhankelijkheidsstrijd',result:'Bersiap & onafhankelijkheidsstrijd',intro:'Beeldmateriaal over 1945–1949, de Bersiap, de Indonesische revolutie en de Nederlandse militaire aanwezigheid. De term Bersiap wordt alleen gebruikt waar bron of context dat ondersteunt.',query:'(Bersiap OR "Indonesian National Revolution" OR "Indonesian War of Independence" OR 1945 OR 1946 OR 1947 OR 1948 OR 1949)'},
 daily:{title:'Mensen, werk en dagelijks leven',result:'Samenleving en dagelijks leven',intro:'Portretten, gezinnen, onderwijs, markten, werk, religie en het dagelijks leven in Nederlands-Indië.',query:'("Dutch East Indies" OR "Nederlands-Indië") people daily life'}
 };
 const places={bandung:'(Bandoeng OR Bandung)',batavia:'(Batavia OR Jakarta) Java',bogor:'(Buitenzorg OR Bogor) Java',semarang:'Semarang Java',surabaya:'(Soerabaja OR Surabaya) Java',yogyakarta:'(Djokja OR Yogyakarta) Java',malang:'Malang Java',other:'Java Indonesia'};
@@ -155,14 +157,22 @@ function readFavorites(){try{return new Set(JSON.parse(localStorage.getItem(favo
 function writeFavorites(set){try{localStorage.setItem(favoritesKey,JSON.stringify([...set]))}catch{}}
 let favorites=readFavorites();
 function buildQuery(){const typed=$('#q').value.trim();let base=views[view].query;if(view==='java')base=places[place];if(view==='bandung'&&customTerm)base+=' '+customTerm;if(typed)base+=' '+typed;const topic=$('#topic').value;if(topic)base+=' '+topicTerms[topic];return '('+base+') filetype:bitmap'}
-function yearFromMetadata(meta){const raw=meta?.DateTimeOriginal?.value||meta?.Date?.value||'';const match=String(raw).match(/(?:^|\D)((?:18|19|20)\d{2})(?:\D|$)/);return match?Number(match[1]):null}
+function yearFromMetadata(meta){
+ const extract=value=>{const match=String(value||'').match(/(?:^|\D)((?:18|19)\d{2})(?:\D|$)/);return match?Number(match[1]):null};
+ const original=extract(meta?.DateTimeOriginal?.value);
+ if(original!==null&&original>=1800&&original<=1959)return original;
+ // Commons can expose a 2009 Flickr/scan timestamp as DateTimeOriginal. Never treat that as the historical exposure date.
+ const descriptive=extract(metadataValue(meta,'ImageDescription'))||extract(metadataValue(meta,'ObjectName'));
+ return descriptive!==null&&descriptive>=1800&&descriptive<=1959?descriptive:null;
+}
 function periodMatches(year){const range=$('#period').value;if(range==='all')return true;if(range==='undated')return year===null;if(year===null)return range==='1800-1959';const [start,end]=range.split('-').map(Number);return year>=start&&year<=end}
 function isRelevantHistoricalPhoto(page,meta,year){
  if(year!==null&&(year<1800||year>1959)&&$('#period').value!=='all')return false;
  const title=String(page.title||'').replace(/^File:/,'');
  const description=metadataValue(meta,'ImageDescription');
  const objectName=metadataValue(meta,'ObjectName');
- const text=(title+' '+description+' '+objectName).toLowerCase();
+ const categories=metadataValue(meta,'Categories');
+ const text=(title+' '+description+' '+objectName+' '+categories).toLowerCase();
  if(/\b(wordmark|logo|map of|coat of arms|rank insignia|book cover|journal|magazine|newspaper|poster|stamp|flag icon)\b/i.test(text))return false;
  const viewPatterns={
   home:/dutch east indies|nederlands.?indi[eë]|netherlands indies|colonial|koloniaal|koloniale|bersiap|knil|bandoeng|bandung|batavia|buitenzorg|java|sumatra|borneo|celebes|surabaya|soerabaja|semarang|yogyakarta|djokja/i,
@@ -170,10 +180,11 @@ function isRelevantHistoricalPhoto(page,meta,year){
   java:/java|bandoeng|bandung|batavia|jakarta|buitenzorg|bogor|semarang|soerabaja|surabaya|djokja|yogyakarta|malang/i,
   bandung:/bandoeng|bandung/i,
   knil:/knil|royal netherlands east indies army|netherlands indies army|military|militair|soldier|soldaat|barracks|kazerne|bersiap|koloniaal|colonial/i,
+  bersiap:/bersiap|indonesian national revolution|indonesian war of independence|independence war|revolution|1945|1946|1947|1948|1949/i,
   daily:/dutch east indies|nederlands.?indi[eë]|netherlands indies|colonial|koloniaal|koloniale|bersiap|knil|java|indonesia|indonesian|batavia|bandoeng|bandung/i
  };
  if(!viewPatterns[view]?.test(text))return false;
- const historicalContext=/dutch east indies|nederlands.?indi[eë]|netherlands indies|colonial|koloniaal|koloniale|bersiap|knil|royal netherlands east indies army|netherlands indies army|indies army/i;
+ const historicalContext=/dutch east indies|nederlands.?indi[eë]|netherlands indies|colonial|koloniaal|koloniale|bersiap|knil|royal netherlands east indies army|netherlands indies army|indies army|historical images|historical photographs|historical photos|history of bandung|indonesian national revolution|indonesian war of independence/i;
  if(year===null&&!historicalContext.test(text))return false;
  const topic=$('#topic').value;
  const topicPatterns={city:/street|straat|building|gebouw|architecture|station|hotel|square|plein/i,people:/people|person|family|woman|man|child|markt|school|gezin|bevolking/i,military:/knil|military|militair|army|soldier|soldaat|weapon|wapen|kazerne/i,transport:/railway|train|tram|harbour|haven|bridge|brug/i,culture:/temple|mosque|kerk|moskee|dance|ceremony|religion/i,nature:/landscape|mountain|plantation|river|berg|landschap|rivier/i};
@@ -184,7 +195,8 @@ function escapeText(value){if(!value)return '';const box=document.createElement(
 function metadataValue(meta,key){return escapeText(meta?.[key]?.value||'')}
 function status(title,message,showRetry=false){const el=document.createElement('div');el.className='status';const strong=document.createElement('strong');strong.textContent=title;const p=document.createElement('div');p.textContent=message;el.append(strong,p);if(showRetry){const b=document.createElement('button');b.className='secondary';b.type='button';b.textContent='Opnieuw proberen';b.addEventListener('click',()=>load(true));el.append(b)}return el}
 function syncView(){document.querySelectorAll('#nav button').forEach(b=>{const active=b.dataset.view===view;b.classList.toggle('active',active);if(active){b.setAttribute('aria-current','page')}else{b.removeAttribute('aria-current')}});$('#title').textContent=views[view].title;$('#intro').textContent=views[view].intro;$('#resultTitle').textContent=views[view].result;$('#places').hidden=view!=='java';$('#bandungTopics').hidden=view!=='bandung';$('#q').value='';customTerm='';document.querySelectorAll('#bandungTopics button').forEach(b=>b.classList.remove('selected'))}
-function addCard(page){const info=page.imageinfo?.[0];if(!info||!info.url||!String(info.mime||'').startsWith('image/'))return;const meta=info.extmetadata||{};const title=metadataValue(meta,'ObjectName')||String(page.title||'').replace(/^File:/,'');const date=metadataValue(meta,'DateTimeOriginal')||metadataValue(meta,'Date')||'Datering niet vermeld';const artist=metadataValue(meta,'Artist')||'Maker niet vermeld';const description=metadataValue(meta,'ImageDescription');const credit=metadataValue(meta,'Institution')||metadataValue(meta,'Credit')||'';const license=metadataValue(meta,'LicenseShortName')||'Licentie controleren';const fileKey=page.title||info.descriptionurl;const article=document.createElement('article');article.className='photo';const media=document.createElement('div');media.className='photo-media';const img=document.createElement('img');img.loading='lazy';img.decoding='async';img.src=info.thumburl||info.url;img.alt=title;img.onerror=()=>{media.replaceChildren();const fallback=document.createElement('div');fallback.className='status';fallback.textContent='Afbeelding tijdelijk niet beschikbaar';media.append(fallback)};media.append(img);const body=document.createElement('div');body.className='photo-body';const h=document.createElement('h3');h.className='photo-title';h.textContent=title;const m=document.createElement('div');m.className='photo-meta';m.textContent=[date,artist,credit].filter(Boolean).join(' · ');const desc=document.createElement('p');desc.className='photo-description';desc.textContent=description;const tags=document.createElement('div');tags.className='photo-tags';const t1=document.createElement('span');t1.className='tag';t1.textContent=license;tags.append(t1);const year=yearFromMetadata(meta);const t2=document.createElement('span');t2.className='tag';t2.textContent=year?'Jaar '+year:'Ongedateerd · inhoudelijk relevant';tags.append(t2);const actions=document.createElement('div');actions.className='photo-actions';const link=document.createElement('a');link.href=info.descriptionurl||'https://commons.wikimedia.org/wiki/'+encodeURIComponent(page.title);link.target='_blank';link.rel='noopener noreferrer';link.textContent='Bron & rechten bekijken ↗';const fav=document.createElement('button');fav.type='button';fav.className='iconbtn';fav.textContent=favorites.has(fileKey)?'★ Opgeslagen':'☆ Bewaar';fav.setAttribute('aria-pressed',String(favorites.has(fileKey)));fav.addEventListener('click',()=>{if(favorites.has(fileKey)){favorites.delete(fileKey)}else{favorites.add(fileKey)}writeFavorites(favorites);fav.textContent=favorites.has(fileKey)?'★ Opgeslagen':'☆ Bewaar';fav.setAttribute('aria-pressed',String(favorites.has(fileKey)))});actions.append(link,fav);if(description)body.append(h,m,desc,tags,actions);else body.append(h,m,tags,actions);article.append(media,body);$('#results').append(article);visibleCount++}
+function addCard(page){const info=page.imageinfo?.[0];if(!info||!info.url||!String(info.mime||'').startsWith('image/'))return;const meta=info.extmetadata||{};const title=metadataValue(meta,'ObjectName')||String(page.title||'').replace(/^File:/,'');const year=yearFromMetadata(meta);
+ const date=year?'Opnamedatering: '+year:'Opnamedatering niet vermeld in bron';const artist=metadataValue(meta,'Artist')||'Maker niet vermeld';const description=metadataValue(meta,'ImageDescription');const credit=metadataValue(meta,'Institution')||metadataValue(meta,'Credit')||'';const license=metadataValue(meta,'LicenseShortName')||'Licentie controleren';const fileKey=page.title||info.descriptionurl;const article=document.createElement('article');article.className='photo';const media=document.createElement('div');media.className='photo-media';const imageLink=document.createElement('a');imageLink.className='photo-image-link';imageLink.href=info.url;imageLink.target='_blank';imageLink.rel='noopener noreferrer';imageLink.setAttribute('aria-label','Open de afbeelding op volledige grootte: '+title);const img=document.createElement('img');img.loading='lazy';img.decoding='async';img.src=info.thumburl||info.url;img.alt=title;img.onerror=()=>{media.replaceChildren();const fallback=document.createElement('div');fallback.className='status';fallback.textContent='Afbeelding tijdelijk niet beschikbaar';media.append(fallback)};imageLink.append(img);media.append(imageLink);const body=document.createElement('div');body.className='photo-body';const h=document.createElement('h3');h.className='photo-title';h.textContent=title;const m=document.createElement('div');m.className='photo-meta';m.textContent=[date,artist,credit].filter(Boolean).join(' · ');const desc=document.createElement('p');desc.className='photo-description';desc.textContent=description;const tags=document.createElement('div');tags.className='photo-tags';const t1=document.createElement('span');t1.className='tag';t1.textContent=license;tags.append(t1);const t2=document.createElement('span');t2.className='tag';t2.textContent=year?'Opnamejaar '+year:'Ongedateerd · historische context';tags.append(t2);const actions=document.createElement('div');actions.className='photo-actions';const link=document.createElement('a');link.href=info.descriptionurl||'https://commons.wikimedia.org/wiki/'+encodeURIComponent(page.title);link.target='_blank';link.rel='noopener noreferrer';link.textContent='Bron & rechten bekijken ↗';const fav=document.createElement('button');fav.type='button';fav.className='iconbtn';fav.textContent=favorites.has(fileKey)?'★ Opgeslagen':'☆ Bewaar';fav.setAttribute('aria-pressed',String(favorites.has(fileKey)));fav.addEventListener('click',()=>{if(favorites.has(fileKey)){favorites.delete(fileKey)}else{favorites.add(fileKey)}writeFavorites(favorites);fav.textContent=favorites.has(fileKey)?'★ Opgeslagen':'☆ Bewaar';fav.setAttribute('aria-pressed',String(favorites.has(fileKey)))});actions.append(link,fav);if(description)body.append(h,m,desc,tags,actions);else body.append(h,m,tags,actions);article.append(media,body);$('#results').append(article);visibleCount++}
 function updateCount(){const dateFilter=$('#period').value;$('#count').textContent=visibleCount+' foto\'s getoond'+(dateFilter?' · metadatafilter actief':'');}
 async function load(reset=false) {
   if (loading && !reset) return;
@@ -260,6 +272,7 @@ function naRecordMatches(record){
  let pattern='';
  if(view==='bandung')pattern='bandoeng|bandung';
  else if(view==='knil')pattern='knil|militair|leger|soldaat|officier|kazern|wapen';
+ else if(view==='bersiap')pattern='bersiap|1945|1946|1947|1948|1949|revolutie|indonesian national revolution';
  else if(view==='daily')pattern='bevolking|markt|school|kind|vrouw|gezin|werk|cultuur|religie';
  else if(view==='java')pattern=naPlaceTerms[place]||'java';
  else if(view==='indies')pattern='indie|indones|java|bandoeng|bandung|batavia|buitenzorg|bogor|semarang|soerabaja|surabaya|djokja|yogyakarta|malang|knil';
