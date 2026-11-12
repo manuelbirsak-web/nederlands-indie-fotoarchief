@@ -84,12 +84,14 @@ def main() -> None:
         fail("Ongedateerde bestanden moeten via inhoudelijke relevantie kunnen worden toegelaten")
     if "if(year===null&&!historicalContext.test(text))return false;" not in source:
         fail("Ongedateerde beelden moeten een expliciete historische contextverwijzing bevatten")
-    if "original>=1800&&original<=1959" not in source:
+    if "year>=1800&&year<=1959?year:null" not in source:
         fail("Opnamedatering moet worden begrensd tot 1800–1959")
     if "/\\b(wordmark|logo|map of|coat of arms|rank insignia|book cover" not in source:
         fail("Niet-fotografische illustraties en publicaties worden niet aantoonbaar uitgesloten")
     if "match(/(?:18|19|20)\\d{2}/)" not in source:
         fail("Datumparser voor Nationaal Archief-records ontbreekt of is onjuist")
+    if "const seenFiles=new Set()" not in source or "foundThisLoad < 8 && batches < 4" not in source:
+        fail("Zoeken moet duplicaten voorkomen en lege zoekpagina’s automatisch overslaan")
     if "AbortController" not in source or "data.continue" not in source:
         fail("Abort/continuation afhandeling ontbreekt")
     if "textContent" not in source:
