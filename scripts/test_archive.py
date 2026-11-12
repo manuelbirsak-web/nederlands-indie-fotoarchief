@@ -9,7 +9,7 @@ from harvest_nationaal_archief import classify_record
 
 class ArchiveClassificationTests(unittest.TestCase):
     def test_knil_is_only_assigned_when_description_says_knil(self) -> None:
-        topics, places = classify_record("Stafmuziek KNIL omringd door publiek", "1947-01-19")
+        topics, places = classify_record("Stafmuziek KNIL omringd door publiek in Bandoeng", "1947-01-19")
         self.assertIn("knil", topics)
         self.assertIn("military", topics)
         self.assertIn("java", places)
