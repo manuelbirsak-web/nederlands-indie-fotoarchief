@@ -159,12 +159,11 @@ function writeFavorites(set){try{localStorage.setItem(favoritesKey,JSON.stringif
 let favorites=readFavorites();
 function buildQuery(){const typed=$('#q').value.trim();let base=views[view].query;if(view==='java')base=places[place];if(view==='bandung'&&customTerm)base+=' '+customTerm;if(typed)base+=' '+typed;const topic=$('#topic').value;if(topic)base+=' '+topicTerms[topic];return '('+base+') filetype:bitmap'}
 function yearFromMetadata(meta){
- const extract=value=>{const match=String(value||'').match(/(?:^|\D)((?:18|19)\d{2})(?:\D|$)/);return match?Number(match[1]):null};
- const original=extract(meta?.DateTimeOriginal?.value);
- if(original!==null&&original>=1800&&original<=1959)return original;
- // Commons can expose a 2009 Flickr/scan timestamp as DateTimeOriginal. Never treat that as the historical exposure date.
- const descriptive=extract(metadataValue(meta,'ImageDescription'))||extract(metadataValue(meta,'ObjectName'));
- return descriptive!==null&&descriptive>=1800&&descriptive<=1959?descriptive:null;
+ const raw=meta?.DateTimeOriginal?.value||'';
+ const match=String(raw).match(/(?:^|\\D)((?:18|19)\\d{2})(?:\\D|$)/);
+ const year=match?Number(match[1]):null;
+ // Never use Commons Date/DateTime: these can be Flickr upload or digitisation timestamps.
+ return year!==null&&year>=1800&&year<=1959?year:null;
 }
 function periodMatches(year){const range=$('#period').value;if(range==='all')return true;if(range==='undated')return year===null;if(year===null)return range==='1800-1959';const [start,end]=range.split('-').map(Number);return year>=start&&year<=end}
 function isRelevantHistoricalPhoto(page,meta,year){
