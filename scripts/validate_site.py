@@ -61,7 +61,7 @@ def main() -> None:
     if not parser.title_seen or "<title>" not in source:
         fail("Paginatitel ontbreekt")
 
-    for view in ("home", "indies", "java", "bandung", "knil", "daily"):
+    for view in ("home", "indies", "java", "bandung", "knil", "bersiap", "daily"):
         if f'data-view="{view}"' not in source:
             fail(f"Navigatiesectie ontbreekt: {view}")
     for place in ("bandung", "batavia", "bogor", "semarang", "surabaya", "yogyakarta", "malang", "other"):
@@ -74,18 +74,18 @@ def main() -> None:
         fail("Zoekfunctie filtert niet aantoonbaar op beeldbestanden")
     if "meta?.DateTime?.value" in source:
         fail("Uploaddatum mag niet als historische opnamedatum worden gebruikt")
-    if "DateTimeOriginal" not in source or "Datering niet vermeld" not in source:
+    if "DateTimeOriginal" not in source or "Opnamedatering niet vermeld in bron" not in source:
         fail("Expliciete historische datering en onbekende datum moeten worden onderscheiden")
     if '<option value="1800-1959" selected>' not in source:
         fail("De standaardweergave moet de historische periode 1800–1959 gebruiken")
-    if "function isRelevantHistoricalPhoto" not in source or "if (!isRelevantHistoricalPhoto(page,meta,year)) continue;" not in source:
+    if "function isRelevantHistoricalPhoto" not in source or "isRelevantHistoricalPhoto(page,meta,year)" not in source:
         fail("Historische beeldrelevantie wordt niet per resultaat gecontroleerd")
     if "if(year===null)return range==='1800-1959'" not in source:
         fail("Ongedateerde bestanden moeten via inhoudelijke relevantie kunnen worden toegelaten")
     if "if(year===null&&!historicalContext.test(text))return false;" not in source:
         fail("Ongedateerde beelden moeten een expliciete historische contextverwijzing bevatten")
-    if "year>1959" not in source:
-        fail("Bekend beeldmateriaal na 1959 moet buiten de standaardperiode vallen")
+    if "original>=1800&&original<=1959" not in source:
+        fail("Opnamedatering moet worden begrensd tot 1800–1959")
     if "/\\b(wordmark|logo|map of|coat of arms|rank insignia|book cover" not in source:
         fail("Niet-fotografische illustraties en publicaties worden niet aantoonbaar uitgesloten")
     if "match(/(?:18|19|20)\\d{2}/)" not in source:
