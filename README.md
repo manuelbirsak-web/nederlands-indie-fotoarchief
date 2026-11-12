@@ -19,6 +19,14 @@ Het Indisch Beeldarchief brengt historische foto's, bronbeschrijvingen en instit
 
 De Nationaal Archief-harvester heeft bij de huidige snapshot de veiligheidslimiet van acht pagina's à 500 records bereikt. De 4.000 records zijn dus een begrensde zoekselectie, geen volledige export en geen bewijs van collectievolledigheid. De Rijksmuseum-snapshot is eveneens een begrensde selectie van zoektermen en eerste pagina's; het is geen volledige export van de museumcollectie.
 
+## Familieonderzoek en uitgebreide zoekingang
+
+- Aparte familiepagina voor de aangeleverde Birsak-foto's en het namenoverzicht.
+- Deep Search-zoekingang met gerichte externe zoekopdrachten voor adressen, historische schrijfwijzen en genealogische bronnen.
+- Eerste online aanknopingsbronnen: Indisch4ever (2011), genealogische publicaties over Ernanie Ernest Birsak en Arnold Willem Birsak, en een posthistorische adresvermelding voor Lembangweg 346 (1940).
+- De externe genealogische publicaties en het aangeleverde bijschrift zijn aanknopingsbronnen, geen onafhankelijke identificatie van personen op foto's. De adresvermelding uit 1940 bewijst niet dat de familie Birsak daar woonde.
+- De twee door de gebruiker aangeleverde fotobestanden zijn nog niet als zelfstandige bestanden aan de openbare repository toegevoegd; de pagina bevat op dit moment de transcriptie en onderzoekscontext.
+
 ## Rubrieken en zoekfuncties
 
 - **Nederlands-Indië:** algemene historische beeldzoekfunctie.
