@@ -1,0 +1,4533 @@
+{
+  "schemaVersion": 1,
+  "source": "Rijksmuseum Data Services — Search API and Linked Art",
+  "sourceUrl": "https://data.rijksmuseum.nl/docs/search",
+  "snapshotDate": "2026-11-12T21:11:23.515284+00:00",
+  "count": 170,
+  "candidateCount": 278,
+  "searches": [
+    {
+      "term": "Nederlands-Indië",
+      "available": 2146,
+      "selectedFromFirstPage": 80
+    },
+    {
+      "term": "Dutch East Indies",
+      "available": 23,
+      "selectedFromFirstPage": 23
+    },
+    {
+      "term": "Bandung",
+      "available": 20,
+      "selectedFromFirstPage": 20
+    },
+    {
+      "term": "Bandoeng",
+      "available": 55,
+      "selectedFromFirstPage": 25
+    },
+    {
+      "term": "Java",
+      "available": 1358,
+      "selectedFromFirstPage": 45
+    },
+    {
+      "term": "Batavia",
+      "available": 514,
+      "selectedFromFirstPage": 25
+    },
+    {
+      "term": "Buitenzorg",
+      "available": 42,
+      "selectedFromFirstPage": 15
+    },
+    {
+      "term": "Semarang",
+      "available": 98,
+      "selectedFromFirstPage": 15
+    },
+    {
+      "term": "Soerabaja",
+      "available": 478,
+      "selectedFromFirstPage": 15
+    },
+    {
+      "term": "KNIL",
+      "available": 179,
+      "selectedFromFirstPage": 10
+    },
+    {
+      "term": "Sumatra",
+      "available": 1767,
+      "selectedFromFirstPage": 20
+    }
+  ],
+  "failedObjectLookups": 64,
+  "imageCount": 157,
+  "metadataOnlyCount": 13,
+  "imageRightsPolicy": "Only the image-level Public Domain Mark 1.0 or CC0 1.0 statements are displayed as thumbnails. Object-level metadata CC0 is not treated as an image licence.",
+  "topicCounts": {
+    "architecture": 40,
+    "knil": 4,
+    "landscape": 19,
+    "military": 25,
+    "society": 36,
+    "transport": 8
+  },
+  "placeCounts": {
+    "bandung": 36,
+    "batavia": 5,
+    "bogor": 16,
+    "java": 104,
+    "malang": 2,
+    "other-java": 28,
+    "semarang": 8,
+    "sumatra": 7,
+    "surabaya": 11,
+    "yogyakarta": 1
+  },
+  "records": [
+    {
+      "id": "200367397",
+      "objectNumber": "NG-1988-30-D-46-1",
+      "title": "Demang van Buitenzorg met vrouw en kind",
+      "otherTitles": [],
+      "description": "Studioportret van de Demang van Buitenzorg met vrouw en kind. Ingeplakte foto in het fotoalbum getiteld: Gezichten van Java.",
+      "date": "1860 - 1878",
+      "creator": "fotograaf: Woodbury & Page, Celebes",
+      "objectUrl": "https://id.rijksmuseum.nl/200367397",
+      "imageUrl": "https://iiif.micr.io/hFsnE/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Buitenzorg"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bogor",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200329116",
+      "objectNumber": "RP-F-F18058",
+      "title": "Groepsportret van een onbekend militair gezelschap bij een spoorlijn en een fort, Nederlands-Indië",
+      "otherTitles": [],
+      "description": "Gezien de uniformen, maken de onbekende geportretteerden deel uit van het Koninklijk Nederlandsch-Indisch Leger (KNIL). Links staan twee onbekende bedienden en een onbekende vrouw.",
+      "date": "1860 - 1890",
+      "creator": "fotograaf: anoniem, Nederlands-Indië",
+      "objectUrl": "https://id.rijksmuseum.nl/200329116",
+      "imageUrl": "https://iiif.micr.io/gEnCg/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "KNIL"
+      ],
+      "topics": [
+        "knil",
+        "military",
+        "society"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200367393",
+      "objectNumber": "NG-1988-30-D-43-1",
+      "title": "Waterval",
+      "otherTitles": [],
+      "description": "Waterval in het bos. De Dagowaterval in de Tjikapoendoeng bij Bandoeng of de waterval van Tondano in de Minahasa. Ingeplakte foto in het fotoalbum getiteld: Gezichten van Java.",
+      "date": "1870 - 1880",
+      "creator": "fotograaf: Woodbury & Page, Celebes",
+      "objectUrl": "https://id.rijksmuseum.nl/200367393",
+      "imageUrl": "https://iiif.micr.io/kxdsF/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "landscape"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335510",
+      "objectNumber": "RP-F-F01220-T",
+      "title": "Executie van acht zogenaamde Tamboenmoordenaars in Bekasi op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "1870-08-24",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Bekasi",
+      "objectUrl": "https://id.rijksmuseum.nl/200335510",
+      "imageUrl": "https://iiif.micr.io/rQTus/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200145837",
+      "objectNumber": "RP-F-00-927",
+      "title": "Medewerkers in dienst van het Rode Kruis in Nederlandsch Indië. Januari 1874",
+      "otherTitles": [
+        "Koelies in dienst van het Roode Kruis in Nederlandsch Indië. Januari 1874"
+      ],
+      "description": "Groepsportret van een korps Indonesiërs in dienst van het Rode Kruis in Nederlands-Indië tijdens de tweede expeditie tegen Atjeh, in januari 1874. De groep poseert in een tuin voor een hek, op de grond voor hen ligt een draagbaar. Op de achterzijde titels en teksten in Nederlands en Frans.",
+      "date": "1874-01",
+      "creator": "fotograaf: anoniem, Nederlands-Indië",
+      "objectUrl": "https://id.rijksmuseum.nl/200145837",
+      "imageUrl": "https://iiif.micr.io/XlYPP/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200415455",
+      "objectNumber": "NG-1988-26-39",
+      "title": "Perron van het stationsgebouw te Buitenzorg",
+      "otherTitles": [
+        "Staatsspoorwegen op Java"
+      ],
+      "description": "Het perron van het stationsgebouw te Buitenzorg. Onderdeel van een groep van 62 foto's in een doos met het opschrift \"Staatsspoorwegen op Java\" uit 1888.",
+      "date": "1880 - 1888",
+      "creator": "fotograaf: anoniem, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200415455",
+      "imageUrl": "https://iiif.micr.io/PcMDR/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Buitenzorg"
+      ],
+      "topics": [],
+      "places": [
+        "bogor",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200415456",
+      "objectNumber": "NG-1988-26-40",
+      "title": "Stationsgebouw te Buitenzorg",
+      "otherTitles": [
+        "Staatsspoorwegen op Java"
+      ],
+      "description": "De voorkant van het stationsgebouw te Buitenzorg. Onderdeel van een groep van 62 foto's in een doos met het opschrift \"Staatsspoorwegen op Java\" uit 1888.",
+      "date": "1880 - 1888",
+      "creator": "fotograaf: anoniem, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200415456",
+      "imageUrl": "https://iiif.micr.io/QWQco/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Buitenzorg"
+      ],
+      "topics": [],
+      "places": [
+        "bogor",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200415454",
+      "objectNumber": "NG-1988-26-38",
+      "title": "Stationsgebouw te Buitenzorg, vanaf het terrein der werkplaatsen gezien",
+      "otherTitles": [
+        "Staatsspoorwegen op Java"
+      ],
+      "description": "Het stationsgebouw te Buitenzorg, vanaf het terrein der werkplaatsen gezien. Onderdeel van een groep van 62 foto's in een doos met het opschrift \"Staatsspoorwegen op Java\" uit 1888.",
+      "date": "1880 - 1888",
+      "creator": "fotograaf: anoniem, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200415454",
+      "imageUrl": "https://iiif.micr.io/PMgUx/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Buitenzorg"
+      ],
+      "topics": [],
+      "places": [
+        "bogor",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334861",
+      "objectNumber": "RP-F-F01195-AX",
+      "title": "Borobudur op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "1880 - 1900",
+      "creator": "fotograaf: anoniem, Borobudur",
+      "objectUrl": "https://id.rijksmuseum.nl/200334861",
+      "imageUrl": "https://iiif.micr.io/llSyl/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334842",
+      "objectNumber": "RP-F-F01195-AC",
+      "title": "Bomen in de tuin van Hotel del Monte in San Francisco",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "1880 - c. 1900",
+      "creator": "fotograaf: Johnson (fotograaf), San Francisco",
+      "objectUrl": "https://id.rijksmuseum.nl/200334842",
+      "imageUrl": "https://iiif.micr.io/fsfvL/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334843",
+      "objectNumber": "RP-F-F01195-AD",
+      "title": "Exterieur en tuin van Hotel del Monte in San Francisco",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "1880 - c. 1900",
+      "creator": "fotograaf: Johnson (fotograaf), San Francisco",
+      "objectUrl": "https://id.rijksmuseum.nl/200334843",
+      "imageUrl": "https://iiif.micr.io/fVBZx/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334854",
+      "objectNumber": "RP-F-F01195-AQ",
+      "title": "Overheidsgebouw Aliiolani Hale met palmen en het standbeeld van koning Kamehameha I in Honolulu",
+      "otherTitles": [
+        "Honolulu"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "1883 - c. 1920",
+      "creator": "fotograaf: anoniem, Honolulu",
+      "objectUrl": "https://id.rijksmuseum.nl/200334854",
+      "imageUrl": "https://iiif.micr.io/EMAEz/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200324369",
+      "objectNumber": "RP-F-F03126",
+      "title": "Onbekend echtpaar schrijvend op een veranda in Nederlands-Indië",
+      "otherTitles": [],
+      "description": "Een onbekend echtpaar voorovergebogen over een brief op tafel, rond de tafel loopt een kind met drie katten,in Nederlands-Indië.",
+      "date": "1885 - 1920",
+      "creator": "fotograaf: anoniem, Nederlands-Indië",
+      "objectUrl": "https://id.rijksmuseum.nl/200324369",
+      "imageUrl": "https://iiif.micr.io/SVHQv/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200415417",
+      "objectNumber": "NG-1988-26",
+      "title": "Groep van 62 foto's in een doos met het opschrift \"Staatsspoorwegen op Java\" uit 1888",
+      "otherTitles": [],
+      "description": "Groep van 62 foto's in een doos met het opschrift \"Staatsspoorwegen op Java\" uit 1888. Doos in de vorm van een groot boek met omslag van rood leder; op boven- en onderzijde in alle vier hoeken metalen knop. Bovenzijde doos is deksel, dat als kaft van boek opengeslagen kan worden. Op buitenzijde hiervan centraal medaillon van zwart leer in vorm van wapenschild met opschrift en rand in goud ingeperst. Drie zijkanten van doos beplakt met papier met marmermotief. Aan binnenzijde is doos beplakt met glimmend wit papier met golfstructuur. Op bodem ligt losse kartonnen kaart, met hetzelfde papier overtrokken, met in midden daarvan bevestigd breed lint, grof geweven, wit met rood streepje. Op deze kaart lagen 62 foto's, die met behulp van kaart met lint kunnen worden opgewipt. De losse foto's (NG-1988-26-1 t/m 63), zijn van divers formaat, de meeste op wit karton geplakt. 17 Foto's met landschappen op Oost-Java, en andere onderwerpen, deels met opschriften op keerzijde. Overige 45 foto's betreffen spoorwegen op Java: stations, spoorbruggen, emplacementen, treinstellen en spoorwegtrajecten in landschap; meeste met onderschriften en/of opschriften op keerzijde Bij laatste foto's hoort een gedrukte lijst met 13 nummers.",
+      "date": "1888",
+      "creator": null,
+      "objectUrl": "https://id.rijksmuseum.nl/200415417",
+      "imageUrl": "https://iiif.micr.io/AoTPq/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Semarang"
+      ],
+      "topics": [
+        "landscape"
+      ],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200320263",
+      "objectNumber": "RP-F-F80011-A",
+      "title": "Groep mannen, mogelijk voor Gouvernementspaleis in Batavia",
+      "otherTitles": [],
+      "description": "Groep mannen (Europeanen), mogelijk voor Gouvernementspaleis in Batavia, het huidige Jakarta. Foto geplakt op blad uit album, op verso bevindt zich nog een foto.",
+      "date": "1890 - 1900",
+      "creator": "fotograaf: Carl J. Kleingrothe, Sumatra",
+      "objectUrl": "https://id.rijksmuseum.nl/200320263",
+      "imageUrl": "https://iiif.micr.io/hUQnG/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Batavia"
+      ],
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334825",
+      "objectNumber": "RP-F-F01195-K",
+      "title": "Exterieur van het Duitse Krupp-paviljoen op de Wereldtentoonstelling in Chicago",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "1893",
+      "creator": "fotograaf: anoniem, Chicago",
+      "objectUrl": "https://id.rijksmuseum.nl/200334825",
+      "imageUrl": "https://iiif.micr.io/hzcez/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334826",
+      "objectNumber": "RP-F-F01195-L",
+      "title": "Kanon in het Duitse Krupp-paviljoen op de Wereldtentoonstelling in Chicago",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "1893",
+      "creator": "fotograaf: anoniem",
+      "objectUrl": "https://id.rijksmuseum.nl/200334826",
+      "imageUrl": "https://iiif.micr.io/Dksml/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334837",
+      "objectNumber": "RP-F-F01195-X",
+      "title": "Exterieur van een landhuis in Denver",
+      "otherTitles": [
+        "Res. Cor. Colfax and Gilpin"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "1893 - c. 1900",
+      "creator": "fotograaf: toegeschreven aan William Henry Jackson, Denver",
+      "objectUrl": "https://id.rijksmuseum.nl/200334837",
+      "imageUrl": "https://iiif.micr.io/wBXPg/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200492998",
+      "objectNumber": "RP-F-2001-17-34",
+      "title": "Een dam nabij Bandung",
+      "otherTitles": [
+        "9. Zuid-Bali."
+      ],
+      "description": "Een dam gemaakt van aarde nabij Bandung. De dam is opgebouwd uit terrassen. Op de achtergrond staan palmbomen.",
+      "date": "1900 - 1915",
+      "creator": "fotograaf: Johanna Hermina Marmelstein (mogelijk), Jakarta (stad) (mogelijk)",
+      "objectUrl": "https://id.rijksmuseum.nl/200492998",
+      "imageUrl": "https://iiif.micr.io/EBkjz/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandung"
+      ],
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200517613",
+      "objectNumber": "NG-1988-30-A-38-1",
+      "title": "Groepsfoto van militairen",
+      "otherTitles": [],
+      "description": "Een grote groep militairen van het KNIL poserend voor een huis. Centraal op de eerste rij enkele hogere officieren met witte pluimen op de helm en vier vrouwen. Dezelfde groep als in de foto's van de beëdigingsceremonie. Ingeplakte foto in een album met 87 foto's over de aanleg van de Gajoweg op Noord-Sumatra tussen Bireuen en Takinguen tussen 1903-1914.",
+      "date": "1903 - 1913",
+      "creator": "fotograaf: anoniem, Noord-Sumatra",
+      "objectUrl": "https://id.rijksmuseum.nl/200517613",
+      "imageUrl": "https://iiif.micr.io/jEnuv/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "KNIL"
+      ],
+      "topics": [
+        "architecture",
+        "knil",
+        "landscape",
+        "military",
+        "society"
+      ],
+      "places": [
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200493645",
+      "objectNumber": "RP-F-2007-6-187",
+      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
+      "otherTitles": [
+        "Visit to an Oil Field in Purissima Hills, USA",
+        "Graciosa property"
+      ],
+      "description": "Gezicht op het terrein van de oliemaatschappij op Graciosa property in California. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
+      "date": "1908-05-02",
+      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
+      "objectUrl": "https://id.rijksmuseum.nl/200493645",
+      "imageUrl": "https://iiif.micr.io/vVxLH/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [
+        "transport"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200493635",
+      "objectNumber": "RP-F-2007-6-188",
+      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
+      "otherTitles": [
+        "Visit to an Oil Field in Purissima Hills, USA",
+        "An oil lake"
+      ],
+      "description": "Olieboortorens in een veld in California. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
+      "date": "1908-05-02 - 1908-05-03",
+      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
+      "objectUrl": "https://id.rijksmuseum.nl/200493635",
+      "imageUrl": "https://iiif.micr.io/IPQor/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200493646",
+      "objectNumber": "RP-F-2007-6-189",
+      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
+      "otherTitles": [
+        "Visit to an Oil Field in Purissima Hills, USA",
+        "Het reisgezelschap met Mr. Crocker op een olieveld met boortorens",
+        "The Oilfields in the Purisima Hills, Southern California"
+      ],
+      "description": "Het reisgezelschap met Mr. Crocker op een olieveld met boortorens. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
+      "date": "1908-05-02 - 1908-05-03",
+      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
+      "objectUrl": "https://id.rijksmuseum.nl/200493646",
+      "imageUrl": "https://iiif.micr.io/YsLZL/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200493647",
+      "objectNumber": "RP-F-2007-6-190",
+      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
+      "otherTitles": [
+        "Visit to an Oil Field in Purissima Hills, USA",
+        "Well 4"
+      ],
+      "description": "Het gezelschap bij olieboortoren en oliebel nummer vier. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
+      "date": "1908-05-02 - 1908-05-03",
+      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
+      "objectUrl": "https://id.rijksmuseum.nl/200493647",
+      "imageUrl": "https://iiif.micr.io/OxfTt/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200493669",
+      "objectNumber": "RP-F-2007-6-191",
+      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
+      "otherTitles": [
+        "Visit to an Oil Field in Purissima Hills, USA",
+        "Oil port"
+      ],
+      "description": "Gezicht op een oliehaven waar zich olietanks bevinden. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
+      "date": "1908-05-02 - 1908-05-03",
+      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
+      "objectUrl": "https://id.rijksmuseum.nl/200493669",
+      "imageUrl": "https://iiif.micr.io/BCduB/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200493643",
+      "objectNumber": "RP-F-2007-6-185",
+      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
+      "otherTitles": [
+        "Visit to an Oil Field in Purissima Hills, USA",
+        "Graciosa ridge"
+      ],
+      "description": "Henri Deterding en reisgenoten in Graciosa Ridge bij het bezoek aan olievelden. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
+      "date": "1908-05-02 - 1908-05-03",
+      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
+      "objectUrl": "https://id.rijksmuseum.nl/200493643",
+      "imageUrl": "https://iiif.micr.io/QvojF/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200493672",
+      "objectNumber": "RP-F-2007-6-193",
+      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
+      "otherTitles": [
+        "Visit to an Oil Field in Purissima Hills, USA",
+        "Stills"
+      ],
+      "description": "Het reisgezelschap bezoekt de olievelden in California. Het staat stil bij oliepijpleidingen en destillatoren op een raffinaderij, in het midden Deterding. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
+      "date": "1908-05-02 - 1908-05-03",
+      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
+      "objectUrl": "https://id.rijksmuseum.nl/200493672",
+      "imageUrl": "https://iiif.micr.io/AnLzv/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200493670",
+      "objectNumber": "RP-F-2007-6-192",
+      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
+      "otherTitles": [
+        "Visit to an Oil Field in Purissima Hills, USA",
+        "Refinery at Oil port"
+      ],
+      "description": "Olieraffinaderij in de oliehaven in California. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
+      "date": "1908-05-02 - 1908-05-03",
+      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
+      "objectUrl": "https://id.rijksmuseum.nl/200493670",
+      "imageUrl": "https://iiif.micr.io/xBqsE/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200493674",
+      "objectNumber": "RP-F-2007-6-194",
+      "title": "Bezoek aan een olieveld in Purissima Hills in de Verenigde Staten",
+      "otherTitles": [
+        "Visit to an Oil Field in Purissima Hills, USA",
+        "On the refinery"
+      ],
+      "description": "Op de raffinaderij. Onderdeel van het fotoalbum van Dolph Kessler met opnamen die hij maakte tijdens zijn verblijf in Engeland en op een wereldreis die hij als secretaris van Henri Deterding (directeur Koninklijke Olie) ondernam naar Nederlands-Indië, Japan, China en de Verenigde Staten, tussen 1906 en 1908.",
+      "date": "1908-05-02 - 1908-05-03",
+      "creator": "fotograaf: Geldolph Adriaan Kessler (Dolph), Californië",
+      "objectUrl": "https://id.rijksmuseum.nl/200493674",
+      "imageUrl": "https://iiif.micr.io/rIuHO/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200517616",
+      "objectNumber": "NG-1988-30-A-39-2",
+      "title": "Eerste luitenant Albert Laman Trip met brigade van het Korps Marechaussee te voet in Atjeh en Onderhoorigheden",
+      "otherTitles": [
+        "First Lieutenant Albert Laman Trip with Brigade of the Marechaussee Corps",
+        "Groepsfoto KNIL-soldaten"
+      ],
+      "description": "Een groep Indonesische KNIL-soldaten met een Nederlandse officier, de soldaten poseren met getrokken klewang en karabijnen. Ingeplakte foto in een album met 87 foto's over de aanleg van de Gajoweg op Noord-Sumatra tussen Bireuen en Takinguen tussen 1903-1914.",
+      "date": "1910 - 1913",
+      "creator": "fotograaf: anoniem, Noord-Sumatra",
+      "objectUrl": "https://id.rijksmuseum.nl/200517616",
+      "imageUrl": "https://iiif.micr.io/AJNFF/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "KNIL"
+      ],
+      "topics": [
+        "knil",
+        "landscape",
+        "military"
+      ],
+      "places": [
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335509",
+      "objectNumber": "RP-F-F01220-AB",
+      "title": "Man en een vrouw op een veranda in Surabaya (Simpang)",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "1913-10",
+      "creator": "fotograaf: anoniem, Surabaya",
+      "objectUrl": "https://id.rijksmuseum.nl/200335509",
+      "imageUrl": "https://iiif.micr.io/ByvNt/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200531179",
+      "objectNumber": "NG-1994-7-43",
+      "title": "H.B.S. Bandoeng",
+      "otherTitles": [],
+      "description": "Het gebouw van de HBS te Bandoeng. Onderdeel van het fotoalbum van de Eerste Waterstaatsafdeling op West-Java 22 maart 1915 - 30 juli 1919.",
+      "date": "1918 - 1919",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200531179",
+      "imageUrl": "https://iiif.micr.io/xKqqr/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200531178",
+      "objectNumber": "NG-1994-7-42",
+      "title": "H.B.S. Bandoeng",
+      "otherTitles": [],
+      "description": "Het gebouw van de HBS te Bandoeng. Onderdeel van het fotoalbum van de Eerste Waterstaatsafdeling op West-Java 22 maart 1915 - 30 juli 1919.",
+      "date": "1918 - 1919",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200531178",
+      "imageUrl": "https://iiif.micr.io/PhRbh/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200534885",
+      "objectNumber": "NG-2002-84-D-54",
+      "title": "Product Photos N.V. Machinefabriek Braat",
+      "otherTitles": [
+        "Productfoto’s N.V. Machinefabriek Braat",
+        "Stoomtrommel"
+      ],
+      "description": "De stoomtrommel voor een kookpan, bestemd vor de suikerindustrie. Onderdeel van de multomap met foto's van machines van de N.V. Machinefabriek Braat te Soerabaja, Soekaboemi en Jogyakarta, uit de periode 1908-1942.",
+      "date": "1919 - 1921",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200534885",
+      "imageUrl": "https://iiif.micr.io/DUmQR/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200534888",
+      "objectNumber": "NG-2002-84-D-55",
+      "title": "Product Photos N.V. Machinefabriek Braat",
+      "otherTitles": [
+        "Productfoto’s N.V. Machinefabriek Braat",
+        "Sapweegtoestel"
+      ],
+      "description": "Automatisch sapweegtoestel, in bedrijf op de Suikerfabriek Toelangan op Oost-Java, 1921. Onderdeel van de multomap met foto's van machines van de N.V. Machinefabriek Braat te Soerabaja, Soekaboemi en Jogyakarta, uit de periode 1908-1942.",
+      "date": "1921",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200534888",
+      "imageUrl": "https://iiif.micr.io/XqMvF/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200313460",
+      "objectNumber": "NG-1992-4-3-3-1",
+      "title": "Leidong West - Permanente pondok en kantoor",
+      "otherTitles": [],
+      "description": "Nieuwbouw van een pondok en kantoor. Onderdeel van het fotoalbum over de plantages Leidong West en Kanopan Oeloe van de Cultuur Maatschappij Leidong West op van Sumatra in de jaren 1925-1939.",
+      "date": "1925 - 1939",
+      "creator": "fotograaf: anoniem, Sumatra",
+      "objectUrl": "https://id.rijksmuseum.nl/200313460",
+      "imageUrl": "https://iiif.micr.io/Dlnav/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Sumatra"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200513195",
+      "objectNumber": "NG-2009-119",
+      "title": "Rijbewijs van Elsa Silberstein",
+      "otherTitles": [],
+      "description": "Oostenrijks rijbewijs \"Führer-Schein\" van Elsa Silberstein, met linksonder rond stempel \"Polizeidirektion in Wien\". Op de achterzijde een zegel, datum van uitgave 14 mei 1926 te Wenen en de handtekening van de bezitster. Behoort bij het fotoalbum uit 1935 over haar huis in Bandoeng.",
+      "date": "1926",
+      "creator": "fotograaf: anoniem, Wenen",
+      "objectUrl": "https://id.rijksmuseum.nl/200513195",
+      "imageUrl": "https://iiif.micr.io/clEiA/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200534868",
+      "objectNumber": "NG-2002-84-D-46",
+      "title": "Product Photos N.V. Machinefabriek Braat",
+      "otherTitles": [
+        "Productfoto’s N.V. Machinefabriek Braat",
+        "Condensor"
+      ],
+      "description": "Condensor, vervaardigd in 1926 en bestemd voor de Suikerfabriek Redjosari. Onderdeel van de multomap met foto's van machines van de N.V. Machinefabriek Braat te Soerabaja, Soekaboemi en Jogyakarta, uit de periode 1908-1942.",
+      "date": "1926-10-11",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200534868",
+      "imageUrl": "https://iiif.micr.io/KLsEo/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200534875",
+      "objectNumber": "NG-2002-84-D-49",
+      "title": "Product Photos N.V. Machinefabriek Braat",
+      "otherTitles": [
+        "Productfoto’s N.V. Machinefabriek Braat",
+        "Bakcarrier"
+      ],
+      "description": "Een bak- of harkcarrier, vervaardigd in 1930 en bestemd voor de Suikerfabriek Olean. Onderdeel van de multomap met foto's van machines van de N.V. Machinefabriek Braat te Soerabaja, Soekaboemi en Jogyakarta, uit de periode 1908-1942.",
+      "date": "1930-03-06",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200534875",
+      "imageUrl": "https://iiif.micr.io/pEizM/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200534865",
+      "objectNumber": "NG-2002-84-D-43",
+      "title": "Product Photos N.V. Machinefabriek Braat",
+      "otherTitles": [
+        "Productfoto’s N.V. Machinefabriek Braat",
+        "Persroller"
+      ],
+      "description": "Een Braat double action persroller, vervaardigd in 1930 voor de theeindustrie. Onderdeel van de multomap met foto's van machines van de N.V. Machinefabriek Braat te Soerabaja, Soekaboemi en Jogyakarta, uit de periode 1908-1942.",
+      "date": "1930-09-15",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200534865",
+      "imageUrl": "https://iiif.micr.io/QwhgB/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200534866",
+      "objectNumber": "NG-2002-84-D-44",
+      "title": "Product Photos N.V. Machinefabriek Braat",
+      "otherTitles": [
+        "Productfoto’s N.V. Machinefabriek Braat",
+        "Persroller"
+      ],
+      "description": "Een Braat double action persroller, vervaardigd in 1930 voor de theeindustrie. Onderdeel van de multomap met foto's van machines van de N.V. Machinefabriek Braat te Soerabaja, Soekaboemi en Jogyakarta, uit de periode 1908-1942.",
+      "date": "1930-09-30",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200534866",
+      "imageUrl": "https://iiif.micr.io/GxAri/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200534872",
+      "objectNumber": "NG-2002-84-D-47",
+      "title": "Product Photos N.V. Machinefabriek Braat",
+      "otherTitles": [
+        "Productfoto’s N.V. Machinefabriek Braat",
+        "Condensor"
+      ],
+      "description": "Condensor, vervaardigd in 1931 en bestemd voor de Suikerfabriek Bangak. Onderdeel van de multomap met foto's van machines van de N.V. Machinefabriek Braat te Soerabaja, Soekaboemi en Jogyakarta, uit de periode 1908-1942.",
+      "date": "1931-03-06",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200534872",
+      "imageUrl": "https://iiif.micr.io/nZswF/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200534867",
+      "objectNumber": "NG-2002-84-D-45",
+      "title": "Product Photos N.V. Machinefabriek Braat",
+      "otherTitles": [
+        "Productfoto’s N.V. Machinefabriek Braat",
+        "Persrollers"
+      ],
+      "description": "Serieproductie van Braat double action persrollers, vervaardigd in 1932 en geleverd aan de Koloniale Bank tbv Goenoeng Dempo. Onderdeel van de multomap met foto's van machines van de N.V. Machinefabriek Braat te Soerabaja, Soekaboemi en Jogyakarta, uit de periode 1908-1942.",
+      "date": "1932-01-08",
+      "creator": "fotograaf: anoniem, Soerabaja (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200534867",
+      "imageUrl": "https://iiif.micr.io/LGuGM/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200145252",
+      "objectNumber": "NG-1993-5-2",
+      "title": "Map met herinneringsfoto's van het bezoek van gouverneur-generaal B.C. de Jonge aan Semarang in 1932",
+      "otherTitles": [],
+      "description": "Map met 16 herinneringsfoto's van het bezoek van gouverneur-generaal van Nederlands-Indië B.C. de Jonge en zijn echtgenote mevr. A.C. de Jonge, baronesse van Wassenaer, aan Semarang tussen 8 en 12 september 1932. 16 foto's in een openvouwbare map of envelop van bruin reliëfkarton. Op de envelop is in goud de inscriptie en de naam van de fotograaf gedrukt. De envelop sluit met 2 drukknopen. 14 foto's zijn afgedrukt op papier met een kader, 2 foto's zijn bijna beeldvullend afgedrukt. Op elke foto zit een halftransparant tussenblad met spinnenwebmotief.",
+      "date": "1932-09-08 - 1932-09-12",
+      "creator": "fotograaf: Otto Hisgen (vermeld op object), Semarang",
+      "objectUrl": "https://id.rijksmuseum.nl/200145252",
+      "imageUrl": null,
+      "imageRightsUrl": null,
+      "imageRightsEvidence": [
+        "https://rightsstatements.org/vocab/InC/1.0/"
+      ],
+      "imageUnavailableReason": "Geen expliciete Public Domain Mark/CC0-verklaring gevonden voor het digitale beeld",
+      "searchTerms": [
+        "Nederlands-Indië",
+        "Semarang"
+      ],
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "java",
+        "semarang"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200503676",
+      "objectNumber": "NG-1993-5-2-6",
+      "title": "Staatsiefoto van Jhr. Mr. B.C. de Jonge, gouverneur van Nederlands-Indië, en mw. A.C. de Jonge - baronesse van Wassenaer aan Semarang",
+      "otherTitles": [],
+      "description": "Een staatsiefoto van het bezoek van De Jonge en zijn vrouw aan Semarang. Naast De Jonge zit de Soesoehoenan Pakoe Boewono X van Soerakarta, naast mevrouw De Jonge zit de Sultan van Jogjakarta. Tussen de de sultan en zijn vrouw staat de gouverneur A.H. Neijs. Losse foto in de map met 16 herinneringsfoto's van het bezoek van gouverneur-generaal van Nederlands-Indië B.C. de Jonge en zijn echtgenote mevr. A.C. de Jonge, baronesse van Wassenaer, aan Semarang tussen 8 en 12 september 1932.",
+      "date": "1932-09-08 - 1932-09-12",
+      "creator": "fotograaf: Otto Hisgen (vermeld op object), Semarang",
+      "objectUrl": "https://id.rijksmuseum.nl/200503676",
+      "imageUrl": null,
+      "imageRightsUrl": null,
+      "imageRightsEvidence": [
+        "https://rightsstatements.org/vocab/InC/1.0/"
+      ],
+      "imageUnavailableReason": "Geen expliciete Public Domain Mark/CC0-verklaring gevonden voor het digitale beeld",
+      "searchTerms": [
+        "Semarang"
+      ],
+      "topics": [
+        "military",
+        "society"
+      ],
+      "places": [
+        "java",
+        "semarang",
+        "yogyakarta"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200518083",
+      "objectNumber": "NG-1989-1-20-1",
+      "title": "Draaibanken van de Technische School te Bandoeng",
+      "otherTitles": [],
+      "description": "Draaibanken in de werkplaats van de Technische School te Bandoeng. Foto ingeplakt in het fotoalbum aangeboden aan J.H.A. van der Hoeven bij het beëindigen op 31 juli 1933 van zijn diensttijd bij het Nijverheidsonderwijs in Nederlandsch-Indië.",
+      "date": "1933",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200518083",
+      "imageUrl": "https://iiif.micr.io/dBEDX/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200518084",
+      "objectNumber": "NG-1989-1-20-2",
+      "title": "Draaibanken van de Technische School te Bandoeng",
+      "otherTitles": [],
+      "description": "Draaibanken in de werkplaats van de Technische School te Bandoeng. Foto ingeplakt in het fotoalbum aangeboden aan J.H.A. van der Hoeven bij het beëindigen op 31 juli 1933 van zijn diensttijd bij het Nijverheidsonderwijs in Nederlandsch-Indië.",
+      "date": "1933",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200518084",
+      "imageUrl": "https://iiif.micr.io/vxLVE/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200518085",
+      "objectNumber": "NG-1989-1-20-3",
+      "title": "Draaibanken van de Technische School te Bandoeng",
+      "otherTitles": [],
+      "description": "Draaibanken in de werkplaats van de Technische School te Bandoeng. Foto ingeplakt in het fotoalbum aangeboden aan J.H.A. van der Hoeven bij het beëindigen op 31 juli 1933 van zijn diensttijd bij het Nijverheidsonderwijs in Nederlandsch-Indië.",
+      "date": "1933",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200518085",
+      "imageUrl": "https://iiif.micr.io/dsRvN/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200518082",
+      "objectNumber": "NG-1989-1-19-2",
+      "title": "Frontgebouwen van de Technische School te Bandoeng",
+      "otherTitles": [],
+      "description": "Frontgebouwen van de Technische School te Bandoeng. Foto ingeplakt in het fotoalbum aangeboden aan J.H.A. van der Hoeven bij het beëindigen op 31 juli 1933 van zijn diensttijd bij het Nijverheidsonderwijs in Nederlandsch-Indië.",
+      "date": "1933",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200518082",
+      "imageUrl": "https://iiif.micr.io/HOsfG/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200518081",
+      "objectNumber": "NG-1989-1-19-1",
+      "title": "Frontgebouwen van de Technische School te Bandoeng",
+      "otherTitles": [],
+      "description": "Frontgebouwen van de Technische School te Bandoeng. Foto ingeplakt in het fotoalbum aangeboden aan J.H.A. van der Hoeven bij het beëindigen op 31 juli 1933 van zijn diensttijd bij het Nijverheidsonderwijs in Nederlandsch-Indië.",
+      "date": "1933",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200518081",
+      "imageUrl": "https://iiif.micr.io/CFAZy/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200518087",
+      "objectNumber": "NG-1989-1-21-2",
+      "title": "Jaarfeest van de Technische School te Bandoeng",
+      "otherTitles": [],
+      "description": "Jaarfeest van de Technische School te Bandoeng. Groepsfoto in de met slingers versierde feestzaal van de  leerlingen met introducés en docenten. Foto ingeplakt in het fotoalbum aangeboden aan J.H.A. van der Hoeven bij het beëindigen op 31 juli 1933 van zijn diensttijd bij het Nijverheidsonderwijs in Nederlandsch-Indië.",
+      "date": "1933",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200518087",
+      "imageUrl": "https://iiif.micr.io/XgGmP/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200518086",
+      "objectNumber": "NG-1989-1-21-1",
+      "title": "Machinekamer van de Technische School te Bandoeng",
+      "otherTitles": [],
+      "description": "Gezicht in de machinekamer van de Technische School te Bandoeng. Foto ingeplakt in het fotoalbum aangeboden aan J.H.A. van der Hoeven bij het beëindigen op 31 juli 1933 van zijn diensttijd bij het Nijverheidsonderwijs in Nederlandsch-Indië.",
+      "date": "1933",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200518086",
+      "imageUrl": "https://iiif.micr.io/vHutH/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200518080",
+      "objectNumber": "NG-1989-1-18-1",
+      "title": "Promotieavond op de Technische School te Bandoeng",
+      "otherTitles": [],
+      "description": "Promotieavond op de Technische School te Bandoeng. Groepsfoto van docenten en leerlingen. Foto ingeplakt in het fotoalbum aangeboden aan J.H.A. van der Hoeven bij het beëindigen op 31 juli 1933 van zijn diensttijd bij het Nijverheidsonderwijs in Nederlandsch-Indië.",
+      "date": "1933",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200518080",
+      "imageUrl": "https://iiif.micr.io/VApaP/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200532748",
+      "objectNumber": "NG-1992-2-4-37-3",
+      "title": "Heer en mevrouw Beringer, 1933",
+      "otherTitles": [],
+      "description": "Studioportret van het echtpaar Beringer, Indische vrienden van het echtpaar De Vries in Malang, 17 september 1933. Onderdeel van het fotoalbum van KNIL-sergeant Douwe de Vries uit de jaren 1925-1933.",
+      "date": "1933-09-17",
+      "creator": "fotograaf: anoniem, Malang",
+      "objectUrl": "https://id.rijksmuseum.nl/200532748",
+      "imageUrl": "https://iiif.micr.io/uWuuX/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "KNIL"
+      ],
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "java",
+        "malang"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200528082",
+      "objectNumber": "NG-2002-84-G-45",
+      "title": "Theefabriek Kertamanah gebouwd door Machinefabriek Braat Soerabaia 1934",
+      "otherTitles": [],
+      "description": "Albumblad met een foto van de theefabriek Kertamanah ten zuiden van Bandoeng, in aanbouw in 1934. Onderdeel van een fotoalbum met foto's van machines en constructies van de N.V. Machinefabriek Braat te Soerabaja, Soekaboemi en Tegal uit de periode 1931-1937.",
+      "date": "1934",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200528082",
+      "imageUrl": "https://iiif.micr.io/fAKco/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [],
+      "places": [
+        "bandung",
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200568098",
+      "objectNumber": "NG-2009-118-12",
+      "title": "Bed",
+      "otherTitles": [],
+      "description": "Slaapkamer met een bedstede met houtsnijwerk. In het woonhuis van Elsa Silberstein en haar man, thesaurier-generaal in Bandung in 1935. Schilderijtjes aan de muur. Onderdeel van het fotoalbum met zwart-wit foto's van het interieur van het huis van de familie Silberstein in Bandung in Nederlands-Indië.",
+      "date": "1935",
+      "creator": "fotograaf: Elsa Silberstein, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200568098",
+      "imageUrl": "https://iiif.micr.io/gTnyy/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandung"
+      ],
+      "topics": [
+        "architecture",
+        "military",
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200568083",
+      "objectNumber": "NG-2009-118-2",
+      "title": "Boekenkast en beeldjes",
+      "otherTitles": [],
+      "description": "Boekenkast met bovenop enkele Chinese beeldjes. In het woonhuis van Elsa Silberstein en haar man, thesaurier-generaal in Bandung in 1935. Schilderijtjes aan de muur. Onderdeel van het fotoalbum met zwart-wit foto's van het interieur van het huis van de familie Silberstein in Bandung in Nederlands-Indië.",
+      "date": "1935",
+      "creator": "fotograaf: Elsa Silberstein, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200568083",
+      "imageUrl": "https://iiif.micr.io/MHYAN/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandung"
+      ],
+      "topics": [
+        "architecture",
+        "military",
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200568103",
+      "objectNumber": "NG-2009-118-16",
+      "title": "Bronzen beeld",
+      "otherTitles": [],
+      "description": "Een Chinese bronzen beeld van een god zittend op een draak. In het woonhuis van Elsa Silberstein en haar man, thesaurier-generaal in Bandung in 1935. Schilderijtjes aan de muur. Onderdeel van het fotoalbum met zwart-wit foto's van het interieur van het huis van de familie Silberstein in Bandung in Nederlands-Indië.",
+      "date": "1935",
+      "creator": "fotograaf: Elsa Silberstein, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200568103",
+      "imageUrl": "https://iiif.micr.io/mOWAo/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandung"
+      ],
+      "topics": [
+        "architecture",
+        "military",
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200568095",
+      "objectNumber": "NG-2009-118-10",
+      "title": "Chinees beeld en een doosje",
+      "otherTitles": [],
+      "description": "Een Chinees beeldje en een soort doosje, op een dressoir. In het woonhuis van Elsa Silberstein en haar man, thesaurier-generaal in Bandung in 1935. Schilderijtjes aan de muur. Onderdeel van het fotoalbum met zwart-wit foto's van het interieur van het huis van de familie Silberstein in Bandung in Nederlands-Indië.",
+      "date": "1935",
+      "creator": "fotograaf: Elsa Silberstein, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200568095",
+      "imageUrl": "https://iiif.micr.io/bYIED/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandung"
+      ],
+      "topics": [
+        "architecture",
+        "military",
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200568092",
+      "objectNumber": "NG-2009-118-7",
+      "title": "Chinese beeldjes",
+      "otherTitles": [],
+      "description": "Enkele Chinese beeldjes. In het woonhuis van Elsa Silberstein en haar man, thesaurier-generaal in Bandung in 1935. Schilderijtjes aan de muur. Onderdeel van het fotoalbum met zwart-wit foto's van het interieur van het huis van de familie Silberstein in Bandung in Nederlands-Indië.",
+      "date": "1935",
+      "creator": "fotograaf: Elsa Silberstein, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200568092",
+      "imageUrl": "https://iiif.micr.io/TDbfE/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandung"
+      ],
+      "topics": [
+        "architecture",
+        "military",
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200568086",
+      "objectNumber": "NG-2009-118-4",
+      "title": "Chinese kast",
+      "otherTitles": [],
+      "description": "Een Chinese kast met bovenop een driedelig porseleinen kaststel. In het woonhuis van Elsa Silberstein en haar man, thesaurier-generaal in Bandung in 1935. Schilderijtjes aan de muur. Onderdeel van het fotoalbum met zwart-wit foto's van het interieur van het huis van de familie Silberstein in Bandung in Nederlands-Indië.",
+      "date": "1935",
+      "creator": "fotograaf: Elsa Silberstein, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200568086",
+      "imageUrl": "https://iiif.micr.io/WAgsJ/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandung"
+      ],
+      "topics": [
+        "architecture",
+        "military",
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200568090",
+      "objectNumber": "NG-2009-118-6",
+      "title": "Chinese kast met beeldjes",
+      "otherTitles": [],
+      "description": "Een Chinese hoekkast met enkele beeldjes. In het woonhuis van Elsa Silberstein en haar man, thesaurier-generaal in Bandung in 1935. Schilderijtjes aan de muur. Onderdeel van het fotoalbum met zwart-wit foto's van het interieur van het huis van de familie Silberstein in Bandung in Nederlands-Indië.",
+      "date": "1935",
+      "creator": "fotograaf: Elsa Silberstein, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200568090",
+      "imageUrl": "https://iiif.micr.io/YJBJv/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandung"
+      ],
+      "topics": [
+        "architecture",
+        "military",
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200568093",
+      "objectNumber": "NG-2009-118-8",
+      "title": "Chinese vazen",
+      "otherTitles": [],
+      "description": "Twee Chinese vazen en een kom. In het woonhuis van Elsa Silberstein en haar man, thesaurier-generaal in Bandung in 1935. Schilderijtjes aan de muur. Onderdeel van het fotoalbum met zwart-wit foto's van het interieur van het huis van de familie Silberstein in Bandung in Nederlands-Indië.",
+      "date": "1935",
+      "creator": "fotograaf: Elsa Silberstein, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200568093",
+      "imageUrl": "https://iiif.micr.io/JvVjj/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandung"
+      ],
+      "topics": [
+        "architecture",
+        "military",
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200568094",
+      "objectNumber": "NG-2009-118-9",
+      "title": "Chinese vazen",
+      "otherTitles": [],
+      "description": "Twee Chinese vazen en een kom. In het woonhuis van Elsa Silberstein en haar man, thesaurier-generaal in Bandung in 1935. Schilderijtjes aan de muur. Onderdeel van het fotoalbum met zwart-wit foto's van het interieur van het huis van de familie Silberstein in Bandung in Nederlands-Indië.",
+      "date": "1935",
+      "creator": "fotograaf: Elsa Silberstein, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200568094",
+      "imageUrl": "https://iiif.micr.io/OaXfN/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandung"
+      ],
+      "topics": [
+        "architecture",
+        "military",
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200568096",
+      "objectNumber": "NG-2009-118-11",
+      "title": "Houtsnijwerk",
+      "otherTitles": [],
+      "description": "De wand van een kamer versierd met een omlijsting en panelen met houtsnijwerk, links een lamp, rechts een cactus. In het woonhuis van Elsa Silberstein en haar man, thesaurier-generaal in Bandung in 1935. Schilderijtjes aan de muur. Onderdeel van het fotoalbum met zwart-wit foto's van het interieur van het huis van de familie Silberstein in Bandung in Nederlands-Indië.",
+      "date": "1935",
+      "creator": "fotograaf: Elsa Silberstein, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200568096",
+      "imageUrl": "https://iiif.micr.io/ItMft/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandung"
+      ],
+      "topics": [
+        "architecture",
+        "military",
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200568081",
+      "objectNumber": "NG-2009-118-1",
+      "title": "Interieur woonhuis in Bandung",
+      "otherTitles": [],
+      "description": "Kamer met bureau in het woonhuis van Elsa Silberstein en haar man, thesaurier-generaal in Bandung in 1935. Schilderijtjes aan de muur. Onderdeel van het fotoalbum met zwart-wit foto's van het interieur van het huis van de familie Silberstein in Bandung in Nederlands-Indië.",
+      "date": "1935",
+      "creator": "fotograaf: Elsa Silberstein, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200568081",
+      "imageUrl": "https://iiif.micr.io/DaRrN/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandung"
+      ],
+      "topics": [
+        "architecture",
+        "military",
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200568088",
+      "objectNumber": "NG-2009-118-5",
+      "title": "Kamerscherm en sculptuur",
+      "otherTitles": [],
+      "description": "Een Chinees kamerscherm en beeldhouwwerk. In het woonhuis van Elsa Silberstein en haar man, thesaurier-generaal in Bandung in 1935. Schilderijtjes aan de muur. Onderdeel van het fotoalbum met zwart-wit foto's van het interieur van het huis van de familie Silberstein in Bandung in Nederlands-Indië.",
+      "date": "1935",
+      "creator": "fotograaf: Elsa Silberstein, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200568088",
+      "imageUrl": "https://iiif.micr.io/stQkb/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandung"
+      ],
+      "topics": [
+        "architecture",
+        "military",
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200568085",
+      "objectNumber": "NG-2009-118-3",
+      "title": "Kamerscherm en wierookbrander",
+      "otherTitles": [],
+      "description": "In de hoek van een kamer staan een Chinees kamerscherm en bronzen wierookbrander. In het woonhuis van Elsa Silberstein en haar man, thesaurier-generaal in Bandung in 1935. Schilderijtjes aan de muur. Onderdeel van het fotoalbum met zwart-wit foto's van het interieur van het huis van de familie Silberstein in Bandung in Nederlands-Indië.",
+      "date": "1935",
+      "creator": "fotograaf: Elsa Silberstein, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200568085",
+      "imageUrl": "https://iiif.micr.io/ooBZB/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandung"
+      ],
+      "topics": [
+        "architecture",
+        "military",
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200568101",
+      "objectNumber": "NG-2009-118-14",
+      "title": "Paneel",
+      "otherTitles": [],
+      "description": "Een paneel van houtsnijwerk hangend aan de wand. In het woonhuis van Elsa Silberstein en haar man, thesaurier-generaal in Bandung in 1935. Schilderijtjes aan de muur. Onderdeel van het fotoalbum met zwart-wit foto's van het interieur van het huis van de familie Silberstein in Bandung in Nederlands-Indië.",
+      "date": "1935",
+      "creator": "fotograaf: Elsa Silberstein, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200568101",
+      "imageUrl": "https://iiif.micr.io/WkaQz/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandung"
+      ],
+      "topics": [
+        "architecture",
+        "military",
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200568100",
+      "objectNumber": "NG-2009-118-13",
+      "title": "Scherm",
+      "otherTitles": [],
+      "description": "Het buitenlicht schijnend door een scherm van houtsnijwerk. In het woonhuis van Elsa Silberstein en haar man, thesaurier-generaal in Bandung in 1935. Schilderijtjes aan de muur. Onderdeel van het fotoalbum met zwart-wit foto's van het interieur van het huis van de familie Silberstein in Bandung in Nederlands-Indië.",
+      "date": "1935",
+      "creator": "fotograaf: Elsa Silberstein, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200568100",
+      "imageUrl": "https://iiif.micr.io/fGGQr/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandung"
+      ],
+      "topics": [
+        "architecture",
+        "military",
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200568102",
+      "objectNumber": "NG-2009-118-15",
+      "title": "Zitkamer",
+      "otherTitles": [],
+      "description": "Hoek van de zitkamer met een bank, een Chinees beeldhouwwerk op een tafeltje en borden aan de wand. In het woonhuis van Elsa Silberstein en haar man, thesaurier-generaal in Bandung in 1935. Schilderijtjes aan de muur. Onderdeel van het fotoalbum met zwart-wit foto's van het interieur van het huis van de familie Silberstein in Bandung in Nederlands-Indië.",
+      "date": "1935",
+      "creator": "fotograaf: Elsa Silberstein, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200568102",
+      "imageUrl": "https://iiif.micr.io/dywXQ/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandung"
+      ],
+      "topics": [
+        "architecture",
+        "military",
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200748301",
+      "objectNumber": "NG-2019-40",
+      "title": "President Sukarno on Tour",
+      "otherTitles": [
+        "President Sukarno op tournee",
+        "Sukarno, staande op een auto"
+      ],
+      "description": "Sukarno, president van de Republiek Indonesië, staande op een auto temidden van een menigte.",
+      "date": "1948 - 1954",
+      "creator": "fotograaf: Piet Ley, Indonesië",
+      "objectUrl": "https://id.rijksmuseum.nl/200748301",
+      "imageUrl": null,
+      "imageRightsUrl": null,
+      "imageRightsEvidence": [
+        "https://rightsstatements.org/vocab/InC/1.0/"
+      ],
+      "imageUnavailableReason": "Geen expliciete Public Domain Mark/CC0-verklaring gevonden voor het digitale beeld",
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [
+        "transport"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200748421",
+      "objectNumber": "NG-2019-153",
+      "title": "President Sukarno on Tour",
+      "otherTitles": [
+        "President Sukarno op tournee",
+        "Toespraak"
+      ],
+      "description": "President Sukarno spreekt vanaf een stellage een enorme mensenmassa toe,",
+      "date": "1948 - 1954",
+      "creator": "fotograaf: Piet Ley, Indonesië",
+      "objectUrl": "https://id.rijksmuseum.nl/200748421",
+      "imageUrl": null,
+      "imageRightsUrl": null,
+      "imageRightsEvidence": [
+        "https://rightsstatements.org/vocab/InC/1.0/"
+      ],
+      "imageUnavailableReason": "Geen expliciete Public Domain Mark/CC0-verklaring gevonden voor het digitale beeld",
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200748313",
+      "objectNumber": "NG-2019-52",
+      "title": "Nehru en Sukarno in Bandung",
+      "otherTitles": [],
+      "description": "President Sukarno en de Indiaase premier Nehru bij bezoek aan Bandung, tijdens het staatsbezoek van Nehru aan Indonesië in juni 1950.",
+      "date": "1950-06",
+      "creator": "fotograaf: Piet Ley, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200748313",
+      "imageUrl": null,
+      "imageRightsUrl": null,
+      "imageRightsEvidence": [
+        "https://rightsstatements.org/vocab/InC/1.0/"
+      ],
+      "imageUnavailableReason": "Geen expliciete Public Domain Mark/CC0-verklaring gevonden voor het digitale beeld",
+      "searchTerms": [
+        "Bandung"
+      ],
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200748314",
+      "objectNumber": "NG-2019-53",
+      "title": "Nehru en Sukarno in open auto",
+      "otherTitles": [],
+      "description": "President Sukarno en de Indiaase premier Nehru in open auto bij bezoek aan Bandung, tijdens het staatsbezoek van Nehru aan Indonesië in juni 1950. Met Piet Ley met filmcamera op de motorkap.",
+      "date": "1950-06",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200748314",
+      "imageUrl": null,
+      "imageRightsUrl": null,
+      "imageRightsEvidence": [
+        "https://rightsstatements.org/vocab/InC/1.0/"
+      ],
+      "imageUnavailableReason": "Geen expliciete Public Domain Mark/CC0-verklaring gevonden voor het digitale beeld",
+      "searchTerms": [
+        "Bandung"
+      ],
+      "topics": [
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200748312",
+      "objectNumber": "NG-2019-51",
+      "title": "President Sukarno on Tour",
+      "otherTitles": [
+        "President Sukarno op tournee",
+        "Sukarno en Nehru in rijtour"
+      ],
+      "description": "President Sukarno en de Indiaase premier Nehru in open auto bij bezoek aan Bandung, tijdens het staatsbezoek van Nehru aan Indonesië in juni 1950. Met Piet Ley met filmcamera op de motorkap.",
+      "date": "1950-06",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200748312",
+      "imageUrl": null,
+      "imageRightsUrl": null,
+      "imageRightsEvidence": [
+        "https://rightsstatements.org/vocab/InC/1.0/"
+      ],
+      "imageUnavailableReason": "Geen expliciete Public Domain Mark/CC0-verklaring gevonden voor het digitale beeld",
+      "searchTerms": [
+        "Dutch East Indies"
+      ],
+      "topics": [
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335494",
+      "objectNumber": "RP-F-F01220-L",
+      "title": "Brede laan op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335494",
+      "imageUrl": "https://iiif.micr.io/OWapR/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335496",
+      "objectNumber": "RP-F-F01220-N",
+      "title": "Dorp bij rivierbedding aan de voet van een berg op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335496",
+      "imageUrl": "https://iiif.micr.io/CjvKK/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [
+        "landscape",
+        "society"
+      ],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335492",
+      "objectNumber": "RP-F-F01220-J",
+      "title": "Dorp met waterval op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335492",
+      "imageUrl": "https://iiif.micr.io/Uwypj/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335500",
+      "objectNumber": "RP-F-F01220-R",
+      "title": "Exterieur van het Paleis van Daendels op het Waterlooplein te Batavia",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Batavia",
+      "objectUrl": "https://id.rijksmuseum.nl/200335500",
+      "imageUrl": "https://iiif.micr.io/VsnRQ/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335486",
+      "objectNumber": "RP-F-F01220-C",
+      "title": "Gang Scott in Weltevreden op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Weltevreden",
+      "objectUrl": "https://id.rijksmuseum.nl/200335486",
+      "imageUrl": "https://iiif.micr.io/ENFYG/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335505",
+      "objectNumber": "RP-F-F01220-X",
+      "title": "Gezelschap met bedienden voor een huis op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335505",
+      "imageUrl": "https://iiif.micr.io/FmnHy/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335506",
+      "objectNumber": "RP-F-F01220-Y",
+      "title": "Gezelschap op de Kenarielaan in Batavia",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Batavia",
+      "objectUrl": "https://id.rijksmuseum.nl/200335506",
+      "imageUrl": "https://iiif.micr.io/aeEWx/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335491",
+      "objectNumber": "RP-F-F01220-I",
+      "title": "Gezicht op de Borobudur op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Borobudur",
+      "objectUrl": "https://id.rijksmuseum.nl/200335491",
+      "imageUrl": "https://iiif.micr.io/kIiWV/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335484",
+      "objectNumber": "RP-F-F01220-A",
+      "title": "Gezicht op een rivierkade met huizen en boten op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335484",
+      "imageUrl": "https://iiif.micr.io/PjFHB/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335507",
+      "objectNumber": "RP-F-F01220-Z",
+      "title": "Huis met veranda en muziekkiosk onder een grote boom op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335507",
+      "imageUrl": "https://iiif.micr.io/fIvGa/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335487",
+      "objectNumber": "RP-F-F01220-D",
+      "title": "Kanaal met weg en huizen op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335487",
+      "imageUrl": "https://iiif.micr.io/NMwOM/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335485",
+      "objectNumber": "RP-F-F01220-B",
+      "title": "Laan met winkels op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335485",
+      "imageUrl": "https://iiif.micr.io/Fnwsv/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335502",
+      "objectNumber": "RP-F-F01220-U",
+      "title": "Landschap op Java met velden",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335502",
+      "imageUrl": "https://iiif.micr.io/rHmai/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [
+        "landscape"
+      ],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335488",
+      "objectNumber": "RP-F-F01220-E",
+      "title": "Man zittend op stenen in een rivierbedding op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335488",
+      "imageUrl": "https://iiif.micr.io/qazvg/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335497",
+      "objectNumber": "RP-F-F01220-O",
+      "title": "Rivier met kloof op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335497",
+      "imageUrl": "https://iiif.micr.io/sAEff/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [
+        "landscape"
+      ],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335493",
+      "objectNumber": "RP-F-F01220-K",
+      "title": "Rivier met waterval en Javanen op stenen",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335493",
+      "imageUrl": "https://iiif.micr.io/kdVkd/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [
+        "landscape"
+      ],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335504",
+      "objectNumber": "RP-F-F01220-W",
+      "title": "Straatgezicht op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335504",
+      "imageUrl": "https://iiif.micr.io/GCQyE/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335489",
+      "objectNumber": "RP-F-F01220-F",
+      "title": "Vijver aan de voet van een boom op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335489",
+      "imageUrl": "https://iiif.micr.io/fuMgO/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335495",
+      "objectNumber": "RP-F-F01220-M",
+      "title": "Waterval bij een woning op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335495",
+      "imageUrl": "https://iiif.micr.io/wGrET/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335498",
+      "objectNumber": "RP-F-F01220-P",
+      "title": "Waterval op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335498",
+      "imageUrl": "https://iiif.micr.io/bmPCl/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335544",
+      "objectNumber": "RP-F-F01220-G",
+      "title": "Weg door bergachtig landschap op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335544",
+      "imageUrl": "https://iiif.micr.io/zsPNi/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [
+        "landscape"
+      ],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335499",
+      "objectNumber": "RP-F-F01220-Q",
+      "title": "Weg met tramrails op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335499",
+      "imageUrl": "https://iiif.micr.io/AfjHN/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335501",
+      "objectNumber": "RP-F-F01220-S",
+      "title": "Woning aan een rivier op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335501",
+      "imageUrl": "https://iiif.micr.io/pfJvS/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [
+        "architecture",
+        "landscape"
+      ],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335490",
+      "objectNumber": "RP-F-F01220-H",
+      "title": "Woud van palmbomen op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1857 - c. 1870",
+      "creator": "fotograaf: toegeschreven aan Woodbury & Page, Java",
+      "objectUrl": "https://id.rijksmuseum.nl/200335490",
+      "imageUrl": "https://iiif.micr.io/SvcrJ/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "2004665",
+      "objectNumber": "RP-F-2016-134-1",
+      "title": "Portret van Karel Frederik Holle (1829-1896)",
+      "otherTitles": [],
+      "description": "Karel Frederik Holle (Amsterdam 1829-Buitenzorg 1896), theeplanter te Waspada",
+      "date": "c. 1858",
+      "creator": "fotograaf: anoniem, Indonesië",
+      "objectUrl": "https://id.rijksmuseum.nl/2004665",
+      "imageUrl": "https://iiif.micr.io/VRduQ/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Buitenzorg"
+      ],
+      "topics": [
+        "landscape"
+      ],
+      "places": [
+        "bogor",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334845",
+      "objectNumber": "RP-F-F01195-AF",
+      "title": "Cowboy te paard",
+      "otherTitles": [
+        "A Cow Boy"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: toegeschreven aan William Henry Jackson, Verenigde Staten van Amerika",
+      "objectUrl": "https://id.rijksmuseum.nl/200334845",
+      "imageUrl": "https://iiif.micr.io/RUKdJ/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334831",
+      "objectNumber": "RP-F-F01195-R",
+      "title": "Doorkijk op een trein bij de Royal Gorge bij Cañon City",
+      "otherTitles": [
+        "Across the Royal Gorge"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: William Henry Jackson, Cañon City",
+      "objectUrl": "https://id.rijksmuseum.nl/200334831",
+      "imageUrl": "https://iiif.micr.io/hiMXH/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "transport"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334848",
+      "objectNumber": "RP-F-F01195-AI",
+      "title": "Exterieur van (vermoedelijk) een gebouw van spoorwegaandeelhouders in San Francisco",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, San Francisco",
+      "objectUrl": "https://id.rijksmuseum.nl/200334848",
+      "imageUrl": "https://iiif.micr.io/RQDJm/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334836",
+      "objectNumber": "RP-F-F01195-W",
+      "title": "Exterieur van een Methodistenkerk, vermoedelijk in Denver",
+      "otherTitles": [
+        "Grace M.E. Church"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: toegeschreven aan William Henry Jackson, Denver",
+      "objectUrl": "https://id.rijksmuseum.nl/200334836",
+      "imageUrl": "https://iiif.micr.io/olwPG/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334840",
+      "objectNumber": "RP-F-F01195-AA",
+      "title": "Exterieur van een spoorwegstation in Denver",
+      "otherTitles": [
+        "Denver Union Depot."
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: toegeschreven aan William Henry Jackson, Denver",
+      "objectUrl": "https://id.rijksmuseum.nl/200334840",
+      "imageUrl": "https://iiif.micr.io/cwLyk/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334818",
+      "objectNumber": "RP-F-F01195-D",
+      "title": "Exterieur van het Amerikaans ministerie van Financiën in Washington D.C.",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, Washington D.C.",
+      "objectUrl": "https://id.rijksmuseum.nl/200334818",
+      "imageUrl": "https://iiif.micr.io/GKZNH/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334835",
+      "objectNumber": "RP-F-F01195-V",
+      "title": "Gebouwen en schoorsteenpijpen van een smelterij in Noord-Amerika",
+      "otherTitles": [
+        "The American Smelter"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: William Henry Jackson, Noord-Amerika",
+      "objectUrl": "https://id.rijksmuseum.nl/200334835",
+      "imageUrl": "https://iiif.micr.io/bKNOT/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334850",
+      "objectNumber": "RP-F-F01195-AL",
+      "title": "Gezicht op de baai van San Francisco met in het midden het eiland Alcatraz",
+      "otherTitles": [
+        "Alcatraz Island"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, San Francisco",
+      "objectUrl": "https://id.rijksmuseum.nl/200334850",
+      "imageUrl": "https://iiif.micr.io/kTSay/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334869",
+      "objectNumber": "RP-F-F01195-BG",
+      "title": "Gezicht op Fort de Kock op Sumatra",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, Sumatra",
+      "objectUrl": "https://id.rijksmuseum.nl/200334869",
+      "imageUrl": "https://iiif.micr.io/fvqmf/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334851",
+      "objectNumber": "RP-F-F01195-AM",
+      "title": "Gezicht op het eiland Alcatraz in de baai van San Francisco",
+      "otherTitles": [
+        "Alcatraz Island"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, Baai van San Francisco",
+      "objectUrl": "https://id.rijksmuseum.nl/200334851",
+      "imageUrl": "https://iiif.micr.io/UJTmI/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334852",
+      "objectNumber": "RP-F-F01195-AO",
+      "title": "Gezicht op het eiland Honolulu en de kuststrook vanaf de Punchbowlkrater",
+      "otherTitles": [
+        "Honolulu from Punchbowl"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: J.A. Gonsalves, Honolulu",
+      "objectUrl": "https://id.rijksmuseum.nl/200334852",
+      "imageUrl": "https://iiif.micr.io/fwKKW/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334857",
+      "objectNumber": "RP-F-F01195-AT",
+      "title": "Gezicht op het paleis van de Gouverneur-Generaal aan het Koningsplein te Buitenzorg",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, Buitenzorg (West-Java)",
+      "objectUrl": "https://id.rijksmuseum.nl/200334857",
+      "imageUrl": "https://iiif.micr.io/gBKKi/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bogor",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334838",
+      "objectNumber": "RP-F-F01195-Y",
+      "title": "Gezicht op Larimer Street in Denver",
+      "otherTitles": [
+        "Larimer St. from 18th. West"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: toegeschreven aan William Henry Jackson, Denver",
+      "objectUrl": "https://id.rijksmuseum.nl/200334838",
+      "imageUrl": "https://iiif.micr.io/iEPZG/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334827",
+      "objectNumber": "RP-F-F01195-N",
+      "title": "Gezicht op Mount of the Holy Cross in de Rocky Mountains",
+      "otherTitles": [
+        "Mt. of the Holy Cross"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: William Henry Jackson, Rocky Mountains",
+      "objectUrl": "https://id.rijksmuseum.nl/200334827",
+      "imageUrl": "https://iiif.micr.io/GeiwC/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334846",
+      "objectNumber": "RP-F-F01195-AG",
+      "title": "Gezicht op straten in San Francisco met in het midden het gebouw van de San Francisco Chronicle",
+      "otherTitles": [
+        "The Chronicle"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem",
+      "objectUrl": "https://id.rijksmuseum.nl/200334846",
+      "imageUrl": "https://iiif.micr.io/JzDgY/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334864",
+      "objectNumber": "RP-F-F01195-BB",
+      "title": "Goederentrein op een spoorbrug over een rivierbedding, mogelijk bij Kandang Tempat",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, Nederlands-Indië",
+      "objectUrl": "https://id.rijksmuseum.nl/200334864",
+      "imageUrl": "https://iiif.micr.io/ksTEf/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334834",
+      "objectNumber": "RP-F-F01195-U",
+      "title": "Graf van \"H.H.\" op Cheyenne Mountain in Colorado",
+      "otherTitles": [
+        "Grave of \"H.H\" on Cheyenne Mountain"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: toegeschreven aan William Henry Jackson, Cheyenne Mountain",
+      "objectUrl": "https://id.rijksmuseum.nl/200334834",
+      "imageUrl": "https://iiif.micr.io/TuGKg/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "landscape"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334853",
+      "objectNumber": "RP-F-F01195-AP",
+      "title": "Hawaiiaanse vrouwen te paard",
+      "otherTitles": [
+        "Hawaiian Style of Riding"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: J.A. Gonsalves, Hawaii",
+      "objectUrl": "https://id.rijksmuseum.nl/200334853",
+      "imageUrl": "https://iiif.micr.io/pkHdE/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334844",
+      "objectNumber": "RP-F-F01195-AE",
+      "title": "Kanon bij Hotel del Monte in San Francisco",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: Johnson (fotograaf), San Francisco",
+      "objectUrl": "https://id.rijksmuseum.nl/200334844",
+      "imageUrl": "https://iiif.micr.io/suxhU/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334829",
+      "objectNumber": "RP-F-F01195-O",
+      "title": "Kloof met een spoorlijn langs de Grand River in Michigan",
+      "otherTitles": [
+        "Portals of Grand River"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: toegeschreven aan William Henry Jackson, Michigan",
+      "objectUrl": "https://id.rijksmuseum.nl/200334829",
+      "imageUrl": "https://iiif.micr.io/tFsYp/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "landscape"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334849",
+      "objectNumber": "RP-F-F01195-AJ",
+      "title": "Lake Alvord in het Golden Gate Park in San Francisco",
+      "otherTitles": [
+        "Lake Alvord, Golden Gate Park"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, Golden Gate Park",
+      "objectUrl": "https://id.rijksmuseum.nl/200334849",
+      "imageUrl": "https://iiif.micr.io/iZBOO/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334870",
+      "objectNumber": "RP-F-F01195-BH",
+      "title": "Mannen in een akker in Nederlands-Indië met op de achtergrond een waterval",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, Nederlands-Indië",
+      "objectUrl": "https://id.rijksmuseum.nl/200334870",
+      "imageUrl": "https://iiif.micr.io/tZNXG/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334867",
+      "objectNumber": "RP-F-F01195-BE",
+      "title": "Mensen, locomotief en wagons op een spoorwegstation Padang Pandjang",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, Padang Pandjang",
+      "objectUrl": "https://id.rijksmuseum.nl/200334867",
+      "imageUrl": "https://iiif.micr.io/tunFM/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334828",
+      "objectNumber": "RP-F-F01195-Q",
+      "title": "Mijnwerkersstad Leadville gezien vanaf Carbonate Hill in Colorado",
+      "otherTitles": [
+        "Leadville from Carbonate Hill"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: toegeschreven aan William Henry Jackson, Leadville",
+      "objectUrl": "https://id.rijksmuseum.nl/200334828",
+      "imageUrl": "https://iiif.micr.io/kiJRL/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334855",
+      "objectNumber": "RP-F-F01195-AR",
+      "title": "Palmenlaan in 's Lands Plantentuin te Buitenzorg (vermoedelijk)",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, 's Lands Plantentuin",
+      "objectUrl": "https://id.rijksmuseum.nl/200334855",
+      "imageUrl": "https://iiif.micr.io/ghwst/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [
+        "bogor",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334863",
+      "objectNumber": "RP-F-F01195-AZ",
+      "title": "Panorama van de Emmahaven in Padang",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, Padang (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200334863",
+      "imageUrl": "https://iiif.micr.io/QciTx/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [
+        "sumatra"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334841",
+      "objectNumber": "RP-F-F01195-AB",
+      "title": "Parlementsgebouw in Denver (vermoedelijk)",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: William Henry Jackson, Denver",
+      "objectUrl": "https://id.rijksmuseum.nl/200334841",
+      "imageUrl": "https://iiif.micr.io/uQDxp/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334823",
+      "objectNumber": "RP-F-F01195-I",
+      "title": "Portret van een Ute-man",
+      "otherTitles": [
+        "A Ute Brave",
+        "Portret van een Indiaanse vrouw"
+      ],
+      "description": "Portret van een Ute-man. Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, Verenigde Staten van Amerika",
+      "objectUrl": "https://id.rijksmuseum.nl/200334823",
+      "imageUrl": "https://iiif.micr.io/illYR/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334822",
+      "objectNumber": "RP-F-F01195-H",
+      "title": "Portret van indianenchief 'Piah'",
+      "otherTitles": [
+        "Portret van Ute-leider Chief Piah",
+        "Ute Chief \"Piah\""
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, Verenigde Staten van Amerika",
+      "objectUrl": "https://id.rijksmuseum.nl/200334822",
+      "imageUrl": "https://iiif.micr.io/vbrIV/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334839",
+      "objectNumber": "RP-F-F01195-Z",
+      "title": "Postkantoor op de hoek van Arahoe Street in Denver",
+      "otherTitles": [
+        "Post Office and Arahoe St."
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: toegeschreven aan William Henry Jackson, Denver",
+      "objectUrl": "https://id.rijksmuseum.nl/200334839",
+      "imageUrl": "https://iiif.micr.io/IsFoG/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334847",
+      "objectNumber": "RP-F-F01195-AH",
+      "title": "Powell Street in San Francisco met voetgangers, paardenkoets en tram",
+      "otherTitles": [
+        "Powell Street, North from Union Square"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, San Francisco",
+      "objectUrl": "https://id.rijksmuseum.nl/200334847",
+      "imageUrl": "https://iiif.micr.io/FBdjl/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "architecture",
+        "transport"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334816",
+      "objectNumber": "RP-F-F01195-B",
+      "title": "Senaatskamer van het Capitool in Washington D.C.",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, Washington D.C.",
+      "objectUrl": "https://id.rijksmuseum.nl/200334816",
+      "imageUrl": "https://iiif.micr.io/KQUEg/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334862",
+      "objectNumber": "RP-F-F01195-AY",
+      "title": "Soldaten bij het monument voor gouverneur Parr in Benkoelen",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, Bengkulu (stad)",
+      "objectUrl": "https://id.rijksmuseum.nl/200334862",
+      "imageUrl": "https://iiif.micr.io/vlkFf/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "military"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334832",
+      "objectNumber": "RP-F-F01195-M",
+      "title": "Spoorbrug door de Royal Gorge bij Cañon City",
+      "otherTitles": [
+        "Suspended Bridge in the Royal (...)"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: toegeschreven aan William Henry Jackson, Cañon City",
+      "objectUrl": "https://id.rijksmuseum.nl/200334832",
+      "imageUrl": "https://iiif.micr.io/TqDbU/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334868",
+      "objectNumber": "RP-F-F01195-BF",
+      "title": "Spoorwegbrug over Ombilinrivier bij het Singkarakmeer",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, Sumatra",
+      "objectUrl": "https://id.rijksmuseum.nl/200334868",
+      "imageUrl": "https://iiif.micr.io/gdQuW/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334865",
+      "objectNumber": "RP-F-F01195-BC",
+      "title": "Talud van een spoorlijn bij een rivierbedding in Nederlands-Indië",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, Nederlands-Indië",
+      "objectUrl": "https://id.rijksmuseum.nl/200334865",
+      "imageUrl": "https://iiif.micr.io/NGVIF/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334830",
+      "objectNumber": "RP-F-F01195-P",
+      "title": "Trein van Rio Grande Southern in besneeuwd landschap in de Rocky Mountains",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: toegeschreven aan William Henry Jackson, Rocky Mountains",
+      "objectUrl": "https://id.rijksmuseum.nl/200334830",
+      "imageUrl": "https://iiif.micr.io/ugdZM/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "landscape",
+        "transport"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334866",
+      "objectNumber": "RP-F-F01195-BD",
+      "title": "Verwoeste spoorlijn bij een rivierbedding in Nederlands-Indië",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, Nederlands-Indië",
+      "objectUrl": "https://id.rijksmuseum.nl/200334866",
+      "imageUrl": "https://iiif.micr.io/vqSzi/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334817",
+      "objectNumber": "RP-F-F01195-C",
+      "title": "Voorgevel en voortuin van het Witte Huis in Washington D.C.",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, Washington D.C.",
+      "objectUrl": "https://id.rijksmuseum.nl/200334817",
+      "imageUrl": "https://iiif.micr.io/oJmKW/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334856",
+      "objectNumber": "RP-F-F01195-AS",
+      "title": "Waterlooplein in Batavia met in het midden het monument voor generaal-majoor Michiels",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: anoniem, Batavia",
+      "objectUrl": "https://id.rijksmuseum.nl/200334856",
+      "imageUrl": "https://iiif.micr.io/dChtf/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "batavia",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334833",
+      "objectNumber": "RP-F-F01195-T",
+      "title": "Zwembad bij Glenwood Baths in Colorado",
+      "otherTitles": [
+        "The Pool - Glenwood Baths"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1860 - c. 1900",
+      "creator": "fotograaf: toegeschreven aan William Henry Jackson, Glenwood Springs",
+      "objectUrl": "https://id.rijksmuseum.nl/200334833",
+      "imageUrl": "https://iiif.micr.io/NUaHc/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334820",
+      "objectNumber": "RP-F-F01195-F",
+      "title": "Dokwerker op de kade van New Orleans",
+      "otherTitles": [
+        "Roustabout"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1880 - c. 1888",
+      "creator": "fotograaf: George François Mugnier, New Orleans",
+      "objectUrl": "https://id.rijksmuseum.nl/200334820",
+      "imageUrl": "https://iiif.micr.io/TGPXr/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334821",
+      "objectNumber": "RP-F-F01195-G",
+      "title": "Mannen onder een eik in Audubon Park in New Orleans",
+      "otherTitles": [
+        "Live Oak Audubon Park"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1880 - c. 1888",
+      "creator": "fotograaf: George François Mugnier, New Orleans",
+      "objectUrl": "https://id.rijksmuseum.nl/200334821",
+      "imageUrl": "https://iiif.micr.io/ZtcAw/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334819",
+      "objectNumber": "RP-F-F01195-E",
+      "title": "Mensen aan de oever van een rivier in New Orleans",
+      "otherTitles": [
+        "River View"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1880 - c. 1888",
+      "creator": "fotograaf: George François Mugnier, New Orleans",
+      "objectUrl": "https://id.rijksmuseum.nl/200334819",
+      "imageUrl": "https://iiif.micr.io/DaDwy/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [
+        "landscape"
+      ],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334860",
+      "objectNumber": "RP-F-F01195-AW",
+      "title": "Beelden bij de Borobudur op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1880 - c. 1900",
+      "creator": "fotograaf: anoniem, Borobudur",
+      "objectUrl": "https://id.rijksmuseum.nl/200334860",
+      "imageUrl": "https://iiif.micr.io/shaaO/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334859",
+      "objectNumber": "RP-F-F01195-AV",
+      "title": "Borobudur op Java",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1880 - c. 1900",
+      "creator": "fotograaf: anoniem, Borobudur",
+      "objectUrl": "https://id.rijksmuseum.nl/200334859",
+      "imageUrl": "https://iiif.micr.io/oBhXg/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334858",
+      "objectNumber": "RP-F-F01195-AU",
+      "title": "Laan bij Fort Vredeburg in Jogyakarta",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1880 - c. 1900",
+      "creator": "fotograaf: anoniem, Jogjakarta",
+      "objectUrl": "https://id.rijksmuseum.nl/200334858",
+      "imageUrl": "https://iiif.micr.io/WRjrY/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200334824",
+      "objectNumber": "RP-F-F01195-J",
+      "title": "Burning Spring, Lord Dufferin Isles, Canada, 1885",
+      "otherTitles": [
+        "Twee mannen bij een brandende bron, Lord Dufferin Isles"
+      ],
+      "description": "Onderdeel van Fotoalbum van een reis door de Verenigde Staten, Canada, Honolulu, Nederlands-Indië, Aden, Zanzibar en Zuidelijk Afrika.",
+      "date": "c. 1885",
+      "creator": "fotograaf: William Notman, Canada (mogelijk)",
+      "objectUrl": "https://id.rijksmuseum.nl/200334824",
+      "imageUrl": "https://iiif.micr.io/FozkN/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Nederlands-Indië"
+      ],
+      "topics": [],
+      "places": [],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200339427",
+      "objectNumber": "RP-F-F01094-A",
+      "title": "Exterieur van het Komediegebouw in Batavia",
+      "otherTitles": [],
+      "description": "Onderdeel van Herinneringsalbum met foto's van Soerabaja.",
+      "date": "c. 1890 - before 1906-12-30",
+      "creator": "fotograaf: anoniem, Batavia",
+      "objectUrl": "https://id.rijksmuseum.nl/200339427",
+      "imageUrl": "https://iiif.micr.io/pUrIh/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Soerabaja"
+      ],
+      "topics": [],
+      "places": [
+        "batavia",
+        "java",
+        "surabaya"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200322602",
+      "objectNumber": "RP-F-F01114",
+      "title": "Fotoalbum met opnames van de bouw van een brug over de Kali Brantas ten zuiden van Malang op Java",
+      "otherTitles": [
+        "Sempal Wadak"
+      ],
+      "description": "Fotoalbum in bruingroene linnen band met op het voorplat in gouddruk 'Sempal Wadak'. De schutbladen hebben een geometrisch motief in wit en groen. Het album bevat 30 kartonnen bladen met 23 foto's. Het zijn opnames van de bouw van een brug over de Kali Brantas, een rivier ten zuiden van Malang op Oost-Java. Alle bouwfases zijn in beeld gebracht: van het bouwrijp maken van het emplacement, de aanleg van landhoofden, de plaatsing van de brugpijlers tot en met de voltooiing van de overspanning. Tegenover elke afdruk is een vel papier geplakt met daarop een met pen geschreven - vaak uitgebreid en technisch - bijschrift. De fotograaf en de samensteller zijn onbekend; in de bijschriften worden genoemd 'de Heer van Leeuwen' en 'J.'",
+      "date": "c. 1890 - c. 1920",
+      "creator": "fotograaf: anoniem, Nederlands-Indië",
+      "objectUrl": "https://id.rijksmuseum.nl/200322602",
+      "imageUrl": "https://iiif.micr.io/GKuTD/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [
+        "architecture",
+        "landscape",
+        "transport"
+      ],
+      "places": [
+        "java",
+        "malang"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200478634",
+      "objectNumber": "RP-F-00-5346-66",
+      "title": "Aloen-aloen in Bandung",
+      "otherTitles": [
+        "59. Aloen-aloen te Bandoeng"
+      ],
+      "description": "Aloen-aloen (centrale plein) in Bandoeng, Nederlands-Indië",
+      "date": "c. 1895 - c. 1915",
+      "creator": "fotograaf: anoniem, Bandung",
+      "objectUrl": "https://id.rijksmuseum.nl/200478634",
+      "imageUrl": "https://iiif.micr.io/uDUBJ/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200478623",
+      "objectNumber": "RP-F-00-5346-56",
+      "title": "Batoe Toelis aan een rivier bij Buitenzorg",
+      "otherTitles": [
+        "53. Buitenzorg met Batoe Toelis"
+      ],
+      "description": "Batoe Toelis aan een rivier bij Buitenzorg (Bogor), Nederlands-Indië",
+      "date": "c. 1895 - c. 1915",
+      "creator": "fotograaf: anoniem, Buitenzorg (West-Java)",
+      "objectUrl": "https://id.rijksmuseum.nl/200478623",
+      "imageUrl": "https://iiif.micr.io/xwvtJ/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Buitenzorg"
+      ],
+      "topics": [
+        "landscape"
+      ],
+      "places": [
+        "bogor",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200478621",
+      "objectNumber": "RP-F-00-5346-54",
+      "title": "De Victoria Regia vijver in de botanische tuin in Buitenzorg",
+      "otherTitles": [
+        "51. Buitenzorg: Plantentuin"
+      ],
+      "description": "De Victoria Regia vijver in de botanische tuin te Buitenzorg (Bogor), Nederlands-Indië.",
+      "date": "c. 1895 - c. 1915",
+      "creator": "fotograaf: anoniem, Buitenzorg (West-Java)",
+      "objectUrl": "https://id.rijksmuseum.nl/200478621",
+      "imageUrl": "https://iiif.micr.io/oeVzv/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Buitenzorg"
+      ],
+      "topics": [],
+      "places": [
+        "bogor",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200478622",
+      "objectNumber": "RP-F-00-5346-55",
+      "title": "De Victoria Regia vijver met het paleis van de Gouverneur in de botanische tuin in Buitenzorg",
+      "otherTitles": [
+        "52. Buitenzorg: Plantentuin met paleis v/d Gouverneur"
+      ],
+      "description": "De Victoria Regia vijver imet het paleis van de Gouverneur in de botanische tuin te Buitenzorg (Bogor), Nederlands-Indië",
+      "date": "c. 1895 - c. 1915",
+      "creator": "fotograaf: anoniem, Buitenzorg (West-Java)",
+      "objectUrl": "https://id.rijksmuseum.nl/200478622",
+      "imageUrl": "https://iiif.micr.io/zDAPv/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Buitenzorg"
+      ],
+      "topics": [],
+      "places": [
+        "bogor",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200478618",
+      "objectNumber": "RP-F-00-5346-51",
+      "title": "De Waringinlaan in de botanische tuin in Buitenzorg",
+      "otherTitles": [
+        "48. Buitenzorg. Plantentuin"
+      ],
+      "description": "De Waringinlaan in de botanische tuin te Buitenzorg (Bogor), Nederlands-Indië",
+      "date": "c. 1895 - c. 1915",
+      "creator": "fotograaf: anoniem, Buitenzorg (West-Java)",
+      "objectUrl": "https://id.rijksmuseum.nl/200478618",
+      "imageUrl": "https://iiif.micr.io/BPtwQ/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Buitenzorg"
+      ],
+      "topics": [],
+      "places": [
+        "bogor",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200478619",
+      "objectNumber": "RP-F-00-5346-52",
+      "title": "Kenarilaan in de botanische tuin in Buitenzorg",
+      "otherTitles": [
+        "49. Buitenzorg. Plantentuin"
+      ],
+      "description": "Kenarilaan in de botanische tuin te Buitenzorg (Bogor), Nederlands-Indië",
+      "date": "c. 1895 - c. 1915",
+      "creator": "fotograaf: anoniem, Nederlands-Indië",
+      "objectUrl": "https://id.rijksmuseum.nl/200478619",
+      "imageUrl": "https://iiif.micr.io/JGUbc/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Buitenzorg"
+      ],
+      "topics": [],
+      "places": [
+        "bogor",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200478620",
+      "objectNumber": "RP-F-00-5346-53",
+      "title": "Laan met Koningspalmen in de botanische tuin in Buitenzorg",
+      "otherTitles": [
+        "50. Buitenzorg. Laan van Koningspalmen i/d Plantentuin"
+      ],
+      "description": "Laan met Koningspalmen in de botanische tuin te Buitenzorg (Bogor), Nederlands-Indië",
+      "date": "c. 1895 - c. 1915",
+      "creator": "fotograaf: anoniem, Buitenzorg (West-Java)",
+      "objectUrl": "https://id.rijksmuseum.nl/200478620",
+      "imageUrl": "https://iiif.micr.io/zIFgn/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Buitenzorg"
+      ],
+      "topics": [],
+      "places": [
+        "bogor",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200478617",
+      "objectNumber": "RP-F-00-5346-50",
+      "title": "Landschap met de rivier Tjidane en de berg Salak in Buitenzorg",
+      "otherTitles": [
+        "47. Buitenzorg: Salak met riviertje Tjidane"
+      ],
+      "description": "Landschap met de rivier Tjidane en de berg Salak, Buitenzorg (Bogor), Nederlands-Indië",
+      "date": "c. 1895 - c. 1915",
+      "creator": "fotograaf: anoniem, Buitenzorg (West-Java)",
+      "objectUrl": "https://id.rijksmuseum.nl/200478617",
+      "imageUrl": "https://iiif.micr.io/oUDzL/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Buitenzorg"
+      ],
+      "topics": [
+        "landscape"
+      ],
+      "places": [
+        "bogor",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200478616",
+      "objectNumber": "RP-F-00-5346-49",
+      "title": "Landschap met de rivier Tjidane en de berg Salak in Buitenzorg",
+      "otherTitles": [
+        "46. Buitenzorg: Salak met riviertje Tjidane"
+      ],
+      "description": "Landschap met de rivier Tjidane en de berg Salak, Buitenzorg (Bogor), Nederlands-Indië.",
+      "date": "c. 1895 - c. 1915",
+      "creator": "fotograaf: anoniem, Buitenzorg (West-Java)",
+      "objectUrl": "https://id.rijksmuseum.nl/200478616",
+      "imageUrl": "https://iiif.micr.io/Hmhar/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Buitenzorg"
+      ],
+      "topics": [
+        "landscape"
+      ],
+      "places": [
+        "bogor",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200478636",
+      "objectNumber": "RP-F-00-5346-68",
+      "title": "Mannen nabij een huis in Bandung",
+      "otherTitles": [
+        "61. In 't Bandoengsche"
+      ],
+      "description": "Mannen nabij een huis, Bandoeng, Nederlands-Indië",
+      "date": "c. 1895 - c. 1915",
+      "creator": "fotograaf: anoniem, Nederlands-Indië",
+      "objectUrl": "https://id.rijksmuseum.nl/200478636",
+      "imageUrl": "https://iiif.micr.io/TDZSA/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200478635",
+      "objectNumber": "RP-F-00-5346-67",
+      "title": "Tjoeroekwaterval te Bandung",
+      "otherTitles": [
+        "60. Tjoeroekwaterval te Bandong"
+      ],
+      "description": "Tjoeroekwaterval te Bandoeng, Nederlands-Indië",
+      "date": "c. 1895 - c. 1915",
+      "creator": "fotograaf: anoniem, Nederlands-Indië",
+      "objectUrl": "https://id.rijksmuseum.nl/200478635",
+      "imageUrl": "https://iiif.micr.io/rTywK/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Bandoeng"
+      ],
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200478598",
+      "objectNumber": "RP-F-00-5346-31",
+      "title": "Vrouwen ontbolsteren cacao in Buitenzorg",
+      "otherTitles": [],
+      "description": "Vrouwen ontbolsteren cacao te Buitenzorg (Bogor), Nederlands-Indië.",
+      "date": "c. 1895 - c. 1915",
+      "creator": "fotograaf: anoniem, Nederlands-Indië",
+      "objectUrl": "https://id.rijksmuseum.nl/200478598",
+      "imageUrl": "https://iiif.micr.io/fhGZg/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Buitenzorg"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bogor",
+        "java"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200377207",
+      "objectNumber": "NG-1011-F",
+      "title": "Semarang. Kalibaroe",
+      "otherTitles": [],
+      "description": "Eén van zes briefkaarten, foto's in bruin, stadsgezichten van Nieuw-Semarang; achterzijde onbeschreven. Semarang ligt op midden-Java. Opmerking: zie NG-1011-A t/m F.",
+      "date": "c. 1900",
+      "creator": "fotograaf: Otto Hisgen, Semarang",
+      "objectUrl": "https://id.rijksmuseum.nl/200377207",
+      "imageUrl": null,
+      "imageRightsUrl": null,
+      "imageRightsEvidence": [
+        "https://rightsstatements.org/vocab/InC/1.0/"
+      ],
+      "imageUnavailableReason": "Geen expliciete Public Domain Mark/CC0-verklaring gevonden voor het digitale beeld",
+      "searchTerms": [
+        "Semarang"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "semarang"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200377203",
+      "objectNumber": "NG-1011-D",
+      "title": "Semarang. Makamdowo (Nieuw-Semarang)",
+      "otherTitles": [],
+      "description": "Eén van zes briefkaarten, foto's in bruin, stadsgezichten van Nieuw-Semarang; achterzijde onbeschreven. Semarang ligt op midden-Java. Opmerking: zie NG-1011-A t/m F.",
+      "date": "c. 1900",
+      "creator": "fotograaf: Otto Hisgen, Semarang",
+      "objectUrl": "https://id.rijksmuseum.nl/200377203",
+      "imageUrl": null,
+      "imageRightsUrl": null,
+      "imageRightsEvidence": [
+        "https://rightsstatements.org/vocab/InC/1.0/"
+      ],
+      "imageUnavailableReason": "Geen expliciete Public Domain Mark/CC0-verklaring gevonden voor het digitale beeld",
+      "searchTerms": [
+        "Semarang"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "semarang"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200377201",
+      "objectNumber": "NG-1011-B",
+      "title": "Semarang. Nieuwe Semarang",
+      "otherTitles": [],
+      "description": "Eén van zes briefkaarten, foto's in bruin, stadsgezichten van Nieuw-Semarang; achterzijde onbeschreven. Semarang ligt op midden-Java. Opmerking: zie NG-1011-A t/m F.",
+      "date": "c. 1900",
+      "creator": "fotograaf: Otto Hisgen, Semarang",
+      "objectUrl": "https://id.rijksmuseum.nl/200377201",
+      "imageUrl": null,
+      "imageRightsUrl": null,
+      "imageRightsEvidence": [
+        "https://rightsstatements.org/vocab/InC/1.0/"
+      ],
+      "imageUnavailableReason": "Geen expliciete Public Domain Mark/CC0-verklaring gevonden voor het digitale beeld",
+      "searchTerms": [
+        "Semarang"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "semarang"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200377202",
+      "objectNumber": "NG-1011-C",
+      "title": "Semarang. Nieuwe Semarang met Kampongaanleg",
+      "otherTitles": [],
+      "description": "Eén van zes briefkaarten, foto's in bruin, stadsgezichten van Nieuw-Semarang; achterzijde onbeschreven. Semarang ligt op midden-Java. Opmerking: zie NG-1011-A t/m F.",
+      "date": "c. 1900",
+      "creator": "fotograaf: Otto Hisgen, Semarang",
+      "objectUrl": "https://id.rijksmuseum.nl/200377202",
+      "imageUrl": null,
+      "imageRightsUrl": null,
+      "imageRightsEvidence": [
+        "https://rightsstatements.org/vocab/InC/1.0/"
+      ],
+      "imageUnavailableReason": "Geen expliciete Public Domain Mark/CC0-verklaring gevonden voor het digitale beeld",
+      "searchTerms": [
+        "Semarang"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "semarang"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200377197",
+      "objectNumber": "NG-1011-A",
+      "title": "Semarang. Nieuwe Tjandiweg",
+      "otherTitles": [],
+      "description": "Eén van zes briefkaarten, foto's in bruin, stadsgezichten van Nieuw-Semarang; achterzijde onbeschreven. Semarang ligt op midden-Java. Opmerking: zie NG-1011-A t/m F.",
+      "date": "c. 1900",
+      "creator": "fotograaf: Otto Hisgen, Semarang",
+      "objectUrl": "https://id.rijksmuseum.nl/200377197",
+      "imageUrl": null,
+      "imageRightsUrl": null,
+      "imageRightsEvidence": [
+        "https://rightsstatements.org/vocab/InC/1.0/"
+      ],
+      "imageUnavailableReason": "Geen expliciete Public Domain Mark/CC0-verklaring gevonden voor het digitale beeld",
+      "searchTerms": [
+        "Semarang"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "semarang"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200377204",
+      "objectNumber": "NG-1011-E",
+      "title": "Semarang. Nieuwe Tjandiweg-Merapiweg. (Nieuw-Semarang)",
+      "otherTitles": [],
+      "description": "Eén van zes briefkaarten, foto's in bruin, stadsgezichten van Nieuw-Semarang; achterzijde onbeschreven. Semarang ligt op midden-Java. Opmerking: zie NG-1011-A t/m F.",
+      "date": "c. 1900",
+      "creator": "fotograaf: Otto Hisgen, Semarang",
+      "objectUrl": "https://id.rijksmuseum.nl/200377204",
+      "imageUrl": null,
+      "imageRightsUrl": null,
+      "imageRightsEvidence": [
+        "https://rightsstatements.org/vocab/InC/1.0/"
+      ],
+      "imageUnavailableReason": "Geen expliciete Public Domain Mark/CC0-verklaring gevonden voor het digitale beeld",
+      "searchTerms": [
+        "Semarang"
+      ],
+      "topics": [],
+      "places": [
+        "java",
+        "semarang"
+      ],
+      "recordType": "photograph"
+    },
+    {
+      "id": "200335508",
+      "objectNumber": "RP-F-F01220-AA",
+      "title": "Huwelijksportret van 'Bets' (trouwen met de handschoen)",
+      "otherTitles": [],
+      "description": "Onderdeel van Fotoalbum met opnames van bezienswaardigheden op Java.",
+      "date": "c. 1900 - in or before 1915-03-01",
+      "creator": "fotograaf: Jean Vaessen (vermeld op object), Den Haag",
+      "objectUrl": "https://id.rijksmuseum.nl/200335508",
+      "imageUrl": "https://iiif.micr.io/fjiLN/full/max/0/default.jpg",
+      "imageRightsUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "imageRightsEvidence": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "imageUnavailableReason": null,
+      "searchTerms": [
+        "Java"
+      ],
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "java",
+        "other-java"
+      ],
+      "recordType": "photograph"
+    }
+  ]
+}

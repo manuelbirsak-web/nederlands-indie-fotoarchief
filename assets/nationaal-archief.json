@@ -3,7 +3,7 @@
   "source": "Nationaal Archief — linked open data fotocollectie",
   "sourceUrl": "https://www.nationaalarchief.nl/onderzoeken/linked-open-data/sparql-interface-fotocollectie",
   "endpoint": "https://api.triplydb.com/datasets/nationaal-archief/beeldbank/services/beeldbank/sparql",
-  "snapshotDate": "2026-11-12T21:04:04.510697+00:00",
+  "snapshotDate": "2026-11-12T21:10:58.439872+00:00",
   "count": 4000,
   "pageSize": 500,
   "maxPages": 8,
