@@ -163,7 +163,7 @@ function isRelevantHistoricalPhoto(page,meta,year){
  const description=metadataValue(meta,'ImageDescription');
  const objectName=metadataValue(meta,'ObjectName');
  const text=(title+' '+description+' '+objectName).toLowerCase();
- if(/\\b(wordmark|logo|map of|coat of arms|rank insignia|book cover|journal|magazine|newspaper|poster|stamp|flag icon)\\b/i.test(text))return false;
+ if(/\b(wordmark|logo|map of|coat of arms|rank insignia|book cover|journal|magazine|newspaper|poster|stamp|flag icon)\b/i.test(text))return false;
  const viewPatterns={
   home:/dutch east indies|nederlands.?indi[eë]|netherlands indies|knil|bandoeng|bandung|batavia|buitenzorg|java|sumatra|borneo|celebes|surabaya|soerabaja|semarang|yogyakarta|djokja/i,
   indies:/dutch east indies|nederlands.?indi[eë]|netherlands indies|knil/i,
