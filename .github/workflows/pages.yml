@@ -18,6 +18,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Validate HTML structure and archive interface contracts
         run: python3 scripts/validate_site.py
+      - name: Compile Python quality tools
+        run: python3 -m py_compile scripts/harvest_nationaal_archief.py scripts/validate_site.py scripts/test_archive.py
       - name: Test archival metadata classification
         run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
       - name: Validate inline JavaScript syntax
