@@ -152,6 +152,7 @@ const places={bandung:'(Bandoeng OR Bandung)',batavia:'(Batavia OR Jakarta) Java
 const topicTerms={city:'street building architecture',people:'people family school market',military:'military KNIL soldier army',transport:'railway train tram harbour bridge',culture:'temple mosque dance ceremony religion',nature:'landscape mountain plantation river'};
 const $=selector=>document.querySelector(selector);
 let view='home',place='bandung',customTerm='',continuation=null,loading=false,requestController=null,requestId=0,visibleCount=0;
+const seenFiles=new Set();
 const favoritesKey='indisch-beeldarchief-favorites-v1';
 function readFavorites(){try{return new Set(JSON.parse(localStorage.getItem(favoritesKey)||'[]'))}catch{return new Set()}}
 function writeFavorites(set){try{localStorage.setItem(favoritesKey,JSON.stringify([...set]))}catch{}}
@@ -208,47 +209,54 @@ async function load(reset=false) {
   if (reset) {
     continuation = null;
     visibleCount = 0;
+    seenFiles.clear();
     $('#results').replaceChildren();
-    $('#results').append(status('Beeldcollectie laden','Zoekresultaten worden gecontroleerd op onderwerp en historische datering (1800–1950).'));
+    $('#results').append(status('Beeldcollectie laden','Historische foto’s en relevante ongedateerde beelden worden gecontroleerd.'));
     $('#more').hidden = true;
   }
   $('#results').setAttribute('aria-busy','true');
   renderNationaalArchiefRecords();
   try {
-    const params = new URLSearchParams({
-      action:'query', format:'json', origin:'*', generator:'search',
-      gsrsearch:buildQuery(), gsrnamespace:'6', gsrlimit:'24',
-      prop:'imageinfo', iiprop:'url|extmetadata|mime', iiurlwidth:'760'
-    });
-    if (!reset && continuation) {
-      for (const [key,value] of Object.entries(continuation)) params.set(key,String(value));
-    }
-    const response = await fetch(API+'?'+params.toString(), {
-      signal:controller.signal, headers:{'Accept':'application/json'}
-    });
-    if (!response.ok) throw new Error('De beeldbron reageert tijdelijk niet ('+response.status+').');
-    const data = await response.json();
-    if (id !== requestId) return;
-    if (reset) $('#results').replaceChildren();
-    const pages = Object.values(data.query?.pages||{}).sort((a,b)=>(a.index??0)-(b.index??0));
-    let found = 0;
-    for (const page of pages) {
-      const meta = page.imageinfo?.[0]?.extmetadata||{};
-      const year = yearFromMetadata(meta);
-      if (!periodMatches(year)) continue;
-      if (!isRelevantHistoricalPhoto(page,meta,year)) continue;
-      addCard(page);
-      found++;
-    }
-    continuation = data.continue||null;
+    let foundThisLoad = 0;
+    let batches = 0;
+    do {
+      const params = new URLSearchParams({
+        action:'query', format:'json', origin:'*', generator:'search',
+        gsrsearch:buildQuery(), gsrnamespace:'6', gsrlimit:'24',
+        prop:'imageinfo', iiprop:'url|extmetadata|mime', iiurlwidth:'760'
+      });
+      if (continuation) {
+        for (const [key,value] of Object.entries(continuation)) params.set(key,String(value));
+      }
+      const response = await fetch(API+'?'+params.toString(), {
+        signal:controller.signal, headers:{'Accept':'application/json'}
+      });
+      if (!response.ok) throw new Error('De beeldbron reageert tijdelijk niet ('+response.status+').');
+      const data = await response.json();
+      if (id !== requestId) return;
+      const pages = Object.values(data.query?.pages||{}).sort((a,b)=>(a.index??0)-(b.index??0));
+      for (const page of pages) {
+        const meta = page.imageinfo?.[0]?.extmetadata||{};
+        const year = yearFromMetadata(meta);
+        if (!periodMatches(year) || !isRelevantHistoricalPhoto(page,meta,year)) continue;
+        const key = page.title||String(page.pageid);
+        if (seenFiles.has(key)) continue;
+        seenFiles.add(key);
+        addCard(page);
+        foundThisLoad++;
+      }
+      continuation = data.continue||null;
+      batches++;
+    } while (continuation && foundThisLoad < 8 && batches < 4);
     updateCount();
     if (!visibleCount && reset) {
-      $('#results').append(status('Geen passende foto’s gevonden','Probeer een andere schrijfwijze of verwijder een filter.'));
-    } else if (!found && !reset) {
-      $('#results').append(status('Nog geen zichtbare resultaten','Er zijn geen extra foto’s gevonden die aan de actieve metadatafilter voldoen.'));
+      $('#results').append(status('Nog geen passende foto’s gevonden','Vier pagina’s met bronresultaten zijn gecontroleerd. Probeer een andere schrijfwijze of een specifiekere zoekterm.'));
+    } else if (!foundThisLoad && !reset) {
+      $('#results').append(status('Geen nieuwe foto’s op deze pagina’s','Gebruik een andere zoekterm of ga verder met zoeken.'));
     }
     $('#more').hidden = !continuation;
     $('#more').disabled = !continuation;
+    $('#more').textContent = visibleCount ? 'Meer foto’s laden' : 'Verder zoeken in de bron';
   } catch (error) {
     if (error.name === 'AbortError') return;
     if (id === requestId) {
