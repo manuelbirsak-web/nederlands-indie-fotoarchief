@@ -27,7 +27,8 @@ De standaard fotoperiode is 1800–1959. Relevante ongedateerde beelden kunnen w
 ### Rechtstreeks geïntegreerd
 
 - **Wikimedia Commons:** live API voor beeldbestanden en metadata. De website toont per resultaat de bronpagina, beschikbare maker-/creditgegevens en licentie-informatie. Commons is een aggregator; de oorspronkelijke instelling en bestandspagina blijven leidend.
-- **Nationaal Archief:** lokale metadata-index op basis van de publieke linked-open-data-fotocollectie. De huidige snapshot bevat **180 records** met permanente Handle-links en automatisch afgeleide onderwerp- en plaatslabels. De nieuwe harvester kan geordend maximaal 4.000 records ophalen; het actuele aantal wordt pas na een succesvolle verversing verhoogd. Er worden geen thumbnails uit deze index getoond zolang de rechtenstatus niet is beoordeeld.
+- **Nationaal Archief:** lokale metadata-index op basis van de publieke linked-open-data-fotocollectie. De gepubliceerde snapshot bevat momenteel **2.250 records** met permanente Handle-links en automatisch afgeleide onderwerp- en plaatslabels. Er worden geen thumbnails uit deze index getoond zolang de rechtenstatus niet is beoordeeld.
+- **Rijksmuseum:** lokale snapshot met **229 foto-objecten** uit de publieke Search API en Linked Art. Alleen digitale beelden met expliciete Public Domain Mark 1.0- of CC0 1.0-rechtenverklaring op het beeld zelf worden getoond. Andere records blijven metadata-only.
 
 ### Externe onderzoeksingangen
 
@@ -106,6 +107,6 @@ Dit zijn geautomatiseerde technische controles. Ze bewijzen niet dat elke histor
 
 ## Status en afbakening
 
-Het Indisch Beeldarchief is een werkende openbare onderzoekswebsite en een groeiende startcatalogus. Het is **geen complete inventaris van alle historische foto's over Nederlands-Indië**. De huidige 180 Nationaal Archief-records zijn een selecte metadata-snapshot, geen weergave van de volledige collectie. Een volledige historische, juridische en curatoriële verificatie van alle resultaten is nog niet uitgevoerd.
+Het Indisch Beeldarchief is een werkende openbare onderzoekswebsite en een groeiende startcatalogus. Het is **geen complete inventaris van alle historische foto's over Nederlands-Indië**. De huidige 2.250 Nationaal Archief-records en 229 Rijksmuseum-objecten zijn begrensde selecties, geen weergave van de volledige collecties. Een volledige historische, juridische en curatoriële verificatie van alle resultaten is nog niet uitgevoerd.
 
 Laatste inhoudelijke release: **12 november 2026**.
