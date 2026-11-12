@@ -287,13 +287,14 @@ function naRecordMatches(record){
  let pattern='';
  if(view==='bandung')pattern='bandoeng|bandung';
  else if(view==='knil')pattern='knil|militair|leger|soldaat|officier|kazern|wapen';
- else if(view==='bersiap')pattern='bersiap|1945|1946|1947|1948|1949|revolutie|indonesian national revolution';
+ else if(view==='bersiap')pattern='bersiap|revolutie|onafhankelijkheid|republiek|tni|pemoeda|geweld|terror|sabotage|guerrilla|agresi|politionele actie|evacuatie|internering|kamp|perang|indonesian national revolution|indonesian war of independence|war of independence|independence|violence|revolution';
  else if(view==='daily')pattern='bevolking|markt|school|kind|vrouw|gezin|werk|cultuur|religie';
  else if(view==='java')pattern=naPlaceTerms[place]||'java';
  else if(view==='indies')pattern='indie|indones|java|bandoeng|bandung|batavia|buitenzorg|bogor|semarang|soerabaja|surabaya|djokja|yogyakarta|malang|knil';
  if(pattern&&!new RegExp(pattern,'i').test(text))return false;
  const year=Number((String(record.date||'').match(/(?:18|19|20)\d{2}/)||[])[0])||null;
  if(!periodMatches(year))return false;
+ if(view==='bersiap'&&year!==null&&(year<1945||year>1950))return false;
  const topic=$('#topic').value;
  const topicPattern={city:'stad|straat|gebouw|brug|station|kerk|kantoor|hotel',people:'mens|bevolking|kind|vrouw|gezin|markt|school',military:'knil|militair|leger|soldaat|officier|wapen|kazern',transport:'trein|spoor|tram|haven|brug|vliegtuig',culture:'kerk|moskee|tempel|dans|ceremonie|religie',nature:'berg|landschap|plantage|rivier|bos'};
  if(topic&&topicPattern[topic]&&!new RegExp(topicPattern[topic],'i').test(text))return false;
