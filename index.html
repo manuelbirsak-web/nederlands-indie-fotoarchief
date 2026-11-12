@@ -102,7 +102,7 @@ h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;mar
 <section class="discovery" aria-label="Zoek en filter in de beeldcollectie">
 <div class="searchrow"><input id="q" type="search" placeholder="Zoek bijvoorbeeld: Bragaweg, Dago, KNIL, Batavia…" aria-label="Zoek in het fotoarchief"><button id="go" class="primary" type="button">Zoeken</button></div>
 <div class="filters">
-<label for="period">Datering</label><select id="period"><option value="1800-1950" selected>Historische periode 1800–1950</option><option value="all">Alle perioden</option><option value="1800-1899">1800–1899</option><option value="1900-1919">1900–1919</option><option value="1920-1939">1920–1939</option><option value="1940-1945">1940–1945</option><option value="1945-1950">1945–1950</option><option value="undated">Alleen ongedateerd</option></select>
+<label for="period">Datering</label><select id="period"><option value="1800-1950" selected>Historische periode 1800–1950</option><option value="all">Alle perioden</option><option value="1800-1899">1800–1899</option><option value="1900-1919">1900–1919</option><option value="1920-1939">1920–1939</option><option value="1940-1945">1940–1945</option><option value="1945-1950">1945–1950</option></select>
 <label for="topic">Onderwerp</label><select id="topic"><option value="">Alle onderwerpen</option><option value="city">Steden & architectuur</option><option value="people">Mensen & dagelijks leven</option><option value="military">KNIL & militair</option><option value="transport">Transport & infrastructuur</option><option value="culture">Cultuur & religie</option><option value="nature">Landschap & natuur</option></select>
 <button id="reset" class="secondary" type="button">Wis filters</button>
 </div>
@@ -158,7 +158,7 @@ function buildQuery(){const typed=$('#q').value.trim();let base=views[view].quer
 function yearFromMetadata(meta){const raw=meta?.DateTimeOriginal?.value||meta?.Date?.value||'';const match=String(raw).match(/(?:^|\D)((?:18|19|20)\d{2})(?:\D|$)/);return match?Number(match[1]):null}
 function periodMatches(year){const range=$('#period').value;if(range==='all')return true;if(range==='undated')return year===null;if(year===null)return false;const [start,end]=range.split('-').map(Number);return year>=start&&year<=end}
 function isRelevantHistoricalPhoto(page,meta,year){
- if(year===null||year<1800||year>1950)return false;
+ if(year===null||year<1800)return false;
  const title=String(page.title||'').replace(/^File:/,'');
  const description=metadataValue(meta,'ImageDescription');
  const objectName=metadataValue(meta,'ObjectName');
@@ -262,7 +262,7 @@ function naRecordMatches(record){
  else if(view==='java')pattern=naPlaceTerms[place]||'java';
  else if(view==='indies')pattern='indie|indones|java|bandoeng|bandung|batavia|buitenzorg|bogor|semarang|soerabaja|surabaya|djokja|yogyakarta|malang|knil';
  if(pattern&&!new RegExp(pattern,'i').test(text))return false;
- const year=Number((String(record.date||'').match(/(?:18|19|20)\\d{2}/)||[])[0])||null;
+ const year=Number((String(record.date||'').match(/(?:18|19|20)\d{2}/)||[])[0])||null;
  if(!periodMatches(year))return false;
  const topic=$('#topic').value;
  const topicPattern={city:'stad|straat|gebouw|brug|station|kerk|kantoor|hotel',people:'mens|bevolking|kind|vrouw|gezin|markt|school',military:'knil|militair|leger|soldaat|officier|wapen|kazern',transport:'trein|spoor|tram|haven|brug|vliegtuig',culture:'kerk|moskee|tempel|dans|ceremonie|religie',nature:'berg|landschap|plantage|rivier|bos'};
