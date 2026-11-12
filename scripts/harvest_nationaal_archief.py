@@ -15,7 +15,8 @@ ROOT = Path(__file__).resolve().parents[1]
 TARGET = ROOT / "assets" / "nationaal-archief.json"
 ENDPOINT = "https://api.triplydb.com/datasets/nationaal-archief/beeldbank/services/beeldbank/sparql"
 GRAPH = "https://demo.triply.cc/nationaal-archief/beeldbank/graphs/default"
-LIMIT = 1000
+PAGE_SIZE = 500
+MAX_PAGES = 8
 
 # Search the catalogue descriptions, not collection labels. A collection name such as
 # "Dienst voor Legercontacten" is not evidence that every record depicts the KNIL.
@@ -38,7 +39,9 @@ WHERE {{
   }}
 }}
 GROUP BY ?s ?description
-LIMIT {LIMIT}
+ORDER BY STR(?s)
+LIMIT {PAGE_SIZE}
+OFFSET {offset}
 """
 
 PLACE_PATTERNS = {
@@ -113,36 +116,43 @@ def classify_record(description: str, date: str | None = None) -> tuple[list[str
 def main() -> int:
     TARGET.parent.mkdir(parents=True, exist_ok=True)
     try:
-        query = urlencode({"query": QUERY, "format": "application/sparql-results+json"})
-        request = Request(
-            f"{ENDPOINT}?{query}",
-            headers={
-                "Accept": "application/sparql-results+json",
-                "User-Agent": "IndischBeeldarchief/2.0 (public archival metadata index)",
-            },
-        )
-        with urlopen(request, timeout=60) as response:
-            if response.status != 200:
-                raise RuntimeError(f"SPARQL endpoint returned HTTP {response.status}")
-            data = json.loads(response.read().decode("utf-8"))
-        rows = data.get("results", {}).get("bindings", [])
         records_by_uri: dict[str, dict] = {}
-        for row in rows:
-            uri = binding_value(row, "s")
-            description = binding_value(row, "description")
-            if not uri or not description:
-                continue
-            topics, places = classify_record(description, binding_value(row, "date"))
-            records_by_uri[uri] = {
-                "uri": uri,
-                "description": description,
-                "date": binding_value(row, "date"),
-                "collection": binding_value(row, "collection"),
-                "creator": binding_value(row, "creator"),
-                "rights": binding_value(row, "rights") or "Copyrightstatus niet vermeld",
-                "topics": topics,
-                "places": places,
-            }
+        harvested_pages = 0
+        for page_number in range(MAX_PAGES):
+            offset = page_number * PAGE_SIZE
+            query_text = QUERY.format(offset=offset)
+            query = urlencode({"query": query_text, "format": "application/sparql-results+json"})
+            request = Request(
+                f"{ENDPOINT}?{query}",
+                headers={
+                    "Accept": "application/sparql-results+json",
+                    "User-Agent": "IndischBeeldarchief/2.0 (public archival metadata index)",
+                },
+            )
+            with urlopen(request, timeout=60) as response:
+                if response.status != 200:
+                    raise RuntimeError(f"SPARQL endpoint returned HTTP {response.status}")
+                data = json.loads(response.read().decode("utf-8"))
+            rows = data.get("results", {}).get("bindings", [])
+            harvested_pages += 1
+            for row in rows:
+                uri = binding_value(row, "s")
+                description = binding_value(row, "description")
+                if not uri or not description:
+                    continue
+                topics, places = classify_record(description, binding_value(row, "date"))
+                records_by_uri[uri] = {
+                    "uri": uri,
+                    "description": description,
+                    "date": binding_value(row, "date"),
+                    "collection": binding_value(row, "collection"),
+                    "creator": binding_value(row, "creator"),
+                    "rights": binding_value(row, "rights") or "Copyrightstatus niet vermeld",
+                    "topics": topics,
+                    "places": places,
+                }
+            if len(rows) < PAGE_SIZE:
+                break
         records = sorted(records_by_uri.values(), key=lambda item: (item["date"] or "9999", item["description"].casefold()))
         if len(records) < 20:
             raise RuntimeError(f"Only {len(records)} records returned; keeping previous snapshot")
@@ -155,7 +165,10 @@ def main() -> int:
             "endpoint": ENDPOINT,
             "snapshotDate": datetime.now(timezone.utc).isoformat(),
             "count": len(records),
-            "queryLimit": LIMIT,
+            "pageSize": PAGE_SIZE,
+            "maxPages": MAX_PAGES,
+            "harvestedPages": harvested_pages,
+            "truncatedAtSafetyLimit": harvested_pages == MAX_PAGES,
             "topicCounts": dict(sorted(topic_counts.items())),
             "placeCounts": dict(sorted(place_counts.items())),
             "rightsNote": (
