@@ -12,7 +12,12 @@
       "date": "1947-01-19",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/209d832b-3bd5-c550-d681-8ecc29d8b7a8",
@@ -20,7 +25,12 @@
       "date": "1946-01-17",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [],
+      "places": [
+        "java",
+        "semarang"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/ad834266-d0b4-102d-bcf8-003048976d84",
@@ -28,7 +38,12 @@
       "date": "1945-08-08",
       "collection": "Foto's Nationaal Archief",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "culture",
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/aefdb3ec-d0b4-102d-bcf8-003048976d84",
@@ -36,7 +51,15 @@
       "date": "1948-08-31",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "society",
+        "transport"
+      ],
+      "places": [
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/ad82d6b4-d0b4-102d-bcf8-003048976d84",
@@ -44,7 +67,12 @@
       "date": "1944-01-01",
       "collection": "Fotocollectie Anefo",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/aefd864c-d0b4-102d-bcf8-003048976d84",
@@ -52,7 +80,16 @@
       "date": null,
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "landscape",
+        "military",
+        "society"
+      ],
+      "places": [
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefe9f82-d0b4-102d-bcf8-003048976d84",
@@ -60,7 +97,15 @@
       "date": null,
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "java",
+        "malang"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/1e9ab635-bb10-2fb7-84a3-e567bdd366b8",
@@ -68,7 +113,14 @@
       "date": "1948-02-12",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af00e95e-d0b4-102d-bcf8-003048976d84",
@@ -76,7 +128,14 @@
       "date": "1949-03-04",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af4277e4-9e7b-9d4c-77e4-5143725a430f",
@@ -84,7 +143,15 @@
       "date": "1946-08-31",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "architecture",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/55990625-6849-b218-7694-4de132f8787c",
@@ -92,7 +159,12 @@
       "date": "1947-12-25",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/a16c6ac8-cbaf-e666-2655-04bff898a9c8",
@@ -100,7 +172,14 @@
       "date": "1947-05-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/ad7ed186-d0b4-102d-bcf8-003048976d84",
@@ -108,7 +187,13 @@
       "date": "1942-08-15",
       "collection": "Fotocollectie Anefo",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military",
+        "transport"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/70734056-226d-912e-6151-ade1ae590ab1",
@@ -116,7 +201,13 @@
       "date": "1946-11-15",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military",
+        "transport"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/af04a4ea-d0b4-102d-bcf8-003048976d84",
@@ -124,7 +215,12 @@
       "date": "1948-08-14",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aef41300-d0b4-102d-bcf8-003048976d84",
@@ -132,7 +228,12 @@
       "date": "1947-08-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [],
+      "places": [
+        "java",
+        "malang"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/dd748ca6-b6e5-9334-d3be-b548c9473e1e",
@@ -140,7 +241,14 @@
       "date": "1949-09-14",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "java",
+        "semarang"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/da25db6d-6b6e-f484-ad66-d12ca665c798",
@@ -148,7 +256,16 @@
       "date": "1948-04-19",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "batavia",
+        "bogor",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af089fa0-d0b4-102d-bcf8-003048976d84",
@@ -156,7 +273,15 @@
       "date": "1947-07-26",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "architecture",
+        "transport"
+      ],
+      "places": [
+        "java",
+        "semarang"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/b6f562ff-6b4b-c40a-43b9-a9e3eb40b348",
@@ -164,7 +289,12 @@
       "date": "1947-01-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/8f8661fb-751b-542e-f1e0-f48a3171a7f3",
@@ -172,7 +302,14 @@
       "date": "1949-09-14",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "java",
+        "semarang"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/ad7ea2a6-d0b4-102d-bcf8-003048976d84",
@@ -180,7 +317,13 @@
       "date": "1942-06-16",
       "collection": "Fotocollectie Anefo",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military",
+        "society"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/af056056-d0b4-102d-bcf8-003048976d84",
@@ -188,7 +331,14 @@
       "date": "1948-02-12",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/dd93e1b3-d628-01ef-6d1c-9ac240c3bae0",
@@ -196,7 +346,9 @@
       "date": "1949-01-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/aef6da22-d0b4-102d-bcf8-003048976d84",
@@ -204,7 +356,12 @@
       "date": "1950-04-08",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/ad9b98b6-d0b4-102d-bcf8-003048976d84",
@@ -212,7 +369,14 @@
       "date": "1943-01-01",
       "collection": "Fotocollectie Anefo",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "transport"
+      ],
+      "places": [
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/93d60111-6931-6c91-f2eb-cc9f4924065d",
@@ -220,7 +384,15 @@
       "date": "1948-01-23",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "decolonization",
+        "military"
+      ],
+      "places": [
+        "bogor",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aef37d5a-d0b4-102d-bcf8-003048976d84",
@@ -228,7 +400,14 @@
       "date": "1947-08-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "decolonization"
+      ],
+      "places": [
+        "java",
+        "surabaya"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/9339bea0-205c-8074-f3b3-c090b7c50db7",
@@ -236,7 +415,12 @@
       "date": "1947-07-21",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [],
+      "places": [
+        "java",
+        "surabaya"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/db53f02c-50a5-4b61-5287-361cb3652a92",
@@ -244,7 +428,14 @@
       "date": "1947-08-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "java",
+        "semarang"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/ad8338de-d0b4-102d-bcf8-003048976d84",
@@ -252,7 +443,12 @@
       "date": "1945-08-01",
       "collection": "Foto's Nationaal Archief",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/ac174a30-d0b4-102d-bcf8-003048976d84",
@@ -260,7 +456,9 @@
       "date": "1945-01-01",
       "collection": "Fotocollectie Anefo",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/aefbe878-d0b4-102d-bcf8-003048976d84",
@@ -268,7 +466,15 @@
       "date": "1948-02-09",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "decolonization",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af06f24a-d0b4-102d-bcf8-003048976d84",
@@ -276,7 +482,14 @@
       "date": null,
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/ad9cd6ae-d0b4-102d-bcf8-003048976d84",
@@ -284,7 +497,12 @@
       "date": "1945-01-01",
       "collection": "Fotocollectie Anefo",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/c37c257e-30c4-4272-73a9-0fac5f67ca04",
@@ -292,7 +510,14 @@
       "date": "1947-08-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "java",
+        "semarang"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/b0daa7d5-74c8-5162-2e82-ae9e1013c373",
@@ -300,7 +525,12 @@
       "date": "1947-09-04",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/c16aeb0c-f285-67c2-c212-b3ba3ccbc766",
@@ -308,7 +538,14 @@
       "date": "1946-10-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "other-islands"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/6d9b8835-8984-bacf-a0cc-cf39efe1dc28",
@@ -316,7 +553,13 @@
       "date": "1947-01-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military",
+        "transport"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/af08fad6-d0b4-102d-bcf8-003048976d84",
@@ -324,7 +567,12 @@
       "date": "1949-08-04",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/32b349a1-d515-9e38-ddea-71fcb0221a75",
@@ -332,7 +580,14 @@
       "date": "1948-03-05",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "other-islands"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/b2ef927c-5437-7224-65bc-399381702993",
@@ -340,7 +595,15 @@
       "date": "1946-10-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "military",
+        "transport"
+      ],
+      "places": [
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/ad864614-d0b4-102d-bcf8-003048976d84",
@@ -348,7 +611,12 @@
       "date": null,
       "collection": "Fotocollectie Anefo",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [],
+      "places": [
+        "java",
+        "surabaya"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/ad884acc-d0b4-102d-bcf8-003048976d84",
@@ -356,7 +624,11 @@
       "date": "1936-01-01",
       "collection": "Foto's Nationaal Archief",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "transport"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/aef54536-d0b4-102d-bcf8-003048976d84",
@@ -364,7 +636,13 @@
       "date": "1947-10-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [],
+      "places": [
+        "batavia",
+        "java",
+        "semarang"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/b030194f-5405-f659-acf1-66c6a23c2970",
@@ -372,7 +650,11 @@
       "date": "1945-01-01",
       "collection": "Foto's Nationaal Archief",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/af04e40a-d0b4-102d-bcf8-003048976d84",
@@ -380,7 +662,15 @@
       "date": "1948-08-31",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "society",
+        "transport"
+      ],
+      "places": [
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefee47e-d0b4-102d-bcf8-003048976d84",
@@ -388,7 +678,12 @@
       "date": null,
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/3025ce91-c10f-9236-cb88-44cdc50f5aa0",
@@ -396,7 +691,14 @@
       "date": "1948-01-23",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "decolonization"
+      ],
+      "places": [
+        "bogor",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aef6a458-d0b4-102d-bcf8-003048976d84",
@@ -404,7 +706,14 @@
       "date": "1950-01-16",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "sumatra"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/a89af06e-d0b4-102d-bcf8-003048976d84",
@@ -412,7 +721,12 @@
       "date": "1946-03-26",
       "collection": "Fotocollectie Anefo",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/33effe7f-fe27-29a1-09df-54aedf54348f",
@@ -420,7 +734,18 @@
       "date": "1948-04-28",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "architecture",
+        "knil",
+        "military",
+        "transport"
+      ],
+      "places": [
+        "batavia",
+        "java",
+        "yogyakarta"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/5003501b-d5b8-815e-a7fa-665df6fe583b",
@@ -428,7 +753,12 @@
       "date": "1948-12-19",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "architecture",
+        "decolonization"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/20ef683f-b47f-2d7c-00f5-d19cedf7a7da",
@@ -436,7 +766,12 @@
       "date": "1948-04-05",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/520f8913-b0a0-8a08-845f-c9de1a69ae62",
@@ -444,7 +779,12 @@
       "date": "1948-05-06",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/0ca4e667-c835-2203-e0f0-d7756ae6ea33",
@@ -452,7 +792,12 @@
       "date": "1947-10-25",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/c2b04861-e4ab-653b-5ca0-3651ecbdc09c",
@@ -460,7 +805,16 @@
       "date": "1948-03-15",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "architecture",
+        "military"
+      ],
+      "places": [
+        "java",
+        "semarang",
+        "sumatra"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af067a4a-d0b4-102d-bcf8-003048976d84",
@@ -468,7 +822,15 @@
       "date": "1948-12-19",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "architecture",
+        "decolonization"
+      ],
+      "places": [
+        "java",
+        "yogyakarta"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/adf56e90-d0b4-102d-bcf8-003048976d84",
@@ -476,7 +838,12 @@
       "date": "1939-01-01",
       "collection": "Fotocollectie Elsevier",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/5e1bc182-1a48-47b1-4d7a-029f3513ce40",
@@ -484,7 +851,13 @@
       "date": "1949-10-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "landscape",
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/af057938-d0b4-102d-bcf8-003048976d84",
@@ -492,7 +865,15 @@
       "date": null,
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefb3dc4-d0b4-102d-bcf8-003048976d84",
@@ -500,7 +881,15 @@
       "date": "1948-04-17",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "bogor",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/b673a360-88fb-b2bf-3584-7fd8ae2ed5ed",
@@ -508,7 +897,12 @@
       "date": "1946-07-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/687b4c35-9360-f65f-7997-c3a55f557ab6",
@@ -516,7 +910,13 @@
       "date": "1946-11-23",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military",
+        "transport"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/529e4180-f0dd-5913-014a-1e3ebcc0c775",
@@ -524,7 +924,12 @@
       "date": "1948-12-19",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "decolonization",
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/96b948d2-b869-8197-d5e4-5df91fd395b1",
@@ -532,7 +937,12 @@
       "date": "1947-08-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [],
+      "places": [
+        "bogor",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/e87c681a-b758-9765-ad1c-5d1e6171b10d",
@@ -540,7 +950,16 @@
       "date": "1948-10-23",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "military",
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/ad82d920-d0b4-102d-bcf8-003048976d84",
@@ -548,7 +967,12 @@
       "date": "1944-01-01",
       "collection": "Fotocollectie Anefo",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/aefaca1a-d0b4-102d-bcf8-003048976d84",
@@ -556,7 +980,17 @@
       "date": "1948-05-21",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "architecture",
+        "knil",
+        "military",
+        "transport"
+      ],
+      "places": [
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefd1608-d0b4-102d-bcf8-003048976d84",
@@ -564,7 +998,14 @@
       "date": "1948-10-12",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/988b81dd-b931-22f2-0923-634d8f7d1890",
@@ -572,7 +1013,12 @@
       "date": "1949-03-05",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/4df7d4e9-c70a-da7f-cab2-097d30357eb8",
@@ -580,7 +1026,13 @@
       "date": "1946-01-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/fc1cf4f4-270d-67ff-23f1-039ada3cf609",
@@ -588,7 +1040,15 @@
       "date": "1947-10-28",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefb331a-d0b4-102d-bcf8-003048976d84",
@@ -596,7 +1056,12 @@
       "date": "1948-04-05",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [],
+      "places": [
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/8894854d-b37a-d2e3-ecb1-907514c0864c",
@@ -604,7 +1069,12 @@
       "date": "1946-09-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/ea565d24-31c6-8cee-046a-d02b87070b60",
@@ -612,7 +1082,12 @@
       "date": "1947-07-29",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [],
+      "places": [
+        "java",
+        "semarang"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/c13fbdbb-8a9a-3ea7-6bc8-564bc1cf5c51",
@@ -620,7 +1095,12 @@
       "date": "1947-07-23",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/64bbe149-eb92-1b53-7316-13968f8bb5a5",
@@ -628,7 +1108,14 @@
       "date": "1946-12-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aef542d4-d0b4-102d-bcf8-003048976d84",
@@ -636,7 +1123,14 @@
       "date": "1947-09-27",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "landscape"
+      ],
+      "places": [
+        "java",
+        "semarang"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/329716fe-8974-eb12-8d69-cdfaed27a7c5",
@@ -644,7 +1138,15 @@
       "date": "1948-09-27",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "creator": null,
-      "rights": "http://rightsstatements.org/page/CNE/1.0/"
+      "rights": "http://rightsstatements.org/page/CNE/1.0/",
+      "topics": [
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af02f5dc-d0b4-102d-bcf8-003048976d84",
@@ -652,7 +1154,14 @@
       "date": "1949-09-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/a24289df-b6a7-06f3-48bd-7edee1cfc749",
@@ -660,7 +1169,14 @@
       "date": "1948-11-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/7b53124a-fcc3-49ee-e1e5-cbddb95bcaf2",
@@ -668,7 +1184,16 @@
       "date": "1948-10-23",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military",
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/8d9bb2c7-18d4-4765-daa1-99eb5cac1c05",
@@ -676,7 +1201,16 @@
       "date": "1948-10-23",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military",
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/7ab0d309-c156-8224-1fe6-e962c64d0d45",
@@ -684,7 +1218,15 @@
       "date": "1946-08-31",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "architecture",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/b90cabb1-3eb5-f1ed-876a-0d79515d2996",
@@ -692,7 +1234,14 @@
       "date": "1947-07-25",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefecf5c-d0b4-102d-bcf8-003048976d84",
@@ -700,7 +1249,15 @@
       "date": null,
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/0813bbc0-f970-1352-bb00-eec1f3a99cc4",
@@ -708,7 +1265,16 @@
       "date": "1948-09-27",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military",
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/54f38a97-9496-9a7e-48e4-1fbd5f853f58",
@@ -716,7 +1282,12 @@
       "date": "1930-08-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af08b95e-d0b4-102d-bcf8-003048976d84",
@@ -724,7 +1295,12 @@
       "date": "1947-07-25",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefed0e2-d0b4-102d-bcf8-003048976d84",
@@ -732,7 +1308,16 @@
       "date": null,
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "culture",
+        "knil",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefbe6fc-d0b4-102d-bcf8-003048976d84",
@@ -740,7 +1325,15 @@
       "date": "1948-02-09",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "decolonization",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefdfb86-d0b4-102d-bcf8-003048976d84",
@@ -748,7 +1341,14 @@
       "date": "1948-08-22",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "landscape"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aef948f2-d0b4-102d-bcf8-003048976d84",
@@ -756,7 +1356,12 @@
       "date": "1947-07-26",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/1db06849-bc35-c519-c08e-3208f66c9bb3",
@@ -764,7 +1369,12 @@
       "date": "1948-08-22",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/91ff88b8-9d60-743e-b369-cc623ff7c915",
@@ -772,7 +1382,15 @@
       "date": "1946-08-31",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "architecture",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/f7f64b98-f6db-048c-d7ce-1644f01d1f69",
@@ -780,7 +1398,12 @@
       "date": "1946-01-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/c72322dd-12ee-9dbc-65eb-c08aaca03644",
@@ -788,7 +1411,14 @@
       "date": "1948-05-05",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/be027e27-4a43-1010-6cb1-5da421a90de7",
@@ -796,7 +1426,12 @@
       "date": "1948-04-05",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/ea8c5fce-4fd9-b355-b971-b14c9d43d909",
@@ -804,7 +1439,15 @@
       "date": "1948-02-09",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "decolonization",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af08a28e-d0b4-102d-bcf8-003048976d84",
@@ -812,7 +1455,15 @@
       "date": "1947-07-26",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military",
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af02f69a-d0b4-102d-bcf8-003048976d84",
@@ -820,7 +1471,14 @@
       "date": "1949-09-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af0627de-d0b4-102d-bcf8-003048976d84",
@@ -828,7 +1486,12 @@
       "date": "1949-09-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aef966de-d0b4-102d-bcf8-003048976d84",
@@ -836,7 +1499,12 @@
       "date": "1947-07-27",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/137aee46-4001-e220-cb8e-da974af082e0",
@@ -844,7 +1512,16 @@
       "date": "1948-09-27",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military",
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af06fb78-d0b4-102d-bcf8-003048976d84",
@@ -852,7 +1529,15 @@
       "date": null,
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af026874-d0b4-102d-bcf8-003048976d84",
@@ -860,7 +1545,14 @@
       "date": "1949-07-03",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af00a99e-d0b4-102d-bcf8-003048976d84",
@@ -868,7 +1560,11 @@
       "date": "1948-12-07",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/aefdc940-d0b4-102d-bcf8-003048976d84",
@@ -876,7 +1572,14 @@
       "date": "1948-08-28",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "batavia",
+        "java",
+        "sumatra"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af0626e4-d0b4-102d-bcf8-003048976d84",
@@ -884,7 +1587,12 @@
       "date": "1949-09-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/d51dd769-4436-16bd-25b6-67ec8f755ef1",
@@ -892,7 +1600,14 @@
       "date": "1948-08-22",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "landscape"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/dee6e0d2-0c6b-b3be-d206-75f9a19caebe",
@@ -900,7 +1615,15 @@
       "date": "1946-08-31",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "architecture",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aef70074-d0b4-102d-bcf8-003048976d84",
@@ -908,7 +1631,15 @@
       "date": "1950-04-15",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/70c3ae9f-0f08-40f4-8f3b-142745aba8a0",
@@ -916,7 +1647,16 @@
       "date": "1948-04-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military",
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java",
+        "sumatra"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/f35893e8-1d9a-0842-6719-e2bf4d839281",
@@ -924,7 +1664,12 @@
       "date": "1948-08-22",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aef8f7a8-d0b4-102d-bcf8-003048976d84",
@@ -932,7 +1677,12 @@
       "date": "1947-07-25",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af057190-d0b4-102d-bcf8-003048976d84",
@@ -940,7 +1690,15 @@
       "date": "1948-09-30",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefc2fd6-d0b4-102d-bcf8-003048976d84",
@@ -948,7 +1706,14 @@
       "date": "1948-02-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/f2a226c5-30bb-53a5-6fcc-36a9db48f14a",
@@ -956,7 +1721,11 @@
       "date": "1948-12-07",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/47b13de7-5764-cc84-ba71-ded085d0516b",
@@ -964,7 +1733,11 @@
       "date": "1948-12-07",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": []
     },
     {
       "uri": "http://proxy.handle.net/10648/67801a3a-4575-7488-cecc-027c78ff1446",
@@ -972,7 +1745,14 @@
       "date": "1947-07-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "decolonization"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aeeb0648-d0b4-102d-bcf8-003048976d84",
@@ -980,7 +1760,12 @@
       "date": "1946-04-01",
       "collection": "Foto's Nationaal Archief",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/d0d7980c-33c3-803a-42f8-5e2c34de23c1",
@@ -988,7 +1773,15 @@
       "date": "1948-06-24",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aef674e2-d0b4-102d-bcf8-003048976d84",
@@ -996,7 +1789,14 @@
       "date": "1950-02-16",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/a0d5bdb7-c7bd-bd06-b905-a7702e840d51",
@@ -1004,7 +1804,15 @@
       "date": "1948-02-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/e6cbe83c-2a24-4853-2fef-80725bc5bdc8",
@@ -1012,7 +1820,12 @@
       "date": "1947-09-30",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aef6faca-d0b4-102d-bcf8-003048976d84",
@@ -1020,7 +1833,15 @@
       "date": null,
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af0195e8-d0b4-102d-bcf8-003048976d84",
@@ -1028,7 +1849,14 @@
       "date": "1949-02-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefd2abc-d0b4-102d-bcf8-003048976d84",
@@ -1036,7 +1864,12 @@
       "date": "1948-08-31",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/d2e403c7-cbf2-fc05-fc19-397ee20e13da",
@@ -1044,7 +1877,12 @@
       "date": "1947-09-30",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefa274a-d0b4-102d-bcf8-003048976d84",
@@ -1052,7 +1890,15 @@
       "date": "1948-06-24",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/84cf0478-9245-25a4-1349-fba998ae1949",
@@ -1060,7 +1906,15 @@
       "date": "1948-09-27",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af019782-d0b4-102d-bcf8-003048976d84",
@@ -1068,7 +1922,14 @@
       "date": "1949-02-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/3f6007f3-fb61-1cb9-a599-7e025af9beba",
@@ -1076,7 +1937,14 @@
       "date": "1948-10-10",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefe3416-d0b4-102d-bcf8-003048976d84",
@@ -1084,7 +1952,14 @@
       "date": "1948-07-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/df672357-8f9d-34ed-1e33-94e6ea0e66a7",
@@ -1092,7 +1967,15 @@
       "date": "1948-02-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/ade2abe8-d0b4-102d-bcf8-003048976d84",
@@ -1100,7 +1983,14 @@
       "date": "1946-01-01",
       "collection": "Fotocollectie Elsevier",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "landscape"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/9746db0a-a78c-6ab0-64a8-c4017bb35074",
@@ -1108,7 +1998,14 @@
       "date": "1950-06-30",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/be6d936a-dcf1-5422-ec16-563aae9eabeb",
@@ -1116,7 +2013,14 @@
       "date": "1949-05-04",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/4e0d4171-aca7-fcf6-085c-096869e9da99",
@@ -1124,7 +2028,12 @@
       "date": "1946-01-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/a5b5f07c-2d50-e882-c252-11c3e2477d01",
@@ -1132,7 +2041,14 @@
       "date": "1948-01-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/67af9aa5-6336-5ae1-5480-9257f99cff32",
@@ -1140,7 +2056,16 @@
       "date": "1948-10-23",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military",
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefbdf90-d0b4-102d-bcf8-003048976d84",
@@ -1148,7 +2073,14 @@
       "date": "1948-02-12",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/2916e155-ba59-bf72-299f-69741e3c03d0",
@@ -1156,7 +2088,12 @@
       "date": "1946-01-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af00d6e4-d0b4-102d-bcf8-003048976d84",
@@ -1164,7 +2101,14 @@
       "date": "1948-12-13",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefcf808-d0b4-102d-bcf8-003048976d84",
@@ -1172,7 +2116,16 @@
       "date": "1948-10-23",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military",
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aeeb04cc-d0b4-102d-bcf8-003048976d84",
@@ -1180,7 +2133,12 @@
       "date": "1946-04-01",
       "collection": "Foto's Nationaal Archief",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/a5722494-0111-452f-c945-e0b2b3a86e95",
@@ -1188,7 +2146,15 @@
       "date": "1948-02-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefdc6e8-d0b4-102d-bcf8-003048976d84",
@@ -1196,7 +2162,17 @@
       "date": "1948-08-28",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military",
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java",
+        "sumatra"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af047358-d0b4-102d-bcf8-003048976d84",
@@ -1204,7 +2180,15 @@
       "date": "1948-03-07",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military",
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/c3e43853-0719-32b9-f089-84f1044d98de",
@@ -1212,7 +2196,12 @@
       "date": "1947-10-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af0576ea-d0b4-102d-bcf8-003048976d84",
@@ -1220,7 +2209,15 @@
       "date": "1948-09-30",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/73a31d78-7c8a-e081-393c-394f6000ab84",
@@ -1228,7 +2225,15 @@
       "date": "1946-08-31",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "architecture",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af030d74-d0b4-102d-bcf8-003048976d84",
@@ -1236,7 +2241,12 @@
       "date": "1949-10-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefd4b64-d0b4-102d-bcf8-003048976d84",
@@ -1244,7 +2254,15 @@
       "date": "1948-09-27",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/2b7443e1-7543-3cb9-147d-7423dcc48151",
@@ -1252,7 +2270,14 @@
       "date": "1948-02-12",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/f3b2d58c-2466-5890-26c8-c79e41ca20b5",
@@ -1260,7 +2285,16 @@
       "date": "1948-10-23",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military",
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af00d3d8-d0b4-102d-bcf8-003048976d84",
@@ -1268,7 +2302,14 @@
       "date": "1948-12-13",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af076950-d0b4-102d-bcf8-003048976d84",
@@ -1276,7 +2317,14 @@
       "date": null,
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/97843798-200f-5ed2-2e18-b54f7150d7d8",
@@ -1284,7 +2332,15 @@
       "date": "1948-07-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/ffa59061-3613-d901-22cf-dad545a3d793",
@@ -1292,7 +2348,16 @@
       "date": "1948-10-23",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military",
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/7586a9c0-a092-b8b5-fc63-1293bf74d059",
@@ -1300,7 +2365,14 @@
       "date": "1948-02-12",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefbe4c2-d0b4-102d-bcf8-003048976d84",
@@ -1308,7 +2380,15 @@
       "date": "1948-02-09",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "decolonization",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefed678-d0b4-102d-bcf8-003048976d84",
@@ -1316,7 +2396,15 @@
       "date": null,
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "knil",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/dca41283-98a1-187a-4c6c-e235de4d3c80",
@@ -1324,7 +2412,17 @@
       "date": "1949-03-26",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "bersiap",
+        "decolonization",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java",
+        "yogyakarta"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefe3344-d0b4-102d-bcf8-003048976d84",
@@ -1332,7 +2430,14 @@
       "date": "1948-07-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aef50ac6-d0b4-102d-bcf8-003048976d84",
@@ -1340,7 +2445,14 @@
       "date": "1947-08-22",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af05a02a-d0b4-102d-bcf8-003048976d84",
@@ -1348,7 +2460,14 @@
       "date": null,
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/ade7071a-d0b4-102d-bcf8-003048976d84",
@@ -1356,7 +2475,12 @@
       "date": "1946-01-01",
       "collection": "Fotocollectie Elsevier",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefc5952-d0b4-102d-bcf8-003048976d84",
@@ -1364,7 +2488,14 @@
       "date": "1948-02-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aeeb11c4-d0b4-102d-bcf8-003048976d84",
@@ -1372,7 +2503,14 @@
       "date": "1946-04-01",
       "collection": "Foto's Nationaal Archief",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "architecture"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/2b1a81bf-481d-07ed-dd88-1bd7f5c6331a",
@@ -1380,7 +2518,14 @@
       "date": "1947-10-01",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/eb486cca-c3cc-474e-645b-c13c2aff6b1d",
@@ -1388,7 +2533,15 @@
       "date": "1948-06-24",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aef55558-d0b4-102d-bcf8-003048976d84",
@@ -1396,7 +2549,12 @@
       "date": "1947-09-04",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/665655c2-3a20-a288-1503-18d399a5185b",
@@ -1404,7 +2562,16 @@
       "date": "1948-10-23",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military",
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefc0eb6-d0b4-102d-bcf8-003048976d84",
@@ -1412,7 +2579,12 @@
       "date": "1948-02-07",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefd7120-d0b4-102d-bcf8-003048976d84",
@@ -1420,7 +2592,15 @@
       "date": "1948-09-27",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "transport"
+      ],
+      "places": [
+        "bandung",
+        "batavia",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/af01cf7c-d0b4-102d-bcf8-003048976d84",
@@ -1428,7 +2608,17 @@
       "date": "1949-03-26",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "bersiap",
+        "decolonization",
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java",
+        "yogyakarta"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/aefd0992-d0b4-102d-bcf8-003048976d84",
@@ -1436,7 +2626,14 @@
       "date": "1948-10-10",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "society"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     },
     {
       "uri": "http://proxy.handle.net/10648/f062eec0-e363-1cfe-e0c9-8813fc37f70d",
@@ -1444,8 +2641,38 @@
       "date": "1948-02-12",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "match": "Bandoeng/Bandung"
+      "match": "Bandoeng/Bandung",
+      "topics": [
+        "military"
+      ],
+      "places": [
+        "bandung",
+        "java"
+      ]
     }
   ],
-  "bandoengRecords": 100
+  "schemaVersion": 2,
+  "topicCounts": {
+    "knil": 40,
+    "military": 98,
+    "culture": 2,
+    "society": 16,
+    "transport": 35,
+    "landscape": 6,
+    "architecture": 15,
+    "decolonization": 13,
+    "bersiap": 2
+  },
+  "placeCounts": {
+    "java": 148,
+    "semarang": 10,
+    "batavia": 43,
+    "malang": 2,
+    "bandung": 107,
+    "bogor": 5,
+    "surabaya": 3,
+    "other-islands": 2,
+    "sumatra": 5,
+    "yogyakarta": 4
+  }
 }
