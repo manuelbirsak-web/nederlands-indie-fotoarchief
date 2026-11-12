@@ -192,7 +192,7 @@ async function load(reset=false) {
     continuation = data.continue||null;
     updateCount();
     if (!visibleCount && reset) {
-      $('#results').append(status('Geen passende foto's gevonden','Probeer een andere schrijfwijze of verwijder een filter.'));
+      $('#results').append(status('Geen passende foto’s gevonden','Probeer een andere schrijfwijze of verwijder een filter.'));
     } else if (!found && !reset) {
       $('#results').append(status('Nog geen zichtbare resultaten','Er zijn geen extra foto’s gevonden die aan de actieve metadatafilter voldoen.'));
     }
