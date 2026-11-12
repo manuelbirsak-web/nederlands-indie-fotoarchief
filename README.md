@@ -16,10 +16,10 @@ Een onafhankelijk digitaal startpunt voor historisch beeldmateriaal over Nederla
 - Bandoeng-zoekthema's: Bragaweg, Dago, alun-alun, Technische Hoogeschool, spoor/station en 1946.
 - Live beeldzoekfunctie via Wikimedia Commons; automatisch doorzoeken van maximaal vier resultaatpagina's wanneer irrelevante resultaten worden weggefilterd.
 - Duplicaatdetectie tijdens paginering; afbeeldingen openen op volledige grootte in een nieuw tabblad.
-- Afzonderlijke rubriek Bersiap & onafhankelijkheidsstrijd met bronkritische formulering.
+- Afzonderlijke rubriek Bersiap & onafhankelijkheidsstrijd met bronkritische formulering; jaartal alleen is geen voldoende reden om een afbeelding of archiefrecord in deze rubriek te plaatsen.
 - Standaardperiode 1800–1959; ongedateerde foto's worden toegelaten wanneer titel, beschrijving of Commons-categorieën aantoonbaar verwijzen naar Nederlands-Indië, de koloniale periode, Bersiap, KNIL of een historische fotoreeks.
 - Extra relevantiefilter per rubriek: titel en beschrijving moeten aantoonbaar bij het gekozen onderwerp/gebied passen.
-- Niet-fotografische resultaten zoals logo's, kaarten, ranginsignes, boekomslagen, tijdschriften, kranten en posters worden uitgesloten.
+- Niet-fotografische resultaten zoals logo's, kaarten, ranginsignes, boekomslagen, tijdschriften, kranten, posters, poststukken en munten worden uitgesloten.
 - Onderwerpsfilter als zoektermverfijning; dit is geen gecontroleerde archiefclassificatie.
 - Paginering via de continuation-parameters van de MediaWiki API.
 - Foto's bewaren in lokale browseropslag.
