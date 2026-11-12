@@ -55,7 +55,7 @@ PLACE_PATTERNS = {
 }
 JAVA_CONTEXT = re.compile(r"\b(?:java|bandoeng|bandung|batavia|jakarta|buitenzorg|bogor|semarang|soerabaja|surabaya|djokja|djocja|yogyakarta|jogjakarta|malang|poerwokerto|tjimahi|cheribon|garoet|tjikampek)\b", re.I)
 KNIL = re.compile(r"\bknil\b|koninklijk nederlands(?:ch)?[- ]indisch leger|militaire luchtvaart knil|nederlands[- ]indisch leger", re.I)
-MILITARY = re.compile(r"\b(?:militair(?:en)?|soldat(?:en)?|sergeant|officier|kapitein|luitenant|generaal|bataljon|eskadron|compagnie|krijgsraad|troepen|geweer|wapen(?:s)?|tank(?:s)?|kazern(?:e|es)|vliegveld|artillerie|leger)\b|\bknil\b", re.I)
+MILITARY = re.compile(r"\b(?:militair(?:en)?|solda(?:at|ten)|soldier(?:s)?|sergeant|officier|kapitein|luitenant|generaal|bataljon|eskadron|compagnie|krijgsraad|troepen|geweer|wapen(?:s)?|tank(?:s)?|kazern(?:e|es)|vliegveld|artillerie|leger)\b|\bknil\b", re.I)
 DECOLONIZATION = re.compile(
     r"\b(?:bersiap|tni|pemoeda|republikeins(?:e)?|republiek indonesia|onafhankelijkheidsstrijd|"
     r"onafhankelijkheid|indonesian national revolution|indonesian war of independence|"
