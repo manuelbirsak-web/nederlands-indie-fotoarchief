@@ -28,6 +28,11 @@ class RijksmuseumIndexTests(unittest.TestCase):
             "classified_as": [{"notation": [{"@value": "albumblad"}, {"@value": "photograph"}]}]
         }))
 
+    def test_linked_art_notation_may_be_a_single_object(self) -> None:
+        self.assertTrue(photograph_type({
+            "classified_as": [{"notation": {"@language": "nl", "@value": "foto"}}]
+        }))
+
     def test_image_with_explicit_public_domain_mark_is_allowed(self) -> None:
         image, rights, evidence = image_evidence({
             "subject_of": [{
