@@ -76,6 +76,16 @@ def main() -> None:
         fail("Uploaddatum mag niet als historische opnamedatum worden gebruikt")
     if "DateTimeOriginal" not in source or "Datering niet vermeld" not in source:
         fail("Expliciete historische datering en onbekende datum moeten worden onderscheiden")
+    if '<option value="1800-1950" selected>' not in source:
+        fail("De standaardweergave moet strikt op de historische periode 1800–1950 staan")
+    if "function isRelevantHistoricalPhoto" not in source or "if (!isRelevantHistoricalPhoto(page,meta,year)) continue;" not in source:
+        fail("Historische beeldrelevantie wordt niet per resultaat gecontroleerd")
+    if "year===null||year<1800" not in source:
+        fail("Ongedateerde of niet-historisch gedateerde afbeeldingen mogen niet standaard in de galerij")
+    if r"/\\b(wordmark|logo|map of|coat of arms|rank insignia|book cover" not in source:
+        fail("Niet-fotografische illustraties en publicaties worden niet aantoonbaar uitgesloten")
+    if "match(/(?:18|19|20)\\\\d{2}/)" not in source:
+        fail("Datumparser voor Nationaal Archief-records ontbreekt of is onjuist")
     if "AbortController" not in source or "data.continue" not in source:
         fail("Abort/continuation afhandeling ontbreekt")
     if "textContent" not in source:
