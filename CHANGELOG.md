@@ -3,30 +3,37 @@
 ## 1.0 — 12 november 2026
 
 ### Website en zoeken
-- Hoofdrubrieken voor Nederlands-Indië, Java, Bandoeng/Bandung, KNIL & militair, Bersiap & onafhankelijkheidsstrijd en samenleving.
-- Java heeft een standaardkeuze **Heel Java** en plaatsfilters voor Bandoeng, Batavia, Buitenzorg, Semarang, Soerabaja, Djokja, Malang en overig Java.
-- Bandoeng-zoekthema's voor onder meer Bragaweg, Dago, alun-alun, Technische Hoogeschool en station/spoor.
-- Live fotozoekfunctie via Wikimedia Commons met duplicaatcontrole, filteren op historische context, bron- en licentieverwijzingen en paginering.
-- Nationaal Archief-records worden als beschrijvingen en permanente Handle-links getoond. Rechten-onzekere thumbnails worden niet gereproduceerd.
-- Nationaal Archief-resultaten kunnen in porties worden uitgebreid via **Meer archiefrecords tonen**.
+- Rubrieken voor Nederlands-Indië, Java, Bandoeng/Bandung, KNIL & militair, Bersiap & onafhankelijkheidsstrijd en samenleving.
+- Java start met **Heel Java** en biedt plaatsfilters voor Bandoeng, Batavia, Buitenzorg, Semarang, Soerabaja, Djokja, Malang en overig Java.
+- Bandoeng-zoekthema's voor Bragaweg, Dago, alun-alun, Technische Hoogeschool, station/spoor en 1946.
+- Live Wikimedia Commons-beeldresultaten met historische contextfiltering, duplicaatdetectie, bron-/licentie-informatie en paginering.
+- Nationaal Archief- en Rijksmuseum-records zijn geïntegreerd als lokale metadata-snapshots met bronlinks en aanvullende filters.
+- De institutionele onderzoeksdirectory maakt onderscheid tussen geïntegreerde datasets en externe zoekingangen.
 
-### Bronnetwerk
-- Instellingsportalen en documentatie toegevoegd voor Nationaal Archief, KITLV/Leiden, Het Utrechts Archief, NIMH, Wereldmuseum, Het Nieuwe Instituut, Rijksmuseum, Europeana, Delpher, Atlas of Mutual Heritage en Wikimedia Commons.
-- De website maakt zichtbaar onderscheid tussen geïntegreerde bronnen en externe onderzoeksingangen.
+### Geïntegreerde gegevensbronnen
+- **Nationaal Archief:** snapshot schema v2 met 4.000 metadatarecords (peildatum 12 november 2026). De harvester gebruikte acht pagina's van 500 records en bereikte de veiligheidslimiet; de selectie is dus expliciet onvolledig.
+- **Rijksmuseum:** snapshot schema v1 met 229 foto-objecten. Van 215 objecten is een expliciete Public Domain Mark 1.0- of CC0 1.0-verklaring op het digitale beeld zelf vastgelegd; 14 records blijven metadata-only.
+- **Wikimedia Commons:** live API-zoekbron; licentie en oorspronkelijke bestandspagina worden per bestand getoond.
+- KITLV/Leiden, Utrechts Archief, NIMH, Wereldmuseum, Het Nieuwe Instituut, Europeana, Delpher en Atlas of Mutual Heritage zijn externe onderzoeksingangen, geen geïntegreerde datafeeds.
 
-### Datakwaliteit
-- Metadata schema v2: expliciete onderwerp- en plaatslabels op basis van de afzonderlijke bronbeschrijving.
-- Collectienamen worden niet gebruikt als bewijs voor een individuele recordclassificatie.
-- KNIL en breder militair zijn onderscheiden.
-- Bersiap is een strikt label dat alleen volgt wanneer het woord expliciet in de bronbeschrijving staat; dekolonisatie is een afzonderlijk, breder label.
-- Datering wordt niet afgeleid uit upload- of digitaliseringstijdstempels.
+### Historische en rechtenmethodiek
+- KNIL en bredere militaire onderwerpen zijn afzonderlijke labels.
+- Bersiap is een strikt label dat alleen wordt toegekend wanneer de individuele bronbeschrijving het woord Bersiap expliciet gebruikt.
+- Dekolonisatie is een afzonderlijke, bredere classificatie.
+- Collectienamen en jaartallen worden niet als zelfstandig bewijs voor een individueel onderwerp gebruikt.
+- Upload- en digitaliseringstijdstempels worden niet als opnamedatum gepresenteerd.
+- Rijksmuseum-afbeeldingen worden alleen getoond met een expliciete beeldniveauverklaring Public Domain Mark 1.0 of CC0 1.0; objectniveau-metadata wordt niet als beeldlicentie geïnterpreteerd.
+- Nationaal Archief-records worden als metadata en Handle-links getoond; er worden geen rechten-onzekere thumbnails hergebruikt.
 
 ### Kwaliteitsborging
-- GitHub Actions voert vóór publicatie HTML- en interfacecontractchecks uit, classificatie-unit-tests en JavaScript-syntaxcontrole.
-- De methode, beperkingen en bijdragenprocedure zijn gedocumenteerd in `METHODOLOGY.md` en `CONTRIBUTING.md`.
+- GitHub Actions valideert HTML-, interface-, bron- en data-contracten.
+- Python-harvesters en tests worden gecompileerd.
+- Unit-tests toetsen classificatie, Linked Art-structuren en beeldrechten.
+- Inline JavaScript wordt met Node.js op syntax gecontroleerd.
+- Methode, beperkingen en bijdragenprocedure staan in METHODOLOGY.md en CONTRIBUTING.md.
 
 ### Grenzen van deze release
-- Wikimedia Commons levert live beeldresultaten; Nationaal Archief en Rijksmuseum zijn geïntegreerd via lokale metadata-snapshots.
-- De Nationaal Archief-snapshot bevat bij deze release 2.250 records. De Rijksmuseum-snapshot bevat 229 foto-objecten; uitsluitend records met expliciete beeldrechten PD Mark 1.0 of CC0 1.0 tonen een afbeelding.
-- Andere genoemde collectieportalen zijn externe zoekingangen, geen rechtstreekse imports.
-- De release is geen volledige inventaris van Nederlands-Indië-fotografie en bevat geen record-voor-record juridische of historische certificering.
+- De Nationaal Archief-snapshot is een begrensde selectie en bereikte de ingestelde limiet van 4.000 records.
+- De Rijksmuseum-snapshot is gebaseerd op een beperkte lijst zoektermen en geselecteerde zoekresultaten; geen volledige collectie-export.
+- Externe collectieportalen zijn niet rechtstreeks geïntegreerd.
+- Geen volledige record-voor-record historische verificatie, juridische rechtencontrole, onafhankelijke toegankelijkheidsaudit of Lighthouse-performance-audit geclaimd.
