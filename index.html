@@ -71,7 +71,7 @@ h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;mar
 .footer{background:#17251f;color:#d9d3c6;padding:32px max(5vw,calc((100vw - 1380px)/2));font:12px/1.7 var(--sans)}
 .footer strong{color:#f5efe2;letter-spacing:.07em;text-transform:uppercase}.footer a{color:#ddc597}
 @media(max-width:900px){.results{grid-template-columns:repeat(2,minmax(0,1fr))}.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.intro{gap:24px}}
-@media(max-width:620px){.topline{font-size:9px;letter-spacing:.1em}.topline span:last-child{display:none}.hero{padding-top:47px;padding-bottom:42px}.hero-bottom{font-size:10px}nav button{padding:14px 12px}.intro{grid-template-columns:1fr;gap:18px}main{padding-top:27px}.discovery{padding:15px}.searchrow{flex-direction:column}.searchrow .primary{padding:13px}.results,.archive-grid{grid-template-columns:1fr}.photo-media{aspect-ratio:16/10}.head{align-items:start;flex-direction:column}.head-right{text-align:left}.filters{align-items:start}.filters label{width:100%}}
+@media(max-width:620px){.filters select{width:100%;max-width:100%;min-width:0}.topline{font-size:9px;letter-spacing:.1em}.topline span:last-child{display:none}.hero{padding-top:47px;padding-bottom:42px}.hero-bottom{font-size:10px}nav button{padding:14px 12px}.intro{grid-template-columns:1fr;gap:18px}main{padding-top:27px}.discovery{padding:15px}.searchrow{flex-direction:column}.searchrow .primary{padding:13px}.results,.archive-grid{grid-template-columns:1fr}.photo-media{aspect-ratio:16/10}.head{align-items:start;flex-direction:column}.head-right{text-align:left}.filters{align-items:start}.filters label{width:100%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 </style>
 </head>
@@ -160,10 +160,18 @@ let favorites=readFavorites();
 function buildQuery(){const typed=$('#q').value.trim();let base=views[view].query;if(view==='java')base=places[place];if(view==='bandung'&&customTerm)base+=' '+customTerm;if(typed)base+=' '+typed;const topic=$('#topic').value;if(topic)base+=' '+topicTerms[topic];return base+' filetype:bitmap'}
 function yearFromMetadata(meta){
  const raw=meta?.DateTimeOriginal?.value||'';
- const match=String(raw).match(/(?:^|\\D)((?:18|19)\\d{2})(?:\\D|$)/);
+ const match=String(raw).match(/(?:^|\\D)((?:18|19|20)\\d{2})(?:\\D|$)/);
  const year=match?Number(match[1]):null;
- // Never use Commons Date/DateTime: these can be Flickr upload or digitisation timestamps.
- return year!==null&&year>=1800&&year<=1959?year:null;
+ if(year!==null&&year>=1800&&year<=1959)return year;
+ if(year!==null&&year>1959){
+  const description=metadataValue(meta,'ImageDescription').toLowerCase();
+  const archivalDateNote=/taken in the first half of the twentieth century|taken in the first half of the 20th century|photographs? (?:were )?taken in the (?:19th|20th) century|gemaakt in de eerste helft van de twintigste eeuw|genomen in de eerste helft van de twintigste eeuw/i;
+  // Some Commons records expose a Flickr/scan timestamp although the collection text explicitly dates the underlying photographs to the colonial period.
+  if(archivalDateNote.test(description))return null;
+  return year;
+ }
+ // Never use Commons Date/DateTime: those fields are commonly upload or digitisation timestamps.
+ return null;
 }
 function periodMatches(year){const range=$('#period').value;if(range==='all')return true;if(range==='undated')return year===null;if(year===null)return range==='1800-1959';const [start,end]=range.split('-').map(Number);return year>=start&&year<=end}
 function isRelevantHistoricalPhoto(page,meta,year){
@@ -173,14 +181,14 @@ function isRelevantHistoricalPhoto(page,meta,year){
  const objectName=metadataValue(meta,'ObjectName');
  const categories=metadataValue(meta,'Categories');
  const text=(title+' '+description+' '+objectName+' '+categories).toLowerCase();
- if(/\b(wordmark|logo|map of|coat of arms|rank insignia|book cover|journal|magazine|newspaper|poster|stamp|flag icon)\b/i.test(text))return false;
+ if(/\b(wordmark|logo|map of|coat of arms|rank insignia|book cover|journal|magazine|newspaper|poster|stamp|flag icon|letter|lettre|envelope|postcard|post card|postage|philatel|postal|coin|banknote|ticket|manuscript|document scan)\b/i.test(text))return false;
  const viewPatterns={
   home:/dutch east indies|nederlands.?indi[eë]|netherlands indies|colonial|koloniaal|koloniale|bersiap|knil|bandoeng|bandung|batavia|buitenzorg|java|sumatra|borneo|celebes|surabaya|soerabaja|semarang|yogyakarta|djokja/i,
   indies:/dutch east indies|nederlands.?indi[eë]|netherlands indies|colonial|koloniaal|koloniale|bersiap|knil|bandoeng|bandung|batavia|buitenzorg|java|sumatra|borneo|celebes|surabaya|soerabaja|semarang|yogyakarta|djokja/i,
   java:/java|bandoeng|bandung|batavia|jakarta|buitenzorg|bogor|semarang|soerabaja|surabaya|djokja|yogyakarta|malang/i,
   bandung:/bandoeng|bandung/i,
   knil:/knil|royal netherlands east indies army|netherlands indies army|military|militair|soldier|soldaat|barracks|kazerne|bersiap|koloniaal|colonial/i,
-  bersiap:/bersiap|indonesian national revolution|indonesian war of independence|independence war|revolution|1945|1946|1947|1948|1949/i,
+  bersiap:/bersiap|indonesian national revolution|indonesian war of independence|independence war|revolution|agresi militer|perang kemerdekaan|perang revolusi|indonesian independence|dutch police action|bandoeng.{0,30}194[5-9]|bandung.{0,30}194[5-9]|194[5-9].{0,30}(bandoeng|bandung|batavia|jakarta|indonesia|indies)/i,
   daily:/dutch east indies|nederlands.?indi[eë]|netherlands indies|colonial|koloniaal|koloniale|bersiap|knil|java|indonesia|indonesian|batavia|bandoeng|bandung/i
  };
  if(!viewPatterns[view]?.test(text))return false;
