@@ -17,7 +17,6 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parents[1]
 TARGET = ROOT / "assets" / "rijksmuseum.json"
 SEARCH_ENDPOINT = "https://data.rijksmuseum.nl/search/collection"
-PAGE_LIMIT = 100
 MAX_OBJECTS = 350
 WORKERS = 6
 ALLOWED_IMAGE_RIGHTS = {
@@ -248,7 +247,8 @@ def extract_record(object_uri: str, search_terms: list[str]) -> dict | None:
     creator = next(iter(creators), None)
 
     image_url, image_rights_url, image_rights = image_evidence(obj)
-    all_text = " ".join([title or "", description or "", " ".join(descriptions), " ".join(search_terms)])
+    # Search terms are provenance only, not evidence for place/topic classification.
+    all_text = " ".join([title or "", description or "", " ".join(descriptions)])
     topics, places = classify_record(all_text)
 
     if not title and not description:
