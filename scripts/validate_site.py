@@ -84,8 +84,16 @@ def main() -> None:
         fail("Ongedateerde bestanden moeten via inhoudelijke relevantie kunnen worden toegelaten")
     if "if(year===null&&!historicalContext.test(text))return false;" not in source:
         fail("Ongedateerde beelden moeten een expliciete historische contextverwijzing bevatten")
-    if "year>=1800&&year<=1959?year:null" not in source:
+    if "year>=1800&&year<=1959)return year" not in source:
         fail("Opnamedatering moet worden begrensd tot 1800–1959")
+    if "return base+" not in source or "filetype:bitmap" not in source:
+        fail("Commons-zoekquery moet de bronzoekterm ongewijzigd doorgeven")
+    if "|letter|lettre|envelope|postcard" not in source:
+        fail("Niet-fotografische poststukken moeten uit de fotogalerij worden geweerd")
+    if "bandoeng.{0,30}194[5-9]" not in source:
+        fail("Bersiap-rubriek moet op historische context filteren, niet alleen op jaartal")
+    if ".filters select{width:100%;max-width:100%;min-width:0}" not in source:
+        fail("Mobiele datumfilters moeten binnen de viewport blijven")
     if "/\\b(wordmark|logo|map of|coat of arms|rank insignia|book cover" not in source:
         fail("Niet-fotografische illustraties en publicaties worden niet aantoonbaar uitgesloten")
     if "match(/(?:18|19|20)\\d{2}/)" not in source:
