@@ -102,7 +102,7 @@ h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;mar
 <section class="discovery" aria-label="Zoek en filter in de beeldcollectie">
 <div class="searchrow"><input id="q" type="search" placeholder="Zoek bijvoorbeeld: Bragaweg, Dago, KNIL, Batavia…" aria-label="Zoek in het fotoarchief"><button id="go" class="primary" type="button">Zoeken</button></div>
 <div class="filters">
-<label for="period">Datering</label><select id="period"><option value="archive" selected>Historische periode 1800–1950 + ongedateerd</option><option value="all">Alle perioden</option><option value="1800-1899">1800–1899</option><option value="1900-1919">1900–1919</option><option value="1920-1939">1920–1939</option><option value="1940-1945">1940–1945</option><option value="1945-1950">1945–1950</option><option value="undated">Alleen ongedateerd</option></select>
+<label for="period">Datering</label><select id="period"><option value="1800-1950" selected>Historische periode 1800–1950</option><option value="all">Alle perioden</option><option value="1800-1899">1800–1899</option><option value="1900-1919">1900–1919</option><option value="1920-1939">1920–1939</option><option value="1940-1945">1940–1945</option><option value="1945-1950">1945–1950</option><option value="undated">Alleen ongedateerd</option></select>
 <label for="topic">Onderwerp</label><select id="topic"><option value="">Alle onderwerpen</option><option value="city">Steden & architectuur</option><option value="people">Mensen & dagelijks leven</option><option value="military">KNIL & militair</option><option value="transport">Transport & infrastructuur</option><option value="culture">Cultuur & religie</option><option value="nature">Landschap & natuur</option></select>
 <button id="reset" class="secondary" type="button">Wis filters</button>
 </div>
@@ -114,9 +114,9 @@ h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;mar
 </div>
 </section>
 <div class="head"><div><div class="section-label">Wikimedia Commons · live beeldresultaten</div><h2 id="resultTitle">Historische foto's</h2></div><div class="head-right"><span id="count" aria-live="polite">Klaar om te zoeken</span><br><span id="sourceHint">Per resultaat: bronpagina en rechteninformatie</span></div></div>
-<div id="results" class="results" aria-live="polite" aria-busy="false"><div class="status"><strong>Beeldcollectie</strong>De eerste historische foto's worden opgehaald.</div></div>
+<div id="results" class="results" aria-live="polite" aria-busy="false"><div class="status"><strong>Beeldcollectie</strong>Alleen aantoonbaar gedateerde historische foto's uit 1800–1950 worden getoond.</div></div>
 <button class="more" id="more" type="button" hidden>Meer foto's laden</button>
-<p class="fine">De galerij toont doorzoekbare beeldbestanden, geen volledige inventaris van alle bestaande archieven. Alleen beeldbestanden worden toegelaten; PDF-scans en documenten worden uitgesloten. Datering komt uitsluitend uit expliciete objectmetadata, niet uit de uploaddatum. Onbekende datering blijft onbekend.</p>
+<p class="fine">De galerij toont uitsluitend beeldbestanden waarvan de bronmetadata een datering tussen 1800 en 1950 én een aantoonbare relatie met de gekozen rubriek ondersteunen. Moderne foto's, logo's, kaarten, boekomslagen en ongedateerde bestanden worden standaard uitgesloten. De uploaddatum geldt nooit als historische datering. Kies ‘Alle perioden’ alleen als je bewust ook later beeldmateriaal wilt zien.</p>
 <section id="naArchive" class="archives" aria-labelledby="naTitle">
 <div class="head"><div><div class="section-label">Aanvullende primaire bron · linked open data</div><h2 id="naTitle">Archiefbeschrijvingen van het Nationaal Archief</h2></div><div class="head-right" id="naCount" aria-live="polite">Index wordt geladen</div></div>
 <p class="fine">Dit zijn bronbeschrijvingen, geen vrijgegeven afbeeldingsbestanden. Bij deze records staat de auteursrechtstatus vaak als “Copyright niet bekend” of “Copyright Not Evaluated”. Daarom worden hier geen thumbnails herpubliceerd. Open het originele archiefrecord voor de volledige beschrijving en rechteninformatie.</p>
@@ -154,9 +154,30 @@ const favoritesKey='indisch-beeldarchief-favorites-v1';
 function readFavorites(){try{return new Set(JSON.parse(localStorage.getItem(favoritesKey)||'[]'))}catch{return new Set()}}
 function writeFavorites(set){try{localStorage.setItem(favoritesKey,JSON.stringify([...set]))}catch{}}
 let favorites=readFavorites();
-function buildQuery(){const typed=$('#q').value.trim();let base=views[view].query;if(view==='java')base=places[place];if(view==='bandung'&&customTerm)base+=' '+customTerm;if(typed)base+=' '+typed;const topic=$('#topic').value;if(topic)base+=' '+topicTerms[topic];return base+' photograph filetype:bitmap'}
+function buildQuery(){const typed=$('#q').value.trim();let base=views[view].query;if(view==='java')base=places[place];if(view==='bandung'&&customTerm)base+=' '+customTerm;if(typed)base+=' '+typed;const topic=$('#topic').value;if(topic)base+=' '+topicTerms[topic];return '('+base+') filetype:bitmap'}
 function yearFromMetadata(meta){const raw=meta?.DateTimeOriginal?.value||meta?.Date?.value||'';const match=String(raw).match(/(?:^|\D)((?:18|19|20)\d{2})(?:\D|$)/);return match?Number(match[1]):null}
-function periodMatches(year){const range=$('#period').value;if(!range||range==='all')return true;if(range==='undated')return year===null;if(range==='archive')return year===null||(year>=1800&&year<=1950);if(year===null)return false;const [start,end]=range.split('-').map(Number);return year>=start&&year<=end}
+function periodMatches(year){const range=$('#period').value;if(range==='all')return true;if(range==='undated')return year===null;if(year===null)return false;const [start,end]=range.split('-').map(Number);return year>=start&&year<=end}
+function isRelevantHistoricalPhoto(page,meta,year){
+ if(year===null||year<1800||year>1950)return false;
+ const title=String(page.title||'').replace(/^File:/,'');
+ const description=metadataValue(meta,'ImageDescription');
+ const objectName=metadataValue(meta,'ObjectName');
+ const text=(title+' '+description+' '+objectName).toLowerCase();
+ if(/\\b(wordmark|logo|map of|coat of arms|rank insignia|book cover|journal|magazine|newspaper|poster|stamp|flag icon)\\b/i.test(text))return false;
+ const viewPatterns={
+  home:/dutch east indies|nederlands.?indi[eë]|netherlands indies|knil|bandoeng|bandung|batavia|buitenzorg|java|sumatra|borneo|celebes|surabaya|soerabaja|semarang|yogyakarta|djokja/i,
+  indies:/dutch east indies|nederlands.?indi[eë]|netherlands indies|knil/i,
+  java:/java|bandoeng|bandung|batavia|jakarta|buitenzorg|bogor|semarang|soerabaja|surabaya|djokja|yogyakarta|malang/i,
+  bandung:/bandoeng|bandung/i,
+  knil:/knil|royal netherlands east indies army|netherlands indies army|military|militair|soldier|soldaat|barracks|kazerne/i,
+  daily:/dutch east indies|nederlands.?indi[eë]|java|indonesia|indonesian|batavia|bandoeng|bandung/i
+ };
+ if(!viewPatterns[view]?.test(text))return false;
+ const topic=$('#topic').value;
+ const topicPatterns={city:/street|straat|building|gebouw|architecture|station|hotel|square|plein/i,people:/people|person|family|woman|man|child|markt|school|gezin|bevolking/i,military:/knil|military|militair|army|soldier|soldaat|weapon|wapen|kazerne/i,transport:/railway|train|tram|harbour|haven|bridge|brug/i,culture:/temple|mosque|kerk|moskee|dance|ceremony|religion/i,nature:/landscape|mountain|plantation|river|berg|landschap|rivier/i};
+ if(topic&&topicPatterns[topic]&&!topicPatterns[topic].test(text))return false;
+ return true;
+}
 function escapeText(value){if(!value)return '';const box=document.createElement('textarea');box.innerHTML=String(value);return box.value.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim()}
 function metadataValue(meta,key){return escapeText(meta?.[key]?.value||'')}
 function status(title,message,showRetry=false){const el=document.createElement('div');el.className='status';const strong=document.createElement('strong');strong.textContent=title;const p=document.createElement('div');p.textContent=message;el.append(strong,p);if(showRetry){const b=document.createElement('button');b.className='secondary';b.type='button';b.textContent='Opnieuw proberen';b.addEventListener('click',()=>load(true));el.append(b)}return el}
@@ -174,7 +195,7 @@ async function load(reset=false) {
     continuation = null;
     visibleCount = 0;
     $('#results').replaceChildren();
-    $('#results').append(status('Beeldcollectie laden','Zoekresultaten worden opgehaald bij Wikimedia Commons.'));
+    $('#results').append(status('Beeldcollectie laden','Zoekresultaten worden gecontroleerd op onderwerp en historische datering (1800–1950).'));
     $('#more').hidden = true;
   }
   $('#results').setAttribute('aria-busy','true');
@@ -201,6 +222,7 @@ async function load(reset=false) {
       const meta = page.imageinfo?.[0]?.extmetadata||{};
       const year = yearFromMetadata(meta);
       if (!periodMatches(year)) continue;
+      if (!isRelevantHistoricalPhoto(page,meta,year)) continue;
       addCard(page);
       found++;
     }
@@ -271,7 +293,7 @@ async function loadNationaalArchiefIndex(){
  catch(error){$('#naResults').replaceChildren(status('Archiefindex tijdelijk niet beschikbaar','De fotogalerij blijft werken. Open de linked-data zoekingang van het Nationaal Archief voor de actuele brongegevens.'))}
 }
 
-function resetFilters(){ $('#q').value='';$('#period').value='archive';$('#topic').value='';place='bandung';customTerm='';document.querySelectorAll('[data-place]').forEach(b=>b.classList.toggle('selected',b.dataset.place==='bandung'));document.querySelectorAll('#bandungTopics button').forEach(b=>b.classList.remove('selected'));load(true)}
+function resetFilters(){ $('#q').value='';$('#period').value='1800-1950';$('#topic').value='';place='bandung';customTerm='';document.querySelectorAll('[data-place]').forEach(b=>b.classList.toggle('selected',b.dataset.place==='bandung'));document.querySelectorAll('#bandungTopics button').forEach(b=>b.classList.remove('selected'));load(true)}
 $('#nav').addEventListener('click',event=>{const button=event.target.closest('[data-view]');if(!button)return;view=button.dataset.view;syncView();load(true)});
 $('#places').addEventListener('click',event=>{const button=event.target.closest('[data-place]');if(!button)return;place=button.dataset.place;document.querySelectorAll('#places [data-place]').forEach(b=>b.classList.toggle('selected',b===button));load(true)});
 $('#bandungTopics').addEventListener('click',event=>{const button=event.target.closest('[data-term]');if(!button)return;customTerm=button.dataset.term;document.querySelectorAll('#bandungTopics [data-term]').forEach(b=>b.classList.toggle('selected',b===button));load(true)});
