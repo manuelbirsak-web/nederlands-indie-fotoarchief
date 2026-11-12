@@ -140,41 +140,48 @@ def search_objects(term: str, per_term: int) -> tuple[list[tuple[str, str]], dic
     )
 
 
+def dict_items(value: object) -> list[dict]:
+    """Normalize Linked Art values that may be a single object or a list."""
+    if isinstance(value, dict):
+        return [value]
+    if isinstance(value, list):
+        return [item for item in value if isinstance(item, dict)]
+    return []
+
+
 def values(record: dict, array_key: str) -> list[str]:
     return [
         str(item.get("content"))
-        for item in record.get(array_key, [])
-        if isinstance(item, dict) and item.get("content")
+        for item in dict_items(record.get(array_key))
+        if item.get("content")
     ]
 
 
 def object_number(obj: dict) -> str | None:
-    for item in obj.get("identified_by", []):
+    for item in dict_items(obj.get("identified_by")):
         if item.get("type") != "Identifier":
             continue
-        classifiers = item.get("classified_as", [])
+        classifiers = dict_items(item.get("classified_as"))
         if any(entry.get("id") == "https://id.rijksmuseum.nl/22015218" for entry in classifiers):
             return item.get("content")
     return None
 
 
 def photograph_type(obj: dict) -> bool:
-    notations = [
-        str(value.get("@value", "")).casefold()
-        for cls in obj.get("classified_as", [])
-        for value in cls.get("notation", [])
-    ]
+    notations = []
+    for cls in dict_items(obj.get("classified_as")):
+        for value in dict_items(cls.get("notation")):
+            notations.append(str(value.get("@value", "")).casefold())
     return "photograph" in notations or "foto" in notations
 
 
 def image_evidence(obj: dict) -> tuple[str | None, str | None, list[str]]:
     """Return an image URL only where the image object itself states an allowed right."""
-    for subject in obj.get("subject_of", []):
-        for digital in subject.get("digitally_carried_by", []):
+    for subject in dict_items(obj.get("subject_of")):
+        for digital in dict_items(subject.get("digitally_carried_by")):
             access_points = [
                 entry.get("id", "")
-                for entry in digital.get("access_point", [])
-                if isinstance(entry, dict)
+                for entry in dict_items(digital.get("access_point"))
             ]
             image_url = next(
                 (url for url in access_points if url.startswith("https://iiif.micr.io/")),
@@ -184,9 +191,8 @@ def image_evidence(obj: dict) -> tuple[str | None, str | None, list[str]]:
                 continue
             rights_urls = [
                 str(entry.get("content"))
-                for entry in digital.get("referred_to_by", [])
-                if isinstance(entry, dict)
-                and isinstance(entry.get("content"), str)
+                for entry in dict_items(digital.get("referred_to_by"))
+                if isinstance(entry.get("content"), str)
                 and entry.get("content").startswith("https://")
             ]
             # The allowlist is deliberately strict. Object-metadata CC0 is not
@@ -217,7 +223,7 @@ def extract_record(object_uri: str, search_terms: list[str]) -> dict | None:
     if not photograph_type(obj):
         return None
 
-    names = [item.get("content") for item in obj.get("identified_by", []) if item.get("type") == "Name" and item.get("content")]
+    names = [item.get("content") for item in dict_items(obj.get("identified_by")) if item.get("type") == "Name" and item.get("content")]
     title = names[0] if names else None
     production = obj.get("produced_by") or {}
     timespan = production.get("timespan") or {}
@@ -226,21 +232,21 @@ def extract_record(object_uri: str, search_terms: list[str]) -> dict | None:
 
     descriptions = [
         item.get("content")
-        for item in obj.get("referred_to_by", [])
+        for item in dict_items(obj.get("referred_to_by"))
         if item.get("content")
     ]
     # Use the record's descriptive text when the Linked Art classification marks it
     # as the object's description; do not substitute later annotations or donor notes.
     description = None
-    for item in obj.get("referred_to_by", []):
-        classifiers = {entry.get("id") for entry in item.get("classified_as", [])}
+    for item in dict_items(obj.get("referred_to_by")):
+        classifiers = {entry.get("id") for entry in dict_items(item.get("classified_as"))}
         if "http://vocab.getty.edu/aat/300435452" in classifiers and item.get("content"):
             description = item["content"]
             break
 
     creators = []
-    for part in production.get("part", []):
-        for item in part.get("referred_to_by", []):
+    for part in dict_items(production.get("part")):
+        for item in dict_items(part.get("referred_to_by")):
             content = item.get("content")
             if isinstance(content, str) and re.match(r"^(?:fotograaf|photographer):", content, re.I):
                 creators.append(content)
