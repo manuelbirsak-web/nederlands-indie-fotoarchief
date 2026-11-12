@@ -88,7 +88,8 @@
         "society"
       ],
       "places": [
-        "java"
+        "java",
+        "other-java"
       ]
     },
     {
@@ -2667,6 +2668,7 @@
     "java": 148,
     "semarang": 10,
     "batavia": 43,
+    "other-java": 1,
     "malang": 2,
     "bandung": 107,
     "bogor": 5,
