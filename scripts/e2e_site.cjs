@@ -74,7 +74,16 @@ async function main() {
         });
         return result.violations
           .filter(item => ['critical', 'serious'].includes(item.impact))
-          .map(item => ({ id: item.id, impact: item.impact, description: item.description, nodes: item.nodes.length }));
+          .map(item => ({
+            id: item.id,
+            impact: item.impact,
+            description: item.description,
+            nodes: item.nodes.map(node => ({
+              target: node.target,
+              html: node.html,
+              summary: node.failureSummary
+            }))
+          }));
       });
       if (audit.length) failures.push('Axe serious/critical violations on ' + view + ': ' + JSON.stringify(audit));
     }
