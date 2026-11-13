@@ -180,6 +180,11 @@ def main() -> None:
         fail("De browser moet de beeldlicentie expliciet allowlisten vóór een afbeelding wordt getoond")
     if "loadRijksmuseumIndex();" not in source:
         fail("Rijksmuseum-foto-index wordt niet geïnitialiseerd")
+    if "function addRijksmuseumGalleryCard(record)" not in source or "function appendRightsClearedRijksmuseumImages()" not in source:
+        fail("Rechtenveilige Rijksmuseum-foto's worden niet geïntegreerd in de hoofdgalerij")
+    if "RM_IMAGE_RIGHTS.has(record.imageRightsUrl)" not in source or "appendRightsClearedRijksmuseumImages();" not in source:
+        fail("Hoofdgalerij moet alleen expliciet vrijgegeven Rijksmuseum-beelden toevoegen na laden en zoeken")
+
 
     try:
         archive = json.loads(ARCHIVE_INDEX.read_text(encoding="utf-8"))
