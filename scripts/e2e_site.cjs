@@ -29,6 +29,20 @@ async function main() {
 
     if (!(await page.title()).includes('Indisch Beeldarchief')) failures.push('Homepage title missing');
 
+    await page.waitForFunction(() => /148 bronrecords/.test(document.querySelector('#knilWeaponsCount')?.textContent || ''), null, { timeout: 20000 });
+    const knilInitial = await page.evaluate(() => ({
+      cards: document.querySelectorAll('#knilWeaponsResults .record-card').length,
+      images: document.querySelectorAll('#knilWeaponsResults img').length,
+      cneLabels: [...document.querySelectorAll('#knilWeaponsResults .tag')].filter(x => x.textContent.includes('CNE · alleen metadata')).length,
+      sourceLinks: [...document.querySelectorAll('#knilWeaponsResults a')].every(a => a.href.startsWith('https://proxy.handle.net/10648/'))
+    }));
+    if (knilInitial.cards !== 12 || knilInitial.images !== 0 || knilInitial.cneLabels !== 12 || !knilInitial.sourceLinks) {
+      failures.push('KNIL metadata-only source index initial page failed: ' + JSON.stringify(knilInitial));
+    }
+    await page.locator('#knilWeaponsMore').click();
+    const knilPaged = await page.locator('#knilWeaponsResults .record-card').count();
+    if (knilPaged !== 24) failures.push('KNIL source index pagination expected 24 records, found ' + knilPaged);
+
     for (const width of [320, 360, 390, 768, 1440]) {
       await page.setViewportSize({ width, height: 900 });
       await page.waitForTimeout(100);
