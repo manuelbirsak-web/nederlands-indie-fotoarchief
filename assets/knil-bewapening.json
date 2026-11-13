@@ -6,16 +6,16 @@
   "sourceSnapshot": "2026-11-13T07:59:17.538689+00:00",
   "selection": {
     "topic": "knil",
-    "descriptionPattern": "wapen|geweer|karabijn|revolver|pistool|machinegeweer|mitrailleur|bajonet|munitie|kanon|artillerie|sabel|zwaard|tank|pantser|bren|lee.?enfield|stengun|sten gun|garand|springfield|mauser|vickers|thompson|lanchester|mortier|afweergeschut|brencarrier|bren-carrier",
-    "recordCount": 148,
-    "uniqueDescriptions": 115
+    "descriptionPattern": "r\"wapen|geweer|karabijn|revolver|pistool|machinegeweer|mitrailleur|bajonet|\"\n    r\"munitie|kanon|artillerie|sabel|zwaard|tank|pantser|bren|lee.?enfield|\"\n    r\"stengun|sten gun|garand|springfield|mauser|vickers|thompson|lanchester|\"\n    r\"mortier|afweergeschut|brencarrier|bren-carrier\",\n    re.IGNORECASE,; excluded contextual matches: ongewapend|wapenbroeders|wapen der genie|verborgen wapens|wapens inleveren",
+    "recordCount": 136,
+    "uniqueDescriptions": 107
   },
   "categoryCounts": {
-    "Artillerie en mortieren": 21,
+    "Overige bewapening": 18,
+    "Pantserwagens en tanks": 64,
     "Geweerschutters en handwapens": 12,
     "Machinegeweren en machinepistolen": 21,
-    "Overige bewapening": 30,
-    "Pantserwagens en tanks": 64
+    "Artillerie en mortieren": 21
   },
   "rightsPolicy": "The linked-open-data snapshot marks these records CNE (Copyright Not Evaluated). Live individual Nationaal Archief pages can show a different current rights status; verify each primary record before reuse. The index remains metadata-only until individual image rights and access are verified.",
   "records": [
@@ -1001,16 +1001,6 @@
     },
     {
       "date": "1947-08-01",
-      "description": "KNIL-troepen trekken een verwoeste stad binnen, gevolgd door een colonne ongewapende mannen [krijgsgevangenen? gearresteerden? jonge inwoners?]",
-      "uri": "http://proxy.handle.net/10648/55d77429-0267-e9a5-71c3-80983239aa64",
-      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
-      "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "category": "Overige bewapening",
-      "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
-    },
-    {
-      "date": "1947-08-01",
       "description": "Palembang. Rubberonderneming \"Tebenan\". Gewapende Nederlander met twee Indonesische mannen, waarvan de rechter (een KNIL-militair?) een stengun draagt",
       "uri": "http://proxy.handle.net/10648/75112604-3693-e1f0-c93b-cc8748031c08",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
@@ -1150,16 +1140,6 @@
       "imagePublished": false
     },
     {
-      "date": "1948-01-15",
-      "description": "Wapenbroeders bij het afscheid. Knil-militairen, oorlogsvrijwilligers van het bataljon \"Zeeland\" en mariniers geven een beeld van de repatrierenden met de \"Johan van Oldenbarnevelt\". Na hun diensttijd in de tropen gaan zij een welverdiende rust genieten in Nederland.",
-      "uri": "http://proxy.handle.net/10648/70a74f88-6346-f974-87f8-bb21bff32aa4",
-      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
-      "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "category": "Overige bewapening",
-      "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
-    },
-    {
       "date": "1948-01-22",
       "description": "Generaal Spoor reikt onderscheidingen uit op het Burg. Bisschopplein te Batavia. Spoor speldt de versierselen van de Bronzen Leeuw op bij [ de kapitein der Artillerie (KNIL) Th. de Winter]",
       "uri": "http://proxy.handle.net/10648/51e0c6e1-f99f-003e-7a0b-61342c6ea257",
@@ -1261,68 +1241,8 @@
     },
     {
       "date": "1948-04-05",
-      "description": "Djember (oost-Java): Dit is Kjai Dophir, tot voor kort een geducht tegenstander. De mannen van het KNIL hebben hem nu overtuigd van het belang van rust en vrede, die in de eerste plaats aan de bevolking ten goede komt. En van een geducht tegenstander is Kjai Dophir geworden tot een overtuigd voorstander van de Hollandse politiek. Op een grote volksvergadering maant hij thans de bevolking aan tot samenwerking en drukt hen op het hart verborgen wapens in te leveren. Het kan verkeren.",
-      "uri": "http://proxy.handle.net/10648/0da9e703-571c-28fb-07f4-47849bfebcb3",
-      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
-      "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "category": "Overige bewapening",
-      "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
-    },
-    {
-      "date": "1948-04-05",
-      "description": "Djember (oost-Java): Dit is Kjai Dophir, tot voor kort een geducht tegenstander. De mannen van het KNIL hebben hem nu overtuigd van het belang van rust en vrede, die in de eerste plaats aan de bevolking ten goede komt. En van een geducht tegenstander is Kjai Dophir geworden tot een overtuigd voorstander van de Hollandse politiek. Op een grote volksvergadering maant hij thans de bevolking aan tot samenwerking en drukt hen op het hart verborgen wapens in te leveren. Het kan verkeren.",
-      "uri": "http://proxy.handle.net/10648/460c2b59-f310-62af-a934-ba4f1f1300ae",
-      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
-      "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "category": "Overige bewapening",
-      "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
-    },
-    {
-      "date": "1948-04-05",
       "description": "Djember (oost-Java): Op instigatie van het KNIL en van de dessabevolking zijn hier overal dessawachten gevormd, die dag en nacht klaar staan om eventuele rampokkers te keren. Gewapend met een Bamboe-roentjing op post.",
       "uri": "http://proxy.handle.net/10648/6fc03d3a-526f-f3f6-1b45-80d7893c58fb",
-      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
-      "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "category": "Overige bewapening",
-      "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
-    },
-    {
-      "date": "1948-04-05",
-      "description": "Djember (oost-Java): Dit is Kjai Dophir, tot voor kort een geducht tegenstander. De mannen van het KNIL hebben hem nu overtuigd van het belang van rust en vrede, die in de eerste plaats aan de bevolking ten goede komt. En van een geducht tegenstander is Kjai Dophir geworden tot een overtuigd voorstander van de Hollandse politiek. Op een grote volksvergadering maant hij thans de bevolking aan tot samenwerking en drukt hen op het hart verborgen wapens in te leveren. Het kan verkeren.",
-      "uri": "http://proxy.handle.net/10648/7a6b0ff4-bde0-2424-81f2-de8405cf2560",
-      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
-      "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "category": "Overige bewapening",
-      "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
-    },
-    {
-      "date": "1948-04-05",
-      "description": "Djember (oost-Java): Dit is Kjai Dophir, tot voor kort een geducht tegenstander. De mannen van het KNIL hebben hem nu overtuigd van het belang van rust en vrede, die in de eerste plaats aan de bevolking ten goede komt. En van een geducht tegenstander is Kjai Dophir geworden tot een overtuigd voorstander van de Hollandse politiek. Op een grote volksvergadering maant hij thans de bevolking aan tot samenwerking en drukt hen op het hart verborgen wapens in te leveren. Het kan verkeren.",
-      "uri": "http://proxy.handle.net/10648/7b89a6b6-9306-a89d-290f-12bad1ac0d39",
-      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
-      "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "category": "Overige bewapening",
-      "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
-    },
-    {
-      "date": "1948-05-14",
-      "description": "Op 15 mei 1948 was het 200 jaar geleden dat het korps Mineurs en Sappeurs wordt opgericht. Dit feit werd door het Wapen der Genie met uitgebreide feestelijkheden herdacht [Receptie Generaal-Majoor KNIL der Genie C.H. de Quant] [uiterst links]",
-      "uri": "http://proxy.handle.net/10648/2e89f01d-1a89-01ac-007c-f6ce6b5aeda9",
-      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
-      "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "category": "Overige bewapening",
-      "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
-    },
-    {
-      "date": "1948-05-15",
-      "description": "Batavia: Op 15 mei 1948 was het 200 jaar geleden dat het korps Mineurs en Sappeurs wordt opgericht. Dit feit werd door het Wapen der Genie met uitgebreide feestelijkheden herdacht, o.a. met een galaparty ten huize van de Chef der Genie, gen.maj. de Quant, parade, defile's en demonstraties, en een feestavond in de Koningin Wilhelmina Club. De parade op het Manggarai-veld wordt bijgewoond door de hoogste militaire autoriteiten, terwijl ook de landvoogd, dr. H.J. van Mook aanwezig was. Links naast de landvoogd, vice-admiraal Pinke. Rechts van hem gen.maj. Buurman van Vreeden en generaal-majoor KNIL der Genie de Quant",
-      "uri": "http://proxy.handle.net/10648/3d710163-3253-554a-af69-fafa9150dded",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
@@ -1336,26 +1256,6 @@
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
-      "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
-    },
-    {
-      "date": "1948-10-21",
-      "description": "Sergeant George Meelhuizen uit Palembang geeft de militairen van de substituten-cie. KNIL te Palembang les in ongewapende zelfverdediging. De mannen van de 'sub' komen uit alle delen van Indonesië",
-      "uri": "http://proxy.handle.net/10648/1824f2a0-85ad-f41f-f1eb-6679e7b85a4f",
-      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
-      "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "category": "Overige bewapening",
-      "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
-    },
-    {
-      "date": "1948-10-21",
-      "description": "Sergeant George Meelhuizen uit Palembang geeft de militairen van de substituten-cie. KNIL te Palembang les in ongewapende zelfverdediging. De mannen van de 'sub' komen uit alle delen van Indonesië",
-      "uri": "http://proxy.handle.net/10648/6dbed61d-96c1-da11-e3b2-16b222077c36",
-      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
-      "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "category": "Overige bewapening",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
       "imagePublished": false
     },
@@ -1393,26 +1293,6 @@
       "date": "1948-12-01",
       "description": "Een Nederlandse militair met een stengun controleert papieren die hem worden aangereikt door een Indonesiche man met slendang, staande op een gazon (aloon-aloon?) . Erbij staat een KNIL-miltair, ook bewapend met stengun. Links een jongen met gescheurde bovenkleding",
       "uri": "http://proxy.handle.net/10648/97b4e873-4cb2-81aa-0746-4f4b9c20dc73",
-      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
-      "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "category": "Overige bewapening",
-      "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
-    },
-    {
-      "date": "1948-12-13",
-      "description": "Makassar: Op zaterdag 13 dec. arriveerden per S.S. Volendam de KL. troepen te Makassar ter aflossing van het KNIL. Op de kade stond de Welfare klaar met met o.a. het tijdschrift Wapenbroeders",
-      "uri": "http://proxy.handle.net/10648/0ec0178f-d905-862d-3090-f38d2a6e0eb6",
-      "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
-      "rights": "http://rightsstatements.org/page/CNE/1.0/",
-      "category": "Overige bewapening",
-      "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
-    },
-    {
-      "date": "1948-12-13",
-      "description": "Makassar: Op zaterdag 13 dec. arriveerden per Volendam de KL. troepen te Makassar ter aflossing van het KNIL. Op de kade stond de Welfare klaar met een koele dronk en het tijdschrift Wapenbroeders",
-      "uri": "http://proxy.handle.net/10648/6167d930-9997-4644-0568-98dac3700fcb",
       "collection": "Fotocollectie Dienst voor Legercontacten Indonesië",
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
