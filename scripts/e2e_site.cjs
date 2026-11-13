@@ -28,7 +28,19 @@ async function main() {
     );
 
     if (!(await page.title()).includes('Indisch Beeldarchief')) failures.push('Homepage title missing');
-    await page.waitForFunction(() => document.querySelectorAll('#results .photo').length > 0, null, { timeout: 20000 });
+    try {
+      await page.waitForFunction(() => document.querySelectorAll('#results .photo').length > 0, null, { timeout: 20000 });
+    } catch (error) {
+      const state = await page.evaluate(() => ({
+        mainCards: document.querySelectorAll('#results .photo').length,
+        mainText: document.querySelector('#results')?.innerText?.slice(0, 500),
+        rijksmuseumCount: document.querySelector('#rmCount')?.textContent,
+        rijksmuseumCards: document.querySelectorAll('#rmResults .rm-record').length,
+        rijksmuseumImages: document.querySelectorAll('#rmResults .rm-record img').length,
+        knilCount: document.querySelector('#knilWeaponsCount')?.textContent
+      }));
+      throw new Error('Initial gallery did not render a photo: ' + JSON.stringify(state) + '; ' + error.message);
+    }
     const galleryViews = ['knil', 'bersiap', 'daily'];
     for (const view of galleryViews) {
       await page.locator('#nav [data-view="' + view + '"]').click();
