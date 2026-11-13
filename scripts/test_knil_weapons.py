@@ -42,6 +42,20 @@ class KnilWeaponsIndexTests(unittest.TestCase):
         ]}
         self.assertEqual(build_index(archive)["records"], [])
 
+    def test_excludes_contextual_weapon_word_matches(self):
+        excluded = [
+            "Wapenbroeders bij het afscheid van KNIL-militairen",
+            "Het Wapen der Genie viert een jubileum",
+            "KNIL-militairen krijgen les in ongewapende zelfverdediging",
+            "Kjai Dophir roept op verborgen wapens in te leveren",
+        ]
+        for description in excluded:
+            with self.subTest(description=description):
+                archive = {"schemaVersion": 2, "snapshotDate": "2026-11-12T00:00:00Z", "records": [
+                    self.record(description)
+                ]}
+                self.assertEqual(build_index(archive)["records"], [])
+
     def test_weapon_categories_are_search_aids(self):
         self.assertEqual(category_for("Stuart tank van een KNIL eskadron"), "Pantserwagens en tanks")
         self.assertEqual(category_for("Twee KNIL-militairen bij Vickers mitrailleur"), "Machinegeweren en machinepistolen")
