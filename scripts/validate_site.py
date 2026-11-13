@@ -60,7 +60,7 @@ def main() -> None:
             fail(f"Bestandsgrootte originele familiefoto wijkt af: {relative}")
         if __import__("hashlib").sha256(data).hexdigest() != expected["sha256"]:
             fail(f"SHA-256 originele familiefoto wijkt af: {relative}")
-        if not data.startswith(b"\\xff\\xd8\\xff"):
+        if not data.startswith(bytes.fromhex("ffd8ff")):
             fail(f"Originele familiefoto is geen geldige JPEG: {relative}")
 
 
