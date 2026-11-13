@@ -87,13 +87,19 @@ jobs:
               weapons = __import__("json").load(response)
               assert response.status == 200
           weapon_records = weapons["records"]
-          assert weapons["selection"]["recordCount"] == 148
-          assert weapons["selection"]["uniqueDescriptions"] == 115
-          assert len(weapon_records) == 148
+          assert weapons["selection"]["recordCount"] == 136
+          assert weapons["selection"]["uniqueDescriptions"] == 107
+          assert len(weapon_records) == 136
           assert all(record["rights"] == "http://rightsstatements.org/page/CNE/1.0/" for record in weapon_records)
+          assert all(record["primaryRightsStatus"] == "Publiek Domein" for record in weapon_records)
+          assert all(record["reuseAllowed"] is True and record["downloadAvailable"] is True for record in weapon_records)
+          assert all(record["primaryRightsCheckedAt"] == "2026-11-13" for record in weapon_records)
+          assert all(record["rightsEvidenceUrl"].startswith("https://www.nationaalarchief.nl/onderzoeken/fotocollectie/") for record in weapon_records)
+          assert weapons["primaryRightsAudit"]["checkedRecords"] == 136
+          assert weapons["primaryRightsAudit"]["downloadAvailableRecords"] == 136
           assert all(record["imagePublished"] is False for record in weapon_records)
           assert all(not record.get("imageUrl") and not record.get("thumbnail") for record in weapon_records)
-          print("PASS deployed KNIL index: 148 source records, 115 descriptions, CNE metadata-only")
+          print("PASS deployed KNIL index: 136 source records, 107 descriptions, 136 primary rights checks; image metadata-only")
           with urllib.request.urlopen(base + "/favicon.svg", timeout=30) as response:
               favicon = response.read()
               assert response.status == 200 and b"<svg" in favicon
