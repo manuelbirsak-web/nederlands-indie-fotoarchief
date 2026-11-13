@@ -142,7 +142,7 @@ body.family-view #familyBirsak,body.family-view #deepSearch{display:block!import
 </section>
 <section id="knilWeapons" class="archives" aria-labelledby="knilWeaponsTitle">
 <div class="head"><div><div class="section-label">Onderzoeksindex · Nationaal Archief</div><h2 id="knilWeaponsTitle">KNIL-bewapening · bronbeschrijvingen</h2></div><div class="head-right" id="knilWeaponsCount" aria-live="polite">Index wordt geladen</div></div>
-<p class="fine" id="knilWeaponsNote">Deze selectie bevat KNIL-records waarvan de oorspronkelijke bronbeschrijving een wapen, voertuig of bewapeningsgerelateerd onderwerp noemt. De tekst is bronmetadata, geen onafhankelijke technische identificatie. De rechtenstatus is CNE; daarom worden geen Nationaal Archief-afbeeldingen gekopieerd of getoond.</p>
+<p class="fine" id="knilWeaponsNote">Deze selectie bevat KNIL-records waarvan de oorspronkelijke bronbeschrijving een wapen, voertuig of bewapeningsgerelateerd onderwerp noemt. De tekst is bronmetadata, geen onafhankelijke technische identificatie. De linked-open-data-momentopname meldt CNE, maar actuele individuele archiefpagina's kunnen een andere rechtenvermelding tonen. Controleer de actuele bronpagina per record; de momentopname is geen definitieve rechtencontrole.</p>
 <div id="knilWeaponsResults" class="record-grid" aria-live="polite"><div class="status"><strong>KNIL-bewapeningsindex</strong>De bronbeschrijvingen worden geladen.</div></div>
 <button id="knilWeaponsMore" class="more" type="button" hidden>Meer KNIL-records tonen</button>
 </section>
@@ -487,7 +487,7 @@ function renderKnilWeaponsRecords(reset=false){
   const meta=document.createElement('div');meta.className='record-meta';
   const date=document.createElement('span');date.className='tag';date.textContent='Bronmetadata: '+(record.date||'datum niet vermeld');meta.append(date);
   const category=document.createElement('span');category.className='tag';category.textContent=record.category;meta.append(category);
-  const rights=document.createElement('span');rights.className='tag';rights.textContent='CNE · alleen metadata';meta.append(rights);
+  const rights=document.createElement('span');rights.className='tag';rights.textContent='Snapshot CNE · live controle';meta.append(rights);
   const collection=document.createElement('p');collection.textContent=record.collection||'Collectie niet vermeld';
   const link=document.createElement('a');link.href=record.uri.replace(/^http:/,'https:');link.target='_blank';link.rel='noopener noreferrer';link.textContent='Open oorspronkelijk Nationaal Archief-record ↗';
   card.append(title,meta,collection,link);root.append(card);
@@ -501,7 +501,7 @@ async function loadKnilWeaponsIndex(){
   if(!response.ok)throw new Error('HTTP '+response.status);
   knilWeaponsIndex=await response.json();
   const day=String(knilWeaponsIndex.snapshotDate||'').slice(0,10)||'peildatum onbekend';
-  $('#knilWeaponsNote').textContent='Peildatum '+day+' · '+knilWeaponsIndex.selection.recordCount+' KNIL-gerelateerde bronrecords met '+knilWeaponsIndex.selection.uniqueDescriptions+' unieke beschrijvingen. Alle records hebben de status CNE (Copyright Not Evaluated); daarom worden uitsluitend metadata en permanente bronlinks getoond. De bewapeningscategorie is een zoekhulp, geen onafhankelijke identificatie van het afgebeelde materieel.';
+  $('#knilWeaponsNote').textContent='Peildatum '+day+' · '+knilWeaponsIndex.selection.recordCount+' KNIL-gerelateerde bronrecords met '+knilWeaponsIndex.selection.uniqueDescriptions+' unieke beschrijvingen. De linked-open-data-snapshot vermeldt CNE (Copyright Not Evaluated) voor deze records. De actuele rechtenvermelding op de individuele Nationaal Archief-pagina kan hiervan afwijken; controleer die pagina per record vóór hergebruik. Tot de afzonderlijke controle worden hier alleen metadata en permanente bronlinks getoond. De bewapeningscategorie is een zoekhulp, geen onafhankelijke identificatie van het afgebeelde materieel.';
   renderKnilWeaponsRecords(true);
  }catch(error){
   $('#knilWeaponsCount').textContent='Index niet beschikbaar';
