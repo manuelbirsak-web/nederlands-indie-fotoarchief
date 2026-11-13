@@ -2,19 +2,20 @@
   "schemaVersion": 1,
   "source": "Nationaal Archief — linked open data fotocollectie",
   "sourceUrl": "https://www.nationaalarchief.nl/onderzoeken/linked-open-data/sparql-interface-fotocollectie",
-  "snapshotDate": "2026-11-12T23:58:59.316441+00:00",
+  "snapshotDate": "2026-11-13T07:59:17.538689+00:00",
+  "sourceSnapshot": "2026-11-13T07:59:17.538689+00:00",
   "selection": {
     "topic": "knil",
-    "descriptionPattern": "weapon-related Dutch and historical weapon terms",
+    "descriptionPattern": "wapen|geweer|karabijn|revolver|pistool|machinegeweer|mitrailleur|bajonet|munitie|kanon|artillerie|sabel|zwaard|tank|pantser|bren|lee.?enfield|stengun|sten gun|garand|springfield|mauser|vickers|thompson|lanchester|mortier|afweergeschut|brencarrier|bren-carrier",
     "recordCount": 148,
     "uniqueDescriptions": 115
   },
   "categoryCounts": {
-    "Overige bewapening": 30,
-    "Geweerschutters en handwapens": 12,
-    "Pantserwagens en tanks": 64,
     "Artillerie en mortieren": 21,
-    "Machinegeweren en machinepistolen": 21
+    "Geweerschutters en handwapens": 12,
+    "Machinegeweren en machinepistolen": 21,
+    "Overige bewapening": 30,
+    "Pantserwagens en tanks": 64
   },
   "rightsPolicy": "All records in this selection carry RightsStatements.org CNE (Copyright Not Evaluated). They are metadata-only. No source image is copied, embedded or republished.",
   "records": [
@@ -1498,6 +1499,5 @@
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
       "imagePublished": false
     }
-  ],
-  "sourceSnapshot": "2026-11-12T23:58:59.316441+00:00"
+  ]
 }
