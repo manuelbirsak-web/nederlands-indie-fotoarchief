@@ -226,7 +226,7 @@ def build_index(archive: dict) -> dict:
         "rightsPolicy": (
             "All 136 indexed records were individually checked against their live primary Nationaal Archief pages on 2026-11-13. "
             "Each page states Publiek Domein, permits free reuse, and provides a download. "
-            "The linked-open-data snapshot CNE field is stale/inconsistent for these individual records. "
+            "The linked-open-data snapshot's CNE field is stale/inconsistent for these individual records. "
             "Verification applies only to the exact handles in this index."
         ),
         "primaryRightsAudit": {
