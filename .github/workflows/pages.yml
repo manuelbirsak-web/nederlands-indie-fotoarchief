@@ -7,6 +7,8 @@ on:
     types: [completed]
     branches: ["main"]
   workflow_dispatch:
+  pull_request:
+    branches: ["main"]
 permissions:
   contents: read
   pages: write
@@ -40,6 +42,7 @@ jobs:
           PY
           node --check /tmp/site.js
   deploy:
+    if: ${{ github.event_name != 'pull_request' }}
     needs: validate
     environment:
       name: github-pages

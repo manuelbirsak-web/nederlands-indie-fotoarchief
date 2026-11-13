@@ -222,6 +222,28 @@ const favoritesKey='indisch-beeldarchief-favorites-v1';
 function readFavorites(){try{return new Set(JSON.parse(localStorage.getItem(favoritesKey)||'[]'))}catch{return new Set()}}
 function writeFavorites(set){try{localStorage.setItem(favoritesKey,JSON.stringify([...set]))}catch{}}
 let favorites=readFavorites();
+const UI_STATE_KEY='indisch-beeldarchief-ui-state-v1';
+const allowedPeriods=new Set(['1800-1959','all','1800-1899','1900-1919','1920-1939','1940-1945','1945-1950','1950-1959','undated']);
+const allowedTopics=new Set(['','city','people','military','transport','culture','nature']);
+const allowedTerms=new Set(['Bragaweg','Dago','alun-alun','Technische Hoogeschool','station railway','1946']);
+function saveUiState(){
+ try{localStorage.setItem(UI_STATE_KEY,JSON.stringify({view,query:$('#q').value,period:$('#period').value,topic:$('#topic').value,place,customTerm}))}
+ catch(error){/* Storage can be unavailable in private browsing; navigation still works. */}
+}
+function restoreUiState(){
+ try{
+  const state=JSON.parse(localStorage.getItem(UI_STATE_KEY)||'null');
+  if(!state||typeof state!=='object')return;
+  if(typeof state.view==='string'&&views[state.view])view=state.view;
+  if(allowedPeriods.has(state.period))$('#period').value=state.period;
+  if(allowedTopics.has(state.topic))$('#topic').value=state.topic;
+  if(typeof state.query==='string')$('#q').value=state.query.slice(0,200);
+  if(Object.prototype.hasOwnProperty.call(places,state.place))place=state.place;
+  if(allowedTerms.has(state.customTerm))customTerm=state.customTerm;
+  document.querySelectorAll('[data-place]').forEach(button=>button.classList.toggle('selected',button.dataset.place===place));
+  document.querySelectorAll('#bandungTopics [data-term]').forEach(button=>button.classList.toggle('selected',button.dataset.term===customTerm));
+ }catch(error){/* Ignore invalid or unavailable stored state and use safe defaults. */}
+}
 function buildQuery(){if(view==='family')return '(Birsak OR Lembangweg) Bandoeng Bandung';const typed=$('#q').value.trim();let base=views[view].query;if(view==='java')base=places[place];if(view==='bandung'&&customTerm)base+=' '+customTerm;if(typed)base+=' '+typed;const topic=$('#topic').value;if(topic)base+=' '+topicTerms[topic];return base+' filetype:bitmap'}
 function yearFromMetadata(meta){
  const raw=meta?.DateTimeOriginal?.value||'';
@@ -269,9 +291,9 @@ function metadataValue(meta,key){return escapeText(meta?.[key]?.value||'')}
 function commonsLicenseUrl(meta){const raw=String(meta?.LicenseUrl?.value||'').trim().replace(/^http:/i,'https:');return raw.replace(/\/$/,'')+'/'}
 function isReusableCommonsLicense(meta){const url=commonsLicenseUrl(meta);return url==='https://creativecommons.org/publicdomain/mark/1.0/'||url==='https://creativecommons.org/publicdomain/zero/1.0/'||/^https:\/\/creativecommons\.org\/licenses\/by(?:-sa)?\/(?:1\.0|2\.0|2\.5|3\.0|4\.0)\/$/.test(url)}
 function status(title,message,showRetry=false){const el=document.createElement('div');el.className='status';const strong=document.createElement('strong');strong.textContent=title;const p=document.createElement('div');p.textContent=message;el.append(strong,p);if(showRetry){const b=document.createElement('button');b.className='secondary';b.type='button';b.textContent='Opnieuw proberen';b.addEventListener('click',()=>load(true));el.append(b)}return el}
-function syncView(){document.body.classList.toggle('family-view',view==='family');document.querySelectorAll('#nav button').forEach(b=>{const active=b.dataset.view===view;b.classList.toggle('active',active);if(active){b.setAttribute('aria-current','page')}else{b.removeAttribute('aria-current')}});$('#title').textContent=views[view].title;$('#intro').textContent=views[view].intro;$('#resultTitle').textContent=views[view].result;$('#places').hidden=view!=='java';$('#bandungTopics').hidden=view!=='bandung';$('#familyBirsak').hidden=view!=='family';$('#deepSearch').hidden=view!=='family';$('#q').value='';customTerm='';if(view==='family'){$('#resultTitle').textContent='Familie Birsak · fotodocumentatie'}document.querySelectorAll('#bandungTopics button').forEach(b=>b.classList.remove('selected'))}
+function syncView(){document.body.classList.toggle('family-view',view==='family');document.querySelectorAll('#nav button').forEach(b=>{const active=b.dataset.view===view;b.classList.toggle('active',active);if(active){b.setAttribute('aria-current','page')}else{b.removeAttribute('aria-current')}});$('#title').textContent=views[view].title;$('#intro').textContent=views[view].intro;$('#resultTitle').textContent=views[view].result;$('#places').hidden=view!=='java';$('#bandungTopics').hidden=view!=='bandung';$('#familyBirsak').hidden=view!=='family';$('#deepSearch').hidden=view!=='family';if(view==='family'){$('#resultTitle').textContent='Familie Birsak · fotodocumentatie'}document.querySelectorAll('#bandungTopics [data-term]').forEach(b=>b.classList.toggle('selected',b.dataset.term===customTerm))}
 function addCard(page){const info=page.imageinfo?.[0];if(!info||!info.url||!String(info.mime||'').startsWith('image/')||!isReusableCommonsLicense(info.extmetadata||{}))return;const meta=info.extmetadata||{};const title=metadataValue(meta,'ObjectName')||String(page.title||'').replace(/^File:/,'');const year=yearFromMetadata(meta);
- const date=year?'Opnamedatering: '+year:'Opnamedatering niet vermeld in bron';const artist=metadataValue(meta,'Artist')||'Maker niet vermeld';const description=metadataValue(meta,'ImageDescription');const credit=metadataValue(meta,'Institution')||metadataValue(meta,'Credit')||'';const license=metadataValue(meta,'LicenseShortName')||'Licentie controleren';const fileKey=page.title||info.descriptionurl;const article=document.createElement('article');article.className='photo';const media=document.createElement('div');media.className='photo-media';const imageLink=document.createElement('a');imageLink.className='photo-image-link';imageLink.href=info.url;imageLink.target='_blank';imageLink.rel='noopener noreferrer';imageLink.setAttribute('aria-label','Open de afbeelding op volledige grootte: '+title);const img=document.createElement('img');img.loading='lazy';img.decoding='async';img.crossOrigin='anonymous';img.src=info.thumburl||info.url;img.alt=title;img.onerror=()=>{media.replaceChildren();const fallback=document.createElement('div');fallback.className='status';fallback.textContent='Afbeelding tijdelijk niet beschikbaar';media.append(fallback)};imageLink.append(img);media.append(imageLink);const body=document.createElement('div');body.className='photo-body';const h=document.createElement('h3');h.className='photo-title';h.textContent=title;const m=document.createElement('div');m.className='photo-meta';m.textContent=[date,artist,credit].filter(Boolean).join(' · ');const desc=document.createElement('p');desc.className='photo-description';desc.textContent=description;const tags=document.createElement('div');tags.className='photo-tags';const t1=document.createElement('span');t1.className='tag';t1.textContent=license;tags.append(t1);const t2=document.createElement('span');t2.className='tag';t2.textContent=year?'Opnamejaar '+year:'Ongedateerd · historische context';tags.append(t2);const actions=document.createElement('div');actions.className='photo-actions';const link=document.createElement('a');link.href=info.descriptionurl||'https://commons.wikimedia.org/wiki/'+encodeURIComponent(page.title);link.target='_blank';link.rel='noopener noreferrer';link.textContent='Bron & rechten bekijken ↗';const fav=document.createElement('button');fav.type='button';fav.className='iconbtn';fav.textContent=favorites.has(fileKey)?'★ Opgeslagen':'☆ Bewaar';fav.setAttribute('aria-pressed',String(favorites.has(fileKey)));fav.addEventListener('click',()=>{if(favorites.has(fileKey)){favorites.delete(fileKey)}else{favorites.add(fileKey)}writeFavorites(favorites);fav.textContent=favorites.has(fileKey)?'★ Opgeslagen':'☆ Bewaar';fav.setAttribute('aria-pressed',String(favorites.has(fileKey)))});actions.append(link,fav);if(description)body.append(h,m,desc,tags,actions);else body.append(h,m,tags,actions);article.append(media,body);$('#results').append(article);visibleCount++}
+ const date=year?'Opnamedatering: '+year:'Opnamedatering niet vermeld in bron';const artist=metadataValue(meta,'Artist')||'Maker niet vermeld';const description=metadataValue(meta,'ImageDescription');const credit=metadataValue(meta,'Institution')||metadataValue(meta,'Credit')||'';const license=metadataValue(meta,'LicenseShortName')||'Licentie controleren';const fileKey=page.title||info.descriptionurl;const article=document.createElement('article');article.className='photo';const media=document.createElement('div');media.className='photo-media';const imageLink=document.createElement('a');imageLink.className='photo-image-link';imageLink.href=info.url;imageLink.target='_blank';imageLink.rel='noopener noreferrer';imageLink.setAttribute('aria-label','Open de afbeelding op volledige grootte: '+title);const img=document.createElement('img');img.loading=visibleCount<6?'eager':'lazy';img.decoding='async';img.src=info.thumburl||info.url;img.alt=title;let triedOriginal=false;img.onerror=()=>{if(!triedOriginal&&info.url&&img.src!==info.url){triedOriginal=true;img.src=info.url;return}media.replaceChildren();const fallback=document.createElement('div');fallback.className='status';fallback.textContent='Afbeelding tijdelijk niet beschikbaar';media.append(fallback)};imageLink.append(img);media.append(imageLink);const body=document.createElement('div');body.className='photo-body';const h=document.createElement('h3');h.className='photo-title';h.textContent=title;const m=document.createElement('div');m.className='photo-meta';m.textContent=[date,artist,credit].filter(Boolean).join(' · ');const desc=document.createElement('p');desc.className='photo-description';desc.textContent=description;const tags=document.createElement('div');tags.className='photo-tags';const t1=document.createElement('span');t1.className='tag';t1.textContent=license;tags.append(t1);const t2=document.createElement('span');t2.className='tag';t2.textContent=year?'Opnamejaar '+year:'Ongedateerd · historische context';tags.append(t2);const actions=document.createElement('div');actions.className='photo-actions';const link=document.createElement('a');link.href=info.descriptionurl||'https://commons.wikimedia.org/wiki/'+encodeURIComponent(page.title);link.target='_blank';link.rel='noopener noreferrer';link.textContent='Bron & rechten bekijken ↗';const fav=document.createElement('button');fav.type='button';fav.className='iconbtn';fav.textContent=favorites.has(fileKey)?'★ Opgeslagen':'☆ Bewaar';fav.setAttribute('aria-pressed',String(favorites.has(fileKey)));fav.addEventListener('click',()=>{if(favorites.has(fileKey)){favorites.delete(fileKey)}else{favorites.add(fileKey)}writeFavorites(favorites);fav.textContent=favorites.has(fileKey)?'★ Opgeslagen':'☆ Bewaar';fav.setAttribute('aria-pressed',String(favorites.has(fileKey)))});actions.append(link,fav);if(description)body.append(h,m,desc,tags,actions);else body.append(h,m,tags,actions);article.append(media,body);$('#results').append(article);visibleCount++}
 function addRijksmuseumGalleryCard(record){
  const key='rijksmuseum:'+record.id;
  if(seenFiles.has(key)||!record.imageUrl||!RM_IMAGE_RIGHTS.has(record.imageRightsUrl))return false;
@@ -279,7 +301,7 @@ function addRijksmuseumGalleryCard(record){
  const article=document.createElement('article');article.className='photo';
  const media=document.createElement('div');media.className='photo-media';
  const imageLink=document.createElement('a');imageLink.className='photo-image-link';imageLink.href=record.imageUrl;imageLink.target='_blank';imageLink.rel='noopener noreferrer';imageLink.setAttribute('aria-label','Open vrijgegeven Rijksmuseum-afbeelding: '+(record.title||'Historische foto'));
- const img=document.createElement('img');img.loading='lazy';img.decoding='async';img.src=record.imageUrl;img.alt=record.title||'Historische foto uit de collectie van het Rijksmuseum';
+ const img=document.createElement('img');img.loading=visibleCount<6?'eager':'lazy';img.decoding='async';img.src=record.imageUrl;img.alt=record.title||'Historische foto uit de collectie van het Rijksmuseum';
  img.onerror=()=>{media.replaceChildren();const fallback=document.createElement('div');fallback.className='status';fallback.textContent='Afbeelding tijdelijk niet beschikbaar';media.append(fallback)};
  imageLink.append(img);media.append(imageLink);
  const body=document.createElement('div');body.className='photo-body';
@@ -306,6 +328,7 @@ function appendRightsClearedRijksmuseumImages(){
 }
 function updateCount(){const dateFilter=$('#period').value;$('#count').textContent=visibleCount+' foto\'s getoond'+(dateFilter?' · metadatafilter actief':'');}
 async function load(reset=false) {
+  saveUiState();
   if(view==='family'){if(requestController)requestController.abort();loading=false;return}
   if (loading && !reset) return;
   if (requestController) requestController.abort();
@@ -330,14 +353,14 @@ async function load(reset=false) {
     do {
       const params = new URLSearchParams({
         action:'query', format:'json', origin:'*', generator:'search',
-        gsrsearch:buildQuery(), gsrnamespace:'6', gsrlimit:'24',
+        gsrsearch:buildQuery(), gsrnamespace:'6', gsrlimit:'50',
         prop:'imageinfo', iiprop:'url|extmetadata|mime', iiurlwidth:'760'
       });
       if (continuation) {
         for (const [key,value] of Object.entries(continuation)) params.set(key,String(value));
       }
       const response = await fetch(API+'?'+params.toString(), {
-        signal:controller.signal, headers:{'Accept':'application/json'}
+        signal:controller.signal, cache:'no-store', headers:{'Accept':'application/json'}
       });
       if (!response.ok) throw new Error('De beeldbron reageert tijdelijk niet ('+response.status+').');
       const data = await response.json();
@@ -356,7 +379,7 @@ async function load(reset=false) {
       }
       continuation = data.continue||null;
       batches++;
-    } while (continuation && foundThisLoad < 8 && batches < 4);
+    } while (continuation && foundThisLoad < 8 && batches < 8);
     appendRightsClearedRijksmuseumImages();
     updateCount();
     if (!visibleCount && reset) {
@@ -523,7 +546,7 @@ function renderRijksmuseumRecords(reset=false){
   if(permittedImage){
    const frame=document.createElement('div');frame.className='rm-image';
    const imageLink=document.createElement('a');imageLink.href=record.imageUrl;imageLink.target='_blank';imageLink.rel='noopener noreferrer';imageLink.setAttribute('aria-label','Open vrijgegeven beeld: '+(record.title||'Rijksmuseum-foto'));
-   const img=document.createElement('img');img.loading='lazy';img.decoding='async';img.src=record.imageUrl;img.alt=record.title||'Historische foto uit de collectie van het Rijksmuseum';
+   const img=document.createElement('img');img.loading=visibleCount<6?'eager':'lazy';img.decoding='async';img.src=record.imageUrl;img.alt=record.title||'Historische foto uit de collectie van het Rijksmuseum';
    img.onerror=()=>{frame.replaceChildren();const fallback=document.createElement('div');fallback.className='rm-image-placeholder';fallback.textContent='De IIIF-afbeelding is tijdelijk niet bereikbaar; open het oorspronkelijke objectrecord.';frame.append(fallback)};
    imageLink.append(img);frame.append(imageLink);card.append(frame);
   }else{
@@ -557,13 +580,13 @@ async function loadRijksmuseumIndex(){
  }
 }
 
-function resetFilters(){ $('#q').value='';$('#period').value='1800-1959';$('#topic').value='';place='all';customTerm='';document.querySelectorAll('[data-place]').forEach(b=>b.classList.toggle('selected',b.dataset.place==='all'));document.querySelectorAll('#bandungTopics button').forEach(b=>b.classList.remove('selected'));load(true)}
-$('#nav').addEventListener('click',event=>{const button=event.target.closest('[data-view]');if(!button)return;view=button.dataset.view;syncView();if(view==='family'){$('#familyBirsak').scrollIntoView({block:'start'});return}load(true)});
-$('#places').addEventListener('click',event=>{const button=event.target.closest('[data-place]');if(!button)return;place=button.dataset.place;document.querySelectorAll('#places [data-place]').forEach(b=>b.classList.toggle('selected',b===button));load(true)});
-$('#bandungTopics').addEventListener('click',event=>{const button=event.target.closest('[data-term]');if(!button)return;customTerm=button.dataset.term;document.querySelectorAll('#bandungTopics [data-term]').forEach(b=>b.classList.toggle('selected',b===button));load(true)});
+function resetFilters(){ $('#q').value='';$('#period').value='1800-1959';$('#topic').value='';place='all';customTerm='';document.querySelectorAll('[data-place]').forEach(b=>b.classList.toggle('selected',b.dataset.place==='all'));document.querySelectorAll('#bandungTopics button').forEach(b=>b.classList.remove('selected'));saveUiState();load(true)}
+$('#nav').addEventListener('click',event=>{const button=event.target.closest('[data-view]');if(!button)return;view=button.dataset.view;syncView();saveUiState();if(view==='family'){$('#familyBirsak').scrollIntoView({block:'start'});return}load(true)});
+$('#places').addEventListener('click',event=>{const button=event.target.closest('[data-place]');if(!button)return;place=button.dataset.place;saveUiState();document.querySelectorAll('#places [data-place]').forEach(b=>b.classList.toggle('selected',b===button));load(true)});
+$('#bandungTopics').addEventListener('click',event=>{const button=event.target.closest('[data-term]');if(!button)return;customTerm=button.dataset.term;saveUiState();document.querySelectorAll('#bandungTopics [data-term]').forEach(b=>b.classList.toggle('selected',b===button));load(true)});
 function renderDeepLinks(){const q=$('#deepQuery').value.trim();if(!q)return;const enc=encodeURIComponent(q);const variants=[['Google · exacte frase','https://www.google.com/search?q='+encodeURIComponent('"'+q+'"')],['Google · historische schrijfwijzen','https://www.google.com/search?q='+encodeURIComponent(q+' (Bandoeng OR Bandung OR Lembangweg)')],['Wikimedia Commons','https://commons.wikimedia.org/w/index.php?search='+enc+'&title=Special:MediaSearch&type=image'],['Nationaal Archief','https://www.nationaalarchief.nl/onderzoeken/zoeken?search='+enc],['Leiden · KITLV','https://digitalcollections.universiteitleiden.nl/search?type=dismax&islandora_solr_search_navigation=1&f%5B0%5D=mods_subject_topic_ms%3A'+enc],['Het Utrechts Archief','https://hetutrechtsarchief.nl/zoeken?search='+enc],['Delpher · kranten','https://www.delpher.nl/nl/kranten/results?query='+enc],['Google Books','https://books.google.com/books?q='+enc],['Genealogie Online','https://www.genealogieonline.nl/zoeken/?q='+enc],['Open Archieven','https://www.openarchieven.nl/search.php?name='+enc],['CBG · Oost-Indische bronnen','https://cbgverzamelingen.nl/zoeken?search='+enc],['Internet Archive','https://archive.org/search?query='+enc],['Posthistorie · adresvermelding','https://www.google.com/search?q='+encodeURIComponent('"Lembangweg 346" Bandoeng')],['SIGE · onderzoeksdossier familie Birsak','https://indischgenealogischerfgoed.nl/genealogie-en-heraldiek/onderzoeksdossiers/'],['Nationaal Archief · repatriëringslijsten 1946–1962','https://www.nationaalarchief.nl/onderzoeken/zoekhulpen/oorlogsarchief-rode-kruis-nederlands-indie'],['CBG · stappenplan Indische voorouders','https://cbg.nl/documents/287/2023_Stappenplan_Indische_voorouders.pdf']];const root=$('#deepLinks');root.replaceChildren();for(const [label,url] of variants){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=label+' ↗';const p=document.createElement('article');p.className='archive';p.append(a);root.append(p)}}$('#deepGo').addEventListener('click',renderDeepLinks);$('#deepQuery').addEventListener('keydown',e=>{if(e.key==='Enter')renderDeepLinks()});document.querySelectorAll('[data-deep]').forEach(b=>b.addEventListener('click',()=>{$('#deepQuery').value=b.dataset.deep;renderDeepLinks()}));renderDeepLinks();
-$('#go').addEventListener('click',()=>load(true));$('#q').addEventListener('keydown',event=>{if(event.key==='Enter')load(true)});$('#period').addEventListener('change',()=>load(true));$('#topic').addEventListener('change',()=>load(true));$('#reset').addEventListener('click',resetFilters);$('#more').addEventListener('click',()=>load(false));$('#naMore').addEventListener('click',()=>{naVisibleCount+=12;renderNationaalArchiefRecords()});$('#knilWeaponsMore').addEventListener('click',()=>{knilWeaponsVisibleCount+=12;renderKnilWeaponsRecords()});$('#rmMore').addEventListener('click',()=>{rmVisibleCount+=12;renderRijksmuseumRecords()});
-syncView();loadRijksmuseumIndex().then(()=>load(true));loadNationaalArchiefIndex();loadKnilWeaponsIndex();
+$('#go').addEventListener('click',()=>{saveUiState();load(true)});$('#q').addEventListener('input',saveUiState);$('#q').addEventListener('keydown',event=>{if(event.key==='Enter'){saveUiState();load(true)}});$('#period').addEventListener('change',()=>{saveUiState();load(true)});$('#topic').addEventListener('change',()=>{saveUiState();load(true)});$('#reset').addEventListener('click',resetFilters);$('#more').addEventListener('click',()=>load(false));$('#naMore').addEventListener('click',()=>{naVisibleCount+=12;renderNationaalArchiefRecords()});$('#knilWeaponsMore').addEventListener('click',()=>{knilWeaponsVisibleCount+=12;renderKnilWeaponsRecords()});$('#rmMore').addEventListener('click',()=>{rmVisibleCount+=12;renderRijksmuseumRecords()});
+restoreUiState();syncView();saveUiState();loadRijksmuseumIndex().then(()=>load(true));loadNationaalArchiefIndex();loadKnilWeaponsIndex();
 </script>
 </body>
 </html>

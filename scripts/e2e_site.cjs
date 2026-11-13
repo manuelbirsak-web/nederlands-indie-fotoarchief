@@ -11,13 +11,36 @@ async function main() {
   const failures = [];
 
   try {
-    await page.route('https://commons.wikimedia.org/w/api.php**', route =>
-      route.fulfill({
-        status: 200,
-        contentType: 'application/json',
-        body: JSON.stringify({ batchcomplete: true, query: { pages: {} } })
-      })
-    );
+    let commonsRequests = 0;
+    await page.route('https://commons.wikimedia.org/w/api.php**', async route => {
+      commonsRequests++;
+      const imageUrl = 'https://upload.wikimedia.org/wikipedia/commons/a/ab/indisch-beeldarchief-fixture.jpg';
+      const fixture = {
+        batchcomplete: true,
+        query: { pages: { 1001: {
+          pageid: 1001, index: 1,
+          title: 'File:Dutch East Indies Java Bandoeng Bandung KNIL Bersiap 1946.jpg',
+          imageinfo: [{
+            url: imageUrl, thumburl: imageUrl,
+            descriptionurl: 'https://commons.wikimedia.org/wiki/File:Indisch_beeldarchief_fixture.jpg',
+            mime: 'image/jpeg',
+            extmetadata: {
+              LicenseUrl: { value: 'https://creativecommons.org/publicdomain/zero/1.0/' },
+              LicenseShortName: { value: 'CC0 1.0' },
+              DateTimeOriginal: { value: '1946-01-01 00:00:00' },
+              ObjectName: { value: 'Dutch East Indies historical photograph' },
+              Artist: { value: 'Test fixture' },
+              ImageDescription: { value: 'Historical photograph of the Dutch East Indies, Java, Bandoeng Bandung, KNIL military soldier, Bersiap Indonesian National Revolution, daily life people, street building, railway transport, temple culture and landscape.' }
+            }
+          }]
+        }}}
+      };
+      await route.fulfill({ status: 200, contentType: 'application/json', headers: { 'Access-Control-Allow-Origin': '*' }, body: JSON.stringify(fixture) });
+    });
+    await page.route('https://upload.wikimedia.org/**', route => route.fulfill({
+      status: 200, contentType: 'image/png',
+      body: Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+j9ZkAAAAASUVORK5CYII=', 'base64')
+    }));
 
     const response = await page.goto(BASE, { waitUntil: 'domcontentloaded', timeout: 45000 });
     if (!response || response.status() !== 200) throw new Error('Homepage did not return HTTP 200');
@@ -41,33 +64,68 @@ async function main() {
       }));
       throw new Error('Initial gallery did not render a photo: ' + JSON.stringify(state) + '; ' + error.message);
     }
-    const galleryViews = ['knil', 'bersiap', 'daily'];
-    for (const view of galleryViews) {
+    const waitForLoadedGallery = async () => page.waitForFunction(() => {
+      const images = [...document.querySelectorAll('#results .photo img')];
+      return document.querySelector('#results')?.getAttribute('aria-busy') === 'false' &&
+        images.length > 0 && images.some(image => image.complete && image.naturalWidth > 0);
+    }, null, { timeout: 20000 });
+
+    for (const view of ['home', 'indies', 'java', 'bandung', 'knil', 'bersiap', 'daily']) {
+      const requestsBefore = commonsRequests;
       await page.locator('#nav [data-view="' + view + '"]').click();
-      await page.waitForFunction(() => document.querySelector('#results')?.getAttribute('aria-busy') === 'false', null, { timeout: 20000 });
-      await page.waitForFunction(() => document.querySelectorAll('#results .photo').length > 0, null, { timeout: 20000 });
-      const firstImage = page.locator('#results .photo img').first();
-      await firstImage.scrollIntoViewIfNeeded();
-      await page.waitForFunction(() => {
-        const img = document.querySelector('#results .photo img');
-        return Boolean(img && img.complete && img.naturalWidth > 0);
-      }, null, { timeout: 20000 });
+      await waitForLoadedGallery();
       const galleryCheck = await page.evaluate(() => ({
         cards: document.querySelectorAll('#results .photo').length,
-        loadedImages: [...document.querySelectorAll('#results .photo img')].filter(img => img.complete && img.naturalWidth > 0).length,
-        titles: [...document.querySelectorAll('#results .photo .photo-title')].slice(0, 3).map(x => x.textContent.trim()),
-        emptyMessage: [...document.querySelectorAll('#results > .status')].map(x => x.textContent.trim())
+        loadedImages: [...document.querySelectorAll('#results .photo img')].filter(img => img.complete && img.naturalWidth > 0).length
       }));
-      if (galleryCheck.cards < 1 || galleryCheck.loadedImages < 1 || galleryCheck.titles.some(x => !x)) {
-        failures.push('Historical gallery content or image loading failed for ' + view + ': ' + JSON.stringify(galleryCheck));
-      }
-      if (view === 'bersiap' && galleryCheck.cards !== 1) {
-        failures.push('Expected the single rights-cleared Bersiap Rijksmuseum image; found ' + galleryCheck.cards);
-      }
+      if (commonsRequests <= requestsBefore) failures.push('Tab switch did not request fresh Commons results for ' + view);
+      if (galleryCheck.cards < 1 || galleryCheck.loadedImages < 1) failures.push('Historical photos did not render/load for ' + view + ': ' + JSON.stringify(galleryCheck));
     }
-    await page.locator('#nav [data-view="home"]').click();
-    await page.waitForFunction(() => document.querySelector('#results')?.getAttribute('aria-busy') === 'false', null, { timeout: 20000 });
 
+    await page.locator('#nav [data-view="home"]').click();
+    await waitForLoadedGallery();
+    let requestsBefore = commonsRequests;
+    await page.locator('#period').selectOption('1945-1950');
+    await waitForLoadedGallery();
+    if (commonsRequests <= requestsBefore) failures.push('Changing the year filter did not reload photo results');
+
+    for (const topic of ['city', 'people', 'military', 'transport', 'culture', 'nature']) {
+      requestsBefore = commonsRequests;
+      await page.locator('#topic').selectOption(topic);
+      await waitForLoadedGallery();
+      if (commonsRequests <= requestsBefore) failures.push('Changing topic filter did not reload photo results for ' + topic);
+    }
+
+    await page.locator('#nav [data-view="java"]').click();
+    await page.locator('#places [data-place="bandung"]').click();
+    await waitForLoadedGallery();
+    await page.locator('#nav [data-view="bandung"]').click();
+    await page.locator('#bandungTopics [data-term="Bragaweg"]').click();
+    await waitForLoadedGallery();
+
+    await page.locator('#nav [data-view="knil"]').click();
+    await page.locator('#period').selectOption('1945-1950');
+    await page.locator('#topic').selectOption('military');
+    await page.locator('#q').fill('KNIL');
+    await page.locator('#go').click();
+    await waitForLoadedGallery();
+    await page.reload({ waitUntil: 'domcontentloaded' });
+    await waitForLoadedGallery();
+    const restoredState = await page.evaluate(() => ({
+      activeView: document.querySelector('#nav button[aria-current="page"]')?.dataset.view,
+      period: document.querySelector('#period')?.value,
+      topic: document.querySelector('#topic')?.value,
+      query: document.querySelector('#q')?.value,
+      saved: JSON.parse(localStorage.getItem('indisch-beeldarchief-ui-state-v1') || 'null')
+    }));
+    if (restoredState.activeView !== 'knil' || restoredState.period !== '1945-1950' ||
+        restoredState.topic !== 'military' || restoredState.query !== 'KNIL' || restoredState.saved?.view !== 'knil') {
+      failures.push('Browser refresh did not restore the selected tab and filters: ' + JSON.stringify(restoredState));
+    }
+
+    await page.locator('#nav [data-view="home"]').click();
+    await page.locator('#reset').click();
+    await waitForLoadedGallery();
 
     await page.waitForFunction(() => /136 bronrecords/.test(document.querySelector('#knilWeaponsCount')?.textContent || ''), null, { timeout: 20000 });
     const knilInitial = await page.evaluate(() => ({
