@@ -14,10 +14,16 @@ Het Indisch Beeldarchief brengt historische foto's, bronbeschrijvingen en instit
 | Bron | Integratie | Huidige omvang | Beeldrechten |
 |---|---|---:|---|
 | Wikimedia Commons | Live API-zoekresultaten | Dynamisch, afhankelijk van zoekfilters | Licentie en bron worden per bestand getoond; controleer het origineel |
-| Nationaal Archief | Lokale metadata-snapshot, schema v2 | 4.000 records (12-11-2026) | Metadata en Handle-links; geen thumbnails uit deze index |
+| Nationaal Archief | Lokale metadata-snapshot, schema v2 | 4.000 records (12-11-2026); 905 KNIL-labels | Alle 4.000 records zijn CNE in de snapshot; uitsluitend metadata en Handle-links, geen thumbnails |
 | Rijksmuseum | Lokale Search API + Linked Art-snapshot | 229 foto-objecten (12-11-2026) | 215 beelden met expliciete Public Domain Mark 1.0- of CC0 1.0-verklaring op het digitale beeld; 14 metadata-only |
 
 De Nationaal Archief-harvester heeft bij de huidige snapshot de veiligheidslimiet van acht pagina's à 500 records bereikt. De 4.000 records zijn dus een begrensde zoekselectie, geen volledige export en geen bewijs van collectievolledigheid. De Rijksmuseum-snapshot is eveneens een begrensde selectie van zoektermen en eerste pagina's; het is geen volledige export van de museumcollectie.
+
+### KNIL-bewapening
+
+- De lokale onderzoeksindex bevat **148 KNIL-bronrecords met bewapeningsgerelateerde beschrijvingen**, met **115 unieke beschrijvingen**. De selectie is reproduceerbaar afgeleid uit de Nationaal Archief-snapshot en bevat permanente bronlinks.
+- De records zijn onderverdeeld in pantserwagens en tanks (64), machinegeweren en machinepistolen (21), artillerie en mortieren (21), geweren en handwapens (12) en overige bewapening (30). Categorieën zijn zoekhulpen, geen onafhankelijke modelidentificaties.
+- Alle 148 records hebben in de snapshot de status CNE. De website publiceert daarom geen bijbehorende Nationaal Archief-afbeeldingen; alleen de bronbeschrijving en de link naar het oorspronkelijke record worden getoond.
 
 ## Familieonderzoek en uitgebreide zoekingang
 
