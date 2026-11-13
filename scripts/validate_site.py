@@ -140,7 +140,7 @@ def main() -> None:
         fail("Niet-fotografische illustraties en publicaties worden niet aantoonbaar uitgesloten")
     if "match(/(?:18|19|20)\\d{2}/)" not in source:
         fail("Datumparser voor Nationaal Archief-records ontbreekt of is onjuist")
-    if "const seenFiles=new Set()" not in source or "foundThisLoad < 8 && batches < 4" not in source:
+    if "const seenFiles=new Set()" not in source or "foundThisLoad < 8 && batches < 8" not in source:
         fail("Zoeken moet duplicaten voorkomen en lege zoekpagina’s automatisch overslaan")
     if "AbortController" not in source or "data.continue" not in source:
         fail("Abort/continuation afhandeling ontbreekt")
