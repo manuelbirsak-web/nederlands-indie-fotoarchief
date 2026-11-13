@@ -81,6 +81,24 @@ jobs:
           assert "assets/family/birsak-woning.jpg" not in html
           assert "assets/family/birsak-familieportret.jpg" not in html
 
+          assert 'id="knilWeapons"' in html
+          assert "loadKnilWeaponsIndex();" in html
+          with urllib.request.urlopen(base + "/assets/knil-bewapening.json", timeout=30) as response:
+              weapons = __import__("json").load(response)
+              assert response.status == 200
+          weapon_records = weapons["records"]
+          assert weapons["selection"]["recordCount"] == 148
+          assert weapons["selection"]["uniqueDescriptions"] == 115
+          assert len(weapon_records) == 148
+          assert all(record["rights"] == "http://rightsstatements.org/page/CNE/1.0/" for record in weapon_records)
+          assert all(record["imagePublished"] is False for record in weapon_records)
+          assert all(not record.get("imageUrl") and not record.get("thumbnail") for record in weapon_records)
+          print("PASS deployed KNIL index: 148 source records, 115 descriptions, CNE metadata-only")
+          with urllib.request.urlopen(base + "/favicon.svg", timeout=30) as response:
+              favicon = response.read()
+              assert response.status == 200 and b"<svg" in favicon
+          print("PASS deployed SVG favicon")
+
           expected = {
               "assets/family/IMG_5108.jpeg": (166524, "2807b2f5048ca65df0026d02c8449f411fb9415c7f9871403fc1d0024a4893fb"),
               "assets/family/IMG_5107.jpeg": (259653, "9766e8a2e8a0976a8c00ee522474aa352322909d5acd4ab0186d969a1bff3ccb"),
