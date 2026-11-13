@@ -64,6 +64,17 @@ async function main() {
     if (familyChecks.hasPublicChangelogLink) failures.push('Public website still exposes a change-log link');
     if (familyChecks.hasEditorialCorrectionNote) failures.push('Editorial correction note leaked into the family photo page');
 
+    const rightsChecks = await page.evaluate(() => ({
+      cc0: isReusableCommonsLicense({ LicenseUrl: { value: 'https://creativecommons.org/publicdomain/zero/1.0/' } }),
+      publicDomainMark: isReusableCommonsLicense({ LicenseUrl: { value: 'https://creativecommons.org/publicdomain/mark/1.0/' } }),
+      ccBySa: isReusableCommonsLicense({ LicenseUrl: { value: 'https://creativecommons.org/licenses/by-sa/4.0/' } }),
+      copyrightNotEvaluated: isReusableCommonsLicense({ LicenseUrl: { value: 'http://rightsstatements.org/page/CNE/1.0/' } }),
+      missing: isReusableCommonsLicense({})
+    }));
+    if (!rightsChecks.cc0 || !rightsChecks.publicDomainMark || !rightsChecks.ccBySa || rightsChecks.copyrightNotEvaluated || rightsChecks.missing) {
+      failures.push('Commons image-rights allowlist failed: ' + JSON.stringify(rightsChecks));
+    }
+
     await page.addScriptTag({ path: require.resolve('axe-core/axe.min.js') });
     for (const view of ['home', 'family']) {
       if (view === 'home') await page.locator('#nav [data-view="home"]').click();
