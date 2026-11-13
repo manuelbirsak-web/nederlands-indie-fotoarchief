@@ -3,7 +3,7 @@
 const { chromium } = require('playwright');
 const axe = require('axe-core');
 
-const BASE = 'https://manuelbirsak-web.github.io/nederlands-indie-fotoarchief/';
+const BASE = 'http://127.0.0.1:4173/';
 
 async function main() {
   const browser = await chromium.launch({ headless: true });
