@@ -14,8 +14,8 @@ Het Indisch Beeldarchief brengt historische foto's, bronbeschrijvingen en instit
 | Bron | Integratie | Huidige omvang | Beeldrechten |
 |---|---|---:|---|
 | Wikimedia Commons | Live API-zoekresultaten | Dynamisch, afhankelijk van zoekfilters | Licentie en bron worden per bestand getoond; controleer het origineel |
-| Nationaal Archief | Lokale metadata-snapshot, schema v2 | 4.000 records (12-11-2026); 905 KNIL-labels | Alle 4.000 records zijn CNE in de snapshot; uitsluitend metadata en Handle-links, geen thumbnails |
-| Rijksmuseum | Lokale Search API + Linked Art-snapshot | 229 foto-objecten (12-11-2026) | 215 beelden met expliciete Public Domain Mark 1.0- of CC0 1.0-verklaring op het digitale beeld; 14 metadata-only |
+| Nationaal Archief | Lokale metadata-snapshot, schema v2 | 4.000 records (13-11-2026); 905 KNIL-labels | Alle 4.000 records zijn CNE in de snapshot; uitsluitend metadata en Handle-links, geen thumbnails |
+| Rijksmuseum | Lokale Search API + Linked Art-snapshot | 229 foto-objecten (13-11-2026) | 215 beelden met expliciete Public Domain Mark 1.0- of CC0 1.0-verklaring op het digitale beeld; 14 metadata-only |
 
 De Nationaal Archief-harvester heeft bij de huidige snapshot de veiligheidslimiet van acht pagina's à 500 records bereikt. De 4.000 records zijn dus een begrensde zoekselectie, geen volledige export en geen bewijs van collectievolledigheid. De Rijksmuseum-snapshot is eveneens een begrensde selectie van zoektermen en eerste pagina's; het is geen volledige export van de museumcollectie.
 
