@@ -28,6 +28,18 @@ async function main() {
     );
 
     if (!(await page.title()).includes('Indisch Beeldarchief')) failures.push('Homepage title missing');
+    await page.waitForFunction(() => document.querySelectorAll('#results .photo').length > 0, null, { timeout: 20000 });
+    const galleryViews = ['knil', 'bersiap', 'daily'];
+    for (const view of galleryViews) {
+      await page.locator('#nav [data-view="' + view + '"]').click();
+      await page.waitForFunction(() => document.querySelector('#results')?.getAttribute('aria-busy') === 'false', null, { timeout: 20000 });
+      await page.waitForFunction(() => document.querySelectorAll('#results .photo').length > 0, null, { timeout: 20000 });
+      const visible = await page.locator('#results .photo').count();
+      if (!visible) failures.push('No rights-cleared primary-gallery images for ' + view);
+    }
+    await page.locator('#nav [data-view="home"]').click();
+    await page.waitForFunction(() => document.querySelector('#results')?.getAttribute('aria-busy') === 'false', null, { timeout: 20000 });
+
 
     await page.waitForFunction(() => /148 bronrecords/.test(document.querySelector('#knilWeaponsCount')?.textContent || ''), null, { timeout: 20000 });
     const knilInitial = await page.evaluate(() => ({
