@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "source": "Nationaal Archief — linked open data fotocollectie",
   "sourceUrl": "https://www.nationaalarchief.nl/onderzoeken/linked-open-data/sparql-interface-fotocollectie",
-  "snapshotDate": "2026-11-13T10:20:17.678556+00:00",
-  "sourceSnapshot": "2026-11-13T10:20:17.678556+00:00",
+  "snapshotDate": "2026-11-13T10:22:44.131903+00:00",
+  "sourceSnapshot": "2026-11-13T10:22:44.131903+00:00",
   "selection": {
     "topic": "knil",
     "descriptionPattern": "wapen|geweer|karabijn|revolver|pistool|machinegeweer|mitrailleur|bajonet|munitie|kanon|artillerie|sabel|zwaard|tank|pantser|bren|lee.?enfield|stengun|sten gun|garand|springfield|mauser|vickers|thompson|lanchester|mortier|afweergeschut|brencarrier|bren-carrier",
@@ -18,7 +18,7 @@
     "Overige bewapening": 18,
     "Pantserwagens en tanks": 64
   },
-  "rightsPolicy": "All 136 indexed records were individually checked against their live primary Nationaal Archief pages on 2026-11-13. Each page states Publiek Domein, permits free reuse, and provides a download. The linked-open-data snapshot CNE field is stale/inconsistent for these individual records. Verification applies only to the exact handles in this index.",
+  "rightsPolicy": "All 136 indexed records were individually checked against their live primary Nationaal Archief pages on 2026-11-13. Each page states Publiek Domein, permits free reuse, and provides a download. The linked-open-data snapshot's CNE field is stale/inconsistent for these individual records. Verification applies only to the exact handles in this index.",
   "primaryRightsAudit": {
     "checkedAt": "2026-11-13",
     "checkedRecords": 136,
