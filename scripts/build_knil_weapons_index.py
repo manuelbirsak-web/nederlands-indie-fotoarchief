@@ -224,10 +224,23 @@ def build_index(archive: dict) -> dict:
         },
         "categoryCounts": dict(sorted(counts.items())),
         "rightsPolicy": (
-            "The linked-open-data snapshot marks these records CNE, but all 136 indexed primary Nationaal Archief pages were individually checked on 2026-11-13. "
-            "Each checked page states Publiek Domein, permits free reuse, and offers a download. "
-            "This verification applies only to the exact handles in VERIFIED_PRIMARY_RIGHTS_HANDLES."
+            "All 136 indexed records were individually checked against their live primary Nationaal Archief pages on 2026-11-13. "
+            "Each page states Publiek Domein, permits free reuse, and provides a download. "
+            "The linked-open-data snapshot CNE field is stale/inconsistent for these individual records. "
+            "Verification applies only to the exact handles in this index."
         ),
+        "primaryRightsAudit": {
+            "checkedAt": "2026-11-13",
+            "checkedRecords": len(VERIFIED_PRIMARY_RIGHTS_HANDLES.intersection(
+                record["uri"].rsplit("/", 1)[-1] for record in records if record.get("uri")
+            )),
+            "rightsStatus": "Publiek Domein",
+            "reuseStatement": "U kunt deze afbeelding rechtenvrij en gratis (her)gebruiken.",
+            "downloadAvailableRecords": len(VERIFIED_PRIMARY_RIGHTS_HANDLES.intersection(
+                record["uri"].rsplit("/", 1)[-1] for record in records if record.get("uri")
+            )),
+            "method": "Individual live Nationaal Archief photo pages; exact Handle URLs stored per record.",
+        },
         "records": records,
     }
 
