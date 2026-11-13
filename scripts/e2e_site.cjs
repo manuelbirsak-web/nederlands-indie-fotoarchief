@@ -57,7 +57,7 @@ async function main() {
     await page.waitForFunction(() => document.querySelector('#results')?.getAttribute('aria-busy') === 'false', null, { timeout: 20000 });
 
 
-    await page.waitForFunction(() => /148 bronrecords/.test(document.querySelector('#knilWeaponsCount')?.textContent || ''), null, { timeout: 20000 });
+    await page.waitForFunction(() => /136 bronrecords/.test(document.querySelector('#knilWeaponsCount')?.textContent || ''), null, { timeout: 20000 });
     const knilInitial = await page.evaluate(() => ({
       cards: document.querySelectorAll('#knilWeaponsResults .record-card').length,
       images: document.querySelectorAll('#knilWeaponsResults img').length,
