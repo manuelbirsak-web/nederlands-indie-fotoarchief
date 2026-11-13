@@ -8,6 +8,8 @@ import sys
 from html.parser import HTMLParser
 from pathlib import Path
 
+from build_knil_weapons_index import build_index as build_knil_weapons_index
+
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
 ARCHIVE_INDEX = ROOT / "assets" / "nationaal-archief.json"
@@ -261,16 +263,14 @@ def main() -> None:
     except Exception as exc:
         fail(f"KNIL-bewapeningsindex JSON is ongeldig: {exc}")
     weapon_records = knil_weapons.get("records", [])
+    expected_weapons = build_knil_weapons_index(archive)
+    if knil_weapons != expected_weapons:
+        fail("KNIL-bewapeningsindex is niet reproduceerbaar uit de actuele Nationaal Archief-snapshot")
     if knil_weapons.get("schemaVersion") != 1 or knil_weapons.get("sourceSnapshot") != archive.get("snapshotDate"):
         fail("KNIL-bewapeningsindex mist schema of verwijst niet naar dezelfde Nationaal Archief-snapshot")
-    if knil_weapons.get("selection", {}).get("recordCount") != len(weapon_records) or len(weapon_records) != 148:
-        fail("KNIL-bewapeningsindex bevat niet het verwachte aantal bronrecords")
-    if knil_weapons.get("selection", {}).get("uniqueDescriptions") != len({r.get("description") for r in weapon_records}):
-        fail("KNIL-bewapeningsindex telling unieke beschrijvingen klopt niet")
     na_by_uri = {r.get("uri"): r for r in records}
     if len({r.get("uri") for r in weapon_records}) != len(weapon_records):
         fail("KNIL-bewapeningsindex bevat dubbele bron-URI's")
-    allowed_weapon_categories = {"Overige bewapening", "Geweerschutters en handwapens", "Pantserwagens en tanks", "Artillerie en mortieren", "Machinegeweren en machinepistolen"}
     for record in weapon_records:
         original = na_by_uri.get(record.get("uri"))
         if not original or original.get("description") != record.get("description") or original.get("rights") != record.get("rights"):
@@ -279,8 +279,6 @@ def main() -> None:
             fail("KNIL-bewapeningsrecord heeft onverwachte rechtenstatus; handmatige beoordeling vereist")
         if record.get("imagePublished") is not False or record.get("imageUrl") or record.get("thumbnail"):
             fail("CNE-bewapeningsrecord mag geen beeldbestand publiceren")
-        if record.get("category") not in allowed_weapon_categories:
-            fail("Onbekende bewapeningscategorie in KNIL-index")
         if not str(record.get("uri", "")).startswith("http://proxy.handle.net/10648/"):
             fail("KNIL-bewapeningsrecord mist permanente Nationaal Archief-Handle")
 
