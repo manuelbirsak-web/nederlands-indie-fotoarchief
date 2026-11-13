@@ -1,0 +1,49 @@
+name: Browser, accessibility and Lighthouse audit
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: browser-audit
+  cancel-in-progress: true
+
+jobs:
+  browser-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install browser audit tools
+        run: npm install --no-save --no-package-lock playwright axe-core lighthouse
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Run responsive browser and WCAG checks
+        run: node scripts/e2e_site.cjs
+      - name: Run mobile Lighthouse audit
+        run: |
+          mkdir -p artifacts
+          npx lighthouse https://manuelbirsak-web.github.io/nederlands-indie-fotoarchief/ \
+            --chrome-flags="--headless --no-sandbox" \
+            --form-factor=mobile \
+            --only-categories=performance,accessibility,best-practices,seo \
+            --output=json \
+            --output-path=artifacts/lighthouse-mobile.json
+          node scripts/check_lighthouse.cjs artifacts/lighthouse-mobile.json
+      - name: Upload Lighthouse report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: indisch-beeldarchief-lighthouse-mobile
+          path: artifacts/lighthouse-mobile.json
+          if-no-files-found: ignore
+          retention-days: 30
