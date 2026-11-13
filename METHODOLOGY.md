@@ -54,8 +54,9 @@ Historische schrijfwijzen en moderne plaatsnamen worden waar mogelijk als zoekal
 ## 5. Beeldrechten en hergebruik
 
 - Een vindbare afbeelding is niet automatisch vrij herbruikbaar.
-- De Nationaal Archief-index op deze website bevat metadata en permanente Handle-links. Er worden geen thumbnails uit records met onduidelijke of niet-beoordeelde rechtenstatus gereproduceerd.
-- Een aanduiding zoals **CNE / Copyright Not Evaluated** betekent dat de rechtenstatus niet is beoordeeld. Behandel dit niet als een vrije licentie.
+- De Nationaal Archief-snapshot van 12 november 2026 bevat 4.000 records. Alle 4.000 records voeren in deze linked-open-data-snapshot de rechtenstatus **CNE / Copyright Not Evaluated**. Deze records worden uitsluitend als metadata met permanente Handle-links getoond; er wordt geen afbeelding uit deze snapshot gereproduceerd.
+- CNE betekent dat de rechtenstatus niet is beoordeeld. Behandel dit niet als een vrije licentie. Een afzonderlijke officiële fotopagina kan voor een individueel beeld wél expliciet publiek domein of rechtenvrij hergebruik vermelden; die status mag alleen na controle van die specifieke pagina worden vastgelegd en mag niet automatisch op andere records worden toegepast.
+- De Rijksmuseum-snapshot bevat 229 foto-objecten: 215 digitale beelden met een expliciete Public Domain Mark 1.0- of CC0 1.0-verklaring op het beeld zelf en 14 metadata-only objecten. De validatie controleert ieder beeldrecord afzonderlijk tegen deze allowlist.
 - Wikimedia Commons-thumbnails worden alleen getoond wanneer de API een expliciete, herbruikbare licentie-URL teruggeeft: CC0 1.0, Public Domain Mark 1.0, CC BY of CC BY-SA (versies 1.0, 2.0, 2.5, 3.0 of 4.0). Ontbrekende licenties en rechtenverklaringen zoals CNE worden niet als toestemming behandeld en leiden niet tot beeldweergave.
 - De bron- en licentiepagina blijft per getoonde afbeelding rechtstreeks bereikbaar. Maker en bronvermelding worden getoond wanneer de bronmetadata die aanlevert; een ontbrekende maker wordt niet ingevuld of geraden.
 - Andere instellingen kunnen downloads beperken of verschillende toegangs- en hergebruikvoorwaarden hanteren.
@@ -63,7 +64,15 @@ Historische schrijfwijzen en moderne plaatsnamen worden waar mogelijk als zoekal
 
 Dit document is geen juridisch oordeel en verleent geen toestemming voor hergebruik.
 
-## 6. Gegevensmodel
+## 6. KNIL-bewapeningsindex
+
+De snapshot van 12 november 2026 bevat 905 records met het automatische label KNIL. Binnen de 4.000 opgehaalde records zijn 148 KNIL-records gevonden waarvan de afzonderlijke bronbeschrijving een wapen, voertuig of bewapeningsgerelateerd onderwerp noemt; deze selectie bevat 115 verschillende beschrijvingen. De selectie is opgenomen in `assets/knil-bewapening.json`.
+
+De categorieën (pantserwagens en tanks, machinegeweren en machinepistolen, artillerie en mortieren, geweren en handwapens, overige bewapening) zijn uitsluitend zoekhulpen die uit de beschrijving zijn afgeleid. Ze vormen geen zelfstandige identificatie van het gefotografeerde model. De exacte tekst, datum en permanente Handle worden ongewijzigd aan de bronmetadata ontleend. Duplicaatbeschrijvingen blijven als afzonderlijke archiefrecords behouden wanneer de Handle verschilt.
+
+Alle 148 geselecteerde records hebben in de snapshot CNE als rechtenstatus. De website toont daarom uitsluitend de beschrijving, de categorie als zoekhulp en een link naar het oorspronkelijke record; geen van deze 148 foto's wordt vanuit de snapshot herpubliceerd. Wanneer een individuele Nationaal Archief-fotopagina elders expliciet publiek domein vermeldt, moet die afzonderlijke status apart worden vastgelegd voordat het beeld wordt gebruikt.
+
+## 7. Gegevensmodel
 
 De Nationaal Archief-snapshot gebruikt schemaVersion 2. De Rijksmuseum-snapshot gebruikt schemaVersion 1 en bevat objectidentificatie, bron- en zoekprovenance, beschrijving, datering, maker, classificatielabels en eventuele expliciete rechteninformatie op het digitale beeld zelf. Een record kan onder meer bevatten:
 
@@ -80,13 +89,13 @@ De Nationaal Archief-snapshot gebruikt schemaVersion 2. De Rijksmuseum-snapshot 
 
 Het overzicht `topicCounts` en `placeCounts` is een telling van de labels in de actuele snapshot. Het is geen telling van alle foto's die een instelling bezit.
 
-## 7. Verversing en foutafhandeling
+## 8. Verversing en foutafhandeling
 
 De metadata-harvester bevraagt de publieke SPARQL-service van het Nationaal Archief in geordende pagina's van maximaal 500 records, met een veiligheidslimiet van acht pagina's (maximaal 4.000 opgehaalde records). De wekelijkse GitHub Actions-workflow probeert de snapshot te verversen; een wijziging aan de harvester start ook een verversing. Bij een mislukte of te kleine respons blijft de bestaande snapshot behouden en wordt de workflow als mislukt gemarkeerd. Een geslaagde technische verversing is geen curatoriële kwaliteitscontrole.
 
 De huidige snapshot is een begrensde zoekselectie, geen volledige export van de circa 400.000 foto's die het Nationaal Archief op zijn informatiepagina vermeldt. De actuele recordtelling en peildatum staan in `assets/nationaal-archief.json`.
 
-## 8. Correcties
+## 9. Correcties
 
 Een inhoudelijke correctie moet waar mogelijk bevatten:
 
@@ -97,12 +106,14 @@ Een inhoudelijke correctie moet waar mogelijk bevatten:
 
 Wijzig een plaats, datum, persoon, eenheid of gebeurtenis niet uitsluitend op basis van gelijkenis, vermoedens of een onderschrift uit een andere kopie.
 
-## 9. Bekende beperkingen
+## 10. Bekende beperkingen
 
 - Wikimedia Commons levert live beeldresultaten. Nationaal Archief en Rijksmuseum leveren lokale metadata-snapshots; bij het Rijksmuseum worden uitsluitend beelden getoond met expliciete beeldlicentie PD Mark 1.0 of CC0 1.0.
 - KITLV, Utrechts Archief, NIMH, Wereldmuseum, Het Nieuwe Instituut, Europeana, Delpher en Atlas of Mutual Heritage zijn als externe onderzoeksingangen opgenomen. Een koppeling is geen API-integratie.
 - De automatische labels moeten worden beoordeeld en verfijnd; ze zijn geen vervanging van menselijke geschiedkundige controle.
 - De volledigheid van de beeldcollectie is niet vastgesteld.
-- Er is nog geen volledige record-voor-record historische verificatie of juridische rechtencontrole van alle beelden uitgevoerd. De geautomatiseerde responsive browsercontrole, axe-core WCAG 2.1 A/AA-controle en mobiele Lighthouse-gates zijn op 13 november 2026 geslaagd; dit is geen onafhankelijke menselijke toegankelijkheidsaudit.
+- De 4.000 Nationaal Archief-records en 229 Rijksmuseum-objecten vormen begrensde zoekselecties. De 148 KNIL-bewapeningsrecords zijn controleerbaar terug te voeren op de exacte bronmetadata-snapshot, maar hun visuele inhoud en wapentypen zijn niet allemaal onafhankelijk aan de originele scan getoetst. De website presenteert ze daarom niet als onafhankelijk vastgestelde identificaties.
+- Voor de 4.000 Nationaal Archief-records is geen beeldrechtenvrijgave afgegeven; alle 4.000 blijven metadata-only. De 14 Rijksmuseum-records zonder beeldlicentie blijven eveneens metadata-only. De 215 overige Rijksmuseum-beelden en de live Commons-resultaten worden alleen getoond wanneer de expliciete rechtenallowlist slaagt.
+- De geautomatiseerde responsive browsercontrole, axe-core WCAG 2.1 A/AA-controle en mobiele Lighthouse-gates zijn op 13 november 2026 geslaagd; dit is geen onafhankelijke menselijke toegankelijkheidsaudit.
 
 Deze beperkingen worden bewust zichtbaar gehouden om schijnzekerheid te voorkomen.
