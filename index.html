@@ -140,6 +140,12 @@ body.family-view #familyBirsak,body.family-view #deepSearch{display:block!import
 <div id="naResults" class="record-grid" aria-live="polite"><div class="status"><strong>Archiefindex</strong>De aanvullende bronrecords worden geladen.</div></div>
 <button id="naMore" class="more" type="button" hidden>Meer archiefrecords tonen</button>
 </section>
+<section id="knilWeapons" class="archives" aria-labelledby="knilWeaponsTitle">
+<div class="head"><div><div class="section-label">Onderzoeksindex · Nationaal Archief</div><h2 id="knilWeaponsTitle">KNIL-bewapening · bronbeschrijvingen</h2></div><div class="head-right" id="knilWeaponsCount" aria-live="polite">Index wordt geladen</div></div>
+<p class="fine" id="knilWeaponsNote">Deze selectie bevat KNIL-records waarvan de oorspronkelijke bronbeschrijving een wapen, voertuig of bewapeningsgerelateerd onderwerp noemt. De tekst is bronmetadata, geen onafhankelijke technische identificatie. De rechtenstatus is CNE; daarom worden geen Nationaal Archief-afbeeldingen gekopieerd of getoond.</p>
+<div id="knilWeaponsResults" class="record-grid" aria-live="polite"><div class="status"><strong>KNIL-bewapeningsindex</strong>De bronbeschrijvingen worden geladen.</div></div>
+<button id="knilWeaponsMore" class="more" type="button" hidden>Meer KNIL-records tonen</button>
+</section>
 <section id="rmArchive" class="archives" aria-labelledby="rmTitle">
 <div class="head"><div><div class="section-label">Aanvullende museumbron · Linked Art + IIIF</div><h2 id="rmTitle">Fotocollectie van het Rijksmuseum</h2></div><div class="head-right" id="rmCount" aria-live="polite">Index wordt geladen</div></div>
 <p class="fine" id="rmSnapshotNote">De Rijksmuseum-index wordt geladen. Afbeeldingen worden alleen getoond wanneer de rechtenverklaring van het digitale beeld expliciet Public Domain Mark of CC0 vermeldt. Anders blijft het object metadata-only en linkt het naar het originele objectrecord.</p>
@@ -344,6 +350,8 @@ async function load(reset=false) {
 }
 let naIndex=null;
 let naVisibleCount=12;
+let knilWeaponsIndex=null;
+let knilWeaponsVisibleCount=12;
 let rmIndex=null;
 let rmVisibleCount=12;
 const RM_IMAGE_RIGHTS=new Set(['https://creativecommons.org/publicdomain/mark/1.0/','https://creativecommons.org/publicdomain/zero/1.0/']);
@@ -431,6 +439,41 @@ function rijksmuseumRecordMatches(record){
  if(selectedArchiveTopic&&!topics.includes(selectedArchiveTopic))return false;
  return true;
 }
+function renderKnilWeaponsRecords(reset=false){
+ const root=$('#knilWeaponsResults');if(!root)return;
+ if(reset)knilWeaponsVisibleCount=12;
+ if(!knilWeaponsIndex){root.replaceChildren(status('KNIL-bewapeningsindex laden','De bronbeschrijvingen worden opgehaald.'));return}
+ const records=knilWeaponsIndex.records||[];
+ $('#knilWeaponsCount').textContent=records.length+' bronrecords · '+(knilWeaponsIndex.selection?.uniqueDescriptions||0)+' unieke beschrijvingen';
+ root.replaceChildren();
+ if(!records.length){root.append(status('Geen KNIL-bewapeningsrecords','De bronselectie bevat geen passende beschrijvingen.'));$('#knilWeaponsMore').hidden=true;return}
+ for(const record of records.slice(0,knilWeaponsVisibleCount)){
+  const card=document.createElement('article');card.className='record-card';
+  const title=document.createElement('h3');title.textContent=record.description||'Beschrijving ontbreekt';
+  const meta=document.createElement('div');meta.className='record-meta';
+  const date=document.createElement('span');date.className='tag';date.textContent='Bronmetadata: '+(record.date||'datum niet vermeld');meta.append(date);
+  const category=document.createElement('span');category.className='tag';category.textContent=record.category;meta.append(category);
+  const rights=document.createElement('span');rights.className='tag';rights.textContent='CNE · alleen metadata';meta.append(rights);
+  const collection=document.createElement('p');collection.textContent=record.collection||'Collectie niet vermeld';
+  const link=document.createElement('a');link.href=record.uri.replace(/^http:/,'https:');link.target='_blank';link.rel='noopener noreferrer';link.textContent='Open oorspronkelijk Nationaal Archief-record ↗';
+  card.append(title,meta,collection,link);root.append(card);
+ }
+ $('#knilWeaponsMore').hidden=records.length<=knilWeaponsVisibleCount;
+ $('#knilWeaponsMore').textContent='Meer KNIL-records tonen ('+Math.min(knilWeaponsVisibleCount,records.length)+' van '+records.length+')';
+}
+async function loadKnilWeaponsIndex(){
+ try{
+  const response=await fetch('assets/knil-bewapening.json',{cache:'no-cache'});
+  if(!response.ok)throw new Error('HTTP '+response.status);
+  knilWeaponsIndex=await response.json();
+  const day=String(knilWeaponsIndex.snapshotDate||'').slice(0,10)||'peildatum onbekend';
+  $('#knilWeaponsNote').textContent='Peildatum '+day+' · '+knilWeaponsIndex.selection.recordCount+' KNIL-gerelateerde bronrecords met '+knilWeaponsIndex.selection.uniqueDescriptions+' unieke beschrijvingen. Alle records hebben de status CNE (Copyright Not Evaluated); daarom worden uitsluitend metadata en permanente bronlinks getoond. De bewapeningscategorie is een zoekhulp, geen onafhankelijke identificatie van het afgebeelde materieel.';
+  renderKnilWeaponsRecords(true);
+ }catch(error){
+  $('#knilWeaponsCount').textContent='Index niet beschikbaar';
+  $('#knilWeaponsResults').replaceChildren(status('KNIL-bewapeningsindex tijdelijk niet beschikbaar','Open de Nationaal Archief-collectie rechtstreeks voor de actuele brongegevens.'));
+ }
+}
 function renderRijksmuseumRecords(reset=false){
  const root=$('#rmResults');if(!root)return;
  if(reset)rmVisibleCount=12;
@@ -485,8 +528,8 @@ $('#nav').addEventListener('click',event=>{const button=event.target.closest('[d
 $('#places').addEventListener('click',event=>{const button=event.target.closest('[data-place]');if(!button)return;place=button.dataset.place;document.querySelectorAll('#places [data-place]').forEach(b=>b.classList.toggle('selected',b===button));load(true)});
 $('#bandungTopics').addEventListener('click',event=>{const button=event.target.closest('[data-term]');if(!button)return;customTerm=button.dataset.term;document.querySelectorAll('#bandungTopics [data-term]').forEach(b=>b.classList.toggle('selected',b===button));load(true)});
 function renderDeepLinks(){const q=$('#deepQuery').value.trim();if(!q)return;const enc=encodeURIComponent(q);const variants=[['Google · exacte frase','https://www.google.com/search?q='+encodeURIComponent('"'+q+'"')],['Google · historische schrijfwijzen','https://www.google.com/search?q='+encodeURIComponent(q+' (Bandoeng OR Bandung OR Lembangweg)')],['Wikimedia Commons','https://commons.wikimedia.org/w/index.php?search='+enc+'&title=Special:MediaSearch&type=image'],['Nationaal Archief','https://www.nationaalarchief.nl/onderzoeken/zoeken?search='+enc],['Leiden · KITLV','https://digitalcollections.universiteitleiden.nl/search?type=dismax&islandora_solr_search_navigation=1&f%5B0%5D=mods_subject_topic_ms%3A'+enc],['Het Utrechts Archief','https://hetutrechtsarchief.nl/zoeken?search='+enc],['Delpher · kranten','https://www.delpher.nl/nl/kranten/results?query='+enc],['Google Books','https://books.google.com/books?q='+enc],['Genealogie Online','https://www.genealogieonline.nl/zoeken/?q='+enc],['Open Archieven','https://www.openarchieven.nl/search.php?name='+enc],['CBG · Oost-Indische bronnen','https://cbgverzamelingen.nl/zoeken?search='+enc],['Internet Archive','https://archive.org/search?query='+enc],['Posthistorie · adresvermelding','https://www.google.com/search?q='+encodeURIComponent('"Lembangweg 346" Bandoeng')],['SIGE · onderzoeksdossier familie Birsak','https://indischgenealogischerfgoed.nl/genealogie-en-heraldiek/onderzoeksdossiers/'],['Nationaal Archief · repatriëringslijsten 1946–1962','https://www.nationaalarchief.nl/onderzoeken/zoekhulpen/oorlogsarchief-rode-kruis-nederlands-indie'],['CBG · stappenplan Indische voorouders','https://cbg.nl/documents/287/2023_Stappenplan_Indische_voorouders.pdf']];const root=$('#deepLinks');root.replaceChildren();for(const [label,url] of variants){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=label+' ↗';const p=document.createElement('article');p.className='archive';p.append(a);root.append(p)}}$('#deepGo').addEventListener('click',renderDeepLinks);$('#deepQuery').addEventListener('keydown',e=>{if(e.key==='Enter')renderDeepLinks()});document.querySelectorAll('[data-deep]').forEach(b=>b.addEventListener('click',()=>{$('#deepQuery').value=b.dataset.deep;renderDeepLinks()}));renderDeepLinks();
-$('#go').addEventListener('click',()=>load(true));$('#q').addEventListener('keydown',event=>{if(event.key==='Enter')load(true)});$('#period').addEventListener('change',()=>load(true));$('#topic').addEventListener('change',()=>load(true));$('#reset').addEventListener('click',resetFilters);$('#more').addEventListener('click',()=>load(false));$('#naMore').addEventListener('click',()=>{naVisibleCount+=12;renderNationaalArchiefRecords()});$('#rmMore').addEventListener('click',()=>{rmVisibleCount+=12;renderRijksmuseumRecords()});
-syncView();load(true);loadNationaalArchiefIndex();loadRijksmuseumIndex();
+$('#go').addEventListener('click',()=>load(true));$('#q').addEventListener('keydown',event=>{if(event.key==='Enter')load(true)});$('#period').addEventListener('change',()=>load(true));$('#topic').addEventListener('change',()=>load(true));$('#reset').addEventListener('click',resetFilters);$('#more').addEventListener('click',()=>load(false));$('#naMore').addEventListener('click',()=>{naVisibleCount+=12;renderNationaalArchiefRecords()});$('#knilWeaponsMore').addEventListener('click',()=>{knilWeaponsVisibleCount+=12;renderKnilWeaponsRecords()});$('#rmMore').addEventListener('click',()=>{rmVisibleCount+=12;renderRijksmuseumRecords()});
+syncView();load(true);loadNationaalArchiefIndex();loadKnilWeaponsIndex();loadRijksmuseumIndex();
 </script>
 </body>
 </html>
