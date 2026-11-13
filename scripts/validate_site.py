@@ -13,6 +13,17 @@ INDEX = ROOT / "index.html"
 ARCHIVE_INDEX = ROOT / "assets" / "nationaal-archief.json"
 RIJKSMUSEUM_INDEX = ROOT / "assets" / "rijksmuseum.json"
 
+FAMILY_ASSETS = {
+    "assets/family/IMG_5108.jpeg": {
+        "size": 166524,
+        "sha256": "2807b2f5048ca65df0026d02c8449f411fb9415c7f9871403fc1d0024a4893fb",
+    },
+    "assets/family/IMG_5107.jpeg": {
+        "size": 259653,
+        "sha256": "9766e8a2e8a0976a8c00ee522474aa352322909d5acd4ab0186d969a1bff3ccb",
+    },
+}
+
 class SiteParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
@@ -40,6 +51,18 @@ def main() -> None:
         fail("Nationaal Archief metadata-index ontbreekt")
     if not RIJKSMUSEUM_INDEX.is_file():
         fail("Rijksmuseum-foto-index ontbreekt")
+    for relative, expected in FAMILY_ASSETS.items():
+        asset = ROOT / relative
+        if not asset.is_file():
+            fail(f"Originele familiefoto ontbreekt: {relative}")
+        data = asset.read_bytes()
+        if len(data) != expected["size"]:
+            fail(f"Bestandsgrootte originele familiefoto wijkt af: {relative}")
+        if __import__("hashlib").sha256(data).hexdigest() != expected["sha256"]:
+            fail(f"SHA-256 originele familiefoto wijkt af: {relative}")
+        if not data.startswith(b"\\xff\\xd8\\xff"):
+            fail(f"Originele familiefoto is geen geldige JPEG: {relative}")
+
 
     source = INDEX.read_text(encoding="utf-8")
     parser = SiteParser()
@@ -132,6 +155,11 @@ def main() -> None:
     ):
         if source_url not in source:
             fail(f"Primaire collectiebron ontbreekt: {source_url}")
+
+    if "assets/family/IMG_5108.jpeg" not in source or "assets/family/IMG_5107.jpeg" not in source:
+        fail("Familiepagina verwijst niet naar de originele foto's")
+    if "assets/family/birsak-woning.jpg" in source or "assets/family/birsak-familieportret.jpg" in source:
+        fail("Verouderde verkleinde familiefoto's worden nog gebruikt")
 
     if "assets/rijksmuseum.json" not in source or "function renderRijksmuseumRecords" not in source:
         fail("Rijksmuseum Linked Art-index wordt niet door de website geïntegreerd")
