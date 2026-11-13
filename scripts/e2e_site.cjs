@@ -61,11 +61,11 @@ async function main() {
     const knilInitial = await page.evaluate(() => ({
       cards: document.querySelectorAll('#knilWeaponsResults .record-card').length,
       images: document.querySelectorAll('#knilWeaponsResults img').length,
-      rightsReviewLabels: [...document.querySelectorAll('#knilWeaponsResults .tag')].filter(x => x.textContent.includes('Snapshot CNE · live controle')).length,
+      publicDomainLabels: [...document.querySelectorAll('#knilWeaponsResults .tag')].filter(x => x.textContent.includes('Publiek Domein · gecontroleerd')).length,
       sourceLinks: [...document.querySelectorAll('#knilWeaponsResults a')].every(a => a.href.startsWith('https://proxy.handle.net/10648/'))
     }));
-    if (knilInitial.cards !== 12 || knilInitial.images !== 0 || knilInitial.rightsReviewLabels !== 12 || !knilInitial.sourceLinks) {
-      failures.push('KNIL metadata-only source index initial page failed: ' + JSON.stringify(knilInitial));
+    if (knilInitial.cards !== 12 || knilInitial.images !== 0 || knilInitial.publicDomainLabels !== 12 || !knilInitial.sourceLinks) {
+      failures.push('KNIL rights-verified source index initial page failed: ' + JSON.stringify(knilInitial));
     }
     await page.locator('#knilWeaponsMore').click();
     const knilPaged = await page.locator('#knilWeaponsResults .record-card').count();
