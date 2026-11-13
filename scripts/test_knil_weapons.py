@@ -28,7 +28,20 @@ class KnilWeaponsIndexTests(unittest.TestCase):
         self.assertEqual(result["records"][0]["category"], "Machinegeweren en machinepistolen")
         self.assertFalse(result["records"][0]["imagePublished"])
         self.assertEqual(result["records"][0]["rights"], "http://rightsstatements.org/page/CNE/1.0/")
+        self.assertEqual(result["records"][0]["primaryRightsStatus"], "Niet individueel gecontroleerd")
+        self.assertIsNone(result["records"][0]["reuseAllowed"])
         self.assertEqual(result["sourceSnapshot"], archive["snapshotDate"])
+
+    def test_known_primary_record_rights_are_individually_verified(self):
+        handle = "0cf356ff-cb60-d58e-2e20-5829b0c7471f"
+        archive = {"schemaVersion": 2, "snapshotDate": "2026-11-13T00:00:00Z", "records": [
+            self.record("M3A1 Stuart tank Argus", f"http://proxy.handle.net/10648/{handle}")
+        ]}
+        record = build_index(archive)["records"][0]
+        self.assertEqual(record["primaryRightsStatus"], "Publiek Domein")
+        self.assertTrue(record["reuseAllowed"])
+        self.assertTrue(record["downloadAvailable"])
+        self.assertIn(handle, record["rightsEvidenceUrl"])
 
     def test_excludes_non_knil_weapon_record(self):
         archive = {"schemaVersion": 2, "snapshotDate": "2026-11-12T00:00:00Z", "records": [
