@@ -25,7 +25,7 @@ De Nationaal Archief-harvester heeft bij de huidige snapshot de veiligheidslimie
 - Deep Search-zoekingang met gerichte externe zoekopdrachten voor adressen, historische schrijfwijzen en genealogische bronnen.
 - Eerste online aanknopingsbronnen: Indisch4ever (2011), genealogische publicaties over Ernanie Ernest Birsak en Arnold Willem Birsak, en een posthistorische adresvermelding voor Lembangweg 346 (1940).
 - De externe genealogische publicaties en het aangeleverde bijschrift zijn aanknopingsbronnen, geen onafhankelijke identificatie van personen op foto's. De adresvermelding uit 1940 bewijst niet dat de familie Birsak daar woonde.
-- De twee door de gebruiker aangeleverde fotobestanden zijn nog niet als zelfstandige bestanden aan de openbare repository toegevoegd; de pagina bevat op dit moment de transcriptie en onderzoekscontext.
+- De twee originele door de gebruiker aangeleverde JPEG-bestanden zijn opgenomen in `assets/family/` en rechtstreeks in de familiepagina geïntegreerd. De bestanden worden in de validatie op formaat, bestandsgrootte en SHA-256 gecontroleerd.
 
 ## Rubrieken en zoekfuncties
 
@@ -94,7 +94,7 @@ De publicatieworkflow voert uit:
 3. unit-tests voor Nationaal Archief- en Rijksmuseum-classificatie, Linked Art-extractie en beeldrechten;
 4. JavaScript-syntaxcontrole (node --check).
 
-Een groene workflow bevestigt dat deze technische controles slagen. Zij bewijst niet dat iedere historische beschrijving, foto-identificatie, datering of licentie inhoudelijk juist is. Een volledige record-voor-record historische/juridische controle, onafhankelijke toegankelijkheidsaudit, Lighthouse-meting en afgeronde mobiele end-to-end-interactietest zijn niet geclaimd.
+Een groene workflow bevestigt dat deze technische controles slagen. Zij bewijst niet dat iedere historische beschrijving, foto-identificatie, datering of licentie inhoudelijk juist is. De browseraudit voert responsive end-to-end-controles uit op 320, 360, 390, 768 en 1440 pixels en gebruikt axe-core voor WCAG 2.1 A/AA-controles op de homepage en familiepagina. De releasecontrole blijft geblokkeerd zolang ernstige of kritieke toegankelijkheidsproblemen of onvoldoende Lighthouse-scores bestaan. Deze technische audits vervangen geen volledige record-voor-record historische of juridische controle.
 
 ## Projectdocumentatie
 
