@@ -300,8 +300,7 @@ function appendRightsClearedRijksmuseumImages(){
   if(visibleCount>=48)break;
   addRijksmuseumGalleryCard(record);
  }
- const empty=$('#results').querySelector('.status');
- if(visibleCount>0&&empty&&empty.textContent.includes('Geen passende Wikimedia'))empty.remove();
+ if(visibleCount>0)$('#results').querySelectorAll(':scope > .status').forEach(node=>node.remove());
  updateCount();
  if(visibleCount>before)$('#count').textContent=visibleCount+' foto\'s getoond · inclusief rechtenveilige Rijksmuseum-beelden';
 }
@@ -372,7 +371,8 @@ async function load(reset=false) {
     if (error.name === 'AbortError') return;
     if (id === requestId) {
       if (reset) $('#results').replaceChildren();
-      $('#results').append(status('De beeldbron is niet bereikbaar',error.message+' Je kunt de primaire archiefcollecties hieronder rechtstreeks openen.',true));
+      appendRightsClearedRijksmuseumImages();
+      if (!visibleCount) $('#results').append(status('De beeldbron is niet bereikbaar',error.message+' Je kunt de primaire archiefcollecties hieronder rechtstreeks openen.',true));
       $('#more').hidden = true;
     }
   } finally {
