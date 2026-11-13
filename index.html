@@ -358,6 +358,7 @@ async function load(reset=false) {
       continuation = data.continue||null;
       batches++;
     } while (continuation && foundThisLoad < 8 && batches < 4);
+    appendRightsClearedRijksmuseumImages();
     updateCount();
     if (!visibleCount && reset) {
       $('#results').append(status('Geen passende Wikimedia Commons-foto’s gevonden','Deze bron levert voor de huidige filters geen bruikbare resultaten. Controleer de aanvullende Nationaal Archief-records en de officiële collectieportalen verderop op deze pagina.'));
