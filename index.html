@@ -225,7 +225,7 @@ let favorites=readFavorites();
 function buildQuery(){if(view==='family')return '(Birsak OR Lembangweg) Bandoeng Bandung';const typed=$('#q').value.trim();let base=views[view].query;if(view==='java')base=places[place];if(view==='bandung'&&customTerm)base+=' '+customTerm;if(typed)base+=' '+typed;const topic=$('#topic').value;if(topic)base+=' '+topicTerms[topic];return base+' filetype:bitmap'}
 function yearFromMetadata(meta){
  const raw=meta?.DateTimeOriginal?.value||'';
- const match=String(raw).match(/(?:^|\\D)((?:18|19|20)\\d{2})(?:\\D|$)/);
+ const match=String(raw).match(/(?:^|\D)((?:18|19|20)\d{2})(?:\D|$)/);
  const year=match?Number(match[1]):null;
  if(year!==null&&year>=1800&&year<=1959)return year;
  if(year!==null&&year>1959){
@@ -272,6 +272,39 @@ function status(title,message,showRetry=false){const el=document.createElement('
 function syncView(){document.body.classList.toggle('family-view',view==='family');document.querySelectorAll('#nav button').forEach(b=>{const active=b.dataset.view===view;b.classList.toggle('active',active);if(active){b.setAttribute('aria-current','page')}else{b.removeAttribute('aria-current')}});$('#title').textContent=views[view].title;$('#intro').textContent=views[view].intro;$('#resultTitle').textContent=views[view].result;$('#places').hidden=view!=='java';$('#bandungTopics').hidden=view!=='bandung';$('#familyBirsak').hidden=view!=='family';$('#deepSearch').hidden=view!=='family';$('#q').value='';customTerm='';if(view==='family'){$('#resultTitle').textContent='Familie Birsak · fotodocumentatie'}document.querySelectorAll('#bandungTopics button').forEach(b=>b.classList.remove('selected'))}
 function addCard(page){const info=page.imageinfo?.[0];if(!info||!info.url||!String(info.mime||'').startsWith('image/')||!isReusableCommonsLicense(info.extmetadata||{}))return;const meta=info.extmetadata||{};const title=metadataValue(meta,'ObjectName')||String(page.title||'').replace(/^File:/,'');const year=yearFromMetadata(meta);
  const date=year?'Opnamedatering: '+year:'Opnamedatering niet vermeld in bron';const artist=metadataValue(meta,'Artist')||'Maker niet vermeld';const description=metadataValue(meta,'ImageDescription');const credit=metadataValue(meta,'Institution')||metadataValue(meta,'Credit')||'';const license=metadataValue(meta,'LicenseShortName')||'Licentie controleren';const fileKey=page.title||info.descriptionurl;const article=document.createElement('article');article.className='photo';const media=document.createElement('div');media.className='photo-media';const imageLink=document.createElement('a');imageLink.className='photo-image-link';imageLink.href=info.url;imageLink.target='_blank';imageLink.rel='noopener noreferrer';imageLink.setAttribute('aria-label','Open de afbeelding op volledige grootte: '+title);const img=document.createElement('img');img.loading='lazy';img.decoding='async';img.crossOrigin='anonymous';img.src=info.thumburl||info.url;img.alt=title;img.onerror=()=>{media.replaceChildren();const fallback=document.createElement('div');fallback.className='status';fallback.textContent='Afbeelding tijdelijk niet beschikbaar';media.append(fallback)};imageLink.append(img);media.append(imageLink);const body=document.createElement('div');body.className='photo-body';const h=document.createElement('h3');h.className='photo-title';h.textContent=title;const m=document.createElement('div');m.className='photo-meta';m.textContent=[date,artist,credit].filter(Boolean).join(' · ');const desc=document.createElement('p');desc.className='photo-description';desc.textContent=description;const tags=document.createElement('div');tags.className='photo-tags';const t1=document.createElement('span');t1.className='tag';t1.textContent=license;tags.append(t1);const t2=document.createElement('span');t2.className='tag';t2.textContent=year?'Opnamejaar '+year:'Ongedateerd · historische context';tags.append(t2);const actions=document.createElement('div');actions.className='photo-actions';const link=document.createElement('a');link.href=info.descriptionurl||'https://commons.wikimedia.org/wiki/'+encodeURIComponent(page.title);link.target='_blank';link.rel='noopener noreferrer';link.textContent='Bron & rechten bekijken ↗';const fav=document.createElement('button');fav.type='button';fav.className='iconbtn';fav.textContent=favorites.has(fileKey)?'★ Opgeslagen':'☆ Bewaar';fav.setAttribute('aria-pressed',String(favorites.has(fileKey)));fav.addEventListener('click',()=>{if(favorites.has(fileKey)){favorites.delete(fileKey)}else{favorites.add(fileKey)}writeFavorites(favorites);fav.textContent=favorites.has(fileKey)?'★ Opgeslagen':'☆ Bewaar';fav.setAttribute('aria-pressed',String(favorites.has(fileKey)))});actions.append(link,fav);if(description)body.append(h,m,desc,tags,actions);else body.append(h,m,tags,actions);article.append(media,body);$('#results').append(article);visibleCount++}
+function addRijksmuseumGalleryCard(record){
+ const key='rijksmuseum:'+record.id;
+ if(seenFiles.has(key)||!record.imageUrl||!RM_IMAGE_RIGHTS.has(record.imageRightsUrl))return false;
+ seenFiles.add(key);
+ const article=document.createElement('article');article.className='photo';
+ const media=document.createElement('div');media.className='photo-media';
+ const imageLink=document.createElement('a');imageLink.className='photo-image-link';imageLink.href=record.imageUrl;imageLink.target='_blank';imageLink.rel='noopener noreferrer';imageLink.setAttribute('aria-label','Open vrijgegeven Rijksmuseum-afbeelding: '+(record.title||'Historische foto'));
+ const img=document.createElement('img');img.loading='lazy';img.decoding='async';img.src=record.imageUrl;img.alt=record.title||'Historische foto uit de collectie van het Rijksmuseum';
+ img.onerror=()=>{media.replaceChildren();const fallback=document.createElement('div');fallback.className='status';fallback.textContent='Afbeelding tijdelijk niet beschikbaar';media.append(fallback)};
+ imageLink.append(img);media.append(imageLink);
+ const body=document.createElement('div');body.className='photo-body';
+ const h=document.createElement('h3');h.className='photo-title';h.textContent=record.title||'Historische foto uit het Rijksmuseum';
+ const m=document.createElement('div');m.className='photo-meta';m.textContent=[record.date||'Datering niet vermeld',record.creator||'Maker niet vermeld','Rijksmuseum'].join(' · ');
+ const desc=document.createElement('p');desc.className='photo-description';desc.textContent=record.description||'';
+ const tags=document.createElement('div');tags.className='photo-tags';
+ const t1=document.createElement('span');t1.className='tag';t1.textContent=record.imageRightsUrl.includes('/mark/')?'Public Domain Mark':'CC0';tags.append(t1);
+ const t2=document.createElement('span');t2.className='tag';t2.textContent='Rijksmuseum · rechtenveilige afbeelding';tags.append(t2);
+ const actions=document.createElement('div');actions.className='photo-actions';
+ const link=document.createElement('a');link.href=record.objectUrl;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Bron & rechten bekijken ↗';actions.append(link);
+ body.append(h,m);if(desc.textContent)body.append(desc);body.append(tags,actions);article.append(media,body);$('#results').append(article);visibleCount++;return true;
+}
+function appendRightsClearedRijksmuseumImages(){
+ if(!rmIndex)return;
+ const before=visibleCount;
+ for(const record of (rmIndex.records||[]).filter(rijksmuseumRecordMatches)){
+  if(visibleCount>=48)break;
+  addRijksmuseumGalleryCard(record);
+ }
+ const empty=$('#results').querySelector('.status');
+ if(visibleCount>0&&empty&&empty.textContent.includes('Geen passende Wikimedia'))empty.remove();
+ updateCount();
+ if(visibleCount>before)$('#count').textContent=visibleCount+' foto\'s getoond · inclusief rechtenveilige Rijksmuseum-beelden';
+}
 function updateCount(){const dateFilter=$('#period').value;$('#count').textContent=visibleCount+' foto\'s getoond'+(dateFilter?' · metadatafilter actief':'');}
 async function load(reset=false) {
   if(view==='family'){if(requestController)requestController.abort();loading=false;return}
@@ -514,6 +547,7 @@ async function loadRijksmuseumIndex(){
   const response=await fetch('assets/rijksmuseum.json',{cache:'no-cache'});
   if(!response.ok)throw new Error('HTTP '+response.status);
   rmIndex=await response.json();
+  appendRightsClearedRijksmuseumImages();
   const day=String(rmIndex.snapshotDate||'').slice(0,10)||'peildatum onbekend';
   $('#rmSnapshotNote').textContent='Peildatum '+day+' · '+rmIndex.count+' fotorecords uit een begrensde selectie van de Rijksmuseum Search API. Afbeeldingen verschijnen alleen als het digitale beeld zelf Public Domain Mark 1.0 of CC0 1.0 vermeldt. Bij InC, ontbrekende rechten of onduidelijk bewijs wordt uitsluitend metadata getoond.';
   renderRijksmuseumRecords();
