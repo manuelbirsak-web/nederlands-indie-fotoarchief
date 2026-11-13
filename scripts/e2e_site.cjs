@@ -35,7 +35,7 @@ async function main() {
           }]
         }}}
       };
-      await route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify(fixture) });
+      await route.fulfill({ status: 200, contentType: 'application/json', headers: { 'Access-Control-Allow-Origin': '*' }, body: JSON.stringify(fixture) });
     });
     await page.route('https://upload.wikimedia.org/**', route => route.fulfill({
       status: 200, contentType: 'image/png',
