@@ -61,10 +61,10 @@ async function main() {
     const knilInitial = await page.evaluate(() => ({
       cards: document.querySelectorAll('#knilWeaponsResults .record-card').length,
       images: document.querySelectorAll('#knilWeaponsResults img').length,
-      cneLabels: [...document.querySelectorAll('#knilWeaponsResults .tag')].filter(x => x.textContent.includes('CNE · alleen metadata')).length,
+      rightsReviewLabels: [...document.querySelectorAll('#knilWeaponsResults .tag')].filter(x => x.textContent.includes('Snapshot CNE · live controle')).length,
       sourceLinks: [...document.querySelectorAll('#knilWeaponsResults a')].every(a => a.href.startsWith('https://proxy.handle.net/10648/'))
     }));
-    if (knilInitial.cards !== 12 || knilInitial.images !== 0 || knilInitial.cneLabels !== 12 || !knilInitial.sourceLinks) {
+    if (knilInitial.cards !== 12 || knilInitial.images !== 0 || knilInitial.rightsReviewLabels !== 12 || !knilInitial.sourceLinks) {
       failures.push('KNIL metadata-only source index initial page failed: ' + JSON.stringify(knilInitial));
     }
     await page.locator('#knilWeaponsMore').click();
