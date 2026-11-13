@@ -70,6 +70,7 @@ def build_index(archive: dict) -> dict:
         "selection": {
             "topic": "knil",
             "descriptionPattern": WEAPON_TERMS.pattern,
+            "excludedContextPattern": NON_WEAPON_CONTEXT.pattern,
             "recordCount": len(records),
             "uniqueDescriptions": len({record["description"] for record in records}),
         },
