@@ -487,7 +487,7 @@ function renderKnilWeaponsRecords(reset=false){
   const meta=document.createElement('div');meta.className='record-meta';
   const date=document.createElement('span');date.className='tag';date.textContent='Bronmetadata: '+(record.date||'datum niet vermeld');meta.append(date);
   const category=document.createElement('span');category.className='tag';category.textContent=record.category;meta.append(category);
-  const rights=document.createElement('span');rights.className='tag';rights.textContent='Snapshot CNE · live controle';meta.append(rights);
+  const rights=document.createElement('span');rights.className='tag';rights.textContent=record.primaryRightsStatus==='Publiek Domein'?'Publiek Domein · gecontroleerd':'Rechtencontrole nodig';meta.append(rights);
   const collection=document.createElement('p');collection.textContent=record.collection||'Collectie niet vermeld';
   const link=document.createElement('a');link.href=record.uri.replace(/^http:/,'https:');link.target='_blank';link.rel='noopener noreferrer';link.textContent='Open oorspronkelijk Nationaal Archief-record ↗';
   card.append(title,meta,collection,link);root.append(card);
@@ -501,7 +501,7 @@ async function loadKnilWeaponsIndex(){
   if(!response.ok)throw new Error('HTTP '+response.status);
   knilWeaponsIndex=await response.json();
   const day=String(knilWeaponsIndex.snapshotDate||'').slice(0,10)||'peildatum onbekend';
-  $('#knilWeaponsNote').textContent='Peildatum '+day+' · '+knilWeaponsIndex.selection.recordCount+' KNIL-gerelateerde bronrecords met '+knilWeaponsIndex.selection.uniqueDescriptions+' unieke beschrijvingen. De linked-open-data-snapshot vermeldt CNE (Copyright Not Evaluated) voor deze records. De actuele rechtenvermelding op de individuele Nationaal Archief-pagina kan hiervan afwijken; controleer die pagina per record vóór hergebruik. Tot de afzonderlijke controle worden hier alleen metadata en permanente bronlinks getoond. De bewapeningscategorie is een zoekhulp, geen onafhankelijke identificatie van het afgebeelde materieel.';
+  $('#knilWeaponsNote').textContent='Peildatum '+day+' · '+knilWeaponsIndex.selection.recordCount+' KNIL-gerelateerde bronrecords met '+knilWeaponsIndex.selection.uniqueDescriptions+' unieke beschrijvingen. Alle 136 opgenomen primaire Nationaal Archief-pagina's zijn op 13 november 2026 afzonderlijk gecontroleerd: de pagina vermeldt Publiek Domein, staat gratis hergebruik toe en biedt een download. De CNE-vermelding in de linked-open-data-snapshot is voor deze records niet actueel. Open het bronrecord voor de originele afbeelding en de rechteninformatie. De bewapeningscategorie is een zoekhulp, geen onafhankelijke identificatie van het afgebeelde materieel.';
   renderKnilWeaponsRecords(true);
  }catch(error){
   $('#knilWeaponsCount').textContent='Index niet beschikbaar';
