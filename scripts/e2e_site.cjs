@@ -34,8 +34,24 @@ async function main() {
       await page.locator('#nav [data-view="' + view + '"]').click();
       await page.waitForFunction(() => document.querySelector('#results')?.getAttribute('aria-busy') === 'false', null, { timeout: 20000 });
       await page.waitForFunction(() => document.querySelectorAll('#results .photo').length > 0, null, { timeout: 20000 });
-      const visible = await page.locator('#results .photo').count();
-      if (!visible) failures.push('No rights-cleared primary-gallery images for ' + view);
+      const firstImage = page.locator('#results .photo img').first();
+      await firstImage.scrollIntoViewIfNeeded();
+      await page.waitForFunction(() => {
+        const img = document.querySelector('#results .photo img');
+        return Boolean(img && img.complete && img.naturalWidth > 0);
+      }, null, { timeout: 20000 });
+      const galleryCheck = await page.evaluate(() => ({
+        cards: document.querySelectorAll('#results .photo').length,
+        loadedImages: [...document.querySelectorAll('#results .photo img')].filter(img => img.complete && img.naturalWidth > 0).length,
+        titles: [...document.querySelectorAll('#results .photo .photo-title')].slice(0, 3).map(x => x.textContent.trim()),
+        emptyMessage: [...document.querySelectorAll('#results > .status')].map(x => x.textContent.trim())
+      }));
+      if (galleryCheck.cards < 1 || galleryCheck.loadedImages < 1 || galleryCheck.titles.some(x => !x)) {
+        failures.push('Historical gallery content or image loading failed for ' + view + ': ' + JSON.stringify(galleryCheck));
+      }
+      if (view === 'bersiap' && galleryCheck.cards !== 1) {
+        failures.push('Expected the single rights-cleared Bersiap Rijksmuseum image; found ' + galleryCheck.cards);
+      }
     }
     await page.locator('#nav [data-view="home"]').click();
     await page.waitForFunction(() => document.querySelector('#results')?.getAttribute('aria-busy') === 'false', null, { timeout: 20000 });
