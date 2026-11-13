@@ -21,10 +21,10 @@ De Nationaal Archief-harvester heeft bij de huidige snapshot de veiligheidslimie
 
 ### KNIL-bewapening
 
-- De lokale onderzoeksindex bevat **148 KNIL-bronrecords met bewapeningsgerelateerde beschrijvingen**, met **115 unieke beschrijvingen**. De selectie is reproduceerbaar afgeleid uit de Nationaal Archief-snapshot en bevat permanente bronlinks.
+- De lokale onderzoeksindex bevat **136 KNIL-bronrecords met bewapeningsgerelateerde beschrijvingen**, met **107 unieke beschrijvingen**. De selectie is reproduceerbaar afgeleid uit de Nationaal Archief-snapshot en bevat permanente bronlinks.
 - De records zijn onderverdeeld in pantserwagens en tanks (64), machinegeweren en machinepistolen (21), artillerie en mortieren (21), geweren en handwapens (12) en overige bewapening (30). Categorieën zijn zoekhulpen, geen onafhankelijke modelidentificaties.
 - De index wordt met `scripts/build_knil_weapons_index.py` automatisch opnieuw opgebouwd na iedere Nationaal Archief-verversing. De releasevalidator vergelijkt de volledige index met een reproduceerbare herberekening uit dezelfde bron-snapshot; unittests bewaken selectie, categorieën, herkomst en metadata-only rechtenbeleid.
-- Alle 148 records hebben in de snapshot de status CNE. De website publiceert daarom geen bijbehorende Nationaal Archief-afbeeldingen; alleen de bronbeschrijving en de link naar het oorspronkelijke record worden getoond.
+- De linked-open-data-snapshot vermeldt voor deze records CNE. Een controle van de actuele primaire Nationaal Archief-pagina's laat echter zien dat veel individuele records Publiek Domein vermelden en een download aanbieden. De snapshotstatus is daarom geen betrouwbare vervanging van de individuele rechtenpagina. De website blijft metadata-only totdat de rechtenstatus en downloadmogelijkheid per record zijn vastgelegd.
 
 ## Familieonderzoek en uitgebreide zoekingang
 
