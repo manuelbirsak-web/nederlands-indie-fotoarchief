@@ -27,12 +27,23 @@ jobs:
         run: npm install --no-save --no-package-lock playwright axe-core lighthouse
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
+      - name: Serve the checked-out site for deterministic audits
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 > /tmp/indisch-site.log 2>&1 &
+          echo $! > /tmp/indisch-site.pid
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:4173/ > /dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/indisch-site.log
+          exit 1
       - name: Run responsive browser and WCAG checks
         run: node scripts/e2e_site.cjs
       - name: Run mobile Lighthouse audit
+        if: always()
         run: |
           mkdir -p artifacts
-          npx lighthouse https://manuelbirsak-web.github.io/nederlands-indie-fotoarchief/ \
+          npx lighthouse http://127.0.0.1:4173/ \
             --chrome-flags="--headless --no-sandbox" \
             --form-factor=mobile \
             --only-categories=performance,accessibility,best-practices,seo \
