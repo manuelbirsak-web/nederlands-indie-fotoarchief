@@ -24,7 +24,7 @@ jobs:
       - name: Validate HTML structure and archive interface contracts
         run: python3 scripts/validate_site.py
       - name: Compile Python quality tools
-        run: python3 -m py_compile scripts/harvest_nationaal_archief.py scripts/harvest_rijksmuseum.py scripts/validate_site.py scripts/test_archive.py scripts/test_rijksmuseum.py
+        run: python3 -m py_compile scripts/harvest_nationaal_archief.py scripts/harvest_rijksmuseum.py scripts/build_knil_weapons_index.py scripts/validate_site.py scripts/test_archive.py scripts/test_rijksmuseum.py scripts/test_knil_weapons.py
       - name: Test archival metadata classification
         run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
       - name: Validate inline JavaScript syntax
