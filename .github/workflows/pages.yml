@@ -59,3 +59,39 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+
+  smoke:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify deployed page and original family photo bytes
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          import urllib.request
+
+          base = "https://manuelbirsak-web.github.io/nederlands-indie-fotoarchief"
+          with urllib.request.urlopen(base + "/", timeout=30) as response:
+              html = response.read().decode("utf-8")
+              assert response.status == 200
+          assert "MAUDY-ELLEN" in html
+          assert "HAUS-ELLEN" not in html
+          assert "assets/family/IMG_5108.jpeg" in html
+          assert "assets/family/IMG_5107.jpeg" in html
+          assert "assets/family/birsak-woning.jpg" not in html
+          assert "assets/family/birsak-familieportret.jpg" not in html
+
+          expected = {
+              "assets/family/IMG_5108.jpeg": (166524, "2807b2f5048ca65df0026d02c8449f411fb9415c7f9871403fc1d0024a4893fb"),
+              "assets/family/IMG_5107.jpeg": (259653, "9766e8a2e8a0976a8c00ee522474aa352322909d5acd4ab0186d969a1bff3ccb"),
+          }
+          for path, (size, digest) in expected.items():
+              with urllib.request.urlopen(base + "/" + path, timeout=30) as response:
+                  data = response.read()
+                  assert response.status == 200
+              assert len(data) == size, (path, len(data), size)
+              assert hashlib.sha256(data).hexdigest() == digest, path
+              assert data.startswith(b"\\xff\\xd8\\xff"), path
+              print(f"PASS {path}: {len(data)} bytes, SHA-256 {digest}")
+          print("PASS deployed page and both original family photos verified byte-for-byte")
+          PY
