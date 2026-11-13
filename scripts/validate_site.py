@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
 ARCHIVE_INDEX = ROOT / "assets" / "nationaal-archief.json"
 RIJKSMUSEUM_INDEX = ROOT / "assets" / "rijksmuseum.json"
+KNIL_WEAPONS_INDEX = ROOT / "assets" / "knil-bewapening.json"
 
 FAMILY_ASSETS = {
     "assets/family/IMG_5108.jpeg": {
@@ -51,6 +52,8 @@ def main() -> None:
         fail("Nationaal Archief metadata-index ontbreekt")
     if not RIJKSMUSEUM_INDEX.is_file():
         fail("Rijksmuseum-foto-index ontbreekt")
+    if not KNIL_WEAPONS_INDEX.is_file():
+        fail("KNIL-bewapeningsindex ontbreekt")
     for relative, expected in FAMILY_ASSETS.items():
         asset = ROOT / relative
         if not asset.is_file():
@@ -167,6 +170,10 @@ def main() -> None:
 
     if "assets/rijksmuseum.json" not in source or "function renderRijksmuseumRecords" not in source:
         fail("Rijksmuseum Linked Art-index wordt niet door de website geïntegreerd")
+    if "assets/knil-bewapening.json" not in source or "function renderKnilWeaponsRecords" not in source or "loadKnilWeaponsIndex();" not in source:
+        fail("KNIL-bewapeningsindex wordt niet in de website geïntegreerd")
+    if 'id="knilWeapons"' not in source or 'id="knilWeaponsMore"' not in source:
+        fail("KNIL-bewapeningssectie of paginering ontbreekt")
     if "RM_IMAGE_RIGHTS.has(record.imageRightsUrl)" not in source:
         fail("De browser moet de beeldlicentie expliciet allowlisten vóór een afbeelding wordt getoond")
     if "loadRijksmuseumIndex();" not in source:
@@ -185,6 +192,10 @@ def main() -> None:
     allowed_places = {"java", "bandung", "batavia", "bogor", "semarang", "surabaya", "yogyakarta", "malang", "other-java", "sumatra", "other-islands"}
     if len({record.get("uri") for record in records}) != len(records):
         fail("Nationaal Archief-index bevat dubbele permanente record-URL's")
+    if archive.get("count") != len(records):
+        fail("Nationaal Archief-index telling komt niet overeen met het aantal records")
+    if any(record.get("image") or record.get("thumbnail") or record.get("imageUrl") for record in records):
+        fail("Nationaal Archief-record bevat een afbeelding terwijl rechtenstatus niet vooraf per beeld is vrijgegeven")
     try:
         rijksmuseum = json.loads(RIJKSMUSEUM_INDEX.read_text(encoding="utf-8"))
     except Exception as exc:
@@ -224,6 +235,10 @@ def main() -> None:
             fail("Rijksmuseum-record zonder beeldlink bevat tegenstrijdige rechtenmetadata")
     if rijksmuseum.get("imageCount") != rm_image_count:
         fail("Rijksmuseum-index imageCount komt niet overeen met het aantal rechtenveilige beelden")
+    if rijksmuseum.get("metadataOnlyCount") != sum(1 for record in rm_records if not record.get("imageUrl")):
+        fail("Rijksmuseum metadataOnlyCount komt niet overeen met de records zonder beeld")
+    if rijksmuseum.get("imageCount") + rijksmuseum.get("metadataOnlyCount") != len(rm_records):
+        fail("Rijksmuseum beeld- en metadata-only telling dekt niet alle records")
 
     for record in records:
         if not record.get("uri", "").startswith("http://proxy.handle.net/10648/"):
@@ -241,6 +256,34 @@ def main() -> None:
         if "bersiap" in record["topics"] and not re.search(r"\bbersiap\b", record["description"], re.I):
             fail("Bersiap-label mag alleen verschijnen wanneer de bronbeschrijving deze term gebruikt")
 
+    try:
+        knil_weapons = json.loads(KNIL_WEAPONS_INDEX.read_text(encoding="utf-8"))
+    except Exception as exc:
+        fail(f"KNIL-bewapeningsindex JSON is ongeldig: {exc}")
+    weapon_records = knil_weapons.get("records", [])
+    if knil_weapons.get("schemaVersion") != 1 or knil_weapons.get("sourceSnapshot") != archive.get("snapshotDate"):
+        fail("KNIL-bewapeningsindex mist schema of verwijst niet naar dezelfde Nationaal Archief-snapshot")
+    if knil_weapons.get("selection", {}).get("recordCount") != len(weapon_records) or len(weapon_records) != 148:
+        fail("KNIL-bewapeningsindex bevat niet het verwachte aantal bronrecords")
+    if knil_weapons.get("selection", {}).get("uniqueDescriptions") != len({r.get("description") for r in weapon_records}):
+        fail("KNIL-bewapeningsindex telling unieke beschrijvingen klopt niet")
+    na_by_uri = {r.get("uri"): r for r in records}
+    if len({r.get("uri") for r in weapon_records}) != len(weapon_records):
+        fail("KNIL-bewapeningsindex bevat dubbele bron-URI's")
+    allowed_weapon_categories = {"Overige bewapening", "Geweerschutters en handwapens", "Pantserwagens en tanks", "Artillerie en mortieren", "Machinegeweren en machinepistolen"}
+    for record in weapon_records:
+        original = na_by_uri.get(record.get("uri"))
+        if not original or original.get("description") != record.get("description") or original.get("rights") != record.get("rights"):
+            fail("KNIL-bewapeningsrecord is niet exact herleidbaar naar de gekoppelde Nationaal Archief-snapshot")
+        if record.get("rights") != "http://rightsstatements.org/page/CNE/1.0/":
+            fail("KNIL-bewapeningsrecord heeft onverwachte rechtenstatus; handmatige beoordeling vereist")
+        if record.get("imagePublished") is not False or record.get("imageUrl") or record.get("thumbnail"):
+            fail("CNE-bewapeningsrecord mag geen beeldbestand publiceren")
+        if record.get("category") not in allowed_weapon_categories:
+            fail("Onbekende bewapeningscategorie in KNIL-index")
+        if not str(record.get("uri", "")).startswith("http://proxy.handle.net/10648/"):
+            fail("KNIL-bewapeningsrecord mist permanente Nationaal Archief-Handle")
+
     scripts = re.findall(r"<script>(.*?)</script>", source, flags=re.DOTALL | re.IGNORECASE)
     if not scripts:
         fail("Inline JavaScript ontbreekt")
@@ -250,7 +293,8 @@ def main() -> None:
     print(
         f"PASS: HTML geparsed; {len(parser.ids)} IDs; {len(parser.links)} bronlinks; "
         f"{len(records)} Nationaal Archief-records; {len(rm_records)} Rijksmuseum-foto-objecten "
-        f"({rm_image_count} expliciet rechtenveilige beelden); interface-, rechten- en datumcontroles aanwezig."
+        f"({rm_image_count} expliciet rechtenveilige beelden); {len(weapon_records)} KNIL-bewapeningsrecords; "
+        "interface-, rechten-, herkomst- en datumcontroles aanwezig."
     )
     print("NOTE: Dit is een statische contractcheck. Browser-, performance- en visuele tests worden apart uitgevoerd.")
 
