@@ -70,7 +70,7 @@ De snapshot van 13 november 2026 bevat 905 records met het automatische label KN
 
 De categorieën (pantserwagens en tanks, machinegeweren en machinepistolen, artillerie en mortieren, geweren en handwapens, overige bewapening) zijn uitsluitend zoekhulpen die uit de beschrijving zijn afgeleid. Ze vormen geen zelfstandige identificatie van het gefotografeerde model. De exacte tekst, datum en permanente Handle worden ongewijzigd aan de bronmetadata ontleend. Duplicaatbeschrijvingen blijven als afzonderlijke archiefrecords behouden wanneer de Handle verschilt.
 
-De linked-open-data-snapshot geeft CNE voor de geselecteerde records, maar een eerste controle van de actuele primaire pagina's laat zien dat veel individuele foto's Publiek Domein vermelden en een download aanbieden. De rechtenaudit is daarom nog niet compleet: de actuele status en downloadmogelijkheid moeten per record worden vastgelegd. De website blijft metadata-only totdat deze individuele controle is afgerond.
+De linked-open-data-snapshot geeft CNE voor de geselecteerde records, maar een eerste controle van de actuele primaire pagina's laat zien dat veel individuele foto's Publiek Domein vermelden en een download aanbieden. De 136 records in de uiteindelijke index zijn op 13 november 2026 allemaal individueel gecontroleerd: de primaire pagina vermeldt Publiek Domein, staat gratis hergebruik toe en biedt een download. De exacte primaire URL en controledatum zijn per record opgeslagen. De snapshot-CNE wordt daarom niet als actuele rechtenstatus getoond. Deze rechtencontrole bevestigt geen wapentype, datering of afgebeelde gebeurtenis.
 
 ## 7. Gegevensmodel
 
