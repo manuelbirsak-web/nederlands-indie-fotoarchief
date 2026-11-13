@@ -23,6 +23,7 @@ De Nationaal Archief-harvester heeft bij de huidige snapshot de veiligheidslimie
 
 - De lokale onderzoeksindex bevat **148 KNIL-bronrecords met bewapeningsgerelateerde beschrijvingen**, met **115 unieke beschrijvingen**. De selectie is reproduceerbaar afgeleid uit de Nationaal Archief-snapshot en bevat permanente bronlinks.
 - De records zijn onderverdeeld in pantserwagens en tanks (64), machinegeweren en machinepistolen (21), artillerie en mortieren (21), geweren en handwapens (12) en overige bewapening (30). Categorieën zijn zoekhulpen, geen onafhankelijke modelidentificaties.
+- De index wordt met `scripts/build_knil_weapons_index.py` automatisch opnieuw opgebouwd na iedere Nationaal Archief-verversing. De releasevalidator vergelijkt de volledige index met een reproduceerbare herberekening uit dezelfde bron-snapshot; unittests bewaken selectie, categorieën, herkomst en metadata-only rechtenbeleid.
 - Alle 148 records hebben in de snapshot de status CNE. De website publiceert daarom geen bijbehorende Nationaal Archief-afbeeldingen; alleen de bronbeschrijving en de link naar het oorspronkelijke record worden getoond.
 
 ## Familieonderzoek en uitgebreide zoekingang
