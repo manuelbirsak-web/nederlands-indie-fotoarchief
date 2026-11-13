@@ -178,7 +178,7 @@ def main() -> None:
         fail("KNIL-bewapeningssectie of paginering ontbreekt")
     if "RM_IMAGE_RIGHTS.has(record.imageRightsUrl)" not in source:
         fail("De browser moet de beeldlicentie expliciet allowlisten vóór een afbeelding wordt getoond")
-    if "loadRijksmuseumIndex();" not in source:
+    if "loadRijksmuseumIndex()" not in source:
         fail("Rijksmuseum-foto-index wordt niet geïnitialiseerd")
     if "function addRijksmuseumGalleryCard(record)" not in source or "function appendRightsClearedRijksmuseumImages()" not in source:
         fail("Rechtenveilige Rijksmuseum-foto's worden niet geïntegreerd in de hoofdgalerij")
@@ -281,9 +281,16 @@ def main() -> None:
         if not original or original.get("description") != record.get("description") or original.get("rights") != record.get("rights"):
             fail("KNIL-bewapeningsrecord is niet exact herleidbaar naar de gekoppelde Nationaal Archief-snapshot")
         if record.get("rights") != "http://rightsstatements.org/page/CNE/1.0/":
-            fail("KNIL-bewapeningsrecord heeft onverwachte rechtenstatus; handmatige beoordeling vereist")
+            fail("KNIL-bewapeningsrecord mist de oorspronkelijke snapshot-rechtenstatus")
+        if record.get("primaryRightsStatus") != "Publiek Domein" or record.get("reuseAllowed") is not True or record.get("downloadAvailable") is not True:
+            fail("KNIL-bewapeningsrecord mist de individueel gecontroleerde primaire rechtenstatus")
+        if not str(record.get("rightsEvidenceUrl", "")).startswith("https://www.nationaalarchief.nl/onderzoeken/fotocollectie/") or record.get("primaryRightsCheckedAt") != "2026-11-13":
+            fail("KNIL-bewapeningsrecord mist de primaire rechtenbron of controledatum")
         if record.get("imagePublished") is not False or record.get("imageUrl") or record.get("thumbnail"):
-            fail("CNE-bewapeningsrecord mag geen beeldbestand publiceren")
+            fail("KNIL-bronindex mag zonder afzonderlijke beeldintegratie geen beeldbestand publiceren")
+    rights_audit = knil_weapons.get("primaryRightsAudit", {})
+    if rights_audit.get("checkedRecords") != len(weapon_records) or rights_audit.get("downloadAvailableRecords") != len(weapon_records):
+        fail("KNIL-rechtenaudit dekt niet alle records in de index")
         if not str(record.get("uri", "")).startswith("http://proxy.handle.net/10648/"):
             fail("KNIL-bewapeningsrecord mist permanente Nationaal Archief-Handle")
 
