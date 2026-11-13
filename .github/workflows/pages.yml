@@ -91,7 +91,7 @@ jobs:
                   assert response.status == 200
               assert len(data) == size, (path, len(data), size)
               assert hashlib.sha256(data).hexdigest() == digest, path
-              assert data.startswith(b"\\xff\\xd8\\xff"), path
+              assert data.startswith(bytes.fromhex("ffd8ff")), path
               print(f"PASS {path}: {len(data)} bytes, SHA-256 {digest}")
           print("PASS deployed page and both original family photos verified byte-for-byte")
           PY
