@@ -6,9 +6,10 @@
   "sourceSnapshot": "2026-11-13T07:59:17.538689+00:00",
   "selection": {
     "topic": "knil",
-    "descriptionPattern": "r\"wapen|geweer|karabijn|revolver|pistool|machinegeweer|mitrailleur|bajonet|\"\n    r\"munitie|kanon|artillerie|sabel|zwaard|tank|pantser|bren|lee.?enfield|\"\n    r\"stengun|sten gun|garand|springfield|mauser|vickers|thompson|lanchester|\"\n    r\"mortier|afweergeschut|brencarrier|bren-carrier\",\n    re.IGNORECASE,; excluded contextual matches: ongewapend|wapenbroeders|wapen der genie|verborgen wapens|wapens inleveren",
+    "descriptionPattern": "wapen|geweer|karabijn|revolver|pistool|machinegeweer|mitrailleur|bajonet|munitie|kanon|artillerie|sabel|zwaard|tank|pantser|bren|lee.?enfield|stengun|sten gun|garand|springfield|mauser|vickers|thompson|lanchester|mortier|afweergeschut|brencarrier|bren-carrierre.IGNORECASE,",
     "recordCount": 136,
-    "uniqueDescriptions": 107
+    "uniqueDescriptions": 107,
+    "excludedContextPattern": "ongewapend|wapenbroeders|wapen der genie|verborgen wapens|wapens inleveren"
   },
   "categoryCounts": {
     "Overige bewapening": 18,
