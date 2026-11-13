@@ -56,7 +56,8 @@ Historische schrijfwijzen en moderne plaatsnamen worden waar mogelijk als zoekal
 - Een vindbare afbeelding is niet automatisch vrij herbruikbaar.
 - De Nationaal Archief-index op deze website bevat metadata en permanente Handle-links. Er worden geen thumbnails uit records met onduidelijke of niet-beoordeelde rechtenstatus gereproduceerd.
 - Een aanduiding zoals **CNE / Copyright Not Evaluated** betekent dat de rechtenstatus niet is beoordeeld. Behandel dit niet als een vrije licentie.
-- Bij Wikimedia Commons moeten de licentie, licentieversie, maker, bronvermelding en eventuele voorwaarden op de oorspronkelijke bestandspagina worden gecontroleerd.
+- Wikimedia Commons-thumbnails worden alleen getoond wanneer de API een expliciete, herbruikbare licentie-URL teruggeeft: CC0 1.0, Public Domain Mark 1.0, CC BY of CC BY-SA (versies 1.0, 2.0, 2.5, 3.0 of 4.0). Ontbrekende licenties en rechtenverklaringen zoals CNE worden niet als toestemming behandeld en leiden niet tot beeldweergave.
+- De bron- en licentiepagina blijft per getoonde afbeelding rechtstreeks bereikbaar. Maker en bronvermelding worden getoond wanneer de bronmetadata die aanlevert; een ontbrekende maker wordt niet ingevuld of geraden.
 - Andere instellingen kunnen downloads beperken of verschillende toegangs- en hergebruikvoorwaarden hanteren.
 - Bij twijfel wordt geen beeld gekopieerd of gepubliceerd; de bezoeker wordt naar het oorspronkelijke record verwezen.
 
@@ -102,6 +103,6 @@ Wijzig een plaats, datum, persoon, eenheid of gebeurtenis niet uitsluitend op ba
 - KITLV, Utrechts Archief, NIMH, Wereldmuseum, Het Nieuwe Instituut, Europeana, Delpher en Atlas of Mutual Heritage zijn als externe onderzoeksingangen opgenomen. Een koppeling is geen API-integratie.
 - De automatische labels moeten worden beoordeeld en verfijnd; ze zijn geen vervanging van menselijke geschiedkundige controle.
 - De volledigheid van de beeldcollectie is niet vastgesteld.
-- Er is nog geen volledige record-voor-record verificatie, onafhankelijke toegankelijkheidsaudit, Lighthouse-meting of juridische rechtencontrole van alle beelden uitgevoerd.
+- Er is nog geen volledige record-voor-record historische verificatie of juridische rechtencontrole van alle beelden uitgevoerd. De geautomatiseerde responsive browsercontrole, axe-core WCAG 2.1 A/AA-controle en mobiele Lighthouse-gates zijn op 13 november 2026 geslaagd; dit is geen onafhankelijke menselijke toegankelijkheidsaudit.
 
 Deze beperkingen worden bewust zichtbaar gehouden om schijnzekerheid te voorkomen.
