@@ -144,6 +144,16 @@ def main() -> None:
         fail("Zoeken moet duplicaten voorkomen en lege zoekpagina’s automatisch overslaan")
     if "AbortController" not in source or "data.continue" not in source:
         fail("Abort/continuation afhandeling ontbreekt")
+    if "const UI_STATE_KEY='indisch-beeldarchief-ui-state-v1'" not in source or "function restoreUiState()" not in source:
+        fail("Actief tabblad en filters moeten na browserrefresh worden hersteld")
+    if "restoreUiState();syncView();" not in source or "saveUiState()" not in source:
+        fail("Navigatie- en filterstatus wordt niet vóór de eerste beeldzoekopdracht hersteld en opgeslagen")
+    if "img.crossOrigin='anonymous'" in source:
+        fail("Externe foto-CDN mag niet onnodig met CORS-modus worden geladen")
+    if "img.loading=visibleCount<6?'eager':'lazy'" not in source or "cache:'no-store'" not in source:
+        fail("Zichtbare foto's moeten direct laden en filterwijzigingen moeten verse bronresultaten aanvragen")
+    if "batches < 8" not in source:
+        fail("Fotoselectie moet voldoende bronpagina's doorzoeken bij beperkte filterresultaten")
     if "textContent" not in source:
         fail("Veilige DOM-tekstweergave ontbreekt")
     if "assets/nationaal-archief.json" not in source:
