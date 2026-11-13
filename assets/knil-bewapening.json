@@ -6,7 +6,7 @@
   "sourceSnapshot": "2026-11-13T07:59:17.538689+00:00",
   "selection": {
     "topic": "knil",
-    "descriptionPattern": "wapen|geweer|karabijn|revolver|pistool|machinegeweer|mitrailleur|bajonet|munitie|kanon|artillerie|sabel|zwaard|tank|pantser|bren|lee.?enfield|stengun|sten gun|garand|springfield|mauser|vickers|thompson|lanchester|mortier|afweergeschut|brencarrier|bren-carrierre.IGNORECASE,",
+    "descriptionPattern": "wapen|geweer|karabijn|revolver|pistool|machinegeweer|mitrailleur|bajonet|munitie|kanon|artillerie|sabel|zwaard|tank|pantser|bren|lee.?enfield|stengun|sten gun|garand|springfield|mauser|vickers|thompson|lanchester|mortier|afweergeschut|brencarrier|bren-carrier",
     "recordCount": 136,
     "uniqueDescriptions": 107,
     "excludedContextPattern": "ongewapend|wapenbroeders|wapen der genie|verborgen wapens|wapens inleveren"
