@@ -5,6 +5,8 @@ on:
     paths:
       - "scripts/harvest_nationaal_archief.py"
       - "scripts/harvest_rijksmuseum.py"
+      - "scripts/build_knil_weapons_index.py"
+      - "scripts/test_knil_weapons.py"
       - ".github/workflows/refresh-archive-index.yml"
   schedule:
     - cron: "17 4 * * 1"
@@ -26,17 +28,19 @@ jobs:
           python-version: "3.x"
       - name: Refresh rights-aware Nationaal Archief metadata index
         run: python3 scripts/harvest_nationaal_archief.py
+      - name: Build reproducible KNIL armament metadata index
+        run: python3 scripts/build_knil_weapons_index.py
       - name: Refresh rights-aware Rijksmuseum photo index
         run: python3 scripts/harvest_rijksmuseum.py
       - name: Commit changed institutional indexes
         run: |
-          if git diff --quiet -- assets/nationaal-archief.json assets/rijksmuseum.json; then
+          if git diff --quiet -- assets/nationaal-archief.json assets/rijksmuseum.json assets/knil-bewapening.json; then
             echo "No metadata changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/nationaal-archief.json assets/rijksmuseum.json
+          git add assets/nationaal-archief.json assets/rijksmuseum.json assets/knil-bewapening.json
           git commit -m "Refresh institutional photo metadata indexes"
           git fetch origin main
           git rebase origin/main
