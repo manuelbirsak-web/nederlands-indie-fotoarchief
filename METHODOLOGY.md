@@ -2,7 +2,7 @@
 
 **Project:** Indisch Beeldarchief  
 **Versie:** 1.0  
-**Datum:** 12 november 2026
+**Datum:** 13 november 2026
 
 ## 1. Doel en afbakening
 
@@ -54,7 +54,7 @@ Historische schrijfwijzen en moderne plaatsnamen worden waar mogelijk als zoekal
 ## 5. Beeldrechten en hergebruik
 
 - Een vindbare afbeelding is niet automatisch vrij herbruikbaar.
-- De Nationaal Archief-snapshot van 12 november 2026 bevat 4.000 records. Alle 4.000 records voeren in deze linked-open-data-snapshot de rechtenstatus **CNE / Copyright Not Evaluated**. Deze records worden uitsluitend als metadata met permanente Handle-links getoond; er wordt geen afbeelding uit deze snapshot gereproduceerd.
+- De Nationaal Archief-snapshot van 13 november 2026 bevat 4.000 records. Alle 4.000 records voeren in deze linked-open-data-snapshot de rechtenstatus **CNE / Copyright Not Evaluated**. Deze records worden uitsluitend als metadata met permanente Handle-links getoond; er wordt geen afbeelding uit deze snapshot gereproduceerd.
 - CNE betekent dat de rechtenstatus niet is beoordeeld. Behandel dit niet als een vrije licentie. Een afzonderlijke officiële fotopagina kan voor een individueel beeld wél expliciet publiek domein of rechtenvrij hergebruik vermelden; die status mag alleen na controle van die specifieke pagina worden vastgelegd en mag niet automatisch op andere records worden toegepast.
 - De Rijksmuseum-snapshot bevat 229 foto-objecten: 215 digitale beelden met een expliciete Public Domain Mark 1.0- of CC0 1.0-verklaring op het beeld zelf en 14 metadata-only objecten. De validatie controleert ieder beeldrecord afzonderlijk tegen deze allowlist.
 - Wikimedia Commons-thumbnails worden alleen getoond wanneer de API een expliciete, herbruikbare licentie-URL teruggeeft: CC0 1.0, Public Domain Mark 1.0, CC BY of CC BY-SA (versies 1.0, 2.0, 2.5, 3.0 of 4.0). Ontbrekende licenties en rechtenverklaringen zoals CNE worden niet als toestemming behandeld en leiden niet tot beeldweergave.
@@ -66,7 +66,7 @@ Dit document is geen juridisch oordeel en verleent geen toestemming voor hergebr
 
 ## 6. KNIL-bewapeningsindex
 
-De snapshot van 12 november 2026 bevat 905 records met het automatische label KNIL. Binnen de 4.000 opgehaalde records zijn 148 KNIL-records gevonden waarvan de afzonderlijke bronbeschrijving een wapen, voertuig of bewapeningsgerelateerd onderwerp noemt; deze selectie bevat 115 verschillende beschrijvingen. De selectie is opgenomen in `assets/knil-bewapening.json`.
+De snapshot van 13 november 2026 bevat 905 records met het automatische label KNIL. Binnen de 4.000 opgehaalde records zijn 148 KNIL-records gevonden waarvan de afzonderlijke bronbeschrijving een wapen, voertuig of bewapeningsgerelateerd onderwerp noemt; deze selectie bevat 115 verschillende beschrijvingen. De selectie is opgenomen in `assets/knil-bewapening.json`.
 
 De categorieën (pantserwagens en tanks, machinegeweren en machinepistolen, artillerie en mortieren, geweren en handwapens, overige bewapening) zijn uitsluitend zoekhulpen die uit de beschrijving zijn afgeleid. Ze vormen geen zelfstandige identificatie van het gefotografeerde model. De exacte tekst, datum en permanente Handle worden ongewijzigd aan de bronmetadata ontleend. Duplicaatbeschrijvingen blijven als afzonderlijke archiefrecords behouden wanneer de Handle verschilt.
 
