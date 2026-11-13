@@ -67,7 +67,7 @@ Zie METHODOLOGY.md voor bronnenhiërarchie, datering, classificatie, rechten en 
 
 Een vindbare afbeelding is niet automatisch vrij herbruikbaar.
 
-- Commons-bestanden moeten op de oorspronkelijke bestandspagina worden gecontroleerd op licentie, maker, bronvermelding en voorwaarden.
+- Commons-afbeeldingen worden alleen weergegeven bij een expliciete CC0 1.0-, Public Domain Mark 1.0-, CC BY- of CC BY-SA-licentie (versies 1.0, 2.0, 2.5, 3.0 of 4.0). Ontbrekende licenties en CNE worden geblokkeerd; de oorspronkelijke bron- en licentiepagina blijft bereikbaar.
 - De aanduiding CNE / Copyright Not Evaluated betekent dat de rechtenstatus niet is beoordeeld; behandel dit niet als een vrije licentie.
 - De Nationaal Archief-index bevat metadata en permanente Handle-links, geen herpubliceerde thumbnails.
 - Rijksmuseum-afbeeldingen worden alleen getoond wanneer de rechtenverklaring van het digitale beeld zelf expliciet Public Domain Mark 1.0 of CC0 1.0 vermeldt. Objectmetadata met CC0 is daarvoor niet voldoende.
@@ -115,4 +115,4 @@ Een groene workflow bevestigt dat deze technische controles slagen. Zij bewijst 
 
 Indisch Beeldarchief is een openbare onderzoekswebsite en groeiende startcatalogus. Het is **geen complete inventaris van alle historische foto's over Nederlands-Indië**. De huidige snapshots bevatten 4.000 Nationaal Archief-records en 229 Rijksmuseum-foto-objecten. Alleen 215 Rijksmuseum-objecten hebben een expliciet toegestane beeldrechtenverklaring voor het getoonde digitale beeld. De volledigheid en alle historische claims zijn niet record voor record gecertificeerd.
 
-Laatste releasecontrole: **12 november 2026**.
+Laatste technische releasecontrole: **13 november 2026**. Historische verificatie en juridische controle blijven afzonderlijke, niet-volledig-afgeronde werkzaamheden.
