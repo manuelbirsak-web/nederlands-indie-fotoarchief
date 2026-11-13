@@ -18,7 +18,7 @@
     "Machinegeweren en machinepistolen": 21,
     "Artillerie en mortieren": 21
   },
-  "rightsPolicy": "The linked-open-data snapshot marks these records CNE (Copyright Not Evaluated). Live individual Nationaal Archief pages can show a different current rights status; verify each primary record before reuse. The index remains metadata-only until individual image rights and access are verified.",
+  "rightsPolicy": "All 136 indexed records were individually checked against their live primary Nationaal Archief pages on 2026-11-13. Each page states Publiek Domein, permits free reuse, and provides a download. The linked-open-data snapshot's CNE field is stale/inconsistent for these individual records. Verification applies only to the exact handles in this index.",
   "records": [
     {
       "date": "1946-01-01",
@@ -28,7 +28,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/01505568-483c-45a4-1755-49c81399b45a"
     },
     {
       "date": "1946-01-01",
@@ -38,7 +43,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/0371044a-853b-9eec-6b10-b002c676b734"
     },
     {
       "date": "1946-01-01",
@@ -48,7 +58,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/07150487-30ec-9b64-34c6-cd0184ed872a"
     },
     {
       "date": "1946-01-01",
@@ -58,7 +73,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/0cf356ff-cb60-d58e-2e20-5829b0c7471f"
     },
     {
       "date": "1946-01-01",
@@ -68,7 +88,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/15e25bb1-7384-c973-abc6-a3bb0e5e9060"
     },
     {
       "date": "1946-01-01",
@@ -78,7 +103,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/1a8a2089-6c28-1e71-b931-6d80d4c9acc9"
     },
     {
       "date": "1946-01-01",
@@ -88,7 +118,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Geweerschutters en handwapens",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/3b12baf0-e764-b72d-7d36-70e211544475"
     },
     {
       "date": "1946-01-01",
@@ -98,7 +133,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/43642e6f-c368-0b68-5bad-8eb06603ebc1"
     },
     {
       "date": "1946-01-01",
@@ -108,7 +148,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/4aa91c6b-b498-20e4-fd89-228fa19d0fdc"
     },
     {
       "date": "1946-01-01",
@@ -118,7 +163,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/4e9e5140-e29b-5eb9-7b85-8636bcbd04a2"
     },
     {
       "date": "1946-01-01",
@@ -128,7 +178,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/58498917-0920-139d-afdf-dcd367eec012"
     },
     {
       "date": "1946-01-01",
@@ -138,7 +193,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/59791d8f-7c9d-d2d8-3f11-19b15bcb438a"
     },
     {
       "date": "1946-01-01",
@@ -148,7 +208,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/770c8ce8-f88c-4e29-dea9-719e48a5ffae"
     },
     {
       "date": "1946-01-01",
@@ -158,7 +223,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/7bbf18f7-8745-d979-0a75-aa4a7e250419"
     },
     {
       "date": "1946-01-01",
@@ -168,7 +238,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Geweerschutters en handwapens",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/8bc2e239-da12-fdb4-15ae-929d0c994b72"
     },
     {
       "date": "1946-04-30",
@@ -178,7 +253,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/5b758d77-b6ca-0c57-6d14-6bd3da78137a"
     },
     {
       "date": "1946-05-28",
@@ -188,7 +268,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/0a99d9cf-0386-0abd-703f-47756c904a8f"
     },
     {
       "date": "1946-08-31",
@@ -198,7 +283,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/6e8d84ec-5345-4c7e-d997-5d481b79eaa7"
     },
     {
       "date": "1946-08-31",
@@ -208,7 +298,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/72410191-72d8-fae7-4ba2-cb80119c17aa"
     },
     {
       "date": "1946-11-01",
@@ -218,7 +313,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/05adc928-8c24-b673-d94e-bef2c1992e23"
     },
     {
       "date": "1946-11-01",
@@ -228,7 +328,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/091956cf-49fd-3263-e806-8b84ba67ca63"
     },
     {
       "date": "1946-11-01",
@@ -238,7 +343,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/134a2ea8-31a7-1bd7-5fdb-a5c5878787d7"
     },
     {
       "date": "1946-11-01",
@@ -248,7 +358,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/36fda7e6-53e8-d857-e2fe-1caacad564d8"
     },
     {
       "date": "1946-11-01",
@@ -258,7 +373,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/3820142f-e57e-6634-d209-8286d15dc1a6"
     },
     {
       "date": "1946-11-01",
@@ -268,7 +388,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/385db9cb-fc30-b24e-0116-fc913a73fe3c"
     },
     {
       "date": "1946-11-01",
@@ -278,7 +403,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/5703bdac-2a2e-fe79-e52f-b16e6e768a8a"
     },
     {
       "date": "1946-11-01",
@@ -288,7 +418,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/99946baa-5d93-b819-4985-84eb82e4f739"
     },
     {
       "date": "1946-11-02",
@@ -298,7 +433,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/29bb507a-d96b-da91-943e-ab4afba8a06d"
     },
     {
       "date": "1946-11-02",
@@ -308,7 +448,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/4cd36779-d034-1d76-690c-5f91ac6b8c6d"
     },
     {
       "date": "1946-11-07",
@@ -318,7 +463,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/573f53bd-a1e4-02aa-25a3-f1cba914fc2b"
     },
     {
       "date": "1946-11-09",
@@ -328,7 +478,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/4cadf42e-f590-2d33-c1d6-9aa9b53a5056"
     },
     {
       "date": "1946-11-09",
@@ -338,7 +493,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/5a76e95a-414d-1cb8-3f9e-32054d1de1fc"
     },
     {
       "date": "1946-11-09",
@@ -348,7 +508,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/9c91174c-1da2-08ed-14e7-eb68844e5e03"
     },
     {
       "date": "1946-11-23",
@@ -358,7 +523,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/17fdf167-ace2-1e50-d1ec-59f71f289629"
     },
     {
       "date": "1946-11-23",
@@ -368,7 +538,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/3c02fa3c-cf96-18ba-439c-cfdd44983b72"
     },
     {
       "date": "1946-11-23",
@@ -378,7 +553,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/3c52dcc1-5b2d-6296-0ece-17ca64f536fe"
     },
     {
       "date": "1946-11-23",
@@ -388,7 +568,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/4439b5c7-3ce2-ac48-e14d-effa97aae4bd"
     },
     {
       "date": "1946-11-23",
@@ -398,7 +583,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/687b4c35-9360-f65f-7997-c3a55f557ab6"
     },
     {
       "date": "1946-11-23",
@@ -408,7 +598,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/867d8541-ee9e-8f15-47f8-220dfa9015b8"
     },
     {
       "date": "1946-11-23",
@@ -418,7 +613,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/96eb2231-5a58-4d62-7a01-00fda366871b"
     },
     {
       "date": "1946-11-23",
@@ -428,7 +628,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/9d587b23-6ff6-c9bb-abfa-ddd948917697"
     },
     {
       "date": "1946-12-01",
@@ -438,7 +643,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Geweerschutters en handwapens",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/50a7dc60-d931-ce2f-7ad4-66d16725b2e4"
     },
     {
       "date": "1946-12-01",
@@ -448,7 +658,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/526613ac-b769-a2f4-7999-d9158d2f5cb3"
     },
     {
       "date": "1946-12-01",
@@ -458,7 +673,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/66c0b789-d155-d00f-f7e2-0aaf3741140f"
     },
     {
       "date": "1946-12-01",
@@ -468,7 +688,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Geweerschutters en handwapens",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/72cab4ed-f7e6-1894-d847-31bd89cf5854"
     },
     {
       "date": "1946-12-01",
@@ -478,7 +703,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Geweerschutters en handwapens",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/7eaa7ff4-76b3-c605-aa0e-382f5465bcc2"
     },
     {
       "date": "1947-01-01",
@@ -488,7 +718,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/05b841a9-04a4-b332-f4d6-b0ed87cbd2a4"
     },
     {
       "date": "1947-01-01",
@@ -498,7 +733,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/1bfca470-dcbe-2e49-5b67-7b6ba76deb93"
     },
     {
       "date": "1947-01-01",
@@ -508,7 +748,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/1dbe3ba6-b1a9-94b8-1e23-469a0c89c751"
     },
     {
       "date": "1947-01-01",
@@ -518,7 +763,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/26c87c21-17d5-2a18-0cd5-3e0009a6f46e"
     },
     {
       "date": "1947-01-01",
@@ -528,7 +778,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/2c367167-81c8-5402-393e-8d9b74b6dac2"
     },
     {
       "date": "1947-01-01",
@@ -538,7 +793,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/2eb01007-d517-30bc-1398-55d141e958c3"
     },
     {
       "date": "1947-01-01",
@@ -548,7 +808,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/46709baa-f91a-0f5a-bf13-da888b4ad3d9"
     },
     {
       "date": "1947-01-01",
@@ -558,7 +823,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/4fb610b2-d9e1-bad3-641e-d85768e0e961"
     },
     {
       "date": "1947-01-01",
@@ -568,7 +838,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Geweerschutters en handwapens",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/59143d6b-7328-39b5-807b-dd57b274f8db"
     },
     {
       "date": "1947-01-01",
@@ -578,7 +853,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/63ca4ae3-e1de-9bd2-7eb3-1736316e91b4"
     },
     {
       "date": "1947-01-01",
@@ -588,7 +868,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Geweerschutters en handwapens",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/674e4c41-53de-1ca5-5214-63293964d7d6"
     },
     {
       "date": "1947-01-01",
@@ -598,7 +883,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/67db4b8e-d499-bab4-5e2b-e81ec41a891e"
     },
     {
       "date": "1947-01-01",
@@ -608,7 +898,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/71f37eaf-093b-9688-53cb-ac2e45e0bdb8"
     },
     {
       "date": "1947-01-01",
@@ -618,7 +913,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/76d9c628-a4e7-2b88-a5b7-bcd40ee07564"
     },
     {
       "date": "1947-01-01",
@@ -628,7 +928,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/8caa004c-3caa-690e-da7a-4ed1144591e0"
     },
     {
       "date": "1947-01-01",
@@ -638,7 +943,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/8ea5e337-8346-37fe-febc-91bf411f55a9"
     },
     {
       "date": "1947-01-01",
@@ -648,7 +958,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/91148c71-35b5-47e9-2adc-ca30bb9bd18a"
     },
     {
       "date": "1947-01-01",
@@ -658,7 +973,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/911c6911-34f7-f847-edc2-019b311fa3b4"
     },
     {
       "date": "1947-01-01",
@@ -668,7 +988,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/9debfd4c-1bc5-52b6-5a3d-af9fa906ca8a"
     },
     {
       "date": "1947-01-01",
@@ -678,7 +1003,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Geweerschutters en handwapens",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/9e0080e1-ca28-7a53-7d4b-1a74f8cc62e1"
     },
     {
       "date": "1947-01-01",
@@ -688,7 +1018,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/9f877e2c-7d0a-451b-98e2-ba23af760ac2"
     },
     {
       "date": "1947-02-01",
@@ -698,7 +1033,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/0a37bcc8-fed7-769a-3683-d58c4cdba530"
     },
     {
       "date": "1947-02-01",
@@ -708,7 +1048,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/3a089d07-726a-6b07-f0e2-1372ebb164e6"
     },
     {
       "date": "1947-03-01",
@@ -718,7 +1063,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/3a52c0fa-94bb-5fde-6f6f-bd47f1d5537b"
     },
     {
       "date": "1947-03-01",
@@ -728,7 +1078,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/3ddf0352-b0ce-b0bf-a9b9-72671f23fc11"
     },
     {
       "date": "1947-03-01",
@@ -738,7 +1093,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/4ab504bb-e075-8044-a12c-4c7233f29107"
     },
     {
       "date": "1947-03-01",
@@ -748,7 +1108,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/65875857-b938-7938-94b5-72cf3a2252ad"
     },
     {
       "date": "1947-03-01",
@@ -758,7 +1123,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/7e021d30-f600-02fa-b26f-eb00a0a253cb"
     },
     {
       "date": "1947-03-01",
@@ -768,7 +1138,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/8fd2c9c3-63d8-93ff-cf24-6d5150b4c8a2"
     },
     {
       "date": "1947-03-10",
@@ -778,7 +1153,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/4b76bd1d-e254-1d36-ea46-267a79117d84"
     },
     {
       "date": "1947-06-01",
@@ -788,7 +1168,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/139f99dd-bffa-8c14-a9ef-142fd1cabef3"
     },
     {
       "date": "1947-06-01",
@@ -798,7 +1183,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/20c8918d-1199-0ec3-f74f-6febdc8d4aa4"
     },
     {
       "date": "1947-06-01",
@@ -808,7 +1198,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/319a9b2e-73a7-a6ae-953b-264ed249953f"
     },
     {
       "date": "1947-06-01",
@@ -818,7 +1213,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/655fcbc3-2ab3-dfa4-059f-7c968207a3cf"
     },
     {
       "date": "1947-06-01",
@@ -828,7 +1228,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/973a9e71-c04b-a805-a99c-d88eab3e93fe"
     },
     {
       "date": "1947-07-01",
@@ -838,7 +1243,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/050c1cd5-b45a-383d-84ad-124409572340"
     },
     {
       "date": "1947-07-01",
@@ -848,7 +1258,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/0b9ce53e-8aa7-eb02-7a2c-c0f59f96b455"
     },
     {
       "date": "1947-07-01",
@@ -858,7 +1273,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/0ca583f1-4c76-1994-769c-18b55414298b"
     },
     {
       "date": "1947-07-01",
@@ -868,7 +1288,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/18070b63-eab0-ed9a-7b99-d7cbd79c2472"
     },
     {
       "date": "1947-07-01",
@@ -878,7 +1303,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/2424e488-33fc-4201-d85c-a6a09f09b6ac"
     },
     {
       "date": "1947-07-01",
@@ -888,7 +1318,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/2ba8707e-9e5d-a6ad-9bd9-1d3939a26a71"
     },
     {
       "date": "1947-07-01",
@@ -898,7 +1333,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/66727d77-4689-c054-bc78-ec02a32e4bfe"
     },
     {
       "date": "1947-07-01",
@@ -908,7 +1348,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/79cccb00-e3bd-7815-b899-411cc197459c"
     },
     {
       "date": "1947-07-01",
@@ -918,7 +1363,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/86f55674-838f-0fce-4e0e-40abda9d1314"
     },
     {
       "date": "1947-07-01",
@@ -928,7 +1378,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/95cf164f-4948-c6a6-ecbe-a1394ff64633"
     },
     {
       "date": "1947-07-01",
@@ -938,7 +1393,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/997e4053-c3e1-578f-1bbd-d4e67a28d353"
     },
     {
       "date": "1947-07-01",
@@ -948,7 +1408,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/9df949fc-263c-5178-2710-fd25469ac050"
     },
     {
       "date": "1947-07-01",
@@ -958,7 +1423,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/9e788412-4a7d-1e92-6de7-6b66fa2122dc"
     },
     {
       "date": "1947-07-22",
@@ -968,7 +1438,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/40913377-ef68-4236-ec7a-2afa92ea87a7"
     },
     {
       "date": "1947-08-01",
@@ -978,7 +1453,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/0592df28-c571-5827-f073-acb8d057ef79"
     },
     {
       "date": "1947-08-01",
@@ -988,7 +1468,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/07a6c511-c8aa-bcc6-1343-e1d806e7139c"
     },
     {
       "date": "1947-08-01",
@@ -998,7 +1483,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/2703f0bf-a821-4240-8afe-67dac6409676"
     },
     {
       "date": "1947-08-01",
@@ -1008,7 +1498,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/75112604-3693-e1f0-c93b-cc8748031c08"
     },
     {
       "date": "1947-08-01",
@@ -1018,7 +1513,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/76b5b0a8-2045-60a6-b87c-7da0df5e24b0"
     },
     {
       "date": "1947-08-15",
@@ -1028,7 +1528,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/563240aa-458a-46d2-a7e4-ceb6fd11441a"
     },
     {
       "date": "1947-08-15",
@@ -1038,7 +1543,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/5edbb660-8a63-189f-2a2e-205112f8c650"
     },
     {
       "date": "1947-09-01",
@@ -1048,7 +1558,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/3b457917-bcfa-5d6e-ee7c-15e1a9fd9b04"
     },
     {
       "date": "1947-09-01",
@@ -1058,7 +1573,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/64036a78-c8aa-d831-74be-44004ac4ceeb"
     },
     {
       "date": "1947-10-01",
@@ -1068,7 +1588,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/5cb8ff82-de56-9cc1-122e-174da63f7365"
     },
     {
       "date": "1947-10-01",
@@ -1078,7 +1603,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/a039730e-8c73-9130-3b33-272faf176917"
     },
     {
       "date": "1947-10-12",
@@ -1088,7 +1618,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/81d01364-08da-57fa-9283-93f32c982b3e"
     },
     {
       "date": "1947-10-23",
@@ -1098,7 +1633,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Geweerschutters en handwapens",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/a04d2c2f-febb-3661-d422-23dccb3780e5"
     },
     {
       "date": "1947-10-25",
@@ -1108,7 +1648,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/09737ccf-6dd5-c95b-70e4-3f99bc05b82a"
     },
     {
       "date": "1947-12-06",
@@ -1118,7 +1663,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/9e1cffdc-f6de-d34e-d00a-46e782db2a78"
     },
     {
       "date": "1947-12-12",
@@ -1128,7 +1678,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/0af57107-6468-3483-819e-3505cfa73c56"
     },
     {
       "date": "1947-12-22",
@@ -1138,7 +1693,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/44a27332-cb54-4fa7-e528-d331635eda70"
     },
     {
       "date": "1948-01-22",
@@ -1148,7 +1708,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Artillerie en mortieren",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/51e0c6e1-f99f-003e-7a0b-61342c6ea257"
     },
     {
       "date": "1948-02-17",
@@ -1158,7 +1723,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/1b546826-9dc7-93b4-214f-48f943ad2604"
     },
     {
       "date": "1948-02-17",
@@ -1168,7 +1738,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/386a28c6-fa82-16aa-5b67-39c9a1ac2cca"
     },
     {
       "date": "1948-02-17",
@@ -1178,7 +1753,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/4044befe-c6f1-1fb8-7d63-8dae8a79ff1d"
     },
     {
       "date": "1948-02-17",
@@ -1188,7 +1768,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/5e0a4477-079c-7b0e-860d-cc2193013d34"
     },
     {
       "date": "1948-02-17",
@@ -1198,7 +1783,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/60e55a1c-ea1c-8f0a-5b82-1590a13484c7"
     },
     {
       "date": "1948-02-17",
@@ -1208,7 +1798,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/808a5bc9-284c-6581-d644-4c71cb21df9c"
     },
     {
       "date": "1948-02-20",
@@ -1218,7 +1813,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/093d3233-ab46-a5a1-e6a9-cdc1a1ed2efc"
     },
     {
       "date": "1948-02-21",
@@ -1228,7 +1828,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/6687b56a-6e74-26fa-bd58-ef2fa3dfd310"
     },
     {
       "date": "1948-03-24",
@@ -1238,7 +1843,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/9f71a279-9c35-b1a7-83b6-f5baad5c9691"
     },
     {
       "date": "1948-04-05",
@@ -1248,7 +1858,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/6fc03d3a-526f-f3f6-1b45-80d7893c58fb"
     },
     {
       "date": "1948-06-28",
@@ -1258,7 +1873,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/13e0cd2a-05d6-3db5-4623-209b10af40ec"
     },
     {
       "date": "1948-12-01",
@@ -1268,7 +1888,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/2f21092c-6999-debf-7f3c-eda3e31bbfea"
     },
     {
       "date": "1948-12-01",
@@ -1278,7 +1903,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/6bad8023-208e-ca4c-1e23-44057f749bcf"
     },
     {
       "date": "1948-12-01",
@@ -1288,7 +1918,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/7629d0e5-b662-da87-66b9-0fcfc3075990"
     },
     {
       "date": "1948-12-01",
@@ -1298,7 +1933,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/97b4e873-4cb2-81aa-0746-4f4b9c20dc73"
     },
     {
       "date": "1948-12-20",
@@ -1308,7 +1948,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/82f5c477-cc99-8a19-39d0-00ff3ebfdbf3"
     },
     {
       "date": "1949-01-01",
@@ -1318,7 +1963,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Pantserwagens en tanks",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/2c509dc8-e0e5-0616-0b39-cf27c525fc20"
     },
     {
       "date": "1949-03-30",
@@ -1328,7 +1978,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Geweerschutters en handwapens",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/08dda9b5-8384-7806-6d4f-9b979210c8d1"
     },
     {
       "date": "1949-03-30",
@@ -1338,7 +1993,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Overige bewapening",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/83e44f71-c998-40a6-18f1-ec064bcebfd4"
     },
     {
       "date": "1949-09-01",
@@ -1348,7 +2008,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Geweerschutters en handwapens",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/93acc834-82f6-ba9d-8a47-ac27940ad2c2"
     },
     {
       "date": "1949-10-01",
@@ -1358,7 +2023,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/5e1bc182-1a48-47b1-4d7a-029f3513ce40"
     },
     {
       "date": "1949-11-01",
@@ -1368,7 +2038,12 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Geweerschutters en handwapens",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/98d337a8-dbe3-9b26-4fe4-b513c6ceedf2"
     },
     {
       "date": "1949-11-10",
@@ -1378,7 +2053,20 @@
       "rights": "http://rightsstatements.org/page/CNE/1.0/",
       "category": "Machinegeweren en machinepistolen",
       "evidenceLevel": "Bronbeschrijving; geen onafhankelijke identificatie van het afgebeelde wapentype",
-      "imagePublished": false
+      "imagePublished": false,
+      "primaryRightsStatus": "Publiek Domein",
+      "primaryRightsCheckedAt": "2026-11-13",
+      "reuseAllowed": true,
+      "downloadAvailable": true,
+      "rightsEvidenceUrl": "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/8fa89c0b-1666-a0da-a328-98142749a8bd"
     }
-  ]
+  ],
+  "primaryRightsAudit": {
+    "checkedAt": "2026-11-13",
+    "checkedRecords": 136,
+    "rightsStatus": "Publiek Domein",
+    "reuseStatement": "U kunt deze afbeelding rechtenvrij en gratis (her)gebruiken.",
+    "downloadAvailableRecords": 136,
+    "method": "Individual live Nationaal Archief photo pages; exact Handle URLs stored per record."
+  }
 }
