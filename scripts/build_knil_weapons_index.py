@@ -19,6 +19,12 @@ WEAPON_TERMS = re.compile(
     re.IGNORECASE,
 )
 
+# Exclude contextual or idiomatic matches that do not describe depicted weaponry.
+NON_WEAPON_CONTEXT = re.compile(
+    r"ongewapend|wapenbroeders|wapen der genie|verborgen wapens|wapens inleveren",
+    re.IGNORECASE,
+)
+
 CATEGORIES = (
     ("Pantserwagens en tanks", re.compile(r"tank|pantser|carrier", re.I)),
     ("Machinegeweren en machinepistolen", re.compile(r"mitrailleur|machinegeweer|machinepistool|bren|vickers|lanchester", re.I)),
@@ -40,7 +46,7 @@ def build_index(archive: dict) -> dict:
         description = str(source_record.get("description") or "")
         if "knil" not in source_record.get("topics", []):
             continue
-        if not WEAPON_TERMS.search(description):
+        if not WEAPON_TERMS.search(description) or NON_WEAPON_CONTEXT.search(description):
             continue
         records.append({
             "date": source_record.get("date"),
@@ -69,8 +75,10 @@ def build_index(archive: dict) -> dict:
         },
         "categoryCounts": dict(sorted(counts.items())),
         "rightsPolicy": (
-            "All records in this selection carry RightsStatements.org CNE (Copyright Not Evaluated). "
-            "They are metadata-only. No source image is copied, embedded or republished."
+            "The linked-open-data snapshot marks these records CNE (Copyright Not Evaluated). "
+            "Live individual Nationaal Archief pages can show a different current rights status; "
+            "verify each primary record before reuse. The index remains metadata-only until "
+            "individual image rights and access are verified."
         ),
         "records": records,
     }
