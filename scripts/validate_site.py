@@ -97,6 +97,10 @@ def main() -> None:
 
     if "https://commons.wikimedia.org/w/api.php" not in source:
         fail("Wikimedia Commons API-endpoint ontbreekt")
+    if "function isReusableCommonsLicense(meta)" not in source or "if (!isReusableCommonsLicense(meta)) continue;" not in source:
+        fail("Wikimedia-afbeeldingen worden niet geblokkeerd zonder expliciete herbruikbare licentie")
+    if "rightsstatements.org/page/CNE/1.0/" not in source or "creativecommons.org/publicdomain/zero/1.0/" not in source:
+        fail("Rechtencontrole moet CNE uitsluiten en CC0 expliciet toestaan")
     if "filetype:bitmap" not in source or "info.mime" not in source:
         fail("Zoekfunctie filtert niet aantoonbaar op beeldbestanden")
     if "meta?.DateTime?.value" in source:
