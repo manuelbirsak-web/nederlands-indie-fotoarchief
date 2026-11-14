@@ -128,6 +128,21 @@ def main() -> None:
         fail("Niet-fotografische poststukken moeten uit de fotogalerij worden geweerd")
     if "topics.includes('decolonization')" not in source or "year<1945||year>1950" not in source:
         fail("Bersiap-rubriek moet inhoudelijke onderwerpclassificatie en de periode 1945–1950 combineren")
+    for term in ("marechaussee", "veldpolitie", "klewang", "karabijn", "infanterie", "artillerie", "garnizoen"):
+        if term not in source.lower():
+            fail(f"KNIL-zoekselectie mist historische militaire terminologie: {term}")
+    for term in ("pemuda", "pemoeda", "laskar", "tentara keamanan rakyat", "politionele actie", "agresi militer", "linggadjati", "renville"):
+        if term not in source.lower():
+            fail(f"Bersiap/dekolonisatie-zoekselectie mist historische terminologie: {term}")
+    for term in ("ml-knil", "militaire luchtvaart", "heiho", "gurkha", "bataljon"):
+        if term not in source.lower():
+            fail(f"KNIL-zoekselectie mist termen uit de Indische kampwoordenlijst: {term}")
+    for term in ("nica", "rapwi", "apwi", "amacab", "seac", "tentara keamanan rakjat", "badan keamanan rakjat"):
+        if term not in source.lower():
+            fail(f"Bersiap-zoekselectie mist termen uit de Indische kampwoordenlijst: {term}")
+    for term in ("cultuurstelsel", "ethische politiek", "batig slot", "slavernij", "adat", "repatriëring", "peta", "nefis", "mariniersbrigade", "stoottroepen", "tijgerbrigade", "madioen-opstand", "renville-overeenkomst", "soevereiniteitsoverdracht", "soerakarta", "djocja", "preanger", "batik", "gamelan", "wajang", "krakatau", "lahar", "nootmuskaat", "kpm", "knilm"):
+        if term not in source.lower():
+            fail(f"Nedindie thematische zoekselectie mist een term uit de LINKS-directory: {term}")
     if "data-place=\"all\"" not in source or "let view='home',place='all'" not in source:
         fail("Java moet standaard alle Java-plaatsen tonen, niet uitsluitend Bandoeng")
     if "const topicFilterToArchive" not in source or "place==='other'?'other-java':place" not in source:
@@ -309,6 +324,11 @@ def main() -> None:
         fail("Inline JavaScript ontbreekt")
     if not any("loadNationaalArchiefIndex();" in block for block in scripts):
         fail("Nationaal Archief-index wordt niet geïnitialiseerd")
+
+    required_search_terms = ("viewTerms", "Nederlandsche Oost-Indiën", "gouvernement", "interneringskamp", "krijgsgevangenkamp", "Kempeitai", "Tjimahi", "Soekaboemi", "Tasikmalaja", "Tjilatjap", "Tjihapit", "Technische Hoogeschool", "Soekamiskin", "Depot Mobiele Artillerie", "romusha", "waroeng", "Vreemde Oosterlingen", "rubberplantage", "Atjeh", "Koetaradja", "VOC", "gouverneur-generaal", "Kempeitai", "ML-KNIL", "marechaussee", "klewang", "pemoeda", "BKR", "RAPWI")
+    for term in required_search_terms:
+        if term.lower() not in source.lower():
+            fail(f"Historische zoekterminologie ontbreekt in de tabselecties: {term}")
 
     print(
         f"PASS: HTML geparsed; {len(parser.ids)} IDs; {len(parser.links)} bronlinks; "
