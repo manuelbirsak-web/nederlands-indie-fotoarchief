@@ -38,7 +38,7 @@ function extractObject(name) {
     const ch = HTML[i];
     if (quote) {
       if (escaped) escaped=false;
-      else if (ch==='\\\\') escaped=true;
+      else if (ch==='\\') escaped=true;
       else if (ch===quote) quote=null;
       continue;
     }
@@ -94,7 +94,7 @@ function metadataValue(meta,key) {
   const value=meta?.[key]?.value || '';
   return String(value).replace(/<[^>]*>/g,' ').replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').trim();
 }
-function isEligible(page) {
+function isEligible(page,view) {
   const info=page.imageinfo?.[0];
   if (!info || !info.url || !String(info.mime||'').startsWith('image/')) return {eligible:false,reason:'not-image'};
   const meta=info.extmetadata||{};
@@ -102,13 +102,14 @@ function isEligible(page) {
   if (!ALLOWED_LICENSE(license)) return {eligible:false,reason:'license'};
   const text=[page.title,metadataValue(meta,'ObjectName'),metadataValue(meta,'ImageDescription'),metadataValue(meta,'Categories')].join(' ');
   if (NON_PHOTO.test(text)) return {eligible:false,reason:'non-photo'};
+  if (!VIEW_PATTERNS[view]?.test(text)) return {eligible:false,reason:'tab-filter'};
   const date=metadataValue(meta,'DateTimeOriginal');
   const yearMatch=date.match(/(?:^|\\D)((?:18|19|20)\\d{2})(?:\\D|$)/);
   const year=yearMatch?Number(yearMatch[1]):null;
   if (year!==null&&(year<1800||year>1959)) return {eligible:false,reason:'outside-period'};
-  return {eligible:year!==null||HISTORICAL_CONTEXT.test(text),reason:year!==null?'dated':'context-undated',year,text,license,url:info.descriptionurl||''};
+  return {eligible:(year!==null||HISTORICAL_CONTEXT.test(text)),reason:year!==null?'dated':'context-undated',year,text,license,url:info.descriptionurl||''};
 }
-async function runFlow(name,queries,photoLimit,batchLimit) {
+async function runFlow(name,view,queries,photoLimit,batchLimit) {
   const records=new Map(),errors=[],queryStats=[];
   let photos=0,batches=0;
   for (const query of queries) {
@@ -124,7 +125,7 @@ async function runFlow(name,queries,photoLimit,batchLimit) {
         for (const page of pages) {
           const title=page.title||String(page.pageid);
           if (records.has(title)) continue;
-          const result=isEligible(page);
+          const result=isEligible(page,view);
           if (!result.eligible) continue;
           records.set(title,{title,...result,query});
           fresh++;eligible++;
@@ -161,8 +162,8 @@ async function main() {
   for (const view of VIEW_NAMES) {
     const baselineQueries=[baselineBase[view]+' '+(viewTerms[view]||'')];
     const expandedQueries=[baselineBase[view],...(clusters[view]||[]),...(viewTerms[view]?[viewTerms[view]]:[])];
-    const baseline=await runFlow('baseline',baselineQueries,BASELINE_PHOTO_LIMIT,BASELINE_BATCH_LIMIT);
-    const expanded=await runFlow('expanded',expandedQueries,EXPANDED_PHOTO_LIMIT,EXPANDED_BATCH_LIMIT);
+    const baseline=await runFlow('baseline',view,baselineQueries,BASELINE_PHOTO_LIMIT,BASELINE_BATCH_LIMIT);
+    const expanded=await runFlow('expanded',view,expandedQueries,EXPANDED_PHOTO_LIMIT,EXPANDED_BATCH_LIMIT);
     failed+=baseline.errors.length+expanded.errors.length;
     const delta=expanded.uniqueRightsEligibleFiles-baseline.uniqueRightsEligibleFiles;
     report.tabs[view]={
