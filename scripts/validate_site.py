@@ -140,6 +140,9 @@ def main() -> None:
     for term in ("nica", "rapwi", "apwi", "amacab", "seac", "tentara keamanan rakjat", "badan keamanan rakjat"):
         if term not in source.lower():
             fail(f"Bersiap-zoekselectie mist termen uit de Indische kampwoordenlijst: {term}")
+    for term in ("cultuurstelsel", "ethische politiek", "batig slot", "slavernij", "adat", "repatriering", "peta", "nefis", "mariniersbrigade", "stoottroepen", "tijgerbrigade", "madioen-opstand", "renville-overeenkomst", "soevereiniteitsoverdracht", "soerakarta", "djocja", "preanger", "batik", "gamelan", "wajang", "krakatau", "lahar", "nootmuskaat", "kpm", "knilm"):
+        if term not in source.lower():
+            fail(f"Nedindie thematische zoekselectie mist een term uit de LINKS-directory: {term}")
     if "data-place=\"all\"" not in source or "let view='home',place='all'" not in source:
         fail("Java moet standaard alle Java-plaatsen tonen, niet uitsluitend Bandoeng")
     if "const topicFilterToArchive" not in source or "place==='other'?'other-java':place" not in source:
