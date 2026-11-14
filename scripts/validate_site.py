@@ -143,6 +143,16 @@ def main() -> None:
     for term in ("cultuurstelsel", "ethische politiek", "batig slot", "slavernij", "adat", "repatriëring", "peta", "nefis", "mariniersbrigade", "stoottroepen", "tijgerbrigade", "madioen-opstand", "renville-overeenkomst", "soevereiniteitsoverdracht", "soerakarta", "djocja", "preanger", "batik", "gamelan", "wajang", "krakatau", "lahar", "nootmuskaat", "kpm", "knilm"):
         if term not in source.lower():
             fail(f"Nedindie thematische zoekselectie mist een term uit de LINKS-directory: {term}")
+    for contract in ("function normalizeArchiveText(value)", "function classifyArchiveEvidence(text)", "const ARCHIVE_ALIASES=", "const ARCHIVE_TOPICS=", "taxonomyLabels", "classification.topics", "classification.places"):
+        if contract not in source:
+            fail(f"Gedeelde bewijs- en categorisatielaag ontbreekt: {contract}")
+    for term in ("soerakarta", "preanger", "priangan", "bandung lautan api", "gedung merdeka", "madioen-opstand", "tijgerbrigade", "batik", "gamelan", "wajang", "njai", "mardijkers", "nootmuskaat"):
+        if term not in source.lower():
+            fail(f"Historische relevantiefilter mist een nieuwe taxonomy-term: {term}")
+    if "classification.topics.some(tag=>'knil'||tag==='military')" not in source:
+        fail("KNIL-toelating moet op de expliciete classificatie-uitkomst vertrouwen")
+    if "classification.topics.some(tag=>['decolonization','bersiap','camp'].includes(tag))" not in source:
+        fail("Bersiap/dekolonisatie moet op bronondersteunde classificatie vertrouwen")
     if "data-place=\"all\"" not in source or "let view='home',place='all'" not in source:
         fail("Java moet standaard alle Java-plaatsen tonen, niet uitsluitend Bandoeng")
     if "const topicFilterToArchive" not in source or "place==='other'?'other-java':place" not in source:
