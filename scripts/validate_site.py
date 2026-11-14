@@ -322,6 +322,11 @@ def main() -> None:
     if not any("loadNationaalArchiefIndex();" in block for block in scripts):
         fail("Nationaal Archief-index wordt niet geïnitialiseerd")
 
+    required_search_terms = ("viewTerms", "Nederlandsche Oost-Indiën", "gouvernement", "Tjimahi", "Soekaboemi", "Tjihapit", "Technische Hoogeschool", "romusha", "waroeng", "ML-KNIL", "marechaussee", "klewang", "pemoeda", "BKR", "RAPWI")
+    for term in required_search_terms:
+        if term.lower() not in source.lower():
+            fail(f"Historische zoekterminologie ontbreekt in de tabselecties: {term}")
+
     print(
         f"PASS: HTML geparsed; {len(parser.ids)} IDs; {len(parser.links)} bronlinks; "
         f"{len(records)} Nationaal Archief-records; {len(rm_records)} Rijksmuseum-foto-objecten "
