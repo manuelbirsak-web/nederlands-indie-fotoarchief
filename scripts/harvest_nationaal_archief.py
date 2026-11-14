@@ -35,7 +35,7 @@ WHERE {{
     OPTIONAL {{ ?s dc:creator ?creator }}
     OPTIONAL {{ ?s dc:rights ?rights }}
     FILTER(REGEX(LCASE(STR(?description)),
-      "bandoeng|bandung|batavia|buitenzorg|bogor|semarang|soerabaja|surabaya|djokja|yogyakarta|malang|java|sumatra|borneo|celebes|sulawesi|indones|nederlands.?indi[eë]|nederlandsch.?indi[eë]|dutch east indies|netherlands indies|knil|bersiap|tni|pemoeda|agresi militer|politionele actie|onafhankelijkheidsstrijd"))
+      "bandoeng|bandung|batavia|djakarta|jakarta|buitenzorg|bogor|semarang|soerabaja|surabaya|djokja|djocja|yogyakarta|malang|tjimahi|cimahi|garoet|garut|soekaboemi|sukabumi|tjilatjap|cilacap|tasikmalaja|tasikmalaya|cheribon|cirebon|soerakarta|surakarta|solo|preanger|priangan|kedoe|banten|bantam|tjiandjoer|pasoeroean|probolinggo|madioen|madiun|djember|jember|banjoemas|banyumas|java|sumatra|sumatera|atjeh|aceh|borneo|kalimantan|celebes|sulawesi|indones|nederlands.?indi[eë]|nederlandsch.?indi[eë]|dutch east indies|netherlands indies|knil|ml-knil|marechaussee|veldpolitie|peta|nefis|bersiap|tni|apri|apris|bkr|tkr|tri|pemoeda|pemuda|laskar|nica|rapwi|apwi|seac|amacab|agresi militer|politionele actie|linggadjati|renville|soevereiniteitsoverdracht|interneringskamp|burgerkamp|krijgsgevangenkamp|kempeitai|adat|batik|gamelan|wajang|njai|mardijkers|mestiezen|pasar|waroeng|sawah|ladang|romusha|kpm|knilm|spoorweg|luchtvaart|plantage|rubber|koffie|suiker|thee|krakatau|lahar|vulkaan|nootmuskaat|kruidnagel|cultuurstelsel|ethische politiek|slavernij|opium|specerijenhandel"))
   }}
 }}
 GROUP BY ?s ?description
