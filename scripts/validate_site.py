@@ -231,7 +231,7 @@ def main() -> None:
     if not isinstance(records, list) or len(records) < 20:
         fail("Nationaal Archief-index bevat minder dan 20 records")
     allowed_topics = {"knil", "military", "decolonization", "bersiap", "society", "architecture", "transport", "culture", "landscape"}
-    allowed_places = {"java", "bandung", "batavia", "bogor", "semarang", "surabaya", "yogyakarta", "malang", "other-java", "sumatra", "other-islands"}
+    allowed_places = {"java", "bandung", "batavia", "bogor", "semarang", "surabaya", "yogyakarta", "malang", "other-java", "sumatra", "other-islands", "cimahi", "garut", "sukabumi", "cilacap", "tasikmalaya", "cirebon", "madoera", "aceh", "pekanbaru", "surakarta", "priangan"}
     if len({record.get("uri") for record in records}) != len(records):
         fail("Nationaal Archief-index bevat dubbele permanente record-URL's")
     if archive.get("count") != len(records):
