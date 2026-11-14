@@ -83,8 +83,8 @@ async function main() {
       if (commonsRequests <= requestsBefore) failures.push('Tab switch did not request fresh Commons results for ' + view);
       if (galleryCheck.cards < 1 || galleryCheck.loadedImages < 1) failures.push('Historical photos did not render/load for ' + view + ': ' + JSON.stringify(galleryCheck));
       const activeQuery = commonsQueries.at(-1) || '';
-      if (view === 'knil' && (!/marechaussee/i.test(activeQuery) || !/klewang/i.test(activeQuery) || !/Nederlandsch-Indisch Leger/i.test(activeQuery))) failures.push('KNIL search query is missing historically specific military terminology: ' + activeQuery);
-      if (view === 'bersiap' && (!/pemuda/i.test(activeQuery) || !/laskar/i.test(activeQuery) || !/Politionele Actie/i.test(activeQuery))) failures.push('Bersiap search query is missing Indonesian independence-era terminology: ' + activeQuery);
+      if (view === 'knil' && (!/marechaussee/i.test(activeQuery) || !/klewang/i.test(activeQuery) || !/Nederlandsch-Indisch Leger/i.test(activeQuery) || !/ML-KNIL/i.test(activeQuery))) failures.push('KNIL search query is missing historically specific military terminology: ' + activeQuery);
+      if (view === 'bersiap' && (!/pemuda/i.test(activeQuery) || !/laskar/i.test(activeQuery) || !/Politionele Actie/i.test(activeQuery) || !/NICA/i.test(activeQuery) || !/RAPWI/i.test(activeQuery))) failures.push('Bersiap search query is missing Indonesian independence-era terminology: ' + activeQuery);
     }
 
     await page.locator('#nav [data-view="home"]').click();
