@@ -322,7 +322,7 @@ def main() -> None:
     if not any("loadNationaalArchiefIndex();" in block for block in scripts):
         fail("Nationaal Archief-index wordt niet geïnitialiseerd")
 
-    required_search_terms = ("viewTerms", "Nederlandsche Oost-Indiën", "gouvernement", "interneringskamp", "krijgsgevangenkamp", "Kempeitai", "Tjimahi", "Soekaboemi", "Tasikmalaja", "Tjilatjap", "Tjihapit", "Technische Hoogeschool", "Soekamiskin", "Depot Mobiele Artillerie", "romusha", "waroeng", "Vreemde Oosterlingen", "rubberplantage", "ML-KNIL", "marechaussee", "klewang", "pemoeda", "BKR", "RAPWI")
+    required_search_terms = ("viewTerms", "Nederlandsche Oost-Indiën", "gouvernement", "interneringskamp", "krijgsgevangenkamp", "Kempeitai", "Tjimahi", "Soekaboemi", "Tasikmalaja", "Tjilatjap", "Tjihapit", "Technische Hoogeschool", "Soekamiskin", "Depot Mobiele Artillerie", "romusha", "waroeng", "Vreemde Oosterlingen", "rubberplantage", "Atjeh", "Koetaradja", "VOC", "gouverneur-generaal", "Kempeitai", "ML-KNIL", "marechaussee", "klewang", "pemoeda", "BKR", "RAPWI")
     for term in required_search_terms:
         if term.lower() not in source.lower():
             fail(f"Historische zoekterminologie ontbreekt in de tabselecties: {term}")
