@@ -122,8 +122,8 @@ def main() -> None:
         fail("Ongedateerde beelden moeten een expliciete historische contextverwijzing bevatten")
     if "year>=1800&&year<=1959)return year" not in source:
         fail("Opnamedatering moet worden begrensd tot 1800–1959")
-    if "return base+" not in source or "filetype:bitmap" not in source:
-        fail("Commons-zoekquery moet de bronzoekterm ongewijzigd doorgeven")
+    if "function buildQueryClusters()" not in source or "return [...new Set(clusters.filter(Boolean).map(query=>" not in source or "gsrsearch:cluster" not in source:
+        fail("Wikimedia-zoekopdracht moet de geclusterde historische zoektermen daadwerkelijk uitvoeren")
     if "|letter|lettre|envelope|postcard" not in source:
         fail("Niet-fotografische poststukken moeten uit de fotogalerij worden geweerd")
     if "topics.includes('decolonization')" not in source or "year<1945||year>1950" not in source:
