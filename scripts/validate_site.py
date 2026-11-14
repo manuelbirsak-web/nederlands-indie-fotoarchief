@@ -165,8 +165,12 @@ def main() -> None:
         fail("Niet-fotografische illustraties en publicaties worden niet aantoonbaar uitgesloten")
     if "match(/(?:18|19|20)\\d{2}/)" not in source:
         fail("Datumparser voor Nationaal Archief-records ontbreekt of is onjuist")
-    if "const seenFiles=new Set()" not in source or "foundThisLoad < 8 && batches < 8" not in source:
-        fail("Zoeken moet duplicaten voorkomen en lege zoekpagina’s automatisch overslaan")
+    if "const seenFiles=new Set()" not in source or "foundThisLoad < 18 && batches < 12" not in source or "function buildQueryClusters()" not in source or "viewQueryClusters" not in source:
+        fail("Zoeken moet queryclusters, deduplicatie en diepere paginering aantoonbaar uitvoeren")
+    if "function classifyArchiveEvidence(text)" not in source or "const ARCHIVE_ALIASES=" not in source or "const ARCHIVE_TOPICS=" not in source:
+        fail("De gedeelde evidence-based plaats- en onderwerpsclassificatie ontbreekt")
+    if "classification.topics.some(tag=>'knil'||tag==='military')" not in source or "classification.topics.some(tag=>['decolonization','bersiap','camp'].includes(tag))" not in source:
+        fail("KNIL- en Bersiap-tab moeten classificatiebewijs gebruiken")
     if "AbortController" not in source or "data.continue" not in source:
         fail("Abort/continuation afhandeling ontbreekt")
     if "const UI_STATE_KEY='indisch-beeldarchief-ui-state-v1'" not in source or "function restoreUiState()" not in source:
@@ -177,8 +181,8 @@ def main() -> None:
         fail("Externe foto-CDN mag niet onnodig met CORS-modus worden geladen")
     if "img.loading=visibleCount<6?'eager':'lazy'" not in source or "cache:'no-store'" not in source:
         fail("Zichtbare foto's moeten direct laden en filterwijzigingen moeten verse bronresultaten aanvragen")
-    if "batches < 8" not in source:
-        fail("Fotoselectie moet voldoende bronpagina's doorzoeken bij beperkte filterresultaten")
+    if "batches < 12" not in source or "queryClusterIndex" not in source or "activeQueryClusters" not in source:
+        fail("Fotoselectie moet alle zoekclusters en vervolgpagina's kunnen doorzoeken")
     if "textContent" not in source:
         fail("Veilige DOM-tekstweergave ontbreekt")
     if "assets/nationaal-archief.json" not in source:
@@ -335,7 +339,7 @@ def main() -> None:
     if not any("loadNationaalArchiefIndex();" in block for block in scripts):
         fail("Nationaal Archief-index wordt niet geïnitialiseerd")
 
-    required_search_terms = ("viewTerms", "Nederlandsche Oost-Indiën", "gouvernement", "interneringskamp", "krijgsgevangenkamp", "Kempeitai", "Tjimahi", "Soekaboemi", "Tasikmalaja", "Tjilatjap", "Tjihapit", "Technische Hoogeschool", "Soekamiskin", "Depot Mobiele Artillerie", "romusha", "waroeng", "Vreemde Oosterlingen", "rubberplantage", "Atjeh", "Koetaradja", "VOC", "gouverneur-generaal", "Kempeitai", "ML-KNIL", "marechaussee", "klewang", "pemoeda", "BKR", "RAPWI")
+    required_search_terms = ("viewTerms", "viewQueryClusters", "buildQueryClusters", "Soerakarta", "Preanger", "Bandung Lautan Api", "Gedung Merdeka", "Madioen-opstand", "PETA", "NEFIS", "Stoottroepen", "Tijgerbrigade", "njai", "Mardijkers", "batik", "gamelan", "wajang", "Nederlandsche Oost-Indiën", "gouvernement", "interneringskamp", "krijgsgevangenkamp", "Kempeitai", "Tjimahi", "Soekaboemi", "Tasikmalaja", "Tjilatjap", "Tjihapit", "Technische Hoogeschool", "Soekamiskin", "Depot Mobiele Artillerie", "romusha", "waroeng", "Vreemde Oosterlingen", "rubberplantage", "Atjeh", "Koetaradja", "VOC", "gouverneur-generaal", "Kempeitai", "ML-KNIL", "marechaussee", "klewang", "pemoeda", "BKR", "RAPWI")
     for term in required_search_terms:
         if term.lower() not in source.lower():
             fail(f"Historische zoekterminologie ontbreekt in de tabselecties: {term}")
