@@ -134,6 +134,12 @@ def main() -> None:
     for term in ("pemuda", "pemoeda", "laskar", "tentara keamanan rakyat", "politionele actie", "agresi militer", "linggadjati", "renville"):
         if term not in source.lower():
             fail(f"Bersiap/dekolonisatie-zoekselectie mist historische terminologie: {term}")
+    for term in ("ml-knil", "militaire luchtvaart", "heiho", "gurkha", "bataljon"):
+        if term not in source.lower():
+            fail(f"KNIL-zoekselectie mist termen uit de Indische kampwoordenlijst: {term}")
+    for term in ("nica", "rapwi", "apwi", "amacab", "seac", "tentara keamanan rakjat", "badan keamanan rakjat"):
+        if term not in source.lower():
+            fail(f"Bersiap-zoekselectie mist termen uit de Indische kampwoordenlijst: {term}")
     if "data-place=\"all\"" not in source or "let view='home',place='all'" not in source:
         fail("Java moet standaard alle Java-plaatsen tonen, niet uitsluitend Bandoeng")
     if "const topicFilterToArchive" not in source or "place==='other'?'other-java':place" not in source:
