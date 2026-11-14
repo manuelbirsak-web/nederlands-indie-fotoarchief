@@ -53,6 +53,25 @@ class ArchiveClassificationTests(unittest.TestCase):
         self.assertIn("bandung", places)
         self.assertIn("transport", topics)
 
+    def test_expanded_historical_place_aliases(self) -> None:
+        _, places = classify_record("Een foto van Soerakarta en de Preanger in 1935")
+        self.assertIn("surakarta", places)
+        self.assertIn("priangan", places)
+        self.assertIn("java", places)
+
+    def test_cultural_terms_are_tagged_without_inventing_military_categories(self) -> None:
+        topics, _ = classify_record("Batik, gamelan en wajang tijdens een pasar malam in Java")
+        self.assertIn("culture", topics)
+        self.assertIn("society", topics)
+        self.assertNotIn("knil", topics)
+        self.assertNotIn("military", topics)
+
+    def test_peta_is_military_but_not_knil(self) -> None:
+        topics, _ = classify_record("PETA-soldaten tijdens een oefening op Java")
+        self.assertIn("military", topics)
+        self.assertNotIn("knil", topics)
+        self.assertNotIn("bersiap", topics)
+
     def test_other_java_is_separate_from_named_city(self) -> None:
         _, places = classify_record("Een overzicht van het landschap op Java")
         self.assertIn("java", places)
