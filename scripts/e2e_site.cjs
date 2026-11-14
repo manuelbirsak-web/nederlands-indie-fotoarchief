@@ -85,10 +85,10 @@ async function main() {
       const activeQuery = commonsQueries.at(-1) || '';
       if (view === 'knil' && (!/marechaussee/i.test(activeQuery) || !/klewang/i.test(activeQuery) || !/Nederlandsch-Indisch Leger/i.test(activeQuery) || !/ML-KNIL/i.test(activeQuery))) failures.push('KNIL search query is missing historically specific military terminology: ' + activeQuery);
       if (view === 'home' && (!/Nederlandsche Oost-Indiën/i.test(activeQuery) || !/gouvernement/i.test(activeQuery))) failures.push('Overview search query is missing colonial-era terminology: ' + activeQuery);
-      if (view === 'indies' && (!/archipel/i.test(activeQuery) || !/residentie/i.test(activeQuery))) failures.push('Nederlands-Indië search query is missing regional/government terminology: ' + activeQuery);
-      if (view === 'java' && (!/Tjimahi/i.test(activeQuery) || !/Soekaboemi/i.test(activeQuery))) failures.push('Java search query is missing historical place spellings: ' + activeQuery);
-      if (view === 'bandung' && (!/Tjihapit/i.test(activeQuery) || !/Technische Hoogeschool/i.test(activeQuery))) failures.push('Bandoeng search query is missing local historical terminology: ' + activeQuery);
-      if (view === 'daily' && (!/romusha/i.test(activeQuery) || !/pasar/i.test(activeQuery) || !/waroeng/i.test(activeQuery))) failures.push('Daily-life search query is missing Indonesian cultural and social vocabulary: ' + activeQuery);
+      if (view === 'indies' && (!/archipel/i.test(activeQuery) || !/residentie/i.test(activeQuery) || !/interneringskamp/i.test(activeQuery) || !/Kempeitai/i.test(activeQuery))) failures.push('Nederlands-Indië search query is missing regional, camp and occupation terminology: ' + activeQuery);
+      if (view === 'java' && (!/Tjimahi/i.test(activeQuery) || !/Soekaboemi/i.test(activeQuery) || !/Tasikmalaja/i.test(activeQuery) || !/Tjilatjap/i.test(activeQuery))) failures.push('Java search query is missing historical place spellings: ' + activeQuery);
+      if (view === 'bandung' && (!/Tjihapit/i.test(activeQuery) || !/Technische Hoogeschool/i.test(activeQuery) || !/Soekamiskin/i.test(activeQuery) || !/Depot Mobiele Artillerie/i.test(activeQuery))) failures.push('Bandoeng search query is missing local historical terminology: ' + activeQuery);
+      if (view === 'daily' && (!/romusha/i.test(activeQuery) || !/pasar/i.test(activeQuery) || !/waroeng/i.test(activeQuery) || !/Vreemde Oosterlingen/i.test(activeQuery) || !/rubberplantage/i.test(activeQuery))) failures.push('Daily-life search query is missing Indonesian cultural and social vocabulary: ' + activeQuery);
       if (view === 'bersiap' && (!/pemuda/i.test(activeQuery) || !/laskar/i.test(activeQuery) || !/Politionele Actie/i.test(activeQuery) || !/NICA/i.test(activeQuery) || !/RAPWI/i.test(activeQuery))) failures.push('Bersiap search query is missing Indonesian independence-era terminology: ' + activeQuery);
     }
 
