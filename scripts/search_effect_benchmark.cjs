@@ -104,7 +104,7 @@ function isEligible(page,view) {
   if (NON_PHOTO.test(text)) return {eligible:false,reason:'non-photo'};
   if (!VIEW_PATTERNS[view]?.test(text)) return {eligible:false,reason:'tab-filter'};
   const date=metadataValue(meta,'DateTimeOriginal');
-  const yearMatch=date.match(/(?:^|\\D)((?:18|19|20)\\d{2})(?:\\D|$)/);
+  const yearMatch=date.match(/(?:^|\D)((?:18|19|20)\d{2})(?:\D|$)/);
   const year=yearMatch?Number(yearMatch[1]):null;
   if (year!==null&&(year<1800||year>1959)) return {eligible:false,reason:'outside-period'};
   return {eligible:(year!==null||HISTORICAL_CONTEXT.test(text)),reason:year!==null?'dated':'context-undated',year,text,license,url:info.descriptionurl||''};
@@ -186,7 +186,7 @@ async function main() {
   };
   report.status=failed?'INCONCLUSIVE_SOURCE_ERRORS':'MEASURED_NEEDS_MANUAL_PRECISION_REVIEW';
   fs.mkdirSync('artifacts',{recursive:true});
-  fs.writeFileSync('artifacts/search-effect-benchmark.json',JSON.stringify(report,null,2)+'\\n');
+  fs.writeFileSync('artifacts/search-effect-benchmark.json',JSON.stringify(report,null,2)+'\n');
   if (failed) throw new Error('One or more live Wikimedia requests failed; benchmark is inconclusive.');
   console.log('Benchmark artifact written: artifacts/search-effect-benchmark.json');
 }
