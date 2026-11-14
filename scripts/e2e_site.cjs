@@ -90,6 +90,12 @@ async function main() {
       if (view === 'bandung' && (!/Tjihapit/i.test(activeQuery) || !/Technische Hoogeschool/i.test(activeQuery) || !/Soekamiskin/i.test(activeQuery) || !/Depot Mobiele Artillerie/i.test(activeQuery))) failures.push('Bandoeng search query is missing local historical terminology: ' + activeQuery);
       if (view === 'daily' && (!/romusha/i.test(activeQuery) || !/pasar/i.test(activeQuery) || !/waroeng/i.test(activeQuery) || !/Vreemde Oosterlingen/i.test(activeQuery) || !/rubberplantage/i.test(activeQuery) || !/Atjeh/i.test(activeQuery))) failures.push('Daily-life search query is missing Indonesian cultural and social vocabulary: ' + activeQuery);
       if (view === 'bersiap' && (!/pemuda/i.test(activeQuery) || !/laskar/i.test(activeQuery) || !/Politionele Actie/i.test(activeQuery) || !/NICA/i.test(activeQuery) || !/RAPWI/i.test(activeQuery))) failures.push('Bersiap search query is missing Indonesian independence-era terminology: ' + activeQuery);
+      if (view === 'home' && (!/cultuurstelsel/i.test(activeQuery) || !/ethische politiek/i.test(activeQuery) || !/slavernij/i.test(activeQuery))) failures.push('Overview search query is missing Nedindie period and social-history terminology: ' + activeQuery);
+      if (view === 'java' && (!/Soerakarta/i.test(activeQuery) || !/Djocja/i.test(activeQuery) || !/Preanger/i.test(activeQuery))) failures.push('Java search query is missing regional and historical place terminology: ' + activeQuery);
+      if (view === 'bandung' && (!/Bandung Lautan Api/i.test(activeQuery) || !/Gedung Merdeka/i.test(activeQuery))) failures.push('Bandoeng search query is missing local historical events and sites: ' + activeQuery);
+      if (view === 'knil' && (!/PETA/i.test(activeQuery) || !/Mariniersbrigade/i.test(activeQuery) || !/Stoottroepen/i.test(activeQuery))) failures.push('Military search query is missing PETA and post-war unit terminology: ' + activeQuery);
+      if (view === 'bersiap' && (!/Madioen-opstand/i.test(activeQuery) || !/Renville-overeenkomst/i.test(activeQuery) || !/soevereiniteitsoverdracht/i.test(activeQuery))) failures.push('Bersiap search query is missing chronology and agreement terminology: ' + activeQuery);
+      if (view === 'daily' && (!/adat/i.test(activeQuery) || !/batik/i.test(activeQuery) || !/gamelan/i.test(activeQuery) || !/njai/i.test(activeQuery))) failures.push('Daily-life search query is missing cultural and social-history terminology: ' + activeQuery);
     }
 
     await page.locator('#nav [data-view="home"]').click();
