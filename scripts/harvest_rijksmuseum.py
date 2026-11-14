@@ -42,17 +42,30 @@ SEARCH_TERMS = [
 
 PLACE_PATTERNS = {
     "bandung": r"\b(?:bandoeng|bandung)\b",
-    "batavia": r"\b(?:batavia|jakarta)\b",
+    "batavia": r"\b(?:batavia|djakarta|jakarta)\b",
     "bogor": r"\b(?:buitenzorg|bogor)\b",
     "semarang": r"\bsemarang\b",
     "surabaya": r"\b(?:soerabaja|surabaya)\b",
-    "yogyakarta": r"\b(?:djokja|djocja|yogyakarta|jogjakarta)\b",
+    "yogyakarta": r"\b(?:djokja|djocja|djokjakarta|yogyakarta|jogjakarta)\b",
     "malang": r"\bmalang\b",
+    "cimahi": r"\b(?:tjimahi|cimahi)\b",
+    "garut": r"\b(?:garoet|garut)\b",
+    "sukabumi": r"\b(?:soekaboemi|sukabumi)\b",
+    "cilacap": r"\b(?:tjilatjap|cilacap)\b",
+    "tasikmalaya": r"\b(?:tasikmalaja|tasikmalaya)\b",
+    "cirebon": r"\b(?:cheribon|cirebon)\b",
+    "madoera": r"\b(?:madoera|madura)\b",
+    "aceh": r"\b(?:atjeh|aceh)\b",
+    "pekanbaru": r"\b(?:pakanbaroe|pekanbaru)\b",
+    "surakarta": r"\b(?:soerakarta|surakarta|solo)\b",
+    "priangan": r"\b(?:preanger|priangan)\b",
 }
 JAVA_CONTEXT = re.compile(
-    r"\b(?:java|bandoeng|bandung|batavia|jakarta|buitenzorg|bogor|semarang|"
-    r"soerabaja|surabaya|djokja|djocja|yogyakarta|jogjakarta|malang|"
-    r"poerwokerto|tjimahi|cheribon|garoet|tjikampek)\b",
+    r"\b(?:java|djawa|bandoeng|bandung|batavia|djakarta|jakarta|buitenzorg|bogor|semarang|"
+    r"soerabaja|surabaya|djokja|djocja|djokjakarta|yogyakarta|jogjakarta|malang|"
+    r"poerwokerto|tjimahi|cimahi|cheribon|cirebon|garoet|garut|soekaboemi|sukabumi|"
+    r"tjilatjap|cilacap|tasikmalaja|tasikmalaya|soerakarta|surakarta|solo|preanger|priangan|"
+    r"kedoe|banten|tjikampek|pasoeroean|probolinggo|madioen|madiun|djember|jember|banjoemas|banyumas)\b",
     re.I,
 )
 TOPIC_PATTERNS = {

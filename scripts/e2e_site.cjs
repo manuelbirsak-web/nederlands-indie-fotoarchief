@@ -53,6 +53,23 @@ async function main() {
     );
 
     if (!(await page.title()).includes('Indisch Beeldarchief')) failures.push('Homepage title missing');
+    const taxonomyChecks = await page.evaluate(() => {
+      const cases = [
+        {text:'Een Nederlandse soldaat in Batavia, 1948', required:['military'], forbidden:['knil','bersiap']},
+        {text:'Straatbeeld in Bandoeng, 1946', required:['bandung'], forbidden:['bersiap','knil']},
+        {text:'Bersiap in Batavia, 1946', required:['bersiap','decolonization','batavia'], forbidden:['knil']},
+        {text:'KNIL-officier bij kazerne in Bandoeng', required:['knil','military','bandung'], forbidden:['bersiap']},
+        {text:'Dagelijks leven op een pasar met batik en gamelan in Java', required:['daily','culture','java'], forbidden:['knil','bersiap']}
+      ];
+      return cases.map(item => {
+        const result = classifyArchiveEvidence(item.text);
+        const combined = [...result.topics, ...result.places];
+        return {text:item.text, requiredMissing:item.required.filter(x => !combined.includes(x)), forbiddenPresent:item.forbidden.filter(x => combined.includes(x)), labels:combined};
+      });
+    });
+    for (const check of taxonomyChecks) {
+      if (check.requiredMissing.length || check.forbiddenPresent.length) failures.push('Evidence taxonomy regression: ' + JSON.stringify(check));
+    }
     try {
       await page.waitForFunction(() => document.querySelectorAll('#results .photo').length > 0, null, { timeout: 20000 });
     } catch (error) {
@@ -82,7 +99,7 @@ async function main() {
       }));
       if (commonsRequests <= requestsBefore) failures.push('Tab switch did not request fresh Commons results for ' + view);
       if (galleryCheck.cards < 1 || galleryCheck.loadedImages < 1) failures.push('Historical photos did not render/load for ' + view + ': ' + JSON.stringify(galleryCheck));
-      const activeQuery = commonsQueries.at(-1) || '';
+      const activeQuery = commonsQueries.slice(requestsBefore).join(' OR ');
       if (view === 'knil' && (!/marechaussee/i.test(activeQuery) || !/klewang/i.test(activeQuery) || !/Nederlandsch-Indisch Leger/i.test(activeQuery) || !/ML-KNIL/i.test(activeQuery))) failures.push('KNIL search query is missing historically specific military terminology: ' + activeQuery);
       if (view === 'home' && (!/Nederlandsche Oost-Indiën/i.test(activeQuery) || !/gouvernement/i.test(activeQuery) || !/VOC/i.test(activeQuery))) failures.push('Overview search query is missing colonial-era terminology: ' + activeQuery);
       if (view === 'indies' && (!/archipel/i.test(activeQuery) || !/residentie/i.test(activeQuery) || !/interneringskamp/i.test(activeQuery) || !/Kempeitai/i.test(activeQuery) || !/Koetaradja/i.test(activeQuery))) failures.push('Nederlands-Indië search query is missing regional, camp and occupation terminology: ' + activeQuery);

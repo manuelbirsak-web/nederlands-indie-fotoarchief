@@ -122,8 +122,8 @@ def main() -> None:
         fail("Ongedateerde beelden moeten een expliciete historische contextverwijzing bevatten")
     if "year>=1800&&year<=1959)return year" not in source:
         fail("Opnamedatering moet worden begrensd tot 1800–1959")
-    if "return base+" not in source or "filetype:bitmap" not in source:
-        fail("Commons-zoekquery moet de bronzoekterm ongewijzigd doorgeven")
+    if "function buildQueryClusters()" not in source or "return [...new Set(clusters.filter(Boolean).map(query=>" not in source or "gsrsearch:cluster" not in source:
+        fail("Wikimedia-zoekopdracht moet de geclusterde historische zoektermen daadwerkelijk uitvoeren")
     if "|letter|lettre|envelope|postcard" not in source:
         fail("Niet-fotografische poststukken moeten uit de fotogalerij worden geweerd")
     if "topics.includes('decolonization')" not in source or "year<1945||year>1950" not in source:
@@ -143,6 +143,16 @@ def main() -> None:
     for term in ("cultuurstelsel", "ethische politiek", "batig slot", "slavernij", "adat", "repatriëring", "peta", "nefis", "mariniersbrigade", "stoottroepen", "tijgerbrigade", "madioen-opstand", "renville-overeenkomst", "soevereiniteitsoverdracht", "soerakarta", "djocja", "preanger", "batik", "gamelan", "wajang", "krakatau", "lahar", "nootmuskaat", "kpm", "knilm"):
         if term not in source.lower():
             fail(f"Nedindie thematische zoekselectie mist een term uit de LINKS-directory: {term}")
+    for contract in ("function normalizeArchiveText(value)", "function classifyArchiveEvidence(text)", "const ARCHIVE_ALIASES=", "const ARCHIVE_TOPICS=", "taxonomyLabels", "classification.topics", "classification.places"):
+        if contract not in source:
+            fail(f"Gedeelde bewijs- en categorisatielaag ontbreekt: {contract}")
+    for term in ("soerakarta", "preanger", "priangan", "bandung lautan api", "gedung merdeka", "madioen-opstand", "tijgerbrigade", "batik", "gamelan", "wajang", "njai", "mardijkers", "nootmuskaat"):
+        if term not in source.lower():
+            fail(f"Historische relevantiefilter mist een nieuwe taxonomy-term: {term}")
+    if "classification.topics.some(tag=>'knil'||tag==='military')" not in source:
+        fail("KNIL-toelating moet op de expliciete classificatie-uitkomst vertrouwen")
+    if "classification.topics.some(tag=>['decolonization','bersiap','camp'].includes(tag))" not in source:
+        fail("Bersiap/dekolonisatie moet op bronondersteunde classificatie vertrouwen")
     if "data-place=\"all\"" not in source or "let view='home',place='all'" not in source:
         fail("Java moet standaard alle Java-plaatsen tonen, niet uitsluitend Bandoeng")
     if "const topicFilterToArchive" not in source or "place==='other'?'other-java':place" not in source:
@@ -155,8 +165,12 @@ def main() -> None:
         fail("Niet-fotografische illustraties en publicaties worden niet aantoonbaar uitgesloten")
     if "match(/(?:18|19|20)\\d{2}/)" not in source:
         fail("Datumparser voor Nationaal Archief-records ontbreekt of is onjuist")
-    if "const seenFiles=new Set()" not in source or "foundThisLoad < 8 && batches < 8" not in source:
-        fail("Zoeken moet duplicaten voorkomen en lege zoekpagina’s automatisch overslaan")
+    if "const seenFiles=new Set()" not in source or "foundThisLoad < 18 && batches < 12" not in source or "function buildQueryClusters()" not in source or "viewQueryClusters" not in source:
+        fail("Zoeken moet queryclusters, deduplicatie en diepere paginering aantoonbaar uitvoeren")
+    if "function classifyArchiveEvidence(text)" not in source or "const ARCHIVE_ALIASES=" not in source or "const ARCHIVE_TOPICS=" not in source:
+        fail("De gedeelde evidence-based plaats- en onderwerpsclassificatie ontbreekt")
+    if "classification.topics.some(tag=>'knil'||tag==='military')" not in source or "classification.topics.some(tag=>['decolonization','bersiap','camp'].includes(tag))" not in source:
+        fail("KNIL- en Bersiap-tab moeten classificatiebewijs gebruiken")
     if "AbortController" not in source or "data.continue" not in source:
         fail("Abort/continuation afhandeling ontbreekt")
     if "const UI_STATE_KEY='indisch-beeldarchief-ui-state-v1'" not in source or "function restoreUiState()" not in source:
@@ -167,8 +181,8 @@ def main() -> None:
         fail("Externe foto-CDN mag niet onnodig met CORS-modus worden geladen")
     if "img.loading=visibleCount<6?'eager':'lazy'" not in source or "cache:'no-store'" not in source:
         fail("Zichtbare foto's moeten direct laden en filterwijzigingen moeten verse bronresultaten aanvragen")
-    if "batches < 8" not in source:
-        fail("Fotoselectie moet voldoende bronpagina's doorzoeken bij beperkte filterresultaten")
+    if "batches < 12" not in source or "queryClusterIndex" not in source or "activeQueryClusters" not in source:
+        fail("Fotoselectie moet alle zoekclusters en vervolgpagina's kunnen doorzoeken")
     if "textContent" not in source:
         fail("Veilige DOM-tekstweergave ontbreekt")
     if "assets/nationaal-archief.json" not in source:
@@ -221,7 +235,7 @@ def main() -> None:
     if not isinstance(records, list) or len(records) < 20:
         fail("Nationaal Archief-index bevat minder dan 20 records")
     allowed_topics = {"knil", "military", "decolonization", "bersiap", "society", "architecture", "transport", "culture", "landscape"}
-    allowed_places = {"java", "bandung", "batavia", "bogor", "semarang", "surabaya", "yogyakarta", "malang", "other-java", "sumatra", "other-islands"}
+    allowed_places = {"java", "bandung", "batavia", "bogor", "semarang", "surabaya", "yogyakarta", "malang", "other-java", "sumatra", "other-islands", "cimahi", "garut", "sukabumi", "cilacap", "tasikmalaya", "cirebon", "madoera", "aceh", "pekanbaru", "surakarta", "priangan"}
     if len({record.get("uri") for record in records}) != len(records):
         fail("Nationaal Archief-index bevat dubbele permanente record-URL's")
     if archive.get("count") != len(records):
@@ -325,7 +339,7 @@ def main() -> None:
     if not any("loadNationaalArchiefIndex();" in block for block in scripts):
         fail("Nationaal Archief-index wordt niet geïnitialiseerd")
 
-    required_search_terms = ("viewTerms", "Nederlandsche Oost-Indiën", "gouvernement", "interneringskamp", "krijgsgevangenkamp", "Kempeitai", "Tjimahi", "Soekaboemi", "Tasikmalaja", "Tjilatjap", "Tjihapit", "Technische Hoogeschool", "Soekamiskin", "Depot Mobiele Artillerie", "romusha", "waroeng", "Vreemde Oosterlingen", "rubberplantage", "Atjeh", "Koetaradja", "VOC", "gouverneur-generaal", "Kempeitai", "ML-KNIL", "marechaussee", "klewang", "pemoeda", "BKR", "RAPWI")
+    required_search_terms = ("viewTerms", "viewQueryClusters", "buildQueryClusters", "Soerakarta", "Preanger", "Bandung Lautan Api", "Gedung Merdeka", "Madioen-opstand", "PETA", "NEFIS", "Stoottroepen", "Tijgerbrigade", "njai", "Mardijkers", "batik", "gamelan", "wajang", "Nederlandsche Oost-Indiën", "gouvernement", "interneringskamp", "krijgsgevangenkamp", "Kempeitai", "Tjimahi", "Soekaboemi", "Tasikmalaja", "Tjilatjap", "Tjihapit", "Technische Hoogeschool", "Soekamiskin", "Depot Mobiele Artillerie", "romusha", "waroeng", "Vreemde Oosterlingen", "rubberplantage", "Atjeh", "Koetaradja", "VOC", "gouverneur-generaal", "Kempeitai", "ML-KNIL", "marechaussee", "klewang", "pemoeda", "BKR", "RAPWI")
     for term in required_search_terms:
         if term.lower() not in source.lower():
             fail(f"Historische zoekterminologie ontbreekt in de tabselecties: {term}")
