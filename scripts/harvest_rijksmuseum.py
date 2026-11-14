@@ -65,7 +65,7 @@ JAVA_CONTEXT = re.compile(
     r"soerabaja|surabaya|djokja|djocja|djokjakarta|yogyakarta|jogjakarta|malang|"
     r"poerwokerto|tjimahi|cimahi|cheribon|cirebon|garoet|garut|soekaboemi|sukabumi|"
     r"tjilatjap|cilacap|tasikmalaja|tasikmalaya|soerakarta|surakarta|solo|preanger|priangan|"
-    r"kedoe|banten|tjikampek|pasoeroean|probolinggo|madioen|madiun|djember|jember|banjoemas|banyumas)\\b",
+    r"kedoe|banten|tjikampek|pasoeroean|probolinggo|madioen|madiun|djember|jember|banjoemas|banyumas)\b",
     re.I,
 )
 TOPIC_PATTERNS = {
