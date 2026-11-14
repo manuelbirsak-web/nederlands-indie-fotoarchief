@@ -309,7 +309,7 @@ function buildQueryClusters(){
  let base=views[view].query;
  if(view==='java')base=places[place];
  if(view==='bandung'&&customTerm)base+=' '+customTerm;
- const clusters=[base,...(viewQueryClusters[view]||[])];
+ const clusters=[base,...(viewQueryClusters[view]||[]),...(viewTerms[view]?[viewTerms[view]]:[])];
  const topic=$('#topic').value;
  return [...new Set(clusters.filter(Boolean).map(query=>{
   let result=query;
@@ -401,7 +401,8 @@ function isRelevantHistoricalPhoto(page,meta,year){
  const classification=classifyArchiveEvidence(text);
  if(view==='knil'&&!classification.topics.some(tag=>tag==='knil'||tag==='military'))return false;
  if(view==='bersiap'&&!classification.topics.some(tag=>['decolonization','bersiap','camp'].includes(tag)))return false;
- if(view==='java'&&!classification.places.some(tag=>['java','bandung','batavia','bogor','semarang','surabaya','yogyakarta','cimahi','garut','sukabumi','cilacap','tasikmalaya','cirebon','surakarta','priangan'].includes(tag)))return false;
+ if(view==='java'&&!classification.places.some(tag=>['java','bandung','batavia','bogor','semarang','surabaya','yogyakarta','cimahi','garut','sukabumi','cilacap','tasikmalaya','cirebon','surakarta','priangan','malang'].includes(tag)))return false;
+ if(view==='java'&&place!=='all'&&place!=='other'&&!classification.places.includes(place))return false;
  if(view==='bandung'&&!classification.places.some(tag=>['bandung','cimahi'].includes(tag)))return false;
  return true;
 }
