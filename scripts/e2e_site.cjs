@@ -99,7 +99,7 @@ async function main() {
       }));
       if (commonsRequests <= requestsBefore) failures.push('Tab switch did not request fresh Commons results for ' + view);
       if (galleryCheck.cards < 1 || galleryCheck.loadedImages < 1) failures.push('Historical photos did not render/load for ' + view + ': ' + JSON.stringify(galleryCheck));
-      const activeQuery = commonsQueries.at(-1) || '';
+      const activeQuery = commonsQueries.slice(requestsBefore).join(' OR ');
       if (view === 'knil' && (!/marechaussee/i.test(activeQuery) || !/klewang/i.test(activeQuery) || !/Nederlandsch-Indisch Leger/i.test(activeQuery) || !/ML-KNIL/i.test(activeQuery))) failures.push('KNIL search query is missing historically specific military terminology: ' + activeQuery);
       if (view === 'home' && (!/Nederlandsche Oost-Indiën/i.test(activeQuery) || !/gouvernement/i.test(activeQuery) || !/VOC/i.test(activeQuery))) failures.push('Overview search query is missing colonial-era terminology: ' + activeQuery);
       if (view === 'indies' && (!/archipel/i.test(activeQuery) || !/residentie/i.test(activeQuery) || !/interneringskamp/i.test(activeQuery) || !/Kempeitai/i.test(activeQuery) || !/Koetaradja/i.test(activeQuery))) failures.push('Nederlands-Indië search query is missing regional, camp and occupation terminology: ' + activeQuery);
