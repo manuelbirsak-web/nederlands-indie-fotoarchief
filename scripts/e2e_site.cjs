@@ -53,6 +53,23 @@ async function main() {
     );
 
     if (!(await page.title()).includes('Indisch Beeldarchief')) failures.push('Homepage title missing');
+    const taxonomyChecks = await page.evaluate(() => {
+      const cases = [
+        {text:'Een Nederlandse soldaat in Batavia, 1948', required:['military'], forbidden:['knil','bersiap']},
+        {text:'Straatbeeld in Bandoeng, 1946', required:['bandung'], forbidden:['bersiap','knil']},
+        {text:'Bersiap in Batavia, 1946', required:['bersiap','decolonization','batavia'], forbidden:['knil']},
+        {text:'KNIL-officier bij kazerne in Bandoeng', required:['knil','military','bandung'], forbidden:['bersiap']},
+        {text:'Dagelijks leven op een pasar met batik en gamelan in Java', required:['daily','culture','java'], forbidden:['knil','bersiap']}
+      ];
+      return cases.map(item => {
+        const result = classifyArchiveEvidence(item.text);
+        const combined = [...result.topics, ...result.places];
+        return {text:item.text, requiredMissing:item.required.filter(x => !combined.includes(x)), forbiddenPresent:item.forbidden.filter(x => combined.includes(x)), labels:combined};
+      });
+    });
+    for (const check of taxonomyChecks) {
+      if (check.requiredMissing.length || check.forbiddenPresent.length) failures.push('Evidence taxonomy regression: ' + JSON.stringify(check));
+    }
     try {
       await page.waitForFunction(() => document.querySelectorAll('#results .photo').length > 0, null, { timeout: 20000 });
     } catch (error) {
