@@ -128,6 +128,12 @@ def main() -> None:
         fail("Niet-fotografische poststukken moeten uit de fotogalerij worden geweerd")
     if "topics.includes('decolonization')" not in source or "year<1945||year>1950" not in source:
         fail("Bersiap-rubriek moet inhoudelijke onderwerpclassificatie en de periode 1945–1950 combineren")
+    for term in ("marechaussee", "veldpolitie", "klewang", "karabijn", "infanterie", "artillerie", "garnizoen"):
+        if term not in source.lower():
+            fail(f"KNIL-zoekselectie mist historische militaire terminologie: {term}")
+    for term in ("pemuda", "pemoeda", "laskar", "tentara keamanan rakyat", "politionele actie", "agresi militer", "linggadjati", "renville"):
+        if term not in source.lower():
+            fail(f"Bersiap/dekolonisatie-zoekselectie mist historische terminologie: {term}")
     if "data-place=\"all\"" not in source or "let view='home',place='all'" not in source:
         fail("Java moet standaard alle Java-plaatsen tonen, niet uitsluitend Bandoeng")
     if "const topicFilterToArchive" not in source or "place==='other'?'other-java':place" not in source:
