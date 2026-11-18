@@ -135,5 +135,11 @@
       "sameAs": "NL-HaCBG_1796_S18925.jpg"
     }
   ],
-  "note": "16 unieke CBG-scanbestanden; dit aantal is niet gelijk aan 16 personen of 16 volledige aanvragen. Voor-/achterzijde en eventuele vervolgbladen moeten per scan worden vastgesteld."
+  "note": "16 unieke CBG-scanbestanden; dit aantal is niet gelijk aan 16 personen of 16 volledige aanvragen. Voor-/achterzijde en eventuele vervolgbladen moeten per scan worden vastgesteld.",
+  "publicationReview": {
+    "status": "not-independently-verified",
+    "note": "CBG states that a scan of the front of a card is publicly visible only if all persons named on that card have died; backs are not shown publicly. The repository files must be checked against the publicly available CBG catalogue records. A scan obtained via a personal exemption must not be republished publicly without separate permission.",
+    "checkedAgainstIndividualCBGRecords": false,
+    "source": "https://cbg.nl/bronnen/indisch-oud-paspoortarchief/"
+  }
 }
