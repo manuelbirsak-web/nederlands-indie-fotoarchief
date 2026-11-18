@@ -4,7 +4,6 @@ Deze map bevat de originele beeldbestanden die op dit moment in de repository zi
 
 ## Aanwezige originelen
 
-- `IMG_7919.jpeg` — Indische paspoortaanvraagkaart, registratie PM 21495 / paspoort 904645, met twee portretopnamen. Toegeschreven aan Hubert Manuel Birsak.
 - `IMG_7923.jpeg` — Japanse registratie-/interneringskaart, naamregel Birsak H.M. en handgeschreven “Hubert Manuel”, stamboeknummer 123508.
 - `IMG_4163.jpeg` — transportlijst Siam–Batavia, pagina 1.
 - `IMG_4162.jpeg` — transportlijst Siam–Batavia, pagina 2; bevat de regel BIRSAK H.M. — 123508.
