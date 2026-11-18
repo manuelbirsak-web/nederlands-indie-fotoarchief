@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "collection": "CBG Indisch Oud-Paspoortarchief, collectie-/scanreeks 1796",
-  "generatedAt": "2026-11-18",
-  "sourcePolicy": "CBG-codes zijn bronidentificaties; ze bewijzen niet zelfstandig de identiteit van de persoon op de kaart.",
+  "generatedAt": "2026-11-19",
+  "sourcePolicy": "CBG-codes identificeren scans. Persoonskoppelingen zijn gemaakt waar naam of familiegegevens rechtstreeks op de kaart leesbaar zijn; vermeldingen van verwanten worden niet gelijkgesteld aan afzonderlijke aanvragen.",
   "files": [
     {
       "file": "originelen/NL-HaCBG_1796_B13299.jpg",
@@ -52,11 +52,19 @@
     {
       "file": "originelen/NL-HaCBG_1796_B13323.jpg",
       "cbgCode": "B13323",
-      "person": null,
-      "identificationStatus": "Nog niet aan een persoon gekoppeld",
+      "person": "Ernanie Ernest Birsak",
+      "identificationStatus": "Directe kaartlezing: naam Ernanie Ernest Birsak; echtgenote Caroline Adèle Schrijn vermeld op dezelfde kaart. Vergelijking met IMG_7918.jpeg.",
       "originalPreserved": true,
       "publicAvailabilityVerified": false,
-      "publicationStatus": "check individual CBG catalogue visibility before public redistribution"
+      "publicationStatus": "check individual CBG catalogue visibility before public redistribution",
+      "relatedPersons": [
+        "Caroline Adèle Schrijn (echtgenote)"
+      ],
+      "passportNumber": "904643",
+      "evidence": [
+        "IMG_5053.jpeg (weergave CBG-scan B13323)",
+        "IMG_7918.jpeg (familiescan met overeenkomende kaartinhoud)"
+      ]
     },
     {
       "file": "originelen/NL-HaCBG_1796_B13325.jpg",
@@ -70,11 +78,21 @@
     {
       "file": "originelen/NL-HaCBG_1796_B13333.jpg",
       "cbgCode": "B13333",
-      "person": null,
-      "identificationStatus": "Nog niet aan een persoon gekoppeld",
+      "person": "Hubert Manuel Birsak",
+      "identificationStatus": "Directe kaartlezing: naam Hubert Manuel Birsak; ouders Ernanie Ernest Birsak en Caroline Adèle Schrijn; echtgenote Atjih. Vergelijking met IMG_7919.jpeg.",
       "originalPreserved": true,
       "publicAvailabilityVerified": false,
-      "publicationStatus": "check individual CBG catalogue visibility before public redistribution"
+      "publicationStatus": "check individual CBG catalogue visibility before public redistribution",
+      "relatedPersons": [
+        "Ernanie Ernest Birsak (vader)",
+        "Caroline Adèle Schrijn (moeder)",
+        "Atjih (echtgenote)"
+      ],
+      "passportNumber": "904645",
+      "evidence": [
+        "IMG_5053.jpeg (weergave CBG-scan B13333)",
+        "IMG_7919.jpeg (familiescan met overeenkomende kaartinhoud)"
+      ]
     },
     {
       "file": "originelen/NL-HaCBG_1796_B13369.jpg",
@@ -167,7 +185,7 @@
       "sameAs": "NL-HaCBG_1796_S18925.jpg"
     }
   ],
-  "note": "16 unieke CBG-scanbestanden; dit aantal is niet gelijk aan 16 personen of 16 volledige aanvragen. Voor-/achterzijde en eventuele vervolgbladen moeten per scan worden vastgesteld.",
+  "note": "16 unieke CBG-scanbestanden. B13323: Ernanie Ernest Birsak (paspoort 904643; echtgenote Caroline Adèle Schrijn). B13333: Hubert Manuel Birsak (paspoort 904645; ouders Ernanie Ernest Birsak en Caroline Adèle Schrijn; echtgenote Atjih).",
   "publicationReview": {
     "status": "not-independently-verified",
     "note": "CBG states that a scan of the front of a card is publicly visible only if all persons named on that card have died; backs are not shown publicly. The repository files must be checked against the publicly available CBG catalogue records. A scan obtained via a personal exemption must not be republished publicly without separate permission.",
