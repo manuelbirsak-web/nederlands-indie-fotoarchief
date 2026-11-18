@@ -13,7 +13,7 @@ Deze map bevat de CBG-scans uit collectie 1796 die eerder ten onrechte tussen de
 
 - Bestandsnamen en originele bytes blijven behouden.
 - De CBG-code is een bron-/scanidentificatie, niet automatisch een persoonsidentificatie.
-- Alleen B13305 (Arnold Wilhelm Birsak) en B13369 (Wilhelmina Johanna Takken) zijn in het huidige dossier aan personen gekoppeld.
+- B13305 (Arnold Wilhelm Birsak), B13369 (Wilhelmina Johanna Takken), B13323 (Ernanie Ernest Birsak) en B13333 (Hubert Manuel Birsak) zijn aan personen gekoppeld. B13323 vermeldt Caroline Adèle Schrijn als echtgenote; B13333 vermeldt Hubert's ouders en echtgenote Atjih.
 - De overige bestanden blijven ongekoppelde bronstukken totdat de scaninhoud afzonderlijk is gelezen.
 - Gelijke bestanden zijn op SHA/blob-identiteit gededupliceerd; alternatieve namen zijn in deze inventaris niet als aparte documenten meegeteld.
 - Een aanvraag kan meerdere personen noemen. Een scan is daarom niet gelijk aan één persoon.
