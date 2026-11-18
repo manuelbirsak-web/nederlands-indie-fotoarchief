@@ -29,6 +29,8 @@ Zie `assets/paspoortaanvragen/manifest.json` en de [paspoortgalerij](paspoortaan
 
 | Bestand | Inhoud / behandeling | GitHub-status |
 |---|---|---|
+| `IMG_7923.jpeg` | Japanse registratie-/interneringskaart: “Birsak, H.M.”, handgeschreven “Hubert Manuel”, stamboeknummer 123508, vader “Birsak, E.E.”, eenheidsaantekening lijkt “Inf. XV Bandoeng”; geboortedatum op kaart lijkt 09-05-1908 | Inhoudelijk beoordeeld en verwerkt in genealogisch en militair dossier; origineel nog niet naar GitHub overgebracht |
+| `resolve.pdf` | 10 pagina's Haagsche Courant, donderdag 14 juni 1906, nr. 7143; PDF-pagina 2 noemt E.E. Birsak als klerk bij de S.S. op Java, benoemd tot telegraafopzichter en geplaatst op de Westerlijnen | Relevante passage en broncontext verwerkt; volledige PDF nog niet naar GitHub overgebracht |
 | `IMG_7918.jpeg` | Paspoortkaart die visueel “Birsak, Ernanie Ernest” lijkt te vermelden; 10-07-1877, Djokjakarta; twee portretfoto's. Rapport koppelt dit aan BD 2262 / paspoort 904643. | Transcriptie-/onderzoeksnotitie verwerkt; originele binaire upload nog niet naar GitHub overgebracht |
 | `IMG_5110.jpeg` | Tweede, afzonderlijke kleurenfamiliefoto met 16 genummerde personen; bijschrift getranscribeerd in genealogisch dossier | Transcriptie verwerkt; origineel nog niet naar GitHub overgebracht |
 | `IMG_7922.jpeg` | Screenshot Janssen's Indisch Repertorium, versie 2016, Birsak/Birzak-index | Leesbare verwijzingen verwerkt in genealogisch dossier; screenshot zelf niet in repository |
@@ -36,8 +38,8 @@ Zie `assets/paspoortaanvragen/manifest.json` en de [paspoortgalerij](paspoortaan
 | `IMG_4161.png` | Screenshot van officiële Nationaal Archief-inventaris 2.13.108 | Officiële archieflink opgenomen; screenshot zelf niet in repository |
 | `NL-HaNA_2.13.108_13_0030.jpeg` | Exacte kopie van `IMG_4163.jpeg` | Geen tweede bestand aangemaakt |
 | `NL-HaNA_2.13.108_13_0031.jpeg` | Exacte kopie van `IMG_4162.jpeg` | Geen tweede bestand aangemaakt |
-| `IMG_7919(1).jpeg` | Byte-identieke kopie van `IMG_7919.jpeg` | Niet als tweede scan toegevoegd |
-| `Archiefonderzoek_Familie_Birsak.pdf` | Rapport over E.E. Birsak, paspoortnummers 904642/904643/904645, familie en archiefvindplaatsen | Inhoud verwerkt; oorspronkelijke PDF niet naar GitHub overgebracht |
+| `IMG_7919(1).jpeg` | Byte-identieke kopie van `IMG_7919.jpeg` (paspoortkaart waarop “Wilbert Manuel” wordt gelezen) | Niet als tweede scan toegevoegd; naamvariant blijft als bronlezing geregistreerd |
+| `Archiefonderzoek_Familie_Birsak.pdf` | Tweepagina-rapport over E.E. Birsak, paspoortnummers 904642/904643/904645, familie en archiefvindplaatsen; noemt bij paspoort 904645 “Wilbert Manuel” en 08-05-1908 | Inhoud verwerkt; naam en geboortedatum expliciet als bronvariant naast de Japanse kaartlezing Hubert Manuel / 09-05-1908 gezet; PDF niet naar GitHub overgebracht |
 | `pdfcoffee.com_nederlandsche-krijgsgevangenen-pdf-pdf-free.pdf` | Historische namenopgave met H.M. Birsak 123508 en andere Birsak-vermeldingen | Transcriptie en bronkritiek verwerkt in `research/krijgsgevangenen-bronnen.md`; oorspronkelijke PDF niet naar GitHub overgebracht |
 
 ## 4. Afgeleide werkbestanden — niet als originelen publiceren

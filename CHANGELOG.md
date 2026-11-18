@@ -1,5 +1,14 @@
 # Release notes
 
+## 1.3 — 18 november 2026
+
+### Nieuwe primaire bronnen Hubert Manuel en E.E. Birsak
+- Japanse registratiekaart IMG_7923 inhoudelijk gelezen: getypte “Birsak, H.M.”, handgeschreven “Hubert Manuel”, stamboeknummer 123508, vader “Birsak, E.E.” en eenheidsaantekening die lijkt te lezen “Inf. XV Bandoeng”.
+- De bronvariant “Wilbert Manuel” op paspoortkaart 904645 en in het onderzoeksrapport is niet verwijderd of stilzwijgend gecorrigeerd. De naam- en geboortedatumafwijkingen (8 versus 9 mei 1908) zijn als open bronconflict gedocumenteerd.
+- Haagsche Courant van 14 juni 1906, nr. 7143, PDF-pagina 2: E.E. Birsak wordt genoemd als klerk bij de S.S. op Java, benoemd tot telegraafopzichter en geplaatst op de Westerlijnen.
+- Uploadinventaris aangevuld met IMG_7923 en resolve.pdf. Beide originelen zijn nog niet als binaire GitHub-assets geplaatst.
+- Genealogisch en militair dossier uitgebreid met de nieuwe bronlezingen.
+
 ## 1.2 — 18 november 2026
 
 ### Archiefstructuur en nieuwe bronnen
