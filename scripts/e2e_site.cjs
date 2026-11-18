@@ -194,6 +194,22 @@ async function main() {
     if (familyChecks.hasPublicChangelogLink) failures.push('Public website still exposes a change-log link');
     if (familyChecks.hasEditorialCorrectionNote) failures.push('Editorial correction note leaked into the family photo page');
 
+    const passportResponse = await page.goto(BASE + 'research/paspoortaanvragen.html', { waitUntil: 'domcontentloaded' });
+    if (!passportResponse || passportResponse.status() !== 200) failures.push('Passport archive page did not return HTTP 200');
+    await page.waitForFunction(() => document.querySelectorAll('main img').length === 16, null, { timeout: 10000 });
+    await page.locator('main').scrollIntoViewIfNeeded();
+    await page.locator('main img').evaluateAll(images => images.forEach(image => { image.loading = 'eager'; }));
+    await page.waitForFunction(() =>
+      [...document.querySelectorAll('main img')].length === 16 &&
+      [...document.querySelectorAll('main img')].every(img => img.complete && img.naturalWidth > 0),
+      null,
+      { timeout: 30000 }
+    );
+    const passportImageCount = await page.locator('main img').count();
+    if (passportImageCount !== 16) failures.push('Passport archive must show all 16 original CBG scans; found ' + passportImageCount);
+    await page.goto(BASE, { waitUntil: 'domcontentloaded' });
+    await waitForLoadedGallery();
+
     const rightsChecks = await page.evaluate(() => ({
       cc0: isReusableCommonsLicense({ LicenseUrl: { value: 'https://creativecommons.org/publicdomain/zero/1.0/' } }),
       publicDomainMark: isReusableCommonsLicense({ LicenseUrl: { value: 'https://creativecommons.org/publicdomain/mark/1.0/' } }),
