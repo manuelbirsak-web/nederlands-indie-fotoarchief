@@ -53,7 +53,7 @@
       "file": "originelen/NL-HaCBG_1796_B13323.jpg",
       "cbgCode": "B13323",
       "person": "Ernanie Ernest Birsak",
-      "identificationStatus": "Directe kaartlezing: naam Ernanie Ernest Birsak; echtgenote Caroline Adèle Schrijn vermeld op dezelfde kaart. Vergelijking met IMG_7918.jpeg.",
+      "identificationStatus": "Directe kaartlezing op de hogeresolutie-CBG-scan: naam Ernanie Ernest Birsak; echtgenote Caroline Adèle Schrijn vermeld op dezelfde kaart. Vergelijking met de door gebruiker aangeleverde IMG_7918.jpeg.",
       "originalPreserved": true,
       "publicAvailabilityVerified": false,
       "publicationStatus": "check individual CBG catalogue visibility before public redistribution",
@@ -62,8 +62,8 @@
       ],
       "passportNumber": "904643",
       "evidence": [
-        "IMG_5053.jpeg (weergave CBG-scan B13323)",
-        "IMG_7918.jpeg (familiescan met overeenkomende kaartinhoud)"
+        "IMG_5053.jpeg (weergave van de CBG-scan B13323; identificatie Ernanie Ernest Birsak)",
+        "IMG_7918.jpeg (vergelijkingsscan door gebruiker aangeleverd; niet als apart bestand in de repository opgenomen)"
       ]
     },
     {
