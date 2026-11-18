@@ -23,7 +23,7 @@ Er zijn 16 unieke CBG-scanbestanden behouden en verplaatst. De CBG-code is een b
 
 Vier alternatieve bestandsnamen bleken exacte duplicaten van een canoniek bestand: B13333 2, B13369 2, S18889 2 en S18925 2. Ze zijn niet als extra documenten meegeteld. Zeven CBG-bestanden stonden daarnaast als exacte kopieën in de repository-root; die rootkopieën zijn verwijderd nadat de bestanden in de juiste map waren geplaatst.
 
-Zie `assets/paspoortaanvragen/manifest.json` en de [paspoortgalerij](paspoortaanvragen.html).
+Zie `assets/paspoortaanvragen/manifest.json` en de [paspoortgalerij](paspoortaanvragen.html). De openbare herpublicatie van elk individueel scanbestand is nog niet afzonderlijk bij CBG geverifieerd; de privacyregels staan expliciet in het manifest en de galerij.
 
 ## 3. Nieuwe bestanden die in deze chat zijn aangeleverd
 
