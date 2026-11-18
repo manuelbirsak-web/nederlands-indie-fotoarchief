@@ -22,3 +22,7 @@ Deze map bevat de CBG-scans uit collectie 1796 die eerder ten onrechte tussen de
 ## Nieuwe uploads
 
 Upload nieuwe scans eerst in `inbox/`. Na controle worden ze naar `originelen/` verplaatst en aan het manifest, de persoonsdossiers en de website toegevoegd.
+
+## Privacy en publieke weergave
+
+Het CBG publiceert een scan van de voorkant alleen als alle personen op de kaart zijn overleden; achterkanten worden niet openbaar getoond. Controleer daarom per scan of deze overeenkomt met een publiek zichtbare CBG-catalogusafbeelding. Een scan die via een persoonlijke ontheffing is verkregen, mag niet zonder afzonderlijke toestemming publiek worden hergepubliceerd. Zie de officiële CBG-regels: https://cbg.nl/bronnen/indisch-oud-paspoortarchief/.
