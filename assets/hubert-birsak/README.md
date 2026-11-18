@@ -1,23 +1,21 @@
-# Huberts originele documenten — beeldbestanden
+# Hubert Manuel Birsak — originele documenten
 
-Upload de vier scans naar deze map. Gebruik exact deze bestandsnamen, zodat de onderzoekspagina ze automatisch kan tonen zodra de beeldgalerij is gekoppeld:
+Deze map bevat de originele beeldbestanden die op dit moment in de repository zijn opgenomen. De bestanden worden ongewijzigd bewaard; de website toont verkleiningen voor de paginaweergave en opent bij aanklikken het volledige bronbestand.
 
-1. `hubert-birsak-japanse-interneringskaart.jpg` — IMG_7923.jpeg
-2. `hubert-birsak-persoonsdocument.jpg` — IMG_7919(1).jpeg
-3. `siam-batavia-transportlijst-p1.jpg` — IMG_4163.jpeg
-4. `siam-batavia-transportlijst-p2.jpg` — IMG_4162.jpeg
+## Aanwezige originelen
 
-## Uploaden via GitHub
+- `IMG_7919.jpeg` — Indische paspoortaanvraagkaart, registratie PM 21495 / paspoort 904645, met twee portretopnamen. Toegeschreven aan Hubert Manuel Birsak.
+- `IMG_7923.jpeg` — Japanse registratie-/interneringskaart, naamregel Birsak H.M. en handgeschreven “Hubert Manuel”, stamboeknummer 123508.
+- `IMG_4163.jpeg` — transportlijst Siam–Batavia, pagina 1.
+- `IMG_4162.jpeg` — transportlijst Siam–Batavia, pagina 2; bevat de regel BIRSAK H.M. — 123508.
 
-1. Open de map [assets/hubert-birsak](https://github.com/manuelbirsak-web/nederlands-indie-fotoarchief/tree/main/assets/hubert-birsak).
-2. Kies **Add file → Upload files**.
-3. Selecteer de vier afbeeldingen en sleep ze naar het uploadvenster.
-4. Kies **Commit changes**.
+## Nog niet in deze repository opgenomen
 
-Gebruik bij voorkeur JPG/JPEG of PNG. Verklein scans niet zo ver dat handschrift en stempels onleesbaar worden. Bewaar de originele bestanden daarnaast lokaal.
+- `IMG_7918.jpeg` — paspoortkaart die Ernanie Ernest Birsak lijkt te betreffen, met twee portretopnamen.
+- `IMG_5110.jpeg` — kleurenfamiliefoto met 16 genummerde personen.
 
-De bestaande familiefoto's staan al in `assets/family/` en hoeven niet opnieuw te worden geüpload:
-- `IMG_5107.jpeg`
-- `IMG_5108.jpeg`
+Deze bestanden zijn in het onderzoeksdossier ontvangen, maar hun originele bytes zijn nog niet aan de repository toegevoegd. Er worden daarom geen werkende websitepaden naar deze ontbrekende bestanden geclaimd.
 
-Na upload kunnen de vier documentbeelden in de onderzoekspagina worden weergegeven. Deze README zelf is geen afbeelding en telt niet als upload.
+## Naam- en bronregel
+
+De gebruikte persoonsnaam is **Hubert Manuel Birsak**. De verkorting “Bert” kan in familiebronnen voorkomen. De Japanse registratiekaart, paspoortkaart en transportlijst worden als afzonderlijke bronnen behandeld; transcripties en interpretaties blijven gescheiden van de ongewijzigde scans.
