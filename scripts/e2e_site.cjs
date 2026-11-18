@@ -174,11 +174,13 @@ async function main() {
     await page.locator('#nav [data-view="family"]').click();
     await page.locator('#familyBirsak').waitFor({ state: 'visible' });
     await page.locator('#deepSearch').waitFor({ state: 'visible' });
+    await page.locator('#familyBirsak').scrollIntoViewIfNeeded();
+    await page.locator('#familyBirsak img').evaluateAll(images => images.forEach(image => { image.loading = 'eager'; }));
     await page.waitForFunction(() =>
       [...document.querySelectorAll('#familyBirsak img')].length === 2 &&
       [...document.querySelectorAll('#familyBirsak img')].every(img => img.complete && img.naturalWidth > 0),
       null,
-      { timeout: 20000 }
+      { timeout: 30000 }
     );
 
     const familyChecks = await page.evaluate(() => ({
