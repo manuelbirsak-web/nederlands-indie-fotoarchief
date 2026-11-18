@@ -26,13 +26,26 @@ De Nationaal Archief-harvester heeft bij de huidige snapshot de veiligheidslimie
 - De index wordt met `scripts/build_knil_weapons_index.py` automatisch opnieuw opgebouwd na iedere Nationaal Archief-verversing. De releasevalidator vergelijkt de volledige index met een reproduceerbare herberekening uit dezelfde bron-snapshot; unittests bewaken selectie, categorieën, herkomst en metadata-only rechtenbeleid.
 - Alle 136 opgenomen primaire Nationaal Archief-pagina's zijn op 13 november 2026 individueel gecontroleerd: Publiek Domein, gratis hergebruik en een downloadmogelijkheid. De CNE-status in de linked-open-data-snapshot bleek voor deze records niet actueel. De website linkt naar de oorspronkelijke records; de foto-identificaties zelf blijven bronbeschrijvingen en geen onafhankelijke technische identificaties.
 
+## Archiefstructuur en documentbeheer
+
+- `assets/family/`: originele familiefoto's en woning-/groepsfoto's.
+- `assets/hubert-birsak/`: Japanse interneringskaart, KNIL-documenten en Siam–Batavia-transportlijsten.
+- `assets/paspoortaanvragen/inbox/`: nieuwe, nog niet beoordeelde CBG-scans.
+- `assets/paspoortaanvragen/originelen/`: 16 unieke CBG-scans uit collectie 1796; de volledige galerij en het manifest zijn beschikbaar via de [paspoortarchiefpagina](https://manuelbirsak-web.github.io/nederlands-indie-fotoarchief/research/paspoortaanvragen.html).
+- `assets/paspoortaanvragen/pasfotos/`: afzonderlijke pasfoto-uitsneden, nooit ter vervanging van het volledige origineel.
+- `assets/ambtenaren/`: scans uit archieven van Oost-Indische ambtenaren.
+- `assets/burgerlijke-stand/`: nog te identificeren burgerlijke-standakten.
+- `research/`: transcripties, bronkritiek, genealogische dossiers en uploadinventarissen.
+
+Bestandsnamen, oorspronkelijke bytes en herkomst worden behouden. Exacte duplicaten worden niet als afzonderlijke documenten gepubliceerd. CBG-codes en initialen worden niet zonder scancontrole aan personen gekoppeld.
+
 ## Familieonderzoek en uitgebreide zoekingang
 
 - Aparte familiepagina voor de aangeleverde Birsak-foto's en het namenoverzicht.
 - Deep Search-zoekingang met gerichte externe zoekopdrachten voor adressen, historische schrijfwijzen en genealogische bronnen.
 - Eerste online aanknopingsbronnen: Indisch4ever (2011), genealogische publicaties over Ernanie Ernest Birsak en Arnold Willem Birsak, en een posthistorische adresvermelding voor Lembangweg 346 (1940).
 - De externe genealogische publicaties en het aangeleverde bijschrift zijn aanknopingsbronnen, geen onafhankelijke identificatie van personen op foto's. De adresvermelding uit 1940 bewijst niet dat de familie Birsak daar woonde.
-- De twee originele door de gebruiker aangeleverde JPEG-bestanden zijn opgenomen in `assets/family/` en rechtstreeks in de familiepagina geïntegreerd. De bestanden worden in de validatie op formaat, bestandsgrootte en SHA-256 gecontroleerd.
+- De twee oorspronkelijke familiefoto's `IMG_5107.jpeg` en `IMG_5108.jpeg` staan in `assets/family/`. De CBG-paspoortscans zijn afgescheiden in `assets/paspoortaanvragen/originelen/` en worden in een aparte galerij getoond.
 
 ## Rubrieken en zoekfuncties
 
