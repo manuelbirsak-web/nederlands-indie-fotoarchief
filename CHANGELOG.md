@@ -1,5 +1,22 @@
 # Release notes
 
+## 1.2 — 18 november 2026
+
+### Archiefstructuur en nieuwe bronnen
+- Alle mappen van de hoofdbranch geïnventariseerd; 16 unieke CBG-scans verplaatst van de familiefotomap naar `assets/paspoortaanvragen/originelen/`.
+- Vier exacte dubbele CBG-bestandskopieën en zeven identieke rootkopieën verwijderd; originele bytes van de behouden scans zijn ongewijzigd.
+- CBG-manifest, mapinstructies en een galerij met alle 16 originele scans toegevoegd. Alleen B13305 (Arnold Wilhelm Birsak) en B13369 (Wilhelmina Johanna Takken) zijn voorlopig aan personen gekoppeld.
+- Scan uit Nationaal Archief 2.10.36.21 apart geplaatst in `assets/ambtenaren/`; scan uit toegang 0335-01 apart geplaatst in `assets/burgerlijke-stand/`. Persoons-/akte-identificaties blijven open.
+- Nieuwe 16-persoonsfamiliefoto (IMG_5110) en aanvullende paspoortkaart Ernanie (IMG_7918) inhoudelijk verwerkt; de originele binaire uploads zijn nog niet naar GitHub overgebracht.
+- Janssen's Indisch Repertorium-verwijzingen toegevoegd aan het genealogische dossier.
+- Historische namenopgave *Nederlandsche krijgsgevangenen* getranscribeerd: H.M. Birsak 123508, J.M. Birsak 57512, F.A. Birsak 24812, L.F.W. Birsak 97757, W.I. Birsak 96687; Jacobus Marinus Birsak 57511 op een andere pagina. Het conflict 57511/57512 blijft expliciet open.
+- Uploadinventaris en bronkritische transcriptie toegevoegd.
+
+### Validatie en kwaliteit
+- Statische validatie uitgebreid met controles op de 16 CBG-bestanden, manifest, beeldpaden en nieuwe Birsak-bronvermeldingen.
+- Browseraudit aangepast zodat lazy-loaded familiefoto's eerst in beeld worden geladen voordat ze worden gecontroleerd.
+- Live publicatie en browseraudit moeten na deze commit opnieuw worden bevestigd.
+
 ## 1.1 — 12 november 2026
 
 ### Familieonderzoek en Deep Search
@@ -7,7 +24,7 @@
 - Multi-source Deep Search-ingang voor adres-, plaats-, persoons- en genealogische zoektermen.
 - Onderzoeksbronnen toegevoegd: Indisch4ever (2011), genealogische vermeldingen van Ernanie Ernest Birsak en Arnold Willem Birsak, en posthistorische documentatie van Lembangweg 346 in 1940.
 - Expliciet onderscheid tussen bronvermelding, hypothese en bewezen identificatie.
-- De twee originele aangeleverde beeldbestanden zijn nog niet als repository-assets gepubliceerd.
+- De twee originele familiefoto's zijn opgenomen in `assets/family/`; latere aanvullende familiefoto's blijven apart geregistreerd zolang de binaire upload nog niet is uitgevoerd.
 
 ## 1.0 — 12 november 2026
 
