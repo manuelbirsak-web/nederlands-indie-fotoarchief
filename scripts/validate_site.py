@@ -92,6 +92,10 @@ def main() -> None:
         fail("Nieuwe scan Stamkaarten Oost-Indische ambtenaren ontbreekt")
     if not (ROOT / "assets" / "burgerlijke-stand" / "NL-HaHGA_0335-01_1866_0044.jpg").is_file():
         fail("Nieuwe scan burgerlijke stand ontbreekt")
+    if not (ROOT / "assets" / "ambtenaren" / "varianten" / "NL-HaNA_2.10.36.21_17_0151-groot.jpg").is_file():
+        fail("Alternatieve weergave van de ambtenarenstamkaart ontbreekt")
+    if (ROOT / "assets" / "family" / "NL-HaNA_2.10.36.21_17_0151-groot.jpg").exists():
+        fail("Ambtenarenstamkaart staat nog in de familiefotomap")
     for name in EXPECTED_CBG_SCANS:
         asset = PASSPORT_DIR / name
         if not asset.is_file():
