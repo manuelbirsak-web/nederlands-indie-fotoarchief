@@ -5,7 +5,7 @@ Deze map bevat de CBG-scans uit collectie 1796 die eerder ten onrechte tussen de
 ## Indeling
 
 - `inbox/` — nieuwe, nog niet beoordeelde uploads.
-- `originelen/` — ongewijzigde originele CBG-scans.
+- `originelen/` — ongewijzigde originele paspoortscans, inclusief de familiekaart van Hubert Manuel Birsak en CBG-scans.
 - `pasfotos/` — afzonderlijke portretuitsneden; de volledige aanvraag blijft altijd in `originelen/`.
 - `manifest.json` — inventaris met de bronbestandsnamen, CBG-codes en identificatiestatus.
 
