@@ -22,7 +22,8 @@ h1{font:normal clamp(46px,7.8vw,92px)/.98 var(--serif);letter-spacing:-.045em;ma
 .hero-bottom span{display:inline-flex;align-items:center;gap:8px}.dot{width:5px;height:5px;border-radius:50%;background:var(--gold2)}
 nav{position:sticky;top:0;z-index:30;background:#fffdf7f2;backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:0 max(3vw,calc((100vw - 1380px)/2));display:flex;overflow-x:auto;gap:3px;scrollbar-width:thin}
 nav button{border:0;background:transparent;color:#536057;font:600 12px var(--sans);padding:17px 15px 14px;white-space:nowrap;border-bottom:3px solid transparent}
-nav button:hover,nav button.active{color:var(--forest);border-bottom-color:var(--gold)}
+nav button:hover,nav button.active,nav a.nav-link:hover{color:var(--forest);border-bottom-color:var(--gold)}
+nav a.nav-link{display:block;border:0;background:transparent;color:#536057;font:600 12px var(--sans);padding:17px 15px 14px;white-space:nowrap;border-bottom:3px solid transparent;text-decoration:none}
 main{max-width:1380px;margin:auto;padding:38px 5vw 82px}
 .intro{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(240px,.8fr);gap:44px;align-items:start;margin:4px 0 30px}
 h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;margin:8px 0 13px}
@@ -107,7 +108,7 @@ body.family-view #familyBirsak,body.family-view #deepSearch{display:block!import
 <button data-view="bandung">Bandoeng / Bandung</button>
 <button data-view="knil">KNIL & militair</button>
 <button data-view="bersiap">Bersiap & onafhankelijkheidsstrijd</button>
-<button data-view="daily">Samenleving</button><button data-view="family">Familie Birsak · fotoverhaal</button>
+<button data-view="daily">Samenleving</button><button data-view="family">Familie Birsak · fotoverhaal</button><a class="nav-link" href="research/15e-bataljon-tjikoedapateuh.html">15e Bataljon &amp; Tjikoedapateuh</a>
 </nav>
 <main id="main">
 <section class="intro">
