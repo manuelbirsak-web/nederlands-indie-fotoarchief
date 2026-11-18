@@ -38,9 +38,11 @@ Zie `assets/paspoortaanvragen/manifest.json` en de [paspoortgalerij](paspoortaan
 | `IMG_4161.png` | Screenshot van officiële Nationaal Archief-inventaris 2.13.108 | Officiële archieflink opgenomen; screenshot zelf niet in repository |
 | `NL-HaNA_2.13.108_13_0030.jpeg` | Exacte kopie van `IMG_4163.jpeg` | Geen tweede bestand aangemaakt |
 | `NL-HaNA_2.13.108_13_0031.jpeg` | Exacte kopie van `IMG_4162.jpeg` | Geen tweede bestand aangemaakt |
-| `IMG_7919(1).jpeg` | Byte-identieke kopie van `IMG_7919.jpeg` (paspoortkaart waarop “Wilbert Manuel” wordt gelezen) | Niet als tweede scan toegevoegd; naamvariant blijft als bronlezing geregistreerd |
-| `Archiefonderzoek_Familie_Birsak.pdf` | Tweepagina-rapport over E.E. Birsak, paspoortnummers 904642/904643/904645, familie en archiefvindplaatsen; noemt bij paspoort 904645 “Wilbert Manuel” en 08-05-1908 | Inhoud verwerkt; naam en geboortedatum expliciet als bronvariant naast de Japanse kaartlezing Hubert Manuel / 09-05-1908 gezet; PDF niet naar GitHub overgebracht |
+| `IMG_7919(1).jpeg` | Byte-identieke kopie van `IMG_7919.jpeg` (paspoortkaart; eerdere transcriptie “Wilbert Manuel” wordt herzien) | Niet als tweede scan toegevoegd; eerdere naamlezing niet als geldige variant gebruiken totdat origineel opnieuw is getranscribeerd |
+| `Archiefonderzoek_Familie_Birsak.pdf` | Tweepagina-rapport over E.E. Birsak, paspoortnummers 904642/904643/904645, familie en archiefvindplaatsen; bevat eerdere transcriptie “Wilbert Manuel” en 08-05-1908 | Inhoud verwerkt; die transcriptie is na de grafregistratie niet langer leidend en wordt als vermoedelijke fout aangemerkt; PDF niet naar GitHub overgebracht |
 | `pdfcoffee.com_nederlandsche-krijgsgevangenen-pdf-pdf-free.pdf` | Historische namenopgave met H.M. Birsak 123508 en andere Birsak-vermeldingen | Transcriptie en bronkritiek verwerkt in `research/krijgsgevangenen-bronnen.md`; oorspronkelijke PDF niet naar GitHub overgebracht |
+
+| `IMG_7921.jpeg` | Screenshot online-begraafplaatsen.nl: grafsteen Hubert M. Birsak, 09-05-1908 – 12-07-1970; partner Theresia Atjih, 15-05-1927 – 17-06-1998; graf-ID 1526078, St. Petrus Kerk Bergen (Limburg) | Inhoudelijk beoordeeld; bevestigt Hubert en 9 mei 1908; originele screenshot nog niet naar GitHub overgebracht |
 
 ## 4. Afgeleide werkbestanden — niet als originelen publiceren
 

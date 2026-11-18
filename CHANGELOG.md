@@ -1,5 +1,14 @@
 # Release notes
 
+## 1.4 — 18 november 2026
+
+### Correctie persoonsidentificatie Hubert Manuel Birsak
+- Nieuwe grafregistratie (online-begraafplaatsen.nl, graf-ID 1526078, St. Petrus Kerk Bergen) toont Hubert M. Birsak, geboren 09-05-1908 en overleden 12-07-1970.
+- De gekoppelde registratie noemt echtgenote Theresia Atjih (15-05-1927 – 17-06-1998), waarmee de familiekoppeling wordt ondersteund.
+- “Wilbert” wordt niet langer als geldige naamvariant of zoeknaam gebruikt. De eerdere transcriptie van paspoortkaart/rapport wordt als vermoedelijke lees- of transcriptiefout aangemerkt; de originele paspoortkaart moet opnieuw worden gecontroleerd.
+- De geboortedatum 09-05-1908 wordt ondersteund door zowel de grafregistratie als de Japanse registratiekaart; de oude rapportdatum 08-05-1908 wordt als vermoedelijke transcriptiefout gemarkeerd.
+- De aangeleverde screenshot IMG_7921 is inhoudelijk verwerkt; het binaire origineel is nog niet naar GitHub overgebracht.
+
 ## 1.3 — 18 november 2026
 
 ### Nieuwe primaire bronnen Hubert Manuel en E.E. Birsak
