@@ -1,34 +1,24 @@
-# Familie Birsak — foto's en scans
+# Familie Birsak — originele familiefoto's
 
-Deze map is uitsluitend bestemd voor originele familiefoto's, portretten, groepsfoto's en woningfoto's. CBG-paspoortscans zijn verplaatst naar `assets/paspoortaanvragen/originelen/`; ambtenaren- en burgerlijke-standscans hebben elk een eigen map.
+Deze map bevat originele familiefoto's, portretten, groepsfoto's en woningfoto's. Bewaar de oorspronkelijke bytes en resolutie; overschrijf geen origineel met een uitsnede of restauratie.
 
-## Bestaande bestanden
+## Aanwezige bestanden
 
-- `IMG_5108.jpeg` — huis Maudy-Ellen, Bandoeng; familie-identificatie: Ernanie Ernest Birsak en Adèle Caroline / Caroline Adèle Schrijn op de voorgalerij.
-- `IMG_5107.jpeg` — genummerde familiegroep van 14 personen; het bijschrift noemt onder anderen Ernanie, Adèle, Bert (door familie geïdentificeerd als Hubert Manuel) en Theresia Birsak-Atjih.
+- `IMG_5108.jpeg` — woning Maudy-Ellen, Bandoeng.
+- `IMG_5107.jpeg` — genummerde familiegroep van 14 personen. Het bijschrift noemt onder anderen Ernanie, Adèle, Bert (door de familie geïdentificeerd als Hubert Manuel) en Theresia Birsak-Atjih.
 
-## Nieuwe foto's uploaden
+## Nog niet in deze repository opgenomen
 
-Upload toekomstige familiefoto's, portretten, groepsfoto's, woningfoto's en familiealbums in deze map:
+- `IMG_5110.jpeg` — afzonderlijke kleurenfamiliefoto met 16 genummerde personen. Het bijschrift is getranscribeerd in `research/familie-birsak-genealogie.html`, maar het originele beeldbestand moet nog aan deze map worden toegevoegd.
 
-`assets/family/`
+## Opslagindeling
 
-Aanbevolen bestandsnamen:
-- `familie-birsak-YYYY-plaats-onderwerp.jpg`
-- `portret-voornaam-achternaam-jaar.jpg`
-- `woning-naam-huis-plaats-jaar.jpg`
-
-Bewaar originelen op volledige resolutie. Voeg waar mogelijk datum, plaats, fotograaf, oorspronkelijke eigenaar, namen van afgebeelde personen en bron toe. Verwijder of overschrijf geen origineel; gebruik voor bewerkte/gerestaureerde versies een aparte naam met `-restauratie` of `-bewerkt`.
-
-## Bewijsstatus
-
-Een onderschrift is een belangrijke familiebron, maar niet automatisch onafhankelijk bewijs. De website vermeldt daarom bij elke afbeelding welke identificaties uit een familie-bijschrift komen en welke door originele registers of archiefstukken zijn bevestigd.
-
-## Niet hier opslaan
-
-- CBG-paspoortaanvragen: `assets/paspoortaanvragen/originelen/`
+- Familiefoto's, portretten en woningfoto's: `assets/family/`
+- Paspoortaanvragen: `assets/paspoortaanvragen/originelen/`
 - KNIL-/interneringsdocumenten Hubert: `assets/hubert-birsak/`
 - Ambtenarenstamkaarten: `assets/ambtenaren/`
 - Burgerlijke stand: `assets/burgerlijke-stand/`
 
-Een tweede kleurenfamiliefoto met 16 genummerde personen is aangeleverd als `IMG_5110.jpeg`. De namenlijst is verwerkt in `research/familie-birsak-genealogie.html`; de originele binaire upload moet nog aan de repository worden toegevoegd.
+## Bewijsstatus
+
+Een onderschrift is een belangrijke familiebron, maar niet automatisch onafhankelijk bewijs. Per foto worden bron, datering, plaats, fotograaf en identificaties afzonderlijk vastgelegd. Onzekere personen worden niet op basis van gezichtsherkenning ingevuld.
