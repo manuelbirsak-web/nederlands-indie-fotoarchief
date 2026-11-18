@@ -1,72 +1,128 @@
 <!doctype html>
-<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Indisch Oud-Paspoortarchief — Familie Birsak</title>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paspoortarchief Birsak — personen en originele aanvragen</title>
 <style>
-:root{--ink:#1d2822;--muted:#657168;--paper:#f3f0e7;--card:#fffdf7;--forest:#1e352b;--gold:#b08b50;--line:#d8d0bf}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 Georgia,serif}
-header{background:linear-gradient(120deg,#14231d,#314638);color:#f6f1e7;padding:38px max(5vw,calc((100vw - 1120px)/2))}
-main{max-width:1120px;margin:auto;padding:28px 5vw 70px}h1{font-size:clamp(34px,5vw,58px);font-weight:normal;line-height:1.08;margin:10px 0}h2{font-size:28px;font-weight:normal;margin:38px 0 12px}h3{font-size:20px;font-weight:normal;margin:0 0 8px}
-a{color:#765a2e}header a{color:#e5d0a7}.eyebrow,.label{font:11px system-ui,sans-serif;text-transform:uppercase;letter-spacing:.13em;color:#b08b50}
-header p{max-width:780px;color:#e5e0d5}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.card{background:var(--card);border:1px solid var(--line);padding:18px}.status{font:11px system-ui,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
-.note{border-left:4px solid var(--gold);background:#e9e3d5;padding:15px;margin:18px 0}table{width:100%;border-collapse:collapse;background:var(--card);font:13px/1.5 system-ui,sans-serif}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#e9e3d5}
-.portrait{width:112px;height:145px;object-fit:cover;object-position:top;border:1px solid var(--line);background:#eee}.person{display:flex;gap:14px}.person .meta{flex:1}.small{font:12px/1.6 system-ui,sans-serif;color:var(--muted)}
-button,.button{display:inline-block;background:var(--forest);color:white;padding:10px 15px;text-decoration:none;border-radius:3px;font:14px system-ui,sans-serif}
+:root{--ink:#202a24;--muted:#667168;--paper:#f3f0e7;--card:#fffdf8;--forest:#1e352b;--gold:#b08b50;--line:#d8d0bf}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 Georgia,serif}
+header{background:linear-gradient(120deg,#14231d,#314638);color:#f6f1e7;padding:34px max(5vw,calc((100vw - 1080px)/2))}
+header a{color:#e5d0a7}
+main{max-width:1080px;margin:auto;padding:28px 5vw 70px}
+h1{font-size:clamp(34px,5vw,56px);font-weight:normal;line-height:1.08;margin:12px 0}
+h2{font-size:28px;font-weight:normal;margin:38px 0 12px}
+h3{font-size:21px;font-weight:normal;margin:0 0 7px}
+a{color:#765a2e}
+.eyebrow,.label{font:11px system-ui,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:var(--gold)}
+header p{max-width:760px;color:#e5e0d5}
+.lead,.note{max-width:850px}
+.note{border-left:4px solid var(--gold);background:#e9e3d5;padding:13px 16px;margin:16px 0}
+.people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.person{background:var(--card);border:1px solid var(--line);padding:16px;min-width:0}
+.person-top{display:grid;grid-template-columns:118px minmax(0,1fr);gap:14px;align-items:start}
+.portrait{width:118px;height:150px;object-fit:cover;object-position:8% 8%;border:1px solid var(--line);background:#eee}
+.scan{display:block;width:100%;height:auto;max-height:260px;object-fit:contain;background:#eee;border:1px solid var(--line);margin:12px 0}
+.meta{font:14px/1.55 system-ui,sans-serif;color:var(--muted)}
+.status{font:11px system-ui,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.person p{margin:7px 0}
+.person-links{display:flex;flex-wrap:wrap;gap:12px;font:13px system-ui,sans-serif;margin-top:10px}
+.scans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.scan-card{background:var(--card);border:1px solid var(--line);padding:12px;min-width:0}
+.scan-card img{display:block;width:100%;height:150px;object-fit:contain;background:#eee}
+.scan-card h3{font:15px system-ui,sans-serif;margin:8px 0 3px}
+.scan-card p{font:12px/1.45 system-ui,sans-serif;color:var(--muted);margin:0}
+ul{padding-left:22px}
+table{width:100%;border-collapse:collapse;background:var(--card);font:13px/1.5 system-ui,sans-serif}
+th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#e9e3d5}
+.small{font:12px/1.55 system-ui,sans-serif;color:var(--muted)}
+@media(max-width:700px){.people{grid-template-columns:1fr}.person-top{grid-template-columns:104px minmax(0,1fr)}.portrait{width:104px;height:136px}.scans{grid-template-columns:repeat(2,minmax(0,1fr))}main{padding-top:20px}}
+@media(max-width:390px){.scans{grid-template-columns:1fr}.person{padding:12px}}
+</style>
+</head>
+<body>
+<header>
+<p><a href="../index.html">← Indisch Beeldarchief</a></p>
+<div class="eyebrow">Familieonderzoek · persoonsregister</div>
+<h1>Paspoortarchief Birsak</h1>
+<p>Personen, paspoortportretten en originele aanvragen in één geordend register. Namen worden alleen aan een scan gekoppeld wanneer de bron dat ondersteunt. Klik op een document om het originele bestand op volledige resolutie te openen.</p>
+</header>
+<main>
+<p class="lead">Dit register brengt de persoonsinformatie uit de paspoortaanvragen samen. De persoonskaarten en de volledige scan blijven afzonderlijk herkenbaar: één aanvraag kan gegevens en portretten van meer dan één persoon bevatten.</p>
 
-/* Mobile: keep archive and dossier cards in one readable column */
-@media(max-width:760px){.grid{grid-template-columns:1fr}}
-</style></head><body>
-<header><p><a href="../index.html">← Indisch Beeldarchief</a></p><div class="eyebrow">Bronnenarchief · paspoortaanvragen</div>
-<h1>Indisch Oud-Paspoortarchief<br>Familie Birsak</h1>
-<p>Persoonsregister van de tot nu toe herkende of voorlopig geïdentificeerde paspoortaanvragen. Per persoon hoort hier de ongewijzigde scan op volledige resolutie te staan, met daarnaast een afzonderlijke uitsnede van het paspoortportret.</p>
-</header><main>
-<div class="note"><strong>Archiefstatus · bijgewerkt 18 november 2026.</strong> In de repository staan <strong>16 unieke CBG-scanbestanden</strong> uit de Indisch Oud-Paspoortarchief-reeks 1796. Vier identieke kopieën/alternatieve bestandsnamen zijn verwijderd; de originele beeldbytes van de bewaarde bestanden zijn behouden. B13305 is gekoppeld aan Arnold Wilhelm Birsak en B13369 aan Wilhelmina Johanna “Mien” Takken. De overige codes zijn nog niet aan personen gekoppeld. Zestien bestanden betekenen niet automatisch zestien personen of zestien volledige aanvragen: voor- en achterzijden en eventuele vervolgbladen moeten per scan worden vastgesteld.</div>
-<div class="note"><strong>Privacy- en publicatiecontrole vereist.</strong> Het CBG vermeldt dat een scan van de voorkant alleen openbaar wordt getoond wanneer alle personen op de kaart zijn overleden; achterzijden worden niet openbaar getoond. De openbare beschikbaarheid van elk van deze 16 individuele bestanden is in deze bewerking niet afzonderlijk bij CBG geverifieerd. Daarom moet per code worden bevestigd dat het om een publiek zichtbare voorkantscan gaat en niet om een via ontheffing verkregen privébestand. De galerij is een onderzoeksweergave, geen verklaring dat alle bestanden vrij herpubliceerbaar zijn. <a href="https://cbg.nl/bronnen/indisch-oud-paspoortarchief/">Lees de officiële CBG-regels</a>.</div>
-<div class="note"><strong>Aanvullende paspoortkaart · IMG_7918.jpeg.</strong> De in deze chat aangeleverde kaart lijkt “Birsak, Ernanie Ernest” te vermelden (10 juli 1877, Djokjakarta). Het onderzoeksrapport koppelt dit aan BD 2262 / paspoort 904643. Het originele bestand staat nog niet in de repository en wordt daarom niet als afbeelding getoond.</div>
-<p><a class="button" href="https://github.com/manuelbirsak-web/nederlands-indie-fotoarchief/upload/main/assets/paspoortaanvragen/originelen">Upload originele aanvragen</a> <a class="button" href="https://github.com/manuelbirsak-web/nederlands-indie-fotoarchief/upload/main/assets/paspoortaanvragen/pasfotos">Upload pasfoto-uitsneden</a></p>
-<p class="small"><a href="https://github.com/manuelbirsak-web/nederlands-indie-fotoarchief/upload/main/assets/paspoortaanvragen/inbox">Upload nieuwe, nog niet geordende bestanden naar de inbox</a>.</p>
-<p class="small">Upload hier de originele bestanden (voor- en achterzijde als afzonderlijke bestanden). Verwijder of overschrijf geen originelen. Zie de mapinstructies.</p>
-<h2>Geïdentificeerde aanvragen</h2>
-<div class="grid">
-<article class="card"><div class="label">CBG B13305</div><h3>Arnold Wilhelm Birsak</h3><p>Geboren 2 januari 1907, Buitenzorg volgens CBG. Echtgenoot van Wilhelmina Johanna Takken. De CBG-scan B13305 is in de originele-scan-galerij opgenomen. De volledige velden en eventuele achterzijde moeten nog diplomatisch worden getranscribeerd.</p><p class="status">Scan aanwezig · persoonskoppeling op basis van CBG-vermelding</p></article>
-<article class="card"><div class="label">CBG B13369</div><h3>Wilhelmina Johanna “Mien” Takken</h3><p>Geboren 16 juli 1913, Djimahi. Echtgenote van Arnold Wilhelm Birsak. Paspoortkaart bevat oudergegevens en een adres in Bandoeng; volledige adreslezing volgt.</p><p class="status">Scan aanwezig · persoonskoppeling op basis van CBG-vermelding</p></article>
-<article class="card"><div class="label">Paspoortkaart · reg.nr. handschrift</div><h3>Hubert Manuel Birsak</h3><p>Geboren 9 mei 1908, Buitenzorg/Bogor volgens de kaart. Ouders: Ernanie Ernest Birsak en Caroline Adèle Schrijn. De kaart bevat twee portretopnamen en adresgegevens in Bandoeng.</p><p class="status">Mogelijke scan in CBG-galerij · code en persoonskoppeling nog niet bevestigd</p></article>
-<article class="card"><div class="label">CBG-paspoortnr. 904642</div><h3>Caroline Adèle Schrijn</h3><p>Geboren 10 oktober 1879, Buitenzorg. Ouders: Carl Schrijn en Sahatie volgens de aanvraag. Echtgenote van Ernanie Ernest Birsak. De scan bevat twee portretopnamen.</p><p class="status">Mogelijke scan in CBG-galerij · code en persoonskoppeling nog niet bevestigd</p></article>
-<article class="card"><div class="label">CBG-paspoortnr. 904643</div><h3>Ernanie Ernest Birsak</h3><p>Geboren 10 juli 1877, Djokjakarta. Ouders: Frederik George Willem Birsak en Johanna Theresia Plasman. Echtgenoot van Caroline Adèle Schrijn. Beroep op kaart: gepensioneerd ambtenaar; woonspoor Bandung.</p><p class="status">Mogelijke scan in CBG-galerij · code en persoonskoppeling nog niet bevestigd</p></article>
-<article class="card"><div class="label">Naamlezing voorlopig</div><h3>Francine Ernestine Rijken</h3><p>Geboren vermoedelijk 6 juni 1919; plaatsnaam en enkele familierelaties op de scan zijn nog niet volledig ontcijferd. De rode kanttekening verwijst naar Ernanie Ernest Birsak. Relatie tot de hoofdlijn nog verifiëren.</p><p class="status">Voorlopige identificatie · brontranscriptie nodig</p></article>
-<article class="card"><div class="label">Paspoortkaart · reg.nr. 34?</div><h3>Arthur Rijklof Birsak</h3><p>Geboren 1 februari 1879, Djokjakarta. Op de kaart staat als vader Frederik George Willem Birsak en als moeder Theresia Birsak, geboren Plasman. Gepensioneerd hoofdcommies (N.I.S. volgens kaartlezing); adresvermelding Surabaya.</p><p class="status">Mogelijke scan in de CBG-galerij · koppeling nog niet bevestigd</p></article>
-<article class="card"><div class="label">Paspoortkaart</div><h3>Rudi Birsak</h3><p>Geboren 13 september 1933, Surabaya (kaartlezing). Ouders: Johannes Armand Louis Birsak en Emalia Geertruida Birsak. Adresvermelding in Surabaya.</p><p class="status">Mogelijke scan in CBG-galerij · persoonskoppeling nog niet bevestigd</p></article>
-<article class="card"><div class="label">Paspoortkaart</div><h3>Edith Birsak</h3><p>Geboren 8 maart 1932, Surabaya (kaartlezing). Ouders: Johannes Armand Louis Birsak en Emalia Geertruida Birsak. Adresvermelding in Surabaya.</p><p class="status">Mogelijke scan in CBG-galerij · persoonskoppeling nog niet bevestigd</p></article>
-<article class="card"><div class="label">Voorlopige naamlezing</div><h3>Hendrik Birsak</h3><p>De aanvraag lijkt de naam Hendrik te bevatten; geboortegegevens lijken 3 september 1909, Buitenzorg. Ouders lijken Ernanie Ernest Birsak en Caroline Adèle Schrijn. Identificatie met de Hendrik Birsak uit de krijgsgevangenenlijst is nog niet bewezen.</p><p class="status">Voorlopige identificatie · brontranscriptie nodig</p></article>
+<h2>Personen met een gekoppelde originele scan</h2>
+<div class="people">
+<article class="person">
+<div class="label">Familiehoofdlijn · paspoortkaart 904645</div>
+<div class="person-top">
+<img class="portrait" src="../assets/hubert-birsak/IMG_7919.jpeg" alt="Portret op de paspoortkaart van Hubert Manuel Birsak">
+<div><h3>Hubert Manuel Birsak</h3><p class="meta">9 mei 1908 – 12 juli 1970<br>Geboren te Buitenzorg volgens de familie- en archiefgegevens.<br>Ouders: Ernanie Ernest Birsak en Caroline Adèle Schrijn.<br>Echtgenote: Atjih / Theresia Birsak-Atjih.</p><p class="status">Familiekoppeling bevestigd · scan aanwezig</p></div>
 </div>
-<h2>Aanvullende scan ontvangen · Ernanie Ernest Birsak</h2>
-<div class="note"><strong>IMG_7918.jpeg · binaire upload nog open.</strong> De aanvullende kaartscan die in deze chat is aangeleverd, lijkt “Birsak, Ernanie Ernest” te vermelden en toont twee portretopnamen. De kaart lijkt te verwijzen naar 10 juli 1877 en Djokjakarta. Het onderzoeksrapport koppelt deze gegevens aan registratie BD 2262 en paspoortnummer 904643. Omdat het originele bestand IMG_7918.jpeg nog niet naar GitHub is overgebracht, staat het hier niet als afbeelding. De scan moet naast CBG-code B13299/B13305 en de reeds aanwezige kaartbestanden worden vergeleken voordat een mogelijke duplicaatrelatie wordt vastgesteld.</div>
-<h2>Originele CBG-scans · volledige bestanden</h2>
-<p>De scans zijn hieronder rechtstreeks uit de map <code>assets/paspoortaanvragen/originelen/</code> gekoppeld. De originele bestandsnamen zijn behouden. Alleen B13305 en B13369 zijn op dit moment aan personen gekoppeld; de overige scans worden niet op naam gezet zolang de inhoud niet gecontroleerd is.</p>
-<div class="grid"><article class="card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13299.jpg" target="_blank" rel="noopener noreferrer"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13299.jpg" alt="Originele CBG-scan B13299 uit het Indisch Oud-Paspoortarchief" loading="lazy" decoding="async" style="width:100%;height:auto;max-height:420px;object-fit:contain;background:#eee;border:1px solid #d8d1c2"></a><h3>CBG-scan B13299</h3><p>Persoon nog niet vastgesteld</p><p class="status">Originele scan · individuele CBG-publicatiestatus nog controleren</p></article>
-<article class="card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13305.jpg" target="_blank" rel="noopener noreferrer"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13305.jpg" alt="Originele CBG-scan B13305 uit het Indisch Oud-Paspoortarchief" loading="lazy" decoding="async" style="width:100%;height:auto;max-height:420px;object-fit:contain;background:#eee;border:1px solid #d8d1c2"></a><h3>CBG-scan B13305</h3><p>Arnold Wilhelm Birsak</p><p class="status">Origineel bestand · klik voor volledige resolutie</p></article>
-<article class="card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13307.jpg" target="_blank" rel="noopener noreferrer"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13307.jpg" alt="Originele CBG-scan B13307 uit het Indisch Oud-Paspoortarchief" loading="lazy" decoding="async" style="width:100%;height:auto;max-height:420px;object-fit:contain;background:#eee;border:1px solid #d8d1c2"></a><h3>CBG-scan B13307</h3><p>Persoon nog niet vastgesteld</p><p class="status">Origineel bestand · klik voor volledige resolutie</p></article>
-<article class="card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13311.jpg" target="_blank" rel="noopener noreferrer"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13311.jpg" alt="Originele CBG-scan B13311 uit het Indisch Oud-Paspoortarchief" loading="lazy" decoding="async" style="width:100%;height:auto;max-height:420px;object-fit:contain;background:#eee;border:1px solid #d8d1c2"></a><h3>CBG-scan B13311</h3><p>Persoon nog niet vastgesteld</p><p class="status">Origineel bestand · klik voor volledige resolutie</p></article>
-<article class="card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13317.jpg" target="_blank" rel="noopener noreferrer"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13317.jpg" alt="Originele CBG-scan B13317 uit het Indisch Oud-Paspoortarchief" loading="lazy" decoding="async" style="width:100%;height:auto;max-height:420px;object-fit:contain;background:#eee;border:1px solid #d8d1c2"></a><h3>CBG-scan B13317</h3><p>Persoon nog niet vastgesteld</p><p class="status">Origineel bestand · klik voor volledige resolutie</p></article>
-<article class="card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13323.jpg" target="_blank" rel="noopener noreferrer"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13323.jpg" alt="Originele CBG-scan B13323 uit het Indisch Oud-Paspoortarchief" loading="lazy" decoding="async" style="width:100%;height:auto;max-height:420px;object-fit:contain;background:#eee;border:1px solid #d8d1c2"></a><h3>CBG-scan B13323</h3><p>Persoon nog niet vastgesteld</p><p class="status">Origineel bestand · klik voor volledige resolutie</p></article>
-<article class="card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13325.jpg" target="_blank" rel="noopener noreferrer"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13325.jpg" alt="Originele CBG-scan B13325 uit het Indisch Oud-Paspoortarchief" loading="lazy" decoding="async" style="width:100%;height:auto;max-height:420px;object-fit:contain;background:#eee;border:1px solid #d8d1c2"></a><h3>CBG-scan B13325</h3><p>Persoon nog niet vastgesteld</p><p class="status">Origineel bestand · klik voor volledige resolutie</p></article>
-<article class="card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13333.jpg" target="_blank" rel="noopener noreferrer"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13333.jpg" alt="Originele CBG-scan B13333 uit het Indisch Oud-Paspoortarchief" loading="lazy" decoding="async" style="width:100%;height:auto;max-height:420px;object-fit:contain;background:#eee;border:1px solid #d8d1c2"></a><h3>CBG-scan B13333</h3><p>Persoon nog niet vastgesteld</p><p class="status">Origineel bestand · klik voor volledige resolutie</p></article>
-<article class="card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13369.jpg" target="_blank" rel="noopener noreferrer"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13369.jpg" alt="Originele CBG-scan B13369 uit het Indisch Oud-Paspoortarchief" loading="lazy" decoding="async" style="width:100%;height:auto;max-height:420px;object-fit:contain;background:#eee;border:1px solid #d8d1c2"></a><h3>CBG-scan B13369</h3><p>Wilhelmina Johanna “Mien” Takken</p><p class="status">Origineel bestand · klik voor volledige resolutie</p></article>
-<article class="card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S05373.jpg" target="_blank" rel="noopener noreferrer"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S05373.jpg" alt="Originele CBG-scan S05373 uit het Indisch Oud-Paspoortarchief" loading="lazy" decoding="async" style="width:100%;height:auto;max-height:420px;object-fit:contain;background:#eee;border:1px solid #d8d1c2"></a><h3>CBG-scan S05373</h3><p>Persoon nog niet vastgesteld</p><p class="status">Origineel bestand · klik voor volledige resolutie</p></article>
-<article class="card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S18889.jpg" target="_blank" rel="noopener noreferrer"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S18889.jpg" alt="Originele CBG-scan S18889 uit het Indisch Oud-Paspoortarchief" loading="lazy" decoding="async" style="width:100%;height:auto;max-height:420px;object-fit:contain;background:#eee;border:1px solid #d8d1c2"></a><h3>CBG-scan S18889</h3><p>Persoon nog niet vastgesteld</p><p class="status">Origineel bestand · klik voor volledige resolutie</p></article>
-<article class="card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S18895.jpg" target="_blank" rel="noopener noreferrer"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S18895.jpg" alt="Originele CBG-scan S18895 uit het Indisch Oud-Paspoortarchief" loading="lazy" decoding="async" style="width:100%;height:auto;max-height:420px;object-fit:contain;background:#eee;border:1px solid #d8d1c2"></a><h3>CBG-scan S18895</h3><p>Persoon nog niet vastgesteld</p><p class="status">Origineel bestand · klik voor volledige resolutie</p></article>
-<article class="card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S18925.jpg" target="_blank" rel="noopener noreferrer"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S18925.jpg" alt="Originele CBG-scan S18925 uit het Indisch Oud-Paspoortarchief" loading="lazy" decoding="async" style="width:100%;height:auto;max-height:420px;object-fit:contain;background:#eee;border:1px solid #d8d1c2"></a><h3>CBG-scan S18925</h3><p>Persoon nog niet vastgesteld</p><p class="status">Origineel bestand · klik voor volledige resolutie</p></article>
-<article class="card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S19075.jpg" target="_blank" rel="noopener noreferrer"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S19075.jpg" alt="Originele CBG-scan S19075 uit het Indisch Oud-Paspoortarchief" loading="lazy" decoding="async" style="width:100%;height:auto;max-height:420px;object-fit:contain;background:#eee;border:1px solid #d8d1c2"></a><h3>CBG-scan S19075</h3><p>Persoon nog niet vastgesteld</p><p class="status">Origineel bestand · klik voor volledige resolutie</p></article>
-<article class="card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_T02255.jpg" target="_blank" rel="noopener noreferrer"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_T02255.jpg" alt="Originele CBG-scan T02255 uit het Indisch Oud-Paspoortarchief" loading="lazy" decoding="async" style="width:100%;height:auto;max-height:420px;object-fit:contain;background:#eee;border:1px solid #d8d1c2"></a><h3>CBG-scan T02255</h3><p>Persoon nog niet vastgesteld</p><p class="status">Origineel bestand · klik voor volledige resolutie</p></article>
-<article class="card"><a href="../assets/paspoortaanvragen/originelen/RNL-HaCBG_1796_B13361.jpg" target="_blank" rel="noopener noreferrer"><img src="../assets/paspoortaanvragen/originelen/RNL-HaCBG_1796_B13361.jpg" alt="Originele CBG-scan B13361 uit het Indisch Oud-Paspoortarchief" loading="lazy" decoding="async" style="width:100%;height:auto;max-height:420px;object-fit:contain;background:#eee;border:1px solid #d8d1c2"></a><h3>CBG-scan B13361</h3><p>Persoon nog niet vastgesteld</p><p class="status">Origineel bestand · klik voor volledige resolutie</p></article></div>
-<p class="small">De volledige inventaris met broncodes en identificatiestatus staat in <a href="../assets/paspoortaanvragen/manifest.json">manifest.json</a>. Exacte dubbele kopieën zijn verwijderd, niet de originele inhoud.</p>
-<h2>Publicatieregels</h2>
-<table><thead><tr><th>Onderdeel</th><th>Weergave</th></tr></thead><tbody>
-<tr><td>Paspoortaanvraag</td><td>Volledige aangeleverde scan, ongewijzigd en op oorspronkelijke resolutie; klik opent de afbeelding afzonderlijk.</td></tr>
-<tr><td>Pasfoto</td><td>Afzonderlijke uitsnede van het portret in de hoogst beschikbare resolutie, naast de naam. Bij dubbele front-/profielopnamen worden beide bewaard.</td></tr>
-<tr><td>Transcriptie</td><td>Alle velden, handgeschreven correcties, stempels en kanttekeningen worden afzonderlijk getranscribeerd; onzekere lezingen krijgen een vraagteken of status.</td></tr>
-<tr><td>Volledigheid</td><td>De formulieren verwijzen naar “Zie ommezijde”. Een aanvraag wordt pas als volledig dossier aangeduid als de achterzijde ook is aangeleverd of aantoonbaar niet bestaat.</td></tr>
-<tr><td>Herkomst</td><td>Bronbestand, uploadnaam, datum van ontvangst en eventuele bewerking worden geregistreerd. De originele scan blijft onaangetast.</td></tr>
-</tbody></table>
-<div class="note"><strong>Belangrijke beperking:</strong> de paspoortaanvragen bevatten gegevens van meerdere personen op één kaart. Bij publicatie worden de gegevens per persoon ontsloten, maar de volledige originele aanvraag blijft als één integraal document beschikbaar. Zo blijft de context van de aanvraag behouden.</div>
-<p><a href="https://github.com/manuelbirsak-web/nederlands-indie-fotoarchief/tree/main/assets/paspoortaanvragen">Open het paspoortarchief in GitHub</a></p>
-</main></body></html>
+<a class="scan" href="../assets/hubert-birsak/IMG_7919.jpeg" target="_blank" rel="noopener"><img src="../assets/hubert-birsak/IMG_7919.jpeg" alt="Volledige originele paspoortkaart Hubert Manuel Birsak" style="width:100%;height:auto;max-height:260px;object-fit:contain"></a>
+<div class="person-links"><a href="../assets/hubert-birsak/IMG_7919.jpeg" target="_blank" rel="noopener">Open originele paspoortkaart</a><a href="15e-bataljon-tjikoedapateuh.html">Militair dossier</a></div>
+</article>
+
+<article class="person">
+<div class="label">CBG · registratie B13305</div>
+<div class="person-top">
+<img class="portrait" src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13305.jpg" alt="Paspoortscan met portret van Arnold Wilhelm Birsak">
+<div><h3>Arnold Wilhelm Birsak</h3><p class="meta">Geboren 2 januari 1907, Buitenzorg volgens CBG-vermelding.<br>Echtgenote: Wilhelmina Johanna Takken.<br>Door de gebruiker geïdentificeerd op de familiefoto.</p><p class="status">CBG-persoonskoppeling · scan aanwezig</p></div>
+</div>
+<a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13305.jpg" target="_blank" rel="noopener"><img class="scan" src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13305.jpg" alt="Volledige originele CBG-scan B13305"></a>
+<div class="person-links"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13305.jpg" target="_blank" rel="noopener">Open originele aanvraag</a></div>
+</article>
+
+<article class="person">
+<div class="label">CBG · registratie B13369</div>
+<div class="person-top">
+<img class="portrait" src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13369.jpg" alt="Paspoortscan met portret van Wilhelmina Johanna Takken">
+<div><h3>Wilhelmina Johanna “Mien” Takken</h3><p class="meta">Geboren 16 juli 1913, Djimahi volgens CBG-vermelding.<br>Echtgenoot: Arnold Wilhelm Birsak.<br>Door de gebruiker geïdentificeerd op de familiefoto.</p><p class="status">CBG-persoonskoppeling · scan aanwezig</p></div>
+</div>
+<a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13369.jpg" target="_blank" rel="noopener"><img class="scan" src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13369.jpg" alt="Volledige originele CBG-scan B13369"></a>
+<div class="person-links"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13369.jpg" target="_blank" rel="noopener">Open originele aanvraag</a></div>
+</article>
+</div>
+
+<h2>Personen uit de aangeleverde paspoortstukken</h2>
+<div class="people">
+<article class="person"><div class="label">Paspoortnummer 904643 · originele upload ontbreekt in repository</div><h3>Ernanie Ernest Birsak</h3><p class="meta">Geboren 10 juli 1877, Djokjakarta. Ouders: Frederik George Willem Birsak en Johanna Theresia Plasman. Echtgenoot van Caroline Adèle Schrijn.</p><p class="status">Paspoortkaart IMG_7918 aangeleverd · nog niet als origineel in de websitebestanden opgenomen</p></article>
+<article class="person"><div class="label">Paspoortnummer 904642 · koppeling nog te controleren</div><h3>Caroline Adèle Schrijn</h3><p class="meta">Geboren 10 oktober 1879, Buitenzorg volgens het onderzoeksrapport. Echtgenote van Ernanie Ernest Birsak. De kaartverwijzing moet naast het originele scanbestand worden gecontroleerd.</p><p class="status">Persoonsvermelding aanwezig · originele scan niet gekoppeld</p></article>
+<article class="person"><div class="label">Voorlopige transcriptie</div><h3>Arthur Rijklof Birsak</h3><p class="meta">Geboren 1 februari 1879, Djokjakarta volgens de kaartlezing. Ouders vermeld als Frederik George Willem Birsak en Theresia Birsak, geboren Plasman.</p><p class="status">Naamlezing voorlopig · scanidentificatie nog niet bevestigd</p></article>
+<article class="person"><div class="label">Voorlopige transcriptie</div><h3>Francine Ernestine Rijken</h3><p class="meta">Geboortedatum vermoedelijk 6 juni 1919. De rode kanttekening verwijst mogelijk naar Ernanie Ernest Birsak; familierelatie nog niet vastgesteld.</p><p class="status">Kandidaat · bronlezing en verwantschap controleren</p></article>
+<article class="person"><div class="label">Voorlopige transcriptie</div><h3>Hendrik Birsak</h3><p class="meta">Geboortegegevens lijken 3 september 1909, Buitenzorg. Ouders lijken Ernanie Ernest Birsak en Caroline Adèle Schrijn.</p><p class="status">Kandidaat · niet gelijkgesteld aan militaire naamgenoot</p></article>
+<article class="person"><div class="label">Voorlopige transcriptie</div><h3>Rudi en Edith Birsak</h3><p class="meta">Rudi: geboren 13 september 1933. Edith: geboren 8 maart 1932. Beide kaartlezingen noemen Johannes Armand Louis Birsak en Emalia Geertruida Birsak als ouders.</p><p class="status">Twee persoonsvermeldingen · originele kaartkoppeling nog controleren</p></article>
+</div>
+
+<h2>Overige originele CBG-scans</h2>
+<p class="small">Deze scans zijn wel in de repository aanwezig, maar nog niet betrouwbaar aan een persoon gekoppeld. Daarom blijven ze op scanidentificatie staan en worden er geen namen of pasfoto's aan toegeschreven.</p>
+<div class="scans">
+<article class="scan-card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13299.jpg" target="_blank" rel="noopener"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13299.jpg" alt="Originele CBG-scan B13299" loading="lazy"></a><h3>CBG-scan B13299</h3><p>Persoon nog niet vastgesteld</p></article>
+<article class="scan-card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13307.jpg" target="_blank" rel="noopener"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13307.jpg" alt="Originele CBG-scan B13307" loading="lazy"></a><h3>CBG-scan B13307</h3><p>Persoon nog niet vastgesteld</p></article>
+<article class="scan-card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13311.jpg" target="_blank" rel="noopener"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13311.jpg" alt="Originele CBG-scan B13311" loading="lazy"></a><h3>CBG-scan B13311</h3><p>Persoon nog niet vastgesteld</p></article>
+<article class="scan-card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13317.jpg" target="_blank" rel="noopener"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13317.jpg" alt="Originele CBG-scan B13317" loading="lazy"></a><h3>CBG-scan B13317</h3><p>Persoon nog niet vastgesteld</p></article>
+<article class="scan-card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13323.jpg" target="_blank" rel="noopener"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13323.jpg" alt="Originele CBG-scan B13323" loading="lazy"></a><h3>CBG-scan B13323</h3><p>Persoon nog niet vastgesteld</p></article>
+<article class="scan-card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13325.jpg" target="_blank" rel="noopener"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13325.jpg" alt="Originele CBG-scan B13325" loading="lazy"></a><h3>CBG-scan B13325</h3><p>Persoon nog niet vastgesteld</p></article>
+<article class="scan-card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13333.jpg" target="_blank" rel="noopener"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13333.jpg" alt="Originele CBG-scan B13333" loading="lazy"></a><h3>CBG-scan B13333</h3><p>Persoon nog niet vastgesteld</p></article>
+<article class="scan-card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S05373.jpg" target="_blank" rel="noopener"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S05373.jpg" alt="Originele CBG-scan S05373" loading="lazy"></a><h3>CBG-scan S05373</h3><p>Persoon nog niet vastgesteld</p></article>
+<article class="scan-card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S18889.jpg" target="_blank" rel="noopener"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S18889.jpg" alt="Originele CBG-scan S18889" loading="lazy"></a><h3>CBG-scan S18889</h3><p>Persoon nog niet vastgesteld</p></article>
+<article class="scan-card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S18895.jpg" target="_blank" rel="noopener"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S18895.jpg" alt="Originele CBG-scan S18895" loading="lazy"></a><h3>CBG-scan S18895</h3><p>Persoon nog niet vastgesteld</p></article>
+<article class="scan-card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S18925.jpg" target="_blank" rel="noopener"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S18925.jpg" alt="Originele CBG-scan S18925" loading="lazy"></a><h3>CBG-scan S18925</h3><p>Persoon nog niet vastgesteld</p></article>
+<article class="scan-card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S19075.jpg" target="_blank" rel="noopener"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_S19075.jpg" alt="Originele CBG-scan S19075" loading="lazy"></a><h3>CBG-scan S19075</h3><p>Persoon nog niet vastgesteld</p></article>
+<article class="scan-card"><a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_T02255.jpg" target="_blank" rel="noopener"><img src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_T02255.jpg" alt="Originele CBG-scan T02255" loading="lazy"></a><h3>CBG-scan T02255</h3><p>Persoon nog niet vastgesteld</p></article>
+<article class="scan-card"><a href="../assets/paspoortaanvragen/originelen/RNL-HaCBG_1796_B13361.jpg" target="_blank" rel="noopener"><img src="../assets/paspoortaanvragen/originelen/RNL-HaCBG_1796_B13361.jpg" alt="Originele CBG-scan B13361" loading="lazy"></a><h3>CBG-scan B13361</h3><p>Persoon nog niet vastgesteld</p></article>
+</div>
+
+<h2>Bron- en bewijsregels</h2>
+<ul>
+<li>Hubert Manuel Birsak is de gebruikte persoonsnaam. “Bert” is een familieverkorting; alternatieve foutlezingen worden niet als naamvarianten gepubliceerd.</li>
+<li>De CBG-codes identificeren scans, niet automatisch personen. Een persoonskoppeling wordt pas gemaakt op basis van leesbare kaartinhoud of een expliciete CBG-vermelding.</li>
+<li>De volledige aanvraag blijft als origineel document beschikbaar; een pasfoto-uitsnede is aanvullend en vervangt de scan nooit.</li>
+<li>Een aanvraag wordt pas als volledig dossier aangeduid wanneer voor- en achterzijde en eventuele vervolgbladen zijn gecontroleerd.</li>
+<li>De publieke herpublicatiestatus moet per CBG-scan worden getoetst aan de officiële voorwaarden. De huidige galerij is een onderzoeksregister, geen algemene rechtenverklaring.</li>
+</ul>
+<p class="small">Broninventaris: <a href="../assets/paspoortaanvragen/manifest.json">CBG-scanmanifest</a> · <a href="familie-birsak-genealogie.html">Genealogisch dossier Familie Birsak</a> · <a href="https://cbg.nl/bronnen/indisch-oud-paspoortarchief/">CBG-publicatievoorwaarden</a>.</p>
+</main>
+</body>
+</html>
