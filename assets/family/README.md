@@ -1,6 +1,6 @@
 # Familie Birsak — foto's en scans
 
-Deze map bevat de familiebeelden die al in het familiearchief zijn opgenomen.
+Deze map is uitsluitend bestemd voor originele familiefoto's, portretten, groepsfoto's en woningfoto's. CBG-paspoortscans zijn verplaatst naar `assets/paspoortaanvragen/originelen/`; ambtenaren- en burgerlijke-standscans hebben elk een eigen map.
 
 ## Bestaande bestanden
 
@@ -23,3 +23,12 @@ Bewaar originelen op volledige resolutie. Voeg waar mogelijk datum, plaats, foto
 ## Bewijsstatus
 
 Een onderschrift is een belangrijke familiebron, maar niet automatisch onafhankelijk bewijs. De website vermeldt daarom bij elke afbeelding welke identificaties uit een familie-bijschrift komen en welke door originele registers of archiefstukken zijn bevestigd.
+
+## Niet hier opslaan
+
+- CBG-paspoortaanvragen: `assets/paspoortaanvragen/originelen/`
+- KNIL-/interneringsdocumenten Hubert: `assets/hubert-birsak/`
+- Ambtenarenstamkaarten: `assets/ambtenaren/`
+- Burgerlijke stand: `assets/burgerlijke-stand/`
+
+Een tweede kleurenfamiliefoto met 16 genummerde personen is aangeleverd als `IMG_5110.jpeg`. De namenlijst is verwerkt in `research/familie-birsak-genealogie.html`; de originele binaire upload moet nog aan de repository worden toegevoegd.
