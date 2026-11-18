@@ -22,7 +22,7 @@ header p{max-width:760px;color:#e5e0d5}
 .people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .person{background:var(--card);border:1px solid var(--line);padding:16px;min-width:0}
 .person-top{display:grid;grid-template-columns:118px minmax(0,1fr);gap:14px;align-items:start}
-.portrait{width:118px;height:150px;object-fit:cover;object-position:8% 8%;border:1px solid var(--line);background:#eee}
+.portrait{width:118px;height:150px;border:1px solid var(--line);background-color:#eee;background-repeat:no-repeat;background-position:left top;background-size:300% auto}
 .scan{display:block;width:100%;height:auto;max-height:260px;object-fit:contain;background:#eee;border:1px solid var(--line);margin:12px 0}
 .meta{font:14px/1.55 system-ui,sans-serif;color:var(--muted)}
 .status{font:11px system-ui,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
@@ -38,7 +38,7 @@ table{width:100%;border-collapse:collapse;background:var(--card);font:13px/1.5 s
 th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}
 th{background:#e9e3d5}
 .small{font:12px/1.55 system-ui,sans-serif;color:var(--muted)}
-@media(max-width:700px){.people{grid-template-columns:1fr}.person-top{grid-template-columns:104px minmax(0,1fr)}.portrait{width:104px;height:136px}.scans{grid-template-columns:repeat(2,minmax(0,1fr))}main{padding-top:20px}}
+@media(max-width:700px){.people{grid-template-columns:1fr}.person-top{grid-template-columns:104px minmax(0,1fr)}.portrait{width:104px;height:136px;background-size:300% auto}.scans{grid-template-columns:repeat(2,minmax(0,1fr))}main{padding-top:20px}}
 @media(max-width:390px){.scans{grid-template-columns:1fr}.person{padding:12px}}
 </style>
 </head>
@@ -47,7 +47,7 @@ th{background:#e9e3d5}
 <p><a href="../index.html">← Indisch Beeldarchief</a></p>
 <div class="eyebrow">Familieonderzoek · persoonsregister</div>
 <h1>Paspoortarchief Birsak</h1>
-<p>Personen, paspoortportretten en originele aanvragen in één geordend register. Namen worden alleen aan een scan gekoppeld wanneer de bron dat ondersteunt. Klik op een document om het originele bestand op volledige resolutie te openen.</p>
+<p>Personen, portretten en originele aanvragen in één geordend register. De portretweergave is een uitsnede in de pagina; de volledige, ongewijzigde scan blijft direct eronder aanklikbaar. Klik op een document om het originele bestand op volledige resolutie te openen.</p>
 </header>
 <main>
 <p class="lead">Dit register brengt de persoonsinformatie uit de paspoortaanvragen samen. De persoonskaarten en de volledige scan blijven afzonderlijk herkenbaar: één aanvraag kan gegevens en portretten van meer dan één persoon bevatten.</p>
@@ -57,7 +57,7 @@ th{background:#e9e3d5}
 <article class="person">
 <div class="label">Familiehoofdlijn · paspoortkaart 904645</div>
 <div class="person-top">
-<img class="portrait" src="../assets/hubert-birsak/IMG_7919.jpeg" alt="Portret op de paspoortkaart van Hubert Manuel Birsak">
+<div class="portrait" role="img" aria-label="Paspoortportret van Hubert Manuel Birsak" style="background-image:url(../assets/hubert-birsak/IMG_7919.jpeg)"></div>
 <div><h3>Hubert Manuel Birsak</h3><p class="meta">9 mei 1908 – 12 juli 1970<br>Geboren te Buitenzorg volgens de familie- en archiefgegevens.<br>Ouders: Ernanie Ernest Birsak en Caroline Adèle Schrijn.<br>Echtgenote: Atjih / Theresia Birsak-Atjih.</p><p class="status">Familiekoppeling bevestigd · scan aanwezig</p></div>
 </div>
 <a class="scan" href="../assets/hubert-birsak/IMG_7919.jpeg" target="_blank" rel="noopener"><img src="../assets/hubert-birsak/IMG_7919.jpeg" alt="Volledige originele paspoortkaart Hubert Manuel Birsak" style="width:100%;height:auto;max-height:260px;object-fit:contain"></a>
@@ -67,7 +67,7 @@ th{background:#e9e3d5}
 <article class="person">
 <div class="label">CBG · registratie B13305</div>
 <div class="person-top">
-<img class="portrait" src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13305.jpg" alt="Paspoortscan met portret van Arnold Wilhelm Birsak">
+<div class="portrait" role="img" aria-label="Paspoortportret van Arnold Wilhelm Birsak" style="background-image:url(../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13305.jpg)"></div>
 <div><h3>Arnold Wilhelm Birsak</h3><p class="meta">Geboren 2 januari 1907, Buitenzorg volgens CBG-vermelding.<br>Echtgenote: Wilhelmina Johanna Takken.<br>Door de gebruiker geïdentificeerd op de familiefoto.</p><p class="status">CBG-persoonskoppeling · scan aanwezig</p></div>
 </div>
 <a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13305.jpg" target="_blank" rel="noopener"><img class="scan" src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13305.jpg" alt="Volledige originele CBG-scan B13305"></a>
@@ -77,7 +77,7 @@ th{background:#e9e3d5}
 <article class="person">
 <div class="label">CBG · registratie B13369</div>
 <div class="person-top">
-<img class="portrait" src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13369.jpg" alt="Paspoortscan met portret van Wilhelmina Johanna Takken">
+<div class="portrait" role="img" aria-label="Paspoortportret van Wilhelmina Johanna Takken" style="background-image:url(../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13369.jpg)"></div>
 <div><h3>Wilhelmina Johanna “Mien” Takken</h3><p class="meta">Geboren 16 juli 1913, Djimahi volgens CBG-vermelding.<br>Echtgenoot: Arnold Wilhelm Birsak.<br>Door de gebruiker geïdentificeerd op de familiefoto.</p><p class="status">CBG-persoonskoppeling · scan aanwezig</p></div>
 </div>
 <a href="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13369.jpg" target="_blank" rel="noopener"><img class="scan" src="../assets/paspoortaanvragen/originelen/NL-HaCBG_1796_B13369.jpg" alt="Volledige originele CBG-scan B13369"></a>
