@@ -15,6 +15,23 @@ INDEX = ROOT / "index.html"
 ARCHIVE_INDEX = ROOT / "assets" / "nationaal-archief.json"
 RIJKSMUSEUM_INDEX = ROOT / "assets" / "rijksmuseum.json"
 KNIL_WEAPONS_INDEX = ROOT / "assets" / "knil-bewapening.json"
+PASSPORT_PAGE = ROOT / "research" / "paspoortaanvragen.html"
+PASSPORT_DIR = ROOT / "assets" / "paspoortaanvragen" / "originelen"
+PASSPORT_MANIFEST = ROOT / "assets" / "paspoortaanvragen" / "manifest.json"
+GENEALOGY_PAGE = ROOT / "research" / "familie-birsak-genealogie.html"
+POW_TRANSCRIPT = ROOT / "research" / "krijgsgevangenen-bronnen.md"
+BATTALION_PAGE = ROOT / "research" / "15e-bataljon-tjikoedapateuh.html"
+
+EXPECTED_CBG_SCANS = (
+    "NL-HaCBG_1796_B13299.jpg", "NL-HaCBG_1796_B13305.jpg",
+    "NL-HaCBG_1796_B13307.jpg", "NL-HaCBG_1796_B13311.jpg",
+    "NL-HaCBG_1796_B13317.jpg", "NL-HaCBG_1796_B13323.jpg",
+    "NL-HaCBG_1796_B13325.jpg", "NL-HaCBG_1796_B13333.jpg",
+    "NL-HaCBG_1796_B13369.jpg", "NL-HaCBG_1796_S05373.jpg",
+    "NL-HaCBG_1796_S18889.jpg", "NL-HaCBG_1796_S18895.jpg",
+    "NL-HaCBG_1796_S18925.jpg", "NL-HaCBG_1796_S19075.jpg",
+    "NL-HaCBG_1796_T02255.jpg", "RNL-HaCBG_1796_B13361.jpg",
+)
 
 FAMILY_ASSETS = {
     "assets/family/IMG_5108.jpeg": {
@@ -68,6 +85,54 @@ def main() -> None:
         if not data.startswith(bytes.fromhex("ffd8ff")):
             fail(f"Originele familiefoto is geen geldige JPEG: {relative}")
 
+
+    if not PASSPORT_PAGE.is_file() or not PASSPORT_MANIFEST.is_file():
+        fail("Paspoortregister of CBG-manifest ontbreekt")
+    if not (ROOT / "assets" / "ambtenaren" / "NL-HaNA_2.10.36.21_17_0151.jpg").is_file():
+        fail("Nieuwe scan Stamkaarten Oost-Indische ambtenaren ontbreekt")
+    if not (ROOT / "assets" / "burgerlijke-stand" / "NL-HaHGA_0335-01_1866_0044.jpg").is_file():
+        fail("Nieuwe scan burgerlijke stand ontbreekt")
+    for name in EXPECTED_CBG_SCANS:
+        asset = PASSPORT_DIR / name
+        if not asset.is_file():
+            fail(f"CBG-scan ontbreekt in originelen/: {name}")
+        if not asset.read_bytes().startswith(bytes.fromhex("ffd8ff")):
+            fail(f"CBG-scan is geen geldige JPEG: {name}")
+    manifest = json.loads(PASSPORT_MANIFEST.read_text(encoding="utf-8"))
+    if len(manifest.get("files", [])) != 16:
+        fail("CBG-manifest moet exact 16 unieke scanbestanden bevatten")
+    if {Path(item["file"]).name for item in manifest["files"]} != set(EXPECTED_CBG_SCANS):
+        fail("CBG-manifest en opgeslagen scanbestanden komen niet overeen")
+    if any((ROOT / "assets" / "family").glob("NL-HaCBG_*.jpg")) or any((ROOT / name).exists() for name in (
+        "NL-HaCBG_1796_B13305.jpg", "NL-HaCBG_1796_B13369 2.jpg",
+        "NL-HaCBG_1796_S05373.jpg", "NL-HaCBG_1796_S18889 2.jpg",
+        "NL-HaCBG_1796_S18925 2.jpg", "NL-HaCBG_1796_S19075.jpg",
+        "NL-HaCBG_1796_T02255.jpg",
+    )):
+        fail("CBG-scans staan nog op een verkeerde locatie of als rootduplicaat")
+    passport_source = PASSPORT_PAGE.read_text(encoding="utf-8")
+    for name in EXPECTED_CBG_SCANS:
+        if f"../assets/paspoortaanvragen/originelen/{name}" not in passport_source:
+            fail(f"Paspoortgalerij toont de CBG-scan niet: {name}")
+    genealogy_source = GENEALOGY_PAGE.read_text(encoding="utf-8")
+    for term in ("IMG_5110.jpeg", "Janssen", "57511", "57512", "123508"):
+        if term not in genealogy_source:
+            fail(f"Genealogisch dossier mist nieuwe uploadbevinding: {term}")
+    pow_source = POW_TRANSCRIPT.read_text(encoding="utf-8")
+    for term in ("Jacobus Marinus", "57511", "57512", "24812", "97757", "96687", "123508"):
+        if term not in pow_source:
+            fail(f"POW-transcriptie mist Birsak-vermelding: {term}")
+    battalion_source = BATTALION_PAGE.read_text(encoding="utf-8")
+    if "krijgsgevangenen-bronnen.md" not in battalion_source:
+        fail("KNIL-dossier linkt niet naar de nieuwe krijgsgevangenenbron")
+    for page in (INDEX, PASSPORT_PAGE, GENEALOGY_PAGE, BATTALION_PAGE):
+        html = page.read_text(encoding="utf-8")
+        for target in re.findall(r'(?:src|href)="([^"]+\.(?:jpeg|jpg|png|webp))"', html, flags=re.I):
+            if target.startswith(("http://", "https://", "data:")):
+                continue
+            local_target = (page.parent / target.split("#", 1)[0]).resolve()
+            if not local_target.is_file():
+                fail(f"Niet-bestaand lokaal afbeeldingspad in {page.relative_to(ROOT)}: {target}")
 
     source = INDEX.read_text(encoding="utf-8")
     parser = SiteParser()
