@@ -207,6 +207,17 @@ async function main() {
     );
     const passportImageCount = await page.locator('main img').count();
     if (passportImageCount !== 16) failures.push('Passport archive must show all 16 original CBG scans; found ' + passportImageCount);
+    await page.goto(BASE + 'research/familie-birsak-genealogie.html', { waitUntil: 'domcontentloaded' });
+    await page.waitForFunction(() => document.querySelectorAll('img').length === 3, null, { timeout: 10000 });
+    await page.locator('body').evaluate(() => document.querySelectorAll('img').forEach(image => { image.loading = 'eager'; }));
+    await page.waitForFunction(() =>
+      [...document.querySelectorAll('img')].length === 3 &&
+      [...document.querySelectorAll('img')].every(img => img.complete && img.naturalWidth > 0),
+      null,
+      { timeout: 30000 }
+    );
+    const genealogyImageCount = await page.locator('img').count();
+    if (genealogyImageCount !== 3) failures.push('Genealogy dossier must show the original civil-service and civil-register scans; found ' + genealogyImageCount);
     await page.goto(BASE, { waitUntil: 'domcontentloaded' });
     await waitForLoadedGallery();
 
