@@ -9,6 +9,7 @@ Alle bestanden in de volledige `main`-boom zijn geïnventariseerd. De nieuwe CBG
 | CBG Indisch Oud-Paspoortarchief | `assets/paspoortaanvragen/originelen/` | 16 unieke scans, manifest en webgalerij toegevoegd |
 | Ambtenarenstamkaarten, toegang 2.10.36.21 | `assets/ambtenaren/` | Scan apart geplaatst; persoonskoppeling nog controleren |
 | Burgerlijke stand, toegang 0335-01 | `assets/burgerlijke-stand/` | Scan apart geplaatst; persoon/akte nog identificeren |
+| Alternatieve ambtenarenkaartweergave | `assets/ambtenaren/varianten/` | `NL-HaNA_2.10.36.21_17_0151-groot.jpg` behouden als variant; niet als tweede archiefstuk geteld |
 | Familiefoto's | `assets/family/` | De twee eerder opgeslagen originele familiefoto's blijven hier |
 | KNIL/internerings- en transportdocumenten Hubert | `assets/hubert-birsak/` | Bestaande originele scans blijven hier |
 
