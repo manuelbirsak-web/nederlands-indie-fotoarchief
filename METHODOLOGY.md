@@ -117,3 +117,32 @@ Wijzig een plaats, datum, persoon, eenheid of gebeurtenis niet uitsluitend op ba
 - De geautomatiseerde responsive browsercontrole, axe-core WCAG 2.1 A/AA-controle en mobiele Lighthouse-gates zijn op 13 november 2026 geslaagd; dit is geen onafhankelijke menselijke toegankelijkheidsaudit.
 
 Deze beperkingen worden bewust zichtbaar gehouden om schijnzekerheid te voorkomen.
+
+
+## 11. Beheer van originele bestanden en bewijsstatus
+
+### Opslagclassificatie
+
+Originele bestanden worden ingedeeld naar documentsoort en niet uitsluitend naar de naam van een persoon:
+- familiefoto's en woningbeelden: `assets/family/`;
+- militaire en interneringsdocumenten van Hubert: `assets/hubert-birsak/`;
+- CBG-paspoortaanvragen: `assets/paspoortaanvragen/originelen/`;
+- ambtenarenstamkaarten: `assets/ambtenaren/`;
+- burgerlijke-standakten: `assets/burgerlijke-stand/`;
+- nog niet geclassificeerde nieuwe bestanden: `assets/paspoortaanvragen/inbox/` of een afzonderlijke onderzoeksinbox naargelang de bronsoort.
+
+### Integriteit en duplicaten
+
+Originele bytes, oorspronkelijke bestandsnaam en archiefreferentie worden waar mogelijk behouden. Een exacte duplicaatkopie wordt niet als tweede historisch document gepresenteerd. Bij hernoemen of verplaatsen wordt de blob-inhoud behouden; bewerkte uitsneden, contactbladen, zoombeelden en restauraties krijgen een afzonderlijke status en vervangen nooit het origineel.
+
+### Persoonskoppeling
+
+Een CBG-code, initialen, bestandsnaam of Google AI-overzicht is op zichzelf geen persoonsidentificatie. Een koppeling vereist controle van de scaninhoud en bij voorkeur onafhankelijke overeenstemming met een tweede primaire bron. Onbekende codes blijven ongekoppeld. Voor- en achterzijden worden als onderdelen van één aanvraag behandeld, niet als afzonderlijke personen.
+
+### Transcriptie en bronkritiek
+
+Handschrift wordt diplomatisch getranscribeerd; onzekere letters, cijfers en plaatsnamen blijven zichtbaar als onzeker. Afwijkende registratienummers worden niet stilzwijgend gelijkgetrokken. Zo zijn 57511 en 57512 voor de Birsak-vermeldingen afzonderlijk geregistreerd totdat de individuele stamboekkaarten uitsluitsel geven.
+
+### Publicatie van uploads
+
+Een bronbeschrijving kan al worden verwerkt terwijl de binaire upload nog ontbreekt, maar de website mag dan geen niet-bestaande afbeeldingslink tonen en mag niet beweren dat het origineel online staat. De uploadinventaris vermeldt expliciet welke bronbestanden inhoudelijk verwerkt zijn en welke nog niet als binaire GitHub-assets zijn overgebracht.
