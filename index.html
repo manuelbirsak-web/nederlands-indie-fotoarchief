@@ -80,7 +80,12 @@ h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;mar
 .footer{background:#17251f;color:#d9d3c6;padding:32px max(5vw,calc((100vw - 1380px)/2));font:12px/1.7 var(--sans)}
 .footer strong{color:#f5efe2;letter-spacing:.07em;text-transform:uppercase}.footer a{color:#ddc597}
 @media(max-width:900px){.results{grid-template-columns:repeat(2,minmax(0,1fr))}.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.intro{gap:24px}}
-@media(max-width:620px){.filters select{width:100%;max-width:100%;min-width:0}.topline{font-size:9px;letter-spacing:.1em}.topline span:last-child{display:none}.hero{padding-top:47px;padding-bottom:42px}.hero-bottom{font-size:10px}nav button{padding:14px 12px}.intro{grid-template-columns:1fr;gap:18px}main{padding-top:27px}.discovery{padding:15px}.searchrow{flex-direction:column}.searchrow .primary{padding:13px}.results,.archive-grid{grid-template-columns:1fr}.photo-media{aspect-ratio:16/10}.head{align-items:start;flex-direction:column}.head-right{text-align:left}.filters{align-items:start}.filters label{width:100%}}
+@media(max-width:620px){.filters select{width:100%;max-width:100%;min-width:0}.topline{font-size:9px;letter-spacing:.1em}.topline span:last-child{display:none}.hero{padding-top:47px;padding-bottom:42px}.hero-bottom{font-size:10px}nav button{padding:14px 12px}
+nav .primary-tab{font-size:13px;font-weight:800;color:#243e32;background:#eee8d8;border-bottom-color:#9b7840}
+nav .family-tab{margin-left:0;border-left:3px solid #9b7840}
+nav .battalion-tab{border-left:3px solid #9b7840;padding-left:15px}
+nav .primary-tab:hover{background:#e4dac4;color:#1e382d}
+nav .nav-divider{flex:0 0 1px;height:28px;background:var(--line);align-self:center;margin:0 8px}.intro{grid-template-columns:1fr;gap:18px}main{padding-top:27px}.discovery{padding:15px}.searchrow{flex-direction:column}.searchrow .primary{padding:13px}.results,.archive-grid{grid-template-columns:1fr}.photo-media{aspect-ratio:16/10}.head{align-items:start;flex-direction:column}.head-right{text-align:left}.filters{align-items:start}.filters label{width:100%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 
 /* Correct visibility semantics and dedicated family-research view */
@@ -102,13 +107,16 @@ body.family-view #familyBirsak,body.family-view #deepSearch{display:block!import
 </div>
 </header>
 <nav id="nav" aria-label="Hoofdnavigatie">
+<button class="primary-tab family-tab" data-view="family">Familie Birsak</button>
+<a class="nav-link primary-tab battalion-tab" href="research/15e-bataljon-tjikoedapateuh.html">15e Bataljon &amp; Tjikoedapateuh</a>
+<span class="nav-divider" aria-hidden="true"></span>
 <button class="active" data-view="home" aria-current="page">Overzicht</button>
 <button data-view="indies">Nederlands-Indië</button>
 <button data-view="java">Java</button>
 <button data-view="bandung">Bandoeng / Bandung</button>
 <button data-view="knil">KNIL & militair</button>
 <button data-view="bersiap">Bersiap & onafhankelijkheidsstrijd</button>
-<button data-view="daily">Samenleving</button><button data-view="family">Familie Birsak · fotoverhaal</button><a class="nav-link" href="research/15e-bataljon-tjikoedapateuh.html">15e Bataljon &amp; Tjikoedapateuh</a>
+<button data-view="daily">Samenleving</button>
 </nav>
 <main id="main">
 <section class="intro">
