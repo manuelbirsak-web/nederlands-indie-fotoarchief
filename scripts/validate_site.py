@@ -107,6 +107,11 @@ def main() -> None:
         fail("CBG-manifest moet exact 16 unieke scanbestanden bevatten")
     if {Path(item["file"]).name for item in manifest["files"]} != set(EXPECTED_CBG_SCANS):
         fail("CBG-manifest en opgeslagen scanbestanden komen niet overeen")
+    privacy_review = manifest.get("publicationReview", {})
+    if privacy_review.get("status") != "not-independently-verified" or privacy_review.get("checkedAgainstIndividualCBGRecords") is not False:
+        fail("CBG-publicatiestatus moet als niet individueel geverifieerd worden gemarkeerd")
+    if not privacy_review.get("source", "").startswith("https://cbg.nl/"):
+        fail("CBG-privacycontrole mist de officiële bron")
     if any((ROOT / "assets" / "family").glob("NL-HaCBG_*.jpg")) or any((ROOT / name).exists() for name in (
         "NL-HaCBG_1796_B13305.jpg", "NL-HaCBG_1796_B13369 2.jpg",
         "NL-HaCBG_1796_S05373.jpg", "NL-HaCBG_1796_S18889 2.jpg",
