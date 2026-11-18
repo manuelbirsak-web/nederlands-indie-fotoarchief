@@ -33,7 +33,7 @@ De Nationaal Archief-harvester heeft bij de huidige snapshot de veiligheidslimie
 - `assets/paspoortaanvragen/inbox/`: nieuwe, nog niet beoordeelde CBG-scans.
 - `assets/paspoortaanvragen/originelen/`: 16 unieke CBG-scans uit collectie 1796; de volledige galerij en het manifest zijn beschikbaar via de [paspoortarchiefpagina](https://manuelbirsak-web.github.io/nederlands-indie-fotoarchief/research/paspoortaanvragen.html).
 - `assets/paspoortaanvragen/pasfotos/`: afzonderlijke pasfoto-uitsneden, nooit ter vervanging van het volledige origineel.
-- `assets/ambtenaren/`: scans uit archieven van Oost-Indische ambtenaren.
+- `assets/ambtenaren/`: scans uit archieven van Oost-Indische ambtenaren; alternatieve scanweergaven staan in `varianten/`.
 - `assets/burgerlijke-stand/`: nog te identificeren burgerlijke-standakten.
 - `research/`: transcripties, bronkritiek, genealogische dossiers en uploadinventarissen.
 
