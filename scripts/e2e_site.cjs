@@ -111,7 +111,19 @@ async function main() {
     for (const view of ['home', 'indies', 'java', 'bandung', 'knil', 'bersiap', 'daily']) {
       const requestsBefore = commonsRequests;
       await page.locator('#nav [data-view="' + view + '"]').click();
-      await waitForLoadedGallery();
+      try {
+        await waitForLoadedGallery();
+      } catch (error) {
+        const state = await page.evaluate(() => ({
+          activeView: document.querySelector('#nav [aria-current="page"]')?.dataset.view,
+          busy: document.querySelector('#results')?.getAttribute('aria-busy'),
+          cards: document.querySelectorAll('#results .photo').length,
+          loadedImages: [...document.querySelectorAll('#results .photo img')].filter(img => img.complete && img.naturalWidth > 0).length,
+          resultText: document.querySelector('#results')?.innerText?.slice(0, 500),
+          count: document.querySelector('#count')?.textContent
+        }));
+        throw new Error('Gallery did not load after switching to ' + view + ': ' + JSON.stringify(state) + '; ' + error.message);
+      }
       const galleryCheck = await page.evaluate(() => ({
         cards: document.querySelectorAll('#results .photo').length,
         loadedImages: [...document.querySelectorAll('#results .photo img')].filter(img => img.complete && img.naturalWidth > 0).length
