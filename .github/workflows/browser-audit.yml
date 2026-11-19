@@ -42,6 +42,7 @@ jobs:
       - name: Run responsive browser and WCAG checks
         run: node scripts/e2e_site.cjs
       - name: Benchmark live historical photo retrieval by tab
+        if: always()
         run: node scripts/search_effect_benchmark.cjs
       - name: Run mobile Lighthouse audit
         if: always()
