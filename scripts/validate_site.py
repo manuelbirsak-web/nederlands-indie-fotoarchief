@@ -124,14 +124,17 @@ def main() -> None:
         if f"../assets/paspoortaanvragen/originelen/{name}" not in passport_source:
             fail(f"Paspoortgalerij toont de CBG-scan niet: {name}")
     genealogy_source = GENEALOGY_PAGE.read_text(encoding="utf-8")
-    for term in ("IMG_5110.jpeg", "Janssen", "57511", "57512", "123508"):
+    for term in ("IMG_5110.jpeg", "Janssen"):
         if term not in genealogy_source:
-            fail(f"Genealogisch dossier mist nieuwe uploadbevinding: {term}")
+            fail(f"Genealogisch dossier mist genealogische uploadbevinding: {term}")
     pow_source = POW_TRANSCRIPT.read_text(encoding="utf-8")
     for term in ("Jacobus Marinus", "57511", "57512", "24812", "97757", "96687", "123508"):
         if term not in pow_source:
             fail(f"POW-transcriptie mist Birsak-vermelding: {term}")
     battalion_source = BATTALION_PAGE.read_text(encoding="utf-8")
+    for term in ("57511", "57512", "123508", "Nederlandsche krijgsgevangenen"):
+        if term not in battalion_source:
+            fail(f"KNIL-dossier mist militaire namenopgave: {term}")
     if "krijgsgevangenen-bronnen.md" not in battalion_source:
         fail("KNIL-dossier linkt niet naar de nieuwe krijgsgevangenenbron")
     for page in (INDEX, PASSPORT_PAGE, GENEALOGY_PAGE, BATTALION_PAGE):
