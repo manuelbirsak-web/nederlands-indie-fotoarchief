@@ -12,11 +12,12 @@ permissions:
 
 concurrency:
   group: browser-audit
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   browser-audit:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     timeout-minutes: 15
     steps:
       - name: Checkout
@@ -43,6 +44,7 @@ jobs:
         run: node scripts/e2e_site.cjs
       - name: Benchmark live historical photo retrieval by tab
         if: always()
+        timeout-minutes: 8
         run: node scripts/search_effect_benchmark.cjs
       - name: Run mobile Lighthouse audit
         if: always()
