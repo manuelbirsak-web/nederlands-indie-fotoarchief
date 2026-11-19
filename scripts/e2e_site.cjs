@@ -363,7 +363,9 @@ async function main() {
     const genealogyImageCount = await page.locator('img').count();
     if (genealogyImageCount !== 3) failures.push('Genealogy dossier must show the original civil-service and civil-register scans; found ' + genealogyImageCount);
     await page.goto(BASE, { waitUntil: 'domcontentloaded' });
-    await waitForLoadedGallery();
+    await page.locator('#nav [data-view="home"]').click();
+    await page.waitForFunction(() => document.querySelector('#nav [aria-current="page"]')?.dataset.view === 'home', null, { timeout: 5000 });
+    await waitForLoadedGallery('after returning from genealogy page to archive overview');
 
     const rightsChecks = await page.evaluate(() => ({
       cc0: isReusableCommonsLicense({ LicenseUrl: { value: 'https://creativecommons.org/publicdomain/zero/1.0/' } }),
