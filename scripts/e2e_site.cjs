@@ -62,7 +62,8 @@ async function main() {
       activeView: document.querySelector('#nav [aria-current="page"]')?.dataset.view,
       familyVisible: !document.querySelector('#familyBirsak')?.hidden,
       familyImages: document.querySelectorAll('#familyBirsak img').length,
-      captionNames: document.querySelectorAll('#familyBirsak ol li').length,
+      captionNames: document.querySelectorAll('#familyBirsak .family-people li').length,
+      sixteenPersonNames: [...document.querySelectorAll('#familyBirsak .record-card')].find(card => card.querySelector('h3')?.textContent.includes('16 personen'))?.querySelectorAll('ol li').length || 0,
       cbgSourceRecords: document.querySelectorAll('#familyBirsak details ul li').length,
       externalConsentHidden: document.querySelector('#externalMediaConsent')?.hidden,
       researchLinks: [...document.querySelectorAll('#nav .nav-group-research a')].map(link => link.getAttribute('href')),
@@ -73,7 +74,7 @@ async function main() {
     const passportIndex = familyLanding.researchLinks.indexOf('research/paspoortaanvragen.html');
     const battalionIndex = familyLanding.researchLinks.indexOf('research/15e-bataljon-tjikoedapateuh.html');
     if (!familyLanding.firstTab.includes('FAMILIE BIRSAK') || familyLanding.activeView !== 'family' ||
-        !familyLanding.familyVisible || familyLanding.familyImages !== 2 || familyLanding.captionNames !== 14 ||
+        !familyLanding.familyVisible || familyLanding.familyImages !== 2 || familyLanding.captionNames !== 14 || familyLanding.sixteenPersonNames !== 16 ||
         familyLanding.cbgSourceRecords !== 7 || !familyLanding.externalConsentHidden ||
         passportIndex < 0 || battalionIndex !== passportIndex + 1 ||
         !familyLanding.researchLinks.includes('research/familie-birsak-genealogie.html') ||
