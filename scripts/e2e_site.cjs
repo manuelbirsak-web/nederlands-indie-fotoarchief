@@ -51,6 +51,28 @@ async function main() {
     const response = await page.goto(BASE, { waitUntil: 'domcontentloaded', timeout: 45000 });
     if (!response || response.status() !== 200) throw new Error('Homepage did not return HTTP 200');
     await page.waitForFunction(
+      () => document.querySelector('#nav button:first-child')?.dataset.view === 'family' &&
+        document.querySelector('#nav [aria-current="page"]')?.dataset.view === 'family' &&
+        document.querySelector('#familyBirsak') && !document.querySelector('#familyBirsak').hidden,
+      null,
+      { timeout: 20000 }
+    );
+    const familyLanding = await page.evaluate(() => ({
+      firstTab: document.querySelector('#nav button:first-child')?.textContent?.trim(),
+      activeView: document.querySelector('#nav [aria-current="page"]')?.dataset.view,
+      familyVisible: !document.querySelector('#familyBirsak')?.hidden,
+      familyImages: document.querySelectorAll('#familyBirsak img').length,
+      captionNames: document.querySelectorAll('#familyBirsak ol li').length,
+      externalConsentHidden: document.querySelector('#externalMediaConsent')?.hidden
+    }));
+    if (!familyLanding.firstTab.includes('FAMILIE BIRSAK') || familyLanding.activeView !== 'family' ||
+        !familyLanding.familyVisible || familyLanding.familyImages !== 2 || familyLanding.captionNames !== 14 ||
+        !familyLanding.externalConsentHidden) {
+      failures.push('Family Birsak is not the complete first landing tab: ' + JSON.stringify(familyLanding));
+    }
+
+    await page.locator('#nav [data-view="home"]').click();
+    await page.waitForFunction(
       () => document.querySelector('#results')?.getAttribute('aria-busy') === 'false',
       null,
       { timeout: 20000 }
