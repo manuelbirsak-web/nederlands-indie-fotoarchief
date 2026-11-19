@@ -20,6 +20,22 @@ class RijksmuseumIndexTests(unittest.TestCase):
         topics, _ = classify_record("Fotoreeks over de Bersiap in Batavia")
         self.assertIn("bersiap", topics)
 
+    def test_historical_java_aliases_expand_place_classification(self) -> None:
+        _, places = classify_record("Een straatbeeld in Soerakarta en de Preanger")
+        self.assertIn("surakarta", places)
+        self.assertIn("priangan", places)
+        self.assertIn("java", places)
+
+    def test_peta_is_not_misclassified_as_knil(self) -> None:
+        topics, _ = classify_record("PETA-soldaten oefenen op Java")
+        self.assertIn("military", topics)
+        self.assertNotIn("knil", topics)
+
+    def test_culture_and_daily_life_terms_are_classified(self) -> None:
+        topics, _ = classify_record("Batik, gamelan en wajang tijdens pasar malam")
+        self.assertIn("culture", topics)
+        self.assertIn("society", topics)
+
     def test_non_photograph_album_is_not_a_single_photograph(self) -> None:
         self.assertFalse(photograph_type({
             "classified_as": [{"notation": [{"@value": "photograph album"}, {"@value": "fotoalbum"}]}]
