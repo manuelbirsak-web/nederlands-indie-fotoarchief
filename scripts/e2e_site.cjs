@@ -117,10 +117,9 @@ async function main() {
           imageCount: document.querySelectorAll('#results .photo img').length,
           loadedImages: [...document.querySelectorAll('#results .photo img')].filter(image => image.complete && image.naturalWidth > 0).length,
           resultText: document.querySelector('#results')?.innerText?.slice(0, 500),
-          count: document.querySelector('#count')?.textContent,
-          commonsRequests
+          count: document.querySelector('#count')?.textContent
         }));
-        throw new Error('Gallery load timeout at ' + stage + ': ' + JSON.stringify(state) + '; ' + error.message);
+        throw new Error('Gallery load timeout at ' + stage + ': ' + JSON.stringify({...state, commonsRequests}) + '; ' + error.message);
       }
     };
 
