@@ -140,6 +140,8 @@ async function main() {
     }
 
     const waitForLoadedGallery = async (stage = 'unspecified') => {
+      const activeViewBeforeWait = await page.evaluate(() => document.querySelector('#nav [aria-current="page"]')?.dataset.view);
+      if (activeViewBeforeWait === 'family') throw new Error('Gallery wait requested while the family page is active; the family page uses its own local photo layout.');
       try {
         await page.waitForFunction(() => {
           const images = [...document.querySelectorAll('#results .photo img')];
@@ -178,7 +180,7 @@ async function main() {
       const requestsBefore = commonsRequests;
       await page.locator('#nav [data-view="' + view + '"]').click();
       try {
-        await waitForLoadedGallery();
+        await waitForLoadedGallery('tab '+view);
       } catch (error) {
         const state = await page.evaluate(() => ({
           activeView: document.querySelector('#nav [aria-current="page"]')?.dataset.view,
@@ -254,8 +256,11 @@ async function main() {
     }
 
     await page.locator('#nav [data-view="home"]').click();
+    await page.waitForFunction(() => document.querySelector('#nav [aria-current="page"]')?.dataset.view === 'home', null, { timeout: 5000 });
     await page.locator('#reset').click();
-    await waitForLoadedGallery();
+    const resetView = await page.evaluate(() => document.querySelector('#nav [aria-current="page"]')?.dataset.view);
+    if (resetView !== 'home') failures.push('Clearing filters unexpectedly changed the active tab: ' + resetView);
+    await waitForLoadedGallery('after clearing filters on the overview tab');
 
     await page.waitForFunction(() => /136 bronrecords/.test(document.querySelector('#knilWeaponsCount')?.textContent || ''), null, { timeout: 20000 });
     const knilInitial = await page.evaluate(() => ({
