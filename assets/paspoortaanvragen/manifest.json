@@ -34,11 +34,19 @@
     {
       "file": "originelen/NL-HaCBG_1796_B13311.jpg",
       "cbgCode": "B13311",
-      "person": null,
-      "identificationStatus": "Nog niet aan een persoon gekoppeld",
+      "person": "Caroline Adèle Birsak-Schrijn",
+      "identificationStatus": "Directe kaartlezing: bovenaan staat Birsak-Schrijn, Caroline Adèle; geboren 10 oktober 1879 te Buitenzorg. Op dezelfde kaart staan haar ouders Carl Schrijn en Sahlati en haar echtgenoot Ernanie Ernest Birsak.",
       "originalPreserved": true,
       "publicAvailabilityVerified": false,
-      "publicationStatus": "check individual CBG catalogue visibility before public redistribution"
+      "publicationStatus": "check individual CBG catalogue visibility before public redistribution",
+      "relatedPersons": [
+        "Carl Schrijn (vader)",
+        "Sahlati (moeder; spelling volgens kaartlezing)",
+        "Ernanie Ernest Birsak (echtgenoot)"
+      ],
+      "evidence": [
+        "IMG_5059.jpeg (schermafbeelding van de CBG-scan B13311; directe kaartlezing)"
+      ]
     },
     {
       "file": "originelen/NL-HaCBG_1796_B13317.jpg",
@@ -124,11 +132,19 @@
     {
       "file": "originelen/NL-HaCBG_1796_S18895.jpg",
       "cbgCode": "S18895",
-      "person": null,
-      "identificationStatus": "Nog niet aan een persoon gekoppeld",
+      "person": "Roemsa(h) Smits",
+      "identificationStatus": "Directe kaartlezing: naam op de kaart gelezen als Roemsah; geboren 6 april 1906 te Soerabaja. Ouders vermeld als Niti Redja en Saimah; echtgenoot Willem Alexander Smits. De gebruiker noemt haar Roemsa Smits.",
       "originalPreserved": true,
       "publicAvailabilityVerified": false,
-      "publicationStatus": "check individual CBG catalogue visibility before public redistribution"
+      "publicationStatus": "check individual CBG catalogue visibility before public redistribution",
+      "relatedPersons": [
+        "Niti Redja (vader; kaartlezing)",
+        "Saimah (moeder; kaartlezing)",
+        "Willem Alexander Smits (echtgenoot)"
+      ],
+      "evidence": [
+        "IMG_5058.jpeg (schermafbeelding van CBG-scan S18895; directe kaartlezing)"
+      ]
     },
     {
       "file": "originelen/NL-HaCBG_1796_S18925.jpg",
@@ -142,11 +158,19 @@
     {
       "file": "originelen/NL-HaCBG_1796_S19075.jpg",
       "cbgCode": "S19075",
-      "person": null,
-      "identificationStatus": "Nog niet aan een persoon gekoppeld",
+      "person": "Willem Alexander Smits",
+      "identificationStatus": "Directe kaartlezing: Willem Alexander Smits, geboren 22 juni 1891 te Bogor. Ouders vermeld als Johan Smits en Sahatie; echtgenote Roemsah (op de wederzijdse kaart S18895).",
       "originalPreserved": true,
       "publicAvailabilityVerified": false,
-      "publicationStatus": "check individual CBG catalogue visibility before public redistribution"
+      "publicationStatus": "check individual CBG catalogue visibility before public redistribution",
+      "relatedPersons": [
+        "Johan Smits (vader; kaartlezing)",
+        "Sahatie (moeder; kaartlezing)",
+        "Roemsah / Roemsa Smits (echtgenote; wederzijdse kaart S18895)"
+      ],
+      "evidence": [
+        "IMG_5058.jpeg (schermafbeelding van CBG-scan S19075; directe kaartlezing)"
+      ]
     },
     {
       "file": "originelen/NL-HaCBG_1796_T02255.jpg",
@@ -185,7 +209,7 @@
       "sameAs": "NL-HaCBG_1796_S18925.jpg"
     }
   ],
-  "note": "16 unieke CBG-scanbestanden. B13323: Ernanie Ernest Birsak (paspoort 904643; echtgenote Caroline Adèle Schrijn). B13333: Hubert Manuel Birsak (paspoort 904645; ouders Ernanie Ernest Birsak en Caroline Adèle Schrijn; echtgenote Atjih).",
+  "note": "16 unieke CBG-scanbestanden. Directe persoonskoppelingen op kaart: B13311 Caroline Adèle Birsak-Schrijn; B13323 Ernanie Ernest Birsak (paspoort 904643); B13333 Hubert Manuel Birsak (paspoort 904645); S18895 Roemsa(h) Smits; S19075 Willem Alexander Smits. Echtgenoten en ouders worden als verwanten vermeld, niet als afzonderlijke aanvragen tenzij een eigen kaart bestaat.",
   "publicationReview": {
     "status": "not-independently-verified",
     "note": "CBG states that a scan of the front of a card is publicly visible only if all persons named on that card have died; backs are not shown publicly. The repository files must be checked against the publicly available CBG catalogue records. A scan obtained via a personal exemption must not be republished publicly without separate permission.",
