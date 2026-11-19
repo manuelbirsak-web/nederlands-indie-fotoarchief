@@ -39,13 +39,50 @@ async function main() {
       };
       await route.fulfill({ status: 200, contentType: 'application/json', headers: { 'Access-Control-Allow-Origin': '*' }, body: JSON.stringify(fixture) });
     });
-    await page.route('https://upload.wikimedia.org/**', route => route.fulfill({
-      status: 200, contentType: 'image/png',
-      body: Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+j9ZkAAAAASUVORK5CYII=', 'base64')
-    }));
+    let externalImageRequests = 0;
+    await page.route('https://upload.wikimedia.org/**', route => {
+      externalImageRequests++;
+      return route.fulfill({
+        status: 200, contentType: 'image/png',
+        body: Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+j9ZkAAAAASUVORK5CYII=', 'base64')
+      });
+    });
 
     const response = await page.goto(BASE, { waitUntil: 'domcontentloaded', timeout: 45000 });
     if (!response || response.status() !== 200) throw new Error('Homepage did not return HTTP 200');
+    await page.waitForFunction(
+      () => document.querySelector('#nav button[data-view="family"]') !== null &&
+        document.querySelector('#nav [aria-current="page"]')?.dataset.view === 'family' &&
+        document.querySelector('#familyBirsak') && !document.querySelector('#familyBirsak').hidden,
+      null,
+      { timeout: 20000 }
+    );
+    const familyLanding = await page.evaluate(() => ({
+      firstTab: document.querySelector('#nav button[data-view="family"]')?.textContent?.trim(),
+      activeView: document.querySelector('#nav [aria-current="page"]')?.dataset.view,
+      familyVisible: !document.querySelector('#familyBirsak')?.hidden,
+      familyImages: document.querySelectorAll('#familyBirsak img').length,
+      captionNames: document.querySelectorAll('#familyBirsak ol li').length,
+      cbgSourceRecords: document.querySelectorAll('#familyBirsak details ul li').length,
+      externalConsentHidden: document.querySelector('#externalMediaConsent')?.hidden,
+      researchLinks: [...document.querySelectorAll('#nav .nav-group-research a')].map(link => link.getAttribute('href')),
+      navHasNoHorizontalOverflow: document.querySelector('#nav').scrollWidth <= document.querySelector('#nav').clientWidth + 1,
+      pageHasNoHorizontalOverflow: document.documentElement.scrollWidth <= window.innerWidth + 1,
+      navDisplay: getComputedStyle(document.querySelector('#nav')).display
+    }));
+    const passportIndex = familyLanding.researchLinks.indexOf('research/paspoortaanvragen.html');
+    const battalionIndex = familyLanding.researchLinks.indexOf('research/15e-bataljon-tjikoedapateuh.html');
+    if (!familyLanding.firstTab.includes('FAMILIE BIRSAK') || familyLanding.activeView !== 'family' ||
+        !familyLanding.familyVisible || familyLanding.familyImages !== 2 || familyLanding.captionNames !== 14 ||
+        familyLanding.cbgSourceRecords !== 7 || !familyLanding.externalConsentHidden ||
+        passportIndex < 0 || battalionIndex !== passportIndex + 1 ||
+        !familyLanding.researchLinks.includes('research/familie-birsak-genealogie.html') ||
+        !familyLanding.navHasNoHorizontalOverflow || !familyLanding.pageHasNoHorizontalOverflow ||
+        familyLanding.navDisplay !== 'grid') {
+      failures.push('Family Birsak is not the complete first landing tab: ' + JSON.stringify(familyLanding));
+    }
+
+    await page.locator('#nav [data-view="home"]').click();
     await page.waitForFunction(
       () => document.querySelector('#results')?.getAttribute('aria-busy') === 'false',
       null,
@@ -53,6 +90,42 @@ async function main() {
     );
 
     if (!(await page.title()).includes('Indisch Beeldarchief')) failures.push('Homepage title missing');
+    const normalizationCheck = await page.evaluate(() => ({
+      accented: normalizeArchiveText('Nederlands-Indië, Bandoeng') ,
+      punctuationOnly: normalizeArchiveText('--- …')
+    }));
+    if (normalizationCheck.accented !== 'nederlands indie bandoeng' || normalizationCheck.punctuationOnly !== '') {
+      failures.push('Evidence text normalization regression: ' + JSON.stringify(normalizationCheck));
+    }
+    const taxonomyChecks = await page.evaluate(() => {
+      const cases = [
+        {text:'Een Nederlandse soldaat in Batavia, 1948', topics:['military'], places:['batavia']},
+        {text:'Straatbeeld in Bandoeng, 1946', topics:['architecture'], places:['bandung']},
+        {text:'Bersiap in Batavia, 1946', topics:['bersiap','decolonization'], places:['batavia']},
+        {text:'KNIL-officier bij kazerne in Bandoeng', topics:['knil','military'], places:['bandung']},
+        {text:'Dagelijks leven op een pasar met batik en gamelan in Java', topics:['daily','society','culture'], places:['java']}
+      ];
+      return cases.map(item => {
+        const result = classifyArchiveEvidence(item.text);
+        const actualTopics = [...result.topics].sort();
+        const actualPlaces = [...result.places].sort();
+        const expectedTopics = [...item.topics].sort();
+        const expectedPlaces = [...item.places].sort();
+        return {
+          text:item.text,
+          missingTopics:expectedTopics.filter(x => !actualTopics.includes(x)),
+          unexpectedTopics:actualTopics.filter(x => !expectedTopics.includes(x)),
+          missingPlaces:expectedPlaces.filter(x => !actualPlaces.includes(x)),
+          unexpectedPlaces:actualPlaces.filter(x => !expectedPlaces.includes(x)),
+          actualTopics,actualPlaces
+        };
+      });
+    });
+    for (const check of taxonomyChecks) {
+      if (check.missingTopics.length || check.unexpectedTopics.length || check.missingPlaces.length || check.unexpectedPlaces.length) {
+        failures.push('Evidence taxonomy regression: ' + JSON.stringify(check));
+      }
+    }
     try {
       await page.waitForFunction(() => document.querySelectorAll('#results .photo').length > 0, null, { timeout: 20000 });
     } catch (error) {
@@ -66,23 +139,77 @@ async function main() {
       }));
       throw new Error('Initial gallery did not render a photo: ' + JSON.stringify(state) + '; ' + error.message);
     }
-    const waitForLoadedGallery = async () => page.waitForFunction(() => {
-      const images = [...document.querySelectorAll('#results .photo img')];
-      return document.querySelector('#results')?.getAttribute('aria-busy') === 'false' &&
-        images.length > 0 && images.some(image => image.complete && image.naturalWidth > 0);
-    }, null, { timeout: 20000 });
+    const consentBeforeLoad = await page.evaluate(() => ({
+      visible: !document.querySelector('#externalMediaConsent')?.hidden,
+      stored: localStorage.getItem('indisch-beeldarchief-external-media-v1'),
+      imagesWithSrc: [...document.querySelectorAll('#results img,#rmResults img')].filter(image => image.hasAttribute('src')).length,
+      notice: document.querySelector('#externalMediaConsentText')?.innerText || ''
+    }));
+    if (!consentBeforeLoad.visible || consentBeforeLoad.stored !== null || consentBeforeLoad.imagesWithSrc !== 0 || externalImageRequests !== 0 ||
+        !/WMF-Uniq/.test(consentBeforeLoad.notice) || !/cookie/i.test(consentBeforeLoad.notice)) {
+      failures.push('External images were not withheld before explicit consent: ' + JSON.stringify({...consentBeforeLoad, externalImageRequests}));
+    }
+
+    const waitForLoadedGallery = async (stage = 'unspecified') => {
+      const activeViewBeforeWait = await page.evaluate(() => document.querySelector('#nav [aria-current="page"]')?.dataset.view);
+      if (activeViewBeforeWait === 'family') throw new Error('Gallery wait requested while the family page is active; the family page uses its own local photo layout.');
+      try {
+        await page.waitForFunction(() => {
+          const images = [...document.querySelectorAll('#results .photo img')];
+          return document.querySelector('#results')?.getAttribute('aria-busy') === 'false' &&
+            images.length > 0 && images.some(image => image.complete && image.naturalWidth > 0);
+        }, null, { timeout: 20000 });
+      } catch (error) {
+        const state = await page.evaluate(() => ({
+          activeView: document.querySelector('#nav [aria-current="page"]')?.dataset.view,
+          busy: document.querySelector('#results')?.getAttribute('aria-busy'),
+          cards: document.querySelectorAll('#results .photo').length,
+          imageCount: document.querySelectorAll('#results .photo img').length,
+          loadedImages: [...document.querySelectorAll('#results .photo img')].filter(image => image.complete && image.naturalWidth > 0).length,
+          resultText: document.querySelector('#results')?.innerText?.slice(0, 500),
+          count: document.querySelector('#count')?.textContent
+        }));
+        throw new Error('Gallery load timeout at ' + stage + ': ' + JSON.stringify({...state, commonsRequests}) + '; ' + error.message);
+      }
+    };
+
+    await page.locator('#externalMediaConsentToggle').click();
+    await waitForLoadedGallery('after explicit external-image opt-in');
+    const consentAccepted = await page.evaluate(() => localStorage.getItem('indisch-beeldarchief-external-media-v1'));
+    if (consentAccepted !== 'accepted' || externalImageRequests < 1) failures.push('External image opt-in did not enable image requests');
+
+    await page.locator('#externalMediaConsentToggle').click();
+    const consentRevoked = await page.evaluate(() => ({
+      stored: localStorage.getItem('indisch-beeldarchief-external-media-v1'),
+      imagesWithSrc: [...document.querySelectorAll('#results img,#rmResults img')].filter(image => image.hasAttribute('src')).length
+    }));
+    if (consentRevoked.stored !== null || consentRevoked.imagesWithSrc !== 0) failures.push('External image opt-out did not clear consent and image requests');
+    await page.locator('#externalMediaConsentToggle').click();
+    await waitForLoadedGallery('after re-enabling external images');
 
     for (const view of ['home', 'indies', 'java', 'bandung', 'knil', 'bersiap', 'daily']) {
       const requestsBefore = commonsRequests;
       await page.locator('#nav [data-view="' + view + '"]').click();
-      await waitForLoadedGallery();
+      try {
+        await waitForLoadedGallery('tab '+view);
+      } catch (error) {
+        const state = await page.evaluate(() => ({
+          activeView: document.querySelector('#nav [aria-current="page"]')?.dataset.view,
+          busy: document.querySelector('#results')?.getAttribute('aria-busy'),
+          cards: document.querySelectorAll('#results .photo').length,
+          loadedImages: [...document.querySelectorAll('#results .photo img')].filter(img => img.complete && img.naturalWidth > 0).length,
+          resultText: document.querySelector('#results')?.innerText?.slice(0, 500),
+          count: document.querySelector('#count')?.textContent
+        }));
+        throw new Error('Gallery did not load after switching to ' + view + ': ' + JSON.stringify(state) + '; ' + error.message);
+      }
       const galleryCheck = await page.evaluate(() => ({
         cards: document.querySelectorAll('#results .photo').length,
         loadedImages: [...document.querySelectorAll('#results .photo img')].filter(img => img.complete && img.naturalWidth > 0).length
       }));
       if (commonsRequests <= requestsBefore) failures.push('Tab switch did not request fresh Commons results for ' + view);
       if (galleryCheck.cards < 1 || galleryCheck.loadedImages < 1) failures.push('Historical photos did not render/load for ' + view + ': ' + JSON.stringify(galleryCheck));
-      const activeQuery = commonsQueries.at(-1) || '';
+      const activeQuery = commonsQueries.slice(requestsBefore).join(' OR ');
       if (view === 'knil' && (!/marechaussee/i.test(activeQuery) || !/klewang/i.test(activeQuery) || !/Nederlandsch-Indisch Leger/i.test(activeQuery) || !/ML-KNIL/i.test(activeQuery))) failures.push('KNIL search query is missing historically specific military terminology: ' + activeQuery);
       if (view === 'home' && (!/Nederlandsche Oost-Indiën/i.test(activeQuery) || !/gouvernement/i.test(activeQuery) || !/VOC/i.test(activeQuery))) failures.push('Overview search query is missing colonial-era terminology: ' + activeQuery);
       if (view === 'indies' && (!/archipel/i.test(activeQuery) || !/residentie/i.test(activeQuery) || !/interneringskamp/i.test(activeQuery) || !/Kempeitai/i.test(activeQuery) || !/Koetaradja/i.test(activeQuery))) failures.push('Nederlands-Indië search query is missing regional, camp and occupation terminology: ' + activeQuery);
@@ -140,8 +267,11 @@ async function main() {
     }
 
     await page.locator('#nav [data-view="home"]').click();
+    await page.waitForFunction(() => document.querySelector('#nav [aria-current="page"]')?.dataset.view === 'home', null, { timeout: 5000 });
     await page.locator('#reset').click();
-    await waitForLoadedGallery();
+    const resetView = await page.evaluate(() => document.querySelector('#nav [aria-current="page"]')?.dataset.view);
+    if (resetView !== 'home') failures.push('Clearing filters unexpectedly changed the active tab: ' + resetView);
+    await waitForLoadedGallery('after clearing filters on the overview tab');
 
     await page.waitForFunction(() => /136 bronrecords/.test(document.querySelector('#knilWeaponsCount')?.textContent || ''), null, { timeout: 20000 });
     const knilInitial = await page.evaluate(() => ({
