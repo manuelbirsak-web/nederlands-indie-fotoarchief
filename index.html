@@ -139,7 +139,7 @@ body.family-view #familyBirsak,body.family-view #deepSearch{display:block!import
 <div class="head"><div><div class="section-label">Wikimedia Commons · live beeldresultaten</div><h2 id="resultTitle">Historische foto's</h2></div><div class="head-right"><span id="count" aria-live="polite">Klaar om te zoeken</span><br><span id="sourceHint">Per resultaat: bronpagina en rechteninformatie</span></div></div>
 <section id="externalMediaConsent" class="external-media-consent" aria-live="polite" aria-label="Externe beeldbronnen">
   <div><strong id="externalMediaConsentTitle">Externe foto's staan standaard uit</strong>
-  <p id="externalMediaConsentText">De fotogalerij gebruikt Wikimedia als externe beeldbron. Wikimedia kan bij het laden van foto's de cookie WMF-Uniq plaatsen voor bezoekerstellingen, A/B-tests en DDoS-bescherming. Foto's worden pas geladen nadat je daarvoor kiest. <a href="https://foundation.wikimedia.org/wiki/Policy:Cookie_statement/nl" target="_blank" rel="noopener noreferrer">Lees het cookiebeleid van Wikimedia</a>.</p></div>
+  <p id="externalMediaConsentText">De fotogalerij gebruikt externe beeldbronnen van Wikimedia en het Rijksmuseum. Wikimedia kan bij het laden van foto's de cookie WMF-Uniq plaatsen voor bezoekerstellingen, A/B-tests en DDoS-bescherming. Foto's worden pas geladen nadat je daarvoor kiest. <a href="https://foundation.wikimedia.org/wiki/Policy:Cookie_statement/nl" target="_blank" rel="noopener noreferrer">Lees het cookiebeleid van Wikimedia</a>.</p></div>
   <button id="externalMediaConsentToggle" class="secondary" type="button">Externe foto's laden</button>
 </section>
 <div id="results" class="results" aria-live="polite" aria-busy="false"><div class="status"><strong>Beeldcollectie</strong>Foto’s uit 1800–1959 en relevante ongedateerde beelden over Nederlands-Indië, de koloniale periode, Bersiap en KNIL worden getoond.</div></div>
@@ -252,12 +252,12 @@ function setExternalImageConsent(allowed){
  externalImagesAllowed=Boolean(allowed);
  try{if(externalImagesAllowed)localStorage.setItem(externalMediaConsentKey,'accepted');else localStorage.removeItem(externalMediaConsentKey)}catch(error){/* Consent applies for this page view even if storage is unavailable. */}
  const button=$('#externalMediaConsentToggle');
- $('#externalMediaConsentTitle').textContent=externalImagesAllowed?'Externe foto’s ingeschakeld':'Externe foto’s staan standaard uit';
+ $('#externalMediaConsentTitle').textContent=externalImagesAllowed?'Externe beelden ingeschakeld':'Externe beelden staan standaard uit';
  $('#externalMediaConsentText').innerHTML=externalImagesAllowed
-  ? 'Je hebt ervoor gekozen externe foto’s van Wikimedia te laden. Wikimedia kan de cookie <strong>WMF-Uniq</strong> plaatsen voor bezoekerstellingen, A/B-tests en DDoS-bescherming. Uitschakelen voorkomt nieuwe beeldverzoeken, maar verwijdert geen cookie die Wikimedia eerder heeft geplaatst. <a href="https://foundation.wikimedia.org/wiki/Policy:Cookie_statement/nl" target="_blank" rel="noopener noreferrer">Lees het cookiebeleid</a>.'
-  : 'De fotogalerij gebruikt Wikimedia als externe beeldbron. Wikimedia kan bij het laden van foto’s de cookie <strong>WMF-Uniq</strong> plaatsen voor bezoekerstellingen, A/B-tests en DDoS-bescherming. Foto’s worden pas geladen nadat je daarvoor kiest. <a href="https://foundation.wikimedia.org/wiki/Policy:Cookie_statement/nl" target="_blank" rel="noopener noreferrer">Lees het cookiebeleid</a>.';
- button.textContent=externalImagesAllowed?'Externe foto’s uitschakelen':'Externe foto’s laden';
- document.querySelectorAll('#results img[data-external-src]').forEach(img=>{
+  ? 'Je hebt ervoor gekozen externe beelden van Wikimedia en het Rijksmuseum te laden. Wikimedia kan de cookie <strong>WMF-Uniq</strong> plaatsen voor bezoekerstellingen, A/B-tests en DDoS-bescherming. Uitschakelen voorkomt nieuwe beeldverzoeken, maar verwijdert geen cookie die Wikimedia eerder heeft geplaatst. <a href="https://foundation.wikimedia.org/wiki/Policy:Cookie_statement/nl" target="_blank" rel="noopener noreferrer">Lees het cookiebeleid</a>.'
+  : 'De fotogalerij gebruikt externe beeldbronnen van Wikimedia en het Rijksmuseum. Wikimedia kan bij het laden van foto’s de cookie <strong>WMF-Uniq</strong> plaatsen voor bezoekerstellingen, A/B-tests en DDoS-bescherming. Foto’s worden pas geladen nadat je daarvoor kiest. <a href="https://foundation.wikimedia.org/wiki/Policy:Cookie_statement/nl" target="_blank" rel="noopener noreferrer">Lees het cookiebeleid</a>.';
+ button.textContent=externalImagesAllowed?'Externe beelden uitschakelen':'Externe beelden laden';
+ document.querySelectorAll('#results img[data-external-src],#rmResults img[data-external-src]').forEach(img=>{
   if(externalImagesAllowed){if(!img.src)img.src=img.dataset.externalSrc}
   else{img.removeAttribute('src');img.removeAttribute('srcset')}
  });
@@ -458,7 +458,7 @@ function addRijksmuseumGalleryCard(record){
  const article=document.createElement('article');article.className='photo';
  const media=document.createElement('div');media.className='photo-media';
  const imageLink=document.createElement('a');imageLink.className='photo-image-link';imageLink.href=record.imageUrl;imageLink.target='_blank';imageLink.rel='noopener noreferrer';imageLink.setAttribute('aria-label','Open vrijgegeven Rijksmuseum-afbeelding: '+(record.title||'Historische foto'));
- const img=document.createElement('img');img.loading=visibleCount<6?'eager':'lazy';img.decoding='async';img.src=record.imageUrl;img.alt=record.title||'Historische foto uit de collectie van het Rijksmuseum';
+ const img=document.createElement('img');img.loading=visibleCount<6?'eager':'lazy';img.decoding='async';img.dataset.externalSrc=record.imageUrl;if(externalImagesAllowed)img.src=img.dataset.externalSrc;img.alt=record.title||'Historische foto uit de collectie van het Rijksmuseum';
  img.onerror=()=>{media.replaceChildren();const fallback=document.createElement('div');fallback.className='status';fallback.textContent='Afbeelding tijdelijk niet beschikbaar';media.append(fallback)};
  imageLink.append(img);media.append(imageLink);
  const body=document.createElement('div');body.className='photo-body';
@@ -713,8 +713,8 @@ function renderRijksmuseumRecords(reset=false){
   if(permittedImage){
    const frame=document.createElement('div');frame.className='rm-image';
    const imageLink=document.createElement('a');imageLink.href=record.imageUrl;imageLink.target='_blank';imageLink.rel='noopener noreferrer';imageLink.setAttribute('aria-label','Open vrijgegeven beeld: '+(record.title||'Rijksmuseum-foto'));
-   const img=document.createElement('img');img.loading=visibleCount<6?'eager':'lazy';img.decoding='async';img.src=record.imageUrl;img.alt=record.title||'Historische foto uit de collectie van het Rijksmuseum';
-   img.onerror=()=>{frame.replaceChildren();const fallback=document.createElement('div');fallback.className='rm-image-placeholder';fallback.textContent='De IIIF-afbeelding is tijdelijk niet bereikbaar; open het oorspronkelijke objectrecord.';frame.append(fallback)};
+   const img=document.createElement('img');img.loading=visibleCount<6?'eager':'lazy';img.decoding='async';img.dataset.externalSrc=record.imageUrl;if(externalImagesAllowed)img.src=img.dataset.externalSrc;img.alt=record.title||'Historische foto uit de collectie van het Rijksmuseum';
+   img.onerror=()=>{if(!externalImagesAllowed)return;frame.replaceChildren();const fallback=document.createElement('div');fallback.className='rm-image-placeholder';fallback.textContent='De IIIF-afbeelding is tijdelijk niet bereikbaar; open het oorspronkelijke objectrecord.';frame.append(fallback)};
    imageLink.append(img);frame.append(imageLink);card.append(frame);
   }else{
    const placeholder=document.createElement('div');placeholder.className='rm-image-placeholder';placeholder.textContent='Metadatarecord · geen herbruikbare afbeeldingslicentie vastgesteld. Open het oorspronkelijke objectrecord om de toegangs- en rechteninformatie te controleren.';card.append(placeholder);
