@@ -82,6 +82,19 @@ async function main() {
         familyLanding.navDisplay !== 'grid') {
       failures.push('Family Birsak is not the complete first landing tab: ' + JSON.stringify(familyLanding));
     }
+    const navResponses = await Promise.all(familyLanding.researchLinks.map(async href => {
+      const response = await page.request.get(new URL(href, page.url()).toString());
+      return { href, status: response.status() };
+    }));
+    for (const item of navResponses) if (item.status !== 200) failures.push('Research navigation link failed: ' + JSON.stringify(item));
+
+    await page.setViewportSize({ width: 390, height: 844 });
+    const mobileOverflow = await page.evaluate(() => ({
+      nav: document.querySelector('#nav').scrollWidth > document.querySelector('#nav').clientWidth + 1,
+      page: document.documentElement.scrollWidth > window.innerWidth + 1
+    }));
+    if (mobileOverflow.nav || mobileOverflow.page) failures.push('Vertical menu or page has horizontal overflow on mobile: ' + JSON.stringify(mobileOverflow));
+    await page.setViewportSize({ width: 1440, height: 900 });
 
     await page.locator('#nav [data-view="home"]').click();
     await page.waitForFunction(
