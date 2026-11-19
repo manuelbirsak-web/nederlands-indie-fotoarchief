@@ -8,9 +8,9 @@ const vm = require('node:vm');
 const HTML = fs.readFileSync('index.html', 'utf8');
 const API = 'https://commons.wikimedia.org/w/api.php';
 const VIEW_NAMES = ['home','indies','java','bandung','knil','bersiap','daily'];
-const BASELINE_BATCH_LIMIT = 8;
+const BASELINE_BATCH_LIMIT = 5;
 const BASELINE_PHOTO_LIMIT = 8;
-const EXPANDED_BATCH_LIMIT = 12;
+const EXPANDED_BATCH_LIMIT = 7;
 const EXPANDED_PHOTO_LIMIT = 18;
 const PAGE_SIZE = 50;
 const ALLOWED_LICENSE = url =>
@@ -77,7 +77,8 @@ async function fetchBatch(query, continuation) {
   for (let attempt=0; attempt<3; attempt++) {
     try {
       const response = await fetch(API + '?' + params.toString(), {
-        headers: { 'Accept':'application/json', 'User-Agent':'IndischBeeldarchiefSearchBenchmark/1.0 (public cultural heritage research)' }
+        headers: { 'Accept':'application/json', 'User-Agent':'IndischBeeldarchiefSearchBenchmark/1.0 (public cultural heritage research)' },
+        signal: AbortSignal.timeout(12000)
       });
       if (!response.ok) throw new Error('HTTP ' + response.status);
       const data = await response.json();
@@ -112,7 +113,8 @@ function isEligible(page,view) {
 async function runFlow(name,view,queries,photoLimit,batchLimit) {
   const records=new Map(),errors=[],queryStats=[];
   let photos=0,batches=0;
-  for (const query of queries) {
+  for (const [queryIndex, query] of queries.entries()) {
+    console.log('['+name+'] '+view+' query '+(queryIndex+1)+'/'+queries.length);
     if (photos>=photoLimit || batches>=batchLimit) break;
     let continuation=null;
     let queryBatches=0;
@@ -160,6 +162,7 @@ async function main() {
   };
   let failed=0;
   for (const view of VIEW_NAMES) {
+    console.log('[benchmark] start tab '+view);
     const baselineQueries=[baselineBase[view]+' '+(viewTerms[view]||'')];
     const expandedQueries=[baselineBase[view],...(clusters[view]||[]),...(viewTerms[view]?[viewTerms[view]]:[])];
     const baseline=await runFlow('baseline',view,baselineQueries,BASELINE_PHOTO_LIMIT,BASELINE_BATCH_LIMIT);
@@ -172,7 +175,7 @@ async function main() {
       improvementRatio:baseline.uniqueRightsEligibleFiles?Number((expanded.uniqueRightsEligibleFiles/baseline.uniqueRightsEligibleFiles).toFixed(3)):null,
       result:'NEEDS_MANUAL_RELEVANCE_REVIEW'
     };
-    console.log(view+': '+baseline.uniqueRightsEligibleFiles+' → '+expanded.uniqueRightsEligibleFiles+' eligible unique files (Δ '+delta+')');
+    console.log('[benchmark] '+view+': '+baseline.uniqueRightsEligibleFiles+' → '+expanded.uniqueRightsEligibleFiles+' eligible unique files (Δ '+delta+')');
   }
   const deltas=Object.values(report.tabs).map(x=>x.deltaUniqueRightsEligibleFiles);
   report.summary={
