@@ -336,7 +336,8 @@ function yearFromMetadata(meta){
  return null;
 }
 function periodMatches(year){const range=$('#period').value;if(range==='all')return true;if(range==='undated')return year===null;if(year===null)return range==='1800-1959';const [start,end]=range.split('-').map(Number);return year>=start&&year<=end}
-function normalizeArchiveText(value){return String(value||'').normalize('NFKD').replace(/[\\u0300-\\u036f]/g,'').toLocaleLowerCase('nl').replace(/[^\\p{L}\\p{N}]+/gu,' ').trim()}
+function normalizeArchiveText(value){return String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('nl').replace(/[^\p{L}\p{N}]+/gu,' ').trim()}
+function archiveTextContains(normalized,term){const needle=normalizeArchiveText(term);return needle.length>0&&(' '+normalized+' ').includes(' '+needle+' ')}
 const ARCHIVE_ALIASES={
  bandung:['bandoeng','bandung','tjimahi','cimahi','tjihapit','bragaweg','gedung sate','bandung lautan api','gedung merdeka'],
  batavia:['batavia','djakarta','jakarta'],
@@ -349,12 +350,13 @@ const ARCHIVE_ALIASES={
  otherIslands:['borneo','kalimantan','celebes','sulawesi','molukken','madoera','madura','papua','nieuw guinea'],
 };
 const ARCHIVE_TOPICS={
- knil:['knil','ml-knil','mld','nederlandsch-indisch leger','marechaussee','veldpolitie','garnizoen','kazerne','bivak','patrouille','infanterie','artillerie','cavalerie','klewang','karabijn','bajonet','mitrailleur','stadswacht','landstormer'],
- military:['soldaat','soldaten','soldier','military','militair','leger','bataljon','artillerie','infanterie','wapen','wapens','kazerne','marechaussee','veldpolitie','mariniersbrigade','stoottroepen','peta','nefis'],
+ knil:['knil','ml-knil','ml knil','nederlandsch-indisch leger','nederlandsch indisch leger','koninklijk nederlandsch-indisch leger','koninklijk nederlandsch indisch leger','royal netherlands east indies army','netherlands indies army'],
+ military:['soldaat','soldaten','soldier','military','militair','leger','bataljon','artillerie','infanterie','wapen','wapens','kazerne','marechaussee','veldpolitie','mariniersbrigade','stoottroepen','peta','nefis','garnizoen','bivak','patrouille','cavalerie','klewang','karabijn','bajonet','mitrailleur','stadswacht','landstormer','kampement'],
  decolonization:['indonesian national revolution','indonesian war of independence','revolusi nasional indonesia','perang kemerdekaan','politionele actie','agresi militer','onafhankelijkheidsstrijd','linggadjati','renville','soevereiniteitsoverdracht','pemoeda','pemuda','laskar','bkr','tkr','tri','tni','apri','apris'],
  bersiap:['bersiap'],
  camp:['interneringskamp','burgerkamp','krijgsgevangenkamp','werkkamp','opvangkamp','kempeitai','rapwi','apwi','seac','amacab'],
  society:['kampong','desa','pasar','waroeng','warung','sawah','ladang','romusha','onderwijs','school','familie','gezin','bevolking','markt','njai','mardijkers','mestiezen'],
+ daily:['dagelijks leven','dagelijks','daily life','everyday life','pasar','kampong','desa','waroeng','warung','sawah','ladang','romusha','onderwijs','school','familie','gezin','bevolking','markt'],
  architecture:['building','gebouw','architectuur','straat','street','station','hotel','kerk','moskee','tempel','gedung sate','gedung merdeka'],
  transport:['railway','train','tram','harbour','haven','schip','ship','vliegtuig','luchtvaart','kpm','knilm','spoorweg','spoorlijn'],
  culture:['adat','batik','gamelan','wajang','wajang koelit','pasar malam','ceremonie','religie','dance','music'],
@@ -363,16 +365,20 @@ const ARCHIVE_TOPICS={
 function classifyArchiveEvidence(text){
  const normalized=normalizeArchiveText(text),places=[],topics=[],evidence={};
  for(const [label,terms] of Object.entries(ARCHIVE_ALIASES)){
-  const hits=terms.filter(term=>normalized.includes(normalizeArchiveText(term)));
+  const hits=terms.filter(term=>archiveTextContains(normalized,term));
   if(hits.length){places.push(label);evidence['place:'+label]=hits;}
  }
  for(const [label,terms] of Object.entries(ARCHIVE_TOPICS)){
-  const hits=terms.filter(term=>normalized.includes(normalizeArchiveText(term)));
+  const hits=terms.filter(term=>archiveTextContains(normalized,term));
   if(hits.length){topics.push(label);evidence['topic:'+label]=hits;}
  }
- // Explicit-only labels: neither a year nor a generic military word creates KNIL/Bersiap.
- if(/\\bknil\\b|nederlandsch indisch leger|koninklijk nederlandsch indisch leger|ml knil/.test(normalized)&&!topics.includes('knil'))topics.push('knil');
- if(/\\bbersiap\\b/.test(normalized)&&!topics.includes('bersiap'))topics.push('bersiap');
+ // KNIL is an explicit affiliation, not a synonym for generic military activity.
+ if((archiveTextContains(normalized,'knil')||archiveTextContains(normalized,'nederlandsch indisch leger')||archiveTextContains(normalized,'koninklijk nederlandsch indisch leger')||archiveTextContains(normalized,'ml knil'))&&!topics.includes('knil'))topics.push('knil');
+ // Bersiap is an explicitly named subset of the broader decolonisation period.
+ if(archiveTextContains(normalized,'bersiap')){
+  if(!topics.includes('bersiap'))topics.push('bersiap');
+  if(!topics.includes('decolonization'))topics.push('decolonization');
+ }
  return {places:[...new Set(places)],topics:[...new Set(topics)],evidence};
 }
 function isRelevantHistoricalPhoto(page,meta,year){
