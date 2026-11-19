@@ -51,24 +51,34 @@ async function main() {
     const response = await page.goto(BASE, { waitUntil: 'domcontentloaded', timeout: 45000 });
     if (!response || response.status() !== 200) throw new Error('Homepage did not return HTTP 200');
     await page.waitForFunction(
-      () => document.querySelector('#nav button:first-child')?.dataset.view === 'family' &&
+      () => document.querySelector('#nav button[data-view="family"]') !== null &&
         document.querySelector('#nav [aria-current="page"]')?.dataset.view === 'family' &&
         document.querySelector('#familyBirsak') && !document.querySelector('#familyBirsak').hidden,
       null,
       { timeout: 20000 }
     );
     const familyLanding = await page.evaluate(() => ({
-      firstTab: document.querySelector('#nav button:first-child')?.textContent?.trim(),
+      firstTab: document.querySelector('#nav button[data-view="family"]')?.textContent?.trim(),
       activeView: document.querySelector('#nav [aria-current="page"]')?.dataset.view,
       familyVisible: !document.querySelector('#familyBirsak')?.hidden,
       familyImages: document.querySelectorAll('#familyBirsak img').length,
       captionNames: document.querySelectorAll('#familyBirsak ol li').length,
       cbgSourceRecords: document.querySelectorAll('#familyBirsak details ul li').length,
-      externalConsentHidden: document.querySelector('#externalMediaConsent')?.hidden
+      externalConsentHidden: document.querySelector('#externalMediaConsent')?.hidden,
+      researchLinks: [...document.querySelectorAll('#nav .nav-group-research a')].map(link => link.getAttribute('href')),
+      navHasNoHorizontalOverflow: document.querySelector('#nav').scrollWidth <= document.querySelector('#nav').clientWidth + 1,
+      pageHasNoHorizontalOverflow: document.documentElement.scrollWidth <= window.innerWidth + 1,
+      navDisplay: getComputedStyle(document.querySelector('#nav')).display
     }));
+    const passportIndex = familyLanding.researchLinks.indexOf('research/paspoortaanvragen.html');
+    const battalionIndex = familyLanding.researchLinks.indexOf('research/15e-bataljon-tjikoedapateuh.html');
     if (!familyLanding.firstTab.includes('FAMILIE BIRSAK') || familyLanding.activeView !== 'family' ||
         !familyLanding.familyVisible || familyLanding.familyImages !== 2 || familyLanding.captionNames !== 14 ||
-        familyLanding.cbgSourceRecords !== 7 || !familyLanding.externalConsentHidden) {
+        familyLanding.cbgSourceRecords !== 7 || !familyLanding.externalConsentHidden ||
+        passportIndex < 0 || battalionIndex !== passportIndex + 1 ||
+        !familyLanding.researchLinks.includes('research/familie-birsak-genealogie.html') ||
+        !familyLanding.navHasNoHorizontalOverflow || !familyLanding.pageHasNoHorizontalOverflow ||
+        familyLanding.navDisplay !== 'grid') {
       failures.push('Family Birsak is not the complete first landing tab: ' + JSON.stringify(familyLanding));
     }
 
