@@ -109,9 +109,11 @@ async function main() {
     const consentBeforeLoad = await page.evaluate(() => ({
       visible: !document.querySelector('#externalMediaConsent')?.hidden,
       stored: localStorage.getItem('indisch-beeldarchief-external-media-v1'),
-      imagesWithSrc: [...document.querySelectorAll('#results img')].filter(image => image.hasAttribute('src')).length
+      imagesWithSrc: [...document.querySelectorAll('#results img')].filter(image => image.hasAttribute('src')).length,
+      notice: document.querySelector('#externalMediaConsentText')?.innerText || ''
     }));
-    if (!consentBeforeLoad.visible || consentBeforeLoad.stored !== null || consentBeforeLoad.imagesWithSrc !== 0 || externalImageRequests !== 0) {
+    if (!consentBeforeLoad.visible || consentBeforeLoad.stored !== null || consentBeforeLoad.imagesWithSrc !== 0 || externalImageRequests !== 0 ||
+        !/WMF-Uniq/.test(consentBeforeLoad.notice) || !/cookie/i.test(consentBeforeLoad.notice)) {
       failures.push('External images were not withheld before explicit consent: ' + JSON.stringify({...consentBeforeLoad, externalImageRequests}));
     }
 
