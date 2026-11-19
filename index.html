@@ -252,7 +252,7 @@ function setExternalImageConsent(allowed){
  const button=$('#externalMediaConsentToggle');
  $('#externalMediaConsentTitle').textContent=externalImagesAllowed?'Externe foto’s ingeschakeld':'Externe foto’s staan standaard uit';
  $('#externalMediaConsentText').innerHTML=externalImagesAllowed
-  ? 'Je hebt ervoor gekozen externe foto’s van Wikimedia te laden. Wikimedia kan de cookie <strong>WMF-Uniq</strong> plaatsen voor bezoekerstellingen, A/B-tests en DDoS-bescherming. <a href="https://foundation.wikimedia.org/wiki/Policy:Cookie_statement/nl" target="_blank" rel="noopener noreferrer">Lees het cookiebeleid</a>.'
+  ? 'Je hebt ervoor gekozen externe foto’s van Wikimedia te laden. Wikimedia kan de cookie <strong>WMF-Uniq</strong> plaatsen voor bezoekerstellingen, A/B-tests en DDoS-bescherming. Uitschakelen voorkomt nieuwe beeldverzoeken, maar verwijdert geen cookie die Wikimedia eerder heeft geplaatst. <a href="https://foundation.wikimedia.org/wiki/Policy:Cookie_statement/nl" target="_blank" rel="noopener noreferrer">Lees het cookiebeleid</a>.'
   : 'De fotogalerij gebruikt Wikimedia als externe beeldbron. Wikimedia kan bij het laden van foto’s de cookie <strong>WMF-Uniq</strong> plaatsen voor bezoekerstellingen, A/B-tests en DDoS-bescherming. Foto’s worden pas geladen nadat je daarvoor kiest. <a href="https://foundation.wikimedia.org/wiki/Policy:Cookie_statement/nl" target="_blank" rel="noopener noreferrer">Lees het cookiebeleid</a>.';
  button.textContent=externalImagesAllowed?'Externe foto’s uitschakelen':'Externe foto’s laden';
  document.querySelectorAll('#results img[data-external-src]').forEach(img=>{
