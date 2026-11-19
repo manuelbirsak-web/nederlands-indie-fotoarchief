@@ -63,11 +63,12 @@ async function main() {
       familyVisible: !document.querySelector('#familyBirsak')?.hidden,
       familyImages: document.querySelectorAll('#familyBirsak img').length,
       captionNames: document.querySelectorAll('#familyBirsak ol li').length,
+      cbgSourceRecords: document.querySelectorAll('#familyBirsak details ul li').length,
       externalConsentHidden: document.querySelector('#externalMediaConsent')?.hidden
     }));
     if (!familyLanding.firstTab.includes('FAMILIE BIRSAK') || familyLanding.activeView !== 'family' ||
         !familyLanding.familyVisible || familyLanding.familyImages !== 2 || familyLanding.captionNames !== 14 ||
-        !familyLanding.externalConsentHidden) {
+        familyLanding.cbgSourceRecords !== 7 || !familyLanding.externalConsentHidden) {
       failures.push('Family Birsak is not the complete first landing tab: ' + JSON.stringify(familyLanding));
     }
 
