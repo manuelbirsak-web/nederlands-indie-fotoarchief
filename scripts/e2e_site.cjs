@@ -102,11 +102,27 @@ async function main() {
       }));
       throw new Error('Initial gallery did not render a photo: ' + JSON.stringify(state) + '; ' + error.message);
     }
-    const waitForLoadedGallery = async () => page.waitForFunction(() => {
-      const images = [...document.querySelectorAll('#results .photo img')];
-      return document.querySelector('#results')?.getAttribute('aria-busy') === 'false' &&
-        images.length > 0 && images.some(image => image.complete && image.naturalWidth > 0);
-    }, null, { timeout: 20000 });
+    const waitForLoadedGallery = async (stage = 'unspecified') => {
+      try {
+        await page.waitForFunction(() => {
+          const images = [...document.querySelectorAll('#results .photo img')];
+          return document.querySelector('#results')?.getAttribute('aria-busy') === 'false' &&
+            images.length > 0 && images.some(image => image.complete && image.naturalWidth > 0);
+        }, null, { timeout: 20000 });
+      } catch (error) {
+        const state = await page.evaluate(() => ({
+          activeView: document.querySelector('#nav [aria-current="page"]')?.dataset.view,
+          busy: document.querySelector('#results')?.getAttribute('aria-busy'),
+          cards: document.querySelectorAll('#results .photo').length,
+          imageCount: document.querySelectorAll('#results .photo img').length,
+          loadedImages: [...document.querySelectorAll('#results .photo img')].filter(image => image.complete && image.naturalWidth > 0).length,
+          resultText: document.querySelector('#results')?.innerText?.slice(0, 500),
+          count: document.querySelector('#count')?.textContent,
+          commonsRequests
+        }));
+        throw new Error('Gallery load timeout at ' + stage + ': ' + JSON.stringify(state) + '; ' + error.message);
+      }
+    };
 
     for (const view of ['home', 'indies', 'java', 'bandung', 'knil', 'bersiap', 'daily']) {
       const requestsBefore = commonsRequests;
