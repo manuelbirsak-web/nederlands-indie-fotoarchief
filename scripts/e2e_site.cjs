@@ -131,7 +131,7 @@ async function main() {
     const consentBeforeLoad = await page.evaluate(() => ({
       visible: !document.querySelector('#externalMediaConsent')?.hidden,
       stored: localStorage.getItem('indisch-beeldarchief-external-media-v1'),
-      imagesWithSrc: [...document.querySelectorAll('#results img')].filter(image => image.hasAttribute('src')).length,
+      imagesWithSrc: [...document.querySelectorAll('#results img,#rmResults img')].filter(image => image.hasAttribute('src')).length,
       notice: document.querySelector('#externalMediaConsentText')?.innerText || ''
     }));
     if (!consentBeforeLoad.visible || consentBeforeLoad.stored !== null || consentBeforeLoad.imagesWithSrc !== 0 || externalImageRequests !== 0 ||
@@ -168,7 +168,7 @@ async function main() {
     await page.locator('#externalMediaConsentToggle').click();
     const consentRevoked = await page.evaluate(() => ({
       stored: localStorage.getItem('indisch-beeldarchief-external-media-v1'),
-      imagesWithSrc: [...document.querySelectorAll('#results img')].filter(image => image.hasAttribute('src')).length
+      imagesWithSrc: [...document.querySelectorAll('#results img,#rmResults img')].filter(image => image.hasAttribute('src')).length
     }));
     if (consentRevoked.stored !== null || consentRevoked.imagesWithSrc !== 0) failures.push('External image opt-out did not clear consent and image requests');
     await page.locator('#externalMediaConsentToggle').click();
