@@ -149,7 +149,7 @@ def main() -> None:
     for term in ("soerakarta", "preanger", "priangan", "bandung lautan api", "gedung merdeka", "madioen-opstand", "tijgerbrigade", "batik", "gamelan", "wajang", "njai", "mardijkers", "nootmuskaat"):
         if term not in source.lower():
             fail(f"Historische relevantiefilter mist een nieuwe taxonomy-term: {term}")
-    if "classification.topics.some(tag=>'knil'||tag==='military')" not in source:
+    if "classification.topics.some(tag==='knil'||tag==='military')" not in source:
         fail("KNIL-toelating moet op de expliciete classificatie-uitkomst vertrouwen")
     if "classification.topics.some(tag=>['decolonization','bersiap','camp'].includes(tag))" not in source:
         fail("Bersiap/dekolonisatie moet op bronondersteunde classificatie vertrouwen")
@@ -169,7 +169,7 @@ def main() -> None:
         fail("Zoeken moet queryclusters, deduplicatie en diepere paginering aantoonbaar uitvoeren")
     if "function classifyArchiveEvidence(text)" not in source or "const ARCHIVE_ALIASES=" not in source or "const ARCHIVE_TOPICS=" not in source:
         fail("De gedeelde evidence-based plaats- en onderwerpsclassificatie ontbreekt")
-    if "classification.topics.some(tag=>'knil'||tag==='military')" not in source or "classification.topics.some(tag=>['decolonization','bersiap','camp'].includes(tag))" not in source:
+    if "classification.topics.some(tag==='knil'||tag==='military')" not in source or "classification.topics.some(tag=>['decolonization','bersiap','camp'].includes(tag))" not in source:
         fail("KNIL- en Bersiap-tab moeten classificatiebewijs gebruiken")
     if "AbortController" not in source or "data.continue" not in source:
         fail("Abort/continuation afhandeling ontbreekt")
