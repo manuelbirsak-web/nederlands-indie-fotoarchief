@@ -17,10 +17,20 @@
       "file": "originelen/NL-HaCBG_1796_B13305.jpg",
       "cbgCode": "B13305",
       "person": "Arnold Wilhelm Birsak",
-      "identificationStatus": "Persoonskoppeling uit CBG-vermelding; scan nog diplomatisch transcriberen",
+      "identificationStatus": "Directe kaartlezing op door gebruiker aangeleverde scan AA2D4DFE-2789-409D-86C5-9346F9BEFDB5.jpeg: Arnold Wilhelm Birsak, geboren 2 januari 1907 te Buitenzorg. Vader Ernanie Ernest Birsak (10 juli 1877, Djokjakarta); moeder Adèle Caroline Birsak-Schrijn (10 oktober 1879, Buitenzorg); echtgenote Wilhelmina Johanna Birsak-Takken (16 juli 1913, Tjimahi).",
       "originalPreserved": true,
       "publicAvailabilityVerified": false,
-      "publicationStatus": "check individual CBG catalogue visibility before public redistribution"
+      "publicationStatus": "check individual CBG catalogue visibility before public redistribution",
+      "relatedPersons": [
+        "Ernanie Ernest Birsak (vader; geboren 10 juli 1877 te Djokjakarta; paspoortkaart B13323)",
+        "Adèle Caroline Birsak-Schrijn (moeder; geboren 10 oktober 1879 te Buitenzorg; paspoortkaart B13311)",
+        "Wilhelmina Johanna Birsak-Takken (echtgenote; geboren 16 juli 1913 te Tjimahi; eigen CBG-scan B13369)"
+      ],
+      "evidence": [
+        "AA2D4DFE-2789-409D-86C5-9346F9BEFDB5.jpeg (door gebruiker aangeleverde scan; directe kaartlezing van Arnold en de familievelden)",
+        "NL-HaCBG_1796_B13305.jpg (bestaande CBG-scan in repository; vergelijking van kaartidentiteit nog visueel te controleren)"
+      ],
+      "passportNumber": null
     },
     {
       "file": "originelen/NL-HaCBG_1796_B13307.jpg",
@@ -209,7 +219,7 @@
       "sameAs": "NL-HaCBG_1796_S18925.jpg"
     }
   ],
-  "note": "16 unieke CBG-scanbestanden. Directe persoonskoppelingen op kaart: B13311 Caroline Adèle Birsak-Schrijn; B13323 Ernanie Ernest Birsak (paspoort 904643); B13333 Hubert Manuel Birsak (paspoort 904645); S18895 Roemsa(h) Smits; S19075 Willem Alexander Smits. Echtgenoten en ouders worden als verwanten vermeld, niet als afzonderlijke aanvragen tenzij een eigen kaart bestaat.",
+  "note": "16 unieke CBG-scanbestanden. Directe persoonskoppelingen op kaart: B13305 Arnold Wilhelm Birsak; B13311 Caroline Adèle Birsak-Schrijn; B13323 Ernanie Ernest Birsak (paspoort 904643); B13333 Hubert Manuel Birsak (paspoort 904645); S18895 Roemsa(h) Smits; S19075 Willem Alexander Smits. Echtgenoten en ouders worden als verwanten vermeld, niet als afzonderlijke aanvragen tenzij een eigen kaart bestaat.",
   "publicationReview": {
     "status": "not-independently-verified",
     "note": "CBG states that a scan of the front of a card is publicly visible only if all persons named on that card have died; backs are not shown publicly. The repository files must be checked against the publicly available CBG catalogue records. A scan obtained via a personal exemption must not be republished publicly without separate permission.",
