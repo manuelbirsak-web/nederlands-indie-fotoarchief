@@ -230,8 +230,8 @@ def main() -> None:
         fail("KNIL-toelating moet op de expliciete classificatie-uitkomst vertrouwen")
     if "classification.topics.some(tag=>['decolonization','bersiap','camp'].includes(tag))" not in source:
         fail("Bersiap/dekolonisatie moet op bronondersteunde classificatie vertrouwen")
-    if "data-place=\"all\"" not in source or "let view='home',place='all'" not in source:
-        fail("Java moet standaard alle Java-plaatsen tonen, niet uitsluitend Bandoeng")
+    if "data-place=\"all\"" not in source or "let view='family',place='all'" not in source:
+        fail("Java moet standaard alle Java-plaatsen tonen; de familietab mag de eerste startweergave zijn")
     if "const topicFilterToArchive" not in source or "place==='other'?'other-java':place" not in source:
         fail("Archief-index mist de expliciete onderwerp- of plaatsfacetfilters")
     if "naVisibleCount+=12" not in source or "id=\"naMore\"" not in source:
