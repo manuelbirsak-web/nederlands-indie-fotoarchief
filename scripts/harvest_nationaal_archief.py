@@ -35,7 +35,7 @@ WHERE {{
     OPTIONAL {{ ?s dc:creator ?creator }}
     OPTIONAL {{ ?s dc:rights ?rights }}
     FILTER(REGEX(LCASE(STR(?description)),
-      "bandoeng|bandung|batavia|buitenzorg|bogor|semarang|soerabaja|surabaya|djokja|yogyakarta|malang|java|sumatra|borneo|celebes|sulawesi|indones|nederlands.?indi[eë]|nederlandsch.?indi[eë]|dutch east indies|netherlands indies|knil|bersiap|tni|pemoeda|agresi militer|politionele actie|onafhankelijkheidsstrijd"))
+      "bandoeng|bandung|batavia|djakarta|jakarta|buitenzorg|bogor|semarang|soerabaja|surabaya|djokja|djocja|yogyakarta|malang|tjimahi|cimahi|garoet|garut|soekaboemi|sukabumi|tjilatjap|cilacap|tasikmalaja|tasikmalaya|cheribon|cirebon|soerakarta|surakarta|solo|preanger|priangan|kedoe|banten|bantam|tjiandjoer|pasoeroean|probolinggo|madioen|madiun|djember|jember|banjoemas|banyumas|java|sumatra|sumatera|atjeh|aceh|borneo|kalimantan|celebes|sulawesi|indones|nederlands.?indi[eë]|nederlandsch.?indi[eë]|dutch east indies|netherlands indies|knil|ml-knil|marechaussee|veldpolitie|peta|nefis|bersiap|tni|apri|apris|bkr|tkr|tri|pemoeda|pemuda|laskar|nica|rapwi|apwi|seac|amacab|agresi militer|politionele actie|linggadjati|renville|soevereiniteitsoverdracht|interneringskamp|burgerkamp|krijgsgevangenkamp|kempeitai|adat|batik|gamelan|wajang|njai|mardijkers|mestiezen|pasar|waroeng|sawah|ladang|romusha|kpm|knilm|spoorweg|luchtvaart|plantage|rubber|koffie|suiker|thee|krakatau|lahar|vulkaan|nootmuskaat|kruidnagel|cultuurstelsel|ethische politiek|slavernij|opium|specerijenhandel"))
   }}
 }}
 GROUP BY ?s ?description
@@ -46,28 +46,39 @@ OFFSET __OFFSET__
 
 PLACE_PATTERNS = {
     "bandung": r"\b(?:bandoeng|bandung)\b",
-    "batavia": r"\b(?:batavia|jakarta)\b",
+    "batavia": r"\b(?:batavia|djakarta|jakarta)\b",
     "bogor": r"\b(?:buitenzorg|bogor)\b",
     "semarang": r"\bsemarang\b",
     "surabaya": r"\b(?:soerabaja|surabaya)\b",
-    "yogyakarta": r"\b(?:djokja|djocja|yogyakarta|jogjakarta)\b",
+    "yogyakarta": r"\b(?:djokja|djocja|djokjakarta|yogyakarta|jogjakarta)\b",
     "malang": r"\bmalang\b",
+    "cimahi": r"\b(?:tjimahi|cimahi)\b",
+    "garut": r"\b(?:garoet|garut)\b",
+    "sukabumi": r"\b(?:soekaboemi|sukabumi)\b",
+    "cilacap": r"\b(?:tjilatjap|cilacap)\b",
+    "tasikmalaya": r"\b(?:tasikmalaja|tasikmalaya)\b",
+    "cirebon": r"\b(?:cheribon|cirebon)\b",
+    "madoera": r"\b(?:madoera|madura)\b",
+    "aceh": r"\b(?:atjeh|aceh)\b",
+    "pekanbaru": r"\b(?:pakanbaroe|pekanbaru)\b",
+    "surakarta": r"\b(?:soerakarta|surakarta|solo)\b",
+    "priangan": r"\b(?:preanger|priangan)\b",
 }
-JAVA_CONTEXT = re.compile(r"\b(?:java|bandoeng|bandung|batavia|jakarta|buitenzorg|bogor|semarang|soerabaja|surabaya|djokja|djocja|yogyakarta|jogjakarta|malang|poerwokerto|tjimahi|cheribon|garoet|tjikampek)\b", re.I)
+JAVA_CONTEXT = re.compile(r"\b(?:java|djawa|bandoeng|bandung|batavia|djakarta|jakarta|buitenzorg|bogor|semarang|soerabaja|surabaya|djokja|djocja|djokjakarta|yogyakarta|jogjakarta|malang|poerwokerto|tjimahi|cimahi|cheribon|cirebon|garoet|garut|soekaboemi|sukabumi|tjilatjap|cilacap|tasikmalaja|tasikmalaya|soerakarta|surakarta|solo|preanger|priangan|kedoe|banten|tjikampek|pasoeroean|probolinggo|madioen|madiun|djember|jember|banjoemas|banyumas)\b", re.I)
 KNIL = re.compile(r"\bknil\b|koninklijk nederlands(?:ch)?[- ]indisch leger|militaire luchtvaart knil|nederlands[- ]indisch leger", re.I)
 MILITARY = re.compile(r"\b(?:militair(?:en)?|solda(?:at|ten)|soldier(?:s)?|sergeant|officier|kapitein|luitenant|generaal|bataljon|eskadron|compagnie|krijgsraad|troepen|geweer|wapen(?:s)?|tank(?:s)?|kazern(?:e|es)|vliegveld|artillerie|leger)\b|\bknil\b", re.I)
 DECOLONIZATION = re.compile(
-    r"\b(?:bersiap|tni|pemoeda|republikeins(?:e)?|republiek indonesia|onafhankelijkheidsstrijd|"
+    r"\b(?:bersiap|tni|apri|apris|pemoeda|pemuda|laskar|bkr|tkr|tri|republikeins(?:e)?|republiek indonesia|onafhankelijkheidsstrijd|"
     r"onafhankelijkheid|indonesian national revolution|indonesian war of independence|"
     r"agresi militer|politionele actie|politionele acties|perang kemerdekaan|perang revolusi|"
     r"linggadjati|renville|roem[- ]royen|soevereiniteitsoverdracht)\b",
     re.I,
 )
-SOCIETY = re.compile(r"\b(?:bevolking|inwoner(?:s)?|familie|gezin|vrouw(?:en)?|kind(?:eren)?|school|onderwijs|markt|pasar|dorp|desa|kampong|werk(?:zaamheden)?|arbeid|boer(?:en)?|landbouw|feest|bruiloft|huwelijk|dagelijks leven)\b", re.I)
-ARCHITECTURE = re.compile(r"\b(?:gebouw|gebouwen|architectuur|architect|woning|huis|huizen|kantoor|kerk|moskee|tempel|straat|plein|aloon[- ]?aloon|station|brug|fabriek|schoolgebouw)\b", re.I)
-TRANSPORT = re.compile(r"\b(?:trein|spoor(?:baan|weg)?|tram|station|haven|schip|vliegtuig|luchtvaart|tank|voertuig|auto|brug|veerboot)\b", re.I)
-CULTURE = re.compile(r"\b(?:muziek|dans|dansers|ceremonie|religie|kerk|moskee|tempel|feest|theater|toneel|kunst|traditie)\b", re.I)
-LANDSCAPE = re.compile(r"\b(?:landschap|berg(?:en)?|vulkaan|rivier|plantage|bos|kust|meer|sawah|rijstveld)\b", re.I)
+SOCIETY = re.compile(r"\b(?:bevolking|inwoner(?:s)?|familie|gezin|vrouw(?:en)?|kind(?:eren)?|school|onderwijs|markt|pasar|dorp|desa|kampong|werk(?:zaamheden)?|arbeid|boer(?:en)?|landbouw|feest|bruiloft|huwelijk|dagelijks leven|njai|mardijkers|mestiezen|repatriant(?:en)?)\b", re.I)
+ARCHITECTURE = re.compile(r"\b(?:gebouw|gebouwen|architectuur|architect|woning|huis|huizen|kantoor|kerk|moskee|tempel|straat|plein|aloon[- ]?aloon|station|brug|fabriek|schoolgebouw|gedung sate|gedung merdeka|technische hoogeschool)\b", re.I)
+TRANSPORT = re.compile(r"\b(?:trein|spoor(?:baan|weg)?|tram|station|haven|schip|vliegtuig|luchtvaart|tank|voertuig|auto|brug|veerboot|knilm|kpm|pakketvaart|rotterdamsche lloyd|spoorlijn)\b", re.I)
+CULTURE = re.compile(r"\b(?:muziek|dans|dansers|ceremonie|religie|kerk|moskee|tempel|feest|theater|toneel|kunst|traditie|adat|batik|gamelan|wajang|wajang koelit|pasar malam|sarong|klamboe|nootmuskaat|kruidnagel)\b", re.I)
+LANDSCAPE = re.compile(r"\b(?:landschap|berg(?:en)?|vulkaan|rivier|plantage|bos|kust|meer|sawah|rijstveld|krakatau|lahar|nootmuskaat|kruidnagel)\b", re.I)
 
 
 def binding_value(row: dict, key: str) -> str | None:
