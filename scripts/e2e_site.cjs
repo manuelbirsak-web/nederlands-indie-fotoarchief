@@ -53,22 +53,41 @@ async function main() {
     );
 
     if (!(await page.title()).includes('Indisch Beeldarchief')) failures.push('Homepage title missing');
+    const normalizationCheck = await page.evaluate(() => ({
+      accented: normalizeArchiveText('Nederlands-Indië, Bandoeng') ,
+      punctuationOnly: normalizeArchiveText('--- …')
+    }));
+    if (normalizationCheck.accented !== 'nederlands indie bandoeng' || normalizationCheck.punctuationOnly !== '') {
+      failures.push('Evidence text normalization regression: ' + JSON.stringify(normalizationCheck));
+    }
     const taxonomyChecks = await page.evaluate(() => {
       const cases = [
-        {text:'Een Nederlandse soldaat in Batavia, 1948', required:['military'], forbidden:['knil','bersiap']},
-        {text:'Straatbeeld in Bandoeng, 1946', required:['bandung'], forbidden:['bersiap','knil']},
-        {text:'Bersiap in Batavia, 1946', required:['bersiap','decolonization','batavia'], forbidden:['knil']},
-        {text:'KNIL-officier bij kazerne in Bandoeng', required:['knil','military','bandung'], forbidden:['bersiap']},
-        {text:'Dagelijks leven op een pasar met batik en gamelan in Java', required:['daily','culture','java'], forbidden:['knil','bersiap']}
+        {text:'Een Nederlandse soldaat in Batavia, 1948', topics:['military'], places:['batavia']},
+        {text:'Straatbeeld in Bandoeng, 1946', topics:['architecture'], places:['bandung']},
+        {text:'Bersiap in Batavia, 1946', topics:['bersiap','decolonization'], places:['batavia']},
+        {text:'KNIL-officier bij kazerne in Bandoeng', topics:['knil','military'], places:['bandung']},
+        {text:'Dagelijks leven op een pasar met batik en gamelan in Java', topics:['daily','society','culture'], places:['java']}
       ];
       return cases.map(item => {
         const result = classifyArchiveEvidence(item.text);
-        const combined = [...result.topics, ...result.places];
-        return {text:item.text, requiredMissing:item.required.filter(x => !combined.includes(x)), forbiddenPresent:item.forbidden.filter(x => combined.includes(x)), labels:combined};
+        const actualTopics = [...result.topics].sort();
+        const actualPlaces = [...result.places].sort();
+        const expectedTopics = [...item.topics].sort();
+        const expectedPlaces = [...item.places].sort();
+        return {
+          text:item.text,
+          missingTopics:expectedTopics.filter(x => !actualTopics.includes(x)),
+          unexpectedTopics:actualTopics.filter(x => !expectedTopics.includes(x)),
+          missingPlaces:expectedPlaces.filter(x => !actualPlaces.includes(x)),
+          unexpectedPlaces:actualPlaces.filter(x => !expectedPlaces.includes(x)),
+          actualTopics,actualPlaces
+        };
       });
     });
     for (const check of taxonomyChecks) {
-      if (check.requiredMissing.length || check.forbiddenPresent.length) failures.push('Evidence taxonomy regression: ' + JSON.stringify(check));
+      if (check.missingTopics.length || check.unexpectedTopics.length || check.missingPlaces.length || check.unexpectedPlaces.length) {
+        failures.push('Evidence taxonomy regression: ' + JSON.stringify(check));
+      }
     }
     try {
       await page.waitForFunction(() => document.querySelectorAll('#results .photo').length > 0, null, { timeout: 20000 });
