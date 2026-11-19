@@ -41,8 +41,8 @@ table{width:100%;border-collapse:collapse;background:var(--card);font:13px/1.5 s
 th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}
 th{background:#e9e3d5}
 .small{font:12px/1.55 system-ui,sans-serif;color:var(--muted)}
-@media(max-width:700px){.people{grid-template-columns:1fr}.person-top{grid-template-columns:104px minmax(0,1fr);gap:14px}.portrait{width:100%;max-width:104px;height:136px;background-size:500% auto}.portrait.pair{width:100%;max-width:104px;height:122px;background-size:230% auto}.scans{grid-template-columns:repeat(2,minmax(0,1fr))}main{padding-top:20px}}
-@media(max-width:390px){.scans{grid-template-columns:1fr}.person{padding:12px}.person-top{grid-template-columns:104px minmax(0,1fr)}.portrait{width:100%;max-width:104px}.portrait.pair{width:100%;max-width:104px;height:122px}}
+@media(max-width:700px){.people{grid-template-columns:1fr}.person-top{display:grid;grid-template-columns:104px minmax(0,1fr);gap:14px;width:100%;max-width:100%;overflow:hidden}.portrait{display:block;width:104px!important;min-width:104px;max-width:104px;height:136px;background-size:500% auto}.portrait.pair{width:104px!important;min-width:104px;max-width:104px;height:122px;background-size:230% auto}.person-top>div:not(.portrait){min-width:0;max-width:100%;overflow-wrap:anywhere}.scans{grid-template-columns:repeat(2,minmax(0,1fr))}main{padding-top:20px}}
+@media(max-width:390px){.scans{grid-template-columns:1fr}.person{padding:12px}.person-top{grid-template-columns:104px minmax(0,1fr)}.portrait,.portrait.pair{width:104px!important;min-width:104px;max-width:104px}.portrait.pair{height:122px}}
 </style>
 </head>
 <body>
