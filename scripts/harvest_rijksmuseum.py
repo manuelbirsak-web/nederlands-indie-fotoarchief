@@ -104,7 +104,8 @@ TOPIC_PATTERNS = {
     ),
     "culture": re.compile(
         r"\b(?:muziek|dans|dansers|ceremonie|religie|kerk|moskee|tempel|feest|"
-        r"theater|toneel|kunst|traditie|music|dance|ceremony|religion)\b",
+        r"theater|toneel|kunst|traditie|music|dance|ceremony|religion|batik|gamelan|"
+        r"wajang|wayang|wajang koelit|adat|sarong|pasar malam)\b",
         re.I,
     ),
     "landscape": re.compile(
