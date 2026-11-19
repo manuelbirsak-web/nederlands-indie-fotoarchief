@@ -20,17 +20,18 @@ h1{font:normal clamp(46px,7.8vw,92px)/.98 var(--serif);letter-spacing:-.045em;ma
 .hero p{font:clamp(17px,2vw,20px)/1.6 var(--serif);color:#e3e0d5;max-width:740px;margin:0}
 .hero-bottom{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:30px;font:12px var(--sans);color:#ddd2bd;letter-spacing:.04em}
 .hero-bottom span{display:inline-flex;align-items:center;gap:8px}.dot{width:5px;height:5px;border-radius:50%;background:var(--gold2)}
-nav{position:sticky;top:0;z-index:30;background:#fffdf7f5;backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:12px max(3vw,calc((100vw - 1380px)/2));display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:10px 24px;align-items:start}
-.nav-group{min-width:0;display:flex;flex-wrap:wrap;align-items:center;gap:5px 7px}
-.nav-group-label{flex:0 0 100%;font:700 9px var(--sans);letter-spacing:.15em;text-transform:uppercase;color:#8a7044;padding:0 10px 3px}
-nav button{border:1px solid transparent;border-radius:3px;background:transparent;color:#536057;font:600 12px var(--sans);padding:10px 12px;white-space:normal;text-align:left;line-height:1.25}
+.site-layout{display:grid;grid-template-columns:270px minmax(0,1fr);gap:0;align-items:start;max-width:1600px;margin:0 auto}
+nav{position:sticky;top:0;z-index:30;align-self:start;min-width:0;max-height:100vh;overflow-y:auto;overflow-x:hidden;background:#fffdf7f5;backdrop-filter:blur(14px);border-right:1px solid var(--line);padding:22px 14px 22px 3vw;display:grid;grid-template-columns:minmax(0,1fr);gap:20px;align-content:start}
+.nav-group{min-width:0;display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch;gap:6px}
+.nav-group-label{font:700 9px var(--sans);letter-spacing:.15em;text-transform:uppercase;color:#8a7044;padding:0 10px 4px;overflow-wrap:anywhere}
+nav button{display:block;width:100%;min-width:0;box-sizing:border-box;border:1px solid transparent;border-radius:3px;background:transparent;color:#536057;font:600 12px var(--sans);padding:10px 12px;white-space:normal;text-align:left;line-height:1.3;overflow-wrap:anywhere}
 nav button:hover,nav button.active{color:var(--forest);background:#eee9dd;border-color:#ded5c3}
-nav a.nav-link{display:block;border:1px solid #e2dccf;border-radius:3px;background:#faf8f1;color:#536057;font:600 12px var(--sans);padding:10px 12px;white-space:normal;line-height:1.25;text-decoration:none}
+nav a.nav-link{display:block;width:100%;min-width:0;box-sizing:border-box;border:1px solid #e2dccf;border-radius:3px;background:#faf8f1;color:#536057;font:600 12px var(--sans);padding:10px 12px;white-space:normal;line-height:1.3;text-decoration:none;overflow-wrap:anywhere}
 nav a.nav-link:hover{color:var(--forest);background:#eee9dd;border-color:#cdbb98}
 nav .primary-tab{color:var(--forest);font-weight:750}
-nav .family-tab{background:#e9e3d5;border-color:#d8c9ad}
-nav .nav-divider{display:none}
-main{max-width:1380px;margin:auto;padding:38px 5vw 82px}
+nav .family-tab{background:#e9e3d5;border-color:#d8c9ad;border-left:3px solid #9b7840}
+nav .battalion-tab{background:#f1ecdf;border-left:3px solid #9b7840}
+main{max-width:1380px;min-width:0;width:100%;margin:0 auto;padding:38px 5vw 82px}
 .intro{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(240px,.8fr);gap:44px;align-items:start;margin:4px 0 30px}
 h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;margin:8px 0 13px}
 .intro p{max-width:760px;margin:0;color:#4b584f;font-size:17px}
@@ -77,6 +78,11 @@ h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;mar
 .record-meta .tag{font:10px var(--sans)}
 .record-card a{font:600 11px var(--sans);color:#795c2b;text-decoration:none}
 .record-card a:hover{text-decoration:underline}
+@media(max-width:900px){
+ .site-layout{grid-template-columns:minmax(0,1fr)}
+ nav{position:relative;top:auto;max-height:none;overflow:visible;border-right:0;border-bottom:1px solid var(--line);padding:12px 4vw;gap:14px}
+ .nav-group{grid-template-columns:minmax(0,1fr);gap:6px}
+}
 @media(max-width:900px){nav{grid-template-columns:1fr;gap:8px;padding-top:10px;padding-bottom:10px}.nav-group{gap:4px 6px}.nav-group-label{padding-bottom:2px}}
 @media(max-width:620px){.filters select{width:100%;max-width:100%;min-width:0}.topline{font-size:9px;letter-spacing:.1em}.topline span:last-child{display:none}.hero{padding-top:47px;padding-bottom:42px}.hero-bottom{font-size:10px}nav{position:relative;padding:10px 4vw;gap:12px}.nav-group{display:grid;grid-template-columns:1fr;gap:6px}.nav-group-label{grid-column:1/-1;padding:0 2px 4px}.nav-group button,.nav-group a.nav-link{min-height:42px;display:flex;align-items:center;padding:9px 10px;font-size:11px}.nav-group .family-tab{grid-column:1/-1;min-height:44px;font-size:13px;border-left:3px solid #9b7840}.nav-group-research .nav-link{border-left:3px solid #c4ad83}.nav-group .battalion-tab{grid-column:1/-1;margin-top:-2px;border-left:3px solid #9b7840;background:#f1ecdf}.intro{grid-template-columns:1fr;gap:18px}main{padding-top:27px}.discovery{padding:15px}.searchrow{flex-direction:column}.searchrow .primary{padding:13px}.results,.archive-grid{grid-template-columns:1fr}.photo-media{aspect-ratio:16/10}.head{align-items:start;flex-direction:column}.head-right{text-align:left}.filters{align-items:start}.filters label{width:100%}}
 /* Mobile content layout: keep research text and source cards readable */
@@ -88,6 +94,13 @@ h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;mar
 #familyBirsak,#deepSearch{scroll-margin-top:78px}
 body.family-view main > :not(#familyBirsak):not(#deepSearch){display:none!important}
 body.family-view #familyBirsak,body.family-view #deepSearch{display:block!important}
+
+.external-media-consent{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin:1rem 0;padding:1rem 1.1rem;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+.external-media-consent p{margin:.35rem 0 0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.external-media-consent a{color:var(--forest2);text-decoration:underline}
+.external-media-consent button{flex:0 0 auto}
+.photo-media img[data-external-src]:not([src]){background:linear-gradient(135deg,#e9e5dc,#f6f3ed);min-height:220px}
+@media(max-width:680px){.external-media-consent{align-items:flex-start;flex-direction:column}.external-media-consent button{width:100%}}
 </style>
 </head>
 <body>
@@ -101,24 +114,25 @@ body.family-view #familyBirsak,body.family-view #deepSearch{display:block!import
 <div class="hero-bottom"><span><i class="dot"></i> Nederlands-Indië</span><span><i class="dot"></i> Java & Bandoeng</span><span><i class="dot"></i> KNIL & samenleving</span></div>
 </div>
 </header>
+<div class="site-layout">
 <nav id="nav" aria-label="Hoofdnavigatie">
-<div class="nav-group nav-group-views" aria-label="Beeldcollecties">
-<span class="nav-group-label">Beeldcollecties</span>
-<button class="active" data-view="home" aria-current="page">Overzicht</button>
-<button data-view="indies">Nederlands-Indië</button>
-<button data-view="java">Java</button>
-<button data-view="bandung">Bandoeng / Bandung</button>
-<button data-view="knil">KNIL &amp; militair</button>
-<button data-view="bersiap">Bersiap &amp; onafhankelijkheidsstrijd</button>
-<button data-view="daily">Samenleving</button>
-</div>
-<div class="nav-group nav-group-research" aria-label="Familieonderzoek en archieven">
-<span class="nav-group-label">Familieonderzoek &amp; archieven</span>
-<button class="primary-tab family-tab" data-view="family">Familie Birsak</button>
-<a class="nav-link primary-tab" href="research/familie-birsak-genealogie.html">Birsak · genealogie &amp; bronnen</a>
-<a class="nav-link primary-tab" href="research/paspoortaanvragen.html">Paspoortarchief Birsak</a>
-<a class="nav-link primary-tab battalion-tab" href="research/15e-bataljon-tjikoedapateuh.html">15e Bataljon &amp; Tjikoedapateuh</a>
-</div>
+  <div class="nav-group nav-group-research" aria-label="Familieonderzoek en archieven">
+    <span class="nav-group-label">Familieonderzoek &amp; archieven</span>
+    <button class="active primary-tab family-tab" data-view="family" aria-current="page">01 · FAMILIE BIRSAK</button>
+    <a class="nav-link primary-tab" href="research/paspoortaanvragen.html">02 · Paspoortarchief Birsak</a>
+    <a class="nav-link primary-tab battalion-tab" href="research/15e-bataljon-tjikoedapateuh.html">03 · 15e Bataljon &amp; Tjikoedapateuh</a>
+    <a class="nav-link primary-tab" href="research/familie-birsak-genealogie.html">04 · Birsak · genealogie &amp; bronnen</a>
+  </div>
+  <div class="nav-group nav-group-views" aria-label="Beeldcollecties">
+    <span class="nav-group-label">Beeldcollecties</span>
+    <button data-view="home">05 · Overzicht</button>
+    <button data-view="indies">06 · Nederlands-Indië</button>
+    <button data-view="java">07 · Java</button>
+    <button data-view="bandung">08 · Bandoeng / Bandung</button>
+    <button data-view="knil">09 · KNIL &amp; militair</button>
+    <button data-view="bersiap">10 · Bersiap &amp; onafhankelijkheidsstrijd</button>
+    <button data-view="daily">11 · Samenleving</button>
+  </div>
 </nav>
 <main id="main">
 <section class="intro">
@@ -140,6 +154,11 @@ body.family-view #familyBirsak,body.family-view #deepSearch{display:block!import
 </div>
 </section>
 <div class="head"><div><div class="section-label">Wikimedia Commons · live beeldresultaten</div><h2 id="resultTitle">Historische foto's</h2></div><div class="head-right"><span id="count" aria-live="polite">Klaar om te zoeken</span><br><span id="sourceHint">Per resultaat: bronpagina en rechteninformatie</span></div></div>
+<section id="externalMediaConsent" class="external-media-consent" aria-live="polite" aria-label="Externe beeldbronnen">
+  <div><strong id="externalMediaConsentTitle">Externe beelden staan standaard uit</strong>
+  <p id="externalMediaConsentText">De fotogalerij gebruikt externe beeldbronnen van Wikimedia en het Rijksmuseum. Wikimedia kan bij het laden van foto's de cookie WMF-Uniq plaatsen voor bezoekerstellingen, A/B-tests en DDoS-bescherming. Foto's worden pas geladen nadat je daarvoor kiest. <a href="https://foundation.wikimedia.org/wiki/Policy:Cookie_statement/nl" target="_blank" rel="noopener noreferrer">Lees het cookiebeleid van Wikimedia</a>.</p></div>
+  <button id="externalMediaConsentToggle" class="secondary" type="button">Externe beelden laden</button>
+</section>
 <div id="results" class="results" aria-live="polite" aria-busy="false"><div class="status"><strong>Beeldcollectie</strong>Foto’s uit 1800–1959 en relevante ongedateerde beelden over Nederlands-Indië, de koloniale periode, Bersiap en KNIL worden getoond.</div></div>
 <button class="more" id="more" type="button" hidden>Meer foto's laden</button>
 <p class="fine">De standaardweergave toont beeldbestanden met een expliciete datering tussen 1800 en 1959 én relevante ongedateerde beelden waarvan titel of beschrijving aantoonbaar verwijst naar Nederlands-Indië, de koloniale periode, de Bersiap-periode of het KNIL. Een ongedateerd bestand wordt dus niet automatisch afgewezen, maar moet inhoudelijk bij de gekozen rubriek passen. Bekend modern beeldmateriaal na 1959 wordt standaard uitgesloten. De Commons-uploaddatum geldt nooit als historische opnamedatum. Logo’s, boekomslagen, tijdschriften en andere niet-fotografische bestanden blijven uitgesloten.</p>
@@ -198,7 +217,18 @@ body.family-view #familyBirsak,body.family-view #deepSearch{display:block!import
 </ul>
 <p class="fine">De zeven portretuitsneden zijn weergavecrops uit de bijbehorende originele paspoortkaarten; de originele scans blijven ongewijzigd in het Paspoortarchief. Bij de overige namen is in de huidige collectie geen betrouwbaar gekoppelde paspoortfoto beschikbaar. Er zijn geen portretten op basis van gelijkenis of vermoedens toegewezen.</p></article>
 </div>
-<div class="record-card" style="margin:16px 0"><h3>Nieuwe familiefoto · 16 personen · IMG_5110.jpeg</h3><p>Een tweede kleurenfoto met 16 genummerde personen en oorspronkelijk bijschrift is ontvangen. Het bijschrift noemt onder anderen Bob Birsak, Lies Birsak, Jeanne-Marie van Nynatten-Birsak, Hans Birsak en Erwine Birsak. De volledige transcriptie en naamkoppelingen staan in het <a href="research/familie-birsak-genealogie.html">genealogische dossier</a>.</p><p class="fine">Het originele bestand IMG_5110.jpeg is nog niet in de repository aanwezig; daarom wordt hier geen ontbrekende afbeelding nagebootst.</p></div>
+<article class="record-card" style="margin:16px 0"><h3>CBG-bron · Ernanie Ernest Birsak en Caroliene Adele Schrijn</h3><p>Een afzonderlijke CBG-paspoortaanvraag (registratie <strong>B13323</strong>) bevestigt in de scan de naam Ernanie Ernest Birsak, geboren 10-07-1877 in Djokjakarta, en vermeldt als echtgenote Caroliene Adele Schrijn, geboren 10-10-1879 in Buitenzorg. De scan noemt ook zijn ouders Frederik George Willem Birsak en Johanna Theresia Plasman. Deze primaire documentbron ondersteunt de genealogische aansluiting; zij bewijst niet op zichzelf wie precies op de familiefoto staan.</p><p class="fine">Bron: CBG Verzameling, Indisch Oud-Paspoortarchief 1950–1959, registratie B13323. De scan ondersteunt de genealogische aansluiting; de volledige familieverbanden staan in het genealogische dossier.</p></article>
+<article class="record-card" style="margin-top:12px"><h3>Bronkoppeling · Theresia Birsak-Atjih en Hubert / Bert</h3><p>Het bijschrift bij het familieportret identificeert persoon 14 als <strong>Theresia Birsak-Atjih</strong>, echtgenote van <strong>Bert Birsak</strong>. Een CBG-record uit het Indisch Oud-Paspoortarchief (registratie <strong>B13309</strong>) beschrijft een aanvraag van <strong>Atjih</strong> uit 1927, geboren in Padalarang, en vermeldt als huwelijkspartner exact de naam <strong>“Hubert Maniel Birjak”</strong>. In het familieonderzoek wordt Bert geïdentificeerd als Hubert Manuel Birsak; ook de schrijfwijzen Herbert en Bert komen voor.</p><p>De overeenkomst tussen de naam Atjih, de echtgenootrelatie en de naam Hubert maakt dit een sterke onderzoekshypothese. De spelling “Maniel Birjak” wijkt echter af van “Manuel Birsak”. De CBG-detailpagina vermeldt bovendien dat er geen scan zichtbaar is. Daarom worden de oorspronkelijke bronspelling en de onzekerheid behouden: dit is een waarschijnlijke koppeling, nog geen definitief bewezen identiteit.</p><p class="fine">Bron: CBG Verzameling, Indisch Oud-Paspoortarchief 1950–1959, registratie B13309 (detailrecord; geen scan zichtbaar wegens privacybeperking).</p></article>
+<details class="record-card" style="margin-top:16px"><summary><strong>Aanvullende CBG-paspoortaanvragen met de naam Birsak</strong> · bronrecords en nog openstaande familieverbanden</summary><div style="margin-top:14px"><p>In het aangeleverde CBG-materiaal zijn meerdere afzonderlijke personen met de naam Birsak gevonden. De records hieronder zijn op naam en documentgegevens gecontroleerd. Dat betekent niet dat alle onderlinge familieverbanden al vaststaan.</p><ul>
+<li><strong>B13323 · Ernanie Ernest Birsak</strong> (10-07-1877, Djokjakarta). De scan vermeldt echtgenote Caroliene Adele Schrijn (10-10-1879, Buitenzorg) en ouders Frederik George Willem Birsak (31-07-1843) en Johanna Theresia Plasman (07-12-1851). Dit sluit aan bij de hierboven genoemde genealogische familiebron.</li>
+<li><strong>B13337 · Jacob Marinus Birsak</strong> (22-11-1912, Sentoel). De scan vermeldt ouders Josef Pieter Birsak en Jacoba Cornelia Pieters. Zijn relatie tot Ernanie Ernest of Hubert Manuel is nog niet aangetoond.</li>
+<li><strong>B13353 · Martha Leonora Pieters</strong> (21-10-1915, Mr Cornelis). Haar aanvraag noemt echtgenoot Jacob Marinus Birsak, geboren 21-08-1887 in Muntok. Dit is een andere Jacob Marinus dan de aanvrager uit B13337 (1912).</li>
+<li><strong>B13355 · Maximiliane Solbrig</strong> (02-02-1914, Solo). Haar aanvraag noemt echtgenoot George Gaston Andreas Birsak, geboren 16-03-1910 in Djokjakarta.</li>
+<li><strong>B13367 · Wilhelmina Hartmann</strong> (24-06-1927, Watembonie). Haar aanvraag noemt echtgenoot Wilhelm Ilonkius Birsak, geboren 20-04-1921 in Cirebon.</li>
+<li><strong>R05497 · Charles Riedyk</strong> (21-10-1883, Semarang). Zijn aanvraag noemt echtgenote Johanna Adolfine Birsak, geboren 06-05-1885 in Djokjakarta.</li>
+<li><strong>B13309 · Atjih</strong> (1927, Padalarang). De CBG-detailpagina vermeldt als huwelijkspartner “Hubert Maniel Birjak”. De mogelijke koppeling aan Hubert Manuel Birsak / Bert wordt hierboven afzonderlijk toegelicht; bij dit record is geen scan zichtbaar.</li>
+</ul><p class="fine">Bron: CBG Verzameling, Indisch Oud-Paspoortarchief 1950–1959; registratienummers zoals vermeld. De namen en relaties zijn weergegeven zoals de documenten ze vermelden. Dezelfde achternaam of voornaam is op zichzelf geen bewijs van verwantschap.</p></div></details>
+<div class="record-card" style="margin:16px 0"><h3>Familieportret · 16 personen</h3><p>Het oorspronkelijke bijschrift bij het aangeleverde kleurenportret luidt:</p><ol><li>Jessica von Grumbkow</li><li>Caroline Siegerts</li><li>Bé Siegerts</li><li>Nanan Siegerts</li><li>Nina Siegerts-Burger</li><li>Bob Birsak</li><li>Ieleke Schrijn</li><li>Lies Birsak</li><li>Jeanne-Marie van Nynatten-Birsak</li><li>Hans Birsak</li><li>Netty Samallo-Schrijn</li><li>Eric van der Heijden</li><li>Patrick Siegerts</li><li>Erwine Birsak</li><li>Monica von Grumbkow</li><li>Ronald von Grumbkow</li></ol><p class="fine">De naamvolgorde en spelling volgen het oorspronkelijke bijschrift. Aanvullende identificaties en bronverwijzingen staan in het <a href="research/familie-birsak-genealogie.html">genealogische dossier</a>.</p></div>
 <div class="record-grid">
 <article class="record-card"><h3>Genealogie &amp; bronnen</h3><p>Stamlijnen, verwantschappen, naamvarianten en bronkritische reconstructies.</p><a href="research/familie-birsak-genealogie.html">Open Birsak · genealogie &amp; bronnen</a></article>
 <article class="record-card"><h3>Paspoortarchief Birsak</h3><p>Persoonskaarten, originele aanvragen en beschikbare portretuitsneden naast de namen.</p><a href="research/paspoortaanvragen.html">Open Paspoortarchief Birsak</a></article>
@@ -233,6 +263,7 @@ body.family-view #familyBirsak,body.family-view #deepSearch{display:block!import
 </div>
 </section>
 </main>
+</div><!-- /.site-layout -->
 <footer class="footer"><strong>Indisch Beeldarchief</strong><br>Onafhankelijk, groeiend overzicht van historische beeldbronnen. Geen officiële archiefinstelling en geen complete reproductie van alle bestaande collecties.<br>Beeldrechten blijven bij de oorspronkelijke rechthebbenden. Raadpleeg de bronpagina vóór hergebruik.<br><a href="https://github.com/manuelbirsak-web/nederlands-indie-fotoarchief/blob/main/METHODOLOGY.md" target="_blank" rel="noopener noreferrer">Curatoriële methode</a> · <a href="https://github.com/manuelbirsak-web/nederlands-indie-fotoarchief/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">Bijdragen &amp; correcties</a></footer>
 <script>
 'use strict';
@@ -259,12 +290,29 @@ const viewTerms={
  daily:'(kampong OR desa OR aloen-aloen OR pasar OR waroeng OR warung OR toko OR sawah OR ladang OR kali OR pendopo OR grobak OR bengkel OR goedang OR gudang OR atap OR alang-alang OR baleh-baleh OR sarong OR klamboe OR mandi OR romusha OR "Indo-Europees Verbond" OR IEV OR onderwijs OR school OR HBS OR Mulo OR AMS OR NIAS OR totok OR Indo-Europeaan OR Indo-Europeanen OR "Vreemde Oosterlingen" OR Chinees OR Arabier OR Maleier OR trekkers OR blijvers OR besaran OR planterswoning OR onderneming OR rubberplantage OR aardolie OR petroleum OR Atjeh OR Aceh OR Mentawai OR Nias OR Papua OR "Nieuw-Guinea" OR Soekarno OR "gouverneur-generaal" OR "ethische politiek" OR "Indische Nederlanders" OR "Indo-Europees") OR adat OR batik OR gamelan OR wajang OR "wajang koelit" OR pendopo OR "traditionele huizen" OR "Indische muziek" OR "Indisch album" OR "Indische Nederlanders" OR njai OR totok OR mestiezen OR Mardijkers OR "Indische wandelwegen" OR "pasar malam" OR landbouwonderneming OR koffieplantage OR suikeronderneming OR tabaksonderneming OR theeplantage OR nootmuskaat OR kruidnagel'
 };
 const $=selector=>document.querySelector(selector);
-let view='home',place='all',customTerm='',continuation=null,loading=false,requestController=null,requestId=0,visibleCount=0;
+let view='family',place='all',customTerm='',continuation=null,queryClusterIndex=0,activeQueryClusters=[],loading=false,requestController=null,requestId=0,visibleCount=0;
 const seenFiles=new Set();
 const favoritesKey='indisch-beeldarchief-favorites-v1';
+const externalMediaConsentKey='indisch-beeldarchief-external-media-v1';
+let externalImagesAllowed=false;
+try{externalImagesAllowed=localStorage.getItem(externalMediaConsentKey)==='accepted'}catch(error){/* External media remains opt-in when storage is unavailable. */}
 function readFavorites(){try{return new Set(JSON.parse(localStorage.getItem(favoritesKey)||'[]'))}catch{return new Set()}}
 function writeFavorites(set){try{localStorage.setItem(favoritesKey,JSON.stringify([...set]))}catch{}}
 let favorites=readFavorites();
+function setExternalImageConsent(allowed){
+ externalImagesAllowed=Boolean(allowed);
+ try{if(externalImagesAllowed)localStorage.setItem(externalMediaConsentKey,'accepted');else localStorage.removeItem(externalMediaConsentKey)}catch(error){/* Consent applies for this page view even if storage is unavailable. */}
+ const button=$('#externalMediaConsentToggle');
+ $('#externalMediaConsentTitle').textContent=externalImagesAllowed?'Externe beelden ingeschakeld':'Externe beelden staan standaard uit';
+ $('#externalMediaConsentText').innerHTML=externalImagesAllowed
+  ? 'Je hebt ervoor gekozen externe beelden van Wikimedia en het Rijksmuseum te laden. Wikimedia kan de cookie <strong>WMF-Uniq</strong> plaatsen voor bezoekerstellingen, A/B-tests en DDoS-bescherming. Uitschakelen voorkomt nieuwe beeldverzoeken, maar verwijdert geen cookie die Wikimedia eerder heeft geplaatst. <a href="https://foundation.wikimedia.org/wiki/Policy:Cookie_statement/nl" target="_blank" rel="noopener noreferrer">Lees het cookiebeleid</a>.'
+  : 'De fotogalerij gebruikt externe beeldbronnen van Wikimedia en het Rijksmuseum. Wikimedia kan bij het laden van foto’s de cookie <strong>WMF-Uniq</strong> plaatsen voor bezoekerstellingen, A/B-tests en DDoS-bescherming. Foto’s worden pas geladen nadat je daarvoor kiest. <a href="https://foundation.wikimedia.org/wiki/Policy:Cookie_statement/nl" target="_blank" rel="noopener noreferrer">Lees het cookiebeleid</a>.';
+ button.textContent=externalImagesAllowed?'Externe beelden uitschakelen':'Externe beelden laden';
+ document.querySelectorAll('#results img[data-external-src],#rmResults img[data-external-src]').forEach(img=>{
+  if(externalImagesAllowed){if(!img.src)img.src=img.dataset.externalSrc}
+  else{img.removeAttribute('src');img.removeAttribute('srcset')}
+ });
+}
 const UI_STATE_KEY='indisch-beeldarchief-ui-state-v1';
 const allowedPeriods=new Set(['1800-1959','all','1800-1899','1900-1919','1920-1939','1940-1945','1945-1950','1950-1959','undated']);
 const allowedTopics=new Set(['','city','people','military','transport','culture','nature']);
@@ -287,7 +335,73 @@ function restoreUiState(){
   document.querySelectorAll('#bandungTopics [data-term]').forEach(button=>button.classList.toggle('selected',button.dataset.term===customTerm));
  }catch(error){/* Ignore invalid or unavailable stored state and use safe defaults. */}
 }
-function buildQuery(){if(view==='family')return '(Birsak OR Lembangweg) Bandoeng Bandung';const typed=$('#q').value.trim();let base=views[view].query;if(view==='java')base=places[place];if(view==='bandung'&&customTerm)base+=' '+customTerm;if(viewTerms[view])base+=' '+viewTerms[view];if(typed)base+=' '+typed;const topic=$('#topic').value;if(topic)base+=' '+topicTerms[topic];return base+' filetype:bitmap'}
+const viewQueryClusters={
+ home:[
+  '("Dutch East Indies" OR "Netherlands East Indies" OR "Nederlands-Indië" OR "Nederlandsche Oost-Indiën")',
+  '(VOC OR "Vereenigde Oostindische Compagnie" OR gouverneur-generaal OR gouvernement OR residentie OR "Binnenlands Bestuur")',
+  '(cultuurstelsel OR "ethische politiek" OR "Batig slot" OR slavernij OR opium OR specerijenhandel)',
+  '(Atjeh OR Aceh OR Sumatra OR Borneo OR Celebes OR Molukken OR Madoera OR Papua OR "Nieuw-Guinea")',
+  '(Indische Nederlanders OR Indo-Europeanen OR repatriëring OR "onafhankelijkheidsstrijd")'
+ ],
+ indies:[
+  '("Dutch East Indies" OR "Nederlands-Indië" OR archipel OR residentie OR gouvernement OR gewest)',
+  '(interneringskamp OR burgerkamp OR krijgsgevangenkamp OR werkkamp OR opvangkamp OR Kempeitai)',
+  '(Buitengewesten OR Sumatra OR Borneo OR Celebes OR Molukken OR Papua OR Mentawai OR Nias)',
+  '(BKR OR TKR OR TRI OR TNI OR PETA OR NICA OR RAPWI OR APWI OR SEAC)',
+  '(Indische Nederlanders OR repatriëring OR deelstaten OR "Nederlands Nieuw-Guinea")'
+ ],
+ java:[
+  '(Java OR Djawa OR Bandoeng OR Bandung OR Batavia OR Djakarta OR Jakarta OR Buitenzorg OR Bogor)',
+  '(Tjimahi OR Cimahi OR Semarang OR Soerabaja OR Surabaya OR Djokja OR Djocja OR Yogyakarta)',
+  '(Garoet OR Garut OR Soekaboemi OR Sukabumi OR Tjilatjap OR Cilacap OR Tasikmalaja OR Tasikmalaya)',
+  '(Soerakarta OR Surakarta OR Solo OR Kedoe OR Preanger OR Priangan OR Banten OR Bantam)',
+  '(Cheribon OR Cirebon OR Tjiandjoer OR Pasoeroean OR Probolinggo OR Madioen OR Madiun OR Djember OR Jember)'
+ ],
+ bandung:[
+  '(Bandoeng OR Bandung OR Tjimahi OR Cimahi OR Lembang OR Dago)',
+  '(Bragaweg OR Tjihapit OR Tjiboenoet OR Andir OR Karees OR Ramawijk)',
+  '("Technische Hoogeschool" OR "Gedung Sate" OR "Gedung Merdeka" OR "Bandung Lautan Api")',
+  '(Soekamiskin OR "Tjihapit kamp" OR "Depot Mobiele Artillerie" OR "Depot Speciale Troepen")'
+ ],
+ knil:[
+  '(KNIL OR "Koninklijk Nederlandsch-Indisch Leger" OR "Nederlandsch-Indisch Leger" OR "Royal Netherlands East Indies Army")',
+  '(ML-KNIL OR MLD OR "Militaire Luchtvaart Dienst" OR "Koninklijke Marine Reserve" OR KMR OR KNILM)',
+  '(marechaussee OR veldpolitie OR garnizoen OR kazerne OR bivak OR patrouille OR infanterie OR artillerie)',
+  '(klewang OR karabijn OR bajonet OR mitrailleur OR veldgeschut OR pantserwagen OR gurkha OR heiho)',
+  '(PETA OR NEFIS OR Mariniersbrigade OR Stoottroepen OR Tijgerbrigade OR "Depot Speciale Troepen")'
+ ],
+ bersiap:[
+  '(Bersiap OR "Indonesian National Revolution" OR "Indonesian War of Independence" OR "Revolusi Nasional Indonesia")',
+  '(Pemoeda OR pemuda OR laskar OR BKR OR "Badan Keamanan Rakjat" OR TKR OR TRI OR TNI OR APRI OR APRIS)',
+  '(NICA OR PID OR RAPWI OR APWI OR SEAC OR AMACAB OR "Displaced Persons")',
+  '(Linggadjati OR Renville OR "Madioen-opstand" OR Rawagede OR "soevereiniteitsoverdracht")',
+  '("Politionele Actie" OR "Agresi Militer" OR evacuatie OR vluchtelingen OR "Brits-Indische troepen")'
+ ],
+ daily:[
+  '(kampong OR desa OR aloen-aloen OR pasar OR waroeng OR warung OR toko OR sawah OR ladang)',
+  '(onderwijs OR school OR HBS OR Mulo OR AMS OR gezin OR familie OR bevolking OR arbeid)',
+  '(adat OR batik OR gamelan OR wajang OR "wajang koelit" OR "pasar malam" OR religie)',
+  '(rubberplantage OR koffieplantage OR suikeronderneming OR theeplantage OR nootmuskaat OR kruidnagel)',
+  '(Indische Nederlanders OR Indo-Europeanen OR njai OR Mardijkers OR mestiezen OR repatrianten)'
+ ]
+};
+function buildQueryClusters(){
+ if(view==='family')return ['(Birsak OR Lembangweg) Bandoeng Bandung filetype:bitmap'];
+ const typed=$('#q').value.trim();
+ let base=views[view].query;
+ if(view==='java')base=places[place];
+ if(view==='bandung'&&customTerm)base+=' '+customTerm;
+ const clusters=[base,...(viewQueryClusters[view]||[]),...(viewTerms[view]?[viewTerms[view]]:[])];
+ const topic=$('#topic').value;
+ return [...new Set(clusters.filter(Boolean).map(query=>{
+  let result=query;
+  if(typed)result+=' '+typed;
+  if(topic)result+=' '+topicTerms[topic];
+  return result+' filetype:bitmap';
+ }))];
+}
+function buildQuery(){return buildQueryClusters()[0]||'(“Dutch East Indies”) filetype:bitmap'}
+
 function yearFromMetadata(meta){
  const raw=meta?.DateTimeOriginal?.value||'';
  const match=String(raw).match(/(?:^|\D)((?:18|19|20)\d{2})(?:\D|$)/);
@@ -304,6 +418,51 @@ function yearFromMetadata(meta){
  return null;
 }
 function periodMatches(year){const range=$('#period').value;if(range==='all')return true;if(range==='undated')return year===null;if(year===null)return range==='1800-1959';const [start,end]=range.split('-').map(Number);return year>=start&&year<=end}
+function normalizeArchiveText(value){return String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('nl').replace(/[^\p{L}\p{N}]+/gu,' ').trim()}
+function archiveTextContains(normalized,term){const needle=normalizeArchiveText(term);return needle.length>0&&(' '+normalized+' ').includes(' '+needle+' ')}
+const ARCHIVE_ALIASES={
+ bandung:['bandoeng','bandung','tjimahi','cimahi','tjihapit','bragaweg','gedung sate','bandung lautan api','gedung merdeka'],
+ batavia:['batavia','djakarta','jakarta'],
+ bogor:['buitenzorg','bogor'],
+ semarang:['semarang'],
+ surabaya:['soerabaja','surabaya'],
+ yogyakarta:['djokja','djocja','djokjakarta','yogyakarta','jogjakarta'],
+ java:['java','djawa','preanger','priangan','soerakarta','surakarta','solo','kedoe','banten','bantam'],
+ sumatra:['sumatra','sumatera','atjeh','aceh','padang','palembang','medan'],
+ otherIslands:['borneo','kalimantan','celebes','sulawesi','molukken','madoera','madura','papua','nieuw guinea'],
+};
+const ARCHIVE_TOPICS={
+ knil:['knil','ml-knil','ml knil','nederlandsch-indisch leger','nederlandsch indisch leger','koninklijk nederlandsch-indisch leger','koninklijk nederlandsch indisch leger','royal netherlands east indies army','netherlands indies army'],
+ military:['soldaat','soldaten','soldier','military','militair','leger','bataljon','artillerie','infanterie','wapen','wapens','kazerne','marechaussee','veldpolitie','mariniersbrigade','stoottroepen','peta','nefis','garnizoen','bivak','patrouille','cavalerie','klewang','karabijn','bajonet','mitrailleur','stadswacht','landstormer','kampement'],
+ decolonization:['indonesian national revolution','indonesian war of independence','revolusi nasional indonesia','perang kemerdekaan','politionele actie','agresi militer','onafhankelijkheidsstrijd','linggadjati','renville','soevereiniteitsoverdracht','pemoeda','pemuda','laskar','bkr','tkr','tri','tni','apri','apris'],
+ bersiap:['bersiap'],
+ camp:['interneringskamp','burgerkamp','krijgsgevangenkamp','werkkamp','opvangkamp','kempeitai','rapwi','apwi','seac','amacab'],
+ society:['kampong','desa','pasar','waroeng','warung','sawah','ladang','romusha','onderwijs','school','familie','gezin','bevolking','markt','njai','mardijkers','mestiezen'],
+ daily:['dagelijks leven','dagelijks','daily life','everyday life','pasar','kampong','desa','waroeng','warung','sawah','ladang','romusha','onderwijs','school','familie','gezin','bevolking','markt'],
+ architecture:['building','gebouw','architectuur','straat','straatbeeld','stadsbeeld','street','street scene','station','hotel','kerk','moskee','tempel','gedung sate','gedung merdeka'],
+ transport:['railway','train','tram','harbour','haven','schip','ship','vliegtuig','luchtvaart','kpm','knilm','spoorweg','spoorlijn'],
+ culture:['adat','batik','gamelan','wajang','wajang koelit','pasar malam','ceremonie','religie','dance','music'],
+ landscape:['landschap','landscape','berg','mountain','vulkaan','krakatau','lahar','rivier','river','plantage','sawah','nootmuskaat','kruidnagel']
+};
+function classifyArchiveEvidence(text){
+ const normalized=normalizeArchiveText(text),places=[],topics=[],evidence={};
+ for(const [label,terms] of Object.entries(ARCHIVE_ALIASES)){
+  const hits=terms.filter(term=>archiveTextContains(normalized,term));
+  if(hits.length){places.push(label);evidence['place:'+label]=hits;}
+ }
+ for(const [label,terms] of Object.entries(ARCHIVE_TOPICS)){
+  const hits=terms.filter(term=>archiveTextContains(normalized,term));
+  if(hits.length){topics.push(label);evidence['topic:'+label]=hits;}
+ }
+ // KNIL is an explicit affiliation, not a synonym for generic military activity.
+ if((archiveTextContains(normalized,'knil')||archiveTextContains(normalized,'nederlandsch indisch leger')||archiveTextContains(normalized,'koninklijk nederlandsch indisch leger')||archiveTextContains(normalized,'ml knil'))&&!topics.includes('knil'))topics.push('knil');
+ // Bersiap is an explicitly named subset of the broader decolonisation period.
+ if(archiveTextContains(normalized,'bersiap')){
+  if(!topics.includes('bersiap'))topics.push('bersiap');
+  if(!topics.includes('decolonization'))topics.push('decolonization');
+ }
+ return {places:[...new Set(places)],topics:[...new Set(topics)],evidence};
+}
 function isRelevantHistoricalPhoto(page,meta,year){
  if(year!==null&&(year<1800||year>1959)&&$('#period').value!=='all')return false;
  const title=String(page.title||'').replace(/^File:/,'');
@@ -313,13 +472,13 @@ function isRelevantHistoricalPhoto(page,meta,year){
  const text=(title+' '+description+' '+objectName+' '+categories).toLowerCase();
  if(/\b(wordmark|logo|map of|coat of arms|rank insignia|book cover|journal|magazine|newspaper|poster|stamp|flag icon|letter|lettre|envelope|postcard|post card|postage|philatel|postal|coin|banknote|ticket|manuscript|document scan)\b/i.test(text))return false;
  const viewPatterns={
-  home:/dutch east indies|nederlands.?indi[eë]|nederlandsche oost.?indi[eë]n|netherlands east indies|netherlands indies|colonial|kolonial|koloniaal|koloniale|residentie|gouvernement|archipel|bersiap|knil|bandoeng|bandung|batavia|buitenzorg|java|sumatra|borneo|celebes|surabaya|soerabaja|semarang|yogyakarta|djokja|atjeh|aceh|koetaradja|kota radja|mentawai|nias|papua|nieuw.?guinea|madoera|madura|molukken|buitengewesten|voc|kamp|interneringskamp|burgerkamp|krijgsgevangenkamp/i,
-  indies:/dutch east indies|nederlands.?indi[eë]|nederlandsche oost.?indi[eë]n|netherlands east indies|netherlands indies|colonial|kolonial|koloniaal|koloniale|residentie|gouvernement|archipel|bersiap|knil|bandoeng|bandung|batavia|buitenzorg|java|sumatra|borneo|celebes|surabaya|soerabaja|semarang|yogyakarta|djokja|atjeh|aceh|koetaradja|kota radja|mentawai|nias|papua|nieuw.?guinea|madoera|madura|molukken|buitengewesten|voc|kamp|interneringskamp|burgerkamp|krijgsgevangenkamp/i,
-  java:/java|djawa|bandoeng|bandung|batavia|djakarta|jakarta|buitenzorg|bogor|semarang|soerabaja|surabaya|djokja|yogyakarta|malang|tjimahi|cimahi|garoet|garut|soekaboemi|sukabumi|tjilatjap|cilacap|tasikmalaja|tasikmalaya|leles|cheribon|cirebon|ambarawa|banjoebiroe|magelang|tegal|pekalongan|tangerang|kesilir|bondowoso|ngawi|kediri|grissee|gresik|singosari|madoera|madura|kalidjati|kalibanteng|pakanbaroe|pekanbaru|kampong|aloen.?aloen|pasar|sawah|interneringskamp|krijgsgevangenkamp/i,
-  bandung:/bandoeng|bandung|tjimahi|cimahi|lembang|dago|bragaweg|tjihapit|tjiboenoet|andir|technische hoogeschool|gedung sate|aloen.?aloen|kampong|karees|kareës|ramawijk|soekamiskin|lands opvoedings gesticht|depot mobiele artillerie|barosweg|leuwigadjah|tjimindi|kedoengbadak|kedoenghalang|palace hotel|zeelandia|stella maris|dick de hoogschool/i,
-  knil:/knil|koninklijk nederlandsch.?indisch leger|nederlandsch.?indisch leger|royal netherlands east indies army|netherlands indies army|dutch east indies military|military.*dutch east indies|militair.*nederlands.?indi[eë]|soldier.*knil|soldaat.*knil|marechaussee|veldpolitie|garnizoen|kazerne|bivak|patrouille|infanterie|artillerie|cavalerie|veldgeschut|mitrailleur|klewang|karabijn|bajonet|pantserwagen|militaire expeditie|heiho|gurkha|bataljon|ml-knil|mld|militaire luchtvaart|koninklijke marine reserve|krijgsgevangene|krijgsgevangenkamp|kampement|werkkamp|stadswacht|landstormer|treinkampement|bergartillerie|luchtdoelartillerie|knil.?uniform|knil.?officier/i,
-  bersiap:/bersiap|indonesian national revolution|indonesian war of independence|indonesian independence|indonesian independence struggle|revolusi nasional indonesia|perang kemerdekaan indonesia|perang revolusi indonesia|politionele actie|agresi militer|perang kemerdekaan|perang revolusi|pemuda|pemoeda|laskar|tentara keamanan rakyat|\btkr\b|tentara republik indonesia|\btri\b|\btni\b|republikeinse troepen|vrijheidsstrijd|onafhankelijkheidsstrijd|dekolonisatie|linggadjati|renville|rawagede|tentara keamanan rakjat|badan keamanan rakjat|\bbkr\b|angkatan laut republik indonesia|\balri\b|nica|rapwi|apwi|seac|amacab|zelfinternering|onafhankelijkheidsverklaring|evacuatie|vluchtelingen|brits-indische troepen|kempeitai|republikeins kamp|republikeinse kampen/i,
-  daily:/dutch east indies|nederlands.?indi[eë]|nederlandsche oost.?indi[eë]n|netherlands indies|colonial|kolonial|koloniaal|daily life|everyday life|family life|kampong|desa|aloen.?aloen|pasar|waroeng|warung|sawah|ladang|pendopo|grobak|bengkel|gudang|romusha|village life|market scene|people of indonesia|school|onderwijs|hbs|mulo|ams|nias/i
+  home:/dutch east indies|nederlands.?indi[eë]|nederlandsche oost.?indi[eë]n|netherlands east indies|netherlands indies|colonial|kolonial|koloniaal|koloniale|residentie|gouvernement|archipel|bersiap|knil|bandoeng|bandung|batavia|buitenzorg|java|sumatra|borneo|celebes|surabaya|soerabaja|semarang|yogyakarta|djokja|atjeh|aceh|koetaradja|kota radja|mentawai|nias|papua|nieuw.?guinea|madoera|madura|molukken|buitengewesten|voc|kamp|interneringskamp|burgerkamp|krijgsgevangenkamp|cultuurstelsel|ethische politiek|slavernij|opium|specerijenhandel|batig slot|adat|romusha|batik|gamelan|wajang/i,
+  indies:/dutch east indies|nederlands.?indi[eë]|nederlandsche oost.?indi[eë]n|netherlands east indies|netherlands indies|colonial|kolonial|koloniaal|koloniale|residentie|gouvernement|archipel|bersiap|knil|bandoeng|bandung|batavia|buitenzorg|java|sumatra|borneo|celebes|surabaya|soerabaja|semarang|yogyakarta|djokja|atjeh|aceh|koetaradja|kota radja|mentawai|nias|papua|nieuw.?guinea|madoera|madura|molukken|buitengewesten|voc|kamp|interneringskamp|burgerkamp|krijgsgevangenkamp|peta|bkr|tkr|tri|tni|apri|apris|adat|repatriering|indische nederlanders/i,
+  java:/java|djawa|bandoeng|bandung|batavia|djakarta|jakarta|buitenzorg|bogor|semarang|soerabaja|surabaya|djokja|yogyakarta|malang|tjimahi|cimahi|garoet|garut|soekaboemi|sukabumi|tjilatjap|cilacap|tasikmalaja|tasikmalaya|leles|cheribon|cirebon|ambarawa|banjoebiroe|magelang|tegal|pekalongan|tangerang|kesilir|bondowoso|ngawi|kediri|grissee|gresik|singosari|madoera|madura|kalidjati|kalibanteng|pakanbaroe|pekanbaru|soerakarta|surakarta|solo|kedoe|preanger|priangan|banten|bantam|tjiandjoer|pasoeroean|probolinggo|madioen|madiun|djember|jember|banjoemas|banyumas|kampong|aloen.?aloen|pasar|sawah|interneringskamp|krijgsgevangenkamp/i,
+  bandung:/bandoeng|bandung|tjimahi|cimahi|lembang|dago|bragaweg|tjihapit|tjiboenoet|andir|technische hoogeschool|gedung sate|aloen.?aloen|kampong|karees|kareës|ramawijk|soekamiskin|lands opvoedings gesticht|depot mobiele artillerie|barosweg|leuwigadjah|tjimindi|kedoengbadak|kedoenghalang|palace hotel|zeelandia|stella maris|dick de hoogschool|bandung lautan api|gedung merdeka|bandoengse|tjihapit kamp|depot speciale troepen/i,
+  knil:/knil|koninklijk nederlandsch.?indisch leger|nederlandsch.?indisch leger|royal netherlands east indies army|netherlands indies army|dutch east indies military|military.*dutch east indies|militair.*nederlands.?indi[eë]|soldier.*knil|soldaat.*knil|marechaussee|veldpolitie|garnizoen|kazerne|bivak|patrouille|infanterie|artillerie|cavalerie|veldgeschut|mitrailleur|klewang|karabijn|bajonet|pantserwagen|militaire expeditie|heiho|gurkha|bataljon|ml-knil|mld|militaire luchtvaart|koninklijke marine reserve|krijgsgevangene|krijgsgevangenkamp|kampement|werkkamp|stadswacht|landstormer|treinkampement|bergartillerie|luchtdoelartillerie|knil.?uniform|knil.?officier|peta|nefis|mariniersbrigade|stoottroepen|tijgerbrigade|depot speciale troepen|knilm|kpm/i,
+  bersiap:/bersiap|indonesian national revolution|indonesian war of independence|indonesian independence|indonesian independence struggle|revolusi nasional indonesia|perang kemerdekaan indonesia|perang revolusi indonesia|politionele actie|agresi militer|perang kemerdekaan|perang revolusi|pemuda|pemoeda|laskar|tentara keamanan rakyat|\btkr\b|tentara republik indonesia|\btri\b|\btni\b|republikeinse troepen|vrijheidsstrijd|onafhankelijkheidsstrijd|dekolonisatie|linggadjati|renville|rawagede|tentara keamanan rakjat|badan keamanan rakjat|\bbkr\b|angkatan laut republik indonesia|\balri\b|nica|rapwi|apwi|seac|amacab|zelfinternering|onafhankelijkheidsverklaring|evacuatie|vluchtelingen|brits-indische troepen|kempeitai|republikeins kamp|republikeinse kampen|madioen-opstand|soevereiniteitsoverdracht|apri|apris/i,
+  daily:/dutch east indies|nederlands.?indi[eë]|nederlandsche oost.?indi[eë]n|netherlands indies|colonial|kolonial|koloniaal|daily life|everyday life|family life|kampong|desa|aloen.?aloen|pasar|waroeng|warung|sawah|ladang|pendopo|grobak|bengkel|gudang|romusha|village life|market scene|people of indonesia|school|onderwijs|hbs|mulo|ams|nias|adat|batik|gamelan|wajang|njai|plantage|onderneming|rubberplantage|koffieplantage|suikeronderneming|theeplantage|nootmuskaat|kruidnagel|mardijkers|mestiezen/i
  };
  if(!viewPatterns[view]?.test(text))return false;
  const historicalContext=/dutch east indies|nederlands.?indi[eë]|nederlandsche oost.?indi[eë]n|netherlands east indies|netherlands indies|colonial|kolonial|koloniaal|koloniale|residentie|gouvernement|archipel|bersiap|knil|ml-knil|militaire luchtvaart van het knil|militaire luchtvaart dienst|koninklijke marine reserve|koninklijk nederlandsch.?indisch leger|nederlandsch.?indisch leger|royal netherlands east indies army|netherlands indies army|indies army|historical images|historical photographs|historical photos|history of bandung|indonesian national revolution|indonesian war of independence|nica|rapwi|apwi|seac|amacab|allied prisoners of war and internees|recovery of allied prisoners of war and internees|revolusi nasional indonesia|perang kemerdekaan indonesia|agresi militer|politionele actie|pemoeda|pemuda|bkr|tkr|tri|alri|romusha|heiho|kampong|pasar|sawah|aloen.?aloen|interneringskamp|burgerkamp|krijgsgevangenkamp|werkkamp|opvangkamp|republikeins kamp|kempeitai|krijgsgevangene|geïnterneerde|kampement|kampcommandant|hoofdbewaker|kampleiding|atjeh|aceh|koetaradja|mentawai|nias|papua|nieuw.?guinea|madoera|madura|molukken|buitengewesten|voc|romusha|heiho/i;
@@ -327,6 +486,12 @@ function isRelevantHistoricalPhoto(page,meta,year){
  const topic=$('#topic').value;
  const topicPatterns={city:/street|straat|building|gebouw|architecture|station|hotel|square|plein|aloen.?aloen|kampong|desa|residentie|gouvernement/i,people:/people|person|family|woman|man|child|markt|pasar|school|gezin|bevolking|romusha|heiho|pemoeda|pemuda/i,military:/knil|military|militair|army|soldier|soldaat|weapon|wapen|kazerne|tangsi|marechaussee|veldpolitie|garnizoen|bivak|patrouille|infanterie|artillerie|cavalerie|genie|mitrailleur|klewang|karabijn|bajonet|veldgeschut|pantserwagen|militaire expeditie|ml-knil|heiho|gurkha|apwi|rapwi|seac|bataljon|kolonel|majoor|luitenant|sergeant|korporaal/i,transport:/railway|train|tram|harbour|haven|bridge|brug|kpm|pakketvaart|spoorweg|spoorlijn|jcjl|grobak|buffelkar|militaire colonne/i,culture:/temple|mosque|kerk|moskee|dance|ceremony|religion|indo-europees|thhk|toko|waroeng|warung|sarong|pendopo/i,nature:/landscape|mountain|plantation|river|berg|landschap|rivier|sawah|ladang|kali|alang-alang|djati|teak/i};
  if(topic&&topicPatterns[topic]&&!topicPatterns[topic].test(text))return false;
+ const classification=classifyArchiveEvidence(text);
+ if(view==='knil'&&!classification.topics.some(tag=>tag==='knil'||tag==='military'))return false;
+ if(view==='bersiap'&&!classification.topics.some(tag=>['decolonization','bersiap','camp'].includes(tag)))return false;
+ if(view==='java'&&!classification.places.some(tag=>['java','bandung','batavia','bogor','semarang','surabaya','yogyakarta','cimahi','garut','sukabumi','cilacap','tasikmalaya','cirebon','surakarta','priangan','malang'].includes(tag)))return false;
+ if(view==='java'&&place!=='all'&&place!=='other'&&!classification.places.includes(place))return false;
+ if(view==='bandung'&&!classification.places.some(tag=>['bandung','cimahi'].includes(tag)))return false;
  return true;
 }
 function escapeText(value){if(!value)return '';const box=document.createElement('textarea');box.innerHTML=String(value);return box.value.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim()}
@@ -334,9 +499,9 @@ function metadataValue(meta,key){return escapeText(meta?.[key]?.value||'')}
 function commonsLicenseUrl(meta){const raw=String(meta?.LicenseUrl?.value||'').trim().replace(/^http:/i,'https:');return raw.replace(/\/$/,'')+'/'}
 function isReusableCommonsLicense(meta){const url=commonsLicenseUrl(meta);return url==='https://creativecommons.org/publicdomain/mark/1.0/'||url==='https://creativecommons.org/publicdomain/zero/1.0/'||/^https:\/\/creativecommons\.org\/licenses\/by(?:-sa)?\/(?:1\.0|2\.0|2\.5|3\.0|4\.0)\/$/.test(url)}
 function status(title,message,showRetry=false){const el=document.createElement('div');el.className='status';const strong=document.createElement('strong');strong.textContent=title;const p=document.createElement('div');p.textContent=message;el.append(strong,p);if(showRetry){const b=document.createElement('button');b.className='secondary';b.type='button';b.textContent='Opnieuw proberen';b.addEventListener('click',()=>load(true));el.append(b)}return el}
-function syncView(){document.body.classList.toggle('family-view',view==='family');document.querySelectorAll('#nav button').forEach(b=>{const active=b.dataset.view===view;b.classList.toggle('active',active);if(active){b.setAttribute('aria-current','page')}else{b.removeAttribute('aria-current')}});$('#title').textContent=views[view].title;$('#intro').textContent=views[view].intro;$('#resultTitle').textContent=views[view].result;$('#places').hidden=view!=='java';$('#bandungTopics').hidden=view!=='bandung';$('#familyBirsak').hidden=view!=='family';$('#deepSearch').hidden=view!=='family';if(view==='family'){$('#resultTitle').textContent='Familie Birsak · fotodocumentatie'}document.querySelectorAll('#bandungTopics [data-term]').forEach(b=>b.classList.toggle('selected',b.dataset.term===customTerm))}
+function syncView(){document.body.classList.toggle('family-view',view==='family');document.querySelectorAll('#nav button').forEach(b=>{const active=b.dataset.view===view;b.classList.toggle('active',active);if(active){b.setAttribute('aria-current','page')}else{b.removeAttribute('aria-current')}});$('#title').textContent=views[view].title;$('#intro').textContent=views[view].intro;$('#resultTitle').textContent=views[view].result;$('#places').hidden=view!=='java';$('#bandungTopics').hidden=view!=='bandung';$('#familyBirsak').hidden=view!=='family';$('#deepSearch').hidden=view!=='family';$('#externalMediaConsent').hidden=view==='family';if(view==='family'){$('#resultTitle').textContent='Familie Birsak · fotodocumentatie'}document.querySelectorAll('#bandungTopics [data-term]').forEach(b=>b.classList.toggle('selected',b.dataset.term===customTerm))}
 function addCard(page){const info=page.imageinfo?.[0];if(!info||!info.url||!String(info.mime||'').startsWith('image/')||!isReusableCommonsLicense(info.extmetadata||{}))return;const meta=info.extmetadata||{};const title=metadataValue(meta,'ObjectName')||String(page.title||'').replace(/^File:/,'');const year=yearFromMetadata(meta);
- const date=year?'Opnamedatering: '+year:'Opnamedatering niet vermeld in bron';const artist=metadataValue(meta,'Artist')||'Maker niet vermeld';const description=metadataValue(meta,'ImageDescription');const credit=metadataValue(meta,'Institution')||metadataValue(meta,'Credit')||'';const license=metadataValue(meta,'LicenseShortName')||'Licentie controleren';const fileKey=page.title||info.descriptionurl;const article=document.createElement('article');article.className='photo';const media=document.createElement('div');media.className='photo-media';const imageLink=document.createElement('a');imageLink.className='photo-image-link';imageLink.href=info.url;imageLink.target='_blank';imageLink.rel='noopener noreferrer';imageLink.setAttribute('aria-label','Open de afbeelding op volledige grootte: '+title);const img=document.createElement('img');img.loading=visibleCount<6?'eager':'lazy';img.decoding='async';img.src=info.thumburl||info.url;img.alt=title;let triedOriginal=false;img.onerror=()=>{if(!triedOriginal&&info.url&&img.src!==info.url){triedOriginal=true;img.src=info.url;return}media.replaceChildren();const fallback=document.createElement('div');fallback.className='status';fallback.textContent='Afbeelding tijdelijk niet beschikbaar';media.append(fallback)};imageLink.append(img);media.append(imageLink);const body=document.createElement('div');body.className='photo-body';const h=document.createElement('h3');h.className='photo-title';h.textContent=title;const m=document.createElement('div');m.className='photo-meta';m.textContent=[date,artist,credit].filter(Boolean).join(' · ');const desc=document.createElement('p');desc.className='photo-description';desc.textContent=description;const tags=document.createElement('div');tags.className='photo-tags';const t1=document.createElement('span');t1.className='tag';t1.textContent=license;tags.append(t1);const t2=document.createElement('span');t2.className='tag';t2.textContent=year?'Opnamejaar '+year:'Ongedateerd · historische context';tags.append(t2);const actions=document.createElement('div');actions.className='photo-actions';const link=document.createElement('a');link.href=info.descriptionurl||'https://commons.wikimedia.org/wiki/'+encodeURIComponent(page.title);link.target='_blank';link.rel='noopener noreferrer';link.textContent='Bron & rechten bekijken ↗';const fav=document.createElement('button');fav.type='button';fav.className='iconbtn';fav.textContent=favorites.has(fileKey)?'★ Opgeslagen':'☆ Bewaar';fav.setAttribute('aria-pressed',String(favorites.has(fileKey)));fav.addEventListener('click',()=>{if(favorites.has(fileKey)){favorites.delete(fileKey)}else{favorites.add(fileKey)}writeFavorites(favorites);fav.textContent=favorites.has(fileKey)?'★ Opgeslagen':'☆ Bewaar';fav.setAttribute('aria-pressed',String(favorites.has(fileKey)))});actions.append(link,fav);if(description)body.append(h,m,desc,tags,actions);else body.append(h,m,tags,actions);article.append(media,body);$('#results').append(article);visibleCount++}
+ const date=year?'Opnamedatering: '+year:'Opnamedatering niet vermeld in bron';const artist=metadataValue(meta,'Artist')||'Maker niet vermeld';const description=metadataValue(meta,'ImageDescription');const credit=metadataValue(meta,'Institution')||metadataValue(meta,'Credit')||'';const license=metadataValue(meta,'LicenseShortName')||'Licentie controleren';const fileKey=page.title||info.descriptionurl;const article=document.createElement('article');article.className='photo';const media=document.createElement('div');media.className='photo-media';const imageLink=document.createElement('a');imageLink.className='photo-image-link';imageLink.href=info.url;imageLink.target='_blank';imageLink.rel='noopener noreferrer';imageLink.setAttribute('aria-label','Open de afbeelding op volledige grootte: '+title);const img=document.createElement('img');img.loading=visibleCount<6?'eager':'lazy';img.decoding='async';const thumbnailUrl=info.thumburl||info.url;img.dataset.externalSrc=thumbnailUrl.replace(/^https:\/\/thumb\.wikimedia\.org\//,'https://upload.wikimedia.org/');if(externalImagesAllowed)img.src=img.dataset.externalSrc;img.alt=title;let triedOriginal=false;img.onerror=()=>{if(!externalImagesAllowed)return;if(!triedOriginal&&info.url&&img.src!==info.url){triedOriginal=true;img.src=info.url;return}media.replaceChildren();const fallback=document.createElement('div');fallback.className='status';fallback.textContent='Afbeelding tijdelijk niet beschikbaar';media.append(fallback)};imageLink.append(img);media.append(imageLink);const body=document.createElement('div');body.className='photo-body';const h=document.createElement('h3');h.className='photo-title';h.textContent=title;const m=document.createElement('div');m.className='photo-meta';m.textContent=[date,artist,credit].filter(Boolean).join(' · ');const desc=document.createElement('p');desc.className='photo-description';desc.textContent=description;const tags=document.createElement('div');tags.className='photo-tags';const t1=document.createElement('span');t1.className='tag';t1.textContent=license;tags.append(t1);const t2=document.createElement('span');t2.className='tag';t2.textContent=year?'Opnamejaar '+year:'Ongedateerd · historische context';tags.append(t2);const classification=classifyArchiveEvidence([title,description,metadataValue(meta,'Categories')].join(' '));const taxonomyLabels={bandung:'Bandoeng / Bandung',batavia:'Batavia / Jakarta',bogor:'Buitenzorg / Bogor',semarang:'Semarang',surabaya:'Soerabaja / Surabaya',yogyakarta:'Djokja / Yogyakarta',cimahi:'Tjimahi / Cimahi',garut:'Garoet / Garut',sukabumi:'Soekaboemi / Sukabumi',cilacap:'Tjilatjap / Cilacap',tasikmalaya:'Tasikmalaja / Tasikmalaya',cirebon:'Cheribon / Cirebon',madoera:'Madoera / Madura',aceh:'Atjeh / Aceh',java:'Java',sumatra:'Sumatra',otherIslands:'Overige eilanden',knil:'KNIL',military:'Militair',decolonization:'Onafhankelijkheidsstrijd',bersiap:'Bersiap (bronvermelding)',camp:'Kampgeschiedenis',society:'Samenleving',architecture:'Architectuur',transport:'Vervoer',culture:'Cultuur',landscape:'Landschap'};for(const label of [...classification.places,...classification.topics].slice(0,5)){const tag=document.createElement('span');tag.className='tag';tag.textContent=taxonomyLabels[label]||label;tags.append(tag)}const actions=document.createElement('div');actions.className='photo-actions';const link=document.createElement('a');link.href=info.descriptionurl||'https://commons.wikimedia.org/wiki/'+encodeURIComponent(page.title);link.target='_blank';link.rel='noopener noreferrer';link.textContent='Bron & rechten bekijken ↗';const fav=document.createElement('button');fav.type='button';fav.className='iconbtn';fav.textContent=favorites.has(fileKey)?'★ Opgeslagen':'☆ Bewaar';fav.setAttribute('aria-pressed',String(favorites.has(fileKey)));fav.addEventListener('click',()=>{if(favorites.has(fileKey)){favorites.delete(fileKey)}else{favorites.add(fileKey)}writeFavorites(favorites);fav.textContent=favorites.has(fileKey)?'★ Opgeslagen':'☆ Bewaar';fav.setAttribute('aria-pressed',String(favorites.has(fileKey)))});actions.append(link,fav);if(description)body.append(h,m,desc,tags,actions);else body.append(h,m,tags,actions);article.append(media,body);$('#results').append(article);visibleCount++}
 function addRijksmuseumGalleryCard(record){
  const key='rijksmuseum:'+record.id;
  if(seenFiles.has(key)||!record.imageUrl||!RM_IMAGE_RIGHTS.has(record.imageRightsUrl))return false;
@@ -344,7 +509,7 @@ function addRijksmuseumGalleryCard(record){
  const article=document.createElement('article');article.className='photo';
  const media=document.createElement('div');media.className='photo-media';
  const imageLink=document.createElement('a');imageLink.className='photo-image-link';imageLink.href=record.imageUrl;imageLink.target='_blank';imageLink.rel='noopener noreferrer';imageLink.setAttribute('aria-label','Open vrijgegeven Rijksmuseum-afbeelding: '+(record.title||'Historische foto'));
- const img=document.createElement('img');img.loading=visibleCount<6?'eager':'lazy';img.decoding='async';img.src=record.imageUrl;img.alt=record.title||'Historische foto uit de collectie van het Rijksmuseum';
+ const img=document.createElement('img');img.loading=visibleCount<6?'eager':'lazy';img.decoding='async';img.dataset.externalSrc=record.imageUrl;if(externalImagesAllowed)img.src=img.dataset.externalSrc;img.alt=record.title||'Historische foto uit de collectie van het Rijksmuseum';
  img.onerror=()=>{media.replaceChildren();const fallback=document.createElement('div');fallback.className='status';fallback.textContent='Afbeelding tijdelijk niet beschikbaar';media.append(fallback)};
  imageLink.append(img);media.append(imageLink);
  const body=document.createElement('div');body.className='photo-body';
@@ -354,6 +519,8 @@ function addRijksmuseumGalleryCard(record){
  const tags=document.createElement('div');tags.className='photo-tags';
  const t1=document.createElement('span');t1.className='tag';t1.textContent=record.imageRightsUrl.includes('/mark/')?'Public Domain Mark':'CC0';tags.append(t1);
  const t2=document.createElement('span');t2.className='tag';t2.textContent='Rijksmuseum · rechtenveilige afbeelding';tags.append(t2);
+ const classification=classifyArchiveEvidence([record.title,record.description,record.creator,...(record.otherTitles||[])].join(' '));
+ for(const label of [...classification.places,...classification.topics].slice(0,5)){const tag=document.createElement('span');tag.className='tag';tag.textContent=label;tags.append(tag)}
  const actions=document.createElement('div');actions.className='photo-actions';
  const link=document.createElement('a');link.href=record.objectUrl;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Bron & rechten bekijken ↗';actions.append(link);
  body.append(h,m);if(desc.textContent)body.append(desc);body.append(tags,actions);article.append(media,body);$('#results').append(article);visibleCount++;return true;
@@ -381,12 +548,15 @@ async function load(reset=false) {
   loading = true;
   if (reset) {
     continuation = null;
+    queryClusterIndex = 0;
+    activeQueryClusters = buildQueryClusters();
     visibleCount = 0;
     seenFiles.clear();
     $('#results').replaceChildren();
-    $('#results').append(status('Beeldcollectie laden','Historische foto’s en relevante ongedateerde beelden worden gecontroleerd.'));
+    $('#results').append(status('Beeldcollectie laden','Historische foto’s worden via meerdere gerichte zoekroutes verzameld en gecontroleerd.'));
     $('#more').hidden = true;
   }
+  if(!activeQueryClusters.length)activeQueryClusters=buildQueryClusters();
   $('#results').setAttribute('aria-busy','true');
   renderNationaalArchiefRecords(reset);
   renderRijksmuseumRecords(reset);
@@ -394,9 +564,11 @@ async function load(reset=false) {
     let foundThisLoad = 0;
     let batches = 0;
     do {
+      const cluster=activeQueryClusters[queryClusterIndex];
+      if(!cluster){continuation=null;break}
       const params = new URLSearchParams({
         action:'query', format:'json', origin:'*', generator:'search',
-        gsrsearch:buildQuery(), gsrnamespace:'6', gsrlimit:'50',
+        gsrsearch:cluster, gsrnamespace:'6', gsrlimit:'50',
         prop:'imageinfo', iiprop:'url|extmetadata|mime', iiurlwidth:'760'
       });
       if (continuation) {
@@ -420,18 +592,20 @@ async function load(reset=false) {
         addCard(page);
         foundThisLoad++;
       }
-      continuation = data.continue||null;
+      if(data.continue)continuation=data.continue;
+      else {queryClusterIndex++;continuation=null}
       batches++;
-    } while (continuation && foundThisLoad < 8 && batches < 8);
+    } while (queryClusterIndex < activeQueryClusters.length && foundThisLoad < 18 && batches < 12);
     appendRightsClearedRijksmuseumImages();
     updateCount();
     if (!visibleCount && reset) {
-      $('#results').append(status('Geen passende Wikimedia Commons-foto’s gevonden','Deze bron levert voor de huidige filters geen bruikbare resultaten. Controleer de aanvullende Nationaal Archief-records en de officiële collectieportalen verderop op deze pagina.'));
+      $('#results').append(status('Geen passende Wikimedia Commons-foto’s gevonden','De geraadpleegde zoekroutes leveren voor de huidige filters geen bruikbare beelden op. Controleer de aanvullende archiefrecords en de collectieportalen verderop op deze pagina.'));
     } else if (!foundThisLoad && !reset) {
-      $('#results').append(status('Geen nieuwe foto’s op deze pagina’s','Gebruik een andere zoekterm of ga verder met zoeken.'));
+      $('#results').append(status('Geen nieuwe foto’s op deze zoekroutes','Alle beschikbare zoekroutes voor deze selectie zijn doorlopen. Pas de filters aan voor een andere zoekrichting.'));
     }
-    $('#more').hidden = !continuation;
-    $('#more').disabled = !continuation;
+    const hasMore=queryClusterIndex<activeQueryClusters.length||Boolean(continuation);
+    $('#more').hidden = !hasMore;
+    $('#more').disabled = !hasMore;
     $('#more').textContent = visibleCount ? 'Meer foto’s laden' : 'Verder zoeken in de bron';
   } catch (error) {
     if (error.name === 'AbortError') return;
@@ -448,6 +622,7 @@ async function load(reset=false) {
     }
   }
 }
+
 let naIndex=null;
 let naVisibleCount=12;
 let knilWeaponsIndex=null;
@@ -589,8 +764,8 @@ function renderRijksmuseumRecords(reset=false){
   if(permittedImage){
    const frame=document.createElement('div');frame.className='rm-image';
    const imageLink=document.createElement('a');imageLink.href=record.imageUrl;imageLink.target='_blank';imageLink.rel='noopener noreferrer';imageLink.setAttribute('aria-label','Open vrijgegeven beeld: '+(record.title||'Rijksmuseum-foto'));
-   const img=document.createElement('img');img.loading=visibleCount<6?'eager':'lazy';img.decoding='async';img.src=record.imageUrl;img.alt=record.title||'Historische foto uit de collectie van het Rijksmuseum';
-   img.onerror=()=>{frame.replaceChildren();const fallback=document.createElement('div');fallback.className='rm-image-placeholder';fallback.textContent='De IIIF-afbeelding is tijdelijk niet bereikbaar; open het oorspronkelijke objectrecord.';frame.append(fallback)};
+   const img=document.createElement('img');img.loading=visibleCount<6?'eager':'lazy';img.decoding='async';img.dataset.externalSrc=record.imageUrl;if(externalImagesAllowed)img.src=img.dataset.externalSrc;img.alt=record.title||'Historische foto uit de collectie van het Rijksmuseum';
+   img.onerror=()=>{if(!externalImagesAllowed)return;frame.replaceChildren();const fallback=document.createElement('div');fallback.className='rm-image-placeholder';fallback.textContent='De IIIF-afbeelding is tijdelijk niet bereikbaar; open het oorspronkelijke objectrecord.';frame.append(fallback)};
    imageLink.append(img);frame.append(imageLink);card.append(frame);
   }else{
    const placeholder=document.createElement('div');placeholder.className='rm-image-placeholder';placeholder.textContent='Metadatarecord · geen herbruikbare afbeeldingslicentie vastgesteld. Open het oorspronkelijke objectrecord om de toegangs- en rechteninformatie te controleren.';card.append(placeholder);
@@ -628,6 +803,8 @@ $('#nav').addEventListener('click',event=>{const button=event.target.closest('[d
 $('#places').addEventListener('click',event=>{const button=event.target.closest('[data-place]');if(!button)return;place=button.dataset.place;saveUiState();document.querySelectorAll('#places [data-place]').forEach(b=>b.classList.toggle('selected',b===button));load(true)});
 $('#bandungTopics').addEventListener('click',event=>{const button=event.target.closest('[data-term]');if(!button)return;customTerm=button.dataset.term;saveUiState();document.querySelectorAll('#bandungTopics [data-term]').forEach(b=>b.classList.toggle('selected',b===button));load(true)});
 function renderDeepLinks(){const q=$('#deepQuery').value.trim();if(!q)return;const enc=encodeURIComponent(q);const variants=[['Google · exacte frase','https://www.google.com/search?q='+encodeURIComponent('"'+q+'"')],['Google · historische schrijfwijzen','https://www.google.com/search?q='+encodeURIComponent(q+' (Bandoeng OR Bandung OR Lembangweg)')],['Wikimedia Commons','https://commons.wikimedia.org/w/index.php?search='+enc+'&title=Special:MediaSearch&type=image'],['Nationaal Archief','https://www.nationaalarchief.nl/onderzoeken/zoeken?search='+enc],['Leiden · KITLV','https://digitalcollections.universiteitleiden.nl/search?type=dismax&islandora_solr_search_navigation=1&f%5B0%5D=mods_subject_topic_ms%3A'+enc],['Het Utrechts Archief','https://hetutrechtsarchief.nl/zoeken?search='+enc],['Delpher · kranten','https://www.delpher.nl/nl/kranten/results?query='+enc],['Google Books','https://books.google.com/books?q='+enc],['Genealogie Online','https://www.genealogieonline.nl/zoeken/?q='+enc],['Open Archieven','https://www.openarchieven.nl/search.php?name='+enc],['CBG · Oost-Indische bronnen','https://cbgverzamelingen.nl/zoeken?search='+enc],['Internet Archive','https://archive.org/search?query='+enc],['Posthistorie · adresvermelding','https://www.google.com/search?q='+encodeURIComponent('"Lembangweg 346" Bandoeng')],['SIGE · onderzoeksdossier familie Birsak','https://indischgenealogischerfgoed.nl/genealogie-en-heraldiek/onderzoeksdossiers/'],['Nationaal Archief · repatriëringslijsten 1946–1962','https://www.nationaalarchief.nl/onderzoeken/zoekhulpen/oorlogsarchief-rode-kruis-nederlands-indie'],['CBG · stappenplan Indische voorouders','https://cbg.nl/documents/287/2023_Stappenplan_Indische_voorouders.pdf']];const root=$('#deepLinks');root.replaceChildren();for(const [label,url] of variants){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=label+' ↗';const p=document.createElement('article');p.className='archive';p.append(a);root.append(p)}}$('#deepGo').addEventListener('click',renderDeepLinks);$('#deepQuery').addEventListener('keydown',e=>{if(e.key==='Enter')renderDeepLinks()});document.querySelectorAll('[data-deep]').forEach(b=>b.addEventListener('click',()=>{$('#deepQuery').value=b.dataset.deep;renderDeepLinks()}));renderDeepLinks();
+$('#externalMediaConsentToggle').addEventListener('click',()=>setExternalImageConsent(!externalImagesAllowed));
+setExternalImageConsent(externalImagesAllowed);
 $('#go').addEventListener('click',()=>{saveUiState();load(true)});$('#q').addEventListener('input',saveUiState);$('#q').addEventListener('keydown',event=>{if(event.key==='Enter'){saveUiState();load(true)}});$('#period').addEventListener('change',()=>{saveUiState();load(true)});$('#topic').addEventListener('change',()=>{saveUiState();load(true)});$('#reset').addEventListener('click',resetFilters);$('#more').addEventListener('click',()=>load(false));$('#naMore').addEventListener('click',()=>{naVisibleCount+=12;renderNationaalArchiefRecords()});$('#knilWeaponsMore').addEventListener('click',()=>{knilWeaponsVisibleCount+=12;renderKnilWeaponsRecords()});$('#rmMore').addEventListener('click',()=>{rmVisibleCount+=12;renderRijksmuseumRecords()});
 restoreUiState();syncView();saveUiState();loadRijksmuseumIndex().then(()=>load(true));loadNationaalArchiefIndex();loadKnilWeaponsIndex();
 </script>

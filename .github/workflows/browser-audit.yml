@@ -12,12 +12,12 @@ permissions:
 
 concurrency:
   group: browser-audit
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   browser-audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -41,6 +41,10 @@ jobs:
           exit 1
       - name: Run responsive browser and WCAG checks
         run: node scripts/e2e_site.cjs
+      - name: Benchmark live historical photo retrieval by tab
+        if: always()
+        timeout-minutes: 8
+        run: node scripts/search_effect_benchmark.cjs
       - name: Run mobile Lighthouse audit
         if: always()
         run: |
@@ -58,5 +62,13 @@ jobs:
         with:
           name: indisch-beeldarchief-lighthouse-mobile
           path: artifacts/lighthouse-mobile.json
+          if-no-files-found: ignore
+          retention-days: 30
+      - name: Upload live search effect benchmark
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: indisch-beeldarchief-search-effect-benchmark
+          path: artifacts/search-effect-benchmark.json
           if-no-files-found: ignore
           retention-days: 30
