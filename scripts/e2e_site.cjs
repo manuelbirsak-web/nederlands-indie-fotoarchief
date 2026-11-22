@@ -71,6 +71,10 @@ async function main() {
     await page.waitForFunction(() => { const image = document.querySelector('#homeLanding .home-card-family img'); return image && image.complete && image.naturalWidth > 0; }, null, { timeout: 15000 });
     const familyImageLinkMatches = await page.locator('#homeLanding .home-card-family a').evaluate(link => link.getAttribute('href') === '#familyBirsak');
     if (!familyImageLinkMatches) failures.push('Family image must link to the dedicated Birsak family view');
+    await page.locator('#homeLanding .home-card-image').click();
+    await page.waitForFunction(() => document.body.classList.contains('family-view') && !document.querySelector('#familyBirsak').hidden, null, { timeout: 5000 });
+    await page.locator('#nav [data-view="home"]').click();
+    await waitForLoadedGallery();
     try {
       await page.waitForFunction(() => document.querySelectorAll('#results .photo').length > 0, null, { timeout: 20000 });
     } catch (error) {
