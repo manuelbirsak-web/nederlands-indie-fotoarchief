@@ -77,8 +77,8 @@ jobs:
           with urllib.request.urlopen(base + "/", timeout=30) as response:
               html = response.read().decode("utf-8")
               assert response.status == 200
-          assert "MAUDY-ELLEN" in html
-          assert "HAUS-ELLEN" not in html
+          assert "MAUDY-ELLEN" in html.upper()
+          assert "HAUS-ELLEN" not in html.upper()
           assert "assets/family/IMG_5108.jpeg" in html
           assert "assets/family/IMG_5107.jpeg" in html
           assert "assets/family/birsak-woning.jpg" not in html
