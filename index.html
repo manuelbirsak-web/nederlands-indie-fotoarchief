@@ -112,6 +112,48 @@ body.family-view #familyBirsak,body.family-view #deepSearch{display:block!import
 @media(max-width:850px){.home-cards{grid-template-columns:1fr 1fr}.home-card-family{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)}.home-card-family .home-card-image{height:100%;min-height:230px}.home-card-family .home-card-copy{justify-content:center}}
 @media(max-width:560px){.home-landing{padding:2px 0 27px}.home-intro{text-align:left;margin-bottom:17px}.home-cards{grid-template-columns:1fr;gap:12px}.home-card-family{display:flex;grid-column:auto}.home-card-image,.home-card-symbol{height:240px;min-height:240px}.home-card-copy{padding:15px 16px 17px}.home-card-copy h3{font-size:22px}.home-card-copy p{font-size:13px}}
 
+
+/* CR-02 — homepage faithfully restructured around the three promised entrances */
+body.home-view #homeLanding{display:block}
+body:not(.home-view) #homeLanding{display:none}
+body.home-view .intro{display:none}
+#nav{position:relative;top:auto;display:flex;flex-direction:column;gap:9px;padding:12px max(4vw,calc((100vw - 1380px)/2));background:#fbf8ef;border-bottom:1px solid var(--line)}
+#nav .nav-group{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+#nav .nav-group-label{flex:0 0 100%;padding:0 10px 2px}
+#nav button,#nav a.nav-link{min-height:34px;padding:8px 11px;font-size:11px;border-radius:3px}
+#nav .nav-group-primary{border-bottom:1px solid #e4ddcf;padding-bottom:8px}
+#nav .nav-group-primary .primary-tab{font-size:12px;font-weight:750}
+#nav .nav-group-primary .family-tab{border-left:3px solid var(--gold);background:#eee8da}
+#nav .nav-group-primary a.nav-link{background:#f0eadc;color:var(--forest);border-color:#d9c9a9}
+#nav .nav-group-research{display:flex}
+.home-landing{padding:25px 0 27px}
+.home-intro{text-align:left;max-width:100%;margin:0 0 19px}
+.home-intro .section-label{color:#8b7045}
+.home-intro h2{font-size:clamp(27px,3.3vw,38px);margin:7px 0 8px}
+.home-intro p{max-width:900px;margin:0;color:#526057;font-size:15px;line-height:1.55}
+.home-cards{display:flex;flex-direction:column;gap:13px}
+.home-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,38%);min-height:205px;border-radius:9px;overflow:hidden;background:#fffdf7;border:1px solid #d5cbb8;box-shadow:0 5px 16px #1b2b2010}
+.home-card-family{grid-template-columns:minmax(0,1fr) minmax(290px,40%)}
+.home-card-family .home-card-image{grid-column:2;grid-row:1;height:100%;min-height:205px;min-width:0}
+.home-card-family .home-card-copy{grid-column:1;grid-row:1;padding:22px 25px;justify-content:center}
+.home-card-image img{object-fit:cover;object-position:center 45%}
+.home-card-symbol{grid-column:2;grid-row:1;height:auto;min-height:205px;display:grid;place-items:center;background:linear-gradient(135deg,#e8e1d2,#f7f3e9);color:#1e352b}
+.home-card-symbol svg{width:76px;height:76px}
+.home-card:not(.home-card-family) .home-card-copy{grid-column:1;grid-row:1;padding:22px 25px;justify-content:center}
+.home-card-copy h3{font-size:clamp(22px,2.4vw,29px);margin:6px 0 8px}
+.home-card-copy p{font-size:14px;line-height:1.55;max-width:650px;margin-bottom:14px}
+.home-card-action{padding:11px 17px;font-size:12px}
+.home-source-note{display:flex;align-items:center;gap:16px;margin:20px 0 0;padding:17px 20px;background:#eee7d9;border:1px solid #d9cfbd;border-left:4px solid var(--gold);border-radius:5px;color:#3f4c43}
+.home-source-icon{flex:0 0 42px;width:42px;height:42px;border:3px solid #b08b50;border-radius:50%;display:grid;place-items:center;color:#94713c;font:700 24px Georgia,serif}
+.home-source-note strong{display:block;font:700 16px var(--serif);color:#25362d;margin-bottom:3px}
+.home-source-note p{margin:0;font:12px/1.55 var(--sans);color:#586157}
+body.home-view #discovery{margin-top:0;padding:18px;background:#e9e3d5;border:1px solid #d7cebd;border-radius:7px}
+body.home-view .searchrow input{min-height:52px;padding:13px 16px;font-size:15px;border-radius:5px}
+body.home-view .searchrow .primary{min-width:132px;border-radius:5px;font-size:14px}
+body.home-view #discovery .filters{margin-top:12px}
+body.home-view .head{margin-top:31px}
+@media(max-width:760px){#nav{padding:10px 4vw;gap:10px}#nav .nav-group{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;padding-bottom:3px}#nav .nav-group-label{display:none}#nav .nav-group button,#nav .nav-group a.nav-link{flex:0 0 auto;white-space:nowrap;min-height:38px}#nav .nav-group-primary{border:0;padding-bottom:0}#nav .nav-group-research{display:flex}.home-landing{padding:18px 0 23px}.home-intro h2{font-size:28px}.home-intro p{font-size:14px}.home-card,.home-card-family{display:flex;flex-direction:column;min-height:0}.home-card-family .home-card-image{order:0;height:auto;min-height:0;aspect-ratio:16/10}.home-card-family .home-card-copy{order:1;padding:17px 18px}.home-card-symbol{order:0;height:155px;min-height:155px}.home-card-copy{padding:16px 18px 18px}.home-card-copy h3{font-size:23px}.home-card-copy p{font-size:13px}.home-source-note{align-items:flex-start;padding:14px;gap:12px}.home-source-icon{flex-basis:36px;width:36px;height:36px;font-size:21px}.home-source-note strong{font-size:15px}.home-source-note p{font-size:11px}body.home-view #discovery{padding:13px}body.home-view .searchrow{flex-direction:row;gap:7px}body.home-view .searchrow .primary{min-width:92px;padding:10px 12px}body.home-view .searchrow input{font-size:13px;min-height:46px}}
+@media(max-width:420px){body.home-view .searchrow{flex-direction:column}body.home-view .searchrow .primary{min-height:44px}}
 </style>
 </head>
 <body>
@@ -126,9 +168,14 @@ body.family-view #familyBirsak,body.family-view #deepSearch{display:block!import
 </div>
 </header>
 <nav id="nav" aria-label="Hoofdnavigatie">
-<div class="nav-group nav-group-views" aria-label="Beeldcollecties">
-<span class="nav-group-label">Beeldcollecties</span>
-<button class="active" data-view="home" aria-current="page">Overzicht</button>
+<div class="nav-group nav-group-primary" aria-label="Hoofdingangen">
+<span class="nav-group-label">Ontdek het archief</span>
+<button class="primary-tab family-tab" data-view="family">Familieonderzoek Birsak</button>
+<button class="primary-tab active" data-view="home" aria-current="page">Beeldcollecties</button>
+<a class="nav-link primary-tab" href="#rmArchive">Historische beeldcollecties</a>
+</div>
+<div class="nav-group nav-group-views" aria-label="Thema's binnen beeldcollecties">
+<span class="nav-group-label">Thema's &amp; plaatsen</span>
 <button data-view="indies">Nederlands-Indië</button>
 <button data-view="java">Java</button>
 <button data-view="bandung">Bandoeng / Bandung</button>
@@ -136,12 +183,11 @@ body.family-view #familyBirsak,body.family-view #deepSearch{display:block!import
 <button data-view="bersiap">Bersiap &amp; onafhankelijkheidsstrijd</button>
 <button data-view="daily">Samenleving</button>
 </div>
-<div class="nav-group nav-group-research" aria-label="Familieonderzoek en archieven">
-<span class="nav-group-label">Familieonderzoek &amp; archieven</span>
-<button class="primary-tab family-tab" data-view="family">Familie Birsak</button>
-<a class="nav-link primary-tab" href="research/familie-birsak-genealogie.html">Birsak · genealogie &amp; bronnen</a>
-<a class="nav-link primary-tab" href="research/paspoortaanvragen.html">Paspoortarchief Birsak</a>
-<a class="nav-link primary-tab battalion-tab" href="research/15e-bataljon-tjikoedapateuh.html">15e Bataljon &amp; Tjikoedapateuh</a>
+<div class="nav-group nav-group-research" aria-label="Onderzoeksdossiers">
+<span class="nav-group-label">Onderzoeksdossiers</span>
+<a class="nav-link" href="research/familie-birsak-genealogie.html">Birsak · genealogie &amp; bronnen</a>
+<a class="nav-link" href="research/paspoortaanvragen.html">Paspoortarchief Birsak</a>
+<a class="nav-link battalion-tab" href="research/15e-bataljon-tjikoedapateuh.html">15e Bataljon &amp; Tjikoedapateuh</a>
 </div>
 </nav>
 <main id="main">
@@ -182,6 +228,8 @@ body.family-view #familyBirsak,body.family-view #deepSearch{display:block!import
 <a class="home-card-action" href="#rmArchive">Naar historische collecties <span aria-hidden="true">→</span></a>
 </div>
 </article>
+
+<div class="home-source-note"><div class="home-source-icon" aria-hidden="true">i</div><div><strong>Bronkritiek &amp; gebruik</strong><p>Een bijschrift of zoekresultaat is geen zelfstandig bewijs voor datering, locatie of identiteit. Controleer per item de oorspronkelijke bron, maker, beschrijving en beeldrechten. Onbekende gegevens blijven als onbekend vermeld.</p></div></div>
 </div>
 </section>
 <section class="intro">
@@ -397,7 +445,7 @@ function metadataValue(meta,key){return escapeText(meta?.[key]?.value||'')}
 function commonsLicenseUrl(meta){const raw=String(meta?.LicenseUrl?.value||'').trim().replace(/^http:/i,'https:');return raw.replace(/\/$/,'')+'/'}
 function isReusableCommonsLicense(meta){const url=commonsLicenseUrl(meta);return url==='https://creativecommons.org/publicdomain/mark/1.0/'||url==='https://creativecommons.org/publicdomain/zero/1.0/'||/^https:\/\/creativecommons\.org\/licenses\/by(?:-sa)?\/(?:1\.0|2\.0|2\.5|3\.0|4\.0)\/$/.test(url)}
 function status(title,message,showRetry=false){const el=document.createElement('div');el.className='status';const strong=document.createElement('strong');strong.textContent=title;const p=document.createElement('div');p.textContent=message;el.append(strong,p);if(showRetry){const b=document.createElement('button');b.className='secondary';b.type='button';b.textContent='Opnieuw proberen';b.addEventListener('click',()=>load(true));el.append(b)}return el}
-function syncView(){document.body.classList.toggle('family-view',view==='family');document.querySelectorAll('#nav button').forEach(b=>{const active=b.dataset.view===view;b.classList.toggle('active',active);if(active){b.setAttribute('aria-current','page')}else{b.removeAttribute('aria-current')}});$('#title').textContent=views[view].title;$('#intro').textContent=views[view].intro;$('#resultTitle').textContent=views[view].result;$('#places').hidden=view!=='java';$('#bandungTopics').hidden=view!=='bandung';$('#familyBirsak').hidden=view!=='family';$('#deepSearch').hidden=view!=='family';if(view==='family'){$('#resultTitle').textContent='Familie Birsak · fotodocumentatie'}document.querySelectorAll('#bandungTopics [data-term]').forEach(b=>b.classList.toggle('selected',b.dataset.term===customTerm))}
+function syncView(){document.body.classList.toggle('family-view',view==='family');document.body.classList.toggle('home-view',view==='home');document.querySelectorAll('#nav button').forEach(b=>{const active=b.dataset.view===view;b.classList.toggle('active',active);if(active){b.setAttribute('aria-current','page')}else{b.removeAttribute('aria-current')}});$('#title').textContent=views[view].title;$('#intro').textContent=views[view].intro;$('#resultTitle').textContent=views[view].result;$('#places').hidden=view!=='java';$('#bandungTopics').hidden=view!=='bandung';$('#familyBirsak').hidden=view!=='family';$('#deepSearch').hidden=view!=='family';if(view==='family'){$('#resultTitle').textContent='Familie Birsak · fotodocumentatie'}document.querySelectorAll('#bandungTopics [data-term]').forEach(b=>b.classList.toggle('selected',b.dataset.term===customTerm))}
 function addCard(page){const info=page.imageinfo?.[0];if(!info||!info.url||!String(info.mime||'').startsWith('image/')||!isReusableCommonsLicense(info.extmetadata||{}))return;const meta=info.extmetadata||{};const title=metadataValue(meta,'ObjectName')||String(page.title||'').replace(/^File:/,'');const year=yearFromMetadata(meta);
  const date=year?'Opnamedatering: '+year:'Opnamedatering niet vermeld in bron';const artist=metadataValue(meta,'Artist')||'Maker niet vermeld';const description=metadataValue(meta,'ImageDescription');const credit=metadataValue(meta,'Institution')||metadataValue(meta,'Credit')||'';const license=metadataValue(meta,'LicenseShortName')||'Licentie controleren';const fileKey=page.title||info.descriptionurl;const article=document.createElement('article');article.className='photo';const media=document.createElement('div');media.className='photo-media';const imageLink=document.createElement('a');imageLink.className='photo-image-link';imageLink.href=info.url;imageLink.target='_blank';imageLink.rel='noopener noreferrer';imageLink.setAttribute('aria-label','Open de afbeelding op volledige grootte: '+title);const img=document.createElement('img');img.loading=visibleCount<6?'eager':'lazy';img.decoding='async';img.src=info.thumburl||info.url;img.alt=title;let triedOriginal=false;img.onerror=()=>{if(!triedOriginal&&info.url&&img.src!==info.url){triedOriginal=true;img.src=info.url;return}media.replaceChildren();const fallback=document.createElement('div');fallback.className='status';fallback.textContent='Afbeelding tijdelijk niet beschikbaar';media.append(fallback)};imageLink.append(img);media.append(imageLink);const body=document.createElement('div');body.className='photo-body';const h=document.createElement('h3');h.className='photo-title';h.textContent=title;const m=document.createElement('div');m.className='photo-meta';m.textContent=[date,artist,credit].filter(Boolean).join(' · ');const desc=document.createElement('p');desc.className='photo-description';desc.textContent=description;const tags=document.createElement('div');tags.className='photo-tags';const t1=document.createElement('span');t1.className='tag';t1.textContent=license;tags.append(t1);const t2=document.createElement('span');t2.className='tag';t2.textContent=year?'Opnamejaar '+year:'Ongedateerd · historische context';tags.append(t2);const actions=document.createElement('div');actions.className='photo-actions';const link=document.createElement('a');link.href=info.descriptionurl||'https://commons.wikimedia.org/wiki/'+encodeURIComponent(page.title);link.target='_blank';link.rel='noopener noreferrer';link.textContent='Bron & rechten bekijken ↗';const fav=document.createElement('button');fav.type='button';fav.className='iconbtn';fav.textContent=favorites.has(fileKey)?'★ Opgeslagen':'☆ Bewaar';fav.setAttribute('aria-pressed',String(favorites.has(fileKey)));fav.addEventListener('click',()=>{if(favorites.has(fileKey)){favorites.delete(fileKey)}else{favorites.add(fileKey)}writeFavorites(favorites);fav.textContent=favorites.has(fileKey)?'★ Opgeslagen':'☆ Bewaar';fav.setAttribute('aria-pressed',String(favorites.has(fileKey)))});actions.append(link,fav);if(description)body.append(h,m,desc,tags,actions);else body.append(h,m,tags,actions);article.append(media,body);$('#results').append(article);visibleCount++}
 function addRijksmuseumGalleryCard(record){
