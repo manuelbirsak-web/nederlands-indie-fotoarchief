@@ -1,71 +1,71 @@
-Volgnummer;Familienaam_in_tekstbestand;Voornaam_in_tekstbestand;Geboortedatum_in_tekstbestand
-1;Ginkel;Leonora;14-03-1923
-2;Birsak;Ambrosina Theresia;
-3;Birsak;Ernanie Ernest;10-07-1877
-4;Birsak;Alvonst Robert;
-5;Moerbeek;Willem Barena;30-11-1907
-6;Birsak;Wilhelm Ilonkius;
-7;Hartmann;Wilhelmina;24-06-1927
-8;Pieters;Martha Leonora;21-10-1915
-9;Solbrig;Maximiliane;02-02-1914
-10;Birsak;Louis Frederik Willem;03-09-1921
-11;Riedyk;Charles;21-10-1883
-12;Birsak;Xenia Elzire;06-08-1906
-13;Ditn;Emalia Geetruida;19-05-1905
-14;Apfel;George Philip;20-03-1902
-15;Birsak;Arthur Rijklof;01-02-1879
-16;Birsak;Luthera;12-03-1904
-17;Birsak;Johannes Armand Louis;
-18;Hartsteen;Alfred Maximiliaan;16-11-1906
-19;Birsak;Marie Anna Ambroos;
-20;Birsak;Eleonora Regina;22-03-1930
-21;Birsak;Jetje;23-12-1934
-22;Bense;Antori Carel Lodewyk;30-01-1904
-23;Birsak;Xenia Elzire;
-24;Rijken;Francine Ernestine;06-07-1919
-25;Birsak;Marie Anna Ambroos;09-03-1912
-26;Kiliaan;Anthonetta;06-02-1918
-27;Birsak;Hubert Manuel;09-05-1908
-28;Birsak;Peter Alexander;12-06-1941
-29;Birsak;Louis Frederik Willem;
-30;Birsak;Travilla Caroline Ernanie;
-31;Birsak;Gerard George;
-32;Birsak;Rudi;15-09-1933
-33;Birsak;Jacob Marinus;
-34;Birsak;Irene Olga;10-10-1939
-35;Birsak;Edith;08-03-1932
-36;Takken;Wilhelmina Johanna;16-07-1913
-37;Birsak;Georgine Aleida;15-03-1889
-38;Birsak;Alfride Hendrik;03-09-1909
-39;Birsak;Hanriette Anny;05-07-1875
-40;Birsak;Peter;28-04-1939
-41;Heijden;Carolus Franciscus;07-09-1910
-42;Birsak;Alvonst Robert;13-04-1905
-43;Willemsen;Henri Everdinus Bart;10-05-1879
-44;Birsak;Ernanie Ernest;
-45;Schrijn;Caroliene Adèle;10-10-1879
-46;Birsak;Luthera;
-47;Birsak;George Gaston Andreas;
-48;Birsak;Ambrosina Theresia;05-06-1880
-49;Birsak;Arnold Wilhelm;
-50;Birsak;Victor;
-51;Birsak;Arnold Wilhelm;02-01-1907
-52;Verryk;Maria Cornelia;29-01-1916
-53;Birsak;Lucie Theresia;26-08-1901
-54;Lijtsman Piernbaum;Erna Marcelle;15-05-1906
-55;Birsak;Charles Arthur;18-04-1911
-56;Birsak;Franciscus Alexander;24-02-1912
-57;Birsak;Suzanna Hendrika;27-01-1909
-58;Birsak;Lucie Theresia;
-59;Birsak;Charles Arthur;
-60;Birsak;Jacob Marinus;22-11-1912
-61;Creutzburg;Maria Louisa;27-12-1875
-62;Birsak;Henriette Marie;13-05-1887
-63;Birsak;Wilhelm Ilonkius;20-07-1921
-64;Birsak;Franciscus Alexander;
-65;Birsak;Johanna Adolfine;
-66;Birsak;Theresia Henriëtte;25-09-1907
-67;Birsak;Travilla Caroline Ernanie;21-11-1914
-68;Birsak;Frans Eduard;
-69;Schouten;Claartje;14-07-1903
-70;Birsak;Johannes Armand Louis;
+Volgnummer;Familienaam_in_tekstbestand;Voornaam_in_tekstbestand;Geboortedatum_in_tekstbestand;CBG-code_eigen_aanvraag;Koppelstatus
+1;Ginkel;Leonora;14-03-1923;;Niet individueel bevestigd; geen code toewijzen
+2;Birsak;Ambrosina Theresia;;;Niet individueel bevestigd; geen code toewijzen
+3;Birsak;Ernanie Ernest;10-07-1877;B13323;A — eigen CBG-kaart; originele scan gecontroleerd
+4;Birsak;Alvonst Robert;;;Niet individueel bevestigd; geen code toewijzen
+5;Moerbeek;Willem Barena;30-11-1907;;Niet individueel bevestigd; geen code toewijzen
+6;Birsak;Wilhelm Ilonkius;;;Niet individueel bevestigd; geen code toewijzen
+7;Hartmann;Wilhelmina;24-06-1927;;Niet individueel bevestigd; geen code toewijzen
+8;Pieters;Martha Leonora;21-10-1915;;Niet individueel bevestigd; geen code toewijzen
+9;Solbrig;Maximiliane;02-02-1914;;Niet individueel bevestigd; geen code toewijzen
+10;Birsak;Louis Frederik Willem;03-09-1921;;Niet individueel bevestigd; geen code toewijzen
+11;Riedyk;Charles;21-10-1883;;Niet individueel bevestigd; geen code toewijzen
+12;Birsak;Xenia Elzire;06-08-1906;;Niet individueel bevestigd; geen code toewijzen
+13;Ditn;Emalia Geetruida;19-05-1905;;Niet individueel bevestigd; geen code toewijzen
+14;Apfel;George Philip;20-03-1902;;Niet individueel bevestigd; geen code toewijzen
+15;Birsak;Arthur Rijklof;01-02-1879;B13307;A — eigen CBG-kaart; originele scan gecontroleerd
+16;Birsak;Luthera;12-03-1904;;Niet individueel bevestigd; geen code toewijzen
+17;Birsak;Johannes Armand Louis;;;Niet individueel bevestigd; geen code toewijzen
+18;Hartsteen;Alfred Maximiliaan;16-11-1906;;Niet individueel bevestigd; geen code toewijzen
+19;Birsak;Marie Anna Ambroos;;;Niet individueel bevestigd; geen code toewijzen
+20;Birsak;Eleonora Regina;22-03-1930;;Niet individueel bevestigd; geen code toewijzen
+21;Birsak;Jetje;23-12-1934;;Niet individueel bevestigd; geen code toewijzen
+22;Bense;Antori Carel Lodewyk;30-01-1904;;Niet individueel bevestigd; geen code toewijzen
+23;Birsak;Xenia Elzire;;;Niet individueel bevestigd; geen code toewijzen
+24;Rijken;Francine Ernestine;06-07-1919;B13325;A — eigen CBG-kaart Francine Ernestine Rijken; originele scan gecontroleerd
+25;Birsak;Marie Anna Ambroos;09-03-1912;;Niet individueel bevestigd; geen code toewijzen
+26;Kiliaan;Anthonetta;06-02-1918;;Niet individueel bevestigd; geen code toewijzen
+27;Birsak;Hubert Manuel;09-05-1908;B13333;A — eigen CBG-kaart; ouders Ernanie en Caroline rechtstreeks vermeld
+28;Birsak;Peter Alexander;12-06-1941;;Niet individueel bevestigd; geen code toewijzen
+29;Birsak;Louis Frederik Willem;;;Niet individueel bevestigd; geen code toewijzen
+30;Birsak;Travilla Caroline Ernanie;;;Niet individueel bevestigd; geen code toewijzen
+31;Birsak;Gerard George;;;Niet individueel bevestigd; geen code toewijzen
+32;Birsak;Rudi;15-09-1933;;Niet individueel bevestigd; geen code toewijzen
+33;Birsak;Jacob Marinus;;;Niet individueel bevestigd; geen code toewijzen
+34;Birsak;Irene Olga;10-10-1939;;Niet individueel bevestigd; geen code toewijzen
+35;Birsak;Edith;08-03-1932;;Niet individueel bevestigd; geen code toewijzen
+36;Takken;Wilhelmina Johanna;16-07-1913;B13369;A — eigen CBG-kaart Wilhelmina Johanna Takken
+37;Birsak;Georgine Aleida;15-03-1889;;Niet individueel bevestigd; geen code toewijzen
+38;Birsak;Alfride Hendrik;03-09-1909;;Niet individueel bevestigd; geen code toewijzen
+39;Birsak;Hanriette Anny;05-07-1875;;Niet individueel bevestigd; geen code toewijzen
+40;Birsak;Peter;28-04-1939;;Niet individueel bevestigd; geen code toewijzen
+41;Heijden;Carolus Franciscus;07-09-1910;;Niet individueel bevestigd; geen code toewijzen
+42;Birsak;Alvonst Robert;13-04-1905;;Niet individueel bevestigd; geen code toewijzen
+43;Willemsen;Henri Everdinus Bart;10-05-1879;;Niet individueel bevestigd; geen code toewijzen
+44;Birsak;Ernanie Ernest;;;Niet individueel bevestigd; geen code toewijzen
+45;Schrijn;Caroliene Adèle;10-10-1879;B13311;A — eigen CBG-kaart Caroline Adèle Schrijn
+46;Birsak;Luthera;;;Niet individueel bevestigd; geen code toewijzen
+47;Birsak;George Gaston Andreas;;;Niet individueel bevestigd; geen code toewijzen
+48;Birsak;Ambrosina Theresia;05-06-1880;;Niet individueel bevestigd; geen code toewijzen
+49;Birsak;Arnold Wilhelm;;B13305;A — eigen CBG-kaart Arnold Wilhelm; ouders Ernanie en Caroline rechtstreeks vermeld
+50;Birsak;Victor;;;Niet individueel bevestigd; geen code toewijzen
+51;Birsak;Arnold Wilhelm;02-01-1907;;Mogelijk duplicaat van resultaat 49 (Arnold Wilhelm); eigen kaart niet afzonderlijk bevestigd
+52;Verryk;Maria Cornelia;29-01-1916;;Niet individueel bevestigd; geen code toewijzen
+53;Birsak;Lucie Theresia;26-08-1901;M12945;B — eigen CBG-code extern vermeld; scan niet in ZIP. M12951 is de kaart van echtgenoot Willem Barena Moerbeek
+54;Lijtsman Piernbaum;Erna Marcelle;15-05-1906;;Niet individueel bevestigd; geen code toewijzen
+55;Birsak;Charles Arthur;18-04-1911;B13313;A — eigen CBG-kaart Charles Arthur; ouders andere Birsak-tak
+56;Birsak;Franciscus Alexander;24-02-1912;B13327;A — eigen CBG-kaart Franciscus Alexander; ouders Ernanie en Caroline rechtstreeks vermeld
+57;Birsak;Suzanna Hendrika;27-01-1909;;Niet individueel bevestigd; geen code toewijzen
+58;Birsak;Lucie Theresia;;;Zelfde naam als resultaat 53 (Lucie Theresia); M12945 is extern genoemd, maar deze resultaatpositie niet afzonderlijk gekoppeld
+59;Birsak;Charles Arthur;;;Niet individueel bevestigd; geen code toewijzen
+60;Birsak;Jacob Marinus;22-11-1912;B13337;A — eigen CBG-kaart Jacob Marinus; ouders Josef Pieter Birsak en Jacoba Cornelia Pieters
+61;Creutzburg;Maria Louisa;27-12-1875;;Niet individueel bevestigd; geen code toewijzen
+62;Birsak;Henriette Marie;13-05-1887;;Niet individueel bevestigd; geen code toewijzen
+63;Birsak;Wilhelm Ilonkius;20-07-1921;;Niet individueel bevestigd; geen code toewijzen
+64;Birsak;Franciscus Alexander;;;Niet individueel bevestigd; geen code toewijzen
+65;Birsak;Johanna Adolfine;;;Niet individueel bevestigd; geen code toewijzen
+66;Birsak;Theresia Henriëtte;25-09-1907;;Niet individueel bevestigd; geen code toewijzen
+67;Birsak;Travilla Caroline Ernanie;21-11-1914;;Niet individueel bevestigd; geen code toewijzen
+68;Birsak;Frans Eduard;;;Niet individueel bevestigd; geen code toewijzen
+69;Schouten;Claartje;14-07-1903;;Niet individueel bevestigd; geen code toewijzen
+70;Birsak;Johannes Armand Louis;;;Niet individueel bevestigd; geen code toewijzen
