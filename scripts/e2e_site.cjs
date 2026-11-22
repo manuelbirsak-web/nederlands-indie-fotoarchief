@@ -68,6 +68,9 @@ async function main() {
     if (landingChecks.cards.join('|') !== 'Familieonderzoek Birsak|Beeldcollecties|Historische beeldcollecties') failures.push('Homepage primary sections are missing or out of order: ' + JSON.stringify(landingChecks.cards));
     if (landingChecks.familyImage !== 'assets/family/IMG_5108.jpeg' || landingChecks.familyImageLink !== '#familyBirsak') failures.push('Family card must use the original Maudy-Ellen photo and link to family research: ' + JSON.stringify(landingChecks));
     if (!/Maudy-Ellen/i.test(landingChecks.familyImageAlt || '')) failures.push('Family image alt text must identify Huis Maudy-Ellen');
+    await page.waitForFunction(() => { const image = document.querySelector('#homeLanding .home-card-family img'); return image && image.complete && image.naturalWidth > 0; }, null, { timeout: 15000 });
+    const familyImageLinkMatches = await page.locator('#homeLanding .home-card-family a').evaluate(link => link.getAttribute('href') === '#familyBirsak');
+    if (!familyImageLinkMatches) failures.push('Family image must link to the dedicated Birsak family view');
     try {
       await page.waitForFunction(() => document.querySelectorAll('#results .photo').length > 0, null, { timeout: 20000 });
     } catch (error) {
