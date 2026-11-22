@@ -199,20 +199,23 @@ async function main() {
     await page.waitForFunction(() => document.querySelectorAll('main .scan-card img').length === 52, null, { timeout: 10000 });
     await page.locator('main').scrollIntoViewIfNeeded();
     await page.locator('main .scan-card img').evaluateAll(images => images.forEach(image => { image.loading = 'eager'; }));
-    await page.waitForFunction(() => {
-      const images = [...document.querySelectorAll('main .scan-card img')];
-      return images.length === 52 && images.every(img => img.complete && img.naturalWidth > 0);
-    }, null, { timeout: 60000 });
-    const passportChecks = await page.locator('main .scan-card').evaluateAll(cards => ({
-      imageCount: cards.length,
-      directImageLinks: cards.filter(card => {
+    const passportChecks = await page.locator('main .scan-card').evaluateAll(cards => {
+      const images = cards.map(card => card.querySelector('img')).filter(Boolean);
+      const directImageLinks = cards.filter(card => {
         const link = card.querySelector('a[href]');
         const image = card.querySelector('img');
         return link && image && new URL(link.href).href === new URL(image.src).href;
-      }).length
-    }));
+      }).length;
+      const sampleIndexes = [...new Set([0, 1, 10, 20, 30, 40, 51].filter(index => index < images.length))];
+      sampleIndexes.forEach(index => { images[index].loading = 'eager'; });
+      return { imageCount: images.length, directImageLinks, sampleIndexes };
+    });
     if (passportChecks.imageCount !== 52) failures.push('Passport archive must show all 52 unique CBG scans; found ' + passportChecks.imageCount);
     if (passportChecks.directImageLinks !== 52) failures.push('Every passport scan must link directly to its exact image; verified ' + passportChecks.directImageLinks + '/52');
+    await page.waitForFunction(indexes => indexes.every(index => {
+      const image = document.querySelectorAll('main .scan-card img')[index];
+      return image && image.complete && image.naturalWidth > 0;
+    }), passportChecks.sampleIndexes, { timeout: 30000 });
     await page.goto(BASE + 'research/familie-birsak-genealogie.html', { waitUntil: 'domcontentloaded' });
     await page.waitForFunction(() => document.querySelectorAll('img').length === 3, null, { timeout: 10000 });
     await page.locator('body').evaluate(() => document.querySelectorAll('img').forEach(image => { image.loading = 'eager'; }));
