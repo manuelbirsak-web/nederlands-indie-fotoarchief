@@ -1,7 +1,7 @@
 Volgnummer;Familienaam_in_tekstbestand;Voornaam_in_tekstbestand;Geboortedatum_in_tekstbestand;CBG-code_eigen_aanvraag;Koppelstatus
 1;Ginkel;Leonora;14-03-1923;;Niet individueel bevestigd, geen code toewijzen
 2;Birsak;Ambrosina Theresia;;;Niet individueel bevestigd, geen code toewijzen
-3;Birsak;Ernanie Ernest;10-07-1877;B13323;A — eigen CBG-kaart; originele scan gecontroleerd
+3;Birsak;Ernanie Ernest;10-07-1877;B13323;A — eigen CBG-kaart, originele scan gecontroleerd
 4;Birsak;Alvonst Robert;;;Niet individueel bevestigd, geen code toewijzen
 5;Moerbeek;Willem Barena;30-11-1907;;Niet individueel bevestigd, geen code toewijzen
 6;Birsak;Wilhelm Ilonkius;;;Niet individueel bevestigd, geen code toewijzen
@@ -13,7 +13,7 @@ Volgnummer;Familienaam_in_tekstbestand;Voornaam_in_tekstbestand;Geboortedatum_in
 12;Birsak;Xenia Elzire;06-08-1906;;Niet individueel bevestigd, geen code toewijzen
 13;Ditn;Emalia Geetruida;19-05-1905;;Niet individueel bevestigd, geen code toewijzen
 14;Apfel;George Philip;20-03-1902;;Niet individueel bevestigd, geen code toewijzen
-15;Birsak;Arthur Rijklof;01-02-1879;B13307;A — eigen CBG-kaart; originele scan gecontroleerd
+15;Birsak;Arthur Rijklof;01-02-1879;B13307;A — eigen CBG-kaart, originele scan gecontroleerd
 16;Birsak;Luthera;12-03-1904;;Niet individueel bevestigd, geen code toewijzen
 17;Birsak;Johannes Armand Louis;;;Niet individueel bevestigd, geen code toewijzen
 18;Hartsteen;Alfred Maximiliaan;16-11-1906;;Niet individueel bevestigd, geen code toewijzen
@@ -22,10 +22,10 @@ Volgnummer;Familienaam_in_tekstbestand;Voornaam_in_tekstbestand;Geboortedatum_in
 21;Birsak;Jetje;23-12-1934;;Niet individueel bevestigd, geen code toewijzen
 22;Bense;Antori Carel Lodewyk;30-01-1904;;Niet individueel bevestigd, geen code toewijzen
 23;Birsak;Xenia Elzire;;;Niet individueel bevestigd, geen code toewijzen
-24;Rijken;Francine Ernestine;06-07-1919;B13325;A — eigen CBG-kaart Francine Ernestine Rijken; originele scan gecontroleerd
+24;Rijken;Francine Ernestine;06-07-1919;B13325;A — eigen CBG-kaart Francine Ernestine Rijken, originele scan gecontroleerd
 25;Birsak;Marie Anna Ambroos;09-03-1912;;Niet individueel bevestigd, geen code toewijzen
 26;Kiliaan;Anthonetta;06-02-1918;;Niet individueel bevestigd, geen code toewijzen
-27;Birsak;Hubert Manuel;09-05-1908;B13333;A — eigen CBG-kaart; ouders Ernanie en Caroline rechtstreeks vermeld
+27;Birsak;Hubert Manuel;09-05-1908;B13333;A — eigen CBG-kaart, ouders Ernanie en Caroline rechtstreeks vermeld
 28;Birsak;Peter Alexander;12-06-1941;;Niet individueel bevestigd, geen code toewijzen
 29;Birsak;Louis Frederik Willem;;;Niet individueel bevestigd, geen code toewijzen
 30;Birsak;Travilla Caroline Ernanie;;;Niet individueel bevestigd, geen code toewijzen
@@ -47,18 +47,18 @@ Volgnummer;Familienaam_in_tekstbestand;Voornaam_in_tekstbestand;Geboortedatum_in
 46;Birsak;Luthera;;;Niet individueel bevestigd, geen code toewijzen
 47;Birsak;George Gaston Andreas;;;Niet individueel bevestigd, geen code toewijzen
 48;Birsak;Ambrosina Theresia;05-06-1880;;Niet individueel bevestigd, geen code toewijzen
-49;Birsak;Arnold Wilhelm;;B13305;A — eigen CBG-kaart Arnold Wilhelm; ouders Ernanie en Caroline rechtstreeks vermeld
+49;Birsak;Arnold Wilhelm;;B13305;A — eigen CBG-kaart Arnold Wilhelm, ouders Ernanie en Caroline rechtstreeks vermeld
 50;Birsak;Victor;;;Niet individueel bevestigd, geen code toewijzen
-51;Birsak;Arnold Wilhelm;02-01-1907;;Mogelijk duplicaat van resultaat 49 (Arnold Wilhelm); eigen kaart niet afzonderlijk bevestigd
+51;Birsak;Arnold Wilhelm;02-01-1907;;Mogelijk duplicaat van resultaat 49 (Arnold Wilhelm), eigen kaart niet afzonderlijk bevestigd
 52;Verryk;Maria Cornelia;29-01-1916;;Niet individueel bevestigd, geen code toewijzen
-53;Birsak;Lucie Theresia;26-08-1901;M12945;B — eigen CBG-code extern vermeld; scan niet in ZIP. M12951 is de kaart van echtgenoot Willem Barena Moerbeek
+53;Birsak;Lucie Theresia;26-08-1901;M12945;B — eigen CBG-code extern vermeld, scan niet in ZIP. M12951 is de kaart van echtgenoot Willem Barena Moerbeek
 54;Lijtsman Piernbaum;Erna Marcelle;15-05-1906;;Niet individueel bevestigd, geen code toewijzen
-55;Birsak;Charles Arthur;18-04-1911;B13313;A — eigen CBG-kaart Charles Arthur; ouders andere Birsak-tak
-56;Birsak;Franciscus Alexander;24-02-1912;B13327;A — eigen CBG-kaart Franciscus Alexander; ouders Ernanie en Caroline rechtstreeks vermeld
+55;Birsak;Charles Arthur;18-04-1911;B13313;A — eigen CBG-kaart Charles Arthur, ouders andere Birsak-tak
+56;Birsak;Franciscus Alexander;24-02-1912;B13327;A — eigen CBG-kaart Franciscus Alexander, ouders Ernanie en Caroline rechtstreeks vermeld
 57;Birsak;Suzanna Hendrika;27-01-1909;;Niet individueel bevestigd, geen code toewijzen
-58;Birsak;Lucie Theresia;;;Zelfde naam als resultaat 53 (Lucie Theresia); M12945 is extern genoemd, maar deze resultaatpositie niet afzonderlijk gekoppeld
+58;Birsak;Lucie Theresia;;;Zelfde naam als resultaat 53 (Lucie Theresia), M12945 is extern genoemd, maar deze resultaatpositie niet afzonderlijk gekoppeld
 59;Birsak;Charles Arthur;;;Niet individueel bevestigd, geen code toewijzen
-60;Birsak;Jacob Marinus;22-11-1912;B13337;A — eigen CBG-kaart Jacob Marinus; ouders Josef Pieter Birsak en Jacoba Cornelia Pieters
+60;Birsak;Jacob Marinus;22-11-1912;B13337;A — eigen CBG-kaart Jacob Marinus, ouders Josef Pieter Birsak en Jacoba Cornelia Pieters
 61;Creutzburg;Maria Louisa;27-12-1875;;Niet individueel bevestigd, geen code toewijzen
 62;Birsak;Henriette Marie;13-05-1887;;Niet individueel bevestigd, geen code toewijzen
 63;Birsak;Wilhelm Ilonkius;20-07-1921;;Niet individueel bevestigd, geen code toewijzen
