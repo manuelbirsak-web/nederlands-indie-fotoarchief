@@ -1,0 +1,32 @@
+name: Import passport scans
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read private source archive
+        uses: actions/checkout@v4
+        with:
+          repository: manuelbirsak-web/paspoortaanvragen-archief
+          token: ${{ secrets.PASPOORT_ARCHIEF_READ_TOKEN }}
+          path: private-source
+          persist-credentials: false
+      - name: Copy source scans
+        run: |
+          set -euo pipefail
+          mkdir -p assets/paspoortaanvragen/originelen
+          find private-source/originelen/bronbestanden/Paspoortaanvragen -maxdepth 1 -type f -iname '*HaCBG_1796_*' \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \) -print0 | while IFS= read -r -d '' f; do
+            name=$(basename "$f" | sed -E 's/ 2(\.[^.]+)$/\1/')
+            cp -n "$f" "assets/paspoortaanvragen/originelen/$name" || true
+          done
+      - name: Commit imported scans
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/paspoortaanvragen/originelen
+          git diff --cached --quiet || (git commit -m "Import passport archive source scans" && git push)
