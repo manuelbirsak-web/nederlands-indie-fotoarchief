@@ -233,6 +233,488 @@
         "RNL-HaCBG_1796_B13361.jpg (directe kaartlezing; ouders en geboortegegevens)",
         "NL-HaCBG_1796_B13317.jpg (vergelijkende kaartlezing Edith; dezelfde ouders)"
       ]
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_A05149.jpg",
+      "cbgCode": "A05149",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "6f9c0a2c3d2c7e84a4cbc99a2c893c06a7b74d4ec667ecc616093d679f086f6e",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_A05149 2.jpg",
+        "Paspoortaanvragen/NL-HaCBG_1796_A05149.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_A05163.jpg",
+      "cbgCode": "A05163",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "4d8cbb18e2b4d2e90b5d5fca2734163bb89b128108241dd0469a0abd96f34bf4",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_A05163.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B08435.jpg",
+      "cbgCode": "B08435",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "1236c100ca72737d76ba5032caeec195d7a88af173969e75e279aff103c0e5f3",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B08435 2.jpg",
+        "Paspoortaanvragen/NL-HaCBG_1796_B08435.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B08455.jpg",
+      "cbgCode": "B08455",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "7b3ba62b0a31d3af20fee42ee2a587172aa44a50cff4702a222b30db6eb9bd1b",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B08455.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13301.jpg",
+      "cbgCode": "B13301",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "a13203580290b828ccfada826f8b9c598d4ce129d2a6653cb46347abb03436fe",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13301.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13303.jpg",
+      "cbgCode": "B13303",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "48f0d8db11e2bfba725f9616ac4c188c8f0759ae96aa8779253a84ed56cace85",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13303.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13313.jpg",
+      "cbgCode": "B13313",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "d1a6055e852e0876fa3797cbbaf2af1d76c5f2eafbda3066560420660d208994",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13313.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13315.jpg",
+      "cbgCode": "B13315",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "c1931a2fdb22f5f1da83e98361ff8c5a0fd6add1366548d69d3f9c51460f3ae2",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13315 2.jpg",
+        "Paspoortaanvragen/NL-HaCBG_1796_B13315.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13319.jpg",
+      "cbgCode": "B13319",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "7105fbc6022a3771a501f4617605b3dff55d1927ac0060afa3390ddd71616ece",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13319.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13321.jpg",
+      "cbgCode": "B13321",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "4b02c980f512b06884c3b3e98119b49ef80448e4b67b93a8bf72dfcac8a14d59",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13321 2.jpg",
+        "Paspoortaanvragen/NL-HaCBG_1796_B13321.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13327.jpg",
+      "cbgCode": "B13327",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "2b2aa4fe58116ad8260e07df1ee105825338a663b4578a1140f443d40ce5f6da",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13327.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13329.jpg",
+      "cbgCode": "B13329",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "5db5a7e37a0494732bfa758ec38b639d57cb040b542321f8e836ccc3dabafbdb",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13329.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13331.jpg",
+      "cbgCode": "B13331",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "2baa3c180526d3687c8765ae418f4eced5a4b3bf0fd8bfdda50bdd66bfdfae33",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13331.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13335.jpg",
+      "cbgCode": "B13335",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "3b3c453bc4199ced1601bff6019f0d4427a6ca48a5c45ada76b8a8173ecd9e3a",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13335.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13337.jpg",
+      "cbgCode": "B13337",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "b0f286829f466d2fdb82cebf0d08be68e6daf7dd91103ee28d86a7272279cb7c",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13337 2.jpg",
+        "Paspoortaanvragen/NL-HaCBG_1796_B13337.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13341.jpg",
+      "cbgCode": "B13341",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "0ec735247f521820648e333ade941744795499e59f13ec55b31e5abea0a5ba29",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13341.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13345.jpg",
+      "cbgCode": "B13345",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "cf74f93a6ccef94977651250da9f6de122a680b2d41c9cf679872650b53065fe",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13345.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13349.jpg",
+      "cbgCode": "B13349",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "19fc1ad1dfe48d73c0da2474cb2c507f97e4b5b86e185f555d8072b23750a6f2",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13349 2.jpg",
+        "Paspoortaanvragen/NL-HaCBG_1796_B13349.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13351.jpg",
+      "cbgCode": "B13351",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "b60c66255080befceb56e68a516ca38168d2b53b30814633e3d6a24223cc977d",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13351 2.jpg",
+        "Paspoortaanvragen/NL-HaCBG_1796_B13351 3.jpg",
+        "Paspoortaanvragen/NL-HaCBG_1796_B13351.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13353.jpg",
+      "cbgCode": "B13353",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "6fa81ec2f4cd0d5b41aa6a766df5eed03d190fd46fce97daae982f46e0c8d33d",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13353 2.jpg",
+        "Paspoortaanvragen/NL-HaCBG_1796_B13353.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13355.jpg",
+      "cbgCode": "B13355",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "4d191b18820a56c8e2f21ba28935c326a08ea893e50fbb1bcdd32a3383e6c138",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13355 2.jpg",
+        "Paspoortaanvragen/NL-HaCBG_1796_B13355.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13357.jpg",
+      "cbgCode": "B13357",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "a45212b9d2441654cfc79bd0427d217d1a5310ff020d8a233a447f10025db203",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13357.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13359.jpg",
+      "cbgCode": "B13359",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "c4226aba89585f4f39e2f0480f55c202c9726ef82cce322837660c727542ae95",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13359.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13363.jpg",
+      "cbgCode": "B13363",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "06678bbfbbde5266e95cebb596dc22d54c8e82333d2b77c1d615a613241504d1",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13363.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13365.jpg",
+      "cbgCode": "B13365",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "e9fb3bec9dcef1f6b8371a6a21864c685bbe31717a155973a423421dc61befb6",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13365.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_B13367.jpg",
+      "cbgCode": "B13367",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "f7064cbdfaca02d1447846109f84f8dd2206f477d4a5ddede5b57926390ed8bc",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_B13367.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_H06049.jpg",
+      "cbgCode": "H06049",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "1526ecd81f876445d08d759dcd6e9333b7dc541062c3980f6945a93d76803a2e",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_H06049 2.jpg",
+        "Paspoortaanvragen/NL-HaCBG_1796_H06049.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_H06109.jpg",
+      "cbgCode": "H06109",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "cdf10ee26209fa4cad759a0bf901e527c0f715f6fa63c55f5fd1c1f1ca000fd8",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_H06109 2.jpg",
+        "Paspoortaanvragen/NL-HaCBG_1796_H06109.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_H13763.jpg",
+      "cbgCode": "H13763",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "f57310ccf83f90fd4e7007cde276ccaa40696cbc169af87c02e88f5f879274a8",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_H13763.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_H13891.jpg",
+      "cbgCode": "H13891",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "615475386a0fd1887dd505065ef186720fa63b2e4fb68dac127f0b75a9751c60",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_H13891.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_M12951.jpg",
+      "cbgCode": "M12951",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "fe497976417232d4c33a841f55eb4a9bf17ac1b80a21fd883d502d15aab72155",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_M12951.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_R05497.jpg",
+      "cbgCode": "R05497",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "fb3b7abd565f6aea576b359091e065ed206bd5352db5c1ae70d347627655f494",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_R05497 2.jpg",
+        "Paspoortaanvragen/NL-HaCBG_1796_R05497.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_T03893.jpg",
+      "cbgCode": "T03893",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "6e475cbcaa495111223bd92a22f500e9d7b7d623b5c236d93dd1cd2461e94768",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_T03893.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_W09625.jpg",
+      "cbgCode": "W09625",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "2a1e1432f3b0b458009fa1e5b4b273d79447d7082e465dafe3c5cd18a2d05288",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_W09625 2.jpg",
+        "Paspoortaanvragen/NL-HaCBG_1796_W09625.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_W09687.jpg",
+      "cbgCode": "W09687",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "889cfa29a574bdbd5b332f4f85f951702a23b7ec2a73bb9769437d5b112bfd16",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_W09687.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
+    },
+    {
+      "file": "originelen/NL-HaCBG_1796_Z01243.jpg",
+      "cbgCode": "Z01243",
+      "person": null,
+      "identificationStatus": "Nog niet aan een persoon gekoppeld; originele scan overgenomen uit de broninventaris. Persoonsidentificatie vereist afzonderlijke kaartlezing.",
+      "originalPreserved": true,
+      "sha256": "448b1079e0e919e3e058966fa622cdf09eee5b68095e0d921893027e4a5eb0ac",
+      "sourceFiles": [
+        "Paspoortaanvragen/NL-HaCBG_1796_Z01243.jpg"
+      ],
+      "publicAvailabilityVerified": false,
+      "publicationStatus": "publicatie-/catalogusstatus nog niet individueel geverifieerd; geen rechtenverklaring"
     }
   ],
   "duplicatesRemoved": [
@@ -253,11 +735,18 @@
       "sameAs": "NL-HaCBG_1796_S18925.jpg"
     }
   ],
-  "note": "16 unieke CBG-scanbestanden. Directe persoonskoppelingen op kaart: B13305 Arnold Wilhelm Birsak; B13311 Caroline Adèle Birsak-Schrijn; B13323 Ernanie Ernest Birsak (paspoort 904643); B13333 Hubert Manuel Birsak (paspoort 904645); S18895 Roemsa(h) Smits; S19075 Willem Alexander Smits. Echtgenoten en ouders worden als verwanten vermeld, niet als afzonderlijke aanvragen tenzij een eigen kaart bestaat.",
+  "note": "52 unieke originele scans volgens SHA-256-broninventaris. Persoonskoppelingen alleen waar eerder rechtstreeks onderbouwd; overige kaarten blijven ongeïdentificeerd totdat ze afzonderlijk zijn getranscribeerd. Publieke beschikbaarheid/rechten niet individueel geverifieerd.",
   "publicationReview": {
     "status": "not-independently-verified",
     "note": "CBG states that a scan of the front of a card is publicly visible only if all persons named on that card have died; backs are not shown publicly. The repository files must be checked against the publicly available CBG catalogue records. A scan obtained via a personal exemption must not be republished publicly without separate permission.",
     "checkedAgainstIndividualCBGRecords": false,
     "source": "https://cbg.nl/bronnen/indisch-oud-paspoortarchief/"
+  },
+  "sourceInventory": {
+    "fileCount": 170,
+    "scanFileCount": 75,
+    "uniqueScanCount": 52,
+    "duplicateScanFileCount": 23,
+    "sha256VerifiedAgainst": "private source inventaris/sha256_originelen.json"
   }
 }
