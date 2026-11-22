@@ -227,7 +227,11 @@ async function main() {
     const genealogyImageCount = await page.locator('img').count();
     if (genealogyImageCount !== 3) failures.push('Genealogy dossier must show the original civil-service and civil-register scans; found ' + genealogyImageCount);
     await page.goto(BASE, { waitUntil: 'domcontentloaded' });
-    await waitForLoadedGallery();
+    await page.waitForFunction(
+      () => document.querySelector('#results')?.getAttribute('aria-busy') === 'false',
+      null,
+      { timeout: 20000 }
+    );
 
     const rightsChecks = await page.evaluate(() => ({
       cc0: isReusableCommonsLicense({ LicenseUrl: { value: 'https://creativecommons.org/publicdomain/zero/1.0/' } }),
