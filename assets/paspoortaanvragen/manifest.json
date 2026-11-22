@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "collection": "CBG Indisch Oud-Paspoortarchief, collectie-/scanreeks 1796",
-  "generatedAt": "2026-11-19",
+  "generatedAt": "2026-11-22",
   "sourcePolicy": "CBG-codes identificeren scans. Persoonskoppelingen zijn gemaakt waar naam of familiegegevens rechtstreeks op de kaart leesbaar zijn; vermeldingen van verwanten worden niet gelijkgesteld aan afzonderlijke aanvragen.",
   "files": [
     {
@@ -35,11 +35,19 @@
     {
       "file": "originelen/NL-HaCBG_1796_B13307.jpg",
       "cbgCode": "B13307",
-      "person": null,
-      "identificationStatus": "Nog niet aan een persoon gekoppeld",
+      "person": "Arthur Rijklof Birsak",
+      "identificationStatus": "Directe kaartlezing: Arthur Rijklof Birsak, geboren 1 februari 1879 te Djokjakarta. Vader Frederik George Willem Birsak; moeder Theresia Birsak, geboren Plasman. Mogelijke broer van Ernanie Ernest; gelijkstelling van de moeder met Johanna Theresia Plasman nog niet onafhankelijk bevestigd.",
       "originalPreserved": true,
       "publicAvailabilityVerified": false,
-      "publicationStatus": "check individual CBG catalogue visibility before public redistribution"
+      "publicationStatus": "check individual CBG catalogue visibility before public redistribution",
+      "relatedPersons": [
+        "Frederik George Willem Birsak (vader)",
+        "Theresia Birsak, geboren Plasman (moeder; voornaamvariant met kaart B13323 nog controleren)"
+      ],
+      "evidence": [
+        "NL-HaCBG_1796_B13307.jpg (directe kaartlezing)",
+        "NL-HaCBG_1796_B13323.jpg (vergelijking vader Frederik George Willem; moedernaam niet gelijkgesteld zonder aanvullende bron)"
+      ]
     },
     {
       "file": "originelen/NL-HaCBG_1796_B13311.jpg",
@@ -61,11 +69,20 @@
     {
       "file": "originelen/NL-HaCBG_1796_B13317.jpg",
       "cbgCode": "B13317",
-      "person": null,
-      "identificationStatus": "Nog niet aan een persoon gekoppeld",
+      "person": "Edith Birsak",
+      "identificationStatus": "Directe kaartlezing: Edith Birsak, geboren 8 maart 1932 te Soerabaja. Vader Johannes Armand Louis Birsak, geboren 4 november 1901 te Madioen; moeder Emalia Geertruida Birsak, geboren 19 juli 1905 te Blitar.",
       "originalPreserved": true,
       "publicAvailabilityVerified": false,
-      "publicationStatus": "check individual CBG catalogue visibility before public redistribution"
+      "publicationStatus": "check individual CBG catalogue visibility before public redistribution",
+      "relatedPersons": [
+        "Johannes Armand Louis Birsak (vader)",
+        "Emalia Geertruida Birsak (moeder)",
+        "Rudi Birsak (broer; dezelfde ouders op CBG-kaart B13361)"
+      ],
+      "evidence": [
+        "NL-HaCBG_1796_B13317.jpg (directe kaartlezing; ouders en geboortegegevens)",
+        "RNL-HaCBG_1796_B13361.jpg (vergelijkende kaartlezing Rudi; dezelfde ouders)"
+      ]
     },
     {
       "file": "originelen/NL-HaCBG_1796_B13323.jpg",
@@ -87,11 +104,19 @@
     {
       "file": "originelen/NL-HaCBG_1796_B13325.jpg",
       "cbgCode": "B13325",
-      "person": null,
-      "identificationStatus": "Nog niet aan een persoon gekoppeld",
+      "person": "Francine Ernestine Rijken",
+      "identificationStatus": "Directe kaartlezing: Francine Ernestine Rijken, geboren 6 juli 1919 te Buitenzorg. Echtgenoot: Franciscus Alexander Birsak. Rode kanttekening vermeldt Ernanie Ernest Birsak (10 juli 1877 te Djokjakarta) als schoonvader.",
       "originalPreserved": true,
       "publicAvailabilityVerified": false,
-      "publicationStatus": "check individual CBG catalogue visibility before public redistribution"
+      "publicationStatus": "check individual CBG catalogue visibility before public redistribution",
+      "relatedPersons": [
+        "Franciscus Alexander Birsak (echtgenoot; eigen CBG-kaart B13327)",
+        "Ernanie Ernest Birsak (schoonvader volgens rode kanttekening)"
+      ],
+      "evidence": [
+        "NL-HaCBG_1796_B13325.jpg (directe kaartlezing; echtgenoot en rode schoonvader-kanttekening)",
+        "NL-HaCBG_1796_B13327.jpg (vergelijkende kaartlezing van echtgenoot en diens ouders)"
+      ]
     },
     {
       "file": "originelen/NL-HaCBG_1796_B13333.jpg",
@@ -194,11 +219,20 @@
     {
       "file": "originelen/RNL-HaCBG_1796_B13361.jpg",
       "cbgCode": "B13361",
-      "person": null,
-      "identificationStatus": "Nog niet aan een persoon gekoppeld",
+      "person": "Rudi Birsak",
+      "identificationStatus": "Directe kaartlezing: Rudi Birsak, geboren 13 september 1933 te Soerabaja. Vader Johannes Armand Louis Birsak, geboren 4 november 1901 te Madioen; moeder Emalia Geertruida Birsak, geboren 19 juli 1905 te Blitar.",
       "originalPreserved": true,
       "publicAvailabilityVerified": false,
-      "publicationStatus": "check individual CBG catalogue visibility before public redistribution"
+      "publicationStatus": "check individual CBG catalogue visibility before public redistribution",
+      "relatedPersons": [
+        "Johannes Armand Louis Birsak (vader)",
+        "Emalia Geertruida Birsak (moeder)",
+        "Edith Birsak (zus; dezelfde ouders op CBG-kaart B13317)"
+      ],
+      "evidence": [
+        "RNL-HaCBG_1796_B13361.jpg (directe kaartlezing; ouders en geboortegegevens)",
+        "NL-HaCBG_1796_B13317.jpg (vergelijkende kaartlezing Edith; dezelfde ouders)"
+      ]
     }
   ],
   "duplicatesRemoved": [
