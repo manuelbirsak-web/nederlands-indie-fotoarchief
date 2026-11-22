@@ -28,5 +28,9 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
           git add assets/paspoortaanvragen/originelen
-          git diff --cached --quiet || (git commit -m "Import passport archive source scans" && git push)
+          if ! git diff --cached --quiet; then
+            git commit -m "Import passport archive source scans"
+            git push origin HEAD:main
+          fi
