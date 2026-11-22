@@ -1,0 +1,36 @@
+name: Verify private passport archive access
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify read-only access to private source manifest
+        env:
+          PASPOORT_ARCHIEF_READ_TOKEN: ${{ secrets.PASPOORT_ARCHIEF_READ_TOKEN }}
+        run: |
+          set -euo pipefail
+          test -n "$PASPOORT_ARCHIEF_READ_TOKEN"
+          curl --fail --silent --show-error \
+            -H "Authorization: Bearer $PASPOORT_ARCHIEF_READ_TOKEN" \
+            -H "Accept: application/vnd.github.raw+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/manuelbirsak-web/paspoortaanvragen-archief/contents/inventaris/sha256_originelen.json" \
+            -o /tmp/sha256_originelen.json
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("/tmp/sha256_originelen.json").read_text(encoding="utf-8"))
+          files = data.get("files", [])
+          scans = [f for f in files if "NL-HaCBG_1796_" in f.get("path", "")]
+          unique = {f.get("sha256") for f in scans if f.get("sha256")}
+          print(f"Manifest access: OK")
+          print(f"Manifest file_count: {data.get('file_count')}")
+          print(f"Scan files: {len(scans)}")
+          print(f"Unique scan hashes: {len(unique)}")
+          if data.get("file_count") != 170 or len(scans) != 75 or len(unique) != 52:
+              raise SystemExit("Source inventory does not match the previously validated baseline; stop for review.")
+          print("PASS: private source manifest matches the validated baseline (170 / 75 / 52).")
+          PY
