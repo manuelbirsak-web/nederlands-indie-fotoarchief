@@ -84,11 +84,14 @@ async function main() {
       }));
       throw new Error('Initial gallery did not render a photo: ' + JSON.stringify(state) + '; ' + error.message);
     }
-    const waitForLoadedGallery = async () => page.waitForFunction(() => {
+    const waitForLoadedGallery = async () => {
+      await page.locator('#results').scrollIntoViewIfNeeded();
+      return page.waitForFunction(() => {
       const images = [...document.querySelectorAll('#results .photo img')];
       return document.querySelector('#results')?.getAttribute('aria-busy') === 'false' &&
         images.length > 0 && images.some(image => image.complete && image.naturalWidth > 0);
     }, null, { timeout: 20000 });
+    };
     await page.locator('#homeLanding .home-card-image').click();
     await page.waitForFunction(() => document.body.classList.contains('family-view') && !document.querySelector('#familyBirsak').hidden, null, { timeout: 5000 });
     await page.locator('#nav [data-view="home"]').click();
