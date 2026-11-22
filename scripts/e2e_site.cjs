@@ -198,7 +198,6 @@ async function main() {
     if (!passportResponse || passportResponse.status() !== 200) failures.push('Passport archive page did not return HTTP 200');
     await page.waitForFunction(() => document.querySelectorAll('main .scan-card img').length === 52, null, { timeout: 10000 });
     await page.locator('main').scrollIntoViewIfNeeded();
-    await page.locator('main .scan-card img').evaluateAll(images => images.forEach(image => { image.loading = 'eager'; }));
     const passportChecks = await page.locator('main .scan-card').evaluateAll(cards => {
       const images = cards.map(card => card.querySelector('img')).filter(Boolean);
       const directImageLinks = cards.filter(card => {
