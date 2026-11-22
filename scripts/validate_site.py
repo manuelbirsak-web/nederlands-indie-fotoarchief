@@ -260,8 +260,8 @@ def main() -> None:
         fail("Navigatie- en filterstatus wordt niet vóór de eerste beeldzoekopdracht hersteld en opgeslagen")
     if "img.crossOrigin='anonymous'" in source:
         fail("Externe foto-CDN mag niet onnodig met CORS-modus worden geladen")
-    if "img.loading=visibleCount<6?'eager':'lazy'" not in source or "cache:'no-store'" not in source:
-        fail("Zichtbare foto's moeten direct laden en filterwijzigingen moeten verse bronresultaten aanvragen")
+    if "img.loading='lazy'" not in source or "cache:'no-store'" not in source:
+        fail("Galerijfoto's moeten pas bij naderen/scrollen laden en filterwijzigingen moeten verse bronresultaten aanvragen")
     if "batches < 8" not in source:
         fail("Fotoselectie moet voldoende bronpagina's doorzoeken bij beperkte filterresultaten")
     if "textContent" not in source:
