@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#17251f">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<meta name="description" content="Historische foto's en primaire bronnen over Nederlands-Indië, Java en Bandoeng/Bandung. Doorzoek, vergelijk en traceer beeldmateriaal.">
-<meta property="og:title" content="Indisch Beeldarchief — Historisch fotoarchief">
-<meta property="og:description" content="Een digitaal venster op Nederlands-Indië, Java en Bandoeng/Bandung.">
-<title>Indisch Beeldarchief — Nederlands-Indië in beeld</title>
+<meta name="description" content="Indonesië Archief: familieonderzoek Birsak, historische beeldcollecties en bronnen over Nederlands-Indië, Java en Bandoeng/Bandung.">
+<meta property="og:title" content="Indonesië Archief — Familie, beeldcollecties en geschiedenis">
+<meta property="og:description" content="Familieonderzoek Birsak, historische foto’s en beeldcollecties uit Nederlands-Indië.">
+<title>Indonesië Archief — Familie, beeldcollecties en geschiedenis</title>
 <style>
 :root{--ink:#1d2822;--muted:#657168;--paper:#f3f0e7;--paper2:#e9e3d5;--card:#fffdf7;--forest:#1e352b;--forest2:#294638;--gold:#b08b50;--gold2:#d8c19a;--line:#d8d0bf;--shadow:0 16px 44px #1b2b2012;--serif:Georgia,"Times New Roman",serif;--sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 var(--serif)}a{color:inherit}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #b08b50;outline-offset:3px}.skip{position:absolute;left:-9999px;top:auto}.skip:focus{left:1rem;top:1rem;z-index:99;background:white;padding:12px}
@@ -88,17 +88,41 @@ h2{font:normal clamp(27px,3vw,39px)/1.12 var(--serif);letter-spacing:-.025em;mar
 #familyBirsak,#deepSearch{scroll-margin-top:78px}
 body.family-view main > :not(#familyBirsak):not(#deepSearch){display:none!important}
 body.family-view #familyBirsak,body.family-view #deepSearch{display:block!important}
+
+/* Homepage information architecture — CR-01 */
+.home-landing{padding:8px 0 36px}
+.home-intro{max-width:850px;margin:0 auto 24px;text-align:center}
+.home-intro h2{font:normal clamp(28px,4vw,42px)/1.12 var(--serif);margin:8px 0 10px}
+.home-intro p{max-width:760px;margin:0 auto;color:#536057;font-size:16px}
+.home-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.home-card{min-width:0;display:flex;flex-direction:column;background:var(--card);border:1px solid #cfc4ae;border-radius:9px;overflow:hidden;box-shadow:0 8px 24px #1b2b2010}
+.home-card-image{position:relative;display:block;min-height:190px;height:190px;background:#d7d0c1;overflow:hidden}
+.home-card-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 52%;transition:transform .25s ease}
+.home-card-image:hover img{transform:scale(1.025)}
+.image-caption{position:absolute;left:0;right:0;bottom:0;padding:8px 12px;background:#17251edb;color:#fff9ec;font:11px/1.35 var(--sans)}
+.home-card-symbol{height:190px;display:grid;place-items:center;background:linear-gradient(135deg,#e9e3d5,#f8f5ec);color:var(--forest)}
+.home-card-symbol svg{width:72px;height:72px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.home-card-copy{display:flex;flex-direction:column;align-items:flex-start;flex:1;padding:18px 19px 20px}
+.home-card-kicker{font:700 10px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#8b7045}
+.home-card-copy h3{font:normal clamp(20px,2vw,25px)/1.2 var(--serif);margin:7px 0 9px;color:var(--ink)}
+.home-card-copy p{font:13px/1.55 var(--sans);color:#536057;margin:0 0 17px}
+.home-card-action{display:inline-flex;align-items:center;gap:12px;margin-top:auto;border:0;border-radius:4px;background:var(--forest);color:#fffdf7;padding:11px 14px;text-decoration:none;font:650 12px var(--sans);cursor:pointer}
+.home-card-action:hover{background:#345343}
+.home-card-action span{font-size:18px;line-height:12px}
+@media(max-width:850px){.home-cards{grid-template-columns:1fr 1fr}.home-card-family{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)}.home-card-family .home-card-image{height:100%;min-height:230px}.home-card-family .home-card-copy{justify-content:center}}
+@media(max-width:560px){.home-landing{padding:2px 0 27px}.home-intro{text-align:left;margin-bottom:17px}.home-cards{grid-template-columns:1fr;gap:12px}.home-card-family{display:flex;grid-column:auto}.home-card-image,.home-card-symbol{height:174px;min-height:174px}.home-card-copy{padding:15px 16px 17px}.home-card-copy h3{font-size:22px}.home-card-copy p{font-size:13px}}
+
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Direct naar de beeldcollectie</a>
-<div class="topline"><span>Digitaal historisch erfgoed · Beeldcollecties</span><span>Archiefperiode ca. 1800–1959 · Indonesië</span></div>
+<div class="topline"><span>Digitaal historisch erfgoed · Familie · Beeldcollecties · Geschiedenis</span><span>Indonesië / Nederlands-Indië</span></div>
 <header class="hero">
 <div class="hero-inner">
-<div class="eyebrow">Een groeiend digitaal venster op het verleden</div>
-<h1>Indisch<br>Beeldarchief</h1>
-<p>Ontdek historische foto's van Nederlands-Indië. Van de straten van Bandoeng tot het dagelijks leven op Java en de geschiedenis van de gehele archipel — met aandacht voor herkomst, context en beeldrechten.</p>
-<div class="hero-bottom"><span><i class="dot"></i> Nederlands-Indië</span><span><i class="dot"></i> Java & Bandoeng</span><span><i class="dot"></i> KNIL & samenleving</span></div>
+<div class="eyebrow">Een digitaal venster op onze geschiedenis</div>
+<h1>Indonesië<br>Archief</h1>
+<p>Ontdek de geschiedenis van de familie Birsak, historische foto’s en beeldcollecties uit Nederlands-Indië. Een verzamelplek voor familieonderzoek, beeldmateriaal en context over het leven in de voormalige kolonie.</p>
+<div class="hero-bottom"><span><i class="dot"></i> Familie Birsak</span><span><i class="dot"></i> Beeldcollecties</span><span><i class="dot"></i> Historische bronnen</span></div>
 </div>
 </header>
 <nav id="nav" aria-label="Hoofdnavigatie">
@@ -121,11 +145,50 @@ body.family-view #familyBirsak,body.family-view #deepSearch{display:block!import
 </div>
 </nav>
 <main id="main">
+<section id="homeLanding" class="home-landing" aria-labelledby="homeLandingTitle">
+<div class="home-intro">
+<div class="section-label">Welkom in het archief</div>
+<h2 id="homeLandingTitle">Drie ingangen naar familie, beeld en geschiedenis</h2>
+<p>Verken het familieverhaal van Birsak, doorzoek thematische fotocollecties of ga rechtstreeks naar historische bronnen van archieven en musea. Bij ieder onderdeel blijven herkomst, context en onzekerheden zichtbaar.</p>
+</div>
+<div class="home-cards">
+<article class="home-card home-card-family">
+<a class="home-card-image" href="#familyBirsak" data-open-family aria-label="Open familieonderzoek Birsak">
+<img src="assets/family/IMG_5108.jpeg" alt="Originele familiefoto van de overgrootouders bij huis Maudy-Ellen in Bandoeng" loading="eager" decoding="async">
+<span class="image-caption">Overgrootouders bij huis Maudy-Ellen · Bandoeng</span>
+</a>
+<div class="home-card-copy">
+<div class="home-card-kicker">Familiegeschiedenis</div>
+<h3>Familieonderzoek Birsak</h3>
+<p>Genealogisch onderzoek, persoonsdossiers en originele familiebeelden. Volg de Birsak-familielijn aan de hand van archiefstukken en controleerbare bronnen.</p>
+<button class="home-card-action" type="button" data-view="family">Naar familieonderzoek <span aria-hidden="true">→</span></button>
+</div>
+</article>
+<article class="home-card">
+<div class="home-card-symbol" aria-hidden="true"><svg viewBox="0 0 64 64"><rect x="10" y="13" width="43" height="36" rx="3"></rect><path d="M15 43 27 29l9 9 7-7 10 12"></path><circle cx="40" cy="22" r="3"></circle><path d="M5 20v34a4 4 0 0 0 4 4h39"></path></svg></div>
+<div class="home-card-copy">
+<div class="home-card-kicker">Thema’s en plaatsen</div>
+<h3>Beeldcollecties</h3>
+<p>Doorzoek foto’s van Java, Bandoeng, het KNIL, het dagelijks leven en de geschiedenis van de archipel. Combineer historische en moderne plaatsnamen.</p>
+<a class="home-card-action" href="#discovery">Naar beeldcollecties <span aria-hidden="true">→</span></a>
+</div>
+</article>
+<article class="home-card">
+<div class="home-card-symbol" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M8 54h48M13 50V23h38v27M8 23h48L32 8 8 23ZM22 29v15M32 29v15M42 29v15"></path><path d="M5 56h54"></path></svg></div>
+<div class="home-card-copy">
+<div class="home-card-kicker">Archieven en erfgoedinstellingen</div>
+<h3>Historische beeldcollecties</h3>
+<p>Bekijk geselecteerde collecties uit openbare archieven, musea en erfgoedinstellingen, met aandacht voor originele objectrecords, context en beeldrechten.</p>
+<a class="home-card-action" href="#rmArchive">Naar historische collecties <span aria-hidden="true">→</span></a>
+</div>
+</article>
+</div>
+</section>
 <section class="intro">
 <div><div class="section-label">Historische beeldcollecties</div><h2 id="title">Een visueel geheugen van de archipel</h2><p id="intro">Doorzoek historische beeldbestanden uit openbare collecties. De fotogalerij haalt beeldresultaten live op bij Wikimedia Commons; aanvullende beschrijvingen uit het Nationaal Archief worden apart getoond. Gebruik historische schrijfwijzen én moderne plaatsnamen.</p></div>
 <aside class="callout"><strong>Bronkritiek hoort bij het beeld</strong>Een bijschrift of zoekresultaat is geen zelfstandig bewijs voor datering, locatie of identiteit. Controleer per foto de oorspronkelijke bronpagina, de maker, de beschrijving en de rechten. Onbekende gegevens blijven als onbekend vermeld.</aside>
 </section>
-<section class="discovery" aria-label="Zoek en filter in de beeldcollectie">
+<section id="discovery" class="discovery" aria-label="Zoek en filter in de beeldcollectie">
 <div class="searchrow"><input id="q" type="search" placeholder="Zoek bijvoorbeeld: Bragaweg, Dago, KNIL, Batavia…" aria-label="Zoek in het fotoarchief"><button id="go" class="primary" type="button">Zoeken</button></div>
 <div class="filters">
 <label for="period">Datering</label><select id="period"><option value="1800-1959" selected>Historische periode 1800–1959 + relevant ongedateerd</option><option value="all">Alle perioden</option><option value="1800-1899">1800–1899</option><option value="1900-1919">1900–1919</option><option value="1920-1939">1920–1939</option><option value="1940-1945">1940–1945</option><option value="1945-1950">1945–1950</option><option value="1950-1959">1950–1959</option><option value="undated">Alleen ongedateerd</option></select>
@@ -177,7 +240,7 @@ body.family-view #familyBirsak,body.family-view #deepSearch{display:block!import
 .family-person{display:flex;align-items:center;gap:11px;min-width:0;background:#f8f5ec;border:1px solid #e3dccf;padding:7px 9px;font:13px/1.35 system-ui,sans-serif}
 .family-person .family-portrait{display:block;flex:0 0 54px;width:54px;height:66px;border:1px solid #d8d0bf;background-color:#eee;background-repeat:no-repeat;background-position:left top;background-size:500% auto}
 .family-person .family-portrait.pair{background-size:500% auto}
-.family-person .no-portrait{display:grid;place-items:center;flex:0 0 54px;width:54px;height:66px;background:#eeeae0;color:#8a8170;font:10px system-ui,sans-serif;text-align:center}
+.family-person .no-portrait{display:grid;place-items:center;flex:0 0 54px;width:54px;height:66px;background:#eeeae0;color:#51483b;font:10px system-ui,sans-serif;text-align:center}
 @media(max-width:620px){.family-people{grid-template-columns:1fr}}
 </style>
 <ul class="family-people">
