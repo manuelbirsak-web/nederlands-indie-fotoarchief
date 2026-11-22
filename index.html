@@ -163,6 +163,15 @@ body.home-view .head{margin-top:31px}
 
 .home-card-family .home-card-image img{object-fit:contain;object-position:center;background:#e7e0d1}
 @media(max-width:760px){.home-card-family .home-card-image{aspect-ratio:1/1}}
+
+/* CR-02 audit corrections: mobile intrinsic sizing and WCAG text contrast */
+.home-intro .section-label{color:#765b31}
+.home-card,.home-card-image,.home-card-symbol,.home-card-copy{min-width:0;max-width:100%}
+.home-card-source-image{width:100%;min-width:0;max-width:100%}
+.home-card-source-image img,.home-card-image img{max-width:100%;min-width:0}
+#nav,.nav-group{min-width:0;max-width:100%}
+.topline span:first-child{min-width:0;max-width:100%}
+@media(max-width:760px){.home-card-source-image{flex:0 0 auto;width:100%;max-width:100%}.home-card-source-image img{width:100%;max-width:100%}}
 </style>
 </head>
 <body>
