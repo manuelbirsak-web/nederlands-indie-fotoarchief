@@ -52,7 +52,22 @@ async function main() {
       { timeout: 20000 }
     );
 
-    if (!(await page.title()).includes('Indisch Beeldarchief')) failures.push('Homepage title missing');
+    if (!(await page.title()).includes('Indonesië Archief')) failures.push('Homepage title missing');
+    const landingChecks = await page.evaluate(() => {
+      const familyImage = document.querySelector('#homeLanding .home-card-family img');
+      const cards = [...document.querySelectorAll('#homeLanding .home-card-copy h3')].map(node => node.textContent.trim());
+      return {
+        title: document.querySelector('h1')?.innerText?.replace(/\s+/g, ' ').trim(),
+        cards,
+        familyImage: familyImage?.getAttribute('src'),
+        familyImageAlt: familyImage?.alt,
+        familyImageLink: familyImage?.closest('a')?.getAttribute('href')
+      };
+    });
+    if (landingChecks.title !== 'Indonesië Archief') failures.push('Homepage H1 must be Indonesië Archief: ' + JSON.stringify(landingChecks));
+    if (landingChecks.cards.join('|') !== 'Familieonderzoek Birsak|Beeldcollecties|Historische beeldcollecties') failures.push('Homepage primary sections are missing or out of order: ' + JSON.stringify(landingChecks.cards));
+    if (landingChecks.familyImage !== 'assets/family/IMG_5108.jpeg' || landingChecks.familyImageLink !== '#familyBirsak') failures.push('Family card must use the original Maudy-Ellen photo and link to family research: ' + JSON.stringify(landingChecks));
+    if (!/Maudy-Ellen/i.test(landingChecks.familyImageAlt || '')) failures.push('Family image alt text must identify Huis Maudy-Ellen');
     try {
       await page.waitForFunction(() => document.querySelectorAll('#results .photo').length > 0, null, { timeout: 20000 });
     } catch (error) {
