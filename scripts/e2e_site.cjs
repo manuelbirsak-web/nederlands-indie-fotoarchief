@@ -196,17 +196,23 @@ async function main() {
 
     const passportResponse = await page.goto(BASE + 'research/paspoortaanvragen.html', { waitUntil: 'domcontentloaded' });
     if (!passportResponse || passportResponse.status() !== 200) failures.push('Passport archive page did not return HTTP 200');
-    await page.waitForFunction(() => document.querySelectorAll('main img').length === 16, null, { timeout: 10000 });
+    await page.waitForFunction(() => document.querySelectorAll('main .scan-card img').length === 52, null, { timeout: 10000 });
     await page.locator('main').scrollIntoViewIfNeeded();
-    await page.locator('main img').evaluateAll(images => images.forEach(image => { image.loading = 'eager'; }));
-    await page.waitForFunction(() =>
-      [...document.querySelectorAll('main img')].length === 16 &&
-      [...document.querySelectorAll('main img')].every(img => img.complete && img.naturalWidth > 0),
-      null,
-      { timeout: 30000 }
-    );
-    const passportImageCount = await page.locator('main img').count();
-    if (passportImageCount !== 16) failures.push('Passport archive must show all 16 original CBG scans; found ' + passportImageCount);
+    await page.locator('main .scan-card img').evaluateAll(images => images.forEach(image => { image.loading = 'eager'; }));
+    await page.waitForFunction(() => {
+      const images = [...document.querySelectorAll('main .scan-card img')];
+      return images.length === 52 && images.every(img => img.complete && img.naturalWidth > 0);
+    }, null, { timeout: 60000 });
+    const passportChecks = await page.locator('main .scan-card').evaluateAll(cards => ({
+      imageCount: cards.length,
+      directImageLinks: cards.filter(card => {
+        const link = card.querySelector('a[href]');
+        const image = card.querySelector('img');
+        return link && image && new URL(link.href).href === new URL(image.src).href;
+      }).length
+    }));
+    if (passportChecks.imageCount !== 52) failures.push('Passport archive must show all 52 unique CBG scans; found ' + passportChecks.imageCount);
+    if (passportChecks.directImageLinks !== 52) failures.push('Every passport scan must link directly to its exact image; verified ' + passportChecks.directImageLinks + '/52');
     await page.goto(BASE + 'research/familie-birsak-genealogie.html', { waitUntil: 'domcontentloaded' });
     await page.waitForFunction(() => document.querySelectorAll('img').length === 3, null, { timeout: 10000 });
     await page.locator('body').evaluate(() => document.querySelectorAll('img').forEach(image => { image.loading = 'eager'; }));
