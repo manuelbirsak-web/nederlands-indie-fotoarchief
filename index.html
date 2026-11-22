@@ -154,6 +154,12 @@ body.home-view #discovery .filters{margin-top:12px}
 body.home-view .head{margin-top:31px}
 @media(max-width:760px){#nav{padding:10px 4vw;gap:10px}#nav .nav-group{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;padding-bottom:3px}#nav .nav-group-label{display:none}#nav .nav-group button,#nav .nav-group a.nav-link{flex:0 0 auto;white-space:nowrap;min-height:38px}#nav .nav-group-primary{border:0;padding-bottom:0}#nav .nav-group-research{display:flex}.home-landing{padding:18px 0 23px}.home-intro h2{font-size:28px}.home-intro p{font-size:14px}.home-card,.home-card-family{display:flex;flex-direction:column;min-height:0}.home-card-family .home-card-image{order:0;height:auto;min-height:0;aspect-ratio:16/10}.home-card-family .home-card-copy{order:1;padding:17px 18px}.home-card-symbol{order:0;height:155px;min-height:155px}.home-card-copy{padding:16px 18px 18px}.home-card-copy h3{font-size:23px}.home-card-copy p{font-size:13px}.home-source-note{align-items:flex-start;padding:14px;gap:12px}.home-source-icon{flex-basis:36px;width:36px;height:36px;font-size:21px}.home-source-note strong{font-size:15px}.home-source-note p{font-size:11px}body.home-view #discovery{padding:13px}body.home-view .searchrow{flex-direction:row;gap:7px}body.home-view .searchrow .primary{min-width:92px;padding:10px 12px}body.home-view .searchrow input{font-size:13px;min-height:46px}}
 @media(max-width:420px){body.home-view .searchrow{flex-direction:column}body.home-view .searchrow .primary{min-height:44px}}
+
+.home-card-source-image{position:relative;display:block;text-decoration:none;overflow:hidden;background:#e7e0d1}
+.home-card-source-image img{display:block;width:100%;height:100%;min-height:205px;object-fit:cover;transition:transform .25s ease}
+.home-card-source-image:hover img{transform:scale(1.025)}
+.home-card-source-image .image-caption{font-size:10px}
+@media(max-width:760px){.home-card-source-image{height:190px;min-height:190px}.home-card-source-image img{min-height:190px}}
 </style>
 </head>
 <body>
@@ -211,7 +217,7 @@ body.home-view .head{margin-top:31px}
 </div>
 </article>
 <article class="home-card">
-<div class="home-card-symbol" aria-hidden="true"><svg viewBox="0 0 64 64"><rect x="10" y="13" width="43" height="36" rx="3"></rect><path d="M15 43 27 29l9 9 7-7 10 12"></path><circle cx="40" cy="22" r="3"></circle><path d="M5 20v34a4 4 0 0 0 4 4h39"></path></svg></div>
+<a class="home-card-symbol home-card-source-image" href="https://id.rijksmuseum.nl/200531179" target="_blank" rel="noopener noreferrer" aria-label="Open Rijksmuseum-object H.B.S. Bandoeng, 1918–1919"><img src="https://iiif.micr.io/xKqqr/full/1000,/0/default.jpg" alt="Historische foto van het gebouw van de HBS te Bandoeng, 1918–1919"><span class="image-caption">H.B.S. Bandoeng · 1918–1919 · Rijksmuseum</span></a>
 <div class="home-card-copy">
 <div class="home-card-kicker">Thema’s en plaatsen</div>
 <h3>Beeldcollecties</h3>
@@ -220,7 +226,7 @@ body.home-view .head{margin-top:31px}
 </div>
 </article>
 <article class="home-card">
-<div class="home-card-symbol" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M8 54h48M13 50V23h38v27M8 23h48L32 8 8 23ZM22 29v15M32 29v15M42 29v15"></path><path d="M5 56h54"></path></svg></div>
+<a class="home-card-symbol home-card-source-image" href="https://id.rijksmuseum.nl/200415456" target="_blank" rel="noopener noreferrer" aria-label="Open Rijksmuseum-object Stationsgebouw te Buitenzorg, 1880–1888"><img src="https://iiif.micr.io/QWQco/full/1000,/0/default.jpg" alt="Historische foto van het stationsgebouw te Buitenzorg, 1880–1888"><span class="image-caption">Stationsgebouw Buitenzorg · 1880–1888 · Rijksmuseum</span></a>
 <div class="home-card-copy">
 <div class="home-card-kicker">Archieven en erfgoedinstellingen</div>
 <h3>Historische beeldcollecties</h3>
