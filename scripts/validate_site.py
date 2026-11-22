@@ -103,10 +103,22 @@ def main() -> None:
         if not asset.read_bytes().startswith(bytes.fromhex("ffd8ff")):
             fail(f"CBG-scan is geen geldige JPEG: {name}")
     manifest = json.loads(PASSPORT_MANIFEST.read_text(encoding="utf-8"))
-    if len(manifest.get("files", [])) != 16:
-        fail("CBG-manifest moet exact 16 unieke scanbestanden bevatten")
-    if {Path(item["file"]).name for item in manifest["files"]} != set(EXPECTED_CBG_SCANS):
-        fail("CBG-manifest en opgeslagen scanbestanden komen niet overeen")
+    manifest_names = [Path(item["file"]).name for item in manifest.get("files", [])]
+    if len(manifest_names) != 52:
+        fail(f"CBG-manifest moet exact 52 unieke scanbestanden bevatten; gevonden: {len(manifest_names)}")
+    if len(set(manifest_names)) != len(manifest_names):
+        fail("CBG-manifest bevat dubbele bestandsnamen")
+    stored_scan_names = {path.name for path in PASSPORT_DIR.glob("*.jpg")}
+    if set(manifest_names) != stored_scan_names:
+        missing = sorted(stored_scan_names - set(manifest_names))
+        absent = sorted(set(manifest_names) - stored_scan_names)
+        fail(f"CBG-manifest en originelen-map verschillen; niet in manifest: {missing}; niet opgeslagen: {absent}")
+    for name in manifest_names:
+        asset = PASSPORT_DIR / name
+        if not asset.is_file() or not asset.read_bytes().startswith(bytes.fromhex("ffd8ff")):
+            fail(f"CBG-manifest verwijst naar ontbrekende of ongeldige JPEG: {name}")
+    if not set(EXPECTED_CBG_SCANS).issubset(set(manifest_names)):
+        fail("CBG-manifest mist een of meer eerder vastgelegde kernscans")
     privacy_review = manifest.get("publicationReview", {})
     if privacy_review.get("status") != "not-independently-verified" or privacy_review.get("checkedAgainstIndividualCBGRecords") is not False:
         fail("CBG-publicatiestatus moet als niet individueel geverifieerd worden gemarkeerd")
@@ -120,9 +132,15 @@ def main() -> None:
     )):
         fail("CBG-scans staan nog op een verkeerde locatie of als rootduplicaat")
     passport_source = PASSPORT_PAGE.read_text(encoding="utf-8")
-    for name in EXPECTED_CBG_SCANS:
+    for name in manifest_names:
         if f"../assets/paspoortaanvragen/originelen/{name}" not in passport_source:
             fail(f"Paspoortgalerij toont de CBG-scan niet: {name}")
+    if len(re.findall(r'<article class="scan-card">', passport_source)) != 52:
+        fail("Paspoortgalerij moet exact 52 scan-kaarten bevatten")
+    for card in re.findall(r'<article class="scan-card">(.*?)</article>', passport_source, flags=re.S):
+        link = re.search(r'<a[^>]+href="([^"]+)"[^>]*>\s*<img[^>]+src="([^"]+)"', card, flags=re.S)
+        if not link or link.group(1) != link.group(2):
+            fail("Elke scan-kaart moet rechtstreeks naar exact dezelfde afbeelding linken")
     genealogy_source = GENEALOGY_PAGE.read_text(encoding="utf-8")
     for term in ("IMG_5110.jpeg", "Janssen"):
         if term not in genealogy_source:
